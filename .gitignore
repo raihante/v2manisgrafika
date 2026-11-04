@@ -1,0 +1,15 @@
+# Private reverse-engineering artifacts from clone-website.
+reference/
+
+# Local dependencies and generated output.
+node_modules/
+.next/
+.astro/
+dist/
+out/
+
+# Environment files and logs.
+.env
+.env.*
+!.env.example
+*.log
