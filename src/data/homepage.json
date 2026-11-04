@@ -3,9 +3,18 @@
   "capturedAt": "2026-11-03",
   "logo": "/assets/source/7dc2646eeca4f8e4.png",
   "announcement": [
-    "HEART POCKET MIRROR, ON US! WITH ANY CRUNCH CARRYALL 0.5 PURCHASE",
-    "RP100K OFF YOUR FIRST ORDER WHEN YOU JOIN THE VINE CLUB*",
-    "FREE SHIPPING TO INDONESIA WITH MIN. SPEND, INCLUSIVE OF CUSTOM DUTIES & TAXES"
+    {
+      "text": "HEART POCKET MIRROR, ON US!  WITH ANY CRUNCH CARRYALL 0.5 PURCHASE",
+      "href": "/blogs/promotions/a-little-love-for-your-carryall"
+    },
+    {
+      "text": "RP100K OFF YOUR FIRST ORDER WHEN YOU JOIN THE VINE CLUB*",
+      "href": "/blogs/promotions/beyond-the-vines-first-time-customer-promotion"
+    },
+    {
+      "text": " FREE SHIPPING TO INDONESIA WITH MIN. SPEND, INCLUSIVE OF CUSTOM DUTIES & TAXES",
+      "href": "/pages/shipping-rate"
+    }
   ],
   "navigation": [
     "New In",
@@ -93,346 +102,901 @@
   "collections": [
     {
       "title": "New In",
+      "shopMore": "/collections/new-in",
       "products": [
         {
           "title": "Landscape Studio Tote",
-          "price": "Rp 1.299.000",
           "href": "/products/landscape-studio-tote",
+          "price": "Rp 1.299.000",
           "image": "/assets/source/f2d5049c6aaa1157.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/LANDSCAPESTUDIONAVY00.jpg?v=1792565239&width=2001",
-          "swatches": "Navy/Black Light Grey/Dark Grey Steel Blue/Brown Pink/Sage Navy/Black + 3 Colours",
-          "label": ""
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/LANDSCAPE_STUDIO_NAVY_01.jpg?v=1792565239&width=2001",
+          "swatchSelected": "Navy/Black",
+          "swatchSuffix": "+ 3 Colours",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "add"
         },
         {
           "title": "Beyond The Vines x Yashica Funtastic Keychain Camera",
-          "price": "Rp 699.000",
           "href": "/products/beyond-the-vines-x-yashica-funtastic-keychain-camera",
+          "price": "Rp 699.000",
           "image": "/assets/source/52711885a7467953.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/YASHICA02.jpg?v=1792379560&width=2001",
-          "swatches": "Multi Multi",
-          "label": ""
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/YASHICA01.jpg?v=1792379560&width=2001",
+          "swatchSelected": "Multi",
+          "swatchSuffix": "",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "notify"
         },
         {
           "title": "XS Dumpling Bag",
-          "price": "Rp 1.039.000",
           "href": "/products/xs-dumpling-bag",
+          "price": "Rp 1.039.000",
           "image": "/assets/source/3d3bd2a5a8137ef8.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/SEASONAL_DUMPLING_10_2026_PRODUCT_PAGE_01.jpg?v=1792465067&width=2000",
-          "swatches": "Dark Green Indigo Tomato Light Pink Butter Yellow Light Grey Blue Light Lime Black Olive Steel Blue Blush Khaki Terracotta Lilac Dark Green + 14 Colours",
-          "label": ""
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/XS_GREEN_01.jpg?v=1792384908&width=2000",
+          "swatchSelected": "Dark Green",
+          "swatchSuffix": "+ 14 Colours",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "add"
         },
         {
           "title": "M Dumpling Bag",
-          "price": "Rp 1.169.000",
           "href": "/products/m-dumpling-bag",
+          "price": "Rp 1.169.000",
           "image": "/assets/source/3c3ee7a605fc960e.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/SEASONAL_DUMPLING_10_2026_PRODUCT_PAGE_04.jpg?v=1792465067&width=2000",
-          "swatches": "Butter Yellow Tomato Indigo Light Pink Light Olive Olive Light Lime Lilac Steel Blue Blush Black Butter Yellow + 10 Colours",
-          "label": ""
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/M_BUTTER_01.jpg?v=1792385017&width=2000",
+          "swatchSelected": "Butter Yellow",
+          "swatchSuffix": "+ 10 Colours",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "add"
         },
         {
           "title": "XL Dumpling Bag",
-          "price": "Rp 1.399.000",
           "href": "/products/xl-dumpling-bag",
+          "price": "Rp 1.399.000",
           "image": "/assets/source/3fed35ca9c8642fe.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/SEASONAL_DUMPLING_10_2026_PRODUCT_PAGE_02.jpg?v=1792465067&width=2000",
-          "swatches": "Tomato Indigo Butter Yellow Black Steel Blue Olive Brown Tomato + 6 Colours",
-          "label": ""
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/XL_TOMATO_01.jpg?v=1792052228&width=2000",
+          "swatchSelected": "Tomato",
+          "swatchSuffix": "+ 6 Colours",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "add"
         },
         {
           "title": "Suede Dumpling Bag",
-          "price": "Rp 1.799.000",
           "href": "/products/suede-dumpling-bag",
+          "price": "Rp 1.799.000",
           "image": "/assets/source/9e1f9270739947a4.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/SUEDE_DUMPLING_10_2026_PRODUCT_PAGE_01_c3351072-622e-4bfa-bc06-b41f725950f3.jpg?v=1792464977&width=2000",
-          "swatches": "Frame Block Dot Frame + 2 Colours",
-          "label": ""
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/SUEDEDUMPLINGFRAME_01.jpg?v=1792380728&width=2001",
+          "swatchSelected": "Frame",
+          "swatchSuffix": "+ 2 Colours",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "notify"
         },
         {
           "title": "ParaPack 001",
-          "price": "Rp 1.299.000",
           "href": "/products/parapack-001",
+          "price": "Rp 1.299.000",
           "image": "/assets/source/95913fe7bd7e7234.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPACK_2026_09_PRODUCTPAGE05_001_PERI.jpg?v=1790927687&width=2000",
-          "swatches": "Periwinkle Teal Brick Red Black Forest Dark Plum Sage Orange Turquoise Periwinkle + 8 Colours",
-          "label": ""
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPACK01_LILAC01.jpg?v=1790927451&width=2001",
+          "swatchSelected": "Periwinkle",
+          "swatchSuffix": "+ 8 Colours",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "add"
         },
         {
           "title": "ParaPack 002",
-          "price": "Rp 1.499.000",
           "href": "/products/parapack-002",
+          "price": "Rp 1.499.000",
           "image": "/assets/source/04389960d644433a.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPACK_2026_09_PRODUCTPAGE03_002_RED.jpg?v=1791171914&width=2000",
-          "swatches": "Brick Red Periwinkle Teal Orange Dark Plum Forest Black Sage Brick Red + 7 Colours",
-          "label": ""
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPACK02_BRICK01.jpg?v=1790927906&width=2001",
+          "swatchSelected": "Brick Red",
+          "swatchSuffix": "+ 7 Colours",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "add"
         },
         {
           "title": "Mini ParaPouch",
-          "price": "Rp 569.000",
           "href": "/products/mini-parapouch",
+          "price": "Rp 569.000",
           "image": "/assets/source/cecd968018f8aa66.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPOUCH_2026_09_PRODUCTPAGE01.jpg?v=1790929057&width=2000",
-          "swatches": "Brick Red Colourblock Charcoal Colourblock Lilac Colourblock Forest Colourblock Blush Colourblock Cobalt Colourblock Light Moss Turquoise Colourblock Lilac Navy Magenta Colourblock Brick Red Colourblock + 10 Colours",
-          "label": ""
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/SMALLPARAPOUCH_BRICK01.jpg?v=1790929032&width=2001",
+          "swatchSelected": "Brick Red Colourblock",
+          "swatchSuffix": "+ 10 Colours",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "add"
         },
         {
           "title": "ParaPouch",
-          "price": "Rp 699.000",
           "href": "/products/parapouch",
+          "price": "Rp 699.000",
           "image": "/assets/source/1df34f5bb7bcdbcf.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPOUCH_2026_09_PRODUCTPAGE01_06efe558-1bfe-488b-8c39-8f68b264161f.jpg?v=1790929291&width=2000",
-          "swatches": "Charcoal Colourblock Brick Red Colourblock Lilac Colourblock Cobalt Colourblock Blush Colourblock Turquoise Colourblock Light Moss Magenta Colourblock Navy Lilac Charcoal Colourblock + 9 Colours",
-          "label": ""
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/LARGEPARAPOUCH_BROWN01.jpg?v=1790929272&width=2001",
+          "swatchSelected": "Charcoal Colourblock",
+          "swatchSuffix": "+ 9 Colours",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "add"
         },
         {
           "title": "Parallel™ Eyewear - Tangent",
-          "price": "Rp 1.499.000",
           "href": "/products/parallel-eyewear-tangent",
+          "price": "Rp 1.499.000",
           "image": "/assets/source/1e131637338942b5.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/TANGENT_EYEWEAR_2026_09_PRODUCTPAGE03.jpg?v=1790675214&width=2000",
-          "swatches": "Clear Grey Tortoise Shell Colourblock Clear Sand Clear Grey + 2 Colours",
-          "label": ""
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/TANGENTSILVER_01.jpg?v=1776223875&width=2000",
+          "swatchSelected": "Clear Grey",
+          "swatchSuffix": "+ 2 Colours",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "add"
         },
         {
           "title": "Parallel™ Eyewear - Contour",
-          "price": "Rp 1.499.000",
           "href": "/products/parallel-eyewear-contour",
-          "image": "/assets/source/c9cae4ac9a4152c3.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CONTOUR_EYEWEAR_2026_09_PRODUCTPAGE01.jpg?v=1790675353&width=2000",
-          "swatches": "Tortoise Shell Clear Tortoise Shell + 1 Colour",
-          "label": ""
-        }
-      ]
-    },
-    {
-      "title": "BTV Bags",
-      "products": [
-        {
-          "title": "Crunch Carryall 0.5",
-          "price": "Rp 799.000",
-          "href": "/products/crunch-carryall-0-5",
-          "image": "/assets/source/a904a283878cd4ba.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CC0.5_BLACK01_3224388a-a0ae-42b9-863f-2401997ac269.jpg?v=1763362784&width=2000",
-          "swatches": "Black Cream Lilac Cerulean Brown Black + 4 Colours",
-          "label": "RECEIVE A COMPLIMENTARY HEART POCKET MIRROR"
-        },
-        {
-          "title": "Crunch Carryall 01",
-          "price": "Rp 1.039.000",
-          "href": "/products/crunch-carryall-01",
-          "image": "/assets/source/4d154223d5ab87d1.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CCO1_LILAC_W01.jpg?v=1763364895&width=2000",
-          "swatches": "Lilac Black Cream Sage Navy Lilac + 4 Colours",
-          "label": ""
-        },
-        {
-          "title": "Crunch Carryall 02",
-          "price": "Rp 1.299.000",
-          "href": "/products/crunch-carryall-02",
-          "image": "/assets/source/4608990cd54254f9.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CCO2_NATURAL_W01.jpg?v=1772426064&width=2000",
-          "swatches": "Cream Turquoise Iris Black Sage Cream + 4 Colours",
-          "label": ""
-        },
-        {
-          "title": "Crunch Carryall 1.5",
-          "price": "Rp 1.039.000",
-          "href": "/products/crunch-carryall-1-5",
-          "image": "/assets/source/f0bf3377ce6f9d7e.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CC1.5_09_2026_Product_Page_01.jpg?v=1789357659&width=2000",
-          "swatches": "Dusty Pink Cream Black Dusty Pink + 2 Colours",
-          "label": ""
-        },
-        {
-          "title": "Crunch Carryall 03",
           "price": "Rp 1.499.000",
-          "href": "/products/crunch-carryall-03",
-          "image": "/assets/source/02463a4b2ee5ad31.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CC03_BLACK_01.jpg?v=1772426123&width=2000",
-          "swatches": "Black Cream Sage Navy Cerulean Black + 4 Colours",
-          "label": ""
+          "image": "/assets/source/c9cae4ac9a4152c3.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CONTOURSHELL_01.jpg?v=1776223187&width=2000",
+          "swatchSelected": "Tortoise Shell",
+          "swatchSuffix": "+ 1 Colour",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "Parallel™ Eyewear - Horizon",
+          "href": "/products/parallel-eyewear-horizon",
+          "price": "Rp 1.499.000",
+          "image": "/assets/source/20f5fbae1dfd304e.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/HORIZONSAND_01.jpg?v=1790743680&width=2000",
+          "swatchSelected": "Clear Sand",
+          "swatchSuffix": "+ 2 Colours",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "add"
         },
         {
           "title": "ParaPocket 001",
-          "price": "Rp 439.000",
           "href": "/products/parapocket-001",
+          "price": "Rp 439.000",
           "image": "/assets/source/46bf0bf0326a298c.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPOCKET_06_2026_PRODUCT_PAGE_09_1.jpg?v=1790148391&width=2000",
-          "swatches": "Periwinkle/Maroon Teal/Charcoal Black Periwinkle/Maroon + 2 Colours",
-          "label": ""
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPOCKET01_LILAC01.jpg?v=1790156195&width=2001",
+          "swatchSelected": "Periwinkle/Maroon",
+          "swatchSuffix": "+ 2 Colours",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "add"
         },
         {
           "title": "ParaPocket 002",
-          "price": "Rp 569.000",
           "href": "/products/parapocket-002",
-          "image": "/assets/source/03457f219026bc23.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPOCKET_06_2026_PRODUCT_PAGE_06.jpg?v=1789715029&width=2000",
-          "swatches": "Teal/Charcoal Periwinkle/Maroon Black Teal/Charcoal + 2 Colours",
-          "label": ""
-        },
-        {
-          "title": "ParaPack 001",
-          "price": "Rp 1.299.000",
-          "href": "/products/parapack-001",
-          "image": "/assets/source/95913fe7bd7e7234.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPACK_2026_09_PRODUCTPAGE05_001_PERI.jpg?v=1790927687&width=2000",
-          "swatches": "Periwinkle Teal Brick Red Black Forest Dark Plum Sage Orange Turquoise Periwinkle + 8 Colours",
-          "label": ""
-        },
-        {
-          "title": "ParaPack 002",
-          "price": "Rp 1.499.000",
-          "href": "/products/parapack-002",
-          "image": "/assets/source/04389960d644433a.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPACK_2026_09_PRODUCTPAGE03_002_RED.jpg?v=1791171914&width=2000",
-          "swatches": "Brick Red Periwinkle Teal Orange Dark Plum Forest Black Sage Brick Red + 7 Colours",
-          "label": ""
-        },
-        {
-          "title": "XS Dumpling Bag",
-          "price": "Rp 1.039.000",
-          "href": "/products/xs-dumpling-bag",
-          "image": "/assets/source/3d3bd2a5a8137ef8.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/SEASONAL_DUMPLING_10_2026_PRODUCT_PAGE_01.jpg?v=1792465067&width=2000",
-          "swatches": "Dark Green Indigo Tomato Light Pink Butter Yellow Light Grey Blue Light Lime Black Olive Steel Blue Blush Khaki Terracotta Lilac Dark Green + 14 Colours",
-          "label": ""
-        },
-        {
-          "title": "M Dumpling Bag",
-          "price": "Rp 1.169.000",
-          "href": "/products/m-dumpling-bag",
-          "image": "/assets/source/3c3ee7a605fc960e.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/SEASONAL_DUMPLING_10_2026_PRODUCT_PAGE_04.jpg?v=1792465067&width=2000",
-          "swatches": "Butter Yellow Tomato Indigo Light Pink Light Olive Olive Light Lime Lilac Steel Blue Blush Black Butter Yellow + 10 Colours",
-          "label": ""
-        },
-        {
-          "title": "XL Dumpling Bag",
-          "price": "Rp 1.399.000",
-          "href": "/products/xl-dumpling-bag",
-          "image": "/assets/source/3fed35ca9c8642fe.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/SEASONAL_DUMPLING_10_2026_PRODUCT_PAGE_02.jpg?v=1792465067&width=2000",
-          "swatches": "Tomato Indigo Butter Yellow Black Steel Blue Olive Brown Tomato + 6 Colours",
-          "label": ""
-        }
-      ]
-    },
-    {
-      "title": "Your Favourites",
-      "products": [
-        {
-          "title": "BTV-TO-GO Phone Strap",
-          "price": "Rp 687.000",
-          "href": "/products/btv-to-go-phone-strap",
-          "image": "/assets/source/73a8f133fc2b24a6.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/TOGO_PLUM01.jpg?v=1778124240&width=2000",
-          "swatches": "Plum Blue Brown Sage Teal Khaki Neo Mint Burnt Orange Purple Black Grey Navy Olive Neon Pink Light Blue Rose Mauve Magenta Plum + 17 Colours",
-          "label": ""
-        },
-        {
-          "title": "Crunch Organiser 01",
           "price": "Rp 569.000",
-          "href": "/products/crunch-organiser-01",
-          "image": "/assets/source/95d91e9705934fb5.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/01MINT2.jpg?v=1763362605&width=2000",
-          "swatches": "Mint/Lilac Cobalt/Forest Teal/Periwinkle Lilac/Maroon Terracotta/Brown Mint/Lilac + 4 Colours",
-          "label": ""
+          "image": "/assets/source/03457f219026bc23.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPOCKET02_TEAL01.jpg?v=1790303218&width=2001",
+          "swatchSelected": "Teal/Charcoal",
+          "swatchSuffix": "+ 2 Colours",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "add"
         },
         {
-          "title": "Kids Colourblock Backpack",
-          "price": "Rp 699.000",
-          "href": "/products/kids-colourblock-backpack",
-          "image": "/assets/source/ae86dcb08333a847.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/KIDSBACKPACKBROWN_02.jpg?v=1783243654&width=2000",
-          "swatches": "Brown Lilac Cobalt Pink Brown + 3 Colours",
-          "label": ""
+          "title": "Two Tone Travel Pouch (Extra Small)",
+          "href": "/products/two-tone-travel-pouch-extra-small",
+          "price": "Rp 179.000",
+          "image": "/assets/source/018d875e5c3b2042.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PVCPouch_Large_YellowPink01.jpg?v=1789542182&width=2000",
+          "swatchSelected": "Pink/Yellow",
+          "swatchSuffix": "+ 2 Colours",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "add"
         },
         {
-          "title": "Poofy Bag",
+          "title": "Two Tone Travel Pouch (Small)",
+          "href": "/products/two-tone-travel-pouch-small",
+          "price": "Rp 209.000",
+          "image": "/assets/source/ff39731428924189.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PVCPouch_Small_GreenBlue01.jpg?v=1789542070&width=2000",
+          "swatchSelected": "Light Blue/Green",
+          "swatchSuffix": "+ 2 Colours",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "notify"
+        },
+        {
+          "title": "Crunch Carryall 1.5",
+          "href": "/products/crunch-carryall-1-5",
           "price": "Rp 1.039.000",
-          "href": "/products/poofy-bag",
-          "image": "/assets/source/5cb585ff5d48f5c3.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/GREEN-3.png?v=1763364389&width=2000",
-          "swatches": "Green Lime Orange Cobalt Periwinkle Moss Black Green + 6 Colours",
-          "label": ""
+          "image": "/assets/source/f0bf3377ce6f9d7e.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CC1.5NYLON_BLUSH_01.jpg?v=1789117234&width=2001",
+          "swatchSelected": "Dusty Pink",
+          "swatchSuffix": "+ 2 Colours",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "notify"
+        },
+        {
+          "title": "Womens Linen Long Sleeve Shirt",
+          "href": "/products/womens-linen-long-sleeve-shirt",
+          "price": "Rp 1.039.000",
+          "image": "/assets/source/3348f25fe8181ba8.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/LINENSHIRT_FRONT_RED_657d4d01-195e-4956-b073-c7bbf35c1e43.jpg?v=1788349350&width=2000",
+          "swatchSelected": "Dark Red",
+          "swatchSuffix": "+ 1 Colour",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "add"
         },
         {
           "title": "Womens Classic Long Sleeve Shirt",
-          "price": "Rp 1.039.000",
           "href": "/products/womens-classic-long-sleeve-shirt",
+          "price": "Rp 1.039.000",
           "image": "/assets/source/713b572f9560baed.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/W_LINEN_SHIRT_LILAC_02.jpg?v=1788349352&width=2000",
-          "swatches": "Maroon Checkered Dark Chambray Maroon Checkered + 1 Colour",
-          "label": ""
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/LINENSHIRT_FRONT_LILAC_00823c0b-7e92-4594-815c-e1665c7d7d85.jpg?v=1788349352&width=2000",
+          "swatchSelected": "Maroon Checkered",
+          "swatchSuffix": "+ 1 Colour",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "add"
         },
         {
-          "title": "Mini ParaPouch",
+          "title": "Womens Contrast Ribbed Tank Top",
+          "href": "/products/womens-contrast-ribbed-tank-top",
           "price": "Rp 569.000",
-          "href": "/products/mini-parapouch",
-          "image": "/assets/source/cecd968018f8aa66.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPOUCH_2026_09_PRODUCTPAGE01.jpg?v=1790929057&width=2000",
-          "swatches": "Brick Red Colourblock Charcoal Colourblock Lilac Colourblock Forest Colourblock Blush Colourblock Cobalt Colourblock Light Moss Turquoise Colourblock Lilac Navy Magenta Colourblock Brick Red Colourblock + 10 Colours",
-          "label": ""
+          "image": "/assets/source/5af638d7f1ad4014.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CONTRASTRIBBEDTANK_FRONT_CREAM-20_015e0855-9c24-44f4-9ca6-02fe8c636a5b.jpg?v=1788161506&width=2000",
+          "swatchSelected": "Cream",
+          "swatchSuffix": "+ 2 Colours",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "add"
         },
+        {
+          "title": "Womens Cotton Boxy Shirt Dress",
+          "href": "/products/womens-cotton-boxy-shirt-dress",
+          "price": "Rp 1.039.000",
+          "image": "/assets/source/441aa94e1d1caaa9.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/COTTONBOXYSHIRTDRESS_FRONT_CHAMBRAY.jpg?v=1788349354&width=2000",
+          "swatchSelected": "Dark Chambray",
+          "swatchSuffix": "+ 2 Colours",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "Womens Front Wrap Shorts",
+          "href": "/products/womens-front-wrap-shorts",
+          "price": "Rp 899.000",
+          "image": "/assets/source/5e31d2d7f3a2d8d8.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/WRAP_SHORT_FRONT_BLACK-20.jpg?v=1788349346&width=2000",
+          "swatchSelected": "Black",
+          "swatchSuffix": "+ 2 Colours",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "Womens Barrel Jersey Trouser",
+          "href": "/products/womens-barrel-jersey-trouser",
+          "price": "Rp 1.039.000",
+          "image": "/assets/source/43d85a92ef1669ee.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/BARRELJERSEYTROUSER_FRONT_MUSTARD_7359b46c-ecb2-4120-a755-51e0f54d9d0e.jpg?v=1788161503&width=2000",
+          "swatchSelected": "Light Olive",
+          "swatchSuffix": "+ 2 Colours",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "add"
+        }
+      ],
+      "headerBackground": "#316e6e"
+    },
+    {
+      "title": "BTV Bags",
+      "shopMore": "/collections/bags",
+      "products": [
         {
           "title": "Crunch Carryall 0.5",
-          "price": "Rp 799.000",
           "href": "/products/crunch-carryall-0-5",
+          "price": "Rp 799.000",
           "image": "/assets/source/a904a283878cd4ba.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CC0.5_BLACK01_3224388a-a0ae-42b9-863f-2401997ac269.jpg?v=1763362784&width=2000",
-          "swatches": "Black Cream Lilac Cerulean Brown Black + 4 Colours",
-          "label": "RECEIVE A COMPLIMENTARY HEART POCKET MIRROR"
-        },
-        {
-          "title": "Large Stretch Studio Tote",
-          "price": "Rp 1.299.000",
-          "href": "/products/large-stretch-studio-tote",
-          "image": "/assets/source/89b3bdc5e1a2527d.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/ReversibleL_STRETCH_NAVY_BROWN.jpg?v=1784100828&width=2000",
-          "swatches": "Navy/Brown Periwinkle/Olive Navy/Brown + 1 Colour",
-          "label": ""
-        },
-        {
-          "title": "ParaPack 002",
-          "price": "Rp 1.499.000",
-          "href": "/products/parapack-002",
-          "image": "/assets/source/04389960d644433a.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPACK_2026_09_PRODUCTPAGE03_002_RED.jpg?v=1791171914&width=2000",
-          "swatches": "Brick Red Periwinkle Teal Orange Dark Plum Forest Black Sage Brick Red + 7 Colours",
-          "label": ""
-        },
-        {
-          "title": "ParaPouch",
-          "price": "Rp 699.000",
-          "href": "/products/parapouch",
-          "image": "/assets/source/1df34f5bb7bcdbcf.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPOUCH_2026_09_PRODUCTPAGE01_06efe558-1bfe-488b-8c39-8f68b264161f.jpg?v=1790929291&width=2000",
-          "swatches": "Charcoal Colourblock Brick Red Colourblock Lilac Colourblock Cobalt Colourblock Blush Colourblock Turquoise Colourblock Light Moss Magenta Colourblock Navy Lilac Charcoal Colourblock + 9 Colours",
-          "label": ""
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CC05_BLACK01_1d8a2210-830b-44eb-af0e-ad1bf062521a.jpg?v=1763362784&width=2000",
+          "swatchSelected": "Black",
+          "swatchSuffix": "+ 4 Colours",
+          "labels": [],
+          "overlayLabels": [
+            {
+              "text": "RECEIVE A COMPLIMENTARY HEART POCKET MIRROR",
+              "className": "jsc-label jsc-var-label label-discount-code"
+            }
+          ],
+          "button": "add"
         },
         {
           "title": "Crunch Carryall 01",
-          "price": "Rp 1.039.000",
           "href": "/products/crunch-carryall-01",
+          "price": "Rp 1.039.000",
           "image": "/assets/source/4d154223d5ab87d1.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CCO1_LILAC_W01.jpg?v=1763364895&width=2000",
-          "swatches": "Lilac Black Cream Sage Navy Lilac + 4 Colours",
-          "label": ""
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CC01_LILAC_01.jpg?v=1735661180&width=2000",
+          "swatchSelected": "Lilac",
+          "swatchSuffix": "+ 4 Colours",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "Crunch Carryall 02",
+          "href": "/products/crunch-carryall-02",
+          "price": "Rp 1.299.000",
+          "image": "/assets/source/4608990cd54254f9.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CC02_IVORY_01_599f2ba6-3aa6-42b8-9e57-9c43fdf2bd85.jpg?v=1772426064&width=2000",
+          "swatchSelected": "Cream",
+          "swatchSuffix": "+ 4 Colours",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "Crunch Carryall 1.5",
+          "href": "/products/crunch-carryall-1-5",
+          "price": "Rp 1.039.000",
+          "image": "/assets/source/f0bf3377ce6f9d7e.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CC1.5NYLON_BLUSH_01.jpg?v=1789117234&width=2001",
+          "swatchSelected": "Dusty Pink",
+          "swatchSuffix": "+ 2 Colours",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "notify"
+        },
+        {
+          "title": "Crunch Carryall 03",
+          "href": "/products/crunch-carryall-03",
+          "price": "Rp 1.499.000",
+          "image": "/assets/source/02463a4b2ee5ad31.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CC03_BLACK01.jpg?v=1772426123&width=2000",
+          "swatchSelected": "Black",
+          "swatchSuffix": "+ 4 Colours",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "ParaPocket 001",
+          "href": "/products/parapocket-001",
+          "price": "Rp 439.000",
+          "image": "/assets/source/46bf0bf0326a298c.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPOCKET01_LILAC01.jpg?v=1790156195&width=2001",
+          "swatchSelected": "Periwinkle/Maroon",
+          "swatchSuffix": "+ 2 Colours",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "ParaPocket 002",
+          "href": "/products/parapocket-002",
+          "price": "Rp 569.000",
+          "image": "/assets/source/03457f219026bc23.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPOCKET02_TEAL01.jpg?v=1790303218&width=2001",
+          "swatchSelected": "Teal/Charcoal",
+          "swatchSuffix": "+ 2 Colours",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "ParaPack 001",
+          "href": "/products/parapack-001",
+          "price": "Rp 1.299.000",
+          "image": "/assets/source/95913fe7bd7e7234.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPACK01_LILAC01.jpg?v=1790927451&width=2001",
+          "swatchSelected": "Periwinkle",
+          "swatchSuffix": "+ 8 Colours",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "ParaPack 002",
+          "href": "/products/parapack-002",
+          "price": "Rp 1.499.000",
+          "image": "/assets/source/04389960d644433a.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPACK02_BRICK01.jpg?v=1790927906&width=2001",
+          "swatchSelected": "Brick Red",
+          "swatchSuffix": "+ 7 Colours",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "XS Dumpling Bag",
+          "href": "/products/xs-dumpling-bag",
+          "price": "Rp 1.039.000",
+          "image": "/assets/source/3d3bd2a5a8137ef8.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/XS_GREEN_01.jpg?v=1792384908&width=2000",
+          "swatchSelected": "Dark Green",
+          "swatchSuffix": "+ 14 Colours",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "M Dumpling Bag",
+          "href": "/products/m-dumpling-bag",
+          "price": "Rp 1.169.000",
+          "image": "/assets/source/3c3ee7a605fc960e.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/M_BUTTER_01.jpg?v=1792385017&width=2000",
+          "swatchSelected": "Butter Yellow",
+          "swatchSuffix": "+ 10 Colours",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "XL Dumpling Bag",
+          "href": "/products/xl-dumpling-bag",
+          "price": "Rp 1.399.000",
+          "image": "/assets/source/3fed35ca9c8642fe.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/XL_TOMATO_01.jpg?v=1792052228&width=2000",
+          "swatchSelected": "Tomato",
+          "swatchSuffix": "+ 6 Colours",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "Suede Dumpling Bag",
+          "href": "/products/suede-dumpling-bag",
+          "price": "Rp 1.799.000",
+          "image": "/assets/source/9e1f9270739947a4.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/SUEDEDUMPLINGFRAME_01.jpg?v=1792380728&width=2001",
+          "swatchSelected": "Frame",
+          "swatchSuffix": "+ 2 Colours",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "notify"
         },
         {
           "title": "Micro Dumpling Bag",
-          "price": "Rp 799.000",
           "href": "/products/micro-dumpling-bag",
+          "price": "Rp 799.000",
           "image": "/assets/source/e921ae8ba08c5a54.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/DUMPLING-MICRO-BLACK_01e993e3-c816-4d20-b234-131f69c978b6.png?v=1763364769&width=2000",
-          "swatches": "Black Olive Fern Green Lilac Neo Mint Blue Blush Black + 6 Colours",
-          "label": ""
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/MICRO_DUMPLING_BLACK_2817d0e1-29ce-4b37-bb33-cb6b0d6660e4.jpg?v=1735661472&width=2000",
+          "swatchSelected": "Black",
+          "swatchSuffix": "+ 6 Colours",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "Confetti Dumpling Bag",
+          "href": "/products/confetti-dumpling-bag",
+          "price": "Rp 1.499.000",
+          "image": "/assets/source/f9e7b32254b591e0.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/XSCON_IVORY01.2.jpg?v=1761559006&width=2000",
+          "swatchSelected": "Ivory",
+          "swatchSuffix": "+ 1 Colour",
+          "labels": [
+            {
+              "text": "limited edition",
+              "className": "jsc-label jsc-var-label label-limited-edition"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "Poofy Bag",
+          "href": "/products/poofy-bag",
+          "price": "Rp 1.039.000",
+          "image": "/assets/source/5cb585ff5d48f5c3.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/products/GREEN-4_0865692a-7a03-4afe-b834-70ea2cde68c7.jpg?v=1735661343&width=2000",
+          "swatchSelected": "Green",
+          "swatchSuffix": "+ 6 Colours",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "Pocket Poofy Bag",
+          "href": "/products/pocket-poofy-bag",
+          "price": "Rp 799.000",
+          "image": "/assets/source/3693d20d22651d48.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/POCKETPOOFY_OLIVE01.jpg?v=1735661223&width=2000",
+          "swatchSelected": "Olive",
+          "swatchSuffix": "+ 3 Colours",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "Extra Small Studio Tote",
+          "href": "/products/extra-small-studio-tote",
+          "price": "Rp 1.039.000",
+          "image": "/assets/source/90c6d58379034758.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/XSSTUDIOTOTE_NAVY01.jpg?v=1779954346&width=2001",
+          "swatchSelected": "Navy/Black",
+          "swatchSuffix": "+ 1 Colour",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "Small Studio Tote",
+          "href": "/products/small-studio-tote",
+          "price": "Rp 1.299.000",
+          "image": "/assets/source/cc39e475e92a437c.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/STUDIOTOTE01_RED04.jpg?v=1761279637&width=2000",
+          "swatchSelected": "Terracotta/Plum",
+          "swatchSuffix": "+ 1 Colour",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "notify"
+        },
+        {
+          "title": "Landscape Studio Tote",
+          "href": "/products/landscape-studio-tote",
+          "price": "Rp 1.299.000",
+          "image": "/assets/source/f2d5049c6aaa1157.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/LANDSCAPE_STUDIO_NAVY_01.jpg?v=1792565239&width=2001",
+          "swatchSelected": "Navy/Black",
+          "swatchSuffix": "+ 3 Colours",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "Large Studio Tote",
+          "href": "/products/large-studio-tote",
+          "price": "Rp 1.799.000",
+          "image": "/assets/source/5eb7de5d3989ced0.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/LARGESTUDIOTOTE_RED01.jpg?v=1779954697&width=2001",
+          "swatchSelected": "Terracotta/Plum",
+          "swatchSuffix": "+ 1 Colour",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "Small Stretch Studio Tote",
+          "href": "/products/small-stretch-studio-tote",
+          "price": "Rp 1.039.000",
+          "image": "/assets/source/2e3bb587e251df62.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/SMALLSTUDIOTOTEBLUE_01.jpg?v=1784001812&width=2000",
+          "swatchSelected": "Periwinkle/Olive",
+          "swatchSuffix": "+ 1 Colour",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "notify"
+        },
+        {
+          "title": "Large Stretch Studio Tote",
+          "href": "/products/large-stretch-studio-tote",
+          "price": "Rp 1.299.000",
+          "image": "/assets/source/89b3bdc5e1a2527d.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/LARGESTUDIOTOTENAVY_01.jpg?v=1784011058&width=2000",
+          "swatchSelected": "Navy/Brown",
+          "swatchSuffix": "+ 1 Colour",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "notify"
+        },
+        {
+          "title": "The Carnival Bag",
+          "href": "/products/the-carnival-bag",
+          "price": "Rp 1.299.000",
+          "image": "/assets/source/b6f78e05639f2329.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CARNIVAL_BLACK_01.jpg?v=1782440853&width=2000",
+          "swatchSelected": "Black Colourblock",
+          "swatchSuffix": "+ 6 Colours",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "add"
         }
-      ]
+      ],
+      "headerBackground": "#eda7cf"
+    },
+    {
+      "title": "Your Favourites",
+      "shopMore": "/collections/your-favourites",
+      "products": [
+        {
+          "title": "BTV-TO-GO Phone Strap",
+          "href": "/products/btv-to-go-phone-strap",
+          "price": "Rp 687.000",
+          "image": "/assets/source/73a8f133fc2b24a6.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/TOGO_PLUM01.jpg?v=1778124240&width=2000",
+          "swatchSelected": "Plum",
+          "swatchSuffix": "+ 17 Colours",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "Crunch Organiser 01",
+          "href": "/products/crunch-organiser-01",
+          "price": "Rp 569.000",
+          "image": "/assets/source/95d91e9705934fb5.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/ORGANISERSBLUSH_01.jpg?v=1758249892&width=2000",
+          "swatchSelected": "Mint/Lilac",
+          "swatchSuffix": "+ 4 Colours",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "Kids Colourblock Backpack",
+          "href": "/products/kids-colourblock-backpack",
+          "price": "Rp 699.000",
+          "image": "/assets/source/ae86dcb08333a847.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/KIDSBACKPACKBROWN_01.jpg?v=1783243654&width=2000",
+          "swatchSelected": "Brown",
+          "swatchSuffix": "+ 3 Colours",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "Poofy Bag",
+          "href": "/products/poofy-bag",
+          "price": "Rp 1.039.000",
+          "image": "/assets/source/5cb585ff5d48f5c3.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/products/GREEN-4_0865692a-7a03-4afe-b834-70ea2cde68c7.jpg?v=1735661343&width=2000",
+          "swatchSelected": "Green",
+          "swatchSuffix": "+ 6 Colours",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "Womens Classic Long Sleeve Shirt",
+          "href": "/products/womens-classic-long-sleeve-shirt",
+          "price": "Rp 1.039.000",
+          "image": "/assets/source/713b572f9560baed.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/LINENSHIRT_FRONT_LILAC_00823c0b-7e92-4594-815c-e1665c7d7d85.jpg?v=1788349352&width=2000",
+          "swatchSelected": "Maroon Checkered",
+          "swatchSuffix": "+ 1 Colour",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "Mini ParaPouch",
+          "href": "/products/mini-parapouch",
+          "price": "Rp 569.000",
+          "image": "/assets/source/cecd968018f8aa66.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/SMALLPARAPOUCH_BRICK01.jpg?v=1790929032&width=2001",
+          "swatchSelected": "Brick Red Colourblock",
+          "swatchSuffix": "+ 10 Colours",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "Crunch Carryall 0.5",
+          "href": "/products/crunch-carryall-0-5",
+          "price": "Rp 799.000",
+          "image": "/assets/source/a904a283878cd4ba.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CC05_BLACK01_1d8a2210-830b-44eb-af0e-ad1bf062521a.jpg?v=1763362784&width=2000",
+          "swatchSelected": "Black",
+          "swatchSuffix": "+ 4 Colours",
+          "labels": [],
+          "overlayLabels": [
+            {
+              "text": "RECEIVE A COMPLIMENTARY HEART POCKET MIRROR",
+              "className": "jsc-label jsc-var-label label-discount-code"
+            }
+          ],
+          "button": "add"
+        },
+        {
+          "title": "Large Stretch Studio Tote",
+          "href": "/products/large-stretch-studio-tote",
+          "price": "Rp 1.299.000",
+          "image": "/assets/source/89b3bdc5e1a2527d.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/LARGESTUDIOTOTENAVY_01.jpg?v=1784011058&width=2000",
+          "swatchSelected": "Navy/Brown",
+          "swatchSuffix": "+ 1 Colour",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "notify"
+        },
+        {
+          "title": "ParaPack 002",
+          "href": "/products/parapack-002",
+          "price": "Rp 1.499.000",
+          "image": "/assets/source/04389960d644433a.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPACK02_BRICK01.jpg?v=1790927906&width=2001",
+          "swatchSelected": "Brick Red",
+          "swatchSuffix": "+ 7 Colours",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "ParaPouch",
+          "href": "/products/parapouch",
+          "price": "Rp 699.000",
+          "image": "/assets/source/1df34f5bb7bcdbcf.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/LARGEPARAPOUCH_BROWN01.jpg?v=1790929272&width=2001",
+          "swatchSelected": "Charcoal Colourblock",
+          "swatchSuffix": "+ 9 Colours",
+          "labels": [
+            {
+              "text": "new",
+              "className": "jsc-label jsc-var-label label-new"
+            }
+          ],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "Crunch Carryall 01",
+          "href": "/products/crunch-carryall-01",
+          "price": "Rp 1.039.000",
+          "image": "/assets/source/4d154223d5ab87d1.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CC01_LILAC_01.jpg?v=1735661180&width=2000",
+          "swatchSelected": "Lilac",
+          "swatchSuffix": "+ 4 Colours",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "add"
+        },
+        {
+          "title": "Micro Dumpling Bag",
+          "href": "/products/micro-dumpling-bag",
+          "price": "Rp 799.000",
+          "image": "/assets/source/e921ae8ba08c5a54.jpg",
+          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/MICRO_DUMPLING_BLACK_2817d0e1-29ce-4b37-bb33-cb6b0d6660e4.jpg?v=1735661472&width=2000",
+          "swatchSelected": "Black",
+          "swatchSuffix": "+ 6 Colours",
+          "labels": [],
+          "overlayLabels": [],
+          "button": "add"
+        }
+      ],
+      "headerBackground": "#002ea1"
     }
   ],
   "social": {
-    "titleLines": ["BTV", "ON YOU"],
+    "titleLines": [
+      "BTV",
+      "ON YOU"
+    ],
     "subtitle": "See it on, cart it out! BTV Community in Beyond The Vines. Tag us ",
     "instagramHandle": "@aworldbeyondthevines",
     "instagramUrl": "https://www.instagram.com/aworldbeyondthevines/",
@@ -444,7 +1008,31 @@
       "/assets/social/social-05.jpg",
       "/assets/social/social-06.jpg",
       "/assets/social/social-07.jpg",
-      "/assets/social/social-08.jpg"
+      "/assets/social/social-08.jpg",
+      "/assets/social/social-09.jpg",
+      "/assets/social/social-10.jpg",
+      "/assets/social/social-11.jpg",
+      "/assets/social/social-12.jpg",
+      "/assets/social/social-13.jpg",
+      "/assets/social/social-14.jpg",
+      "/assets/social/social-15.jpg",
+      "/assets/social/social-16.jpg",
+      "/assets/social/social-17.jpg",
+      "/assets/social/social-18.jpg",
+      "/assets/social/social-19.jpg",
+      "/assets/social/social-20.jpg",
+      "/assets/social/social-21.jpg",
+      "/assets/social/social-22.jpg",
+      "/assets/social/social-23.jpg",
+      "/assets/social/social-24.jpg",
+      "/assets/social/social-25.jpg",
+      "/assets/social/social-26.jpg",
+      "/assets/social/social-27.jpg",
+      "/assets/social/social-28.jpg",
+      "/assets/social/social-29.jpg",
+      "/assets/social/social-30.jpg",
+      "/assets/social/social-31.jpg",
+      "/assets/social/social-32.jpg"
     ],
     "feedLoops": 4,
     "images": [
@@ -460,21 +1048,37 @@
       "/assets/social/social-10.jpg",
       "/assets/social/social-11.jpg",
       "/assets/social/social-12.jpg"
-    ]
+    ],
+    "feedSnapshot": "2026-11-04 (source Instafeed, 32 posts = rowsLimit 4 x 8 columns; hash-verified against reference/data/r220-feed-downloads.json)"
   },
   "newsletter": {
     "title": "Newsletter",
     "tagline": "Be the first to know!",
     "placeholder": "Enter Your Email",
     "buttonText": "Subscribe",
-    "descriptionDesktop": ["Sign up for the latest launches, early access, ", "special collaborations, you already know it! Here’s the place!"],
-    "descriptionMobile": ["Sign up for the latest launches, early access, special collaborations, you already know it!", "Here’s the place!"],
+    "descriptionDesktop": [
+      "Sign up for the latest launches, early access, ",
+      "special collaborations, you already know it! Here’s the place!"
+    ],
+    "descriptionMobile": [
+      "Sign up for the latest launches, early access, special collaborations, you already know it!",
+      "Here’s the place!"
+    ],
     "successMessage": "Thank you for subscribing!"
   },
   "payments": [
-    { "name": "VISA", "image": "/assets/payments/BTV_Payment_Logo_VISA.webp" },
-    { "name": "MASTERCARD", "image": "/assets/payments/BTV_Payment_Logo_MASTERCARD.webp" },
-    { "name": "QRIS", "image": "/assets/payments/BTV_Payment_Logo_QRIS.webp" }
+    {
+      "name": "VISA",
+      "image": "/assets/payments/BTV_Payment_Logo_VISA.webp"
+    },
+    {
+      "name": "MASTERCARD",
+      "image": "/assets/payments/BTV_Payment_Logo_MASTERCARD.webp"
+    },
+    {
+      "name": "QRIS",
+      "image": "/assets/payments/BTV_Payment_Logo_QRIS.webp"
+    }
   ],
   "footerLinks": [
     {
@@ -569,5 +1173,6 @@
       "text": "Linkedin",
       "href": "/company/14504512/"
     }
-  ]
+  ],
+  "collectionsCapturedAt": "2026-11-04T16:08:11.043Z"
 }

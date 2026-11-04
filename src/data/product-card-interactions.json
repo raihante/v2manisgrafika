@@ -7,7 +7,7 @@
     "variants": [
       {
         "label": "Navy/Black",
-        "image": "/assets/source/f2d5049c6aaa1157.jpg",
+        "image": "/assets/product-variants/3a63b3d782664558.jpg",
         "thumbnail": "/assets/product-variants/4cf3d8e62c4e252e.webp",
         "soldOut": false
       },
@@ -39,7 +39,7 @@
     "variants": [
       {
         "label": "Multi",
-        "image": "/assets/source/52711885a7467953.jpg",
+        "image": "/assets/product-variants/c0577d37fc2d033d.jpg",
         "thumbnail": "/assets/product-variants/ce72fb466fcf55ca.webp",
         "soldOut": true
       }
@@ -53,7 +53,7 @@
     "variants": [
       {
         "label": "Dark Green",
-        "image": "/assets/source/3d3bd2a5a8137ef8.jpg",
+        "image": "/assets/product-variants/d47ae4ac30ce6304.jpg",
         "thumbnail": "/assets/product-variants/e1b478af8100ccbd.webp",
         "soldOut": false
       },
@@ -151,7 +151,7 @@
     "variants": [
       {
         "label": "Butter Yellow",
-        "image": "/assets/source/3c3ee7a605fc960e.jpg",
+        "image": "/assets/product-variants/a1e098ca312b4697.jpg",
         "thumbnail": "/assets/product-variants/b4935ba05a988ad7.webp",
         "soldOut": false
       },
@@ -201,7 +201,7 @@
         "label": "Steel Blue",
         "image": "/assets/product-variants/d85e2c71b37c4367.jpg",
         "thumbnail": "/assets/product-variants/b72bcd399ba95cc4.png",
-        "soldOut": false
+        "soldOut": true
       },
       {
         "label": "Blush",
@@ -225,7 +225,7 @@
     "variants": [
       {
         "label": "Tomato",
-        "image": "/assets/source/3fed35ca9c8642fe.jpg",
+        "image": "/assets/product-variants/ca1c0e3f599cd203.jpg",
         "thumbnail": "/assets/product-variants/acf23c371beeee09.webp",
         "soldOut": false
       },
@@ -275,7 +275,7 @@
     "variants": [
       {
         "label": "Frame",
-        "image": "/assets/source/9e1f9270739947a4.jpg",
+        "image": "/assets/product-variants/0f7a199129bfb4d4.jpg",
         "thumbnail": "/assets/product-variants/2017dcff39bcf53c.webp",
         "soldOut": true
       },
@@ -301,7 +301,7 @@
     "variants": [
       {
         "label": "Periwinkle",
-        "image": "/assets/source/95913fe7bd7e7234.jpg",
+        "image": "/assets/product-variants/940bbbb62aa837e9.jpg",
         "thumbnail": "/assets/product-variants/da7ce65a87d909a0.webp",
         "soldOut": false
       },
@@ -363,7 +363,7 @@
     "variants": [
       {
         "label": "Brick Red",
-        "image": "/assets/source/04389960d644433a.jpg",
+        "image": "/assets/product-variants/546499f7b9969191.jpg",
         "thumbnail": "/assets/product-variants/ec47c8a80b592464.webp",
         "soldOut": false
       },
@@ -419,7 +419,7 @@
     "variants": [
       {
         "label": "Brick Red Colourblock",
-        "image": "/assets/source/cecd968018f8aa66.jpg",
+        "image": "/assets/product-variants/578b485ac47b66ed.jpg",
         "thumbnail": "/assets/product-variants/9fd83c47c9dd1108.webp",
         "soldOut": false
       },
@@ -493,7 +493,7 @@
     "variants": [
       {
         "label": "Charcoal Colourblock",
-        "image": "/assets/source/1df34f5bb7bcdbcf.jpg",
+        "image": "/assets/product-variants/568f8d3593a8b767.jpg",
         "thumbnail": "/assets/product-variants/f6ae4a7e26299d5a.webp",
         "soldOut": false
       },
@@ -561,7 +561,7 @@
     "variants": [
       {
         "label": "Clear Grey",
-        "image": "/assets/source/1e131637338942b5.jpg",
+        "image": "/assets/product-variants/04681193b41ae5fe.jpg",
         "thumbnail": "/assets/product-variants/22de52ad7b3a3f7b.webp",
         "soldOut": false
       },
@@ -587,7 +587,7 @@
     "variants": [
       {
         "label": "Tortoise Shell",
-        "image": "/assets/source/c9cae4ac9a4152c3.jpg",
+        "image": "/assets/product-variants/c813a0beca5d4757.jpg",
         "thumbnail": "/assets/product-variants/5afab5b6e582de64.webp",
         "soldOut": false
       },
@@ -595,6 +595,306 @@
         "label": "Clear",
         "image": "/assets/product-variants/0520017c3d10655b.jpg",
         "thumbnail": "/assets/product-variants/2ab6f2df7fc294fd.png",
+        "soldOut": false
+      }
+    ]
+  },
+  "Parallel™ Eyewear - Horizon": {
+    "secondaryImages": [
+      "/assets/source/ada8747b3c2cff7a.jpg",
+      "/assets/source/2f882b5ad7ac4ee6.jpg"
+    ],
+    "variants": [
+      {
+        "label": "Clear Sand",
+        "image": "/assets/product-variants/82a4e2719d8939b2.jpg",
+        "thumbnail": "/assets/product-variants/4e9c710b474f05f8.webp",
+        "soldOut": false
+      },
+      {
+        "label": "Tortoise Shell Colourblock",
+        "image": "/assets/product-variants/c8890a49326560de.jpg",
+        "thumbnail": "/assets/product-variants/e0dd49dbafab140a.png",
+        "soldOut": false
+      },
+      {
+        "label": "Clear Grey",
+        "image": "/assets/product-variants/1b352a3b692b1431.jpg",
+        "thumbnail": "/assets/product-variants/4014b94c02320b1f.png",
+        "soldOut": false
+      }
+    ]
+  },
+  "ParaPocket 001": {
+    "secondaryImages": [
+      "/assets/source/2f6dc7f1aaa5f20f.jpg",
+      "/assets/source/24e18eb33c0fd959.jpg"
+    ],
+    "variants": [
+      {
+        "label": "Periwinkle/Maroon",
+        "image": "/assets/product-variants/6f8c79be95f04ae0.jpg",
+        "thumbnail": "/assets/product-variants/26ff01131002dfc3.webp",
+        "soldOut": false
+      },
+      {
+        "label": "Teal/Charcoal",
+        "image": "/assets/product-variants/1c217601b19cd458.jpg",
+        "thumbnail": "/assets/product-variants/7ad4e0f9aa12a950.webp",
+        "soldOut": false
+      },
+      {
+        "label": "Black",
+        "image": "/assets/product-variants/787468a1e1d75310.jpg",
+        "thumbnail": "/assets/product-variants/bfa214ac330cd86f.webp",
+        "soldOut": false
+      }
+    ]
+  },
+  "ParaPocket 002": {
+    "secondaryImages": [
+      "/assets/source/d7e4f4bfcb670c3e.jpg",
+      "/assets/source/f3fb76d7f9b3d6c5.jpg"
+    ],
+    "variants": [
+      {
+        "label": "Teal/Charcoal",
+        "image": "/assets/product-variants/36da4e733811693c.jpg",
+        "thumbnail": "/assets/product-variants/7e7e24c4dadf2fd4.webp",
+        "soldOut": false
+      },
+      {
+        "label": "Periwinkle/Maroon",
+        "image": "/assets/product-variants/060188e6e0940178.jpg",
+        "thumbnail": "/assets/product-variants/d8251db4d22ff485.webp",
+        "soldOut": false
+      },
+      {
+        "label": "Black",
+        "image": "/assets/product-variants/3892cfc73f111d60.jpg",
+        "thumbnail": "/assets/product-variants/816d7d0d4d2fce6f.webp",
+        "soldOut": false
+      }
+    ]
+  },
+  "Two Tone Travel Pouch (Extra Small)": {
+    "secondaryImages": [
+      "/assets/source/47a6bf1956b3719a.jpg",
+      "/assets/source/87f8cd4d1ce77f97.jpg"
+    ],
+    "variants": [
+      {
+        "label": "Pink/Yellow",
+        "image": "/assets/product-variants/a4a02a9de6790212.jpg",
+        "thumbnail": "/assets/product-variants/aa67cd1a7a4f75d8.webp",
+        "soldOut": false
+      },
+      {
+        "label": "Blue/Red",
+        "image": "/assets/product-variants/c0b6088b7b7115cd.jpg",
+        "thumbnail": "/assets/product-variants/62eda3abde3bcc81.webp",
+        "soldOut": false
+      },
+      {
+        "label": "Light Blue/Green",
+        "image": "/assets/product-variants/03110061ffbab4e3.jpg",
+        "thumbnail": "/assets/product-variants/3fc204d29a651d03.webp",
+        "soldOut": false
+      }
+    ]
+  },
+  "Two Tone Travel Pouch (Small)": {
+    "secondaryImages": [
+      "/assets/source/3d5994e9bc763f35.jpg",
+      "/assets/source/97de3fa177893ea3.jpg"
+    ],
+    "variants": [
+      {
+        "label": "Light Blue/Green",
+        "image": "/assets/product-variants/c3e3e058320aa30a.jpg",
+        "thumbnail": "/assets/product-variants/3fc204d29a651d03.webp",
+        "soldOut": true
+      },
+      {
+        "label": "Pink/Yellow",
+        "image": "/assets/product-variants/47bd5e6434d00509.jpg",
+        "thumbnail": "/assets/product-variants/aa67cd1a7a4f75d8.webp",
+        "soldOut": true
+      },
+      {
+        "label": "Blue/Red",
+        "image": "/assets/product-variants/2ebb56bfbead0730.jpg",
+        "thumbnail": "/assets/product-variants/62eda3abde3bcc81.webp",
+        "soldOut": true
+      }
+    ]
+  },
+  "Crunch Carryall 1.5": {
+    "secondaryImages": [
+      "/assets/source/836a2abab4f29831.jpg",
+      "/assets/source/062e1ada88f87cd1.jpg"
+    ],
+    "variants": [
+      {
+        "label": "Dusty Pink",
+        "image": "/assets/product-variants/bb5756d614d5d453.jpg",
+        "thumbnail": "/assets/product-variants/deb78b2bf140386e.webp",
+        "soldOut": true
+      },
+      {
+        "label": "Cream",
+        "image": "/assets/product-variants/719b96674efbdb7f.jpg",
+        "thumbnail": "/assets/product-variants/f11bf428bcc73e5a.webp",
+        "soldOut": true
+      },
+      {
+        "label": "Black",
+        "image": "/assets/product-variants/86b2df8d4def2168.jpg",
+        "thumbnail": "/assets/product-variants/1f93d82ad742ad0d.webp",
+        "soldOut": true
+      }
+    ]
+  },
+  "Womens Linen Long Sleeve Shirt": {
+    "secondaryImages": [
+      "/assets/source/dd6c60ee7f29071f.jpg",
+      "/assets/source/5ab1a75e58a51484.jpg"
+    ],
+    "variants": [
+      {
+        "label": "Dark Red",
+        "image": "/assets/product-variants/4ce8ef310606042e.jpg",
+        "thumbnail": "/assets/product-variants/96358b2c8201df31.webp",
+        "soldOut": false
+      },
+      {
+        "label": "Ivory",
+        "image": "/assets/product-variants/0389caaf88c397ab.jpg",
+        "thumbnail": "/assets/product-variants/dca46df067668dd3.webp",
+        "soldOut": false
+      }
+    ]
+  },
+  "Womens Classic Long Sleeve Shirt": {
+    "secondaryImages": [
+      "/assets/source/5a4029b913c239fd.jpg",
+      "/assets/source/6dc9c13d52cb67d9.jpg"
+    ],
+    "variants": [
+      {
+        "label": "Maroon Checkered",
+        "image": "/assets/product-variants/99ce569ade4ec6cb.jpg",
+        "thumbnail": "/assets/product-variants/40f44a15976d2ed9.webp",
+        "soldOut": false
+      },
+      {
+        "label": "Dark Chambray",
+        "image": "/assets/product-variants/52405fc86713685f.jpg",
+        "thumbnail": "/assets/product-variants/da9547311e7a43f8.webp",
+        "soldOut": false
+      }
+    ]
+  },
+  "Womens Contrast Ribbed Tank Top": {
+    "secondaryImages": [
+      "/assets/source/3aef3bfed5db990d.jpg",
+      "/assets/source/1527511ddeb46c4a.jpg"
+    ],
+    "variants": [
+      {
+        "label": "Cream",
+        "image": "/assets/product-variants/302c9af160bb9271.jpg",
+        "thumbnail": "/assets/product-variants/fa4ba1aeb65ce955.webp",
+        "soldOut": false
+      },
+      {
+        "label": "Charcoal",
+        "image": "/assets/product-variants/253434481f08e007.jpg",
+        "thumbnail": "/assets/product-variants/11f96a0f2fbc5bb9.webp",
+        "soldOut": false
+      },
+      {
+        "label": "Dark Red",
+        "image": "/assets/product-variants/ded80edfbcad1666.jpg",
+        "thumbnail": "/assets/product-variants/503f5b62d2dad51d.webp",
+        "soldOut": false
+      }
+    ]
+  },
+  "Womens Cotton Boxy Shirt Dress": {
+    "secondaryImages": [
+      "/assets/source/ced2676f3d2f87e8.jpg",
+      "/assets/source/d11a5ce584a83c92.jpg"
+    ],
+    "variants": [
+      {
+        "label": "Dark Chambray",
+        "image": "/assets/product-variants/d75c5086b4c34ec4.jpg",
+        "thumbnail": "/assets/product-variants/2fe30ee739f387fc.webp",
+        "soldOut": false
+      },
+      {
+        "label": "Brown",
+        "image": "/assets/product-variants/bf721f6e077a4764.jpg",
+        "thumbnail": "/assets/product-variants/6e43ca0d379dfe28.webp",
+        "soldOut": false
+      },
+      {
+        "label": "Black",
+        "image": "/assets/product-variants/f3ebc02ee0cf8d06.jpg",
+        "thumbnail": "/assets/product-variants/73504948973446da.webp",
+        "soldOut": false
+      }
+    ]
+  },
+  "Womens Front Wrap Shorts": {
+    "secondaryImages": [
+      "/assets/source/4cd3516ae238d6c8.jpg",
+      "/assets/source/05f1357f50e43d5f.jpg"
+    ],
+    "variants": [
+      {
+        "label": "Black",
+        "image": "/assets/product-variants/ff3fc0265658c226.jpg",
+        "thumbnail": "/assets/product-variants/4c18e988d6cfd6be.webp",
+        "soldOut": false
+      },
+      {
+        "label": "Maroon",
+        "image": "/assets/product-variants/e4bac2f3990a1c7a.jpg",
+        "thumbnail": "/assets/product-variants/2a5243967f5ddf8b.webp",
+        "soldOut": false
+      },
+      {
+        "label": "Dark Chambray",
+        "image": "/assets/product-variants/b135b43e869bd066.jpg",
+        "thumbnail": "/assets/product-variants/8af0aa3f1e8c325d.webp",
+        "soldOut": false
+      }
+    ]
+  },
+  "Womens Barrel Jersey Trouser": {
+    "secondaryImages": [
+      "/assets/source/713bbd578898e5f1.jpg",
+      "/assets/source/ddfc06607a870fee.jpg"
+    ],
+    "variants": [
+      {
+        "label": "Light Olive",
+        "image": "/assets/product-variants/a25b67e9b625e698.jpg",
+        "thumbnail": "/assets/product-variants/5925d1dec62930c8.webp",
+        "soldOut": false
+      },
+      {
+        "label": "Steel Blue",
+        "image": "/assets/product-variants/6e01bde66e35e130.jpg",
+        "thumbnail": "/assets/product-variants/636bad460ee1b773.webp",
+        "soldOut": false
+      },
+      {
+        "label": "Black",
+        "image": "/assets/product-variants/b7a66d29ea39adfc.jpg",
+        "thumbnail": "/assets/product-variants/00118a12f4ffd5ae.webp",
         "soldOut": false
       }
     ]
@@ -607,7 +907,7 @@
     "variants": [
       {
         "label": "Black",
-        "image": "/assets/source/a904a283878cd4ba.jpg",
+        "image": "/assets/product-variants/86fb28bec88f2eeb.jpg",
         "thumbnail": "/assets/product-variants/bc9c72df1110e04b.png",
         "soldOut": false
       },
@@ -645,7 +945,7 @@
     "variants": [
       {
         "label": "Lilac",
-        "image": "/assets/source/4d154223d5ab87d1.jpg",
+        "image": "/assets/product-variants/63c961211ebd418b.jpg",
         "thumbnail": "/assets/product-variants/ca6a4972d36ffe91.png",
         "soldOut": false
       },
@@ -683,7 +983,7 @@
     "variants": [
       {
         "label": "Cream",
-        "image": "/assets/source/4608990cd54254f9.jpg",
+        "image": "/assets/product-variants/96a0ece23fa6dc67.jpg",
         "thumbnail": "/assets/product-variants/e4557f99c67907e9.png",
         "soldOut": false
       },
@@ -713,32 +1013,6 @@
       }
     ]
   },
-  "Crunch Carryall 1.5": {
-    "secondaryImages": [
-      "/assets/source/836a2abab4f29831.jpg",
-      "/assets/source/062e1ada88f87cd1.jpg"
-    ],
-    "variants": [
-      {
-        "label": "Dusty Pink",
-        "image": "/assets/source/f0bf3377ce6f9d7e.jpg",
-        "thumbnail": "/assets/product-variants/deb78b2bf140386e.webp",
-        "soldOut": true
-      },
-      {
-        "label": "Cream",
-        "image": "/assets/product-variants/719b96674efbdb7f.jpg",
-        "thumbnail": "/assets/product-variants/f11bf428bcc73e5a.webp",
-        "soldOut": true
-      },
-      {
-        "label": "Black",
-        "image": "/assets/product-variants/86b2df8d4def2168.jpg",
-        "thumbnail": "/assets/product-variants/1f93d82ad742ad0d.webp",
-        "soldOut": true
-      }
-    ]
-  },
   "Crunch Carryall 03": {
     "secondaryImages": [
       "/assets/source/7852c496faab7eef.jpg",
@@ -747,7 +1021,7 @@
     "variants": [
       {
         "label": "Black",
-        "image": "/assets/source/02463a4b2ee5ad31.jpg",
+        "image": "/assets/product-variants/df29753512812867.jpg",
         "thumbnail": "/assets/product-variants/b894917743e081cc.png",
         "soldOut": false
       },
@@ -777,54 +1051,304 @@
       }
     ]
   },
-  "ParaPocket 001": {
+  "Micro Dumpling Bag": {
     "secondaryImages": [
-      "/assets/source/2f6dc7f1aaa5f20f.jpg",
-      "/assets/source/24e18eb33c0fd959.jpg"
+      "/assets/source/d73f0be74a54f9e1.png",
+      "/assets/source/5f7308161d7f33e0.jpg"
     ],
     "variants": [
       {
-        "label": "Periwinkle/Maroon",
-        "image": "/assets/source/46bf0bf0326a298c.jpg",
-        "thumbnail": "/assets/product-variants/26ff01131002dfc3.webp",
-        "soldOut": false
-      },
-      {
-        "label": "Teal/Charcoal",
-        "image": "/assets/product-variants/1c217601b19cd458.jpg",
-        "thumbnail": "/assets/product-variants/7ad4e0f9aa12a950.webp",
-        "soldOut": false
-      },
-      {
         "label": "Black",
-        "image": "/assets/product-variants/787468a1e1d75310.jpg",
-        "thumbnail": "/assets/product-variants/bfa214ac330cd86f.webp",
+        "image": "/assets/product-variants/1bc9bdc171119b66.jpg",
+        "thumbnail": "/assets/product-variants/6076497fa09c4e14.png",
+        "soldOut": false
+      },
+      {
+        "label": "Olive",
+        "image": "/assets/product-variants/0d81fcdd41d7399a.jpg",
+        "thumbnail": "/assets/product-variants/2f178467b7d056ad.png",
+        "soldOut": false
+      },
+      {
+        "label": "Fern Green",
+        "image": "/assets/product-variants/fdad230ed0ba25c8.jpg",
+        "thumbnail": "/assets/product-variants/9e66812398d0bcbb.png",
+        "soldOut": false
+      },
+      {
+        "label": "Lilac",
+        "image": "/assets/product-variants/f1b5f20dba1f5992.jpg",
+        "thumbnail": "/assets/product-variants/cc11d007e7a1794c.png",
+        "soldOut": false
+      },
+      {
+        "label": "Neo Mint",
+        "image": "/assets/product-variants/08d2e9eb6b19040c.jpg",
+        "thumbnail": "/assets/product-variants/a88fd1c89329b2d8.png",
+        "soldOut": false
+      },
+      {
+        "label": "Blue",
+        "image": "/assets/product-variants/56b0aa7685136bc5.jpg",
+        "thumbnail": "/assets/product-variants/350d07c001016086.png",
+        "soldOut": false
+      },
+      {
+        "label": "Blush",
+        "image": "/assets/product-variants/4d70cc0360a24d49.jpg",
+        "thumbnail": "/assets/product-variants/85cec79959fb3bb3.png",
         "soldOut": false
       }
     ]
   },
-  "ParaPocket 002": {
+  "Confetti Dumpling Bag": {
     "secondaryImages": [
-      "/assets/source/d7e4f4bfcb670c3e.jpg",
-      "/assets/source/f3fb76d7f9b3d6c5.jpg"
+      "/assets/source/794d45336e0a7fab.jpg",
+      "/assets/source/1ff5334a0c7d5556.jpg"
     ],
     "variants": [
       {
-        "label": "Teal/Charcoal",
-        "image": "/assets/source/03457f219026bc23.jpg",
-        "thumbnail": "/assets/product-variants/7e7e24c4dadf2fd4.webp",
+        "label": "Ivory",
+        "image": "/assets/product-variants/66c7d8577e0bada1.jpg",
+        "thumbnail": "/assets/product-variants/daa7f8da9b980c0f.png",
         "soldOut": false
       },
       {
-        "label": "Periwinkle/Maroon",
-        "image": "/assets/product-variants/060188e6e0940178.jpg",
-        "thumbnail": "/assets/product-variants/d8251db4d22ff485.webp",
+        "label": "Periwinkle",
+        "image": "/assets/product-variants/8d768d8c99115dc1.jpg",
+        "thumbnail": "/assets/product-variants/6fb5f3e62c891b32.png",
+        "soldOut": true
+      }
+    ]
+  },
+  "Poofy Bag": {
+    "secondaryImages": [
+      "/assets/source/468be68d148e5d0f.png",
+      "/assets/source/b47d064a1f66e3c8.png"
+    ],
+    "variants": [
+      {
+        "label": "Green",
+        "image": "/assets/product-variants/668d6299ba1f76b9.jpg",
+        "thumbnail": "/assets/product-variants/40a34ede9bdc421e.png",
+        "soldOut": false
+      },
+      {
+        "label": "Lime",
+        "image": "/assets/product-variants/a40193097c6d5442.jpg",
+        "thumbnail": "/assets/product-variants/5ecceb5b069893d5.png",
+        "soldOut": false
+      },
+      {
+        "label": "Orange",
+        "image": "/assets/product-variants/e20fc54c088ead84.jpg",
+        "thumbnail": "/assets/product-variants/6524ba73d96f36c1.png",
+        "soldOut": false
+      },
+      {
+        "label": "Cobalt",
+        "image": "/assets/product-variants/c4a3552f03bae91b.jpg",
+        "thumbnail": "/assets/product-variants/9f6ec88023ae723e.png",
+        "soldOut": false
+      },
+      {
+        "label": "Periwinkle",
+        "image": "/assets/product-variants/19e11c3e54f74cc0.jpg",
+        "thumbnail": "/assets/product-variants/51ae81ecee01bf00.png",
+        "soldOut": false
+      },
+      {
+        "label": "Moss",
+        "image": "/assets/product-variants/08b9d3420781a0b9.jpg",
+        "thumbnail": "/assets/product-variants/8dd2218e0cadd5ab.png",
         "soldOut": false
       },
       {
         "label": "Black",
-        "image": "/assets/product-variants/3892cfc73f111d60.jpg",
-        "thumbnail": "/assets/product-variants/816d7d0d4d2fce6f.webp",
+        "image": "/assets/product-variants/01d05bd8beee6731.png",
+        "thumbnail": "/assets/product-variants/b5e0072d0719b4da.png",
+        "soldOut": false
+      }
+    ]
+  },
+  "Pocket Poofy Bag": {
+    "secondaryImages": [
+      "/assets/source/be446ae2556623b0.png",
+      "/assets/source/f0d9c5760b59de1b.png"
+    ],
+    "variants": [
+      {
+        "label": "Olive",
+        "image": "/assets/product-variants/4296d145a284fefb.jpg",
+        "thumbnail": "/assets/product-variants/2f178467b7d056ad.png",
+        "soldOut": false
+      },
+      {
+        "label": "Pale Lime",
+        "image": "/assets/product-variants/a6ab8c6a46c53057.jpg",
+        "thumbnail": "/assets/product-variants/c209bd44c342488e.png",
+        "soldOut": false
+      },
+      {
+        "label": "Neon Orange",
+        "image": "/assets/product-variants/2a0c4559ef549377.jpg",
+        "thumbnail": "/assets/product-variants/71a81b917da1ba0d.png",
+        "soldOut": false
+      },
+      {
+        "label": "Red",
+        "image": "/assets/product-variants/465cb115e7188e37.jpg",
+        "thumbnail": "/assets/product-variants/7fcd82391a2ad6ff.png",
+        "soldOut": false
+      }
+    ]
+  },
+  "Extra Small Studio Tote": {
+    "secondaryImages": [
+      "/assets/source/28ac02e4b7309ed2.jpg",
+      "/assets/source/c3c006cb2884162e.jpg"
+    ],
+    "variants": [
+      {
+        "label": "Navy/Black",
+        "image": "/assets/product-variants/7904be81473bed33.jpg",
+        "thumbnail": "/assets/product-variants/f9d17779f6e0f374.png",
+        "soldOut": false
+      },
+      {
+        "label": "Terracotta/Plum",
+        "image": "/assets/product-variants/70ef432d9fdc3f91.jpg",
+        "thumbnail": "/assets/product-variants/396f32b8fe90c422.png",
+        "soldOut": true
+      }
+    ]
+  },
+  "Small Studio Tote": {
+    "secondaryImages": [
+      "/assets/source/431ef5e86726f755.jpg",
+      "/assets/source/e2365da9795b8af6.jpg"
+    ],
+    "variants": [
+      {
+        "label": "Terracotta/Plum",
+        "image": "/assets/product-variants/48b978453c9dfa9a.jpg",
+        "thumbnail": "/assets/product-variants/4e53b7603d7ec35e.png",
+        "soldOut": true
+      },
+      {
+        "label": "Navy/Black",
+        "image": "/assets/product-variants/d43fd338be3a1130.jpg",
+        "thumbnail": "/assets/product-variants/82263f55ed67ce90.png",
+        "soldOut": true
+      }
+    ]
+  },
+  "Large Studio Tote": {
+    "secondaryImages": [
+      "/assets/source/c56f3273697e19ce.jpg",
+      "/assets/source/0f3d7ea63cad5035.jpg"
+    ],
+    "variants": [
+      {
+        "label": "Terracotta/Plum",
+        "image": "/assets/product-variants/78acb08dee8ceaf5.jpg",
+        "thumbnail": "/assets/product-variants/396f32b8fe90c422.png",
+        "soldOut": false
+      },
+      {
+        "label": "Navy/Black",
+        "image": "/assets/product-variants/2db758d9e8d554e2.jpg",
+        "thumbnail": "/assets/product-variants/e2a45a870d69be4c.png",
+        "soldOut": true
+      }
+    ]
+  },
+  "Small Stretch Studio Tote": {
+    "secondaryImages": [
+      "/assets/source/48a3ee53b97d53d1.jpg",
+      "/assets/source/17a2326453d81872.jpg"
+    ],
+    "variants": [
+      {
+        "label": "Periwinkle/Olive",
+        "image": "/assets/product-variants/eb1e68bb8ee4a464.jpg",
+        "thumbnail": "/assets/product-variants/784d4a2df050b0dd.webp",
+        "soldOut": true
+      },
+      {
+        "label": "Navy/Brown",
+        "image": "/assets/product-variants/4e4b3043466f98c8.jpg",
+        "thumbnail": "/assets/product-variants/56d6a5b4238f37fa.webp",
+        "soldOut": true
+      }
+    ]
+  },
+  "Large Stretch Studio Tote": {
+    "secondaryImages": [
+      "/assets/source/8869e315fe50875c.jpg",
+      "/assets/source/1256ce9bb2db2a46.jpg"
+    ],
+    "variants": [
+      {
+        "label": "Navy/Brown",
+        "image": "/assets/product-variants/c1f118c803518e60.jpg",
+        "thumbnail": "/assets/product-variants/56d6a5b4238f37fa.webp",
+        "soldOut": true
+      },
+      {
+        "label": "Periwinkle/Olive",
+        "image": "/assets/product-variants/8b9ab229264062a0.jpg",
+        "thumbnail": "/assets/product-variants/784d4a2df050b0dd.webp",
+        "soldOut": true
+      }
+    ]
+  },
+  "The Carnival Bag": {
+    "secondaryImages": [
+      "/assets/source/e7dddca464b13669.jpg",
+      "/assets/source/aad81a2918198801.jpg"
+    ],
+    "variants": [
+      {
+        "label": "Black Colourblock",
+        "image": "/assets/product-variants/276313ebd146a149.jpg",
+        "thumbnail": "/assets/product-variants/b81e0d2806abb222.png",
+        "soldOut": false
+      },
+      {
+        "label": "Grey Colourblock",
+        "image": "/assets/product-variants/6ae508f2858028d1.jpg",
+        "thumbnail": "/assets/product-variants/7b265f7e72a05291.png",
+        "soldOut": false
+      },
+      {
+        "label": "Cream Colourblock",
+        "image": "/assets/product-variants/a2799e7159ec7559.jpg",
+        "thumbnail": "/assets/product-variants/2169167bbca72e17.png",
+        "soldOut": false
+      },
+      {
+        "label": "Khaki Colourblock",
+        "image": "/assets/product-variants/be48656e46e1444d.jpg",
+        "thumbnail": "/assets/product-variants/edb8b438f3feaf50.png",
+        "soldOut": false
+      },
+      {
+        "label": "Mint Colourblock",
+        "image": "/assets/product-variants/e8ad58d1fa7d55f2.jpg",
+        "thumbnail": "/assets/product-variants/cadc668fd53b78e0.png",
+        "soldOut": false
+      },
+      {
+        "label": "Navy Colourblock",
+        "image": "/assets/product-variants/5ec3e56ae101db29.jpg",
+        "thumbnail": "/assets/product-variants/2fbd03edf40be879.png",
+        "soldOut": false
+      },
+      {
+        "label": "Ivory Colourblock",
+        "image": "/assets/product-variants/2126e22e581ae4c3.jpg",
+        "thumbnail": "/assets/product-variants/52988a9dd2e5635b.png",
         "soldOut": false
       }
     ]
@@ -834,7 +1358,7 @@
     "variants": [
       {
         "label": "Plum",
-        "image": "/assets/source/73a8f133fc2b24a6.jpg",
+        "image": "/assets/product-variants/ac378689a71f20f4.jpg",
         "thumbnail": "/assets/product-variants/c6e5ae0310c459a9.png",
         "soldOut": false
       },
@@ -950,7 +1474,7 @@
     "variants": [
       {
         "label": "Mint/Lilac",
-        "image": "/assets/source/95d91e9705934fb5.jpg",
+        "image": "/assets/product-variants/18e2d06b1719e686.jpg",
         "thumbnail": "/assets/product-variants/fa182fad150d9e88.png",
         "soldOut": false
       },
@@ -988,7 +1512,7 @@
     "variants": [
       {
         "label": "Brown",
-        "image": "/assets/source/ae86dcb08333a847.jpg",
+        "image": "/assets/product-variants/e7881eab3a4dd4b2.jpg",
         "thumbnail": "/assets/product-variants/12bddf0bc3dd19f3.png",
         "soldOut": false
       },
@@ -1009,146 +1533,6 @@
         "image": "/assets/product-variants/0091d89ea0b03596.jpg",
         "thumbnail": "/assets/product-variants/ecf0822492697a5e.webp",
         "soldOut": true
-      }
-    ]
-  },
-  "Poofy Bag": {
-    "secondaryImages": [
-      "/assets/source/468be68d148e5d0f.png",
-      "/assets/source/b47d064a1f66e3c8.png"
-    ],
-    "variants": [
-      {
-        "label": "Green",
-        "image": "/assets/source/5cb585ff5d48f5c3.jpg",
-        "thumbnail": "/assets/product-variants/40a34ede9bdc421e.png",
-        "soldOut": false
-      },
-      {
-        "label": "Lime",
-        "image": "/assets/product-variants/a40193097c6d5442.jpg",
-        "thumbnail": "/assets/product-variants/5ecceb5b069893d5.png",
-        "soldOut": false
-      },
-      {
-        "label": "Orange",
-        "image": "/assets/product-variants/e20fc54c088ead84.jpg",
-        "thumbnail": "/assets/product-variants/6524ba73d96f36c1.png",
-        "soldOut": false
-      },
-      {
-        "label": "Cobalt",
-        "image": "/assets/product-variants/c4a3552f03bae91b.jpg",
-        "thumbnail": "/assets/product-variants/9f6ec88023ae723e.png",
-        "soldOut": false
-      },
-      {
-        "label": "Periwinkle",
-        "image": "/assets/product-variants/19e11c3e54f74cc0.jpg",
-        "thumbnail": "/assets/product-variants/51ae81ecee01bf00.png",
-        "soldOut": false
-      },
-      {
-        "label": "Moss",
-        "image": "/assets/product-variants/08b9d3420781a0b9.jpg",
-        "thumbnail": "/assets/product-variants/8dd2218e0cadd5ab.png",
-        "soldOut": false
-      },
-      {
-        "label": "Black",
-        "image": "/assets/product-variants/01d05bd8beee6731.png",
-        "thumbnail": "/assets/product-variants/b5e0072d0719b4da.png",
-        "soldOut": false
-      }
-    ]
-  },
-  "Womens Classic Long Sleeve Shirt": {
-    "secondaryImages": [
-      "/assets/source/5a4029b913c239fd.jpg",
-      "/assets/source/6dc9c13d52cb67d9.jpg"
-    ],
-    "variants": [
-      {
-        "label": "Maroon Checkered",
-        "image": "/assets/source/713b572f9560baed.jpg",
-        "thumbnail": "/assets/product-variants/40f44a15976d2ed9.webp",
-        "soldOut": false
-      },
-      {
-        "label": "Dark Chambray",
-        "image": "/assets/product-variants/52405fc86713685f.jpg",
-        "thumbnail": "/assets/product-variants/da9547311e7a43f8.webp",
-        "soldOut": false
-      }
-    ]
-  },
-  "Large Stretch Studio Tote": {
-    "secondaryImages": [
-      "/assets/source/8869e315fe50875c.jpg",
-      "/assets/source/1256ce9bb2db2a46.jpg"
-    ],
-    "variants": [
-      {
-        "label": "Navy/Brown",
-        "image": "/assets/source/89b3bdc5e1a2527d.jpg",
-        "thumbnail": "/assets/product-variants/56d6a5b4238f37fa.webp",
-        "soldOut": true
-      },
-      {
-        "label": "Periwinkle/Olive",
-        "image": "/assets/product-variants/8b9ab229264062a0.jpg",
-        "thumbnail": "/assets/product-variants/784d4a2df050b0dd.webp",
-        "soldOut": true
-      }
-    ]
-  },
-  "Micro Dumpling Bag": {
-    "secondaryImages": [
-      "/assets/source/d73f0be74a54f9e1.png",
-      "/assets/source/5f7308161d7f33e0.jpg"
-    ],
-    "variants": [
-      {
-        "label": "Black",
-        "image": "/assets/source/e921ae8ba08c5a54.jpg",
-        "thumbnail": "/assets/product-variants/6076497fa09c4e14.png",
-        "soldOut": false
-      },
-      {
-        "label": "Olive",
-        "image": "/assets/product-variants/0d81fcdd41d7399a.jpg",
-        "thumbnail": "/assets/product-variants/2f178467b7d056ad.png",
-        "soldOut": false
-      },
-      {
-        "label": "Fern Green",
-        "image": "/assets/product-variants/fdad230ed0ba25c8.jpg",
-        "thumbnail": "/assets/product-variants/9e66812398d0bcbb.png",
-        "soldOut": false
-      },
-      {
-        "label": "Lilac",
-        "image": "/assets/product-variants/f1b5f20dba1f5992.jpg",
-        "thumbnail": "/assets/product-variants/cc11d007e7a1794c.png",
-        "soldOut": false
-      },
-      {
-        "label": "Neo Mint",
-        "image": "/assets/product-variants/08d2e9eb6b19040c.jpg",
-        "thumbnail": "/assets/product-variants/a88fd1c89329b2d8.png",
-        "soldOut": false
-      },
-      {
-        "label": "Blue",
-        "image": "/assets/product-variants/56b0aa7685136bc5.jpg",
-        "thumbnail": "/assets/product-variants/350d07c001016086.png",
-        "soldOut": false
-      },
-      {
-        "label": "Blush",
-        "image": "/assets/product-variants/4d70cc0360a24d49.jpg",
-        "thumbnail": "/assets/product-variants/85cec79959fb3bb3.png",
-        "soldOut": false
       }
     ]
   }
