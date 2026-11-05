@@ -1,10 +1,26 @@
 # Session Handoff
 
-Last updated: 2026-11-05 Asia/Jakarta
-Agent/session: Claude Code responsive-fidelity session (rounds 200+)
+Last updated: 2026-11-05 14:37 Asia/Jakarta
+Agent/session: Codex route-discovery session; preserving responsive-fidelity work (rounds 200+)
 Overall phase: verification
 
 ## Completed
+
+- **Round 251 checkout preview batch (owner-approved fast preview, branch `preview/checkout-flow`): APPROXIMATE / NOT VISUALLY VERIFIED.** Owner waived source capture and exact visuals for this batch. Added:
+  - `src/lib/catalog.ts`: typed catalog repository over homepage fixtures. It covers 3 collections and 41 products; the Size option exists only on `womens-classic-long-sleeve-shirt`, with assumed sizes XS-XXL.
+  - `src/lib/cart.ts`: `CartService` and `useCart`, backed by `localStorage`.
+  - Routes: `src/app/collections/[handle]`, `src/app/products/[handle]` (both `dynamicParams=false`), `src/app/cart`, `src/app/checkout`, `src/app/checkout/thank-you`, `src/app/not-found.tsx`.
+  - Components in `src/components/commerce/`; styles in `src/app/commerce.css`.
+  - `HomePage.tsx` now exports `SiteChrome`, a shared shell. The homepage DOM order is unchanged: the header cart button became a link to `/cart` with a count badge; logo, product cards, Shop More, footer, and mobile-menu links were wired to real paths; card Add to Bag either quick-adds or opens the PDP when a size is required.
+  - Ledger updated in `docs/mock-behaviors.md`; inventory in `docs/page-inventory.md`.
+  - Verification: lint, `tsc --noEmit`, and `npm run build` (50 static pages) pass. Click-through `reference/scripts/r251-preview-checkout-e2e.mjs` (local only) passed the full flow: Home → Shop More → New In (24 tiles) → PDP → size required → cart → qty 2 → checkout → QRIS/Express → thank-you, with the cart cleared afterwards; `/pages/about-us` shows 404. The console-error listener is optional-chained and may not be supported by the ego page API, so zero console errors is **not proven**.
+  - Not done: cart drawer, filters/sort, sticky buy bar, source checkout observation, real shipping rates, and all paired screenshots.
+
+- **Site-wide route discovery (2026-11-05):** reused persistent ego task space `reverse beyondthevines homepage` and combined homepage DOM links, `robots.txt`, Shopify sitemap index/children, compiled-JS route candidates, and safe HTTP probes. Raw crawl found 733 URLs across 12 sitemap files. Final canonical inventory contains 372 frontend routes: 164 products, 109 collections, 74 editorial routes, 18 content pages, 3 protected/account routes, 3 commerce/state routes, and home. Paired 363 `/id` alternatives with their default routes; excluded technical `/agents.md` and `/pages/guide` (live 404). All product URLs are recorded; `/products/womens-classic-long-sleeve-shirt` is the representative deep-capture product because live DOM exposes Colour and Size options, 12 variant IDs, and sticky purchase controls. Files: `docs/page-inventory.md`; evidence: `reference/routes/discovery-01.json`, `reference/routes/js-candidate-probes.json`, `reference/routes/product-inspect.json`, `reference/routes/product-sample-candidates.json`. Discovery only; routes beyond existing homepage work are **not visually verified**.
+
+- **Round 250 sticky header (owner request; owner will test manually, no automated probe run):** `.site-header` changed from `position:relative;z-index:40` to `position:sticky;top:0;z-index:50`, matching the source's `.header-section{position:sticky;top:0;z-index:50}`. The announcement bar still scrolls away. The mobile menu overlay/drawer `top`/`height` now use `--menu-top`, set from the header's `getBoundingClientRect().bottom` when the menu opens; fallbacks are 94px (mobile) and 121px (768-798). `.instafeed-new-layout-container` gained `isolation:isolate` so its z-index 999/1000 icons stay below the sticky header. Files: `src/app/globals.css`, `src/components/HomePage.tsx`. `npm run lint` passes. Not tested in a browser; **not visually verified**. Differences from the source structure: the source makes a wrapper section sticky, while the local build makes `<header>` itself sticky.
+
+- **Round 248-249 menu scroll lock (owner request):** while the mobile menu overlay is open, `HomePage` adds `body.overflow-hidden` (`overflow:hidden`), the same class the source's mobile toggle adds (found in `reference/js`); the class is removed on close. Files: `src/components/HomePage.tsx`, `src/app/globals.css`. Probe at 390x844 (`reference/scripts/r248-menu-scroll-lock.mjs`, `r249-menu-scroll-lock-midpage.mjs`): open at scrollY 700 → wheel 700px → stays 695; after close, wheel scrolls normally (1400). Open issue: a 5px scrollY shift (700→695) on open that restores on close, cause not investigated. Touch-swipe scrolling on real iOS, and the drawer's own inner scroll, were not tested. `npm run lint` passes. Behavior only; **not visually verified**.
 
 - **Round 71 carousel blank-state fix:** removed duplicated track translation from both `CategoryHero` and `PromotionSlider`; wraparound motion now comes only from per-cell transforms, so selected cells remain inside the viewport. Marked all above-the-fold hero and promotion media `loading="eager"`, retaining `fetchPriority="high"` only for each first slide. The round-69 browser regression changed from 3/3 autoplay failures to 0 failures across 3 reloads and 12 samples; every selected image was decoded and visible. `npm run lint`, `npm run build`, and `git diff --check` pass. Functional visibility verified; paired source/local visual comparison was not rerun, so exact transition appearance remains **not visually verified**.
 
@@ -208,11 +224,11 @@ Overall phase: verification
 
 | Route/state | Discovered | Implemented | Responsive | Verified | Evidence |
 |---|---:|---:|---:|---:|---|
-| Site-wide inventory | No | No | No | No | Pending |
+| Site-wide inventory | Yes | No | No | No | `docs/page-inventory.md`, `reference/routes/discovery-01.json`; 372 canonical routes, 363 paired `/id` alternatives |
 | Home | Yes | Yes | Partial | No | `reference/data/round31-{source,local}-{desktop,mobile}.json`, `reference/screenshots/round-45/`; screenshots operational but first batch has popup/lazy-media state mismatch |
 | Navigation/search overlays | Yes | Yes | Partial | No | Local mock behavior only |
-| Collection/listing | No | No | No | No | Pending |
-| Product detail | No | No | No | No | Pending |
-| Cart | No | No | No | No | Pending |
-| Editorial/content | No | No | No | No | Pending |
-| Policy/information pages | No | No | No | No | Pending |
+| Collection/listing | Yes | No | No | No | 109 routes in `docs/page-inventory.md`; sitemap evidence only |
+| Product detail | Yes | No | No | No | 164 routes in `docs/page-inventory.md`; representative `/products/womens-classic-long-sleeve-shirt` |
+| Cart | Yes | No | No | No | `/cart` discovered from homepage DOM; route only |
+| Editorial/content | Yes | No | No | No | 74 editorial routes in `docs/page-inventory.md`; sitemap evidence only |
+| Policy/information pages | Yes | No | No | No | 18 content routes in `docs/page-inventory.md`; sitemap/DOM evidence only |

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./commerce.css";
 
 export const metadata: Metadata = {
   title: "Beyond The Vines | Indonesia Online Store",
