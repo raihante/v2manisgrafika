@@ -1,0 +1,15 @@
+/* Local overrides on top of the generated source rules (pdp-source.css). Keep this file small: every rule here is a
+   deliberate deviation or a fix for a rule the clone needs but the source applies through its own scripts. */
+
+/* The wrapper stands in for the source <body>: source body text metrics (app.css body{font-size:1.0625rem;
+   line-height:calc(var(--font-body-line-height-scale) * 1.6)}). The shared local body uses a fixed 27.2px line-height,
+   which would otherwise be inherited as a length instead of the 1.6 factor. */
+.template-product{font-size:1.0625rem;line-height:calc(var(--font-body-line-height-scale) * 1.6)}
+
+/* <scroll-shadow> (source web component) styles its host from its shadow root: :host{display:inline-block;position:relative}. */
+.template-product scroll-shadow{display:inline-block;position:relative}
+
+/* Fonts the source PDP loads: Swym icon font (procdn.swymrelay.com/code/v3/swym_fonts.woff2, mirrored) and the second
+   case variant "Everett-Regular" that the theme declares next to "Everett-regular" (same file). */
+@font-face{font-family:swym-font;src:url('/fonts/swym_fonts.woff2') format('woff2');font-weight:normal;font-style:normal;font-display:block}
+@font-face{font-family:'Everett-Regular';src:url('/fonts/Everett-Regular.woff') format('woff');font-weight:400;font-style:normal;font-display:swap}

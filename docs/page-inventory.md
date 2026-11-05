@@ -37,7 +37,11 @@ Owner-approved fast preview. Styled from homepage tokens only; source pages for 
 | Local route | Source route | Implementation | Verification |
 |---|---|---|---|
 | `/collections/[handle]` (`new-in`, `bags`, `your-favourites`) | `/collections/*` | Grid from homepage rail fixtures; no filter/sort | Click-through only |
-| `/products/[handle]` (41 handles) | `/products/*` | Gallery, colour, size (representative only), qty, Add to Bag | Click-through only |
+| `/products/womens-classic-long-sleeve-shirt` | same | **Round 255 source-DOM rebuild (evidence `reference/verify/pdp-r255-classic-f/`, 8 widths, region diff <=0.24 %, eval 84-88 FAIL; supersedes round 254):** gallery per colour, swatches, sizes, `?variant=` URL, per-variant label/SKU, 5 source tabs incl. CM/IN, Pair It With (2 s autoplay), You May Also Like, mock Add To Bag -> cart drawer | `tests/visual/verify.mjs` at 1920/390: PDP region 0.28% / 1.33% changed pixels, page height equal; eval 68.0 / 65.6 (FAIL). `tests/visual/pdp-interactions.mjs` 8/8 PASS. **Approximate, not visually verified** |
+| `/products/[handle]` (39 other standard handles) | `/products/*` | **Round 255:** same source-DOM template as the shirt (generated `pdp-source.css`, colour categories, multicolumn section on 26 bag/pouch products). APPROXIMATE / NOT VISUALLY VERIFIED: 5 sample products scored at 4 widths (`reference/verify/pdp-r255b-*`), the other 35 only render-tested | Initial state only |
+| `/products/btv-to-go-phone-strap` (bundle) | same | Round-251 fallback page; bundle UI (Part A / Part B swatches) not built | None |
+| Pair It With / You May Also Like links to the 43 products outside the 41-product catalog | `/products/*` | **Remaining** (owner decision 2026-11-06): cards render exactly as source, the links 404 locally until the CMS supplies these products | None |
+| Collection / page / blog / account links in header, mega-menu and footer | various | **Remaining** (owner decision 2026-11-06): source hrefs kept, local 404 until those routes are built | None |
 | `/cart` | `/cart` | Line items, qty, remove, subtotal | Click-through only |
 | `/checkout` | Shopify checkout | Mock one-page checkout | Click-through only |
 | `/checkout/thank-you` | Shopify order status | Mock confirmation | Click-through only |

@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 import type { CSSProperties } from "react";
-import { FormEvent, Fragment, useEffect, useLayoutEffect, useRef, useState } from "react";
+import { FormEvent, Fragment, useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import data from "@/data/homepage.json";
@@ -12,6 +12,7 @@ import { localCart, useCart } from "@/lib/cart";
 import interactionData from "@/data/product-card-interactions.json";
 import notifyIcon from "@/data/notify-icon.json";
 import searchIcon from "@/data/search-icon.json";
+import { BackstagePassPopup, InstagramLightbox, OPEN_CART_EVENT, SidePanels, openCartDrawer } from "@/components/Overlays";
 
 type Overlay = "menu" | "search" | "cart" | null;
 type Product = (typeof data.collections)[number]["products"][number];
@@ -67,7 +68,7 @@ function Header({ open, menuOpen }: { open: (overlay: Overlay) => void; menuOpen
               <path className="cls-1" d="M.86,17.37v-3.65c0-3.06,2.5-5.56,5.56-5.56h3.64c3.06,0,5.56,2.5,5.56,5.56v3.65" />
             </svg>
           </Link>
-          <Link className="thb-secondary-area-item thb-secondary-cart" href="/cart" aria-label={`Cart (${count})`}>
+          <Link className="thb-secondary-area-item thb-secondary-cart" id="cart-drawer-toggle" href="/cart" aria-label={`Cart (${count})`} onClick={(event) => { event.preventDefault(); open("cart"); }}>
             <div className="thb-secondary-item-icon"><img src="/assets/source/d6fc4f371f8c4447.png" alt="" /><span className="thb-item-count">{count > 0 ? count : null}</span></div>
           </Link>
         </div>
@@ -405,12 +406,12 @@ function ProductCard({ product }: { product: Product }) {
   const selectedLabel = selectedVariant?.label ?? product.swatchSelected;
   const router = useRouter();
   const handle = product.href.split("/").filter(Boolean).pop() ?? "";
-  // MOCK quick add: products with a Size option go to the product page; others add the shown colour and open /cart.
+  // MOCK quick add: products with a Size option go to the product page; others add the shown colour and open the cart drawer.
   const addToBag = () => {
     const entry = catalog.getProduct(handle);
     if (!entry || entry.sizes.length > 0) return router.push(product.href);
     localCart.add({ handle, title: product.title, image: primaryImage, price: entry.price, colour: selectedLabel, size: null });
-    router.push("/cart");
+    openCartDrawer();
   };
 
   return (
@@ -632,6 +633,9 @@ function SocialFeed() {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const [layout, setLayout] = useState<FeedLayout | null>(null);
   const slider = useRef({ current: 0, step: 0, transitioning: false });
+  const dragged = useRef(false);
+  const [lightbox, setLightbox] = useState<number | null>(null);
+  const closeLightbox = useCallback(() => setLightbox(null), []);
 
   useEffect(() => {
     const build = () => {
@@ -676,7 +680,8 @@ function SocialFeed() {
   const onPointerDown = (event: React.PointerEvent<HTMLDivElement>) => {
     if (event.button !== 0 || !(event.target as HTMLElement).closest(".instafeed-hover-layer, .instafeed-new-layout-item-container")) return;
     const startX = event.clientX;
-    const onMove = (moveEvent: PointerEvent) => { const delta = startX - moveEvent.clientX; if (Math.abs(delta) > 5) move(delta > 0 ? 1 : -1); };
+    dragged.current = false;
+    const onMove = (moveEvent: PointerEvent) => { const delta = startX - moveEvent.clientX; if (Math.abs(delta) > 5) { dragged.current = true; move(delta > 0 ? 1 : -1); } };
     const onUp = () => { document.removeEventListener("pointermove", onMove); document.removeEventListener("pointerup", onUp); };
     document.addEventListener("pointermove", onMove);
     document.addEventListener("pointerup", onUp);
@@ -691,7 +696,7 @@ function SocialFeed() {
             {images.map((image, index) => (
               <div className="instafeed-new-layout-item image-loaded" style={{ width: `${layout.tile}px`, height: `${layout.tile}px` }} key={image}>
                 <img className="instafeed-lazy-image" src={image} alt={`Instagram post ${index + 1}`} draggable={false} />
-                <div className="instafeed-new-layout-item-container" role="button" tabIndex={0} aria-haspopup="dialog" aria-label="Instagram post opens in a popup">
+                <div className="instafeed-new-layout-item-container" role="button" tabIndex={0} aria-haspopup="dialog" aria-label="Instagram post opens in a popup" onClick={() => { if (!dragged.current) setLightbox(index); }} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); setLightbox(index); } }}>
                   <div className="instafeed-hover-layer"><div className="instafeed-hover-icon"><img src="/assets/payments/instagram-icon-v2.svg" alt="" /></div></div>
                 </div>
               </div>
@@ -703,6 +708,7 @@ function SocialFeed() {
           </>}
         </div>}
       </div>
+      {lightbox !== null && <InstagramLightbox images={images} index={lightbox} onClose={closeLightbox} onNavigate={setLightbox} />}
     </section>
   );
 }
@@ -766,10 +772,10 @@ function OverlayPanel({ type, close }: { type: Exclude<Overlay, null>; close: ()
     const section = menuSection ? mobileMenuSections[menuSection] : null;
     return <><div className="menu-overlay-local" role="button" tabIndex={0} aria-label="Close menu" onClick={close} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") close(); }} /><nav className="mobile-menu-drawer-local" aria-label="Mobile navigation"><div className="mobile-menu-drawer-inner-local"><ul className="mobile-menu-local">{menuItems.map((item) => <li key={item}>{mobileMenuSections[item] ? <button type="button" onClick={() => setMenuSection(item)}>{item}</button> : <Link href={MENU_HREFS[item] ?? slugHref(item)} onClick={close}>{item}</Link>}</li>)}</ul><div className="mobile-menu-footer-local"><div className="mobile-menu-account-links"><Link href="/account/login" onClick={close}>Sign In</Link><Link href="/pages/contact-us" onClick={close}>Need Help?</Link><Link href="/pages/the-btv-stores" onClick={close}>Store Locator</Link><a className="mobile-menu-wishlist" href="/pages/wishlist"><span>Wishlist</span><svg className="pixel-heart" width="20" height="20" viewBox="0 0 48.93 48.93" aria-hidden="true"><g fill="red"><rect x="20.97" y="13.99" width="6.99" height="6.99"/><rect x="20.98" y="27.96" width="6.99" height="6.99"/><rect x="6.99" y=".02" width="6.99" height="6.99"/><rect x="0" y="7.01" width="6.99" height="6.99"/><rect x="13.98" y="7" width="6.99" height="6.99"/><rect x="6.99" y="13.99" width="6.99" height="6.99"/><rect x="0" y="20.99" width="6.99" height="6.99"/><rect x="13.99" y="20.98" width="6.99" height="6.99"/><rect x="7" y="27.97" width="6.99" height="6.99"/><rect x="27.96" y="20.97" width="6.99" height="6.99"/><rect x="41.94" y="20.96" width="6.99" height="6.99"/><rect x="34.95" y="27.95" width="6.99" height="6.99"/><rect x="13.99" y="34.95" width="6.99" height="6.99"/><rect x="27.97" y="34.95" width="6.99" height="6.99"/><rect x="20.99" y="41.94" width="6.99" height="6.99"/><rect x="34.94" y="0" width="6.99" height="6.99"/><rect x="27.95" y="6.99" width="6.99" height="6.99"/><rect x="41.93" y="6.99" width="6.99" height="6.99"/><rect x="34.95" y="13.98" width="6.99" height="6.99"/></g></svg></a></div><div className="mobile-menu-markets"><button type="button"><span>EN</span><svg width="8" height="6" viewBox="0 0 8 6" aria-hidden="true"><path d="M6.75 1.5 3.75 4.5.75 1.5" /></svg></button><button type="button"><img src="/assets/source/930df51bb2514341.png" alt="Indonesia" /><span>ID</span><svg width="8" height="6" viewBox="0 0 8 6" aria-hidden="true"><path d="M6.75 1.5 3.75 4.5.75 1.5" /></svg></button></div></div>{menuSection && section && <div className="mobile-submenu-local"><button className="mobile-submenu-back" type="button" onClick={() => setMenuSection(null)}><span aria-hidden="true">←</span>Back</button><h2>{menuSection}</h2><h3>Shop By Category</h3>{section.category.map((item) => <Link href={slugHref(`${menuSection} ${item}`)} onClick={close} key={item}>{item}</Link>)}{section.collection && <><h3>Shop By Collection</h3>{section.collection.map((item) => <Link href={slugHref(item)} onClick={close} key={item}>{item}</Link>)}</>}{section.promotion && <img className="mobile-submenu-promotion" src={section.promotion} alt="" />}</div>}</div></nav></>;
   }
-  return <div className="overlay-backdrop" onClick={close}><aside className="overlay-panel" onClick={(event) => event.stopPropagation()}><button className="overlay-close" onClick={close} aria-label="Close"><Icon name="close" /></button>{type === "search" && <><h2>Search</h2><label><span className="sr-only">Search products</span><input autoFocus placeholder="Search products" /></label><p>Start typing to search the local product fixtures.</p></>}{type === "cart" && <><h2>Your Cart</h2><div className="empty-cart"><Icon name="bag" /><p>Your cart is empty.</p><button onClick={close}>Continue Shopping</button></div></>}</aside></div>;
+  return null; // search and cart are rendered by <SidePanels> in SiteChrome
 }
 
-function NewsletterSection() {
+export function NewsletterSection() {
   const [subscribed, setSubscribed] = useState(false);
   const subscribe = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -860,7 +866,14 @@ export function SiteChrome({ children, backToTop = false }: { children: React.Re
       root.style.removeProperty("--menu-top");
     };
   }, [overlay]);
-  return <main id="top"><Header menuOpen={overlay === "menu"} open={(next) => setOverlay((current) => current === next ? null : next)} />{children}<Footer />{backToTop && <BackToTop />}{overlay && <OverlayPanel type={overlay} close={() => setOverlay(null)} />}</main>;
+  useEffect(() => {
+    const openCart = () => setOverlay("cart");
+    window.addEventListener(OPEN_CART_EVENT, openCart);
+    return () => window.removeEventListener(OPEN_CART_EVENT, openCart);
+  }, []);
+  const closeOverlay = useCallback(() => setOverlay(null), []);
+  const panel = overlay === "search" || overlay === "cart" ? overlay : null;
+  return <main id="top"><Header menuOpen={overlay === "menu"} open={(next) => setOverlay((current) => current === next ? null : next)} />{children}<Footer />{backToTop && <BackToTop />}{overlay === "menu" && <OverlayPanel type={overlay} close={closeOverlay} />}<SidePanels open={panel} close={closeOverlay} /><BackstagePassPopup /></main>;
 }
 
 export default function HomePage() {

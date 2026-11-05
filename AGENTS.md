@@ -19,7 +19,7 @@ The project owner has confirmed authorization to reproduce the required design, 
 
 ## Locked Scope and Stack
 
-Select the rebuild architecture only after `clone-website` Phase 1 identifies the source type. Use a raw-HTML mirror for static-export sites such as Webflow or Framer; use a component rebuild, normally Next.js with TypeScript, for JavaScript-framework sites where hydration prevents a safe mirror. Preserve the skill's required DOM mounting strategy and container hierarchy. Any later shared-hosting constraint must be handled without weakening fidelity.
+The rebuild method is locked (owner decision 2026-11-06, after the product-page pilot recorded in `SESSION_HANDOFF.md` round 253): **component rebuild**. Every route is built from Next.js/TypeScript components with the project's own CSS, written from measured source values (ego-browser rect and computed-style probes), and fed by typed repositories over source-derived fixtures. The owner's priorities are CMS readiness and clean code over raw pixel speed. Captured source HTML, theme CSS, and theme JS are reference evidence in `reference/`; render pages from components and data instead of injecting them. Copy exact source assets, SVGs, keyframes, and token values into components and CSS where the source has them. Preserve the source's DOM mounting strategy and container hierarchy, including hidden-but-mounted DOM such as mega-menus, lazy panels, and carousel cells, because the benchmark counts it. Any later shared-hosting constraint must be handled without weakening fidelity.
 
 Store product, navigation, editorial, and page data behind typed repository/service interfaces, initially backed by local fixtures. UI components must not import fixture files directly. This boundary must allow a future CMS adapter to replace fixtures without redesigning components.
 
@@ -46,9 +46,15 @@ Read and follow both installed skills before discovery: `clone-website` controls
 1. Phase 0: create the private `reference/{dom,css,js,screenshots}/` workspace and run the clone on a fixed local port.
 2. Phase 1: capture real DOM, CSS tokens, fonts, assets, compiled-JS configuration, section geometry, and a scroll-zero full-page screenshot.
 3. Phase 2: inventory runtime animations, keyframes, scroll timelines, mutations, sticky states, and state transitions.
-4. Phase 3: choose raw-HTML mirror or framework rebuild from evidence, then implement shared shell and routes.
-5. Phase 4: run identical probes against source and clone, iterate, and run the scored benchmark.
+4. Phase 3: implement the shared shell and routes with the locked component rebuild method.
+5. Phase 4: run identical probes against source and clone, iterate, and run the scored benchmark with the project verify tool (below) after every iteration.
 6. Phase 5: crawl navigation, footer, and sitemap; clone and score every route individually.
+
+### Verify tool
+
+The skill's `scripts/run_eval.sh` calls the old `taskSpaces`/global `page` API and does not run on ego guide v2.2.0. Use the project tool in `tests/visual/` instead: write targets, widths, and an output name to `reference/verify/verify-cfg.json`, run `ego-browser nodejs -e "await import('file:///C:/Digitakarya/v2manisgrafika/tests/visual/verify.mjs')"`, then `python tests/visual/score.py reference/verify/<out> <widths> <targets>`. One run captures source and local in the same normalized state (minimized window restored, popup hidden, autoplay timers and Flickity players stopped, carousels on cell 0, origin storage cleared). It writes `eval_score.py` scorecards plus a region pixel diff and `summary.json` into the private `reference/verify/<out>/`. Extend the region anchors in `verify.mjs` per template.
+
+The round-253 pilot showed where a component rebuild loses benchmark points. Close these gaps on every route: source CSS keyframe animations rebuilt (pilot scored animations 0), source asset filenames preserved, hidden source DOM mounted (the shared header lacks the source mega-menu DOM and images), and URL state such as `?variant=` updated as the source does.
 
 Use one persistent ego task space for the whole job. Store full artifacts in `reference/` and print only summaries. Use absolute filesystem paths inside ego scripts. Pause autoplay media before measurement and never base layout evidence on screenshots taken after programmatic scrolling.
 

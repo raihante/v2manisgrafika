@@ -1,0 +1,111 @@
+/* Storefront overlays. Rules marked "source" are ported from captured theme CSS
+   (reference/css/ddbf5bc5318e0c37.css, 87b48e5878c19325.css, 985c6b2ef092b562.css).
+   Rules marked "local" are approximations (source state not captured). NOT VISUALLY VERIFIED. */
+
+/* ---- Side panels (source) ---- */
+.click-capture{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:52;opacity:0;visibility:hidden;background:rgba(0,0,0,.7);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);transition:opacity .3s ease,visibility .3s ease}
+.click-capture.is-active{opacity:1;visibility:visible;pointer-events:all}
+.side-panel{position:fixed;top:0;right:0;bottom:0;z-index:90;width:calc(100vw - 30px);background:var(--bg-body,#fff);max-width:480px;overflow-x:hidden;transform:translate(100%);will-change:transform;visibility:hidden;transition:transform .5s cubic-bezier(.104,.204,.492,1),visibility 0s linear .5s;color:#000}
+.side-panel.active{transform:translate(0);visibility:visible;transition:transform .5s cubic-bezier(.104,.204,.492,1),visibility 0s}
+.side-panel-header{position:sticky;top:0;left:0;z-index:35;background:var(--bg-body,#fff);border:none;padding:17px 30px;height:72px}
+.side-panel-header div{line-height:1;display:flex;justify-content:space-between;align-items:center;height:100%}
+.side-panel-header h2{font-size:1.3rem;letter-spacing:-1.5px;text-transform:capitalize;font-weight:normal;font-family:"Everett-regular",sans-serif!important;margin:0;line-height:1}
+.side-panel-close{cursor:pointer;background:transparent;border:0;padding:0;display:inline-flex;align-items:center;justify-content:center;color:#000}
+.side-panel-close path{stroke-width:2px!important}
+.side-panel-content{padding:25px 30px}
+.side-panel-content .button{font-family:"Everett-regular",sans-serif!important;font-size:1.05rem;font-weight:normal;letter-spacing:-1px;height:40px;width:100%;margin-bottom:20px;flex-shrink:0}
+
+/* Search drawer (source) */
+.side-panel.search-drawer .side-panel-inner{height:100%}
+.side-panel.search-drawer .searchform{width:100%;padding-right:20px}
+.side-panel.search-drawer .searchform fieldset{position:relative;border:0;margin:0;padding:0}
+.side-panel.search-drawer .searchform input{width:100%;margin:0;border:0;padding:0;font-size:1rem;outline:0;background:transparent;font-family:"Everett-regular",sans-serif;color:#000}
+.side-panel.search-drawer .searchform input::placeholder{color:rgba(0,0,0,.6)}
+.side-panel.search-drawer .searchform input::-webkit-search-decoration,.side-panel.search-drawer .searchform input::-webkit-search-cancel-button{display:none}
+.side-panel.search-drawer .searchform label{display:none}
+/* Predictive results (local) */
+.predictive-search-local .thb-predictive-search--label{display:block;font-family:"Everett-regular",sans-serif;font-size:1.3rem;letter-spacing:-1.5px;margin-bottom:15px}
+.predictive-search-local__list{list-style:none;margin:0;padding:0;display:grid;gap:15px}
+.predictive-search-local__list a{display:grid;grid-template-columns:70px 1fr;gap:15px;align-items:center;color:#000;text-decoration:none}
+.predictive-search-local__list img{width:70px;height:70px;object-fit:cover;background:#f4f4f4}
+.predictive-search-local__title{display:block;font-family:"Everett-regular",sans-serif;font-size:16px;letter-spacing:-.5px;line-height:1.2}
+.predictive-search-local__price{display:block;font-family:"Everett-Light",sans-serif;font-size:14px;margin-top:4px}
+
+/* Cart drawer (source) */
+.cart-drawer{overflow:visible}
+.cart-drawer .side-panel-inner{display:grid;grid-template-rows:auto 1fr auto;height:100vh;height:100dvh;position:relative;z-index:5}
+.cart-drawer .side-panel-content{overflow-x:hidden;overflow-y:auto;display:flex;flex-direction:column;padding-bottom:0;padding-top:0!important;background:var(--bg-body,#fff)}
+.cart-drawer .side-panel-header h2{font-size:40px;letter-spacing:-1.5px!important;text-transform:capitalize;font-weight:normal!important;font-family:"Everett-regular",sans-serif!important;color:#000;margin:0;line-height:1}
+.cart-drawer__empty-cart{height:100%;padding:10vh 0;display:flex;flex-direction:column;text-align:center;justify-content:center;align-items:center}
+.cart-drawer__empty-cart p{letter-spacing:-.5px;text-align:center}
+.jsc-cart-drawer-empty-cart-desc{margin-bottom:0;display:flex}
+.jsc-cart-drawer-empty-cart-desc img{width:20px;height:auto;object-fit:contain;margin-right:5px}
+.jsc-shopping-suggestion-section{display:flex;flex-direction:column;margin-bottom:30px}
+.jsc-shopping-suggestion-title{font-size:1.3rem;letter-spacing:-1.5px;text-transform:capitalize;font-weight:normal;font-family:"Everett-regular",sans-serif!important;text-align:left!important;margin:0 0 15px}
+.jsc-shopping-suggestion-pill-section{display:flex;flex-wrap:wrap;gap:10px}
+.jsc-shopping-suggestion-pill{display:inline-flex;cursor:pointer;padding:7px 30px;align-items:center;justify-content:center;height:34px;letter-spacing:-1px;border:1px solid #eda7cf;background:#eda7cf;color:#fff;border-radius:50px;text-align:center;font-family:"Everett-regular",sans-serif!important;font-size:18px;text-decoration:none}
+.jsc-shopping-suggestion-pill:hover{color:#fff}
+/* local: theme .button base not captured; black pill used across homepage buttons */
+.side-panel .button{display:flex;align-items:center;justify-content:center;background:#000;color:#fff;border-radius:50px;text-decoration:none;border:0;cursor:pointer}
+.cart-drawer .side-panel-footer{border-top:0;font-size:.875rem;position:relative;background:var(--bg-body,#fff)}
+.cart-drawer .side-panel-footer .button{display:flex!important;font-family:"Everett-regular",sans-serif!important;font-size:1.05rem!important;font-weight:normal!important;letter-spacing:-1px;height:40px;margin:10px 20px}
+.cart-drawer .mini-cart__row{display:flex;width:100%;justify-content:space-between;border-bottom:1px solid #000;padding:10px 20px 0;line-height:1}
+.cart-drawer .mini-cart__row span{font-weight:500}
+.cart-drawer .mini-cart__row.total{border-bottom:0}
+.cart-drawer .text-button{display:block;text-align:center;margin:0 0 20px;font-size:16px!important;font-family:"Everett-Medium",sans-serif!important;text-transform:capitalize!important;color:#000}
+/* Filled cart lines (local approximation) */
+.cart-drawer-local__lines{list-style:none;margin:0;padding:0}
+.cart-drawer-local__line{display:grid;grid-template-columns:90px 1fr;gap:15px;padding:15px 0;border-bottom:1px solid #e5e5e5}
+.cart-drawer-local__line img{width:90px;height:110px;object-fit:cover;background:#f4f4f4}
+.cart-drawer-local__title{font-family:"Everett-regular",sans-serif;font-size:17px;letter-spacing:-.5px;color:#000;text-decoration:none}
+.cart-drawer-local__meta{margin:4px 0 10px;font-family:"Everett-Light",sans-serif;font-size:14px;color:#555}
+.cart-drawer-local__row{display:flex;justify-content:space-between;align-items:center}
+.cart-drawer-local__qty{display:inline-flex;align-items:center;border:1.5px solid #000;border-radius:50px;height:32px}
+.cart-drawer-local__qty button{width:30px;height:100%;border:0;background:transparent;cursor:pointer;font-size:16px}
+.cart-drawer-local__qty span{min-width:20px;text-align:center}
+.cart-drawer-local__remove{margin-top:8px;border:0;background:transparent;padding:0;text-decoration:underline;cursor:pointer;font-size:13px;color:#555}
+
+/* ---- Backstage Pass popup (source: login-register-popup.css) ---- */
+.login-register__overlay{position:fixed;top:0;right:0;bottom:0;left:0;background:#00000080;z-index:9999;transition:opacity .2s ease}
+.login-register__popup{position:fixed;top:0;right:0;bottom:0;left:0;display:none;align-items:center;justify-content:center;z-index:10000}
+.login-register__popup.open{display:flex}
+.login-register__popup-inner{background:#0060d4;max-width:500px;width:100%;border-radius:0;pointer-events:auto;position:relative;padding:48px 24px;border:2px solid #000}
+.login-register__close{position:absolute;top:8px;right:8px;background:transparent;border:0;font-size:24px;line-height:1;cursor:pointer;color:#fff}
+.login-register__panel{display:none}
+.login-register__panel.active{display:block}
+#jsc-login-register-popup .jsc-login-header-img{display:block;margin:0 auto 30px;width:auto;height:180px}
+#jsc-login-register-popup .jsc-login-header{font-family:"Everett-regular",sans-serif!important;letter-spacing:0;color:#fff;font-size:35px;line-height:50px;text-align:center;margin:0;font-weight:normal}
+#jsc-login-register-popup .jsc-login-subheader{color:#fff;font-family:"Everett-regular",sans-serif!important;letter-spacing:0;font-size:17px!important;text-align:center;line-height:18px;margin:0;font-weight:normal}
+#jsc-login-register-popup .jsc-login-subheader span{display:block;margin:0 0 1em}
+#jsc-login-register-popup .m-t-15{margin-top:15px!important;display:flex;justify-content:center}
+#jsc-login-register-popup .m-t-15 .button{display:inline-flex;align-items:center;justify-content:center;border-radius:0;min-width:200px;background-color:#ec0013;color:#fff;text-decoration:none;padding:12px 20px}
+#jsc-login-register-popup .field .button span{font-family:"Everett-regular",sans-serif!important;font-size:1.05rem!important;font-weight:400;letter-spacing:-1px}
+@media only screen and (max-width:1024px){#jsc-login-register-popup .jsc-login-subheader{font-size:40px!important}}
+@media only screen and (max-width:480px){
+  #jsc-login-register-popup .jsc-login-header{font-size:25px;line-height:30px;letter-spacing:0;margin-bottom:0!important}
+  #jsc-login-register-popup .jsc-login-subheader{font-size:13px!important;line-height:20px;margin-bottom:0!important}
+  #jsc-login-register-popup .jsc-login-header-img{margin:0 auto 10px;width:auto;height:100px}
+  .login-register__popup-inner{margin:0 20px}
+}
+
+/* ---- Instagram lightbox (local approximation; vendor lightbox not captured) ---- */
+.instafeed-new-layout-item-container{cursor:pointer}
+.instafeed-lightbox-local{position:fixed;inset:0;z-index:10001;background:rgba(0,0,0,.85);display:flex;align-items:center;justify-content:center;padding:40px 60px}
+.instafeed-lightbox-local__box{display:flex;background:#000;max-width:min(1000px,100%);max-height:calc(100vh - 80px)}
+.instafeed-lightbox-local__media{flex:1 1 auto;display:flex;align-items:center;justify-content:center;min-width:0}
+.instafeed-lightbox-local__media img{display:block;max-width:100%;max-height:calc(100vh - 80px);object-fit:contain}
+.instafeed-lightbox-local__side{flex:0 0 280px;display:flex;flex-direction:column;justify-content:space-between;padding:20px;background:#fff}
+.instafeed-lightbox-local__account{display:flex;align-items:center;gap:10px;color:#000;text-decoration:none;font-family:"Everett-Medium",sans-serif;font-size:16px}
+.instafeed-lightbox-local__account img{width:28px;height:28px;filter:invert(1)}
+.instafeed-lightbox-local__view{display:flex;align-items:center;justify-content:center;height:40px;border-radius:50px;background:#000;color:#fff;text-decoration:none;font-family:"Everett-regular",sans-serif;letter-spacing:-.5px}
+.instafeed-lightbox-local__close{position:absolute;top:10px;right:16px;background:transparent;border:0;color:#fff;font-size:36px;line-height:1;cursor:pointer}
+.instafeed-lightbox-local__arrow{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.9);color:#000;font-size:28px;line-height:1;cursor:pointer}
+.instafeed-lightbox-local__arrow--prev{left:10px}
+.instafeed-lightbox-local__arrow--next{right:10px}
+@media (max-width:798px){
+  .instafeed-lightbox-local{padding:50px 10px}
+  .instafeed-lightbox-local__box{flex-direction:column;max-height:calc(100vh - 100px)}
+  .instafeed-lightbox-local__media img{max-height:calc(100vh - 220px)}
+  .instafeed-lightbox-local__side{flex:0 0 auto;gap:12px}
+  .instafeed-lightbox-local__arrow{top:auto;bottom:8px;transform:none;width:38px;height:38px}
+}

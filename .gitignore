@@ -13,3 +13,7 @@ out/
 .env.*
 !.env.example
 *.log
+
+# TypeScript incremental build cache.
+*.tsbuildinfo
+
