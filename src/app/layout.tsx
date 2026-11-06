@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./shell-source.css";
 import "./commerce.css";
 import "./overlays.css";
+import "./shell.css";
 
 export const metadata: Metadata = {
   title: "Beyond The Vines | Indonesia Online Store",
@@ -10,7 +12,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    // The source theme sets html.js; shell rules such as `.js .mobile-toggle-wrapper[open].active .mobile-menu-drawer`
+    // depend on it.
+    <html lang="en" className="js">
       <body>{children}</body>
     </html>
   );

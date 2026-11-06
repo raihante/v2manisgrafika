@@ -1,10 +1,92 @@
 # Session Handoff
 
-Last updated: 2026-11-06 05:30 Asia/Jakarta
-Agent/session: Claude Code round 255 (PDP template for all homepage products; remaining-work list)
+Last updated: 2026-11-06 Asia/Jakarta
+Agent/session: Claude Code round 256 (template-tier plan for collections/content/editorial)
 Overall phase: implementation
 
 ## Completed
+
+- **Round 256 owner decisions (grilling session 2026-11-06), recorded in `AGENTS.md` "Template-tier verification":**
+  - Unit of work = one template per page type. Routes with unique sections are variants of a template. Each template is tuned against 2 or more representatives picked by a template survey.
+  - Data: a read-only GET script fetches every collection, editorial, and content route into fixtures; the snapshot is then frozen. Product cards outside the 41-product catalog use dummyimage.
+  - Verification tiers: representatives get the full gate. Every other route gets a light sweep (render, zero console errors, page height and section IDs vs source); routes off by more than max(1 %, 100 px), or missing a section, are promoted to representative. Non-representative routes are **approximate / not visually verified**.
+  - Images: real images for representatives only; placeholders elsewhere until the CMS supplies them.
+  - Collections: filter, sort, and pagination are working client-side mocks over fixtures, with source URL params (`?sort_by=`, `?filter.*`, `?page=`) and the source page size; ledger in `docs/mock-behaviors.md`. Technical collections (`gift-wrap-*`, `exclude-mrng`, `flash15-exclusion`, `cc-corg-bundle`, ...) follow source behaviour (render / redirect / 404) and are never representatives.
+  - If a representative stays below 90 for reasons outside the template, stop and report; the owner decides.
+  - Order: commit round 255 (done: `06060a9`, approximate, owner-approved gate exception, not pushed) -> template survey -> owner approves the template and representative list -> P0 shared header shell -> collection -> content -> editorial.
+  - Commits: one per template after its representatives pass the gate, and only after owner confirmation each time. Never push without asking.
+  - **Template survey done** (read-only GETs of 201 routes; scripts `reference/scripts/r256-template-survey*.mjs`; data `reference/routes/template-survey-2026-11-06.json` and `template-survey-detail-2026-11-06.json`). About 10 templates; table in `docs/page-inventory.md` "Template Survey".
+  - **Scope reduction (round-4/5 grilling, recorded in `AGENTS.md` "CMS-template scope reduction"):**
+    - Shogun page-builder routes (T3 21 articles, T8 6 pages) -> one project-designed content-block template, labelled own design, verified by owner screenshot review. Samples: `btv-city-guide/01`, `about-us`.
+    - Media-stories bodies -> placeholder text (no third-party press text copied).
+    - App pages -> logged-out empty-state mocks.
+    - Representative list approved (about 20 pages).
+  - **Final build scope confirmed by the owner (round-6 grilling)**: 9 reviewed pages plus derived routes. See `docs/page-inventory.md` "Final Build Scope" and `AGENTS.md` "Final build scope"; it supersedes the representative lists above.
+  - Next: P0 shared header shell, then `/collections/new-in`.
+
+## In Progress
+
+- **[Claude Code round 256] P0 shared header shell (claimed 2026-11-06).**
+  - Source captures (2026-11-06, Indonesia, logged out, empty cart, popup hidden), scripts `reference/scripts/r256-header-capture*.mjs`, all in `reference/dom/r256-header/`:
+    - Header section group: `header-1920.html` / `header-390.html` (58 KB, 35 img, 151 links) and `announcement-*.html`.
+    - `#wrapper` shell after the footer: `wrapper-shell-1920.html` (`#Cart-Drawer`, `#Product-Drawer`, `#Search-Drawer`, `.click-capture`).
+    - `mega-mobile.json` and `summary.json`.
+  - Findings so far:
+    - Desktop `full-menu > ul.thb-full-menu` has 10 items; 6 have a `mega-menu-container` with `mega-menu-columns` headings, links, and one `mega-menu-promotion` image each.
+    - The mobile `details.mobile-toggle-wrapper > nav#mobile-menu` repeats the same tree as nested `details.link-container`, then the `thb-mobile-menu-footer` (account links, store list with 10 flag images).
+    - Secondary area: search icon (+ mobile `header-search-wrap` with its own logo and form), wishlist, account, and cart, each with a hidden white variant image (`jsc-secondary-*`).
+    - `predictive-search-custom` and `#Search-Drawer` are empty in the server HTML; JavaScript fills the promotion products.
+    - The source uses the hamburger drawer at **every** width. `full-menu` is mounted but 0x0 at 1920, so there is no mega-menu hover state.
+  - Implemented (uncommitted, **APPROXIMATE / NOT VISUALLY VERIFIED**):
+    - Data:
+      - `scripts/build-header-data.mjs`, using the dependency-free parser `scripts/lib/mini-dom.mjs`, writes `src/data/header.json`, served through the repository `src/lib/navigation.ts`.
+      - Desktop and mobile menu trees are extracted separately, so each keeps its own source markup.
+      - SVGs are stored verbatim as React props plus inner markup.
+      - The fixture keeps `&nbsp;`.
+    - Styles:
+      - `scripts/build-shell-css.mjs` writes `src/app/shell-source.css`: 396 source rules captured over every shell state by `reference/scripts/r256-shell-used-rules.mjs`, plus 41 `:root` vars.
+      - Every subject selector gets `:where(<shell roots>, <shell roots> *)`, so specificity is unchanged.
+      - Rules on `body`, `html`, or `#wrapper` are kept as the source wrote them.
+      - CSS `url()` images are localized.
+    - Assets: `scripts/download-header-assets.mjs` writes `public/assets/source/header/` (27 files under source names; see `docs/asset-manifest.md`). The 6 mega-menu promotion `.webp` files (3-15 MB) are Git-ignored.
+    - Components: `src/components/shell/{SiteHeader,ShellPanels,SourceSvg}.tsx`.
+      - Announcement marquee; header section with the hidden desktop mega-menu; hamburger drawer with nested submenus, account links, and store/language selectors; secondary icons with white variants; inline search bar; predictive-search container.
+      - `#Cart-Drawer`, `#Product-Drawer`, `#Search-Drawer`, `.click-capture`, and the body-level `div.jsc-page-loading`.
+      - State timing follows `reference/js/d57b4de829f727fa.js` (class Header) and `reference/js/r256-header/functions.js`.
+    - `SiteChrome` (`src/components/HomePage.tsx`) now renders the source hierarchy: `#wrapper > sections + div#main-content[role=main] + footer + panels`; `back-to-top` is a sibling.
+    - Supporting changes:
+      - `html.js` set in `src/app/layout.tsx`.
+      - 134 obsolete header selectors removed from `globals.css`, and the global `svg` reset scoped away from the shell.
+      - `overlays.css` reduced to the local-only states.
+      - The Backstage popup scroll lock now uses `body.style.overflow`, as the source does.
+      - The body gets the source `-webkit-font-smoothing`.
+      - The `swym-font` and `Everett-Regular` faces are declared site-wide.
+      - `src/app/shell.css` restores the source unitless body line-height on the shell roots.
+  - Evidence:
+    - Paired state probes and screenshots: `reference/scripts/r256-header-pairs.mjs`, outputs in `reference/screenshots/r256-header/` and `reference/dom/r256-header/pairs.json`. The 12 states are base, menu, Bags submenu, store list, search, and cart, each at 1920 and 390.
+    - Probed rects and styles: no difference in any state.
+    - Pixel diff (threshold 40): 0-0.17 % changed at 1920. At 390: 0.0-0.11 % for the shell states; base 1.7 %, all in the hero image area below the header.
+    - Remaining diff: glyph-edge differences on the announcement and submenu text. Font file hash, positions (0.01 px), and computed styles are identical (`reference/scripts/r256-subpixel.mjs`, `r256-ann-layer.mjs`, `r256-fonts-loaded.mjs`). The cause is unresolved (raster path).
+  - Environment note: the ego tab produces about 1 requestAnimationFrame per second (`reference/scripts/r256-cart-poll.mjs`), so CSS transitions take about 3.5 s to finish.
+    - This explains every flaky timing result (cart drawer open or closed at a fixed delay).
+    - Probes must wait for the final state (`waitForFunction`), never a fixed delay.
+  - Benchmark run 1 (`reference/verify/r256-{home,pdp-classic,pdp-xs-dumpling}/`, 1920/1024/768/390):
+    - PDP eval 90.9-92.8. Baseline r255b was 86.8-92.0.
+    - Geometry and content are now 100.
+    - Still failing: assets 40-47 and visual 70-83. The missing assets are the dummyimage product photos (owner decision) plus `BTV_LOADING_1.gif`, which is now added.
+    - PDP region diff 4.7-10.6 %, concentrated in the gallery bands (placeholder images).
+    - Homepage eval 68.0-73.3 (first measurement with this tool). Failing: assets 15 (homepage hashed asset names), animations 0.7 (96 source vs 1), fonts (`Everett-Regular` and `swym-font`, now added), content 67.
+  - Benchmark run 2 (`reference/verify/r256b-*`, after `jsc-page-loading` and the site-wide font faces):
+    - PDP classic: eval 91.7-93.0. PDP xs-dumpling: eval 91.1-91.4.
+    - Every dimension is at or above 98.5 except assets (classic 48.5, xs-dumpling 41.2: only the dummyimage product photos remain missing) and visual (70.8-83.3; gallery bands, i.e. the placeholder images).
+    - The shared header no longer appears in any failing dimension.
+    - Homepage: eval 69.3-74.6. Failing: assets 16-18, animations 0.7, content 67 (1920-768), fonts 83 (`swym-font` is declared but not used on the homepage, so it never loads).
+    - The homepage failures predate this round and sit outside the shell: hashed asset filenames, 96 source animations vs 1, and section-density mapping.
+    - There is no earlier homepage score to compare against, because this tool had never scored the homepage.
+  - Bug fixed (owner report "announcement-bar berhenti"): `loadForShot` (`tests/visual/ego-lib.mjs:66`) injects a marquee freeze `<style>` into the captured page, and `r256-shell-used-rules.mjs` recorded it as a source `inline:style` sheet, so `shell-source.css` shipped `.announcement-bar--marquee > div{animation:none!important}`. `scripts/build-shell-css.mjs` now drops it (`HARNESS_RULE`); probe on local home 1920: `marquee-left` 16s running, transform -356 → -682 px over 3s. Paired screenshots were unaffected (the harness freezes both sides). Lesson: any capture run through `loadForShot` contains harness styles; filter them before using captured CSS.
+  - Bug fixed (owner report "jsc-widget-title underline harusnya 1"): the footer drew two underlines, `text-decoration:underline` on `.footer .thb-widget-title` (globals.css:319, from commit 2cc5622) plus the `.jsc-widget-title` 2px border-bottom. Source computes `text-decoration-line: none` on `.thb-widget-title` and only the 2px border on `.jsc-widget-title` (home and PDP, 1920 and 390), so the local underline was removed. Paired crops of the title row: `reference/screenshots/r256-footer/pair-{1920,390}-titles.png`, 0 diff pixels (threshold 16) at both widths; title heights 49/41 px equal on both sides. The crops were taken after a programmatic scroll, so they support only the underline check, not layout evidence.
+  - Next: owner decision on whether the homepage benchmark gaps are in scope, and confirmation before committing the shell. Then `/collections/new-in`.
+  - Not part of `06060a9`: the working-tree deletions of `scripts/croppng.py` and `scripts/pdf2png.py` were left unstaged because their origin is unknown and they are unrelated to the PDP.
 
 - **Round 254 real product template, `/products/womens-classic-long-sleeve-shirt` (owner approved the component-rebuild method): APPROXIMATE / NOT VISUALLY VERIFIED.**
   - Data pipeline: `scripts/fetch-product-details.mjs` (ego, read-only GETs) captured `/products/<h>.js`, recommendation JSON, the server page and both recommendation section responses for all 41 catalog products into private `reference/data/product-details-raw.json` and `reference/data/products/<h>/`. `node scripts/build-product-details.mjs` parses them into `src/data/product-details.json` (options, variants with SKU/availability/labels, galleries grouped by media alt = colour, swatch images, 5 source tabs incl. CM table + inch version, Pair It With and You May Also Like cards as the source renders them) and the asset plan `reference/data/product-asset-plan.json`. `scripts/download-product-assets.mjs` (ego) mirrors images for requested handles; a product is served only when `assetsComplete`.

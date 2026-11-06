@@ -16,6 +16,8 @@ declare module "react" {
       "product-card": SourceElement;
       "quick-view": SourceElement;
       "product-add-to-cart-sticky": SourceElement;
+      "full-menu": SourceElement;
+      "side-panel-close": SourceElement;
     }
   }
 }

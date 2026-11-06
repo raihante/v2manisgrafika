@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 import type { CSSProperties } from "react";
-import { FormEvent, Fragment, useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
+import { FormEvent, Fragment, useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import data from "@/data/homepage.json";
@@ -11,27 +11,14 @@ import { catalog } from "@/lib/catalog";
 import { localCart, useCart } from "@/lib/cart";
 import interactionData from "@/data/product-card-interactions.json";
 import notifyIcon from "@/data/notify-icon.json";
-import searchIcon from "@/data/search-icon.json";
-import { BackstagePassPopup, InstagramLightbox, OPEN_CART_EVENT, SidePanels, openCartDrawer } from "@/components/Overlays";
+import { BackstagePassPopup, InstagramLightbox, OPEN_CART_EVENT, openCartDrawer } from "@/components/Overlays";
+import { AnnouncementBar, SiteHeader } from "@/components/shell/SiteHeader";
+import { PageLoading, ShellPanels } from "@/components/shell/ShellPanels";
 
-type Overlay = "menu" | "search" | "cart" | null;
 type Product = (typeof data.collections)[number]["products"][number];
 type ProductInteraction = { secondaryImages: string[]; variants: { label: string; image: string | null; thumbnail: string | null; soldOut: boolean }[] };
 
 const productInteractions = interactionData as Record<string, ProductInteraction>;
-
-const mobileMenuSections: Record<string, { category: string[]; collection?: string[]; promotion?: string }> = {
-  Bags: { category: ["New In", "Bags", "Pouches", "Shop All"], collection: ["Dumpling Series", "Carryall Series", "Para Series", "Studio Tote Series", "Envelope Series"], promotion: "/assets/source/a17469ea3386ccd7.webp" },
-  Women: { category: ["New In", "Tops", "Bottoms", "Jumpsuits", "Dresses", "Shop All"], collection: ["Women Sets", "Women Denimwear", "Women Organic Cotton T Shirt"] },
-  Men: { category: ["New In", "Tops", "Bottoms", "Shop All"], collection: ["Men Sets", "Men Denimwear", "Men Organic Cotton T Shirt"] },
-  Kids: { category: ["New In", "Girls", "Boys", "Jumpsuits", "Bags", "Accessories", "Shop All"], collection: ["Kids STND01", "Kids Sets"] },
-  Accessories: { category: ["New In", "Tech", "Pouches", "Caps", "Shop All"] },
-  Lifestyle: { category: ["New In", "Homeware", "Key Tags", "Carabiners", "Stationery", "Shopper Tote", "Shop All"] },
-};
-
-// PREVIEW: routes outside the checkout preview resolve to the local 404 page (docs/mock-behaviors.md).
-const MENU_HREFS: Record<string, string> = { "New In": "/collections/new-in", Bags: "/collections/bags", Women: "/collections/womens-all", Men: "/collections/mens-all", Kids: "/collections/kids-all", Accessories: "/collections/accessories-all", Eyewear: "/collections/eyewear", Footwear: "/collections/footwear", Lifestyle: "/collections/lifestyle-all", Pets: "/collections/pets-new-in", "Online Exclusives": "/collections/online-exclusive" };
-const slugHref = (label: string) => `/collections/${label.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`;
 
 function Icon({ name }: { name: "menu" | "search" | "user" | "heart" | "bag" | "close" | "arrow" }) {
   const paths = {
@@ -44,37 +31,6 @@ function Icon({ name }: { name: "menu" | "search" | "user" | "heart" | "bag" | "
     arrow: <path d="m9 5 7 7-7 7" />,
   };
   return <svg viewBox="0 0 24 24" aria-hidden="true">{paths[name]}</svg>;
-}
-
-function Header({ open, menuOpen }: { open: (overlay: Overlay) => void; menuOpen: boolean }) {
-  const { count } = useCart();
-  return (
-    <>
-      {/* Source marquee: three identical groups, each translating its own width over --marquee-speed. */}
-      <div className="announcement-bar-section"><div className="announcement-bar"><div className="announcement-bar--inner direction-left announcement-bar--marquee" style={{ "--marquee-speed": "16s" } as CSSProperties}>{[0, 1, 2].map((group) => <div key={group} aria-hidden={group > 0 || undefined}>{data.announcement.map((item) => <div className="announcement-bar--item" key={item.href}><a href={item.href} target="_blank" rel="noreferrer" tabIndex={group > 0 ? -1 : undefined}>{item.text}</a></div>)}<div className="announcement-bar--item" /></div>)}</div></div></div>
-      <header className={`site-header${menuOpen ? " mobile-menu-header-open" : ""}`}>
-        <button className={`icon-button menu-trigger${menuOpen ? " menu-open" : ""}`} onClick={() => open("menu")} aria-label={menuOpen ? "Close menu" : "Open menu"} aria-expanded={menuOpen}><span /><span /><span /></button>
-        <Link className="logo" href="/"><img src={menuOpen ? "/assets/source/7abbb90a55ef138d.png" : data.logo} alt="Beyond The Vines" width={194} height={42} /></Link>
-        <div className="header-actions">
-          <button className="thb-secondary-area-item header-search-button" onClick={() => open("search")} aria-label="Search"><svg className="search-icon" width={20} height={20} viewBox={searchIcon.viewBox} aria-hidden="true">{searchIcon.paths.map((d) => <path className="cls-1" d={d} key={d.slice(0, 24)} />)}</svg></button>
-          <a className="thb-secondary-area-item thb-secondary-myaccount index-swishlist" href="#swym-wishlist" aria-label="My Wishlist">
-            <svg className="wishlist-icon" width={20} height={20} viewBox="0 0 47.33 44.03" aria-hidden="true">
-              <path className="cls-1" d="M47.29,14.84h0c0-.72-.09-1.45-.25-2.31-.34-1.81-.95-3.49-1.81-4.99-.85-1.48-1.91-2.78-3.14-3.85-1.07-.94-2.24-1.71-3.48-2.29-1.63-.77-3.32-1.22-5.05-1.34-1.19-.08-2.25-.04-3.25.13-1.57.26-3.04.76-4.38,1.48-.8.43-1.56.94-2.27,1.53-.12-.1-.25-.2-.37-.3C21.15,1.24,18.72.28,16.06.06c-1.62-.14-3.2-.01-4.69.38-3.03.8-5.59,2.39-7.62,4.75-1.05,1.22-1.89,2.6-2.52,4.12C.46,11.19.04,13.24,0,15.41c-.02,1.01.06,2.04.25,3.26.18,1.18.46,2.36.87,3.6.53,1.64,1.23,3.23,2.08,4.73.57,1.01,1.13,1.9,1.71,2.71.82,1.16,1.51,2.03,2.23,2.83l.29.32c.51.57,1.04,1.15,1.62,1.73.65.65,1.31,1.24,1.94,1.78.63.55,1.39,1.2,2.18,1.81,1.52,1.18,3.11,2.28,4.73,3.26,1.38.84,2.67,1.54,3.94,2.15.58.29,1.2.43,1.83.43s1.24-.14,1.82-.42c1.11-.53,2.25-1.14,3.37-1.81,1.9-1.13,3.68-2.34,5.29-3.6,1.18-.91,2.21-1.78,3.15-2.67.78-.73,1.5-1.48,2.19-2.21l.16-.17c.73-.76,1.45-1.63,2.27-2.74,1.23-1.66,2.22-3.29,3.03-5,.69-1.44,1.25-2.96,1.66-4.52.46-1.73.7-3.53.72-5.37,0-.3-.02-.55-.04-.69ZM42.81,19.97c-.35,1.32-.82,2.6-1.41,3.84-.73,1.53-1.62,2.97-2.63,4.33-.61.82-1.25,1.62-1.96,2.37-.71.75-1.42,1.5-2.18,2.21-.91.85-1.86,1.65-2.85,2.41-1.55,1.2-3.18,2.3-4.87,3.31-.99.59-2,1.13-3.03,1.63-.16.08-.28.08-.44,0-1.23-.6-2.43-1.26-3.6-1.97-1.5-.91-2.94-1.91-4.33-2.98-.69-.53-1.35-1.09-2-1.66-.59-.51-1.17-1.03-1.72-1.58-.61-.61-1.19-1.26-1.77-1.9-.7-.77-1.33-1.6-1.93-2.45-.54-.76-1.03-1.55-1.48-2.36-.72-1.28-1.31-2.62-1.76-4.01-.32-.98-.57-1.97-.72-2.98-.13-.87-.22-1.74-.21-2.61.03-1.63.32-3.2.94-4.71.47-1.12,1.09-2.15,1.88-3.08,1.53-1.78,3.43-2.95,5.69-3.54,1.11-.29,2.25-.37,3.39-.27,1.94.17,3.69.86,5.23,2.05.8.61,1.49,1.32,2.1,2.13.13.17.25.33.39.52.05.07.16.07.21,0,.12-.16.24-.32.35-.47.95-1.27,2.11-2.31,3.51-3.07,1-.54,2.07-.89,3.2-1.08.78-.13,1.57-.14,2.36-.08,1.28.09,2.51.43,3.68.98.95.45,1.81,1.03,2.6,1.72.95.83,1.72,1.79,2.34,2.88.68,1.18,1.12,2.45,1.37,3.79.11.56.18,1.12.18,1.69,0,.19.04.38.04.58-.01,1.49-.21,2.95-.59,4.38Z" />
-            </svg>
-          </a>
-          <Link className="thb-secondary-area-item myaccount-icon thb-secondary-myaccount" href="/account/login" aria-label="My Account">
-            <svg className="login-icon" width={20} height={20} viewBox="0 0 16.46 18.23" aria-hidden="true">
-              <rect className="cls-1" x={4.58} y={0.86} width={7.3} height={7.3} rx={3.65} ry={3.65} />
-              <path className="cls-1" d="M.86,17.37v-3.65c0-3.06,2.5-5.56,5.56-5.56h3.64c3.06,0,5.56,2.5,5.56,5.56v3.65" />
-            </svg>
-          </Link>
-          <Link className="thb-secondary-area-item thb-secondary-cart" id="cart-drawer-toggle" href="/cart" aria-label={`Cart (${count})`} onClick={(event) => { event.preventDefault(); open("cart"); }}>
-            <div className="thb-secondary-item-icon"><img src="/assets/source/d6fc4f371f8c4447.png" alt="" /><span className="thb-item-count">{count > 0 ? count : null}</span></div>
-          </Link>
-        </div>
-      </header>
-    </>
-  );
 }
 
 const HERO_SWITCH_INTERVAL_MS = 5000;
@@ -765,16 +721,6 @@ function Footer() {
   );
 }
 
-function OverlayPanel({ type, close }: { type: Exclude<Overlay, null>; close: () => void }) {
-  const [menuSection, setMenuSection] = useState<string | null>(null);
-  if (type === "menu") {
-    const menuItems = ["New In", "Bags", "Women", "Men", "Kids", "Accessories", "Eyewear", "Footwear", "Lifestyle", "Pets", "Online Exclusives"];
-    const section = menuSection ? mobileMenuSections[menuSection] : null;
-    return <><div className="menu-overlay-local" role="button" tabIndex={0} aria-label="Close menu" onClick={close} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") close(); }} /><nav className="mobile-menu-drawer-local" aria-label="Mobile navigation"><div className="mobile-menu-drawer-inner-local"><ul className="mobile-menu-local">{menuItems.map((item) => <li key={item}>{mobileMenuSections[item] ? <button type="button" onClick={() => setMenuSection(item)}>{item}</button> : <Link href={MENU_HREFS[item] ?? slugHref(item)} onClick={close}>{item}</Link>}</li>)}</ul><div className="mobile-menu-footer-local"><div className="mobile-menu-account-links"><Link href="/account/login" onClick={close}>Sign In</Link><Link href="/pages/contact-us" onClick={close}>Need Help?</Link><Link href="/pages/the-btv-stores" onClick={close}>Store Locator</Link><a className="mobile-menu-wishlist" href="/pages/wishlist"><span>Wishlist</span><svg className="pixel-heart" width="20" height="20" viewBox="0 0 48.93 48.93" aria-hidden="true"><g fill="red"><rect x="20.97" y="13.99" width="6.99" height="6.99"/><rect x="20.98" y="27.96" width="6.99" height="6.99"/><rect x="6.99" y=".02" width="6.99" height="6.99"/><rect x="0" y="7.01" width="6.99" height="6.99"/><rect x="13.98" y="7" width="6.99" height="6.99"/><rect x="6.99" y="13.99" width="6.99" height="6.99"/><rect x="0" y="20.99" width="6.99" height="6.99"/><rect x="13.99" y="20.98" width="6.99" height="6.99"/><rect x="7" y="27.97" width="6.99" height="6.99"/><rect x="27.96" y="20.97" width="6.99" height="6.99"/><rect x="41.94" y="20.96" width="6.99" height="6.99"/><rect x="34.95" y="27.95" width="6.99" height="6.99"/><rect x="13.99" y="34.95" width="6.99" height="6.99"/><rect x="27.97" y="34.95" width="6.99" height="6.99"/><rect x="20.99" y="41.94" width="6.99" height="6.99"/><rect x="34.94" y="0" width="6.99" height="6.99"/><rect x="27.95" y="6.99" width="6.99" height="6.99"/><rect x="41.93" y="6.99" width="6.99" height="6.99"/><rect x="34.95" y="13.98" width="6.99" height="6.99"/></g></svg></a></div><div className="mobile-menu-markets"><button type="button"><span>EN</span><svg width="8" height="6" viewBox="0 0 8 6" aria-hidden="true"><path d="M6.75 1.5 3.75 4.5.75 1.5" /></svg></button><button type="button"><img src="/assets/source/930df51bb2514341.png" alt="Indonesia" /><span>ID</span><svg width="8" height="6" viewBox="0 0 8 6" aria-hidden="true"><path d="M6.75 1.5 3.75 4.5.75 1.5" /></svg></button></div></div>{menuSection && section && <div className="mobile-submenu-local"><button className="mobile-submenu-back" type="button" onClick={() => setMenuSection(null)}><span aria-hidden="true">←</span>Back</button><h2>{menuSection}</h2><h3>Shop By Category</h3>{section.category.map((item) => <Link href={slugHref(`${menuSection} ${item}`)} onClick={close} key={item}>{item}</Link>)}{section.collection && <><h3>Shop By Collection</h3>{section.collection.map((item) => <Link href={slugHref(item)} onClick={close} key={item}>{item}</Link>)}</>}{section.promotion && <img className="mobile-submenu-promotion" src={section.promotion} alt="" />}</div>}</div></nav></>;
-  }
-  return null; // search and cart are rendered by <SidePanels> in SiteChrome
-}
-
 export function NewsletterSection() {
   const [subscribed, setSubscribed] = useState(false);
   const subscribe = (event: FormEvent<HTMLFormElement>) => {
@@ -845,35 +791,31 @@ function BackToTop() {
   );
 }
 
-// Shared storefront shell (announcement, sticky header, menu/search overlays, footer) for every preview route.
+// Shared storefront shell on the source container hierarchy: #wrapper > announcement + header sections,
+// div#main-content (role=main), footer group, then the side panels and .click-capture (reference/dom/r256-header/).
+// <back-to-top> is a body-level sibling of #wrapper on the source.
 export function SiteChrome({ children, backToTop = false }: { children: React.ReactNode; backToTop?: boolean }) {
-  const [overlay, setOverlay] = useState<Overlay>(null);
-  // Source mobile toggle adds body.overflow-hidden while the menu drawer is open, locking page scroll.
-  // The header is sticky, so the drawer must start at the header's current bottom edge (94px only at scroll zero).
-  useLayoutEffect(() => {
-    if (overlay !== "menu") return;
-    const root = document.documentElement;
-    document.body.classList.add("overflow-hidden");
-    const place = () => {
-      const header = document.querySelector<HTMLElement>(".site-header");
-      if (header) root.style.setProperty("--menu-top", `${Math.max(0, header.getBoundingClientRect().bottom)}px`);
-    };
-    place();
-    window.addEventListener("resize", place);
-    return () => {
-      window.removeEventListener("resize", place);
-      document.body.classList.remove("overflow-hidden");
-      root.style.removeProperty("--menu-top");
-    };
-  }, [overlay]);
+  const [cartOpen, setCartOpen] = useState(false);
   useEffect(() => {
-    const openCart = () => setOverlay("cart");
+    const openCart = () => setCartOpen(true);
     window.addEventListener(OPEN_CART_EVENT, openCart);
     return () => window.removeEventListener(OPEN_CART_EVENT, openCart);
   }, []);
-  const closeOverlay = useCallback(() => setOverlay(null), []);
-  const panel = overlay === "search" || overlay === "cart" ? overlay : null;
-  return <main id="top"><Header menuOpen={overlay === "menu"} open={(next) => setOverlay((current) => current === next ? null : next)} />{children}<Footer />{backToTop && <BackToTop />}{overlay === "menu" && <OverlayPanel type={overlay} close={closeOverlay} />}<SidePanels open={panel} close={closeOverlay} /><BackstagePassPopup /></main>;
+  const closeCart = useCallback(() => setCartOpen(false), []);
+  return (
+    <>
+      <div id="wrapper">
+        <AnnouncementBar />
+        <SiteHeader onOpenCart={() => setCartOpen(true)} />
+        <div role="main" id="main-content">{children}</div>
+        <Footer />
+        <ShellPanels cartOpen={cartOpen} closeCart={closeCart} />
+      </div>
+      {backToTop && <BackToTop />}
+      <PageLoading />
+      <BackstagePassPopup />
+    </>
+  );
 }
 
 export default function HomePage() {

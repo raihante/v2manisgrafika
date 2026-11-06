@@ -1,0 +1,1790 @@
+{
+ "snapshot": "2026-11-06",
+ "pageLoading": {
+  "image": "/assets/source/header/BTV_LOADING_1.gif",
+  "alt": "Loading",
+  "className": "jsc-spinner"
+ },
+ "sectionIds": {
+  "announcement": "shopify-section-sections--22799924887831__announcement-bar",
+  "header": "shopify-section-sections--22799924887831__header"
+ },
+ "announcement": {
+  "speed": "16s",
+  "direction": "left",
+  "items": [
+   {
+    "text": "HEART POCKET MIRROR, ON US!  WITH ANY CRUNCH CARRYALL 0.5 PURCHASE",
+    "href": "/blogs/promotions/a-little-love-for-your-carryall",
+    "target": "_blank"
+   },
+   {
+    "text": "RP100K OFF YOUR FIRST ORDER WHEN YOU JOIN THE VINE CLUB*",
+    "href": "/blogs/promotions/beyond-the-vines-first-time-customer-promotion",
+    "target": "_blank"
+   },
+   {
+    "text": " FREE SHIPPING TO INDONESIA WITH MIN. SPEND, INCLUSIVE OF CUSTOM DUTIES & TAXES",
+    "href": "/pages/shipping-rate",
+    "target": "_blank"
+   },
+   null
+  ],
+  "groups": 3
+ },
+ "logo": {
+  "alt": "Beyond The Vines Indonesia",
+  "width": 5738,
+  "height": 625,
+  "images": [
+   {
+    "src": "/assets/source/header/BTV_logo_black.png",
+    "className": "logoimg"
+   },
+   {
+    "src": "/assets/source/header/BTV_logo_black.png",
+    "className": "logoimg logoimg--light"
+   },
+   {
+    "src": "/assets/source/header/BTV_logo_white.png",
+    "className": "logoimg jsc-secondary-logo d-none"
+   }
+  ]
+ },
+ "hamburgerBack": {
+  "label": "Back",
+  "icon": {
+   "props": {
+    "width": "14",
+    "height": "10",
+    "viewBox": "0 0 14 10",
+    "fill": "none",
+    "xmlns": "http://www.w3.org/2000/svg"
+   },
+   "inner": "<path d=\"M13.1778 5H7.08891H1.00002M1.00002 5L5.00002 1M1.00002 5L5.00002 9\" stroke=\"var(--color-accent)\" stroke-width=\"1.1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+  }
+ },
+ "desktopMenu": [
+  {
+   "label": "New In",
+   "href": "/collections/new-in",
+   "title": "New In",
+   "className": "",
+   "itemTitle": null,
+   "role": "menuitem",
+   "arrow": null,
+   "mega": null
+  },
+  {
+   "label": "Bags",
+   "href": "/collections/bags-new-in",
+   "title": "Bags",
+   "className": "menu-item-has-children menu-item-has-megamenu",
+   "itemTitle": "Bags",
+   "role": "menuitem",
+   "arrow": {
+    "props": {
+     "width": "8",
+     "height": "6",
+     "viewBox": "0 0 8 6",
+     "fill": "none",
+     "xmlns": "http://www.w3.org/2000/svg"
+    },
+    "inner": "<path d=\"M6.75 1.5L3.75 4.5L0.75 1.5\" stroke=\"var(--color-header-links, --color-accent)\" stroke-width=\"1.1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+   },
+   "mega": {
+    "columns": [
+     {
+      "heading": {
+       "label": "Shop By Category",
+       "href": "#",
+       "title": "Shop By Category"
+      },
+      "links": [
+       {
+        "label": "New In",
+        "href": "/collections/bags-new-in",
+        "title": "New In"
+       },
+       {
+        "label": "Bags",
+        "href": "/collections/bags",
+        "title": "Bags"
+       },
+       {
+        "label": "Pouches",
+        "href": "/collections/pouches",
+        "title": "Pouches"
+       },
+       {
+        "label": "Shop All",
+        "href": "/collections/bags-shop-all",
+        "title": "Shop All"
+       }
+      ]
+     },
+     {
+      "heading": {
+       "label": "Shop By Collection",
+       "href": "#",
+       "title": "Shop By Collection"
+      },
+      "links": [
+       {
+        "label": "Dumpling Series",
+        "href": "/collections/dumpling-series",
+        "title": "Dumpling Series"
+       },
+       {
+        "label": "Carryall Series",
+        "href": "/collections/carryall-series",
+        "title": "Carryall Series"
+       },
+       {
+        "label": "Para Series",
+        "href": "/collections/para-series",
+        "title": "Para Series"
+       },
+       {
+        "label": "Studio Tote Series",
+        "href": "/collections/studio-tote-series",
+        "title": "Studio Tote Series"
+       },
+       {
+        "label": "Envelope Series",
+        "href": "/collections/envelope-series",
+        "title": "Envelope Series"
+       }
+      ]
+     }
+    ],
+    "promotion": {
+     "image": "/assets/source/header/Seasonal_Dumpling_2026_10_BAGS_Hamburger.webp",
+     "imageAlt": "",
+     "href": "/collections/bags-new-in",
+     "target": "_blank",
+     "title": "Bags New In",
+     "titleClass": "heading-font",
+     "button": {
+      "label": "Shop Now",
+      "href": "/collections/bags-new-in",
+      "target": "_blank",
+      "className": "text-button"
+     },
+     "arrow": {
+      "props": {
+       "width": "14",
+       "height": "10",
+       "viewBox": "0 0 14 10",
+       "fill": "none",
+       "xmlns": "http://www.w3.org/2000/svg"
+      },
+      "inner": "<path d=\"M1 5H7.08889H13.1778M13.1778 5L9.17778 1M13.1778 5L9.17778 9\" stroke=\"var(--color-accent)\" stroke-width=\"1.1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+     },
+     "className": "mega-menu-promotion p-t-30"
+    }
+   }
+  },
+  {
+   "label": "Women",
+   "href": "/collections/womens-new-in",
+   "title": "Women",
+   "className": "menu-item-has-children menu-item-has-megamenu",
+   "itemTitle": "Women",
+   "role": "menuitem",
+   "arrow": {
+    "props": {
+     "width": "8",
+     "height": "6",
+     "viewBox": "0 0 8 6",
+     "fill": "none",
+     "xmlns": "http://www.w3.org/2000/svg"
+    },
+    "inner": "<path d=\"M6.75 1.5L3.75 4.5L0.75 1.5\" stroke=\"var(--color-header-links, --color-accent)\" stroke-width=\"1.1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+   },
+   "mega": {
+    "columns": [
+     {
+      "heading": {
+       "label": "Shop By Category",
+       "href": "#",
+       "title": "Shop By Category"
+      },
+      "links": [
+       {
+        "label": "New In",
+        "href": "/collections/womens-new-in",
+        "title": "New In"
+       },
+       {
+        "label": "Tops",
+        "href": "/collections/womens-tops",
+        "title": "Tops"
+       },
+       {
+        "label": "Bottoms",
+        "href": "/collections/womens-bottoms",
+        "title": "Bottoms"
+       },
+       {
+        "label": "Jumpsuits",
+        "href": "/collections/womens-jumpsuits",
+        "title": "Jumpsuits"
+       },
+       {
+        "label": "Dresses",
+        "href": "/collections/womens-dresses",
+        "title": "Dresses"
+       },
+       {
+        "label": "Shop All",
+        "href": "/collections/womens-all",
+        "title": "Shop All"
+       }
+      ]
+     },
+     {
+      "heading": {
+       "label": "Shop By Collection",
+       "href": "#",
+       "title": "Shop By Collection"
+      },
+      "links": [
+       {
+        "label": "Women Sets",
+        "href": "/collections/womens-sets",
+        "title": "Women Sets"
+       },
+       {
+        "label": "Women Denimwear",
+        "href": "/collections/womens-denimwear",
+        "title": "Women Denimwear"
+       },
+       {
+        "label": "Women Organic Cotton T Shirt",
+        "href": "/collections/womens-organic-cotton-t-shirt",
+        "title": "Women Organic Cotton T Shirt"
+       }
+      ]
+     }
+    ],
+    "promotion": {
+     "image": "/assets/source/header/PRE_FALL_09_2026_WOMENS_Hamburger_A.webp",
+     "imageAlt": "",
+     "href": "/collections/womens-new-in",
+     "target": "_blank",
+     "title": "Women New In",
+     "titleClass": "heading-font",
+     "button": {
+      "label": "Shop Now",
+      "href": "/collections/womens-new-in",
+      "target": "_blank",
+      "className": "text-button"
+     },
+     "arrow": {
+      "props": {
+       "width": "14",
+       "height": "10",
+       "viewBox": "0 0 14 10",
+       "fill": "none",
+       "xmlns": "http://www.w3.org/2000/svg"
+      },
+      "inner": "<path d=\"M1 5H7.08889H13.1778M13.1778 5L9.17778 1M13.1778 5L9.17778 9\" stroke=\"var(--color-accent)\" stroke-width=\"1.1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+     },
+     "className": "mega-menu-promotion p-t-30"
+    }
+   }
+  },
+  {
+   "label": "Men",
+   "href": "/collections/mens-new-in",
+   "title": "Men",
+   "className": "menu-item-has-children menu-item-has-megamenu",
+   "itemTitle": "Men",
+   "role": "menuitem",
+   "arrow": {
+    "props": {
+     "width": "8",
+     "height": "6",
+     "viewBox": "0 0 8 6",
+     "fill": "none",
+     "xmlns": "http://www.w3.org/2000/svg"
+    },
+    "inner": "<path d=\"M6.75 1.5L3.75 4.5L0.75 1.5\" stroke=\"var(--color-header-links, --color-accent)\" stroke-width=\"1.1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+   },
+   "mega": {
+    "columns": [
+     {
+      "heading": {
+       "label": "Shop By Category",
+       "href": "#",
+       "title": "Shop By Category"
+      },
+      "links": [
+       {
+        "label": "New In",
+        "href": "/collections/mens-new-in",
+        "title": "New In"
+       },
+       {
+        "label": "Tops",
+        "href": "/collections/mens-tops",
+        "title": "Tops"
+       },
+       {
+        "label": "Bottoms",
+        "href": "/collections/mens-bottoms",
+        "title": "Bottoms"
+       },
+       {
+        "label": "Shop All",
+        "href": "/collections/mens-all",
+        "title": "Shop All"
+       }
+      ]
+     },
+     {
+      "heading": {
+       "label": "Shop By Collection",
+       "href": "#",
+       "title": "Shop By Collection"
+      },
+      "links": [
+       {
+        "label": "Men Sets",
+        "href": "/collections/mens-sets",
+        "title": "Men Sets"
+       },
+       {
+        "label": "Men Denimwear",
+        "href": "/collections/mens-denimwear",
+        "title": "Men Denimwear"
+       },
+       {
+        "label": "Men Organic Cotton T Shirt",
+        "href": "/collections/mens-organic-cotton-t-shirt",
+        "title": "Men Organic Cotton T Shirt"
+       }
+      ]
+     }
+    ],
+    "promotion": {
+     "image": "/assets/source/header/TOYO_2026_07_MEN_Hamburger.webp",
+     "imageAlt": "",
+     "href": "/collections/mens-new-in",
+     "target": "_blank",
+     "title": "Men New In",
+     "titleClass": "heading-font",
+     "button": {
+      "label": "Shop Now",
+      "href": "/collections/mens-new-in",
+      "target": "_blank",
+      "className": "text-button"
+     },
+     "arrow": {
+      "props": {
+       "width": "14",
+       "height": "10",
+       "viewBox": "0 0 14 10",
+       "fill": "none",
+       "xmlns": "http://www.w3.org/2000/svg"
+      },
+      "inner": "<path d=\"M1 5H7.08889H13.1778M13.1778 5L9.17778 1M13.1778 5L9.17778 9\" stroke=\"var(--color-accent)\" stroke-width=\"1.1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+     },
+     "className": "mega-menu-promotion p-t-30"
+    }
+   }
+  },
+  {
+   "label": "Kids",
+   "href": "/collections/kids-new-in",
+   "title": "Kids",
+   "className": "menu-item-has-children menu-item-has-megamenu",
+   "itemTitle": "Kids",
+   "role": "menuitem",
+   "arrow": {
+    "props": {
+     "width": "8",
+     "height": "6",
+     "viewBox": "0 0 8 6",
+     "fill": "none",
+     "xmlns": "http://www.w3.org/2000/svg"
+    },
+    "inner": "<path d=\"M6.75 1.5L3.75 4.5L0.75 1.5\" stroke=\"var(--color-header-links, --color-accent)\" stroke-width=\"1.1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+   },
+   "mega": {
+    "columns": [
+     {
+      "heading": {
+       "label": "Shop By Category",
+       "href": "#",
+       "title": "Shop By Category"
+      },
+      "links": [
+       {
+        "label": "New In",
+        "href": "/collections/kids-new-in",
+        "title": "New In"
+       },
+       {
+        "label": "Girls",
+        "href": "/collections/kids-girls",
+        "title": "Girls"
+       },
+       {
+        "label": "Boys",
+        "href": "/collections/kids-boys",
+        "title": "Boys"
+       },
+       {
+        "label": "Jumpsuits",
+        "href": "/collections/kids-jumpsuits",
+        "title": "Jumpsuits"
+       },
+       {
+        "label": "Bags",
+        "href": "/collections/kids-bags",
+        "title": "Bags"
+       },
+       {
+        "label": "Accessories",
+        "href": "/collections/kids-accessories",
+        "title": "Accessories"
+       },
+       {
+        "label": "Shop All",
+        "href": "/collections/kids-all",
+        "title": "Shop All"
+       }
+      ]
+     },
+     {
+      "heading": {
+       "label": "Shop By Collection",
+       "href": "#",
+       "title": "Shop By Collection"
+      },
+      "links": [
+       {
+        "label": "Kids STND01",
+        "href": "/collections/kids-stnd01",
+        "title": "Kids STND01"
+       },
+       {
+        "label": "Kids Sets",
+        "href": "/collections/kids-sets",
+        "title": "Kids Sets"
+       }
+      ]
+     }
+    ],
+    "promotion": {
+     "image": "/assets/source/header/KIDS_BACKPACK_07_2026_HAMBURGER.webp",
+     "imageAlt": "",
+     "href": "/collections/kids-new-in",
+     "target": "_blank",
+     "title": "Kids New In",
+     "titleClass": "heading-font",
+     "button": {
+      "label": "Shop Now",
+      "href": "/collections/kids-new-in",
+      "target": "_blank",
+      "className": "text-button"
+     },
+     "arrow": {
+      "props": {
+       "width": "14",
+       "height": "10",
+       "viewBox": "0 0 14 10",
+       "fill": "none",
+       "xmlns": "http://www.w3.org/2000/svg"
+      },
+      "inner": "<path d=\"M1 5H7.08889H13.1778M13.1778 5L9.17778 1M13.1778 5L9.17778 9\" stroke=\"var(--color-accent)\" stroke-width=\"1.1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+     },
+     "className": "mega-menu-promotion p-t-30"
+    }
+   }
+  },
+  {
+   "label": "Accessories",
+   "href": "/collections/accessories-new-in",
+   "title": "Accessories",
+   "className": "menu-item-has-children menu-item-has-megamenu",
+   "itemTitle": "Accessories",
+   "role": "menuitem",
+   "arrow": {
+    "props": {
+     "width": "8",
+     "height": "6",
+     "viewBox": "0 0 8 6",
+     "fill": "none",
+     "xmlns": "http://www.w3.org/2000/svg"
+    },
+    "inner": "<path d=\"M6.75 1.5L3.75 4.5L0.75 1.5\" stroke=\"var(--color-header-links, --color-accent)\" stroke-width=\"1.1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+   },
+   "mega": {
+    "columns": [
+     {
+      "heading": {
+       "label": "New In",
+       "href": "/collections/accessories-new-in",
+       "title": "New In "
+      },
+      "links": null
+     },
+     {
+      "heading": {
+       "label": "Tech",
+       "href": "/collections/tech",
+       "title": "Tech"
+      },
+      "links": null
+     },
+     {
+      "heading": {
+       "label": "Pouches",
+       "href": "/collections/pouches",
+       "title": "Pouches"
+      },
+      "links": null
+     },
+     {
+      "heading": {
+       "label": "Wallets",
+       "href": "/collections/wallets",
+       "title": "Wallets"
+      },
+      "links": null
+     },
+     {
+      "heading": {
+       "label": "Caps",
+       "href": "/collections/caps",
+       "title": "Caps"
+      },
+      "links": null
+     },
+     {
+      "heading": {
+       "label": "Shop All",
+       "href": "/collections/accessories-all",
+       "title": "Shop All"
+      },
+      "links": null
+     }
+    ],
+    "promotion": {
+     "image": "/assets/source/header/2026_10_ACC_Hamburger.webp",
+     "imageAlt": "",
+     "href": "/collections/accessories-new-in",
+     "target": "_blank",
+     "title": "Accessories New In",
+     "titleClass": "heading-font",
+     "button": {
+      "label": "Shop Now",
+      "href": "/collections/accessories-new-in",
+      "target": "_blank",
+      "className": "text-button"
+     },
+     "arrow": {
+      "props": {
+       "width": "14",
+       "height": "10",
+       "viewBox": "0 0 14 10",
+       "fill": "none",
+       "xmlns": "http://www.w3.org/2000/svg"
+      },
+      "inner": "<path d=\"M1 5H7.08889H13.1778M13.1778 5L9.17778 1M13.1778 5L9.17778 9\" stroke=\"var(--color-accent)\" stroke-width=\"1.1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+     },
+     "className": "mega-menu-promotion p-t-30"
+    }
+   }
+  },
+  {
+   "label": "Eyewear",
+   "href": "/collections/eyewear",
+   "title": "Eyewear",
+   "className": "",
+   "itemTitle": null,
+   "role": "menuitem",
+   "arrow": null,
+   "mega": null
+  },
+  {
+   "label": "Footwear",
+   "href": "/collections/footwear",
+   "title": "Footwear",
+   "className": "",
+   "itemTitle": null,
+   "role": "menuitem",
+   "arrow": null,
+   "mega": null
+  },
+  {
+   "label": "Lifestyle",
+   "href": "/collections/lifestyle-new-in",
+   "title": "Lifestyle",
+   "className": "menu-item-has-children menu-item-has-megamenu",
+   "itemTitle": "Lifestyle",
+   "role": "menuitem",
+   "arrow": {
+    "props": {
+     "width": "8",
+     "height": "6",
+     "viewBox": "0 0 8 6",
+     "fill": "none",
+     "xmlns": "http://www.w3.org/2000/svg"
+    },
+    "inner": "<path d=\"M6.75 1.5L3.75 4.5L0.75 1.5\" stroke=\"var(--color-header-links, --color-accent)\" stroke-width=\"1.1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+   },
+   "mega": {
+    "columns": [
+     {
+      "heading": {
+       "label": "Shop By Category",
+       "href": "#",
+       "title": "Shop By Category"
+      },
+      "links": [
+       {
+        "label": "New In",
+        "href": "/collections/lifestyle-new-in",
+        "title": "New In"
+       },
+       {
+        "label": "Homeware",
+        "href": "/collections/lifestyle-homeware",
+        "title": "Homeware"
+       },
+       {
+        "label": "Key Tags",
+        "href": "/collections/keytags",
+        "title": "Key Tags"
+       },
+       {
+        "label": "Carabiners",
+        "href": "/collections/lifestyle-carabiners",
+        "title": "Carabiners"
+       },
+       {
+        "label": "Stationery",
+        "href": "/collections/stationery",
+        "title": "Stationery"
+       },
+       {
+        "label": "Shopper Tote",
+        "href": "/collections/shopper-tote",
+        "title": "Shopper Tote"
+       },
+       {
+        "label": "Shop All",
+        "href": "/collections/lifestyle-all",
+        "title": "Shop All"
+       }
+      ]
+     }
+    ],
+    "promotion": {
+     "image": "/assets/source/header/YASHICA_2026_10_LIFESTYLE_Hamburger.webp",
+     "imageAlt": "",
+     "href": "/collections/lifestyle-new-in",
+     "target": "_blank",
+     "title": "Lifestyle New In",
+     "titleClass": "heading-font",
+     "button": {
+      "label": "Shop Now",
+      "href": "/collections/lifestyle-new-in",
+      "target": "_blank",
+      "className": "text-button"
+     },
+     "arrow": {
+      "props": {
+       "width": "14",
+       "height": "10",
+       "viewBox": "0 0 14 10",
+       "fill": "none",
+       "xmlns": "http://www.w3.org/2000/svg"
+      },
+      "inner": "<path d=\"M1 5H7.08889H13.1778M13.1778 5L9.17778 1M13.1778 5L9.17778 9\" stroke=\"var(--color-accent)\" stroke-width=\"1.1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+     },
+     "className": "mega-menu-promotion p-t-30"
+    }
+   }
+  },
+  {
+   "label": "Pets",
+   "href": "/collections/pets-new-in",
+   "title": "Pets",
+   "className": "",
+   "itemTitle": null,
+   "role": "menuitem",
+   "arrow": null,
+   "mega": null
+  }
+ ],
+ "mobileMenu": [
+  {
+   "kind": "link",
+   "label": "New In",
+   "href": "/collections/new-in",
+   "title": "New In"
+  },
+  {
+   "kind": "submenu",
+   "label": "Bags",
+   "dataTitle": "Bags",
+   "summaryClass": "parent-link",
+   "entries": [
+    {
+     "kind": "title",
+     "label": "Bags",
+     "className": "m-t-20 m-b-10"
+    },
+    {
+     "kind": "heading",
+     "label": "Shop By Category",
+     "className": "m-t-30",
+     "summaryClass": "m-b-20"
+    },
+    {
+     "kind": "link",
+     "label": "New In",
+     "href": "/collections/bags-new-in",
+     "title": "New In",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Bags",
+     "href": "/collections/bags",
+     "title": "Bags",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Pouches",
+     "href": "/collections/pouches",
+     "title": "Pouches",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Shop All",
+     "href": "/collections/bags-shop-all",
+     "title": "Shop All",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "heading",
+     "label": "Shop By Collection",
+     "className": "m-t-30",
+     "summaryClass": "m-b-20"
+    },
+    {
+     "kind": "link",
+     "label": "Dumpling Series",
+     "href": "/collections/dumpling-series",
+     "title": "Dumpling Series",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Carryall Series",
+     "href": "/collections/carryall-series",
+     "title": "Carryall Series",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Para Series",
+     "href": "/collections/para-series",
+     "title": "Para Series",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Studio Tote Series",
+     "href": "/collections/studio-tote-series",
+     "title": "Studio Tote Series",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Envelope Series",
+     "href": "/collections/envelope-series",
+     "title": "Envelope Series",
+     "className": "",
+     "role": "menuitem"
+    }
+   ],
+   "promotion": {
+    "image": "/assets/source/header/Seasonal_Dumpling_2026_10_BAGS_Hamburger.webp",
+    "imageAlt": "",
+    "href": "/collections/bags-new-in",
+    "target": "_blank",
+    "title": "Bags New In",
+    "titleClass": "heading-font",
+    "button": {
+     "label": "Shop Now",
+     "href": "/collections/bags-new-in",
+     "target": "_blank",
+     "className": "text-button"
+    },
+    "arrow": {
+     "props": {
+      "width": "14",
+      "height": "10",
+      "viewBox": "0 0 14 10",
+      "fill": "none",
+      "xmlns": "http://www.w3.org/2000/svg"
+     },
+     "inner": "<path d=\"M1 5H7.08889H13.1778M13.1778 5L9.17778 1M13.1778 5L9.17778 9\" stroke=\"var(--color-accent)\" stroke-width=\"1.1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+    },
+    "className": "mega-menu-promotion p-t-30"
+   }
+  },
+  {
+   "kind": "submenu",
+   "label": "Women",
+   "dataTitle": "Women",
+   "summaryClass": "parent-link",
+   "entries": [
+    {
+     "kind": "title",
+     "label": "Women",
+     "className": "m-t-20 m-b-10"
+    },
+    {
+     "kind": "heading",
+     "label": "Shop By Category",
+     "className": "m-t-30",
+     "summaryClass": "m-b-20"
+    },
+    {
+     "kind": "link",
+     "label": "New In",
+     "href": "/collections/womens-new-in",
+     "title": "New In",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Tops",
+     "href": "/collections/womens-tops",
+     "title": "Tops",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Bottoms",
+     "href": "/collections/womens-bottoms",
+     "title": "Bottoms",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Jumpsuits",
+     "href": "/collections/womens-jumpsuits",
+     "title": "Jumpsuits",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Dresses",
+     "href": "/collections/womens-dresses",
+     "title": "Dresses",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Shop All",
+     "href": "/collections/womens-all",
+     "title": "Shop All",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "heading",
+     "label": "Shop By Collection",
+     "className": "m-t-30",
+     "summaryClass": "m-b-20"
+    },
+    {
+     "kind": "link",
+     "label": "Women Sets",
+     "href": "/collections/womens-sets",
+     "title": "Women Sets",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Women Denimwear",
+     "href": "/collections/womens-denimwear",
+     "title": "Women Denimwear",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Women Organic Cotton T Shirt",
+     "href": "/collections/womens-organic-cotton-t-shirt",
+     "title": "Women Organic Cotton T Shirt",
+     "className": "",
+     "role": "menuitem"
+    }
+   ],
+   "promotion": {
+    "image": "/assets/source/header/PRE_FALL_09_2026_WOMENS_Hamburger_A.webp",
+    "imageAlt": "",
+    "href": "/collections/womens-new-in",
+    "target": "_blank",
+    "title": "Women New In",
+    "titleClass": "heading-font",
+    "button": {
+     "label": "Shop Now",
+     "href": "/collections/womens-new-in",
+     "target": "_blank",
+     "className": "text-button"
+    },
+    "arrow": {
+     "props": {
+      "width": "14",
+      "height": "10",
+      "viewBox": "0 0 14 10",
+      "fill": "none",
+      "xmlns": "http://www.w3.org/2000/svg"
+     },
+     "inner": "<path d=\"M1 5H7.08889H13.1778M13.1778 5L9.17778 1M13.1778 5L9.17778 9\" stroke=\"var(--color-accent)\" stroke-width=\"1.1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+    },
+    "className": "mega-menu-promotion p-t-30"
+   }
+  },
+  {
+   "kind": "submenu",
+   "label": "Men",
+   "dataTitle": "Men",
+   "summaryClass": "parent-link",
+   "entries": [
+    {
+     "kind": "title",
+     "label": "Men",
+     "className": "m-t-20 m-b-10"
+    },
+    {
+     "kind": "heading",
+     "label": "Shop By Category",
+     "className": "m-t-30",
+     "summaryClass": "m-b-20"
+    },
+    {
+     "kind": "link",
+     "label": "New In",
+     "href": "/collections/mens-new-in",
+     "title": "New In",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Tops",
+     "href": "/collections/mens-tops",
+     "title": "Tops",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Bottoms",
+     "href": "/collections/mens-bottoms",
+     "title": "Bottoms",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Shop All",
+     "href": "/collections/mens-all",
+     "title": "Shop All",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "heading",
+     "label": "Shop By Collection",
+     "className": "m-t-30",
+     "summaryClass": "m-b-20"
+    },
+    {
+     "kind": "link",
+     "label": "Men Sets",
+     "href": "/collections/mens-sets",
+     "title": "Men Sets",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Men Denimwear",
+     "href": "/collections/mens-denimwear",
+     "title": "Men Denimwear",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Men Organic Cotton T Shirt",
+     "href": "/collections/mens-organic-cotton-t-shirt",
+     "title": "Men Organic Cotton T Shirt",
+     "className": "",
+     "role": "menuitem"
+    }
+   ],
+   "promotion": {
+    "image": "/assets/source/header/TOYO_2026_07_MEN_Hamburger.webp",
+    "imageAlt": "",
+    "href": "/collections/mens-new-in",
+    "target": "_blank",
+    "title": "Men New In",
+    "titleClass": "heading-font",
+    "button": {
+     "label": "Shop Now",
+     "href": "/collections/mens-new-in",
+     "target": "_blank",
+     "className": "text-button"
+    },
+    "arrow": {
+     "props": {
+      "width": "14",
+      "height": "10",
+      "viewBox": "0 0 14 10",
+      "fill": "none",
+      "xmlns": "http://www.w3.org/2000/svg"
+     },
+     "inner": "<path d=\"M1 5H7.08889H13.1778M13.1778 5L9.17778 1M13.1778 5L9.17778 9\" stroke=\"var(--color-accent)\" stroke-width=\"1.1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+    },
+    "className": "mega-menu-promotion p-t-30"
+   }
+  },
+  {
+   "kind": "submenu",
+   "label": "Kids",
+   "dataTitle": "Kids",
+   "summaryClass": "parent-link",
+   "entries": [
+    {
+     "kind": "title",
+     "label": "Kids",
+     "className": "m-t-20 m-b-10"
+    },
+    {
+     "kind": "heading",
+     "label": "Shop By Category",
+     "className": "m-t-30",
+     "summaryClass": "m-b-20"
+    },
+    {
+     "kind": "link",
+     "label": "New In",
+     "href": "/collections/kids-new-in",
+     "title": "New In",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Girls",
+     "href": "/collections/kids-girls",
+     "title": "Girls",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Boys",
+     "href": "/collections/kids-boys",
+     "title": "Boys",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Jumpsuits",
+     "href": "/collections/kids-jumpsuits",
+     "title": "Jumpsuits",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Bags",
+     "href": "/collections/kids-bags",
+     "title": "Bags",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Accessories",
+     "href": "/collections/kids-accessories",
+     "title": "Accessories",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Shop All",
+     "href": "/collections/kids-all",
+     "title": "Shop All",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "heading",
+     "label": "Shop By Collection",
+     "className": "m-t-30",
+     "summaryClass": "m-b-20"
+    },
+    {
+     "kind": "link",
+     "label": "Kids STND01",
+     "href": "/collections/kids-stnd01",
+     "title": "Kids STND01",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Kids Sets",
+     "href": "/collections/kids-sets",
+     "title": "Kids Sets",
+     "className": "",
+     "role": "menuitem"
+    }
+   ],
+   "promotion": {
+    "image": "/assets/source/header/KIDS_BACKPACK_07_2026_HAMBURGER.webp",
+    "imageAlt": "",
+    "href": "/collections/kids-new-in",
+    "target": "_blank",
+    "title": "Kids New In",
+    "titleClass": "heading-font",
+    "button": {
+     "label": "Shop Now",
+     "href": "/collections/kids-new-in",
+     "target": "_blank",
+     "className": "text-button"
+    },
+    "arrow": {
+     "props": {
+      "width": "14",
+      "height": "10",
+      "viewBox": "0 0 14 10",
+      "fill": "none",
+      "xmlns": "http://www.w3.org/2000/svg"
+     },
+     "inner": "<path d=\"M1 5H7.08889H13.1778M13.1778 5L9.17778 1M13.1778 5L9.17778 9\" stroke=\"var(--color-accent)\" stroke-width=\"1.1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+    },
+    "className": "mega-menu-promotion p-t-30"
+   }
+  },
+  {
+   "kind": "submenu",
+   "label": "Accessories",
+   "dataTitle": "Accessories",
+   "summaryClass": "parent-link",
+   "entries": [
+    {
+     "kind": "title",
+     "label": "Accessories",
+     "className": "m-t-20 m-b-10"
+    },
+    {
+     "kind": "link",
+     "label": "New In",
+     "href": "/collections/accessories-new-in",
+     "title": "New In ",
+     "className": "",
+     "role": null
+    },
+    {
+     "kind": "link",
+     "label": "Tech",
+     "href": "/collections/tech",
+     "title": "Tech",
+     "className": "",
+     "role": null
+    },
+    {
+     "kind": "link",
+     "label": "Pouches",
+     "href": "/collections/pouches",
+     "title": "Pouches",
+     "className": "",
+     "role": null
+    },
+    {
+     "kind": "link",
+     "label": "Wallets",
+     "href": "/collections/wallets",
+     "title": "Wallets",
+     "className": "",
+     "role": null
+    },
+    {
+     "kind": "link",
+     "label": "Caps",
+     "href": "/collections/caps",
+     "title": "Caps",
+     "className": "",
+     "role": null
+    },
+    {
+     "kind": "link",
+     "label": "Shop All",
+     "href": "/collections/accessories-all",
+     "title": "Shop All",
+     "className": "",
+     "role": null
+    }
+   ],
+   "promotion": {
+    "image": "/assets/source/header/2026_10_ACC_Hamburger.webp",
+    "imageAlt": "",
+    "href": "/collections/accessories-new-in",
+    "target": "_blank",
+    "title": "Accessories New In",
+    "titleClass": "heading-font",
+    "button": {
+     "label": "Shop Now",
+     "href": "/collections/accessories-new-in",
+     "target": "_blank",
+     "className": "text-button"
+    },
+    "arrow": {
+     "props": {
+      "width": "14",
+      "height": "10",
+      "viewBox": "0 0 14 10",
+      "fill": "none",
+      "xmlns": "http://www.w3.org/2000/svg"
+     },
+     "inner": "<path d=\"M1 5H7.08889H13.1778M13.1778 5L9.17778 1M13.1778 5L9.17778 9\" stroke=\"var(--color-accent)\" stroke-width=\"1.1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+    },
+    "className": "mega-menu-promotion p-t-30"
+   }
+  },
+  {
+   "kind": "link",
+   "label": "Eyewear",
+   "href": "/collections/eyewear",
+   "title": "Eyewear"
+  },
+  {
+   "kind": "link",
+   "label": "Footwear",
+   "href": "/collections/footwear",
+   "title": "Footwear"
+  },
+  {
+   "kind": "submenu",
+   "label": "Lifestyle",
+   "dataTitle": "Lifestyle",
+   "summaryClass": "parent-link",
+   "entries": [
+    {
+     "kind": "title",
+     "label": "Lifestyle",
+     "className": "m-t-20 m-b-10"
+    },
+    {
+     "kind": "heading",
+     "label": "Shop By Category",
+     "className": "m-t-30",
+     "summaryClass": "m-b-20"
+    },
+    {
+     "kind": "link",
+     "label": "New In",
+     "href": "/collections/lifestyle-new-in",
+     "title": "New In",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Homeware",
+     "href": "/collections/lifestyle-homeware",
+     "title": "Homeware",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Key Tags",
+     "href": "/collections/keytags",
+     "title": "Key Tags",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Carabiners",
+     "href": "/collections/lifestyle-carabiners",
+     "title": "Carabiners",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Stationery",
+     "href": "/collections/stationery",
+     "title": "Stationery",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Shopper Tote",
+     "href": "/collections/shopper-tote",
+     "title": "Shopper Tote",
+     "className": "",
+     "role": "menuitem"
+    },
+    {
+     "kind": "link",
+     "label": "Shop All",
+     "href": "/collections/lifestyle-all",
+     "title": "Shop All",
+     "className": "",
+     "role": "menuitem"
+    }
+   ],
+   "promotion": {
+    "image": "/assets/source/header/YASHICA_2026_10_LIFESTYLE_Hamburger.webp",
+    "imageAlt": "",
+    "href": "/collections/lifestyle-new-in",
+    "target": "_blank",
+    "title": "Lifestyle New In",
+    "titleClass": "heading-font",
+    "button": {
+     "label": "Shop Now",
+     "href": "/collections/lifestyle-new-in",
+     "target": "_blank",
+     "className": "text-button"
+    },
+    "arrow": {
+     "props": {
+      "width": "14",
+      "height": "10",
+      "viewBox": "0 0 14 10",
+      "fill": "none",
+      "xmlns": "http://www.w3.org/2000/svg"
+     },
+     "inner": "<path d=\"M1 5H7.08889H13.1778M13.1778 5L9.17778 1M13.1778 5L9.17778 9\" stroke=\"var(--color-accent)\" stroke-width=\"1.1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+    },
+    "className": "mega-menu-promotion p-t-30"
+   }
+  },
+  {
+   "kind": "link",
+   "label": "Pets",
+   "href": "/collections/pets-new-in",
+   "title": "Pets"
+  }
+ ],
+ "accountLinks": [
+  {
+   "label": "Sign In",
+   "href": "/account/login",
+   "title": "Sign In",
+   "className": null,
+   "icon": null,
+   "iconFirst": true
+  },
+  {
+   "label": "Need Help?",
+   "href": "/pages/faqs",
+   "title": "Need Help?",
+   "className": null,
+   "icon": null,
+   "iconFirst": true
+  },
+  {
+   "label": "Store Locator",
+   "href": "/pages/the-btv-stores",
+   "title": "Store Locator",
+   "className": null,
+   "icon": null,
+   "iconFirst": true
+  },
+  {
+   "label": "Wishlist",
+   "href": "#swym-wishlist",
+   "title": "",
+   "className": null,
+   "icon": {
+    "props": {
+     "width": "20",
+     "height": "20",
+     "className": "wishlist-icon-new",
+     "xmlns": "http://www.w3.org/2000/svg",
+     "id": "Layer_1",
+     "viewBox": "0 0 48.93 48.93"
+    },
+    "inner": "<defs><style>.wishlist-icon-new .cls-1{fill:red;stroke-width:0px;}</style></defs> <rect class=\"cls-1\" x=\"20.97\" y=\"13.99\" width=\"6.99\" height=\"6.99\"></rect><rect class=\"cls-1\" x=\"20.98\" y=\"27.96\" width=\"6.99\" height=\"6.99\"></rect><rect class=\"cls-1\" x=\"6.99\" y=\".02\" width=\"6.99\" height=\"6.99\"></rect><rect class=\"cls-1\" x=\"0\" y=\"7.01\" width=\"6.99\" height=\"6.99\"></rect><rect class=\"cls-1\" x=\"13.98\" y=\"7\" width=\"6.99\" height=\"6.99\"></rect><rect class=\"cls-1\" x=\"6.99\" y=\"13.99\" width=\"6.99\" height=\"6.99\"></rect><rect class=\"cls-1\" x=\"0\" y=\"20.99\" width=\"6.99\" height=\"6.99\"></rect><rect class=\"cls-1\" x=\"13.99\" y=\"20.98\" width=\"6.99\" height=\"6.99\"></rect><rect class=\"cls-1\" x=\"7\" y=\"27.97\" width=\"6.99\" height=\"6.99\"></rect><rect class=\"cls-1\" x=\"27.96\" y=\"20.97\" width=\"6.99\" height=\"6.99\"></rect><rect class=\"cls-1\" x=\"41.94\" y=\"20.96\" width=\"6.99\" height=\"6.99\"></rect><rect class=\"cls-1\" x=\"34.95\" y=\"27.95\" width=\"6.99\" height=\"6.99\"></rect><rect class=\"cls-1\" x=\"13.99\" y=\"34.95\" width=\"6.99\" height=\"6.99\"></rect><rect class=\"cls-1\" x=\"27.97\" y=\"34.95\" width=\"6.99\" height=\"6.99\"></rect><rect class=\"cls-1\" x=\"20.99\" y=\"41.94\" width=\"6.99\" height=\"6.99\"></rect><rect class=\"cls-1\" x=\"34.94\" y=\"0\" width=\"6.99\" height=\"6.99\"></rect><rect class=\"cls-1\" x=\"27.95\" y=\"6.99\" width=\"6.99\" height=\"6.99\"></rect><rect class=\"cls-1\" x=\"41.93\" y=\"6.99\" width=\"6.99\" height=\"6.99\"></rect><rect class=\"cls-1\" x=\"34.95\" y=\"13.98\" width=\"6.99\" height=\"6.99\"></rect>"
+   },
+   "iconFirst": false
+  },
+  {
+   "label": "Login",
+   "href": "/account/login",
+   "title": "Login\n",
+   "className": "thb-mobile-account-link",
+   "icon": {
+    "props": {
+     "width": "20",
+     "height": "20",
+     "className": "login-icon",
+     "xmlns": "http://www.w3.org/2000/svg",
+     "id": "Layer_1",
+     "viewBox": "0 0 16.46 18.23"
+    },
+    "inner": "<defs><style>.login-icon .cls-1{fill:none!important;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.71px;}</style></defs> <rect class=\"cls-1\" x=\"4.58\" y=\".86\" width=\"7.3\" height=\"7.3\" rx=\"3.65\" ry=\"3.65\"></rect> <path class=\"cls-1\" d=\"M.86,17.37v-3.65c0-3.06,2.5-5.56,5.56-5.56h3.64c3.06,0,5.56,2.5,5.56,5.56v3.65\"></path>"
+   },
+   "iconFirst": true
+  }
+ ],
+ "stores": {
+  "selected": {
+   "label": "ID",
+   "className": "store_link_selected",
+   "flag": "/assets/source/header/Country_flags-03.png",
+   "chevron": {
+    "props": {
+     "width": "8",
+     "height": "6",
+     "viewBox": "0 0 8 6",
+     "fill": "none",
+     "xmlns": "http://www.w3.org/2000/svg"
+    },
+    "inner": "<path d=\"M6.75 1.5L3.75 4.5L0.75 1.5\" stroke=\"var(--color-header-links, --color-accent)\" stroke-width=\"1.1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+   }
+  },
+  "options": [
+   {
+    "code": "ID",
+    "href": "https://www.beyondthevines.co.id",
+    "country": null,
+    "className": "store_active",
+    "style": null,
+    "check": false,
+    "label": "ID",
+    "flag": "/assets/source/header/Country_flags-03.png"
+   },
+   {
+    "code": "SG",
+    "href": "https://www.beyondthevines.com",
+    "country": null,
+    "className": "",
+    "style": null,
+    "check": false,
+    "label": "SG",
+    "flag": "/assets/source/header/Country_flags-02.png"
+   },
+   {
+    "code": "TH",
+    "href": "https://beyondthevines.co.th",
+    "country": null,
+    "className": "disclosure-list__item disclosure-list__item--current",
+    "style": {
+     "width": "100%"
+    },
+    "check": true,
+    "label": "TH",
+    "flag": "/assets/source/header/thailand_flags.png"
+   },
+   {
+    "code": "PH",
+    "href": "https://www.beyondthevines.ph",
+    "country": null,
+    "className": "",
+    "style": null,
+    "check": false,
+    "label": "PH",
+    "flag": "/assets/source/header/Philippines.png"
+   },
+   {
+    "code": "JP",
+    "href": "https://www.beyondthevines.jp",
+    "country": null,
+    "className": "",
+    "style": null,
+    "check": false,
+    "label": "JP",
+    "flag": "/assets/source/header/Country_flags-01.png"
+   },
+   {
+    "code": "MY",
+    "href": "https://www.beyondthevines.com?country=MY",
+    "country": "MY",
+    "className": "",
+    "style": null,
+    "check": false,
+    "label": "MY",
+    "flag": "/assets/source/header/msia.png"
+   },
+   {
+    "code": "AU",
+    "href": "https://www.beyondthevines.com?country=AU",
+    "country": "AU",
+    "className": "",
+    "style": null,
+    "check": false,
+    "label": "AU",
+    "flag": "/assets/source/header/australia.png"
+   },
+   {
+    "code": "TW",
+    "href": "https://www.beyondthevines.com?country=TW",
+    "country": "TW",
+    "className": "",
+    "style": null,
+    "check": false,
+    "label": "TW",
+    "flag": "/assets/source/header/taiwan.png"
+   },
+   {
+    "code": "HK",
+    "href": "https://www.beyondthevines.com?country=HK",
+    "country": "HK",
+    "className": "",
+    "style": null,
+    "check": false,
+    "label": "HK",
+    "flag": "/assets/source/header/HK.png"
+   },
+   {
+    "code": "NZ",
+    "href": "https://www.beyondthevines.com?country=NZ",
+    "country": "NZ",
+    "className": "",
+    "style": null,
+    "check": false,
+    "label": "NZ",
+    "flag": "/assets/source/header/NZ.png"
+   },
+   {
+    "code": "US",
+    "href": "https://www.beyondthevines.com?country=US",
+    "country": "US",
+    "className": "",
+    "style": null,
+    "check": false,
+    "label": "US",
+    "flag": "/assets/source/header/USA.webp"
+   },
+   {
+    "code": "Global",
+    "href": "https://www.beyondthevines.com/?global",
+    "country": null,
+    "className": "global_selected",
+    "style": null,
+    "check": false,
+    "label": "Global",
+    "flag": "/assets/source/header/global.png"
+   }
+  ]
+ },
+ "languages": {
+  "selected": {
+   "label": "EN",
+   "className": "store_link_selected lang",
+   "flag": null,
+   "chevron": {
+    "props": {
+     "width": "8",
+     "height": "6",
+     "viewBox": "0 0 8 6",
+     "fill": "none",
+     "xmlns": "http://www.w3.org/2000/svg"
+    },
+    "inner": "<path d=\"M6.75 1.5L3.75 4.5L0.75 1.5\" stroke=\"var(--color-header-links, --color-accent)\" stroke-width=\"1.1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+   }
+  },
+  "options": [
+   {
+    "code": "ID",
+    "href": "https://beyondthevines.co.id/id/",
+    "country": null,
+    "className": "",
+    "style": null,
+    "check": false,
+    "label": "ID",
+    "flag": null
+   },
+   {
+    "code": "EN",
+    "href": "https://beyondthevines.co.id/",
+    "country": null,
+    "className": "store_active",
+    "style": null,
+    "check": false,
+    "label": "EN",
+    "flag": null
+   }
+  ]
+ },
+ "secondary": {
+  "search": {
+   "icon": {
+    "props": {
+     "className": "search-icon",
+     "width": "20",
+     "height": "20",
+     "xmlns": "http://www.w3.org/2000/svg",
+     "viewBox": "0 0 16.1 16.1"
+    },
+    "inner": "<defs><style>.search-icon .cls-1{fill:#27BFEF;stroke-width:0px;}</style></defs> <path class=\"cls-1 \" d=\"M9.05,0c.38,0,.75,0,1.13,0,.02,0,.05.02.07.02.29.05.59.08.88.15,1.49.36,2.7,1.16,3.64,2.37.78,1.01,1.22,2.17,1.31,3.44.05.63.01,1.26-.13,1.87-.33,1.43-1.04,2.63-2.16,3.58-1.07.91-2.32,1.4-3.72,1.51-.68.05-1.35,0-2.01-.17-.84-.21-1.61-.57-2.3-1.08-.04-.03-.08-.06-.15-.1-.04.05-.06.1-.1.13-1,1-2.01,2.01-3.01,3.01-.38.38-.75.76-1.13,1.13-.41.39-1.06.27-1.31-.23-.02-.05-.04-.09-.07-.14v-.41c.06-.2.2-.35.34-.5,1.34-1.33,2.67-2.67,4.01-4.01.04-.04.08-.09.13-.14-.04-.06-.07-.1-.11-.15-.3-.41-.54-.84-.74-1.31-.26-.61-.42-1.25-.48-1.91-.04-.47-.04-.93.02-1.39.06-.52.19-1.03.38-1.52.3-.78.72-1.47,1.29-2.08.61-.66,1.33-1.18,2.15-1.54.55-.24,1.12-.41,1.71-.49C8.82.04,8.94.02,9.05,0ZM4.77,6.46c-.04,2.66,2.17,4.85,4.83,4.85,2.56,0,4.85-2.04,4.86-4.83,0-2.81-2.29-4.86-4.85-4.86-2.67,0-4.87,2.19-4.84,4.84Z\"></path>"
+   },
+   "close": {
+    "props": {
+     "className": "svg-search jsc-close-green hide",
+     "aria-label": "close icon",
+     "alt": "close icon",
+     "width": "19px",
+     "height": "20px",
+     "viewBox": "0 0 14 14",
+     "fill": "none",
+     "xmlns": "http://www.w3.org/2000/svg"
+    },
+    "inner": "<path d=\"M13 1L1 13M13 13L1 1\" stroke=\"var(--color-body)\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+   }
+  },
+  "wishlist": {
+   "href": "#swym-wishlist",
+   "className": "thb-secondary-area-item thb-secondary-myaccount index-swishlist",
+   "icon": {
+    "props": {
+     "width": "20",
+     "height": "20",
+     "className": "wishlist-icon",
+     "xmlns": "http://www.w3.org/2000/svg",
+     "id": "Layer_1",
+     "viewBox": "0 0 47.33 44.03"
+    },
+    "inner": "<defs><style>.wishlist-icon .cls-1{stroke-width:0px;}</style></defs> <path class=\"cls-1\" d=\"M47.29,14.84h0c0-.72-.09-1.45-.25-2.31-.34-1.81-.95-3.49-1.81-4.99-.85-1.48-1.91-2.78-3.14-3.85-1.07-.94-2.24-1.71-3.48-2.29-1.63-.77-3.32-1.22-5.05-1.34-1.19-.08-2.25-.04-3.25.13-1.57.26-3.04.76-4.38,1.48-.8.43-1.56.94-2.27,1.53-.12-.1-.25-.2-.37-.3C21.15,1.24,18.72.28,16.06.06c-1.62-.14-3.2-.01-4.69.38-3.03.8-5.59,2.39-7.62,4.75-1.05,1.22-1.89,2.6-2.52,4.12C.46,11.19.04,13.24,0,15.41c-.02,1.01.06,2.04.25,3.26.18,1.18.46,2.36.87,3.6.53,1.64,1.23,3.23,2.08,4.73.57,1.01,1.13,1.9,1.71,2.71.82,1.16,1.51,2.03,2.23,2.83l.29.32c.51.57,1.04,1.15,1.62,1.73.65.65,1.31,1.24,1.94,1.78.63.55,1.39,1.2,2.18,1.81,1.52,1.18,3.11,2.28,4.73,3.26,1.38.84,2.67,1.54,3.94,2.15.58.29,1.2.43,1.83.43s1.24-.14,1.82-.42c1.11-.53,2.25-1.14,3.37-1.81,1.9-1.13,3.68-2.34,5.29-3.6,1.18-.91,2.21-1.78,3.15-2.67.78-.73,1.5-1.48,2.19-2.21l.16-.17c.73-.76,1.45-1.63,2.27-2.74,1.23-1.66,2.22-3.29,3.03-5,.69-1.44,1.25-2.96,1.66-4.52.46-1.73.7-3.53.72-5.37,0-.3-.02-.55-.04-.69ZM42.81,19.97c-.35,1.32-.82,2.6-1.41,3.84-.73,1.53-1.62,2.97-2.63,4.33-.61.82-1.25,1.62-1.96,2.37-.71.75-1.42,1.5-2.18,2.21-.91.85-1.86,1.65-2.85,2.41-1.55,1.2-3.18,2.3-4.87,3.31-.99.59-2,1.13-3.03,1.63-.16.08-.28.08-.44,0-1.23-.6-2.43-1.26-3.6-1.97-1.5-.91-2.94-1.91-4.33-2.98-.69-.53-1.35-1.09-2-1.66-.59-.51-1.17-1.03-1.72-1.58-.61-.61-1.19-1.26-1.77-1.9-.7-.77-1.33-1.6-1.93-2.45-.54-.76-1.03-1.55-1.48-2.36-.72-1.28-1.31-2.62-1.76-4.01-.32-.98-.57-1.97-.72-2.98-.13-.87-.22-1.74-.21-2.61.03-1.63.32-3.2.94-4.71.47-1.12,1.09-2.15,1.88-3.08,1.53-1.78,3.43-2.95,5.69-3.54,1.11-.29,2.25-.37,3.39-.27,1.94.17,3.69.86,5.23,2.05.8.61,1.49,1.32,2.1,2.13.13.17.25.33.39.52.05.07.16.07.21,0,.12-.16.24-.32.35-.47.95-1.27,2.11-2.31,3.51-3.07,1-.54,2.07-.89,3.2-1.08.78-.13,1.57-.14,2.36-.08,1.28.09,2.51.43,3.68.98.95.45,1.81,1.03,2.6,1.72.95.83,1.72,1.79,2.34,2.88.68,1.18,1.12,2.45,1.37,3.79.11.56.18,1.12.18,1.69,0,.19.04.38.04.58-.01,1.49-.21,2.95-.59,4.38Z\"></path>"
+   },
+   "white": "/assets/source/header/white-wishlist.png"
+  },
+  "account": {
+   "href": "/account/login",
+   "title": "My Account",
+   "icon": {
+    "props": {
+     "width": "20",
+     "height": "20",
+     "className": "login-icon",
+     "xmlns": "http://www.w3.org/2000/svg",
+     "id": "Layer_1",
+     "viewBox": "0 0 16.46 18.23"
+    },
+    "inner": "<defs><style>.login-icon .cls-1{fill:none!important;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.71px;}</style></defs> <rect class=\"cls-1\" x=\"4.58\" y=\".86\" width=\"7.3\" height=\"7.3\" rx=\"3.65\" ry=\"3.65\"></rect> <path class=\"cls-1\" d=\"M.86,17.37v-3.65c0-3.06,2.5-5.56,5.56-5.56h3.64c3.06,0,5.56,2.5,5.56,5.56v3.65\"></path>"
+   },
+   "white": "/assets/source/header/white_account.png"
+  },
+  "cart": {
+   "href": "/cart",
+   "empty": "/assets/source/header/Empty_Cart.png",
+   "white": "/assets/source/header/Empty_Cart_secondary.png"
+  }
+ },
+ "searchBar": {
+  "placeholder": "Search",
+  "submitIcon": {
+   "props": {
+    "className": "search-icon",
+    "width": "20",
+    "height": "20",
+    "xmlns": "http://www.w3.org/2000/svg",
+    "viewBox": "0 0 16.1 16.1"
+   },
+   "inner": "<defs><style>.search-icon .cls-1{fill:#27BFEF;stroke-width:0px;}</style></defs> <path class=\"cls-1 \" d=\"M9.05,0c.38,0,.75,0,1.13,0,.02,0,.05.02.07.02.29.05.59.08.88.15,1.49.36,2.7,1.16,3.64,2.37.78,1.01,1.22,2.17,1.31,3.44.05.63.01,1.26-.13,1.87-.33,1.43-1.04,2.63-2.16,3.58-1.07.91-2.32,1.4-3.72,1.51-.68.05-1.35,0-2.01-.17-.84-.21-1.61-.57-2.3-1.08-.04-.03-.08-.06-.15-.1-.04.05-.06.1-.1.13-1,1-2.01,2.01-3.01,3.01-.38.38-.75.76-1.13,1.13-.41.39-1.06.27-1.31-.23-.02-.05-.04-.09-.07-.14v-.41c.06-.2.2-.35.34-.5,1.34-1.33,2.67-2.67,4.01-4.01.04-.04.08-.09.13-.14-.04-.06-.07-.1-.11-.15-.3-.41-.54-.84-.74-1.31-.26-.61-.42-1.25-.48-1.91-.04-.47-.04-.93.02-1.39.06-.52.19-1.03.38-1.52.3-.78.72-1.47,1.29-2.08.61-.66,1.33-1.18,2.15-1.54.55-.24,1.12-.41,1.71-.49C8.82.04,8.94.02,9.05,0ZM4.77,6.46c-.04,2.66,2.17,4.85,4.83,4.85,2.56,0,4.85-2.04,4.86-4.83,0-2.81-2.29-4.86-4.85-4.86-2.67,0-4.87,2.19-4.84,4.84Z\"></path>"
+  },
+  "closeIcon": {
+   "props": {
+    "width": "14",
+    "height": "14",
+    "viewBox": "0 0 14 14",
+    "fill": "none",
+    "xmlns": "http://www.w3.org/2000/svg"
+   },
+   "inner": "<path d=\"M13 1L1 13M13 13L1 1\" stroke=\"var(--color-body)\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+  }
+ },
+ "sidePanels": {
+  "closeIcon": {
+   "props": {
+    "width": "14",
+    "height": "14",
+    "viewBox": "0 0 14 14",
+    "fill": "none",
+    "xmlns": "http://www.w3.org/2000/svg"
+   },
+   "inner": "<path d=\"M13 1L1 13M13 13L1 1\" stroke=\"var(--color-body)\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>"
+  },
+  "cart": {
+   "title": "Your Shopping Bag",
+   "titleClass": "body-font",
+   "empty": "Your bag is currently empty.",
+   "desc": {
+    "text": "Free delivery with no min. spend",
+    "icon": "/assets/source/header/empty-cart-desc-icon.png",
+    "iconAlt": "cart empty image"
+   },
+   "suggestionTitle": "Shopping suggestion",
+   "pills": [
+    {
+     "label": "New In",
+     "href": "/collections/new-in",
+     "title": null
+    },
+    {
+     "label": "Bags",
+     "href": "/collections/bags",
+     "title": null
+    },
+    {
+     "label": "Accessories",
+     "href": "/collections/accessories-all",
+     "title": null
+    }
+   ],
+   "continue": {
+    "label": "Continue Shopping",
+    "href": "/collections/new-in",
+    "title": null
+   }
+  },
+  "product": {
+   "title": "Select option"
+  },
+  "search": {
+   "placeholder": "Search for anything",
+   "label": "Search"
+  }
+ }
+}

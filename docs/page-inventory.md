@@ -30,6 +30,43 @@ Status: route discovery captured; routes below are not visually verified unless 
 
 Localized Indonesian alternatives paired: **363**. Raw discovered URLs before pairing/exclusions: **733**.
 
+## Final Build Scope (owner decision 2026-11-06)
+
+Supersedes the representative column of the template survey below. Source check (`reference/scripts/r256-check-blogs-search.mjs`): `/blogs` is a 404 on the source, `/search` uses `template-search` (`main-collection-banner, main-search`), and `/pages/search` is an empty app shell.
+
+| # | Route | Method | Review |
+|---|---|---|---|
+| 1 | `/collections/new-in` | Source reproduction (T1 template) | Full gate |
+| - | Collections linked from header, mega-menu, or footer | Same T1 template + source data | Light sweep |
+| 2 | `/blogs` (new) + `/blogs/<blog>` (filtered) | Own-design portal, all articles from 7 blogs, category filters | Owner screenshot review |
+| 3 | `/blogs/promotions/a-little-love-for-your-carryall` | Own-design article template (reference article, real images) | Owner screenshot review |
+| 4 | One media-stories article | Same article template, placeholder body | Owner screenshot review |
+| - | All other articles | Same article template; placeholder in-body images | Light render check |
+| 5 | `/pages/about-us` | Own-design content-block template | Owner screenshot review |
+| - | `/pages/terms-of-service`, `/pages/privacy-policy`, `/pages/returns`, `/pages/shipping-rate` | Content-block template | Light render check |
+| 6 | `/pages/contact-us` | Source reproduction; form = non-transactional mock | Full gate |
+| 7 | `/pages/faqs` | Source reproduction | Full gate |
+| 8 | `/pages/wishlist` | Logged-out empty-state mock | Full gate |
+| 9 | `/search` | Source `template-search`; mock results over local products | Full gate |
+
+Excluded by owner (local 404): the 6 size guides, `/pages/the-btv-stores`, `/pages/the-vine-club`, `/pages/swym-wishlist`, `/pages/search`, and every collection not linked from navigation.
+
+## Template Survey (2026-11-06, owner-approved)
+
+Evidence: `reference/routes/template-survey-2026-11-06.json` and `reference/routes/template-survey-detail-2026-11-06.json` (body template class plus top-level Shopify section types of each route, fetched read-only). All 201 routes returned 200 with no redirect. Representatives get the full gate; every other route gets the light sweep (`AGENTS.md` "Template-tier verification").
+
+| # | Template | Routes | Variants | Representatives | Method |
+|---|---|---:|---|---|---|
+| T1 | Collection (`product-grid`) | 109 | load-more pagination; no load-more; empty (0 products, 16 routes); 3-level breadcrumb under Bags New In | `bags-new-in`, `dumpling-series`, `kids-bags`, `socks` | Source reproduction |
+| T2 | Standard article (`rich_text, main-article`) | 46 | 4-7 images; one with video | `beyond-the-vines-design-post`, `could-this-design-store-at-orchard-road-become-singapore-s-answer-to-muji`, `esquire-neighbourhood-2021-design-for-access-with-rebecca-ting-of-beyond-the-vines-and-toby-tan` (all `/blogs/media-stories/`) | Source reproduction; placeholder body text |
+| T3 | Shogun article (`shogun-helper, main-article`) | 21 | city guide, collaborations, BTV Express, `.../main` landings | sample `btv-city-guide/01` | Own-design content-block template |
+| T4 | Blog index (`main-blog-header, main-blog`) | 4 | with articles; empty (`news`) | `collaborations`, `news` | Source reproduction |
+| T5 | Blog index rich text | 2 | - | `events` | Source reproduction |
+| T6 | Media-stories index | 1 | paginated | `media-stories` | Source reproduction |
+| T7 | Page `main` (size guides) | 6 | 3 or 5 tables | `unisex-size-guide-cm`, `mens-size-guide` | Source reproduction |
+| T8 | Shogun page | 6 | about-us, terms-of-service, privacy-policy, returns, shipping-rate, the-btv-stores | sample `about-us` | Own-design content-block template |
+| T9 | Unique pages | 6 | contact-us, faqs, swym-wishlist + wishlist (one component), search, the-vine-club | each | Source reproduction; app pages = empty-state mocks |
+
 ## Checkout Preview Batch (2026-11-05, approximate)
 
 Owner-approved fast preview. Styled from homepage tokens only; source pages for these routes were **not captured**, so every row is **approximate / not visually verified**.
