@@ -33,3 +33,7 @@ public/assets/source/collections/*_1280x_crop_center.*
 # /pages/contact-us header GIF at 1600w (3.9 MB). Reproducible with
 # `node scripts/build-contact-data.mjs && node scripts/download-collection-assets.mjs _contact`.
 public/assets/source/pages/CONTCT-US-NEW_1600x500_crop_center.gif
+# /pages/about-us Shogun backdrop GIFs (6-7 MB originals). Reproducible with
+# `node scripts/build-content-pages.mjs && node scripts/download-collection-assets.mjs _content && node scripts/build-content-pages.mjs`.
+public/assets/source/pages/shogun/1ff6c171-7984-4985-8ed0-c64a9dcf35d0.gif
+public/assets/source/pages/shogun/7d7651a5-efaf-46b9-971a-de1d5e1093c4.gif

@@ -108,17 +108,17 @@ Owner-approved fast preview. Styled from homepage tokens only; source pages for 
 
 | Source route | Indonesian alternative | Template | Capture role | Evidence |
 |---|---|---|---|---|
-| `/pages/about-us` | `/id/pages/about-us` | Content/page | Inventory only | homepage-dom, sitemap |
+| `/pages/about-us` | `/id/pages/about-us` | Content/page | Implemented round 258: own-design content-block template (`src/app/pages/[slug]/`), approximate / not visually verified | homepage-dom, sitemap, `reference/dom/r258-content/` |
 | `/pages/contact-us` | `/id/pages/contact-us` | Content/page | Inventory only | homepage-dom, sitemap |
 | `/pages/faqs` | `/id/pages/faqs` | Content/page | Inventory only | homepage-dom, sitemap |
 | `/pages/mens-size-guide` | `/id/pages/mens-size-guide` | Content/page | Inventory only | sitemap |
 | `/pages/mens-size-guide-cm` | `/id/pages/mens-size-guide-cm` | Content/page | Inventory only | sitemap |
-| `/pages/privacy-policy` | `/id/pages/privacy-policy` | Content/page | Inventory only | homepage-dom, sitemap |
-| `/pages/returns` | `/id/pages/returns` | Content/page | Inventory only | homepage-dom, sitemap |
+| `/pages/privacy-policy` | `/id/pages/privacy-policy` | Content/page | Implemented round 258: own-design content-block template (`src/app/pages/[slug]/`), approximate / not visually verified | homepage-dom, sitemap, `reference/dom/r258-content/` |
+| `/pages/returns` | `/id/pages/returns` | Content/page | Implemented round 258: own-design content-block template (`src/app/pages/[slug]/`), approximate / not visually verified | homepage-dom, sitemap, `reference/dom/r258-content/` |
 | `/pages/search` | `/id/pages/search` | Content/page | Inventory only | sitemap |
-| `/pages/shipping-rate` | `/id/pages/shipping-rate` | Content/page | Inventory only | homepage-dom, sitemap |
+| `/pages/shipping-rate` | `/id/pages/shipping-rate` | Content/page | Implemented round 258: own-design content-block template (`src/app/pages/[slug]/`), approximate / not visually verified | homepage-dom, sitemap, `reference/dom/r258-content/` |
 | `/pages/swym-wishlist` | `/id/pages/swym-wishlist` | Content/page | Inventory only | sitemap |
-| `/pages/terms-of-service` | `/id/pages/terms-of-service` | Content/page | Inventory only | homepage-dom, sitemap |
+| `/pages/terms-of-service` | `/id/pages/terms-of-service` | Content/page | Implemented round 258: own-design content-block template (`src/app/pages/[slug]/`), approximate / not visually verified | homepage-dom, sitemap, `reference/dom/r258-content/` |
 | `/pages/the-btv-stores` | `/id/pages/the-btv-stores` | Content/page | Inventory only | homepage-dom, sitemap |
 | `/pages/the-vine-club` | `/id/pages/the-vine-club` | Content/page | Inventory only | homepage-dom, sitemap |
 | `/pages/unisex-size-guide-cm` | `/id/pages/unisex-size-guide-cm` | Content/page | Inventory only | sitemap |

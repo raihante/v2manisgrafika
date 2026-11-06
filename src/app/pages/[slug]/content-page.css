@@ -1,0 +1,124 @@
+/* Content-block template (own design, not source-faithful; AGENTS.md "CMS-template scope reduction").
+   Tokens from the source Shogun pages (reference/dom/r258-content/source-probe.json, 2026-11-06): Everett Medium display
+   titles (220px desktop / 76px mobile), Everett Regular body at 20.8px with -1px tracking, a 1000px text column
+   (460-1460 at 1920), Everett Medium 70px / 50px section titles, per-page accent colours (terms #0060d4, privacy
+   #316e6e), shipping copy in rgb(0,46,161). Layout and spacing below are project decisions. */
+.content-page{
+  --content-text:#000;
+  --content-column:1000px;
+  --content-gutter:30px;
+  color:var(--content-text,#000);
+  font-family:'Everett-regular',Everett,sans-serif;
+  padding-bottom:120px;
+}
+.content-page *{box-sizing:border-box}
+
+/* Title band */
+.content-hero--title{background:var(--content-accent);color:#fff;padding:150px var(--content-gutter) 90px}
+.content-hero__title{
+  max-width:var(--content-column);margin:0 auto;
+  font-family:'Everett-Medium',Everett,sans-serif;font-weight:400;
+  font-size:clamp(64px,11.46vw,220px);line-height:.52;letter-spacing:-.045em;
+  display:flex;flex-direction:column;gap:.38em;padding-bottom:.08em;
+}
+.content-hero__title span{display:block}
+
+/* Title artwork */
+.content-hero--image{max-width:calc(var(--content-hero-max) + 2 * var(--content-gutter));margin:0 auto;padding:50px var(--content-gutter) 0}
+.content-hero__img{display:block;width:100%;height:var(--content-hero-h)}
+.content-hero__img--contain{object-fit:contain}
+.content-hero__img--cover{object-fit:cover}
+
+/* Column */
+.content-body{max-width:calc(var(--content-column) + 2 * var(--content-gutter));margin:0 auto;padding:80px var(--content-gutter) 0}
+.content-page--about-us .content-body{max-width:none;padding:0}
+.content-block + .content-block{margin-top:40px}
+
+/* Section title */
+.content-heading{
+  font-family:'Everett-Medium',Everett,sans-serif;font-weight:400;color:var(--content-accent);
+  font-size:clamp(40px,3.65vw,70px);line-height:1;letter-spacing:-.03em;margin:0;padding-top:40px;text-wrap:balance;
+}
+.content-heading--center{text-align:center}
+.content-heading + .content-block{margin-top:28px}
+
+/* Rich text */
+.content-rte{font-size:20.8px;line-height:1.3;letter-spacing:-1px}
+.content-rte p{margin:0}
+.content-rte p + p{margin-top:20px}
+.content-rte a{color:inherit;text-decoration:underline;text-underline-offset:3px}
+.content-rte a:hover{color:var(--content-accent)}
+.content-rte strong,.content-rte b{font-family:'Everett-Medium',Everett,sans-serif;font-weight:400}
+.content-rte--lead{font-family:'Everett-Light',Everett,sans-serif;font-size:32px;line-height:1.19;letter-spacing:-2px}
+.content-rte--note{font-family:'Everett-Light',Everett,sans-serif;font-size:13px;line-height:1.3;letter-spacing:-.3px;color:#767676}
+
+/* Image */
+.content-image{margin-left:auto;margin-right:auto;max-width:var(--content-img-max,100%)}
+.content-image img{display:block;width:100%;height:auto}
+.content-image--backdrop{max-width:none;background:var(--content-img-bg) center/cover no-repeat;padding:127px 4.27% 127px}
+.content-image--backdrop img{max-width:var(--content-img-max);margin:0 auto}
+.content-image--link{margin-left:0}
+.content-image--link a{display:block;transition:opacity .2s}
+.content-image--link a:hover{opacity:.7}
+
+.content-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.content-grid__img{display:block;width:100%;height:auto}
+.content-button-row{margin:0;text-align:center}
+.content-button{display:inline-block;padding:14px 32px;background:var(--content-accent);color:#fff;font-family:'Everett-Medium',Everett,sans-serif;font-size:17px;text-decoration:none;border-radius:999px}
+.content-video{display:block;width:100%;height:auto}
+
+/* Icon list: steps (icon + title + text, joined by a dotted connector) and bullets (small marker + text) */
+.content-icons{list-style:none;margin-left:auto;margin-right:auto;padding:0;max-width:700px}
+.content-icons__item{display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:center;position:relative}
+.content-icons__icon{display:flex;justify-content:center}
+.content-icons__icon img{display:block;width:89px;height:70px;object-fit:contain}
+.content-icons__title{font-family:'Everett-Medium',Everett,sans-serif;font-weight:400;font-size:clamp(40px,3.9vw,75px);line-height:.95;letter-spacing:-2px;margin:0 0 8px}
+.content-icons--steps .content-icons__item + .content-icons__item{margin-top:56px}
+.content-icons--steps .content-icons__item + .content-icons__item::before{content:"";position:absolute;left:59px;top:-50px;height:44px;border-left:2px dotted var(--content-accent)}
+.content-icons--steps .content-rte{font-family:'Everett-Light',Everett,sans-serif;font-size:20px;line-height:1.2;letter-spacing:-.5px}
+.content-icons--bullets{max-width:none}
+.content-icons--bullets .content-icons__item{grid-template-columns:15px 1fr;gap:20px;align-items:start}
+.content-icons--bullets .content-icons__item + .content-icons__item{margin-top:40px}
+.content-icons--bullets .content-icons__icon{padding-top:12px}
+.content-icons--bullets .content-icons__icon img{width:15px;height:15px}
+.content-icons--bullets .content-rte{font-family:'Everett-Light',Everett,sans-serif;font-size:36px;line-height:40px;letter-spacing:-3px}
+
+/* Numbered list */
+.content-list{margin:0 auto;padding:0 0 0 1.4em;max-width:700px;font-family:'Everett-Light',Everett,sans-serif;font-size:20px;line-height:1.2;letter-spacing:-1px}
+.content-list li + li{margin-top:16px}
+.content-list li::marker{font-family:'Everett-Medium',Everett,sans-serif}
+
+/* Callout: large figure on the accent colour */
+.content-callout{display:flex;align-items:flex-end;gap:24px;max-width:700px;margin-left:auto;margin-right:auto;background:var(--content-accent);color:#fff;padding:32px}
+.content-callout__title{font-family:'Everett-Medium',Everett,sans-serif;font-size:120px;line-height:.8;letter-spacing:-2px}
+.content-callout__text{font-family:'Recoleta-regular',Recoleta,serif;font-size:26px;line-height:1;letter-spacing:-1.5px}
+.content-callout__text p{margin:0}
+.content-callout + .content-list{margin-top:32px}
+
+@media (max-width:767px){
+  .content-page{--content-gutter:20px;padding-bottom:80px}
+  .content-hero--title{padding:50px var(--content-gutter) 40px}
+  .content-hero__title{font-size:64px;letter-spacing:-.04em;line-height:.62;gap:.3em}
+  .content-hero--image{padding-top:24px}
+  .content-hero__img{height:var(--content-hero-h-mobile)}
+  .content-body{padding-top:40px}
+  .content-block + .content-block{margin-top:28px}
+  .content-heading{font-size:40px;padding-top:24px}
+  .content-heading + .content-block{margin-top:20px}
+  .content-rte{font-size:18px;line-height:1.33;letter-spacing:-.5px}
+  .content-rte--lead{font-size:22px;letter-spacing:-1px}
+  .content-image--backdrop{background-image:var(--content-img-bg-mobile,var(--content-img-bg));padding:23px 8px}
+  .content-icons__item{grid-template-columns:72px 1fr;gap:16px}
+  .content-icons__icon img{width:58px;height:46px}
+  .content-icons--steps .content-icons__item + .content-icons__item{margin-top:40px}
+  .content-icons--steps .content-icons__item + .content-icons__item::before{left:35px;top:-36px;height:32px}
+  .content-icons--steps .content-rte{font-size:15px}
+  .content-icons--bullets .content-icons__item{grid-template-columns:10px 1fr;gap:13px}
+  .content-icons--bullets .content-icons__icon{padding-top:8px}
+  .content-icons--bullets .content-icons__icon img{width:10px;height:10px}
+  .content-icons--bullets .content-rte{font-size:26px;line-height:28px;letter-spacing:-2px}
+  .content-list{font-size:16px;letter-spacing:-.5px}
+  .content-callout{padding:24px 20px}
+  .content-callout__title{font-size:80px}
+  .content-callout__text{font-size:18px}
+}

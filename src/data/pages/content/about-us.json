@@ -1,0 +1,26 @@
+{
+ "slug": "about-us",
+ "documentTitle": "Beyond The Vines | Our Story – Beyond The Vines Indonesia",
+ "title": "Our Story",
+ "accent": "rgb(0, 96, 212)",
+ "blocks": [
+  {
+   "type": "image",
+   "image": {
+    "src": "/assets/source/pages/shogun/8701e4cc-675f-4748-be52-99a9a412e360.png",
+    "alt": "Our Story",
+    "width": 1757,
+    "height": 1780
+   },
+   "mobile": {
+    "src": "/assets/source/pages/shogun/cf4181a0-5acf-4be8-b578-1e6ca6a4a6cf.jpg",
+    "alt": "Our Story",
+    "width": 911,
+    "height": 3248
+   },
+   "background": "/assets/source/pages/shogun/1ff6c171-7984-4985-8ed0-c64a9dcf35d0.gif",
+   "mobileBackground": "/assets/source/pages/shogun/7d7651a5-efaf-46b9-971a-de1d5e1093c4.gif",
+   "maxWidth": 1757
+  }
+ ]
+}

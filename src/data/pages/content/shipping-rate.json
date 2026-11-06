@@ -1,0 +1,74 @@
+{
+ "slug": "shipping-rate",
+ "documentTitle": "Indonesia Shipping Rates | Beyond The Vines – Beyond The Vines Indonesia",
+ "title": "Indonesia Shipping Rates",
+ "accent": "rgb(0, 96, 212)",
+ "blocks": [
+  {
+   "type": "iconList",
+   "variant": "bullets",
+   "items": [
+    {
+     "icon": {
+      "src": "/assets/source/pages/shogun/c55c76ea-2cb9-4582-8b80-57e9e0b34dd9.png",
+      "alt": "",
+      "width": 97,
+      "height": 97
+     },
+     "html": "<p>Shipping is free for Indonesia orders Rp 500.000 and above, inclusive of custom duties and taxes. For orders under Rp 500.000, delivery fee is Rp 50.000.</p>"
+    },
+    {
+     "icon": {
+      "src": "/assets/source/pages/shogun/c55c76ea-2cb9-4582-8b80-57e9e0b34dd9.png",
+      "alt": "",
+      "width": 97,
+      "height": 97
+     },
+     "html": "<p>Delivery takes 5 to 7 working days for Java &amp; Jabodetabek, and 5 to 12 working days for all other areas (5 to 20 working days during sale period for all areas).</p>"
+    },
+    {
+     "icon": {
+      "src": "/assets/source/pages/shogun/c55c76ea-2cb9-4582-8b80-57e9e0b34dd9.png",
+      "alt": "",
+      "width": 97,
+      "height": 97
+     },
+     "html": "<p>For orders shipped outside of Indonesia, head to our International page at <a href=\"https://www.beyondthevines.com\">www.beyondthevines.com</a> to make your purchase.</p>"
+    },
+    {
+     "icon": {
+      "src": "/assets/source/pages/shogun/c55c76ea-2cb9-4582-8b80-57e9e0b34dd9.png",
+      "alt": "",
+      "width": 97,
+      "height": 97
+     },
+     "html": "<p>Beyond The Vines is not liable for the return shipment costs and handling fees incurred once the parcel has left our Studio. This could include but not limited to situations where the recipient is uncontactable and our shipping partners are unable to deliver the parcel.</p><p>During sale and festive seasons, there may be a delay in deliveries due to the high volume of orders.</p>"
+    }
+   ]
+  },
+  {
+   "type": "image",
+   "image": {
+    "src": "/assets/source/pages/shogun/216c1f7d-4018-4bb0-b7c8-c7c6d50d0348.webp",
+    "alt": "Indonesia Shipping Rates",
+    "width": 1167,
+    "height": 822
+   },
+   "href": "/blogs/promotions",
+   "maxWidth": 50
+  }
+ ],
+ "textColor": "rgb(0, 46, 161)",
+ "hero": {
+  "image": {
+   "src": "/assets/source/pages/shogun/bba6b5ca-55fe-41b7-b000-8486478dd81e.gif",
+   "alt": "Indonesia Shipping Rates",
+   "width": 750,
+   "height": 350
+  },
+  "fit": "cover",
+  "maxWidth": 750,
+  "height": 250,
+  "mobileHeight": 180
+ }
+}

@@ -1,7 +1,7 @@
 # Session Handoff
 
 Last updated: 2026-11-06 Asia/Jakarta
-Agent/session: Claude Code round 257 (collection template `/collections/new-in`)
+Agent/session: Claude Code round 258 (content-block template: about-us + 4 policy pages)
 Overall phase: implementation
 
 ## Completed
@@ -25,6 +25,15 @@ Overall phase: implementation
   - Next: P0 shared header shell, then `/collections/new-in`.
 
 ## In Progress
+
+- **[Claude Code round 258] Content-block template: `/pages/about-us` (Final Build Scope #5) + `/pages/terms-of-service`, `/pages/privacy-policy`, `/pages/returns`, `/pages/shipping-rate`: OWN DESIGN, APPROXIMATE / NOT VISUALLY VERIFIED, not committed.**
+  - Source (read-only, 2026-11-06, Indonesia storefront, logged out): server HTML `reference/data/pages/<slug>.html`; ego probes `reference/scripts/r258-source-probe.mjs` (layout/typography -> `reference/dom/r258-content/source-probe.json`), `r258-bg-probe.mjs` (box background images -> `source-bg.json`), `r258-outline.mjs` (ordered content leaves with 1920/390 visibility -> `outline-<slug>.json`). Shogun CSS partly saved in `reference/css/r258-content/` (the returns sheet download stalled; not needed for the own-design template).
+  - Build: `node scripts/build-content-pages.mjs && node scripts/download-collection-assets.mjs _content && node scripts/build-content-pages.mjs` -> `src/data/pages/content/<slug>.json` + 15 images in `public/assets/source/pages/shogun/` (`docs/asset-manifest.md`). Code: `src/lib/pages/content.ts`, `src/components/pages/ContentPage.tsx`, route `src/app/pages/[slug]/` (`dynamicParams = false`: other `/pages/<slug>` without a route stay 404, checked size-guide-mens and the-vine-club). Block types and mapping rules: `docs/component-inventory.md` "Content blocks".
+  - Source quirks recorded: `/pages/terms-of-service` has the Privacy Policy `<title>` and the same body as `/pages/privacy-policy` (only its display title "Terms of Service" and accent differ); the clone keeps that content and uses the display title as page title. Returns "second option" card is hidden at every width on the source and is not mapped. Returns links to `https://www.beyondthevines.co.id/a/service` (returns app) stay absolute (not a local route); links to `beyondthevines.com` and cookie sites stay external.
+  - Evidence: `reference/dom/r258-content/local-check.json` (`reference/scripts/r258-local-check.mjs`): 0 console errors/exceptions, 0 broken images, no horizontal overflow at 1920 and 390 for all 5 pages; local heights 1920/390: about-us 3077/2483, terms 4734/5364, privacy 4734/5364, returns 4042/3393, shipping-rate 2213/2334 (source 2938/2262, 4945/6349, 4945/6299, 4333/3172, 2538/2440; not a gate, own design). tsc, lint, build (60 pages) pass.
+  - Screenshots: ego `page.screenshot` still times out (source attempt `r258-source-shots.mjs`, local attempt `r258-local-shot.mjs`); no screenshots exist, so the owner screenshot review cannot be prepared by the agent. Owner can review at `http://localhost:3400/pages/<slug>/`.
+  - Not done: owner visual review; about-us backdrop GIFs are 6-7 MB originals (no resizing, fidelity phase); the-btv-stores (T8) is excluded by owner; the 21 Shogun articles will reuse this template in the blog round.
+  - Next (Final Build Scope): `/blogs` portal + `/blogs/<blog>` filter, then the article template (reference `/blogs/promotions/a-little-love-for-your-carryall`).
 
 - **[Claude Code rounds 257e/257f] `/pages/faqs` (Final Build Scope #7) and `/pages/wishlist` (#8): APPROXIMATE / NOT VISUALLY VERIFIED, not committed.**
   - Capture: `reference/scripts/r257-capture-page.mjs` (now takes `roots` in `reference/verify/capture-cfg.json`) -> `reference/dom/{faqs,wishlist}/`, `reference/css/{faqs,wishlist}/`; server HTML `reference/data/pages/{faqs,wishlist}*.html`. Theme behaviour read from `reference/js/r256-header/jsc-reset-scripts.js` (clickFaqButton, updateFaqID, initFaqSlider) and `reference/js/d57b4de829f727fa.js` (CollapsibleRow).

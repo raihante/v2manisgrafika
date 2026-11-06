@@ -165,3 +165,26 @@ Source: `/pages/faqs` server HTML (`reference/data/pages/faqs-main.html`). Pipel
 | Local path | Source URL | SHA-256 | Dimensions | Bytes | Usage | Repository |
 |---|---|---|---|---:|---|---|
 | `/assets/source/pages/FAQ.gif` | https://beyondthevines.co.id/cdn/shop/files/FAQ.gif?v=1720162555 | `d82cb998f68c9545c3f2ee77c5717273607921912dc12e7600a394061eabc186` | 1550x1000 | 1277655 | /pages/faqs header image | Committed |
+
+
+## Content-block pages /pages/about-us, terms-of-service, privacy-policy, returns, shipping-rate (round 258, 2026-11-06 snapshot)
+
+Source: Shogun page-builder images on `i.shgcdn.com` (extension-less originals; the local file name is the source image UUID plus the extension of the served content type, HEAD 2026-11-06). Outline capture `reference/scripts/r258-outline.mjs` -> `reference/dom/r258-content/outline-<slug>.json`. Pipeline: `node scripts/build-content-pages.mjs && node scripts/download-collection-assets.mjs _content && node scripts/build-content-pages.mjs` (second run reads the natural sizes). Authorization: owner-confirmed reproduction of site content and assets (AGENTS.md). The returns step connector image `03c72f13-24a7-479a-9457-3898c5fb29ea` is not downloaded (replaced by a CSS dotted connector in the own-design template).
+
+| Local path | Source URL | SHA-256 | Dimensions | Bytes | Usage | Repository |
+|---|---|---|---|---:|---|---|
+| `/assets/source/pages/shogun/8701e4cc-675f-4748-be52-99a9a412e360.png` | https://i.shgcdn.com/8701e4cc-675f-4748-be52-99a9a412e360/ | `563fb5782fba32bcfc70b4a472555b3b2c52868b34bf4725514d7fd7fe33f45c` | 1757x1780 | 686528 | /pages/about-us | Not committed |
+| `/assets/source/pages/shogun/cf4181a0-5acf-4be8-b578-1e6ca6a4a6cf.jpg` | https://i.shgcdn.com/cf4181a0-5acf-4be8-b578-1e6ca6a4a6cf/ | `5c79bf90d43cb736f2b0f77d799ea54324cb81226752a5a54daa351c3ee8de74` | 911x3248 | 1203345 | /pages/about-us | Not committed |
+| `/assets/source/pages/shogun/1ff6c171-7984-4985-8ed0-c64a9dcf35d0.gif` | https://i.shgcdn.com/1ff6c171-7984-4985-8ed0-c64a9dcf35d0/ | `f9d77b72b8bd979b6d64deff4403e433d942624caa76b12d984653c9c803ed8f` | 2035x2150 | 6226506 | /pages/about-us | Not committed |
+| `/assets/source/pages/shogun/7d7651a5-efaf-46b9-971a-de1d5e1093c4.gif` | https://i.shgcdn.com/7d7651a5-efaf-46b9-971a-de1d5e1093c4/ | `18fe96b3bf53d7f09df91a066d78935ac0f3d00b082cd257d31c5ccd4ee9d450` | 1080x3530 | 7436552 | /pages/about-us | Not committed |
+| `/assets/source/pages/shogun/6508a3a6-bcd1-4c22-85ad-d022712833eb.webp` | https://i.shgcdn.com/6508a3a6-bcd1-4c22-85ad-d022712833eb/ | `26a9706fb990fd11379155d27d9db897c4116d116cc4492ac25fe81b9cdd71e0` | 1569x845 | 281920 | /pages/returns | Not committed |
+| `/assets/source/pages/shogun/ad945522-6c2c-4ae5-8186-31a90e9906bf.webp` | https://i.shgcdn.com/ad945522-6c2c-4ae5-8186-31a90e9906bf/ | `3ee7c18b59f47273cfc4f17375d19f2738a0170cbd6806bbb20db47c30aa1922` | 1717x590 | 179208 | /pages/returns | Not committed |
+| `/assets/source/pages/shogun/6249b8f0-d19a-45bf-bdc9-a2c7479dbc18.png` | https://i.shgcdn.com/6249b8f0-d19a-45bf-bdc9-a2c7479dbc18/ | `32a156f584806cc0df47a223f045bdb788432fffdf78baf93a1b9128c229510a` | 2739x2521 | 84242 | /pages/returns | Not committed |
+| `/assets/source/pages/shogun/624f3295-07a6-4364-bc54-1ec139805de7.png` | https://i.shgcdn.com/624f3295-07a6-4364-bc54-1ec139805de7/ | `2d4b315bae488e7783b25012ec4e6bfa63f0f218fe9308f9b86f499fe6cae6ec` | 3188x2480 | 107306 | /pages/returns | Not committed |
+| `/assets/source/pages/shogun/be7344e7-0ee6-41a9-a6ea-0112b31234f6.png` | https://i.shgcdn.com/be7344e7-0ee6-41a9-a6ea-0112b31234f6/ | `988f32bc72a3e510cc459da049189ed9cf504411f850a25dcd3fd455eb684743` | 3139x2451 | 113457 | /pages/returns | Not committed |
+| `/assets/source/pages/shogun/103fea8c-3826-4112-aec6-f7f51c37fcd5.png` | https://i.shgcdn.com/103fea8c-3826-4112-aec6-f7f51c37fcd5/ | `2351509774346ce6c465716a6e0b311aae5202b45f086bc1c83659c387caf776` | 3139x2368 | 101192 | /pages/returns | Not committed |
+| `/assets/source/pages/shogun/2523d836-22bf-46d3-9842-a227bdf34a32.png` | https://i.shgcdn.com/2523d836-22bf-46d3-9842-a227bdf34a32/ | `111cdab637d27c23bcfbe2bd75dbe9810787533cfb561e9e210148a02249568d` | 3021x2314 | 97477 | /pages/returns | Not committed |
+| `/assets/source/pages/shogun/542d05af-b099-4cbf-9606-4bddccaa59b3.webp` | https://i.shgcdn.com/542d05af-b099-4cbf-9606-4bddccaa59b3/ | `eb528db2c185cdc33a4900b815ed3d24fb2aef431566ca7aa048b4720b88df23` | 1630x552 | 265686 | /pages/returns | Not committed |
+| `/assets/source/pages/shogun/bba6b5ca-55fe-41b7-b000-8486478dd81e.gif` | https://i.shgcdn.com/bba6b5ca-55fe-41b7-b000-8486478dd81e/ | `4c148c5169faa0dc39932b1c315ea9360ee17f16dc419d2e3c0d2e5aad4a31a7` | 750x350 | 2240127 | /pages/shipping-rate | Not committed |
+| `/assets/source/pages/shogun/c55c76ea-2cb9-4582-8b80-57e9e0b34dd9.png` | https://i.shgcdn.com/c55c76ea-2cb9-4582-8b80-57e9e0b34dd9/ | `bfa2d931d5bc9ed4adc41bda8e722574fcb16c4e057de275420c03925ff1d8e1` | 97x97 | 1410 | /pages/shipping-rate | Not committed |
+| `/assets/source/pages/shogun/216c1f7d-4018-4bb0-b7c8-c7c6d50d0348.webp` | https://i.shgcdn.com/216c1f7d-4018-4bb0-b7c8-c7c6d50d0348/ | `09e5988a8208eca05547773e9c8e445020035b815ece150598000de31d948c26` | 1167x822 | 17758 | /pages/shipping-rate | Not committed |
