@@ -14,6 +14,7 @@ import notifyIcon from "@/data/notify-icon.json";
 import { BackstagePassPopup, InstagramLightbox, OPEN_CART_EVENT, openCartDrawer } from "@/components/Overlays";
 import { AnnouncementBar, SiteHeader } from "@/components/shell/SiteHeader";
 import { PageLoading, ShellPanels } from "@/components/shell/ShellPanels";
+import { layoutRepository } from "@/lib/navigation";
 
 type Product = (typeof data.collections)[number]["products"][number];
 type ProductInteraction = { secondaryImages: string[]; variants: { label: string; image: string | null; thumbnail: string | null; soldOut: boolean }[] };
@@ -794,6 +795,8 @@ function BackToTop() {
 // Shared storefront shell on the source container hierarchy: #wrapper > announcement + header sections,
 // div#main-content (role=main), footer group, then the side panels and .click-capture (reference/dom/r256-header/).
 // <back-to-top> is a body-level sibling of #wrapper on the source.
+const layout = layoutRepository.getLayout();
+
 export function SiteChrome({ children, backToTop = false }: { children: React.ReactNode; backToTop?: boolean }) {
   const [cartOpen, setCartOpen] = useState(false);
   useEffect(() => {
@@ -807,7 +810,10 @@ export function SiteChrome({ children, backToTop = false }: { children: React.Re
       <div id="wrapper">
         <AnnouncementBar />
         <SiteHeader onOpenCart={() => setCartOpen(true)} />
-        <div role="main" id="main-content">{children}</div>
+        <div role="main" id="main-content">
+          {layout.hiddenInputs.map((input) => <input key={input.id} type="hidden" id={input.id} value={input.value} />)}
+          {children}
+        </div>
         <Footer />
         <ShellPanels cartOpen={cartOpen} closeCart={closeCart} />
       </div>

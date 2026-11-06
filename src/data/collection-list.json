@@ -1,0 +1,264 @@
+{
+ "documentTitle": "Collections – Beyond The Vines Indonesia",
+ "sectionId": "template--22799926133015__main",
+ "sectionClass": "shopify-section collection-list-section",
+ "listClass": "list-collections section-spacing",
+ "listStyle": "--overlay-color-rgb: 0, 0, 0; --overlay-opacity: 0.0",
+ "headerClass": "section-header section-header-left--false",
+ "headerStyle": "background-color: ;",
+ "headingClass": "h3",
+ "heading": "SHOP BY CATEGORY",
+ "rowClass": "row no-padding",
+ "rowStyle": "--var-collection-list-columns: 4",
+ "sectionStyle": "#shopify-section-template--22799926133015__main .collection-card.style1 .collection-card__content .collection-card__link {font-size: 0.875rem; font-weight: 600;}",
+ "cards": [
+  {
+   "cardClass": "collection-card style1",
+   "imageClass": "collection-card__image media-aspect-adapt",
+   "ratio": 115.78171091445428,
+   "href": "/collections/new-in",
+   "title": "New In",
+   "width": 3390,
+   "height": 3925,
+   "placeholder": "/assets/source/collections/BTV_Homepage_Banner_CNY_NEW-IN_Mobile_Top_20x_crop_center.webp",
+   "srcset": [
+    {
+     "src": "/assets/source/collections/BTV_Homepage_Banner_CNY_NEW-IN_Mobile_Top_320x_crop_center.webp",
+     "w": 320
+    },
+    {
+     "src": "/assets/source/collections/BTV_Homepage_Banner_CNY_NEW-IN_Mobile_Top_640x_crop_center.webp",
+     "w": 640
+    },
+    {
+     "src": "/assets/source/collections/BTV_Homepage_Banner_CNY_NEW-IN_Mobile_Top_960x_crop_center.webp",
+     "w": 960
+    },
+    {
+     "src": "/assets/source/collections/BTV_Homepage_Banner_CNY_NEW-IN_Mobile_Top_1280x_crop_center.webp",
+     "w": 1280
+    }
+   ],
+   "alt": "New In",
+   "original": "https://beyondthevines.co.id/cdn/shop/collections/BTV_Homepage_Banner_CNY_NEW-IN_Mobile_Top.webp?v=1769502093",
+   "label": "New In"
+  },
+  {
+   "cardClass": "collection-card style1",
+   "imageClass": "collection-card__image media-aspect-adapt",
+   "ratio": 115.78171091445428,
+   "href": "/collections/bags-new-in",
+   "title": "Bags New In",
+   "width": 3390,
+   "height": 3925,
+   "placeholder": "/assets/source/collections/BTV_Homepage_Banner_CNY_BAGS_Mobile_Top_20x_crop_center.webp",
+   "srcset": [
+    {
+     "src": "/assets/source/collections/BTV_Homepage_Banner_CNY_BAGS_Mobile_Top_320x_crop_center.webp",
+     "w": 320
+    },
+    {
+     "src": "/assets/source/collections/BTV_Homepage_Banner_CNY_BAGS_Mobile_Top_640x_crop_center.webp",
+     "w": 640
+    },
+    {
+     "src": "/assets/source/collections/BTV_Homepage_Banner_CNY_BAGS_Mobile_Top_960x_crop_center.webp",
+     "w": 960
+    },
+    {
+     "src": "/assets/source/collections/BTV_Homepage_Banner_CNY_BAGS_Mobile_Top_1280x_crop_center.webp",
+     "w": 1280
+    }
+   ],
+   "alt": "Bags New In",
+   "original": "https://beyondthevines.co.id/cdn/shop/collections/BTV_Homepage_Banner_CNY_BAGS_Mobile_Top.webp?v=1769502111",
+   "label": "Bags New In"
+  },
+  {
+   "cardClass": "collection-card style1",
+   "imageClass": "collection-card__image media-aspect-adapt",
+   "ratio": 115.78171091445428,
+   "href": "/collections/womens-new-in",
+   "title": "Womens New In",
+   "width": 3390,
+   "height": 3925,
+   "placeholder": "/assets/source/collections/BTV_Homepage_Banner_CNY_WOMEN_Mobile_Top_20x_crop_center.webp",
+   "srcset": [
+    {
+     "src": "/assets/source/collections/BTV_Homepage_Banner_CNY_WOMEN_Mobile_Top_320x_crop_center.webp",
+     "w": 320
+    },
+    {
+     "src": "/assets/source/collections/BTV_Homepage_Banner_CNY_WOMEN_Mobile_Top_640x_crop_center.webp",
+     "w": 640
+    },
+    {
+     "src": "/assets/source/collections/BTV_Homepage_Banner_CNY_WOMEN_Mobile_Top_960x_crop_center.webp",
+     "w": 960
+    },
+    {
+     "src": "/assets/source/collections/BTV_Homepage_Banner_CNY_WOMEN_Mobile_Top_1280x_crop_center.webp",
+     "w": 1280
+    }
+   ],
+   "alt": "Womens New In",
+   "original": "https://beyondthevines.co.id/cdn/shop/collections/BTV_Homepage_Banner_CNY_WOMEN_Mobile_Top.webp?v=1769502129",
+   "label": "Womens New In"
+  },
+  {
+   "cardClass": "collection-card style1",
+   "imageClass": "collection-card__image media-aspect-adapt",
+   "ratio": 115.78171091445428,
+   "href": "/collections/mens-new-in",
+   "title": "Mens New In",
+   "width": 3390,
+   "height": 3925,
+   "placeholder": "/assets/source/collections/BTV_Homepage_Banner_CNY_MEN_Mobile_Top_20x_crop_center.webp",
+   "srcset": [
+    {
+     "src": "/assets/source/collections/BTV_Homepage_Banner_CNY_MEN_Mobile_Top_320x_crop_center.webp",
+     "w": 320
+    },
+    {
+     "src": "/assets/source/collections/BTV_Homepage_Banner_CNY_MEN_Mobile_Top_640x_crop_center.webp",
+     "w": 640
+    },
+    {
+     "src": "/assets/source/collections/BTV_Homepage_Banner_CNY_MEN_Mobile_Top_960x_crop_center.webp",
+     "w": 960
+    },
+    {
+     "src": "/assets/source/collections/BTV_Homepage_Banner_CNY_MEN_Mobile_Top_1280x_crop_center.webp",
+     "w": 1280
+    }
+   ],
+   "alt": "Mens New In",
+   "original": "https://beyondthevines.co.id/cdn/shop/collections/BTV_Homepage_Banner_CNY_MEN_Mobile_Top.webp?v=1769502144",
+   "label": "Mens New In"
+  },
+  {
+   "cardClass": "collection-card style1",
+   "imageClass": "collection-card__image media-aspect-adapt",
+   "ratio": 125.03999999999999,
+   "href": "/collections/kids-new-in",
+   "title": "Kids New In",
+   "width": 2500,
+   "height": 3126,
+   "placeholder": "/assets/source/collections/BTV_Homepage_Banner__Kids_Mobile_Top_20x_crop_center.webp",
+   "srcset": [
+    {
+     "src": "/assets/source/collections/BTV_Homepage_Banner__Kids_Mobile_Top_320x_crop_center.webp",
+     "w": 320
+    },
+    {
+     "src": "/assets/source/collections/BTV_Homepage_Banner__Kids_Mobile_Top_640x_crop_center.webp",
+     "w": 640
+    },
+    {
+     "src": "/assets/source/collections/BTV_Homepage_Banner__Kids_Mobile_Top_960x_crop_center.webp",
+     "w": 960
+    },
+    {
+     "src": "/assets/source/collections/BTV_Homepage_Banner__Kids_Mobile_Top_1280x_crop_center.webp",
+     "w": 1280
+    }
+   ],
+   "alt": "Kids New In",
+   "original": "https://beyondthevines.co.id/cdn/shop/collections/BTV_Homepage_Banner__Kids_Mobile_Top.webp?v=1769593131",
+   "label": "Kids New In"
+  },
+  {
+   "cardClass": "collection-card style1",
+   "imageClass": "collection-card__image media-aspect-adapt",
+   "ratio": 115.78624078624078,
+   "href": "/collections/accessories-new-in",
+   "title": "Accessories New In",
+   "width": 1628,
+   "height": 1885,
+   "placeholder": "/assets/source/collections/ACC_Mobile_Top_20x_crop_center.jpg",
+   "srcset": [
+    {
+     "src": "/assets/source/collections/ACC_Mobile_Top_320x_crop_center.jpg",
+     "w": 320
+    },
+    {
+     "src": "/assets/source/collections/ACC_Mobile_Top_640x_crop_center.jpg",
+     "w": 640
+    },
+    {
+     "src": "/assets/source/collections/ACC_Mobile_Top_960x_crop_center.jpg",
+     "w": 960
+    },
+    {
+     "src": "/assets/source/collections/ACC_Mobile_Top_1280x_crop_center.jpg",
+     "w": 1280
+    }
+   ],
+   "alt": "Accessories New In",
+   "original": "https://beyondthevines.co.id/cdn/shop/collections/ACC_Mobile_Top.jpg?v=1769502175",
+   "label": "Accessories New In"
+  },
+  {
+   "cardClass": "collection-card style1",
+   "imageClass": "collection-card__image media-aspect-adapt",
+   "ratio": 115.78171091445428,
+   "href": "/collections/lifestyle-new-in",
+   "title": "Lifestyle New In",
+   "width": 3390,
+   "height": 3925,
+   "placeholder": "/assets/source/collections/BTV_Web_Banner_-_Lifestyle_1_-_Lifestyle_Candle_-_Mobile_Top_20x_crop_center.webp",
+   "srcset": [
+    {
+     "src": "/assets/source/collections/BTV_Web_Banner_-_Lifestyle_1_-_Lifestyle_Candle_-_Mobile_Top_320x_crop_center.webp",
+     "w": 320
+    },
+    {
+     "src": "/assets/source/collections/BTV_Web_Banner_-_Lifestyle_1_-_Lifestyle_Candle_-_Mobile_Top_640x_crop_center.webp",
+     "w": 640
+    },
+    {
+     "src": "/assets/source/collections/BTV_Web_Banner_-_Lifestyle_1_-_Lifestyle_Candle_-_Mobile_Top_960x_crop_center.webp",
+     "w": 960
+    },
+    {
+     "src": "/assets/source/collections/BTV_Web_Banner_-_Lifestyle_1_-_Lifestyle_Candle_-_Mobile_Top_1280x_crop_center.webp",
+     "w": 1280
+    }
+   ],
+   "alt": "Lifestyle New In",
+   "original": "https://beyondthevines.co.id/cdn/shop/collections/BTV_Web_Banner_-_Lifestyle_1_-_Lifestyle_Candle_-_Mobile_Top.webp?v=1769502208",
+   "label": "Lifestyle New In"
+  },
+  {
+   "cardClass": "collection-card style1",
+   "imageClass": "collection-card__image media-aspect-adapt",
+   "ratio": 115.78171091445428,
+   "href": "/collections/pets-new-in",
+   "title": "Pets New In",
+   "width": 3390,
+   "height": 3925,
+   "placeholder": "/assets/source/collections/BTV_Homepage_Banner_CNY_PETS_Mobile_Top_20x_crop_center.webp",
+   "srcset": [
+    {
+     "src": "/assets/source/collections/BTV_Homepage_Banner_CNY_PETS_Mobile_Top_320x_crop_center.webp",
+     "w": 320
+    },
+    {
+     "src": "/assets/source/collections/BTV_Homepage_Banner_CNY_PETS_Mobile_Top_640x_crop_center.webp",
+     "w": 640
+    },
+    {
+     "src": "/assets/source/collections/BTV_Homepage_Banner_CNY_PETS_Mobile_Top_960x_crop_center.webp",
+     "w": 960
+    },
+    {
+     "src": "/assets/source/collections/BTV_Homepage_Banner_CNY_PETS_Mobile_Top_1280x_crop_center.webp",
+     "w": 1280
+    }
+   ],
+   "alt": "Pets New In",
+   "original": "https://beyondthevines.co.id/cdn/shop/collections/BTV_Homepage_Banner_CNY_PETS_Mobile_Top.webp?v=1769502225",
+   "label": "Pets New In"
+  }
+ ]
+}

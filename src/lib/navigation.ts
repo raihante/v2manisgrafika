@@ -2,6 +2,7 @@
 // Backed by the source-derived fixture src/data/header.json (scripts/build-header-data.mjs, 2026-11-06 snapshot).
 // A CMS adapter replaces `fixtureShell` without changing the shell components (AGENTS.md repository boundary).
 import fixture from "@/data/header.json";
+import layoutFixture from "@/data/layout.json";
 
 /** Inline SVG captured verbatim: React props for the <svg> element plus its inner markup. */
 export type SourceIcon = { props: Record<string, string>; inner: string };
@@ -67,3 +68,8 @@ export interface ShellRepository {
 const fixtureShell: ShellRepository = { getShell: () => fixture as unknown as ShellData };
 
 export const shellRepository: ShellRepository = fixtureShell;
+
+/** Layout-level hidden inputs the source renders at the top of #main-content on every template (free-shipping copy read
+ *  by the theme cart scripts). Fixture src/data/layout.json, from the 2026-11-06 server HTML. */
+export type LayoutData = { hiddenInputs: { id: string; value: string }[] };
+export const layoutRepository = { getLayout: (): LayoutData => layoutFixture };

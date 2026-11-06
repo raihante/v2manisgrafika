@@ -37,7 +37,7 @@ Supersedes the representative column of the template survey below. Source check 
 | # | Route | Method | Review |
 |---|---|---|---|
 | 1 | `/collections/new-in` | Source reproduction (T1 template) | Full gate |
-| - | Collections linked from header, mega-menu, or footer | Same T1 template + source data | Light sweep |
+| - | ~~Collections linked from header, mega-menu, or footer~~ | **Dropped by the owner 2026-11-06 (round 257: "1 collections new-in itu saja sudah cukup")**: only `/collections/new-in` is built; the 49 other linked handles stay local 404 | - |
 | 2 | `/blogs` (new) + `/blogs/<blog>` (filtered) | Own-design portal, all articles from 7 blogs, category filters | Owner screenshot review |
 | 3 | `/blogs/promotions/a-little-love-for-your-carryall` | Own-design article template (reference article, real images) | Owner screenshot review |
 | 4 | One media-stories article | Same article template, placeholder body | Owner screenshot review |
@@ -48,6 +48,8 @@ Supersedes the representative column of the template survey below. Source check 
 | 7 | `/pages/faqs` | Source reproduction | Full gate |
 | 8 | `/pages/wishlist` | Logged-out empty-state mock | Full gate |
 | 9 | `/search` | Source `template-search`; mock results over local products | Full gate |
+
+Added by the owner 2026-11-06 (round 257, "untuk page /collections belum ada"): `/collections` (source `template-list-collections`, section `main`: "SHOP BY CATEGORY" + 8 collection cards) | Source reproduction | Full gate. Not in the 2026-11-05 discovery manifest (sitemaps list only `/collections/<handle>`).
 
 Excluded by owner (local 404): the 6 size guides, `/pages/the-btv-stores`, `/pages/the-vine-club`, `/pages/swym-wishlist`, `/pages/search`, and every collection not linked from navigation.
 
@@ -73,7 +75,9 @@ Owner-approved fast preview. Styled from homepage tokens only; source pages for 
 
 | Local route | Source route | Implementation | Verification |
 |---|---|---|---|
-| `/collections/[handle]` (`new-in`, `bags`, `your-favourites`) | `/collections/*` | Grid from homepage rail fixtures; no filter/sort | Click-through only |
+| `/collections/new-in` | `/collections/new-in` | **Round 257 source-template rebuild (APPROXIMATE / NOT VISUALLY VERIFIED):** facet bar (breadcrumb title, Filter, Sort list), `ul#product-grid` with 538 source colour cards over 19 load-more pages (8 products per page, row fill), promotion column at slot 5 (real banner images), `#Facet-Drawer` (25 colour groups, 35 sizes, In stock, drawer sort), generated `collection-source.css` (521 source rules). Filter/sort/load more are MOCKS over source-captured result sets (docs/mock-behaviors.md). Card images dummyimage.com | Identical probes at 1920/390 (`reference/scripts/r257-pair-probe.mjs`): document height equal (11676 / 12931), card geometry equal. Paired interactions (`r257-interactions.mjs`, `r257-interactions-b.mjs`): card counts, order, URL params and drawer/sort state equal for load more x2, Black filter, XS, Black+S, In stock+price-desc, 2 sorts, bar sort click; 0 console errors. **No screenshots** (ego `Page.captureScreenshot` times out this session), no benchmark |
+| `/collections` | `/collections` | **Round 257b source-template rebuild (APPROXIMATE / NOT VISUALLY VERIFIED):** `template-list-collections` section `main`: "SHOP BY CATEGORY" header and 8 `collection-card style1` cards (real banner images, lazysizes-style srcset + auto sizes, near-viewport loading), generated `list-collections-source.css` (79 source rules). Card links to the 7 collections other than New In 404 locally until the navigation collections are built | Identical probes 1920/390 (`reference/scripts/r257b-pair-probe.mjs`, `reference/dom/r257b-collections/pairs.json`): document height equal (2333 / 5005), every probed element equal in rect and computed style except `#main-content` (newsletter placement, shared-shell item); chosen image file, `sizes` and lazy state equal. 0 console errors (`r257b-console.mjs`). **No screenshots**, no benchmark |
+| `/collections/[handle]` (`bags`, `your-favourites`) | `/collections/*` | Round-251 grid from homepage rail fixtures; no filter/sort (to be replaced by the source template for navigation collections) | Click-through only |
 | `/products/womens-classic-long-sleeve-shirt` | same | **Round 255 source-DOM rebuild (evidence `reference/verify/pdp-r255-classic-f/`, 8 widths, region diff <=0.24 %, eval 84-88 FAIL; supersedes round 254):** gallery per colour, swatches, sizes, `?variant=` URL, per-variant label/SKU, 5 source tabs incl. CM/IN, Pair It With (2 s autoplay), You May Also Like, mock Add To Bag -> cart drawer | `tests/visual/verify.mjs` at 1920/390: PDP region 0.28% / 1.33% changed pixels, page height equal; eval 68.0 / 65.6 (FAIL). `tests/visual/pdp-interactions.mjs` 8/8 PASS. **Approximate, not visually verified** |
 | `/products/[handle]` (39 other standard handles) | `/products/*` | **Round 255:** same source-DOM template as the shirt (generated `pdp-source.css`, colour categories, multicolumn section on 26 bag/pouch products). APPROXIMATE / NOT VISUALLY VERIFIED: 5 sample products scored at 4 widths (`reference/verify/pdp-r255b-*`), the other 35 only render-tested | Initial state only |
 | `/products/btv-to-go-phone-strap` (bundle) | same | Round-251 fallback page; bundle UI (Part A / Part B swatches) not built | None |

@@ -7,6 +7,7 @@
 // source dimensions and the source file name as its text; the CMS will supply the real images
 // (docs/mock-behaviors.md "Product images"). No product image is downloaded or hotlinked from the source CDN.
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { SWATCH_WIDTH, decode, image, parseCards, sources, text } from "./lib/product-cards.mjs";
 
 const ROOT = new URL("..", import.meta.url).pathname.replace(/^\/([A-Z]:)/, "$1");
 const raw = JSON.parse(readFileSync(`${ROOT}reference/data/product-details-raw.json`, "utf8")).out;
@@ -14,26 +15,6 @@ const raw = JSON.parse(readFileSync(`${ROOT}reference/data/product-details-raw.j
 // sizes="(max-width: 1067px) 95vw, 45vw">; the placeholders keep that srcset/sizes markup.
 const GALLERY_WIDTHS = [352, 832, 1200, 1920, 2000];
 const GALLERY_SIZES = "(max-width: 1067px) 95vw, 45vw";
-// Cards: no srcset; the source src carries its own &width= (2000 or 1999).
-const widthOf = (url, fallback) => Number(decode(url).match(/[?&]width=(\d+)/)?.[1] ?? fallback);
-const CARD_WIDTH = 2000;
-const SWATCH_WIDTH = 40;
-
-const decode = (s) => s.replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&nbsp;/g, " ").replace(/&lt;/g, "<").replace(/&gt;/g, ">");
-const text = (s) => decode(s.replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim();
-const sources = new Map();
-
-// Placeholder for a source image at the requested size (text = source file name without extension).
-function image(url, width, height) {
-  const abs = new URL(decode(url).replace(/^\/\//, "https://"), "https://beyondthevines.co.id");
-  abs.search = "";
-  const name = decodeURIComponent(abs.pathname.split("/").pop()).replace(/\.[a-z0-9]+$/i, "");
-  const h = Math.max(1, Math.round(height));
-  const src = width <= 64 ? `https://dummyimage.com/${width}x${h}/d9d9d9/d9d9d9.png` : `https://dummyimage.com/${width}x${h}/f2f2f2/8c8c8c.png&text=${encodeURIComponent(name)}`;
-  sources.set(src, abs.href);
-  return src;
-}
-
 // Balanced <div> block starting at `start` (regex parsing is enough for this theme's server HTML).
 function divBlock(html, start) {
   let depth = 0;
@@ -46,47 +27,6 @@ function divBlock(html, start) {
   return html.slice(start);
 }
 const inner = (block) => block.slice(block.indexOf(">") + 1, block.lastIndexOf("</div>"));
-
-// Product cards (Pair It With / You May Also Like) with everything the source product-card markup renders.
-function parseCards(html) {
-  if (!html) return [];
-  return [...html.matchAll(/<product-card\b[\s\S]*?<\/product-card>/g)].map(([card]) => {
-    const attr = (re) => card.match(re)?.[1] ?? null;
-    const titleLink = card.match(/<a href="([^"]+)"[^>]*class="product-card-title"[^>]*>([\s\S]*?)<\/a>/);
-    const imageLink = card.match(/<a href="([^"]+)"[^>]*class="product-featured-image-link[^"]*"[^>]*style="--padding-bottom:\s*([\d.]+)%/);
-    const price = card.match(/class="amount[^"]*">([\s\S]*?)<\//);
-    const primary = card.match(/<img src="([^"]+)" class="(product-primary-image[^"]*)"/);
-    const swatches = [...card.matchAll(/<div class="product-card-swatch([^"]*)" style="[^"]*--option-color-image:\s*url\('([^']+)'\)[^"]*"[^>]*data-href="([^"]+)"[\s\S]*?data-value="([^"]+)"/g)]
-      .map((m) => ({ value: decode(m[4]), image: image(m[2], SWATCH_WIDTH, SWATCH_WIDTH), active: /\bactive\b/.test(m[1]), soldOut: /swatch-soldout/.test(m[1]), href: decode(m[3]) }));
-    const swatchTitle = card.match(/<div class="product-card-swatches--title"><span class="var-selected">([^<]*)<\/span>([^<]*)<\/div>/);
-    const labelsIn = (block) => [...(block ?? "").matchAll(/<div[^>]*class="(jsc-label[^"]*)"[^>]*>([^<]*)</g)]
-      .filter((m) => !/display:\s*none/.test(m[0])).map((m) => ({ className: m[1].trim(), text: text(m[2]) }));
-    const overlay = card.match(/<div class="label-discount-code-grid-wrap">([\s\S]*?)<\/div>\s*<\/div>/)?.[1];
-    const info = card.slice(card.indexOf('<div class="product-card-info"'));
-    const ratio = imageLink ? Number(imageLink[2]) : 150;
-    const cardImage = (u) => { const w = widthOf(u, CARD_WIDTH); return image(u, w, (w * ratio) / 100); };
-    const infoLabels = info.slice(info.lastIndexOf('<div class="label-wrap">'));
-    return {
-      title: titleLink ? text(titleLink[2]) : "",
-      href: titleLink ? decode(titleLink[1]).split("?")[0] : "#",
-      imageHref: imageLink ? decode(imageLink[1]) : "#",
-      ratio: imageLink ? Number(imageLink[2]) : 150,
-      handle: attr(/data-product-handle="([^"]+)"/),
-      variantId: Number(attr(/data-variant-id="(\d+)"/)) || null,
-      price: price ? text(price[1]) : "",
-      priceFirst: info.indexOf('class="price"') < info.indexOf("product-card-swatches--container"),
-      primary: primary ? cardImage(primary[1]) : null,
-      primaryClass: primary ? primary[2] : "product-primary-image",
-      secondary: [...card.matchAll(/<img src="([^"]+)" class="product-secondary-image/g)].map((m) => cardImage(m[1])),
-      swatches,
-      swatchSelected: swatchTitle ? decode(swatchTitle[1]) : "",
-      swatchSuffix: swatchTitle ? text(swatchTitle[2]) : "",
-      overlayLabels: labelsIn(overlay),
-      labels: labelsIn(infoLabels),
-      button: /<quick-view/.test(card) ? "add" : /Notify Me/.test(card) ? "notify" : "add",
-    };
-  });
-}
 
 // Template multicolumn section (e.g. "Compare Dumpling Series" on bags); empty on most products -> null.
 const MULTICOLUMN_WIDTH = 1200;

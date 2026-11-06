@@ -1,7 +1,7 @@
 # Session Handoff
 
 Last updated: 2026-11-06 Asia/Jakarta
-Agent/session: Claude Code round 256 (template-tier plan for collections/content/editorial)
+Agent/session: Claude Code round 257 (collection template `/collections/new-in`)
 Overall phase: implementation
 
 ## Completed
@@ -25,6 +25,37 @@ Overall phase: implementation
   - Next: P0 shared header shell, then `/collections/new-in`.
 
 ## In Progress
+
+- **Owner decisions 2026-11-06 (after round 257b):** "langsung nomor 3 saja, 1 collections new-in itu saja sudah cukup, commit dulu". (1) The 49 navigation collections are dropped: only `/collections/new-in` and `/collections` are built; recorded in `AGENTS.md` "Final build scope" and `docs/page-inventory.md`. The round-251 preview grids `/collections/bags` and `/collections/your-favourites` still exist (homepage Shop More targets); removing them is open. (2) Rounds 257/257b committed on owner instruction, approximate, not visually verified, not pushed. (3) The visual gate for the two collection routes is not required by the owner for now. (4) Next: remaining Final Build Scope pages (`/search`, contact-us, faqs, wishlist, about-us + 4 policy pages, `/blogs` portal + article template).
+
+- **[Claude Code round 257b] `/collections` collection list page (claimed 2026-11-06, owner request "untuk page https://beyondthevines.co.id/collections belum ada").** New route, added to `docs/page-inventory.md` before implementation. Source: `template-list-collections`, one section `template--22799926133015__main` (heading "SHOP BY CATEGORY", 8 `collection-card style1` cards, lazysizes images 320-1280w). Server HTML `reference/data/collections/_index/`. **APPROXIMATE / NOT VISUALLY VERIFIED.**
+  - Implemented: `scripts/build-collection-list-data.mjs` -> `src/data/collection-list.json` (repository `src/lib/collections/list.ts`); `node scripts/download-collection-assets.mjs _index` -> 40 banner files in `public/assets/source/collections/` (960w/1280w Git-ignored); `node scripts/build-collection-css.mjs list-collections` -> `src/app/collections/list-collections-source.css` (79 rules, scope `.template-list-collections`; the builder now takes a target); component `src/components/commerce/collection/CollectionListPage.tsx`, shared `src/components/shared/LazySizesImage.tsx` (lazysizes autosizes + near-viewport loading, 370px margin approximation); route `src/app/collections/page.tsx` (+ `list-collections.css`, + NewsletterSection like PDP/collection). The facets.css tick icon moved from the downloader into the collection data builder plan.
+  - Evidence: identical probes `reference/scripts/r257b-pair-probe.mjs` -> `reference/dom/r257b-collections/pairs.json`: document height equal (1920: 2333, 390: 5005); all probed elements (section, header, h2, grid, cards 1/4/5/8, image boxes, images, titles, footer) equal in rect and computed style, except `#main-content` (+345 / +263: the newsletter sits inside main locally, shared-shell item); chosen image file, `sizes` (433px / 360px) and lazy state (390: cards 4-8 stay placeholder until scrolled, both sites) equal. 0 console errors at 1920/390 (`r257b-console.mjs`). tsc, lint and build pass.
+  - Not done: screenshots (ego capture still times out), benchmark, hover state of the cards, the 7 linked collections (local 404).
+
+- **[Claude Code round 257] `/collections/new-in` source collection template (claimed 2026-11-06): APPROXIMATE / NOT VISUALLY VERIFIED.**
+  - Homepage benchmark gaps were left out of scope (owner round-255 decision: homepage treated as done); work moved to the collection template as the handoff's next step.
+  - Source captures (2026-11-06, Indonesia/IDR, logged out, empty cart, popup hidden; read-only GETs only):
+    - Live DOM `reference/dom/r257-newin/main-{1920,390}.html`, outline, `summary.json` (`reference/scripts/r257-newin-capture.mjs`).
+    - Server HTML of all 19 load-more pages, `products.json` (152 products) and `views.json` (70 result sets: Featured, 8 sorts, 25 colour groups, 35 sizes, In stock; 561 cards): `node scripts/fetch-collection.mjs new-in --views` into `reference/data/collections/new-in/`.
+    - Theme JS `reference/js/r257-collection/` (`pagination.js`, `facets.js`, inline initial-fill script, formatted copies); CSS rules `reference/css/collection/used-rules.css` + `root-vars.json` (`reference/scripts/r257-used-rules.mjs`).
+  - Source facts: cards are one per colour variant (8 products per page = 47 cards on page 1); promotion column at slot 5 (show once); load more fills the last row of 4 slots (`medium-up-4`, every width); colour filter is card-level, size/availability product-level; drawer inputs submit after 500 ms with `pushState` + smooth scroll; the bar Sort list submits natively (full navigation to `?sort_by=`, filters dropped); `renderProductCount` copies the breadcrumb into the drawer count after a filter; `ivory.png` filter swatch is a 404 on the source CDN.
+  - Implemented:
+    - Pipeline: `scripts/fetch-collection.mjs`, `scripts/build-collection-data.mjs` -> `src/data/collections/new-in.json` (1.1 MB), `scripts/download-collection-assets.mjs` (28 files in `public/assets/source/collection/`, desktop promo banner 18 MB Git-ignored), `scripts/build-collection-css.mjs` -> `src/app/collections/[handle]/collection-source.css` (521 rules, scoped `:where(.template-collection)`).
+    - Shared build libs extracted (outputs byte-identical, checked by sha1): `scripts/lib/product-cards.mjs` (card parser + placeholders, used by the PDP builder too), `scripts/lib/scoped-css.mjs` (used by `build-pdp-css.mjs`), `scripts/lib/image-info.mjs` (used by `download-header-assets.mjs`).
+    - Data boundary: `src/lib/collections/{types,query,repository,client}.ts`. The server renders only the initial grid; the client loads the dataset chunk lazily (`loadCollection`), and `query.ts` holds the pagination.js / fill-row / promo-placement logic and the mock filter/sort resolution.
+    - Component `src/components/commerce/collection/CollectionPage.tsx` (+ `icons.tsx`): source markup and custom elements (`facet-filters-form`, `facet-remove`, `pagination-theme`, `collapsible-row`, `facetfiltersformmobile`), reuses `pdp/SourceProductCard.tsx`; title-height equalization (`updateGridHeightcollection`); route `src/app/collections/[handle]/page.tsx` (`bags`/`your-favourites` keep the round-251 grid).
+    - Shared changes: `globals.css` homepage guards now `:where(:not(.template-product *, .template-collection *))` (69 selectors + 2 `.label-discount-code-grid-wrap .label-wrap` rules; they forced 655 px card heights); `src/app/shell.css` adds the source `#wrapper > [role="main"]{display:flex;flex:1;flex-direction:column}` (home and PDP heights unchanged before/after, `reference/dom/r257-newin/height-check.json`); `SiteChrome` renders the 4 layout hidden inputs from `src/data/layout.json` via `layoutRepository`; `.click-capture` dispatches `CLICK_CAPTURE_EVENT` so the facet drawer closes with it.
+  - Evidence (geometry/DOM/behaviour only):
+    - Identical probes 1920/390 (`reference/scripts/r257-pair-probe.mjs`, `reference/dom/r257-newin/pairs-*.json`): document height equal (11676 / 12931), card internals equal, title heights 46 px on both.
+    - Interactions (`r257-interactions.mjs`, `r257-interactions-b.mjs`; `interactions*.json`): card counts 47 -> 99 -> 119 after two Load more, 11 after Black, URL `?filter...&sort_by=manual`, drawer/sort-list/scroll state equal; `?sort_by=price-ascending`, `title-descending`, `size=XS`, Black+S, In stock+price-desc and the bar sort click give the same counts, first 6 titles and control state as the source.
+    - 0 console errors/warnings on local through load more, drawer, filter, drawer sort and Apply at 1920 and 390. `tsc`, `npm run lint` (0 problems) and `npm run build` pass.
+  - **Not done / open:**
+    - Screenshots: ego `Page.captureScreenshot` times out on every tab this session (ego 0.6.2.8, window maximized, page visible, ~1 rAF/s; `reference/scripts/r257-shot-test*.mjs`). No paired screenshots, no `verify.mjs` benchmark, so nothing here is visually verified. Retry when the ego window is in the foreground and not covered.
+    - Remaining structural differences: the source `ul#product-grid` contains a `<link>` (gallery.css) before the promotion column; the newsletter section is inside `#main-content` with a local id (same as home/PDP; shared-shell item); quick-view drawer not built (Add to Bag navigates to the PDP); filtered facet counts are not re-rendered; `.loading` states not reproduced; direct loads with params flash Featured first.
+    - Hover/focus states, the drawer open/close transition, 390 drawer layout and the sort list at <=768 have no paired screenshots.
+    - Next: screenshot gate + benchmark for `/collections/new-in` at the source breakpoints, then the navigation collections (light sweep, same template + source data).
+  - Working tree note: the unstaged deletions of `scripts/croppng.py` / `scripts/pdf2png.py` come from the round-253 cleanup (see the round 253 entry: obsolete PDF-screenshot workaround scripts).
 
 - **[Claude Code round 256] P0 shared header shell (claimed 2026-11-06).**
   - Source captures (2026-11-06, Indonesia, logged out, empty cart, popup hidden), scripts `reference/scripts/r256-header-capture*.mjs`, all in `reference/dom/r256-header/`:
@@ -85,7 +116,8 @@ Overall phase: implementation
     - There is no earlier homepage score to compare against, because this tool had never scored the homepage.
   - Bug fixed (owner report "announcement-bar berhenti"): `loadForShot` (`tests/visual/ego-lib.mjs:66`) injects a marquee freeze `<style>` into the captured page, and `r256-shell-used-rules.mjs` recorded it as a source `inline:style` sheet, so `shell-source.css` shipped `.announcement-bar--marquee > div{animation:none!important}`. `scripts/build-shell-css.mjs` now drops it (`HARNESS_RULE`); probe on local home 1920: `marquee-left` 16s running, transform -356 → -682 px over 3s. Paired screenshots were unaffected (the harness freezes both sides). Lesson: any capture run through `loadForShot` contains harness styles; filter them before using captured CSS.
   - Bug fixed (owner report "jsc-widget-title underline harusnya 1"): the footer drew two underlines, `text-decoration:underline` on `.footer .thb-widget-title` (globals.css:319, from commit 2cc5622) plus the `.jsc-widget-title` 2px border-bottom. Source computes `text-decoration-line: none` on `.thb-widget-title` and only the 2px border on `.jsc-widget-title` (home and PDP, 1920 and 390), so the local underline was removed. Paired crops of the title row: `reference/screenshots/r256-footer/pair-{1920,390}-titles.png`, 0 diff pixels (threshold 16) at both widths; title heights 49/41 px equal on both sides. The crops were taken after a programmatic scroll, so they support only the underline check, not layout evidence.
-  - Next: owner decision on whether the homepage benchmark gaps are in scope, and confirmation before committing the shell. Then `/collections/new-in`.
+  - Committed as `c357014` on owner instruction ("commit dulu saja", 2026-11-06), approximate, not pushed. tsc, lint and `next build` passed before the commit. The `scripts/croppng.py` / `scripts/pdf2png.py` deletions remain unstaged (origin unknown).
+  - Next: owner decision on whether the homepage benchmark gaps are in scope. Then `/collections/new-in`.
   - Not part of `06060a9`: the working-tree deletions of `scripts/croppng.py` and `scripts/pdf2png.py` were left unstaged because their origin is unknown and they are unrelated to the PDP.
 
 - **Round 254 real product template, `/products/womens-classic-long-sleeve-shirt` (owner approved the component-rebuild method): APPROXIMATE / NOT VISUALLY VERIFIED.**
@@ -369,7 +401,7 @@ Older items (pre-round-255, homepage-focused):
 | Site-wide inventory | Yes | No | No | No | `docs/page-inventory.md`, `reference/routes/discovery-01.json`; 372 canonical routes, 363 paired `/id` alternatives |
 | Home | Yes | Yes | Partial | No | `reference/data/round31-{source,local}-{desktop,mobile}.json`, `reference/screenshots/round-45/`; screenshots operational but first batch has popup/lazy-media state mismatch |
 | Navigation/search overlays | Yes | Yes | Partial | No | Local mock behavior only |
-| Collection/listing | Yes | No | No | No | 109 routes in `docs/page-inventory.md`; sitemap evidence only |
+| Collection/listing | Yes | Partial (`/collections/new-in` round 257, `/collections` list round 257b) | Probed 1920/390 | No | `reference/dom/r257-newin/` (pairs, interactions); no screenshots; other 108 routes sitemap evidence only |
 | Product detail | Yes | No | No | No | 164 routes in `docs/page-inventory.md`; representative `/products/womens-classic-long-sleeve-shirt` |
 | Cart | Yes | No | No | No | `/cart` discovered from homepage DOM; route only |
 | Editorial/content | Yes | No | No | No | 74 editorial routes in `docs/page-inventory.md`; sitemap evidence only |

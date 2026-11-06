@@ -18,6 +18,12 @@ declare module "react" {
       "product-add-to-cart-sticky": SourceElement;
       "full-menu": SourceElement;
       "side-panel-close": SourceElement;
+      // Collection template (facets.js, pagination.js).
+      "facet-filters-form": SourceElement;
+      "facet-remove": SourceElement;
+      "pagination-theme": SourceElement;
+      "collapsible-row": SourceElement;
+      facetfiltersformmobile: SourceElement;
     }
   }
 }

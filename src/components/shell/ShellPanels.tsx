@@ -82,6 +82,10 @@ function CartDrawer({ active, close }: { active: boolean; close: () => void }) {
   );
 }
 
+/** Dispatched on window when .click-capture is clicked: every open side panel closes (cart here; the collection facet
+ *  drawer listens for it). The source theme closes all side panels from the same click. */
+export const CLICK_CAPTURE_EVENT = "shell:click-capture";
+
 export function ShellPanels({ cartOpen, closeCart }: { cartOpen: boolean; closeCart: () => void }) {
   useEffect(() => {
     document.body.classList.toggle("open-cc", cartOpen);
@@ -120,7 +124,7 @@ export function ShellPanels({ cartOpen, closeCart }: { cartOpen: boolean; closeC
           </div>
         </div>
       </div>
-      <div className="click-capture" onClick={closeCart} />
+      <div className="click-capture" onClick={() => { closeCart(); window.dispatchEvent(new Event(CLICK_CAPTURE_EVENT)); }} />
     </>
   );
 }

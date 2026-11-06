@@ -1,0 +1,21 @@
+{
+ "source": "layout/theme.liquid hidden inputs at the top of #main-content (server HTML 2026-11-06, every template)",
+ "hiddenInputs": [
+  {
+   "id": "jsc-front-shipping-text-local",
+   "value": "Your ID shipping is on us!"
+  },
+  {
+   "id": "jsc-back-shipping-text-local",
+   "value": "more to free ID shipping."
+  },
+  {
+   "id": "jsc-front-shipping-text-int",
+   "value": "Your International shipping is on us!"
+  },
+  {
+   "id": "jsc-back-shipping-text-int",
+   "value": "more to free international shipping."
+  }
+ ]
+}
