@@ -30,3 +30,6 @@ public/assets/source/collection/*_Collection_Grid_Desktop.webp
 # `node scripts/build-collection-list-data.mjs && node scripts/download-collection-assets.mjs _index`.
 public/assets/source/collections/*_960x_crop_center.*
 public/assets/source/collections/*_1280x_crop_center.*
+# /pages/contact-us header GIF at 1600w (3.9 MB). Reproducible with
+# `node scripts/build-contact-data.mjs && node scripts/download-collection-assets.mjs _contact`.
+public/assets/source/pages/CONTCT-US-NEW_1600x500_crop_center.gif

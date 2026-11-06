@@ -1,0 +1,10 @@
+/* Local overrides on top of the generated source rules (contact-source.css). Keep this file small: every rule here is
+   a deliberate deviation or a fix for a rule the clone needs but the source applies through its own scripts. */
+
+/* The wrapper stands in for the source <body>: source body text metrics, same as the other template wrappers. */
+.template-page-contact{font-size:1.0625rem;line-height:calc(var(--font-body-line-height-scale) * 1.6)}
+
+/* On the source the sections are flex items of #wrapper > [role=main] (display:flex column), so the multicolumn section
+   (max-width:1330px; margin:auto) shrinks to its content (1185px at 1920). display:contents keeps the wrapper for
+   scoping and inheritance while the sections take part in that flex layout. Measured: reference/dom/r257d-contact/pairs.json. */
+.template-page-contact{display:contents}

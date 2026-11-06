@@ -1,0 +1,7 @@
+/* Local overrides on top of the generated source rules (wishlist-source.css). Keep this file small: every rule here is
+   a deliberate deviation or a fix for a rule the clone needs but the source applies through its own scripts. */
+
+/* The wrapper stands in for the source <body>: source body text metrics. Unlike contact/faqs it stays a block box:
+   the source .row keeps its 1440px max-width here (as a flex item with margin:auto it would shrink to its content,
+   measured 952px narrower at 1920 with display:contents; reference/dom/r257f-wishlist/pairs.json). */
+.template-page-swym{font-size:1.0625rem;line-height:calc(var(--font-body-line-height-scale) * 1.6)}

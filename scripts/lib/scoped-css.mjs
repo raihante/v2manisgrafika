@@ -11,6 +11,10 @@ export function scopeSelector(sel, scope) {
     const m = s.match(/^(html[^\s>]*\s*>?\s*)?body([^\s>]*)\s*(>?)\s*(.*)$/);
     if (m) return m[4] ? `${scope}${m[2]} ${m[3] ? "> " : ""}${m[4]}` : `${scope}${m[2]}`;
     if (/^html\b/.test(s)) s = s.replace(/^html[^\s]*\s+/, "");
+    // A bare type ancestor (`div .pxFormGenerator iframe`) matches containers outside the page wrapper on the source
+    // (#wrapper, #main-content); constrain the subject instead of the ancestor so those still match. Pseudo-elements
+    // stay last. Specificity is unchanged (:where).
+    if (/^(div|section|main|article)\s+[^>+~]/.test(s)) return s.replace(/(::[\w-]+(\([^)]*\))?)?$/, (pe) => `:where(${scope} *)${pe}`);
     return `:where(${scope}) ${s}`;
   }).join(", ");
 }

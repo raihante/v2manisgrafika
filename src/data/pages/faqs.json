@@ -1,0 +1,675 @@
+{
+ "documentTitle": "Frequently Asked Questions – Beyond The Vines Indonesia",
+ "header": {
+  "sectionId": "template--22799925477655__faq_header_VXwBRX",
+  "className": "shopify-section section-faq",
+  "wrapperClass": "jsc-faq-section swipe-on-mobile section-spacing section-spacing--disable-top section-spacing--disable-bottom",
+  "headerClass": "jsc-faq-header jsc-faq-header-image-section",
+  "headerStyle": "background-color:#ffffff;",
+  "image": "/assets/source/pages/FAQ.gif",
+  "imageAlt": "comment icon",
+  "buttons": [
+   {
+    "label": "Most Asked",
+    "text": "Most Asked",
+    "active": true
+   },
+   {
+    "label": "Delivery",
+    "text": "Delivery",
+    "active": false
+   },
+   {
+    "label": "Orders",
+    "text": "Orders",
+    "active": false
+   },
+   {
+    "label": "Pre Orders",
+    "text": "Pre Orders",
+    "active": false
+   },
+   {
+    "label": "Returns",
+    "text": "Returns",
+    "active": false
+   },
+   {
+    "label": "Product",
+    "text": "Product",
+    "active": false
+   },
+   {
+    "label": "The Vine Club",
+    "text": "The Vine Club",
+    "active": false
+   },
+   {
+    "label": "Promotions & Payments",
+    "text": "Promotions & Payments",
+    "active": false
+   },
+   {
+    "label": "Tax Refunds",
+    "text": "Tax Refunds",
+    "active": false
+   },
+   {
+    "label": "Store",
+    "text": "Store",
+    "active": false
+   }
+  ]
+ },
+ "spacer": {
+  "sectionId": "template--22799925477655__166186303682d7c655",
+  "className": "shopify-section",
+  "style": "--spacer-mobile: 40px; --spacer-desktop: 80px;"
+ },
+ "groups": [
+  {
+   "sectionId": "template--22799925477655__collapsible_content_mptx4y",
+   "className": "shopify-section",
+   "contentClass": "collapsible-content heading-uppercase-true section-spacing section-spacing--disable-top",
+   "id": "Most_Asked",
+   "heading": "Most Asked",
+   "headerClass": "section-header section-header-left--false",
+   "rows": [
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_BtgHmW-template--22799925477655__collapsible_content_mptx4y",
+     "question": "When will my order ship?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_BtgHmW-template--22799925477655__collapsible_content_mptx4y",
+     "answerHtml": "<p>Here’s how it works: you order, we process, then we ship your parcel out to you.</p><p>Making your order is real easy! Processing all orders take 5 to 7 working days for Jabodetabek & Java, and 5 to 12 working days for all other areas (5 to 20 working days during sale period for all areas).</p><p>Our couriers will make a pick up when your order is ready! You’ll get a shipment notification email with tracking as soon as your package ships.&nbsp;</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_ABByc3-template--22799925477655__collapsible_content_mptx4y",
+     "question": "Oh no! I made a mistake on my order! How can I cancel my order?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_ABByc3-template--22799925477655__collapsible_content_mptx4y",
+     "answerHtml": "<p>If you’ve made an incorrect order, please email <a href=\"mailto:customercare@beyondthevines.co.id\" title=\"mailto:customercare@beyondthevines.co.id\"><strong>Customer Care</strong></a> as soon as possible with your order number and we will do our best to help with cancelling your order so you can make a new one!</p><p>Feel free to hit us up on one platform and shoot us an email with your query. Sending multiple tickets might shuffle your query to the end of our inbox queue. The Crew does their best to sift through messages from oldest to newest to make sure we catch everyone as soon as we can!</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_GR7Fec-template--22799925477655__collapsible_content_mptx4y",
+     "question": "Can I exchange my order?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_GR7Fec-template--22799925477655__collapsible_content_mptx4y",
+     "answerHtml": "<p>If you change your mind after receiving your item, not to worry! Head to our <a href=\"/pages/returns\" title=\"Returns\"><strong>Returns page</strong></a> to submit a return request and we will pop an email to ya once we have reviewed it! All exchanges are processed in the same way as returns.</p><p>Should you be looking to mail back your item to us, be sure to mail it within 7 days of submitting your online return form. Once your order reaches us, allow us 3 to 5 working days to process all BTV Shopping Credits to ya!</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_aKkRDt-template--22799925477655__collapsible_content_mptx4y",
+     "question": "I received my item with a defect on it! What should I do next?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_aKkRDt-template--22799925477655__collapsible_content_mptx4y",
+     "answerHtml": "<p>If the item you received is defective or faulty, please write in to us at <a href=\"mailto:customercare@beyondthevines.co.id\" title=\"mailto:customercare@beyondthevines.co.id\"><strong>Customer Care</strong></a> and we’ll be happy to assist!</p><p>Feel free to hit us up on one platform and shoot us an email with your query. Sending multiple tickets might shuffle your query to the end of our inbox queue. The Crew does their best to sift through messages from oldest to newest to make sure we catch everyone as soon as we can!</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_8LW946-template--22799925477655__collapsible_content_mptx4y",
+     "question": "The item I want is out of stock. What do I do?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_8LW946-template--22799925477655__collapsible_content_mptx4y",
+     "answerHtml": "<p>On the product page, click on the blue tab that says “Notify Me\" for first dibs when they return!</p><p>We typically do not bring back Ready-To-Wear items that are sold out. If we do, you'll be in for a treat!</p>"
+    }
+   ]
+  },
+  {
+   "sectionId": "template--22799925477655__faq",
+   "className": "shopify-section",
+   "contentClass": "collapsible-content heading-uppercase-true section-spacing section-spacing--disable-top",
+   "id": "Delivery",
+   "heading": "Delivery",
+   "headerClass": "section-header section-header-left--false",
+   "rows": [
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-aa70895f-8889-4293-8c7d-ff7bc2b81c57-template--22799925477655__faq",
+     "question": "What are your delivery options?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-aa70895f-8889-4293-8c7d-ff7bc2b81c57-template--22799925477655__faq",
+     "answerHtml": "<p>We provide door-to-door delivery service within Indonesia.</p><p>Processing all orders will usually take 5 to 7 working days (5 to 20 working days during sale) for all areas. Delivery is complimentary for orders Rp500K and above. For orders below Rp500K, delivery is Rp50K.<br/><br/>To find out where else we ship to, specific shipping rates, shipping promotions and duration, head to our <a href=\"https://beyondthevines.co.id/pages/shipping-rate\" title=\"https://beyondthevines.co.id/pages/shipping-rate\">Shipping Page.</a></p><p>The Crew will process orders between Monday to Friday. The Crew will be out of the Studio on Public Holidays in Indonesia and will be back to packing parcels soon after!</p><p>Beyond The Vines is not liable for parcels that are lost in transit once transferred to our partner couriers, should you run into any issues with your parcels, please do reach out to <a href=\"mailto:customercare@beyondthevines.co.id\" title=\"mailto:customercare@beyondthevines.co.id\"><strong>Customer Care</strong></a>.</p><p>*During restock, launches, sale and festive season, do take note that there may be a delay in deliveries as we sort through the high volume of orders and work to getting each order packed accurately for you.</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-72f09ca5-4337-4a0b-bcd2-0a7af9183034-template--22799925477655__faq",
+     "question": "When will my order ship?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-72f09ca5-4337-4a0b-bcd2-0a7af9183034-template--22799925477655__faq",
+     "answerHtml": "<p>Here’s how it works: you order, we process, then we ship your parcel out to you.</p><p>Making your order is real easy! Processing all orders take 5 to 7 working days for Jabodetabek & Java, and 5 to 12 working days for all other areas (5 to 20 working days during sale period for all areas).</p><p>Our couriers will make a pick up when your order is ready! You’ll get a shipment notification email with tracking as soon as your package ships.&nbsp;</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_jbQqKV-template--22799925477655__faq",
+     "question": "When can I expect to receive my package?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_jbQqKV-template--22799925477655__faq",
+     "answerHtml": "<p><strong>Local Delivery within Indonesia</strong><br/>Local parcels ship within 5 to 7 working days for Jabodetabek & Java, and 5 to 12 working days for all other areas! During festive seasons and sale periods, do expect a delay, shipping will usually take 5 to 20 working days for all areas.<br/><br/>You’ll get a shipment notification email with tracking as soon as your package ships.</p><p><strong>International Delivery</strong><br/>Please head to our global website, <a href=\"https://www.beyondthevines.com\" title=\"https://www.beyondthevines.com\"><strong>www.beyondthevines.com</strong></a>, for all international orders for delivery outside of Indonesia!</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_fLUQrh-template--22799925477655__faq",
+     "question": "Are duties and taxes inclusive?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_fLUQrh-template--22799925477655__faq",
+     "answerHtml": "<p>All custom duties and taxes are inclusive on all orders. Not to worry, there will be no added costs when receiving your order!</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-d8b3ed5d-d5cf-4b20-9bed-893f2be8497f-template--22799925477655__faq",
+     "question": "Am I able to pick up my online orders in stores?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-d8b3ed5d-d5cf-4b20-9bed-893f2be8497f-template--22799925477655__faq",
+     "answerHtml": "<p>All orders will be shipped to your residential address in Indonesia. We currently do not have self collect options available.</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-5f34dba8-15e0-4aac-91f7-5a103657361d-template--22799925477655__faq",
+     "question": "How can I edit my shipping address?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-5f34dba8-15e0-4aac-91f7-5a103657361d-template--22799925477655__faq",
+     "answerHtml": "<p>If your order is within the first few hours of being confirmed and you need to edit your shipping address, <a href=\"mailto:customercare@beyondthevines.co.id\" title=\"mailto:customercare@beyondthevines.co.id\"><strong>please email us</strong></a>.</p><p>If your order has been processed and packed up, we are unable to make any changes to your order.</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-fa2985e2-4983-462b-80c8-596d4ae47540-template--22799925477655__faq",
+     "question": "I'm having problems tracking my order!",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-fa2985e2-4983-462b-80c8-596d4ae47540-template--22799925477655__faq",
+     "answerHtml": "<p>In a few cases, the courier may take 1 to 2 working days to register your shipment status.</p><p>You can locate your tracking link for your order in the email notifying you that your parcel has been shipped.</p><p>If your tracking number isn’t updating or working at all, <a href=\"mailto:customercare@beyondthevines.co.id\" title=\"mailto:customercare@beyondthevines.co.id\"><strong>please reach out to us</strong></a> as soon as you can. We can give you inside info.</p>"
+    }
+   ]
+  },
+  {
+   "sectionId": "template--22799925477655__collapsible_content_7VYQ6F",
+   "className": "shopify-section",
+   "contentClass": "collapsible-content heading-uppercase-true section-spacing section-spacing--disable-top",
+   "id": "Orders",
+   "heading": "Orders",
+   "headerClass": "section-header section-header-left--false",
+   "rows": [
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_wQebpz-template--22799925477655__collapsible_content_7VYQ6F",
+     "question": "Am I able to make a reservation on an item?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_wQebpz-template--22799925477655__collapsible_content_7VYQ6F",
+     "answerHtml": "<p>We aren't able to make reservations on all our items.<br/><br/>We do have a blue tab that says \"Notify Me\" on the product page. Add your email there and you'll know when the item you're eyeing is available! Yay!</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_QC9QA6-template--22799925477655__collapsible_content_7VYQ6F",
+     "question": "What comes with my online order?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_QC9QA6-template--22799925477655__collapsible_content_7VYQ6F",
+     "answerHtml": "<p>Online orders will be packed into a flat and securely sealed shipping pack!<br/><br/>If you plan on gifting, we’ve got ya! From the cart out page, request for a specific item that you would need gift wrap for and we will include a gift wrap for you!</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_LYfhpL-template--22799925477655__collapsible_content_7VYQ6F",
+     "question": "I just made a purchase and accidentally ordered the wrong item or wrong size. What can I do about it?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_LYfhpL-template--22799925477655__collapsible_content_7VYQ6F",
+     "answerHtml": "<p>Once your order is made, we are unable to make any edits on it. Do drop an email to <a href=\"mailto:customercare@beyondthevines.co.id\" title=\"mailto:customercare@beyondthevines.co.id\"><strong>Customer Care</strong></a> for a request to cancel your order, so that you may go ahead with making a new one with your correct items!</p><p>We understand that mistakes can be made! If you need to make changes to your address, please drop <a href=\"mailto:customercare@beyondthevines.co.id\" title=\"mailto:customercare@beyondthevines.co.id\"><strong>Customer Care</strong></a> an email with your order number and full address, we will do our best to catch it for ya! </p><p>Feel free to hit us up on one platform and shoot us an email with your query. Sending multiple tickets might shuffle your query to the end of our inbox queue. The Crew does their best to sift through messages from oldest to newest to make sure we catch everyone as soon as we can!</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_TtJJha-template--22799925477655__collapsible_content_7VYQ6F",
+     "question": "Do you provide gift wraps?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_TtJJha-template--22799925477655__collapsible_content_7VYQ6F",
+     "answerHtml": "<p>If you plan on gifting, we’ve got ya! At the cart page, select which item you'd need gift wrap for and we will include gift wrap for you!<br/><br/>Please do note that the Gift Wrap selection will be switched off during sale seasons to help us pack more efficiently! <br/><br/>For large orders exceeding 10 items with indication for gift wrap, we will add in 10 gift wraps for ya. Subject to availability!</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_h4WjD3-template--22799925477655__collapsible_content_7VYQ6F",
+     "question": "Oh no! I made a mistake on my order! How can I cancel my order?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_h4WjD3-template--22799925477655__collapsible_content_7VYQ6F",
+     "answerHtml": "<p>If you’ve made an incorrect order, please email <a href=\"mailto:customercare@beyondthevines.co.id\" title=\"mailto:customercare@beyondthevines.co.id\"><strong>Customer Care</strong></a> as soon as possible with your order number and we will do our best to help with cancelling your order so you can make a new one!</p><p>Feel free to hit us up on one platform and shoot us an email with your query. Sending multiple tickets might shuffle your query to the end of our inbox queue. The Crew does their best to sift through messages from oldest to newest to make sure we catch everyone as soon as we can!</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_TeTXaV-template--22799925477655__collapsible_content_7VYQ6F",
+     "question": "How long does it take to process a refund for cancelled orders?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_TeTXaV-template--22799925477655__collapsible_content_7VYQ6F",
+     "answerHtml": "<p>The value of your cancelled order will be returned to you as BTV Shopping Credits once our Crew confirms it via email.</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_arPEYB-template--22799925477655__collapsible_content_7VYQ6F",
+     "question": "I am trying to access your website but there is a problem. Can you help?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_arPEYB-template--22799925477655__collapsible_content_7VYQ6F",
+     "answerHtml": "<p>We know that it can be frustrating when you can't view a website properly. If you are having trouble, you may try the following:</p><p>- Ensure your web browser is up-to-date.<br/>- Access our website using a different web browser.<br/>- Clear your cookies. This can be done through your internet options.<br/>- If it still isn't working, don't hesitate to contact us!</p>"
+    }
+   ]
+  },
+  {
+   "sectionId": "template--22799925477655__collapsible_content_eGBXAe",
+   "className": "shopify-section",
+   "contentClass": "collapsible-content heading-uppercase-true section-spacing section-spacing--disable-top",
+   "id": "Pre_Orders",
+   "heading": "Pre Orders",
+   "headerClass": "section-header section-header-left--false",
+   "rows": [
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_p9MDbB-template--22799925477655__collapsible_content_eGBXAe",
+     "question": "How to place a Pre Order?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_p9MDbB-template--22799925477655__collapsible_content_eGBXAe",
+     "answerHtml": "<p>When placing a Pre Order, make sure that regular items are not within the same cart. Be sure to check them out separately.&nbsp;</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_xdhyx4-template--22799925477655__collapsible_content_eGBXAe",
+     "question": "When will my Pre Order items be shipped?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_xdhyx4-template--22799925477655__collapsible_content_eGBXAe",
+     "answerHtml": "<p>Ship out dates differ between products, please refer to the Product Page of the Pre Order item or your order confirmation email for shipping details. &nbsp;<br/><br/>We're expecting a high volume of orders during this launch, so do give our Crew a 'lil more time to pack and process your goodies! Deliveries may take a little longer than usual, but don't worry, our warehouse team is working at full steam to get all orders packed with care and shipped out as quickly as they can. Thank you so much for your patience!&nbsp;<br/><br/>Once your order has been shipped, you'll receive an email with your tracking details so you can keep an eye on your parcel. You can expect to receive your order within 5–15 working days after it has been shipped!<br/><br/></p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_74wbYT-template--22799925477655__collapsible_content_eGBXAe",
+     "question": "Can I return my Pre Order?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_74wbYT-template--22799925477655__collapsible_content_eGBXAe",
+     "answerHtml": "<p>Yes! Once you've received your Pre-order item, you may return it within 30 days from when your order is shipped out, provided the item is unused, unwashed, and in its original condition, with all hangtags and dust bag intact.<br/><br/>Do head to our <a href=\"/pages/returns\" title=\"Returns\"><strong>Returns Page</strong></a> for more information on how to make a return!<br/><br/></p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_xqnQte-template--22799925477655__collapsible_content_eGBXAe",
+     "question": "Can I exchange my Pre Ordered item?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_xqnQte-template--22799925477655__collapsible_content_eGBXAe",
+     "answerHtml": "<p>Yes! Once you've received your Pre-order item, you may make an exchange within 30 days from when your order is shipped out, provided the item is unused, unwashed, and in its original condition, with all hangtags and dust bag intact.&nbsp;<br/><br/>Do head to our <a href=\"/pages/returns\" title=\"Returns\"><strong>Returns Page</strong></a> for more information on exchanges!&nbsp;<br/><br/>If there's a Beyond The Vines store near you, feel free to head down for an exchange or to return your item for BTV Shopping Credits!<br/><br/></p>"
+    }
+   ]
+  },
+  {
+   "sectionId": "template--22799925477655__collapsible_content_KxHnU9",
+   "className": "shopify-section",
+   "contentClass": "collapsible-content heading-uppercase-true section-spacing section-spacing--disable-top",
+   "id": "Returns",
+   "heading": "Returns",
+   "headerClass": "section-header section-header-left--false",
+   "rows": [
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_FBcMYB-template--22799925477655__collapsible_content_KxHnU9",
+     "question": "What is your return policy?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_FBcMYB-template--22799925477655__collapsible_content_KxHnU9",
+     "answerHtml": "<p>We're committed to making good design accessible to all. If the items you ordered are not working exactly right for you, we've got you covered!</p><p>You get 30 days to take your purchases for a spin in front of your mirror, confidently knowing you can return any item (<strong>some exceptions apply</strong>) for any reason, provided it is in brand new condition with hang tags securely fastened. We will return the amount to you in BTV Shopping Credits that will be sent to your email, which you will be able to use at any other time, on our website only. BTV Shopping Credits are valid for a year from date of return. You may only return your items <strong>once</strong> (no multiple returns for the same item will be allowed).</p><p>We just ask for items to be unwashed, with hangtags still securely fastened. </p><p>Returns are not accepted for all sale items, socks, eye masks, face masks, drinkware, stationery, and personalised products.</p><p>Please note that you will need an order number to do any returns or exchanges. Items without an order number will not be accepted. All return shipping charges will be borne by the customer.</p><p>For more on exchanges and returns, check out our <a href=\"/pages/returns\" title=\"Returns\"><strong>Returns page</strong></a>!</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_efN96z-template--22799925477655__collapsible_content_KxHnU9",
+     "question": "Are there any return policy exceptions?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_efN96z-template--22799925477655__collapsible_content_KxHnU9",
+     "answerHtml": "<p>We do our best to provide an excellent return policy to ease your shopping experience, and here are some things below for you to take note of:</p><p>1. If it's beyond 30 days from date of purchase, we're unable to do a return for you.<br/>2. Returns for items received as gifts must be accompanied with the respective receipt or order number. Please work with the gift-giver in this.<br/>3. We are unable to process returns or exchanges on all sale items, socks, eye masks, face masks, drinkware, stationery, and personalised products.<br/>4. Sale items and purchases made using selected discount codes are not eligible for returns or exchanges.<br/>5. All purchase with purchases orders will have to be returned as an order.</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_UEHWjj-template--22799925477655__collapsible_content_KxHnU9",
+     "question": "How can I return my order?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_UEHWjj-template--22799925477655__collapsible_content_KxHnU9",
+     "answerHtml": "<p>All exchanges are processed in the same way as returns. We make returns as easy as possible. Ensure that your order is within 30 days from date of purchase, with all hang tags intact and the items unused for all returns/exchanges! </p><p>Please head to our <a href=\"/pages/returns\" title=\"Returns\"><strong>Returns Page</strong></a> to complete your return.</p><p><strong>Orders in Indonesia </strong></p><p>(1) Put in a Return Request via our Return Page. You’ll receive an email with the return address, along with the required return steps to follow. <br/>(2) Label your item with your order number, return request number(RMAxxxxxx) and have it securely packed <br/>(3) Have it mailed back to us using registered postage! Please note that return shipping costs will be bourne by the customer.</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_pW7ecg-template--22799925477655__collapsible_content_KxHnU9",
+     "question": "How can I return my purchase with purchase item?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_pW7ecg-template--22799925477655__collapsible_content_KxHnU9",
+     "answerHtml": "<p>If you’re looking to return your purchase with purchase items, it will have to be returned as an order. </p><p>For example, if you purchased the Colourblock Micro Dumpling Bag, we'll require for it to be returned together with the Teeny Tiny Micro Mini Dumpling Bag in your order.</p><p>Head to our online return portal <a href=\"/pages/returns\" title=\"Returns\"><strong>here</strong></a> to proceed with your exchange / return request. </p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_RwL79Y-template--22799925477655__collapsible_content_KxHnU9",
+     "question": "Can I exchange my order?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_RwL79Y-template--22799925477655__collapsible_content_KxHnU9",
+     "answerHtml": "<p>If you change your mind after receiving your item, not to worry! Head to our <a href=\"/pages/returns\" title=\"Returns\"><strong>Returns Page</strong></a> to submit a return request and we will pop an email to ya once we have reviewed it! All exchanges are processed in the same way as returns.</p><p>Be sure to mail back your order to us within 7 days of submitting your online return form and once your order reaches us, allow us 3 to 5 working days to process all BTV Shopping Credits to ya! You may use these BTV Shopping Credits towards the right item for ya!</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_eVqGq3-template--22799925477655__collapsible_content_KxHnU9",
+     "question": "Can you help with a product I bought from a third party marketplace?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_eVqGq3-template--22799925477655__collapsible_content_KxHnU9",
+     "answerHtml": "<p>Beyond The Vines is not affiliated with any marketplace, neither do we partner with online distributors or third party retailers to sell our products.</p><p>We’re not able to process returns or exchanges or assist with orders not placed through our official stores.</p><p>You can find original Beyond The Vines products retailing exclusively at our <a href=\"https://beyondthevines.co.id/\" title=\"https://beyondthevines.co.id/\"><strong>official website</strong></a> and our retail stores <a href=\"/pages/stores\" title=\"Stores\"><strong>here</strong></a>. Your order will follow with a confirmation email and an order number. If in doubt, do reach out to <a href=\"mailto:customercare@beyondthevines.co.id\" title=\"mailto:customercare@beyondthevines.co.id\"><strong>Customer Care</strong></a> and we’ll be happy to answer your queries!</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_mrgwkR-template--22799925477655__collapsible_content_KxHnU9",
+     "question": "How do gift returns work?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_mrgwkR-template--22799925477655__collapsible_content_KxHnU9",
+     "answerHtml": "<p>If you were gifted one of our products but it isn't what you had in mind, you can return your items for BTV Shopping Credits.</p><p>All you'd need would be the Gifter's name, order number and the products you’d like to return! Do make sure you head to our <a href=\"/pages/returns\" title=\"Returns\"><strong>Returns page</strong></a> and process your return within 30 days of purchase, with all hang tags intact and the item unused!</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_9ydVFb-template--22799925477655__collapsible_content_KxHnU9",
+     "question": "Do BTV Shopping Credits have an expiry date?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_9ydVFb-template--22799925477655__collapsible_content_KxHnU9",
+     "answerHtml": "<p>BTV Shopping Credits will be issued for returns and expire a year from the day your return is successfully processed. You'll have time to browse and make your decision! To find out the expiry date of your Gift Card and Shopping Credits, click into the email and on the bottom that says \"View your Gift Card/Shopping Credits\".</p><p>Purchases using BTV Shopping Credits will not be awarded points.</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_BAdTUJ-template--22799925477655__collapsible_content_KxHnU9",
+     "question": "I've redeemed my BTV points to make an order. Will I get it back when I return items in the order?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_BAdTUJ-template--22799925477655__collapsible_content_KxHnU9",
+     "answerHtml": "<p>If you decide to return an item that you used Vine Club points on, your points will be credited back to your Vine Club account within 3 to 7 working days.</p><p>Just remember to follow our <a href=\"/pages/refund-policy\" title=\"REFUND POLICY\"><strong>Return Policy guidelines</strong></a>. Keep those hangtags intact, drop off the return within 30 days of your purchase, and make sure the item has not been used. The Crew will be happy to assist!</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_fXkwV6-template--22799925477655__collapsible_content_KxHnU9",
+     "question": "Can I return or exchange purchases made with the first-time customer discount?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_fXkwV6-template--22799925477655__collapsible_content_KxHnU9",
+     "answerHtml": "<p>Purchases made with the first-time customer discount are not considered a sale item, and you may choose to exchange or return it for BTV Shopping Credits within 30 days from the date of purchase.</p><p>Please note that the first-time customer discount is a <strong>one-time</strong> use discount, and will <strong>only</strong> apply to the new item being exchanged for, if the price and style remain the same. The discount will not apply to exchanges to a different item, or any price change. If you do a return in BTV Shopping Credits, the discount will not be applicable during your next purchase. Any differences in amount will have to be topped up via our regular payment methods.</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_y9keHG-template--22799925477655__collapsible_content_KxHnU9",
+     "question": "May I return or exchange a sale item?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_y9keHG-template--22799925477655__collapsible_content_KxHnU9",
+     "answerHtml": "<p>All sale items purchased are not eligible for returns or exchanges. Kindly check through all items before purchasing.</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_8yPn38-template--22799925477655__collapsible_content_KxHnU9",
+     "question": "How can I return an item that I purchased from outside of Indonesia?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_8yPn38-template--22799925477655__collapsible_content_KxHnU9",
+     "answerHtml": "<p>All items purchased from outside of Indonesia will need to be returned or exchanged at the store that they were purchased from. If you have any more questions, please write in to us at <a href=\"mailto:customercare@beyondthevines.co.id\" title=\"mailto:customercare@beyondthevines.co.id\"><strong>Customer Care</strong></a> and we’ll be happy to assist!</p>"
+    }
+   ]
+  },
+  {
+   "sectionId": "template--22799925477655__collapsible_content_zMDwAK",
+   "className": "shopify-section",
+   "contentClass": "collapsible-content heading-uppercase-true section-spacing section-spacing--disable-top",
+   "id": "Product",
+   "heading": "Product",
+   "headerClass": "section-header section-header-left--false",
+   "rows": [
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_8gGyfQ-template--22799925477655__collapsible_content_zMDwAK",
+     "question": "How can I get more information about the product I want to buy?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_8gGyfQ-template--22799925477655__collapsible_content_zMDwAK",
+     "answerHtml": "<p>We take pride in the design and functionality of our products, and we want them to work for you! Alongside each product is a short description of the style and fit, washcare instructions, and specific product measurements.</p><p>If you have any further questions relating to the style, fit, material of specific products, do get in touch with <a href=\"mailto:customercare@beyondthevines.co.id\" title=\"mailto:customercare@beyondthevines.co.id\"><strong>Customer Care</strong></a> - we'll be happy to advise you.</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_EjQgXC-template--22799925477655__collapsible_content_zMDwAK",
+     "question": "I received my item with a defect on it! What should I do next?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_EjQgXC-template--22799925477655__collapsible_content_zMDwAK",
+     "answerHtml": "<p>If the item you received is defective or faulty, please write in to us at <a href=\"mailto:customercare@beyondthevines.co.id\" title=\"mailto:customercare@beyondthevines.co.id\"><strong>Customer Care</strong></a> and we’ll be happy to assist!</p><p>Feel free to hit us up on one platform and shoot us an email with your query. Sending multiple tickets might shuffle your query to the end of our inbox queue. The Crew does their best to sift through messages from oldest to newest to make sure we catch everyone as soon as we can!</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_fdCnRz-template--22799925477655__collapsible_content_zMDwAK",
+     "question": "The item I want is out of stock. What do I do?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_fdCnRz-template--22799925477655__collapsible_content_zMDwAK",
+     "answerHtml": "<p>On the product page, click on the blue tab that says “Notify Me\" for first dibs when they return!</p><p>We typically do not bring back Ready-To-Wear items that are sold out. If we do, you'll be in for a treat!</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_QcXkxc-template--22799925477655__collapsible_content_zMDwAK",
+     "question": "How do I stay up to date?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_QcXkxc-template--22799925477655__collapsible_content_zMDwAK",
+     "answerHtml": "<p>Hear about the latest drops through our email newsletter. Or you can catch us on <a href=\"https://www.instagram.com/beyondthevines\">@beyondthevines</a>!</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_6zVVP9-template--22799925477655__collapsible_content_zMDwAK",
+     "question": "How do I care for my BTV products?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_6zVVP9-template--22799925477655__collapsible_content_zMDwAK",
+     "answerHtml": "<p>Curious on how to care for your recent purchase? We've got you! Caring for your product the right way helps to maintain the quality and colour of it without compromising anything! You may refer to the 'Washcare' tab of the particular product, on our website, and you're all set!</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_pWtVTJ-template--22799925477655__collapsible_content_zMDwAK",
+     "question": "How do I know if I've bought an authentic BTV product?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_pWtVTJ-template--22799925477655__collapsible_content_zMDwAK",
+     "answerHtml": "<p>You can find original Beyond The Vines products retailing exclusively at our official website and our retail stores <a href=\"/pages/stores\" title=\"Stores\"><strong>here</strong></a>. Your order will follow with a confirmation email and an order number.</p><p>Beyond The Vines is not affiliated with any marketplace, neither do we partner with online distributors or third party retailers to sell our products.</p><p>If in doubt, do reach out to <a href=\"mailto:customercare@beyondthevines.co.id\" title=\"mailto:customercare@beyondthevines.co.id\"><strong>Customer Care</strong></a> and we’ll be happy to answer your queries!</p>"
+    }
+   ]
+  },
+  {
+   "sectionId": "template--22799925477655__collapsible_content_HH8HeN",
+   "className": "shopify-section",
+   "contentClass": "collapsible-content heading-uppercase-true section-spacing section-spacing--disable-top",
+   "id": "The_Vine_Club",
+   "heading": "The Vine Club",
+   "headerClass": "section-header section-header-left--false",
+   "rows": [
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_6WPVQT-template--22799925477655__collapsible_content_HH8HeN",
+     "question": "How do I join The Vine Club?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_6WPVQT-template--22799925477655__collapsible_content_HH8HeN",
+     "answerHtml": "<p>As long as you have an existing account or have registered your email address online or in-store, you're a part of us!</p><p>If you have an existing account on <a href=\"https://www.beyondthevines.com/\" title=\"https://www.beyondthevines.com/\"><strong>www.beyondthevines.com</strong></a>, register again on our <a href=\"https://beyondthevines.co.id/\" title=\"https://beyondthevines.co.id/\"><strong>Indonesia website</strong></a> with the exact same email address to use points across regions!</p><p>You can register <a href=\"/pages/the-vine-club\" title=\"The Vine Club\"><strong>here</strong></a>.</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_bnEyU4-template--22799925477655__collapsible_content_HH8HeN",
+     "question": "What are the perks of signing up for The Vine Club?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_bnEyU4-template--22799925477655__collapsible_content_HH8HeN",
+     "answerHtml": "<ol><li>Accumulate BTV Points as you spend</li><li>Receive 100 BTV Points on your birthday</li><li>Enjoy Rp100K off your first order with Beyond The Vines with a minimum spend of Rp1Mio. This is valid for use on our online store only! Upon successful registration, you will receive an email with a promo code that you may then apply upon checkout. Have a look in your Spam folder if you've yet to spot it!</li></ol><p>Please note that first-time customer discount is not extended to exchanges or returns.</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_LKf4Jb-template--22799925477655__collapsible_content_HH8HeN",
+     "question": "What are BTV Points? How do I find out how many BTV Points I have?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_LKf4Jb-template--22799925477655__collapsible_content_HH8HeN",
+     "answerHtml": "<p>BTV Points are our rewards currency, which can be used to offset your purchases. Your personal BTV Points will be reflected on The Vine Club page after logging in.</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_VLPrdW-template--22799925477655__collapsible_content_HH8HeN",
+     "question": "Will I earn points from spending my BTV Shopping Credits?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_VLPrdW-template--22799925477655__collapsible_content_HH8HeN",
+     "answerHtml": "<p>All BTV Shopping Credits will not be entitled to earn Vine Club points when spent. Points will only be awarded to original orders with no exchanges or returns processed.</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_LxQ4jf-template--22799925477655__collapsible_content_HH8HeN",
+     "question": "How do I earn BTV Points? What can I use them for?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_LxQ4jf-template--22799925477655__collapsible_content_HH8HeN",
+     "answerHtml": "<p>Every Rp10K spent on <a href=\"https://beyondthevines.co.id/\" title=\"https://beyondthevines.co.id/\">beyondthevines.co.id</a> will gift you 1 BTV Point (excluding shipping fees and tax).</p><p>You can accumulate your BTV Points and exchange them for discounts on your order in the following denominations: Rp50K, Rp100K, Rp200K, Rp500K and Rp1Mio. There is a minimum spend of Rp100K to redeem BTV Points on your order.</p><p>All BTV Points earned can be used in all our online stores and selected retail stores. Please know you'll need to have the same email address used for The Vine Club account to redeem BTV Point across stores.</p><p>Points are tied to an email address, to ensure earned rewards, status updates, and exclusive perks all go to one place, we recommend making all purchases from the same email. </p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_zpEQ9B-template--22799925477655__collapsible_content_HH8HeN",
+     "question": "I've redeemed my BTV points to make an order. Will I get it back when I return items in the order?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_zpEQ9B-template--22799925477655__collapsible_content_HH8HeN",
+     "answerHtml": "<p>If you decide to return an item that you used Vine Club points on, your points will be credited back to your Vine Club account within 3 to 7 working days.</p><p>Just remember to follow our <a href=\"/pages/returns\" title=\"Returns\"><strong>Return Policy guidelines</strong></a>. Keep those hangtags intact, drop off the return within 30 days of your purchase, and make sure the item has not been used. The Crew will be happy to assist!</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_fWxmyf-template--22799925477655__collapsible_content_HH8HeN",
+     "question": "What happens to my BTV Points earned on a purchase when I make a return?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_fWxmyf-template--22799925477655__collapsible_content_HH8HeN",
+     "answerHtml": "<p>When processing a return the amount spent will be returned to you in BTV Shopping Credits. Your BTV Points earned from the initial order will remain in your Vine Club account, as the usage of BTV Shopping Credits will not earn you BTV Points. If a top up is made for an item of more value, points for the balance amount paid will then be credited.</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_YPPRaE-template--22799925477655__collapsible_content_HH8HeN",
+     "question": "How do I utilise my BTV Points?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_YPPRaE-template--22799925477655__collapsible_content_HH8HeN",
+     "answerHtml": "<p>When looking into redeeming your BTV Points, simply add the item(s) you'd like into your cart. You may select the amount of points you'd like to redeem at the checkout page. Be sure to be signed out of your Shop Pay account to be able to view your points at check out!</p><p>If you change your mind, go ahead and click the 'x' on the coupon code and your points will automatically be returned to you.</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_QGPWn3-template--22799925477655__collapsible_content_HH8HeN",
+     "question": "Am I able to use multiple BTV Points redemption discount codes together?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_QGPWn3-template--22799925477655__collapsible_content_HH8HeN",
+     "answerHtml": "<p>Unfortunately, BTV Points redemption codes cannot be stacked; only one redemption code can be applied at each transaction. Each redemption code has to be fully utilised in one single transaction. Please note that any balance in value is not refundable or exchangeable for cash.</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_7BAGwp-template--22799925477655__collapsible_content_HH8HeN",
+     "question": "Where can I view the BTV Points I have accumulated?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_7BAGwp-template--22799925477655__collapsible_content_HH8HeN",
+     "answerHtml": "<p>When you arrive at The Vine Club page, you will see the BTV Points you have.</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_xnnXqq-template--22799925477655__collapsible_content_HH8HeN",
+     "question": "Do my BTV Points expire?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_xnnXqq-template--22799925477655__collapsible_content_HH8HeN",
+     "answerHtml": "<p>All BTV Points will expire 1 year past your latest purchase, feel free to keep track of your last order via your account profile page!</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_FEWmpi-template--22799925477655__collapsible_content_HH8HeN",
+     "question": "I’ve just made a purchase but didn't receive my BTV Points.",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_FEWmpi-template--22799925477655__collapsible_content_HH8HeN",
+     "answerHtml": "<p>Your BTV Points should be rewarded immediately but in the event it takes a while, do be patient! </p><p>If you’ve not received your BTV Points within 24 hours of purchase, contact us at <a href=\"mailto:customercare@beyondthevines.co.id\" title=\"mailto:customercare@beyondthevines.co.id\"><strong>Customer Care</strong></a>, we'll be happy to help.</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_kBTpMn-template--22799925477655__collapsible_content_HH8HeN",
+     "question": "What if I have more than one account?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_kBTpMn-template--22799925477655__collapsible_content_HH8HeN",
+     "answerHtml": "<p>BTV Points are tied to an email address, to ensure earned rewards, status updates, and exclusive perks all go to one place, we recommend making all purchases from the same email.</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_ngkmxq-template--22799925477655__collapsible_content_HH8HeN",
+     "question": "How do I get my Birthday Rewards?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_ngkmxq-template--22799925477655__collapsible_content_HH8HeN",
+     "answerHtml": "<p>Yay, Happy Birthday from the BTV Crew!<br/><br/>Be sure to key in your birthday when you sign up for a Vine Club account with us!&nbsp;<br/><br/>Your birthdate needs to be updated in The Vine Club at least 1 day before your birthdate for your birthday rewards to be automatically sent to you via email. Have a peek in your spam or junk folder in case it lands there! If you have missed putting in your birthdate, your birthday reward will be sent to you in the following year!&nbsp;</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_CXgLVh-template--22799925477655__collapsible_content_HH8HeN",
+     "question": "What do I enjoy when I get my BTV birthday reward & how do i use my birthday rewards?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_CXgLVh-template--22799925477655__collapsible_content_HH8HeN",
+     "answerHtml": "<p>More info on your birthday perks! A birthday reward will be sent to your email in the form of a special code. It'll be a 15% discount on your order, with a minimum spend of Rp1Mio! Your birthday reward is valid for 14 days from the day that it is issued!&nbsp;<br/>&nbsp;<br/>Happy birthday from the BTV Crew! 🎂</p>"
+    }
+   ]
+  },
+  {
+   "sectionId": "template--22799925477655__collapsible_content_iYwkJH",
+   "className": "shopify-section",
+   "contentClass": "collapsible-content heading-uppercase-true section-spacing section-spacing--disable-top",
+   "id": "Promotions_Payments",
+   "heading": "Promotions & Payments",
+   "headerClass": "section-header section-header-left--false",
+   "rows": [
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_7cCWcQ-template--22799925477655__collapsible_content_iYwkJH",
+     "question": "Where can I find your ongoing promotions/discounts?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_7cCWcQ-template--22799925477655__collapsible_content_iYwkJH",
+     "answerHtml": "<p>You may find out more about our ongoing promotions <a href=\"/blogs/promotions\" title=\"Promotions\"><strong>here</strong></a>.</p><p>Please note that promotions and discount codes are not applicable on shipping fees.</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_WWMAQ4-template--22799925477655__collapsible_content_iYwkJH",
+     "question": "Help! My discount code isn't working.",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_WWMAQ4-template--22799925477655__collapsible_content_iYwkJH",
+     "answerHtml": "<p>Double check if the code you received is designed for new customers, our welcome code is a Rp100K off with a minimum spend of Rp1Mio. Do look out for your welcome email in case it lands in your spam folder.</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_DhbUxQ-template--22799925477655__collapsible_content_iYwkJH",
+     "question": "Am I able to stack my discounts?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_DhbUxQ-template--22799925477655__collapsible_content_iYwkJH",
+     "answerHtml": "<p>Only one discount code can be used at a time, please select the discount code you'd like to use and apply it on your order. For orders purchased with a discount code, you will not be able to use any BTV Shopping Credits from The Vine Club.</p><p>Should you change your mind and like to return your points, just cancel your selection and the points will be returned to The Vine Club account shortly! </p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_G9VN6A-template--22799925477655__collapsible_content_iYwkJH",
+     "question": "What are the payment methods available?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_G9VN6A-template--22799925477655__collapsible_content_iYwkJH",
+     "answerHtml": "<p>We accept the following payment methods through Xendit: <br/>- Visa, Mastercard, JCB<br/>- Bank Transfers are accepted from these banks: BJB, BNI, BRI, Mandiri, PermataBank, BSI and CIMBNiaga<br/>- E-Wallet and QR Payments from OVO, LinkAja and ShopeePay<br/>- PayLater merchants, Akulaku and Kredivo</p>"
+    },
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_xYtRWX-template--22799925477655__collapsible_content_iYwkJH",
+     "question": "What can I do if my payment is declined?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_xYtRWX-template--22799925477655__collapsible_content_iYwkJH",
+     "answerHtml": "<p>Here are a few things to check if your payment didn’t go through: check that your card’s billing details (such as the security code and billing address) match what you’ve entered into our system.</p>"
+    }
+   ]
+  },
+  {
+   "sectionId": "template--22799925477655__collapsible_content_PyzBqr",
+   "className": "shopify-section",
+   "contentClass": "collapsible-content heading-uppercase-true section-spacing section-spacing--disable-top",
+   "id": "Tax_Refunds",
+   "heading": "Tax Refunds",
+   "headerClass": "section-header section-header-left--false",
+   "rows": [
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_mUb6Yf-template--22799925477655__collapsible_content_PyzBqr",
+     "question": "Do you offer Tax Refunds for online purchases?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_mUb6Yf-template--22799925477655__collapsible_content_PyzBqr",
+     "answerHtml": "<p>Tax Refunds are not applicable for online purchases.</p>"
+    }
+   ]
+  },
+  {
+   "sectionId": "template--22799925477655__collapsible_content_QQBz3q",
+   "className": "shopify-section",
+   "contentClass": "collapsible-content heading-uppercase-true section-spacing section-spacing--disable-top",
+   "id": "Store",
+   "heading": "Store",
+   "headerClass": "section-header section-header-left--false",
+   "rows": [
+    {
+     "rowClass": "accordion jsc-accordion jsc-collapsible-row",
+     "detailsId": "Details-collapsible_tab_aJhFTp-template--22799925477655__collapsible_content_QQBz3q",
+     "question": "Can I visit a Beyond The Vines store?",
+     "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
+     "contentId": "Accordion-collapsible_tab_aJhFTp-template--22799925477655__collapsible_content_QQBz3q",
+     "answerHtml": "<p>Please visit our <a href=\"/pages/the-btv-stores\" title=\"The BTV Stores\"><strong>Stores page</strong></a> to see the list of stores open and which ones are coming soon!</p><p>We have more details on our Pop Ups around the world on the page too!</p>"
+    }
+   ]
+  }
+ ]
+}

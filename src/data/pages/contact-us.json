@@ -1,0 +1,60 @@
+{
+ "documentTitle": "Contact Us – Beyond The Vines Indonesia",
+ "richText": {
+  "sectionId": "template--22799925346583__1661619382b4020fa2",
+  "className": "rich-text text-center text-position-center text-width-medium section-spacing-padding section-spacing--disable-bottom",
+  "style": "--color-bg: rgba(0,0,0,0); --color-text: #5dd972; --solid-button-background: #5dd972; --outline-button-label: #5dd972; --solid-button-label: #ffffff; --bg-body: rgba(0,0,0,0); --color-accent: #151515; --color-accent-rgb: 21, 21, 21;",
+  "innerClass": "",
+  "imgClass": "retina_size",
+  "width": 800,
+  "height": 250,
+  "placeholder": "/assets/source/pages/CONTCT-US-NEW_20x6_crop_center.gif",
+  "srcset": [
+   {
+    "src": "/assets/source/pages/CONTCT-US-NEW_1600x500_crop_center.gif",
+    "w": 1600
+   }
+  ],
+  "alt": "",
+  "imgStyle": "object-position: 50% 50%;"
+ },
+ "form": {
+  "sectionId": "template--22799925346583__custom_liquid_i3BgEW",
+  "className": "shopify-section spaced-section",
+  "divStyle": "margin:0 auto;",
+  "divClass": "pxFormGenerator",
+  "divId": "g6gOrX84SI0LqSEzsbGeCA",
+  "iframeId": "frame_g6gOrX84SI0LqSEzsbGeCA",
+  "frameborder": "0",
+  "width": "100%",
+  "initialHeight": 584,
+  "src": "/mock/contact-form.html",
+  "title": "Form g6gOrX84SI0LqSEzsbGeCA"
+ },
+ "multicolumn": {
+  "sectionId": "template--22799925346583__multicolumn_Kdmecr",
+  "className": "shopify-section section-multicolumn",
+  "columns": [
+   {
+    "className": "multicolumn__column small-12 medium-3 columns",
+    "title": "General Enquiries",
+    "html": "<p><a href=\"mailto:customercare@beyondthevines.co.id\" title=\"mailto:customercare@beyondthevines.co.id\">customercare@beyondthevines.co.id</a></p>"
+   },
+   {
+    "className": "multicolumn__column small-12 medium-3 columns",
+    "title": "Careers",
+    "html": "<p><a href=\"mailto:recruitment@beyondthevines.com\" target=\"_blank\" title=\"mailto:recruitment@beyondthevines.com\">recruitment@beyondthevines.com</a></p>"
+   },
+   {
+    "className": "multicolumn__column small-12 medium-3 columns",
+    "title": "Partnerships",
+    "html": "<p><a href=\"mailto:partnerships@beyondthevines.com\" title=\"mailto:partnerships@beyondthevines.com\">partnerships@beyondthevines.com</a></p>"
+   },
+   {
+    "className": "multicolumn__column small-12 medium-3 columns",
+    "title": "Consumer Complaints Service",
+    "html": "<p><a href=\"mailto:customercare@beyondthevines.co.id\" title=\"mailto:customercare@beyondthevines.co.id\">customercare@beyondthevines.co.id</a><br/><br/><strong>Directorate General of Consumer Protection and Trade Compliance<br/>Ministry of Trade of the Republic of Indonesia</strong><br/>0853 1111 1010 (WhatsApp)</p>"
+   }
+  ]
+ }
+}

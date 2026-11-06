@@ -12,6 +12,9 @@ const ROOT = new URL("..", import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "
 const TARGETS = {
   collection: { input: "collection", scope: ".template-collection", out: "src/app/collections/[handle]/collection-source.css", overrides: "collection-page.css" },
   search: { input: "search", scope: ".template-search", out: "src/app/search/search-source.css", overrides: "search-page.css" },
+  contact: { input: "contact", scope: ".template-page-contact", out: "src/app/pages/contact-us/contact-source.css", overrides: "contact-page.css" },
+  faq: { input: "faqs", scope: ".template-page-faq", out: "src/app/pages/faqs/faq-source.css", overrides: "faq-page.css" },
+  wishlist: { input: "wishlist", scope: ".template-page-swym", out: "src/app/pages/wishlist/wishlist-source.css", overrides: "wishlist-page.css" },
   "list-collections": { input: "list-collections", scope: ".template-list-collections", out: "src/app/collections/list-collections-source.css", overrides: "list-collections.css" },
 };
 const name = process.argv[2] ?? "collection";

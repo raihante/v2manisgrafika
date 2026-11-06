@@ -1,6 +1,7 @@
 // Download the non-product images of a collection page listed in reference/data/collection-asset-plan-<handle>.json
 // (built by scripts/build-collection-data.mjs: promotion banners, colour-filter swatches, facet CSS icons; or by
-// scripts/build-collection-list-data.mjs for handle "_index": /collections card banners) under their source file names.
+// scripts/build-collection-list-data.mjs for handle "_index": /collections card banners; scripts/build-contact-data.mjs for
+// "_contact": the contact page header) under their source file names.
 // Product card images stay dummyimage.com placeholders.
 // Run: node scripts/download-collection-assets.mjs <handle>   (read-only GETs of public CDN images)
 // Writes reference/data/collection-assets-<handle>.json (source URL, local path, sha256, bytes, dimensions) for
@@ -16,7 +17,8 @@ const plan = JSON.parse(readFileSync(`${ROOT}reference/data/collection-asset-pla
 for (const local of Object.keys(plan)) mkdirSync(`${ROOT}public${local.slice(0, local.lastIndexOf("/"))}`, { recursive: true });
 
 // Request widths as the source page requests them (promotion banner img src / mobile <source> carry &width=).
-const page1 = readFileSync(`${ROOT}reference/data/collections/${handle}/page-1.html`, "utf8");
+const page1Path = `${ROOT}reference/data/collections/${handle}/page-1.html`;
+const page1 = existsSync(page1Path) ? readFileSync(page1Path, "utf8") : "";
 const requested = (url) => {
   const name = url.split("/").pop();
   const m = page1.match(new RegExp(`//beyondthevines\\.co\\.id/cdn/shop/files/${name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\?v=\\d+(?:&amp;width=(\\d+))?`));

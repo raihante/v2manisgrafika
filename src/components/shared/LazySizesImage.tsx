@@ -10,9 +10,10 @@ import { useEffect, useRef } from "react";
 
 const EXPAND = "370px 0px";
 
-type Props = { src: string; srcset: string; width: number; height: number; alt: string; className?: string };
+// style: the source inline style of the <img> (e.g. object-position on the contact header image).
+type Props = { src: string; srcset: string; width: number; height: number; alt: string; className?: string; style?: React.CSSProperties };
 
-export default function LazySizesImage({ src, srcset, width, height, alt, className = "" }: Props) {
+export default function LazySizesImage({ src, srcset, width, height, alt, className = "", style }: Props) {
   const ref = useRef<HTMLImageElement>(null);
   useEffect(() => {
     const img = ref.current;
@@ -31,5 +32,5 @@ export default function LazySizesImage({ src, srcset, width, height, alt, classN
     window.addEventListener("resize", onResize);
     return () => { io.disconnect(); window.removeEventListener("resize", onResize); };
   }, [srcset, className]);
-  return <img ref={ref} className={`lazyload ${className}`} width={width} height={height} data-sizes="auto" src={src} data-srcset={srcset} fetchPriority="low" alt={alt} />;
+  return <img ref={ref} className={`lazyload ${className}`} width={width} height={height} data-sizes="auto" src={src} data-srcset={srcset} fetchPriority="low" alt={alt} style={style} />;
 }

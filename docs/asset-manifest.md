@@ -148,3 +148,20 @@ Source: `/collections` server HTML (`reference/data/collections/_index/page-1.ht
 | `/assets/source/collections/BTV_Homepage_Banner_CNY_PETS_Mobile_Top_640x_crop_center.webp` | https://beyondthevines.co.id/cdn/shop/collections/BTV_Homepage_Banner_CNY_PETS_Mobile_Top_640x_crop_center.webp?v=1769502225 | `df12efa246cf5f55567f56bdf9affd227cf83e392c8261a6c3dfbd056cb07866` | 640x741 | 1045730 | /collections card srcset width | Committed |
 | `/assets/source/collections/BTV_Homepage_Banner_CNY_PETS_Mobile_Top_960x_crop_center.webp` | https://beyondthevines.co.id/cdn/shop/collections/BTV_Homepage_Banner_CNY_PETS_Mobile_Top_960x_crop_center.webp?v=1769502225 | `aeb3e1ec324a5c6b5e4c500a54befcdba13f84e405a6fd0be4228b62322e399f` | 960x1112 | 2321622 | /collections card srcset width | Git-ignored (download script) |
 | `/assets/source/collections/BTV_Homepage_Banner_CNY_PETS_Mobile_Top_1280x_crop_center.webp` | https://beyondthevines.co.id/cdn/shop/collections/BTV_Homepage_Banner_CNY_PETS_Mobile_Top_1280x_crop_center.webp?v=1769502225 | `e34b39db6fc1861c5fd9578f6d0949eddb1209f86a599fc06d422124a598014e` | 1280x1482 | 4018793 | /collections card srcset width | Git-ignored (download script) |
+
+## Contact page /pages/contact-us (round 257d, 2026-11-06 snapshot)
+
+Source: `/pages/contact-us` server HTML (`reference/data/pages/contact-us-main.html`). Pipeline: `node scripts/build-contact-data.mjs && node scripts/download-collection-assets.mjs _contact && node scripts/build-collection-css.mjs contact`. The form iframe content is a local mock (`public/mock/contact-form.html`, generated; no vendor assets copied besides the CSS rules it uses). Authorization: owner-confirmed reproduction of source assets (AGENTS.md).
+
+| Local path | Source URL | SHA-256 | Dimensions | Bytes | Usage | Repository |
+|---|---|---|---|---:|---|---|
+| `/assets/source/pages/CONTCT-US-NEW_20x6_crop_center.gif` | https://beyondthevines.co.id/cdn/shop/files/CONTCT-US-NEW_20x6_crop_center.gif?v=1721117631 | `fc3fed8df1ff374389e882a66ed915caf8b0cd4ef2cde3b1e0cd8a0b27906a7c` | 20x6 | 3623 | /pages/contact-us header image (placeholder before lazysizes) | Committed |
+| `/assets/source/pages/CONTCT-US-NEW_1600x500_crop_center.gif` | https://beyondthevines.co.id/cdn/shop/files/CONTCT-US-NEW_1600x500_crop_center.gif?v=1721117631 | `38e99e858f9b2bddf5920f0e1c5e31dd6f315374de7d303e73ac894192ec100e` | 1600x500 | 3883399 | /pages/contact-us header image (srcset 1600w) | Git-ignored (download script) |
+
+## FAQ page /pages/faqs (round 257e, 2026-11-06 snapshot)
+
+Source: `/pages/faqs` server HTML (`reference/data/pages/faqs-main.html`). Pipeline: `node scripts/build-faq-data.mjs && node scripts/download-collection-assets.mjs _faq && node scripts/build-collection-css.mjs faq`. Authorization: owner-confirmed reproduction of source assets (AGENTS.md).
+
+| Local path | Source URL | SHA-256 | Dimensions | Bytes | Usage | Repository |
+|---|---|---|---|---:|---|---|
+| `/assets/source/pages/FAQ.gif` | https://beyondthevines.co.id/cdn/shop/files/FAQ.gif?v=1720162555 | `d82cb998f68c9545c3f2ee77c5717273607921912dc12e7600a394061eabc186` | 1550x1000 | 1277655 | /pages/faqs header image | Committed |

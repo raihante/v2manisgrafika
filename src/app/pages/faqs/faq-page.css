@@ -1,0 +1,6 @@
+/* Local overrides on top of the generated source rules (faq-source.css). Keep this file small: every rule here is a
+   deliberate deviation or a fix for a rule the clone needs but the source applies through its own scripts. */
+
+/* The wrapper stands in for the source <body>: source body text metrics; display:contents keeps the sections as flex
+   items of #wrapper > [role=main], as on the source (see contact-page.css). */
+.template-page-faq{font-size:1.0625rem;line-height:calc(var(--font-body-line-height-scale) * 1.6);display:contents}

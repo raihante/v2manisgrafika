@@ -1,0 +1,33 @@
+{
+ "documentTitle": "Wishlist – Beyond The Vines Indonesia",
+ "pageClass": "swym-ui-component swym-wishlist-page swym-simple-wishlist-page swym-is-safari",
+ "titleBarClass": "swym-wishlist-container-title-bar swym-bg-1 swym-bg-2 swym-color-4",
+ "title": "My Wishlist",
+ "user": {
+  "label": "Guest Shopper. This link will lead to a pop-up.",
+  "text": "Guest Shopper"
+ },
+ "tabs": [
+  {
+   "className": "swym-htc-tab-item swym-tab-wishlist",
+   "label": "Wishlist tab",
+   "selected": true,
+   "text": "Wishlist"
+  },
+  {
+   "className": "swym-htc-tab-item swym-tab-sfl",
+   "label": "Saved for Later tab",
+   "selected": false,
+   "text": "Saved for Later"
+  }
+ ],
+ "detailClass": "swym-wishlist-detail swym-simple-wishlist-detail swym-show-share-option-on-top",
+ "detailTitle": "My Wishlist",
+ "shareLabel": "Share. This link will lead to a pop-up.",
+ "menuLabel": "More Options",
+ "empty": {
+  "title": "Love It? Add to My Wishlist",
+  "text": "My Wishlist allows you to keep track of all of your favorites and shopping activity whether you're on your computer, phone, or tablet. You won't have to waste time searching all over again for that item you loved on your phone the other day - it's all here in one place!",
+  "button": "Continue shopping"
+ }
+}
