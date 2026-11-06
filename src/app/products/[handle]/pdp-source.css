@@ -4,7 +4,7 @@
 .template-product{--swym-remind-cta-bg-color:#00a65a;--swym-remind-cta-text-color:white;--swym-remind-cta-bg-color-v2:#000000;--swym-remind-cta-text-color-v2:white;--color-body:#000000;--color-accent:#000000;--font-body-line-height-scale:1.0;--color-border:#000000;--bg-body:#ffffff;--section-spacing-mobile:50px;--section-spacing-desktop:90px;--font-heading-scale:1.5;--font-heading-line-height-scale:1.0;--font-heading-letter-spacing:0.0em;--button-letter-spacing:0.03em;--solid-button-background:#000000;--solid-button-label:#ffffff;--button-border-radius:50px;--color-form-border:#000000;--color-price:#000000;--color-accent-rgb:0,0,0;--font-product-title-scale:1.5;--color-label-default:#F98622;--color-label-new:#002ea1;--atc-button-background:#000000;--atc-button-label:#FFFFFF;--atc-button-hover:#757575;--color-overlay-rgb:0, 0, 0;--header-height:80px;--font-product-title-line-height-scale:1.0;--bg-body-rgb:255,255,255;--color-dots:#000000}
 
 /* --- inline:swym-style-tag --- */
-:where(.template-product) .swym-ui-component *{font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; font-family: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-language-override: inherit; line-height: 1.4em; vertical-align: baseline; border: 0px; box-sizing: border-box; margin: 0px; padding: 0px; text-transform: none; text-align: left;}
+:where(.template-product) .swym-ui-component *{font-style: inherit; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; font-family: inherit; font-optical-sizing: inherit; font-size-adjust: inherit; font-kerning: inherit; font-feature-settings: inherit; font-variation-settings: inherit; font-language-override: inherit; vertical-align: baseline; border: 0px; box-sizing: border-box; margin: 0px; padding: 0px; text-transform: none; text-align: left;}
 :where(.template-product) .swym-ui-component strong{font-weight: bold; margin: 0px; padding: 0px;}
 :where(.template-product) .swym-ui-component ul{list-style: none; margin: 0px; padding: 0px;}
 :where(.template-product) .swym-ui-component table{border-collapse: collapse; border-spacing: 0px; margin: 0px; padding: 0px;}
@@ -110,9 +110,8 @@
 :where(.template-product) .swym-remind-me button.swym-button{background-color: var(--swym-remind-cta-bg-color); color: var(--swym-remind-cta-text-color); text-transform: none;}
 :where(.template-product) .swym-remind-me button.swym-button.swym-sbisa-v2{background-color: var(--swym-remind-cta-bg-color-v2); color: var(--swym-remind-cta-text-color-v2);}
 :where(.template-product) .swym-remind-me p.swym-remind-description{margin: 0px 0px 10px; padding: 0px; font-size: 16px; line-height: 172%;}
-:where(.template-product) .swym-remind-me p.swym-remind-description.swym-sbisa-v2{font-size: 14px; font-style: italic; margin-top: 25px; margin-bottom: 25px;}
+:where(.template-product) .swym-remind-me p.swym-remind-description.swym-sbisa-v2{margin-top: 25px; margin-bottom: 25px;}
 :where(.template-product) .swym-remind-me .swym-powered-by a{text-decoration: none; color: inherit;}
-:where(.template-product) .swym-remind-me .swym-remind-me-mailing-list-container label{font-size: inherit;}
 :where(.template-product) .swym-remind-me button.swym-button.swym-loader{transition: color 0.2s ease-in-out, padding 0.2s ease-in-out;}
 :where(.template-product) .swym-remind-me button.swym-button.swym-loader::before{display: block; position: absolute; left: 50%; top: -50%; margin-top: -8px; margin-left: -8px; z-index: 10; content: ""; overflow: hidden; width: 10px; height: 10px; border-width: 4px; border-style: solid; border-color: rgb(255, 255, 255) transparent rgb(255, 255, 255) rgb(255, 255, 255); border-image: none; border-radius: 16px; opacity: 0; transition: top 0.2s ease-in-out, opacity 0.2s ease-in-out;}
 :where(.template-product) .swym-remind-me button.swym-button.swym-loader.swym-loading{cursor: wait; padding-top: 40px;}
@@ -146,21 +145,19 @@
 :where(.template-product) .swym-ui-component span.swym-auto-wishlists-close-icon{top: -10px; right: -10px; background: rgb(255, 255, 255); height: 21px; width: 21px; position: absolute; border-radius: 50%; display: flex; align-items: center; justify-content: center;}
 
 /* --- flickity.css --- */
-:where(.template-product) .flickity-viewport{overflow: hidden; position: relative; height: 100%; touch-action: pan-y;}
-:where(.template-product) .flickity-slider{position: absolute; width: 100%; height: 100%; left: 0px;}
+:where(.template-product) .flickity-viewport{touch-action: pan-y;}
+:where(.template-product) .flickity-slider{left: 0px;}
 :where(.template-product) .flickity-cell{position: absolute; left: 0px;}
-:where(.template-product) .flickity-page-dots{position: absolute; width: 100%; bottom: -25px; text-align: center; display: flex; justify-content: center; flex-wrap: wrap;}
+:where(.template-product) .flickity-page-dots{position: absolute; width: 100%; bottom: -25px; justify-content: center; flex-wrap: wrap;}
 :where(.template-product) .flickity-page-dot{display: block; width: 10px; height: 10px; padding: 0px; margin: 0px 8px; background: rgba(51, 51, 51, 0.25); border-radius: 50%; cursor: pointer; appearance: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; text-indent: -9999px; overflow: hidden;}
-:where(.template-product) .flickity-page-dot:focus{outline: none; box-shadow: rgb(17, 153, 255) 0px 0px 0px 5px;}
+:where(.template-product) .flickity-page-dot:focus{outline: none;}
 :where(.template-product) .flickity-page-dot.is-selected{background: rgb(51, 51, 51);}
 
 /* --- app.css --- */
-:where(.template-product) h1{font-size: 2em; margin: 0.67em 0px;}
+:where(.template-product) h1{margin: 0.67em 0px;}
 :where(.template-product) a{background-color: transparent;}
-:where(.template-product) strong{font-weight: bolder;}
-:where(.template-product) small{font-size: 80%;}
 :where(.template-product) img{border-style: none;}
-:where(.template-product) button, :where(.template-product) input{font-family: inherit; font-size: 100%; line-height: 1.15; margin: 0px;}
+:where(.template-product) button, :where(.template-product) input{font-size: 100%; line-height: 1.15; margin: 0px;}
 :where(.template-product) button, :where(.template-product) input{overflow: visible;}
 :where(.template-product) button{text-transform: none;}
 :where(.template-product) button, :where(.template-product) [type="button"], :where(.template-product) [type="submit"]{appearance: button;}
@@ -168,19 +165,19 @@
 :where(.template-product) [type="checkbox"], :where(.template-product) [type="radio"]{box-sizing: border-box; padding: 0px;}
 :where(.template-product) [hidden]{display: none;}
 :where(.template-product) img{display: inline-block; vertical-align: middle; max-width: 100%; height: auto;}
-:where(.template-product) button{padding: 0px; appearance: none; border: 0px; border-radius: 0px; background: transparent; line-height: 1; cursor: auto;}
+:where(.template-product) button{padding: 0px; appearance: none; border: 0px; border-radius: 0px; background: transparent; line-height: 1;}
 :where(.template-product) button, :where(.template-product) input{font-family: inherit;}
 :where(.template-product) div, :where(.template-product) ul, :where(.template-product) li, :where(.template-product) h1, :where(.template-product) h2, :where(.template-product) h4, :where(.template-product) form, :where(.template-product) p, :where(.template-product) th, :where(.template-product) td{margin: 0px; padding: 0px;}
-:where(.template-product) p{margin-bottom: 1.25rem; font-size: inherit; line-height: 1.6; text-rendering: optimizelegibility;}
+:where(.template-product) p{margin-bottom: 1.25rem; font-size: inherit; text-rendering: optimizelegibility;}
 :where(.template-product) i{font-style: italic; line-height: inherit;}
 :where(.template-product) strong{font-weight: 500; line-height: inherit;}
 :where(.template-product) small{font-size: 80%; line-height: inherit;}
 :where(.template-product) h1, :where(.template-product) h2, :where(.template-product) .h3, :where(.template-product) h4, :where(.template-product) .h6{font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Ubuntu, roboto, noto, arial, sans-serif; font-style: normal; font-weight: 700; color: var(--color-body); text-rendering: optimizelegibility;}
-:where(.template-product) h1{font-size: 2.875rem; line-height: 1.45; margin-top: 0px; margin-bottom: 1.25rem;}
-:where(.template-product) h2{font-size: 2.5rem; line-height: 1.45; margin-top: 0px; margin-bottom: 1.25rem;}
-:where(.template-product) .h3{font-size: 2.125rem; line-height: 1.45; margin-top: 0px; margin-bottom: 1.25rem;}
-:where(.template-product) h4{font-size: 1.75rem; line-height: 1.45; margin-top: 0px; margin-bottom: 1.25rem;}
-:where(.template-product) .h6{font-size: 1.125rem; line-height: 1.45; margin-top: 0px; margin-bottom: 1.25rem;}
+:where(.template-product) h1{margin-top: 0px; margin-bottom: 1.25rem;}
+:where(.template-product) h2{margin-top: 0px; margin-bottom: 1.25rem;}
+:where(.template-product) .h3{margin-top: 0px; margin-bottom: 1.25rem;}
+:where(.template-product) h4{margin-top: 0px; margin-bottom: 1.25rem;}
+:where(.template-product) .h6{margin-top: 0px; margin-bottom: 1.25rem;}
 @media print, screen and (min-width: 48em) { :where(.template-product) h1{font-size: 3.375rem;} }
 @media print, screen and (min-width: 48em) { :where(.template-product) h2{font-size: 2.875rem;} }
 @media print, screen and (min-width: 48em) { :where(.template-product) .h3{font-size: 2.25rem;} }
@@ -197,7 +194,6 @@
 :where(.template-product) li{font-size: inherit;}
 :where(.template-product) ul{margin-left: 1.25rem; list-style-type: disc;}
 :where(.template-product) ul ul{margin-left: 1.25rem; margin-bottom: 0px;}
-:where(.template-product) figure{margin: 0px;}
 @media print { :where(.template-product) table.show-for-print{display: table !important;} }
 @media print { :where(.template-product) tbody.show-for-print{display: table-row-group !important;} }
 @media print { :where(.template-product) tr.show-for-print{display: table-row !important;} }
@@ -272,20 +268,19 @@
 @media only screen and (min-width: 1068px) { :where(.template-product) h4{font-size: calc(var(--font-heading-scale) * 28px); line-height: calc(var(--font-heading-line-height-scale) * calc(var(--font-heading-scale) * 36px));} }
 :where(.template-product) .h6{font-size: calc(var(--font-heading-scale) * 20px); line-height: calc(var(--font-heading-line-height-scale) * calc(var(--font-heading-scale) * 26px));}
 :where(.template-product) h1, :where(.template-product) h2, :where(.template-product) .h3, :where(.template-product) h4{letter-spacing: var(--font-heading-letter-spacing, normal);}
-:where(.template-product) .text-button{display: inline-flex; font-size: 0.9375rem; height: 1.0625rem; line-height: 1.0625rem; margin-right: 15px; font-weight: 400; letter-spacing: var(--button-letter-spacing, .02em); cursor: pointer; position: relative;}
+:where(.template-product) .text-button{display: inline-flex; height: 1.0625rem; margin-right: 15px; font-weight: 400; letter-spacing: var(--button-letter-spacing, .02em); cursor: pointer; position: relative;}
 :where(.template-product) .text-button::after, :where(.template-product) .text-button::before{content: ""; display: block; position: absolute; top: calc(100% + 2px); left: 0px; width: 100%; height: 1px; pointer-events: none;}
 :where(.template-product) .text-button::before{background: rgba(var(--color-accent-rgb),.4);}
 :where(.template-product) .text-button::after{background: var(--color-accent); transform-origin: left center; transform: scaleX(0);}
 @media (hover: hover) { :where(.template-product) .text-button:hover::after{transform: scale(1);} }
 :where(.template-product) button{color: var(--color-accent); cursor: pointer;}
-:where(.template-product) .button{display: inline-flex; cursor: pointer; padding: 7px 30px; align-items: center; justify-content: center; height: 48px; font-size: 0.875rem; font-weight: 600; letter-spacing: var(--button-letter-spacing, .02em); border: 1px solid var(--solid-button-background, var(--color-accent)); background: var(--solid-button-background, var(--color-accent)); color: var(--solid-button-label, #fff); border-radius: var(--button-border-radius, 0px); text-align: center; position: relative; z-index: 1; overflow: hidden; appearance: none; transition: color 0.25s cubic-bezier(0.104, 0.204, 0.492, 1), background-color 0.25s cubic-bezier(0.104, 0.204, 0.492, 1), border-color 0.25s cubic-bezier(0.104, 0.204, 0.492, 1);}
-:where(.template-product) .button::before{content: ""; display: block; position: absolute; top: 0px; bottom: 0px; left: -5%; width: 125%; height: 100%; background: var(--bg-body); z-index: 5; opacity: 1; border-radius: var(--button-border-radius, 0px); transform-origin: left bottom; backface-visibility: hidden; transform: rotate3d(0, 0, 1, 6deg) translate3d(-1.2em, 110%, 0px); will-change: transform;}
+:where(.template-product) .button{display: inline-flex; cursor: pointer; padding: 7px 30px; align-items: center; justify-content: center; font-size: 0.875rem; font-weight: 600; letter-spacing: var(--button-letter-spacing, .02em); border: 1px solid var(--solid-button-background, var(--color-accent)); background: var(--solid-button-background, var(--color-accent)); color: var(--solid-button-label, #fff); border-radius: var(--button-border-radius, 0px); text-align: center; position: relative; overflow: hidden; appearance: none; transition: color 0.25s cubic-bezier(0.104, 0.204, 0.492, 1), background-color 0.25s cubic-bezier(0.104, 0.204, 0.492, 1), border-color 0.25s cubic-bezier(0.104, 0.204, 0.492, 1);}
+:where(.template-product) .button::before{content: ""; position: absolute; top: 0px; bottom: 0px; left: -5%; width: 125%; background: var(--bg-body); z-index: 5; opacity: 1; border-radius: var(--button-border-radius, 0px); transform-origin: left bottom; backface-visibility: hidden; transform: rotate3d(0, 0, 1, 6deg) translate3d(-1.2em, 110%, 0px); will-change: transform;}
 :where(.template-product) .button.loading span{opacity: 1;}
 :where(.template-product) .button span{position: relative; z-index: 8;}
 :where(.template-product) .button .loading-overlay{opacity: 0; position: absolute; display: flex; align-items: center; justify-content: center; pointer-events: none;}
 :where(.template-product) .button .loading-overlay svg{width: 20px; height: 20px;}
-:where(.template-product) .button[disabled]{background: transparent; color: var(--color-accent); border: 1px solid var(--color-border); cursor: not-allowed; pointer-events: none;}
-:where(.template-product) .button[disabled] span:not(.loading-overlay){opacity: 0.5;}
+:where(.template-product) .button[disabled]{cursor: not-allowed; pointer-events: none;}
 :where(.template-product) form{margin: 0px;}
 :where(.template-product) input[type="checkbox"], :where(.template-product) input[type="radio"]{border: 1px solid var(--color-form-border); width: 20px; height: 20px; border-radius: 3px; margin: 0px 10px 0px 0px; vertical-align: middle;}
 :where(.template-product) label{font-size: 0.8125rem; letter-spacing: 0.02em; font-weight: 400; color: var(--color-body);}
@@ -294,7 +289,7 @@
 :where(.template-product) .form-notification[hidden]{display: none;}
 :where(.template-product) .badge{display: inline-flex; align-items: center; background: var(--color-badge-sale, #ee3a45); color: var(--color-badge-text, #fff); border-radius: var(--badge-corner-radius, 50px); text-transform: uppercase; font-size: 10px; letter-spacing: 0.05em; font-weight: 600; height: 23px; padding: 0px 10px; line-height: 0;}
 :where(.template-product) .badge.out-of-stock{background: var(--color-badge-sold-out, #acacac);}
-:where(.template-product) .price{display: block; font-weight: 400; font-size: 0.9375rem; letter-spacing: 0.02em; color: var(--color-price, --color-accent);}
+:where(.template-product) .price{display: block; font-weight: 400; letter-spacing: 0.02em; color: var(--color-price, --color-accent);}
 :where(.template-product) .price > span{display: inline-flex; vertical-align: middle;}
 :where(.template-product) .price > .amount{text-decoration: none;}
 :where(.template-product) .price .unit-price{margin-left: 5px; font-size: 0.75rem; color: rgba(var(--color-accent-rgb),.55);}
@@ -317,9 +312,9 @@
 :where(.template-product) .section-header--content{width: 100%; display: flex; flex-direction: column;}
 @media only screen and (min-width: 768px) { :where(.template-product) .section-header--content{max-width: 70%;} }
 @media only screen and (min-width: 768px) { :where(.template-product) .section-header-left--true{flex-direction: row;} }
-:where(.template-product) .section-header h2{font-weight: 600; margin-bottom: 0px;}
+:where(.template-product) .section-header h2{margin-bottom: 0px;}
 :where(.template-product) .swym-ui-component .swym-sfl-popup-mobile button.swym-sfl-popup-save-btn{background: rgb(5, 179, 239) !important; border-width: medium !important; border-style: none !important; border-color: currentcolor !important; border-image: none !important; border-radius: 50px !important;}
-:where(.template-product) button.swym-sfl-add-to-cart-btn{align-items: center; justify-content: center; height: 42px; font-size: 16.8px; letter-spacing: -1px; background: var(--solid-button-background, var(--color-accent)); border-radius: var(--button-border-radius, 0px); font-family: Everett-regular, sans-serif; display: flex; width: 93%;}
+:where(.template-product) button.swym-sfl-add-to-cart-btn{align-items: center; justify-content: center; height: 42px; font-size: 16.8px; letter-spacing: -1px; background: var(--solid-button-background, var(--color-accent)); border-radius: var(--button-border-radius, 0px); font-family: Everett-regular, sans-serif; display: flex;}
 :where(.template-product) button.swym-button.swym-button-1.swym-is-button.swym-sfl-popup-save-btn{display: flex !important; justify-content: center !important; align-items: center !important;}
 :where(.template-product) button.swym-sfl-add-to-cart-btn{width: 100% !important;}
 
@@ -355,12 +350,11 @@
 :where(.template-product) .product-card--add-to-cart-button{margin-top: 17px !important;}
 :where(.template-product) .product-card .product-card-title{-webkit-line-clamp: 2; -webkit-box-orient: vertical; text-overflow: ellipsis; height: 46px; font-size: calc(var(--font-product-title-scale, 1) * 0.8rem) !important; overflow: hidden !important; display: -webkit-box !important;}
 :where(.template-product) .product-card .product-card-title h2{-webkit-line-clamp: 2; -webkit-box-orient: vertical; text-overflow: ellipsis; height: 46px; font-size: calc(var(--font-product-title-scale, 1) * 0.8rem) !important; overflow: hidden !important; display: -webkit-box !important; font-family: Everett-regular, sans-serif !important; line-height: normal !important; letter-spacing: -1px !important; font-weight: normal !important; margin: 0px !important; color: rgb(0, 0, 0) !important;}
-:where(.template-product) .product-card-info .amount{font-size: calc(var(--font-product-title-scale, 1) * 0.75rem) !important; letter-spacing: 1px;}
+:where(.template-product) .product-card-info .amount{font-size: calc(var(--font-product-title-scale, 1) * 0.75rem) !important;}
 :where(.template-product) .product-card-swatches--title{text-transform: lowercase;}
 :where(.template-product) .product-card-swatches--title .var-selected{text-transform: capitalize;}
-:where(.template-product) .product-card .product-card-title{letter-spacing: -1px; font-family: Everett-Medium, sans-serif !important; font-weight: normal !important;}
+:where(.template-product) .product-card .product-card-title{letter-spacing: -1px; font-weight: normal !important;}
 :where(.template-product) .product-card-info .price{letter-spacing: 1px; display: flex; align-items: flex-start; gap: 3px; flex-wrap: wrap; font-family: Everett-Medium, sans-serif !important;}
-:where(.template-product) .product-card-info .amount{font-family: Everett-Medium, sans-serif !important;}
 :where(.template-product) .product-card-swatches--container{margin-bottom: 10px;}
 :where(.template-product) .product-card-title{height: 46px; max-height: 46px; overflow: hidden; letter-spacing: -1px; font-weight: normal !important;}
 :where(.template-product) .product-card.hovergrid .product-card-swatches{transform: translateY(0px) !important;}
@@ -408,13 +402,12 @@
 :where(.template-product) .flickity-complementary .flickity-page-dots{display: inline-flex !important;}
 :where(.template-product) .flickity-complementary .flickity-page-dot{background: rgba(51, 51, 51, 0.25); border-radius: 0px; width: 40px; height: 2px !important;}
 :where(.template-product) .flickity-complementary .flickity-page-dot.is-selected{background: rgb(51, 51, 51);}
-:where(.template-product) .product-add-to-cart-sticky--info .amount{font-weight: bold;}
 :where(.template-product) .label-wrap:empty{display: none;}
 :where(.template-product) .variations .product-form__input--block input[type="radio"] + label{font-size: 1rem !important; min-width: 40px !important; height: 40px !important; padding: 3px !important;}
 :where(.template-product) .product-form__input .form__label{color: rgb(0, 0, 0); gap: 5px; font-size: 1rem !important; text-transform: capitalize !important; letter-spacing: -1px !important; font-family: Everett-Light, sans-serif !important; font-weight: normal !important;}
 :where(.template-product) .variations .product-form__input--color{margin-bottom: 10px;}
 :where(.template-product) .variations .product-form__input--color input[type="radio"] + label{box-shadow: 0 0 0 0px var(--color-border) inset !important;}
-:where(.template-product) .variations .product-form__input--color input[type="radio"]:checked + label{z-index: 5; border-radius: 100px; box-shadow: 0 0 0 1px var(--color-body) inset !important;}
+:where(.template-product) .variations .product-form__input--color input[type="radio"]:checked + label{box-shadow: 0 0 0 1px var(--color-body) inset !important;}
 :where(.template-product) .add_to_cart_holder{gap: 15px 10px;}
 :where(.template-product) .variations .product-form__input--color input[type="radio"] + label::after{overflow: hidden !important; inset: 2px !important;}
 :where(.template-product) .variations .product-form__input--color input[type="radio"] + label{width: 30px !important; height: 30px !important;}
@@ -520,12 +513,12 @@
 :where(.template-product) .navCell.flickity-cell{display: block; visibility: visible; position: absolute !important;}
 :where(.template-product) .product-images-buttons{display: none !important;}
 :where(.template-product) .selectedNav{padding: 15px 15px 0px; overflow: hidden;}
-:where(.template-product) .product-form__input .form__label__value{font-size: 1rem; letter-spacing: -1px; color: rgb(0, 0, 0); padding-left: 0px; font-family: Everett-Light, sans-serif !important;}
+:where(.template-product) .product-form__input .form__label__value{font-size: 1rem; letter-spacing: -1px; color: rgb(0, 0, 0); font-family: Everett-Light, sans-serif !important;}
 .template-product #wrapper #main-content .product-section .single-add-to-cart-button{font-size: 1rem; font-weight: normal; letter-spacing: -1px; background: var(--atc-button-background, #05B3EF); border-color: var(--atc-button-background, #05B3EF); color: var(--atc-button-label, #fff); font-family: Everett-Regular, sans-serif !important;}
 .template-product #wrapper #main-content .product-section .single-add-to-cart-button:hover{background: var(--atc-button-hover, #0499cc); border: 1px solid var(--atc-button-hover, #0499cc); color: var(--atc-button-label, #fff);}
 .template-product #wrapper #main-content .product-section .single-add-to-cart-button[disabled].sold-out, .template-product #wrapper #main-content .product-section .single-add-to-cart-button[disabled].jsc-sold-out-styling, .template-product #wrapper #main-content .product-section .single-add-to-cart-button.button[disabled].jsc-sold-out-styling{background: rgb(202, 211, 218); color: rgb(0, 0, 0); border: 1px solid rgb(202, 211, 218);}
 .template-product #wrapper #main-content .product-section .single-add-to-cart-button[disabled].sold-out:hover, .template-product #wrapper #main-content .product-section .single-add-to-cart-button[disabled].jsc-sold-out-styling:hover, .template-product #wrapper #main-content .product-section .single-add-to-cart-button.button[disabled].jsc-sold-out-styling:hover{background: rgb(202, 211, 218); color: rgb(0, 0, 0); border: 1px solid rgb(202, 211, 218);}
-:where(.template-product) .product-information--inner .complementary-products--inner .price{font-size: calc(var(--font-product-title-scale, 1) * 0.7rem) !important; font-family: Everett-regular, sans-serif !important;}
+:where(.template-product) .product-information--inner .complementary-products--inner .price{font-family: Everett-regular, sans-serif !important;}
 :where(.template-product) .product-information--inner .complementary-products--inner .amount{line-height: calc(var(--font-body-line-height-scale) * 1.2); letter-spacing: -1px; font-weight: normal; font-size: 1.05rem !important;}
 :where(.template-product) .product-information--inner .complementary-products--inner .price{line-height: calc(var(--font-body-line-height-scale) * 1.2); letter-spacing: -1px; font-weight: normal; font-size: 1.3rem !important;}
 :where(.template-product) .pdp-section .product-information--inner .product-title{line-height: calc(var(--font-heading-line-height-scale)* 2.1rem); letter-spacing: -1px; font-weight: normal; font-family: Everett-regular, sans-serif !important; font-size: calc(var(--font-heading-scale) * 1.2rem) !important;}
@@ -694,16 +687,16 @@
 @media (max-width: 768px) { :where(.template-product) .flickity-complementary{margin-bottom: 70px;} }
 
 /* --- inline:style --- */
-:where(.template-product) h1, :where(.template-product) h2, :where(.template-product) h4, :where(.template-product) .h3, :where(.template-product) .h6{font-style: normal; font-weight: 400; font-family: system_ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";}
-:where(.template-product) .thb-product-detail .product-title{font-style: normal; font-weight: 400; font-family: system_ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";}
+:where(.template-product) h1, :where(.template-product) h2, :where(.template-product) h4, :where(.template-product) .h3, :where(.template-product) .h6{font-style: normal; font-weight: 400;}
+:where(.template-product) .thb-product-detail .product-title{font-style: normal;}
 
 /* --- breadcrumbs.css --- */
 :where(.template-product) .breadcrumbs-section + .product-section .thb-product-detail{margin-top: 0px;}
-:where(.template-product) .breadcrumbs{font-size: 0.75rem; overflow-x: scroll; padding: 15px; display: inline-flex; width: 100%; white-space: nowrap; max-width: 100vw; text-align: left; scrollbar-width: none;}
+:where(.template-product) .breadcrumbs{overflow-x: scroll; padding: 15px; display: inline-flex; width: 100%; white-space: nowrap; max-width: 100vw; text-align: left; scrollbar-width: none;}
 @media only screen and (min-width: 768px) { :where(.template-product) .breadcrumbs{padding: 20px 50px; overflow-x: hidden;} }
 :where(.template-product) .breadcrumbs::-webkit-scrollbar{display: none;}
-:where(.template-product) .breadcrumbs i{opacity: 0.2; display: inline-block; margin: 0px 8px;}
-:where(.template-product) .breadcrumbs a{text-decoration: underline; text-underline-offset: 3px;}
+:where(.template-product) .breadcrumbs i{display: inline-block; margin: 0px 8px;}
+:where(.template-product) .breadcrumbs a{text-underline-offset: 3px;}
 
 /* --- inline:shopify-section-template--22834210603287__main-product --- */
 :where(.template-product) .prod-measurement-accordion .size_chart_table{margin-bottom: 0px;}
@@ -711,15 +704,15 @@
 
 /* --- photoswipe.css --- */
 :where(.template-product) .pswp__ui.pswp__ui--hidden, :where(.template-product) .pswp__button svg{transition:all .25s cubic-bezier(.104,.204,.492,1)}
-:where(.template-product) .pswp{display:none;position:absolute;width:100%;height:100%;left:0;top:0;overflow:hidden;-ms-touch-action:none;touch-action:none;z-index:1500;-webkit-text-size-adjust:100%;-webkit-backface-visibility:hidden;outline:none}
+:where(.template-product) .pswp{position:absolute; width:100%; height:100%; left:0; top:0; overflow:hidden; -ms-touch-action:none; touch-action:none; z-index:1500; -webkit-text-size-adjust:100%; -webkit-backface-visibility:hidden; outline:none;}
 :where(.template-product) .pswp *{-webkit-box-sizing:border-box;box-sizing:border-box}
 :where(.template-product) .pswp img{max-width:none}
 :where(.template-product) .pswp--animate_opacity{opacity:.001;will-change:opacity;-webkit-transition:opacity 333ms cubic-bezier(.4,0,.22,1);transition:opacity 333ms cubic-bezier(.4,0,.22,1)}
 :where(.template-product) .pswp--open{display:block}
-:where(.template-product) .pswp--zoom-allowed .pswp__img{cursor:-webkit-zoom-in;cursor:-moz-zoom-in;cursor:zoom-in}
-:where(.template-product) .pswp--zoomed-in .pswp__img{cursor:-webkit-grab;cursor:-moz-grab;cursor:grab}
-:where(.template-product) .pswp--dragging .pswp__img{cursor:-webkit-grabbing;cursor:-moz-grabbing;cursor:grabbing}
-:where(.template-product) .pswp__bg{position:absolute;left:0;top:0;width:100%;height:100%;background:var(--bg-body, #fff);opacity:0;-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-backface-visibility:hidden;will-change:opacity}
+:where(.template-product) .pswp--zoom-allowed .pswp__img{cursor:-webkit-zoom-in; cursor:-moz-zoom-in; cursor:zoom-in;}
+:where(.template-product) .pswp--zoomed-in .pswp__img{cursor:-webkit-grab; cursor:-moz-grab; cursor:grab;}
+:where(.template-product) .pswp--dragging .pswp__img{cursor:-webkit-grabbing; cursor:-moz-grabbing; cursor:grabbing;}
+:where(.template-product) .pswp__bg{position:absolute; left:0; top:0; width:100%; height:100%; background:var(--bg-body, #fff); opacity:0; -webkit-transform:translateZ(0); transform:translateZ(0); -webkit-backface-visibility:hidden;}
 :where(.template-product) .pswp__scroll-wrap{position:absolute;left:0;top:0;width:100%;height:100%;overflow:hidden}
 :where(.template-product) .pswp__container, :where(.template-product) .pswp__zoom-wrap{-ms-touch-action:none;touch-action:none;position:absolute;left:0;right:0;top:0;bottom:0}
 :where(.template-product) .pswp__container, :where(.template-product) .pswp__img{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none}
@@ -785,7 +778,7 @@
 :where(.template-product) .add_to_cart_holder .button{flex: 1 1 0%;}
 :where(.template-product) .add_to_cart_holder .swym-button-bar{margin-top: 0px; margin-bottom: 0px;}
 :where(.template-product) .product-form__input{padding: 0px; margin: 0px 0px 20px; border: 0px;}
-:where(.template-product) .product-form__input .form__label{display: flex; width: 100%; align-items: center; font-weight: 600; font-size: 0.8125rem; letter-spacing: 0.02em; margin-bottom: 9px; text-transform: uppercase;}
+:where(.template-product) .product-form__input .form__label{display: flex; width: 100%; align-items: center; margin-bottom: 9px;}
 :where(.template-product) .product-form__input .form__label__value{font-weight: 400; text-transform: none; margin-right: 20px; padding-left: 2px;}
 :where(.template-product) .variations{margin-bottom: 10px;}
 :where(.template-product) .variations input[type="radio"]{clip: rect(0px, 0px, 0px, 0px); overflow: hidden; position: absolute; height: 1px; width: 1px;}
@@ -796,14 +789,14 @@
 :where(.template-product) .variations [data-handle="color"] input[type="radio"].is-disabled + label::after{opacity: 1;}
 :where(.template-product) .variations [data-handle="colour"] input[type="radio"].is-disabled + label::after{opacity: 1;}
 :where(.template-product) .variations .product-form__input--block{display: flex; flex-wrap: wrap; padding-left: 1px; padding-top: 1px;}
-:where(.template-product) .variations .product-form__input--block input[type="radio"] + label{width: auto; min-width: 48px; height: 48px; display: inline-flex; align-items: center; justify-content: center; padding: 5px 15px; font-size: 0.8125rem; margin-left: -1px; margin-top: -1px; cursor: pointer; box-shadow: 0 0 0 1px var(--color-border) inset;}
+:where(.template-product) .variations .product-form__input--block input[type="radio"] + label{width: auto; display: inline-flex; align-items: center; justify-content: center; margin-left: -1px; margin-top: -1px; cursor: pointer;}
 @media only screen and (min-width: 768px) { :where(.template-product) .variations .product-form__input--block input[type="radio"] + label{margin-right: 0px;} }
 :where(.template-product) .variations .product-form__input--block input[type="radio"]:checked + label{z-index: 5; box-shadow: 0 0 0 1px var(--color-body) inset;}
 :where(.template-product) .variations .product-form__input--block input[type="radio"]:focus-visible + label{transform: scale(0.9); box-shadow: rgb(1, 94, 204) 0px 0px 0px 2px;}
 :where(.template-product) .variations .product-form__input--color{display: flex; flex-wrap: wrap; padding-left: 1px;}
-:where(.template-product) .variations .product-form__input--color input[type="radio"] + label{width: 48px; height: 48px; display: inline-flex; text-indent: -9999em; position: relative; margin-left: -1px; color: transparent; cursor: pointer; z-index: 4; box-shadow: 0 0 0 1px var(--color-border) inset;}
-:where(.template-product) .variations .product-form__input--color input[type="radio"] + label::after{content: ""; display: block; position: absolute; inset: 14px; border-radius: 50%; background-position: center center; background-size: cover; background-color: var(--option-color); background-image: var(--option-color-image);}
-:where(.template-product) .variations .product-form__input--color input[type="radio"]:checked + label{z-index: 5; box-shadow: 0 0 0 1px var(--color-body) inset;}
+:where(.template-product) .variations .product-form__input--color input[type="radio"] + label{display: inline-flex; text-indent: -9999em; position: relative; margin-left: -1px; color: transparent; cursor: pointer; z-index: 4;}
+:where(.template-product) .variations .product-form__input--color input[type="radio"] + label::after{content: ""; display: block; position: absolute; border-radius: 50%; background-position: center center; background-size: cover; background-color: var(--option-color); background-image: var(--option-color-image);}
+:where(.template-product) .variations .product-form__input--color input[type="radio"]:checked + label{z-index: 5;}
 :where(.template-product) .variations .product-form__input--color input[type="radio"]:hover::after{transform: scale(0.9);}
 :where(.template-product) .variations .product-form__input--color input[type="radio"]:focus-visible + label{transform: scale(0.9); box-shadow: rgb(1, 94, 204) 0px 0px 0px 2px inset;}
 @media only screen and (min-width: 1068px) { :where(.template-product) .product-grid-container{display: grid; gap: clamp(30px, 5%, 60px); grid-template-columns: 1fr clamp(360px, 45%, 480px);} }
@@ -821,7 +814,7 @@
 :where(.template-product) .product-images__slide.product-images__slide-item--variant.flickity-cell.is-selected{display: block !important;}
 @media only screen and (min-width: 1068px) { :where(.template-product) .product-images--collage{grid-template-columns: 1fr 1fr;} }
 @media only screen and (min-width: 1068px) { :where(.template-product) .product-images--collage .product-images__slide:first-child{grid-column: span 2;} }
-:where(.template-product) .product-images-buttons{display: flex; align-items: center; justify-content: center; font-size: 0.6875rem;}
+:where(.template-product) .product-images-buttons{align-items: center; justify-content: center; font-size: 0.6875rem;}
 @media only screen and (min-width: 1068px) { :where(.template-product) .product-images-buttons{display: none;} }
 :where(.template-product) .product-images-buttons span{margin: 0px 2px;}
 :where(.template-product) .product-images-buttons .slider-button{width: 34px; height: 34px; display: inline-flex; align-items: center; justify-content: center;}
@@ -838,7 +831,7 @@
 :where(.template-product) .thb-product-detail .product-single__media{display: block; width: 100%; position: relative; text-align: center;}
 :where(.template-product) .thb-product-detail .product-single__media-image{display: block; position: relative; height: 0px; overflow: hidden; padding-bottom: var(--padding-bottom);}
 :where(.template-product) .thb-product-detail .product-single__media-image img{position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; z-index: 5;}
-:where(.template-product) .thb-product-detail .product-single__media-zoom{position: absolute; top: 23px; right: 23px; z-index: 40; background: var(--bg-body, #fff); border-radius: 50%; height: 38px; width: 38px; display: flex; align-items: center; justify-content: center; box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 10px;}
+:where(.template-product) .thb-product-detail .product-single__media-zoom{position: absolute; top: 23px; z-index: 40; background: var(--bg-body, #fff); border-radius: 50%; height: 38px; width: 38px; display: flex; align-items: center; justify-content: center; box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 10px;}
 :where(.template-product) .thb-product-detail .product-single__media-zoom svg{width: 20px; height: 20px;}
 :where(.template-product) .thb-product-detail .product-single__media-zoom:hover svg, :where(.template-product) .thb-product-detail .product-single__media-zoom:focus svg{transform: scale(1.2);}
 @media only screen and (min-width: 1068px) { :where(.template-product) .thb-product-detail .product-single__media-zoom{opacity: 0;} }
@@ -850,7 +843,7 @@
 :where(.template-product) .thb-product-detail [data-hide-variants="true"] .product-images__slide.is-active{display: block;}
 :where(.template-product) .pswp{display: none;}
 :where(.template-product) .pswp.pswp--open{display: block;}
-:where(.template-product) .product-add-to-cart-sticky{position: fixed; bottom: 15px; right: 15px; width: calc(100% - 30px); max-width: 420px; z-index: 31; background: var(--bg-body); padding: 18px; box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 10px; transform: translate(calc(100% + 50px));}
+:where(.template-product) .product-add-to-cart-sticky{position: fixed; bottom: 15px; right: 15px; width: calc(100% - 30px); max-width: 420px; z-index: 31; background: var(--bg-body); box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 10px; transform: translate(calc(100% + 50px));}
 :where(.template-product) .product-add-to-cart-sticky.sticky--visible{transform: translate(0px);}
 @media only screen and (min-width: 768px) { :where(.template-product) .product-add-to-cart-sticky{bottom: 30px; right: 30px;} }
 :where(.template-product) .product-add-to-cart-sticky--image{width: 48px; margin-right: 18px; flex-shrink: 0;}
@@ -879,7 +872,7 @@
 :where(.template-product) .product-card{display: block; position: relative; margin-bottom: 20px; width: 100%;}
 @media only screen and (min-width: 768px) { :where(.template-product) .product-card{margin-bottom: 30px;} }
 :where(.template-product) .product-card .product-card-info{line-height: 1;}
-:where(.template-product) .product-card .product-featured-image{margin-bottom: 15px; position: relative; overflow: hidden; z-index: 0;}
+:where(.template-product) .product-card .product-featured-image{margin-bottom: 15px; position: relative; z-index: 0;}
 @media only screen and (min-width: 768px) { :where(.template-product) .product-card .product-featured-image{margin-bottom: 20px;} }
 @media (hover: hover) { :where(.template-product) .product-card .product-featured-image.thb-hover:hover .product-primary-image{opacity: 0;} }
 :where(.template-product) .product-card .product-featured-image .product-secondary-images-nav{list-style: none; position: absolute; left: 0px; bottom: 15px; width: 100%; display: flex; margin: 0px; padding: 0px; z-index: 20; opacity: 0; justify-content: center; transition: 0.25s linear;}
@@ -889,21 +882,19 @@
 :where(.template-product) .product-card .product-featured-image-link img{position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; object-fit: cover; z-index: 5;}
 :where(.template-product) .product-card .product-featured-image-link .product-secondary-image{display: none; z-index: 10;}
 :where(.template-product) .product-card .product-featured-image-link .product-secondary-image.hover{display: block;}
-:where(.template-product) .product-card .product-card-title{font-size: calc(var(--font-product-title-scale, 1) * .9375rem); line-height: calc(var(--font-product-title-line-height-scale, 1) * 1.5); font-weight: 500; display: block; margin-bottom: 5px;}
 :where(.template-product) .product-card .badge{position: absolute; z-index: 30;}
 :where(.template-product) .product-card .badge.left{left: 8px;}
 @media only screen and (min-width: 768px) { :where(.template-product) .product-card .badge.left{left: 16px;} }
 :where(.template-product) .product-card .badge.top{top: 8px;}
 @media only screen and (min-width: 768px) { :where(.template-product) .product-card .badge.top{top: 16px;} }
-:where(.template-product) .product-card .product-card-swatches{line-height: 0; position: absolute; top: 0px; left: 0px; width: 100%; transform: translateY(100%);}
+:where(.template-product) .product-card .product-card-swatches{line-height: 0; position: absolute; top: 0px; left: 0px; width: 100%;}
 :where(.template-product) .product-card .product-card-swatches .product-card-swatch{display: inline-flex; margin: 0px; width: 18px; height: 18px; border-radius: 9px; padding: 3px; position: relative; cursor: pointer;}
 :where(.template-product) .product-card .product-card-swatches .product-card-swatch::after{content: ""; display: block; position: absolute; inset: 3px; border-radius: 6px; background-position-x: ; background-position-y: ; background-repeat: ; background-attachment: ; background-origin: ; background-clip: ; background-color: ; background-image: var(--option-color-image); background-size: cover;}
 :where(.template-product) .product-card .product-card-swatches .product-card-swatch.active{box-shadow: 0 0 0 1px var(--color-accent) inset;}
-:where(.template-product) .product-card .product-card-swatches--container{position: relative; overflow: hidden; height: 18px; margin-top: 10px;}
+:where(.template-product) .product-card .product-card-swatches--container{position: relative; overflow: hidden; height: 18px;}
 :where(.template-product) .product-card .product-card-swatches--title{font-size: 0.8125rem; line-height: 18px; opacity: 0.8; transform: translateY(0px);}
-:where(.template-product) .product-card--add-to-cart-button{width: 100%; margin-top: 15px;}
+:where(.template-product) .product-card--add-to-cart-button{width: 100%;}
 @media (hover: hover) { :where(.template-product) .product-card:hover .product-secondary-images-nav{opacity: 1;} }
-:where(.template-product) .product-card:hover .product-card-swatches{transform: translateY(0px);}
 :where(.template-product) .product-card:hover .product-card-swatches--title{transform: translateY(-100%);}
 
 /* --- inline:style --- */
@@ -915,9 +906,8 @@
 :where(.template-product) .section-header h2{font-weight: unset;}
 :where(.template-product) .product-card .product-card-swatches--container{margin-top: 0px;}
 :where(.template-product) .product-card .product-card-title{margin-bottom: 3px;}
-:where(.template-product) .product-card .product-card-title{line-height: normal; font-size: calc(var(--font-product-title-scale, 1) * 0.7rem); font-family: Everett-regular, sans-serif !important;}
-:where(.template-product) .product-card-info .amount{font-size: calc(var(--font-product-title-scale, 1) * 0.7rem); font-family: Everett-regular, sans-serif !important;}
-:where(.template-product) .variations .product-form__input--color input[type="radio"] + label{box-shadow: 0 0 0 0px var(--color-border) inset;}
+:where(.template-product) .product-card .product-card-title{line-height: normal; font-family: Everett-regular, sans-serif !important;}
+:where(.template-product) .product-card-info .amount{font-family: Everett-regular, sans-serif !important;}
 :where(.template-product) .thb-product-detail .product-price-container .product__tax{display: none;}
 :where(.template-product) .variations .product-form__input--block input[type="radio"] + label{box-shadow: 0 0 0 0px var(--color-border) inset;}
 :where(.template-product) .variations .product-form__input--color input[type="radio"]:checked + label{border-radius: 100px;}

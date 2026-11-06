@@ -1,0 +1,6 @@
+/* Local overrides on top of the generated source rules (search-source.css). Keep this file small: every rule here is a
+   deliberate deviation or a fix for a rule the clone needs but the source applies through its own scripts. */
+
+/* The wrapper stands in for the source <body>: source body text metrics (app.css body{font-size:1.0625rem;
+   line-height:calc(var(--font-body-line-height-scale) * 1.6)}), same as the other template wrappers. */
+.template-search{font-size:1.0625rem;line-height:calc(var(--font-body-line-height-scale) * 1.6)}

@@ -1,0 +1,95 @@
+{
+ "documentTitle": {
+  "empty": "Search – Beyond The Vines Indonesia",
+  "results": "Search: {count} results found for \"{q}\" – Beyond The Vines Indonesia"
+ },
+ "bannerSectionId": "template--22799926067479__main-collection-banner",
+ "searchSectionId": "template--22799926067479__main-search",
+ "bannerClass": "collection-banner search-banner-section collection-banner--heading-uppercase-true",
+ "bannerStyle": "--overlay-color-rgb: 0, 0, 0; --overlay-opacity: 0.2",
+ "breadcrumbHome": {
+  "href": "/",
+  "label": "Home"
+ },
+ "breadcrumbCurrent": "Search",
+ "title": "Search Results",
+ "placeholder": "Search for anything",
+ "resultsText": "{count} results found for “{q}”",
+ "barCrumbs": [
+  {
+   "href": "/",
+   "title": "Home",
+   "label": "Home"
+  },
+  {
+   "href": "/collections/new-in",
+   "title": "Shop",
+   "label": "Shop"
+  },
+  {
+   "href": "",
+   "title": "",
+   "label": "Search"
+  }
+ ],
+ "hiddenInputs": [
+  {
+   "name": "options[prefix]",
+   "value": "last"
+  }
+ ],
+ "sort": {
+  "bar": [
+   {
+    "value": "relevance",
+    "label": "Relevance"
+   },
+   {
+    "value": "price-ascending",
+    "label": "Price, low to high"
+   },
+   {
+    "value": "price-descending",
+    "label": "Price, high to low"
+   }
+  ],
+  "barList": [
+   {
+    "value": "relevance",
+    "label": "Relevance"
+   },
+   {
+    "value": "price-ascending",
+    "label": "Price, low to high"
+   },
+   {
+    "value": "price-descending",
+    "label": "Price, high to low"
+   }
+  ],
+  "mobile": [
+   {
+    "value": "relevance",
+    "label": "Relevance"
+   },
+   {
+    "value": "price-ascending",
+    "label": "Price, low to high"
+   },
+   {
+    "value": "price-descending",
+    "label": "Price, high to low"
+   }
+  ],
+  "initial": "relevance"
+ },
+ "gridClass": "products collection row small-up-2 medium-up-4 pagination--paginated",
+ "paginationClass": "pagination pagination-type--paginated",
+ "perPage": 12,
+ "countLabel": "{count} results",
+ "facetTitles": [
+  "Colour",
+  "Size",
+  "Availability"
+ ]
+}

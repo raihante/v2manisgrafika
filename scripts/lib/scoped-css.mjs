@@ -87,13 +87,77 @@ export function buildScopedCss({ used, vars, scope, dropSheets, wholeSheets = {}
     seen.set(text, out.length);
     out.push({ sheet, text });
   }
+  const resolved = resolveDuplicateSelectors(out);
   const lines = [...header, `${scope}{${Object.entries(vars).map(([k, v]) => `${k}:${v}`).join(";")}}`];
   let last = "";
-  for (const e of out) {
+  for (const e of resolved.entries) {
     if (!e) continue;
     if (e.sheet !== last) { lines.push(`\n/* --- ${e.sheet} --- */`); last = e.sheet; }
     lines.push(e.text);
   }
   const css = lines.join("\n") + "\n";
-  return { css, rules: out.filter(Boolean).length, dropped: out.filter((e) => !e).length, bytes: lines.join("\n").length };
+  return { css, rules: resolved.entries.filter(Boolean).length, dropped: out.filter((e) => !e).length, cascadeRewritten: resolved.rewritten, cascadeEmptied: resolved.emptied, bytes: lines.join("\n").length };
+}
+
+// Split a declaration block ("a: 1; b: url(x;y) !important") on top-level semicolons.
+function splitDecls(body) {
+  const out = [];
+  let depth = 0, quote = null, start = 0;
+  for (let i = 0; i < body.length; i++) {
+    const c = body[i];
+    if (quote) { if (c === "\\") i++; else if (c === quote) quote = null; continue; }
+    if (c === '"' || c === "'") quote = c;
+    else if (c === "(") depth++;
+    else if (c === ")") depth--;
+    else if (c === ";" && depth === 0) { out.push(body.slice(start, i)); start = i + 1; }
+  }
+  out.push(body.slice(start));
+  return out.map((d) => d.trim()).filter(Boolean).map((d) => {
+    const k = d.indexOf(":");
+    return { prop: d.slice(0, k).trim().toLowerCase(), text: d, important: /!\s*important\s*$/i.test(d) };
+  });
+}
+
+/**
+ * Several source sheets style the same selector (e.g. collection-banner.css `h1{text-transform:uppercase}` and the
+ * later-loaded jsc-reset-styles.css `h1{text-transform:unset !important}`). Next's CSS pipeline merges rules with an
+ * identical selector and media chain and keeps the LAST declaration of each property, ignoring !important, which
+ * inverts the source cascade (measured on /search, round 257c: the title rendered uppercase). This pass applies the
+ * cascade here instead, for rules with the same media chain + selector: a later normal declaration that loses to an
+ * earlier !important one is removed, and an earlier declaration that a later one overrides is removed. Rule positions
+ * are unchanged, so no pair is left for the pipeline to merge wrongly.
+ */
+function resolveDuplicateSelectors(entries) {
+  const parsed = entries.map((e) => {
+    if (!e || /^@(-webkit-)?keyframes\s/.test(e.text)) return null;
+    // "<@media ...> { ... { <sel>{decls} } }" or "<sel>{decls}"
+    const open = e.text.lastIndexOf("{", e.text.indexOf("}"));
+    const close = e.text.indexOf("}", open);
+    const head = e.text.slice(0, open);
+    const at = head.lastIndexOf("{");
+    const chain = at >= 0 ? head.slice(0, at + 1) : "";
+    const sel = (at >= 0 ? head.slice(at + 1) : head).trim();
+    return { chain, sel, tail: e.text.slice(close), decls: splitDecls(e.text.slice(open + 1, close)), changed: false };
+  });
+  const winners = new Map(); // chain||sel||prop -> { idx, decl }
+  parsed.forEach((p, idx) => {
+    if (!p) return;
+    p.decls = p.decls.filter((d) => {
+      const key = `${p.chain}||${p.sel}||${d.prop}`;
+      const prev = winners.get(key);
+      if (prev && prev.decl.important && !d.important) { p.changed = true; return false; }
+      if (prev) { const q = parsed[prev.idx]; q.decls = q.decls.filter((x) => x !== prev.decl); q.changed = true; }
+      winners.set(key, { idx, decl: d });
+      return true;
+    });
+  });
+  let rewritten = 0, emptied = 0;
+  const result = entries.map((e, i) => {
+    const p = parsed[i];
+    if (!e || !p || !p.changed) return e;
+    rewritten++;
+    if (!p.decls.length) { emptied++; return null; }
+    return { ...e, text: `${p.chain}${p.chain ? " " : ""}${p.sel}{${p.decls.map((d) => d.text).join("; ")};${p.tail}` };
+  });
+  return { entries: result, rewritten, emptied };
 }

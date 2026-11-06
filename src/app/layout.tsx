@@ -13,8 +13,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     // The source theme sets html.js; shell rules such as `.js .mobile-toggle-wrapper[open].active .mobile-menu-drawer`
-    // depend on it.
-    <html lang="en" className="js">
+    // depend on it. data-scroll-behavior="smooth": Next 16 then disables the source's smooth scroll-behavior during
+    // client navigations (the source always does full page loads, which never animate the scroll position).
+    <html lang="en" className="js" data-scroll-behavior="smooth">
       <body>{children}</body>
     </html>
   );

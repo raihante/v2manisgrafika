@@ -1,15 +1,17 @@
 // Build the generated source-rule stylesheets of the collection templates:
 //   node scripts/build-collection-css.mjs                  -> collection page (product grid, facet bar/drawer, pagination)
 //   node scripts/build-collection-css.mjs list-collections -> /collections (collection list cards)
+//   node scripts/build-collection-css.mjs search           -> /search (banner, product grid, facets, numbered pagination)
 // Inputs (private, Git-ignored): reference/css/<collection|list-collections>/used-rules.css and root-vars.json, captured
-// from the live source by reference/scripts/r257-used-rules.mjs and r257b-list-capture.mjs (ego-browser, 2026-11-06).
+// from the live source by reference/scripts/r257-used-rules.mjs, r257b-list-capture.mjs and r257c-search-capture.mjs (ego-browser, 2026-11-06).
 // Scoping and de-duplication: scripts/lib/scoped-css.mjs (wrapper = the source body class of the template).
-import { readFileSync, writeFileSync } from "node:fs";
+import { readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { buildScopedCss } from "./lib/scoped-css.mjs";
 
 const ROOT = new URL("..", import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1");
 const TARGETS = {
   collection: { input: "collection", scope: ".template-collection", out: "src/app/collections/[handle]/collection-source.css", overrides: "collection-page.css" },
+  search: { input: "search", scope: ".template-search", out: "src/app/search/search-source.css", overrides: "search-page.css" },
   "list-collections": { input: "list-collections", scope: ".template-list-collections", out: "src/app/collections/list-collections-source.css", overrides: "list-collections.css" },
 };
 const name = process.argv[2] ?? "collection";
@@ -28,7 +30,18 @@ const { css, ...stats } = buildScopedCss({
     `   to the page wrapper ${t.scope} with :where(), so specificity matches the source. */`,
   ],
 });
-// facets.css resolves ./tick-icon-white.png against the theme asset folder; the copy lives under public/
-// (scripts/download-collection-assets.mjs).
-writeFileSync(`${ROOT}${t.out}`, css.replace(/url\("\.\/tick-icon-white\.png"\)/g, 'url("/assets/source/collection/tick-icon-white.png")'));
+// Local copies for every source image the rules reference (no hotlinking): facets.css resolves ./tick-icon-white.png
+// against the theme asset folder (scripts/download-collection-assets.mjs); absolute CDN URLs (e.g. the --search-png
+// root variable) map to the file of the same name under public/assets/source/. A missing copy fails the build.
+const localFiles = new Map();
+const walk = (dir) => { for (const e of readdirSync(dir, { withFileTypes: true })) { if (e.isDirectory()) walk(`${dir}/${e.name}`); else if (!localFiles.has(e.name)) localFiles.set(e.name, `${dir}/${e.name}`.slice(`${ROOT}public`.length)); } };
+walk(`${ROOT}public/assets/source`);
+const localized = css
+  .replace(/url\("\.\/tick-icon-white\.png"\)/g, 'url("/assets/source/collection/tick-icon-white.png")')
+  .replace(/url\((["']?)(?:https?:)?\/\/beyondthevines\.co\.id\/cdn\/shop\/(?:[^)"'?]*\/)?([^/)"'?]+)(?:\?[^)"']*)?\1\)/g, (m, q, file) => {
+    const local = localFiles.get(decodeURIComponent(file));
+    if (!local) throw new Error(`no local copy for ${m}`);
+    return `url("${local}")`;
+  });
+writeFileSync(`${ROOT}${t.out}`, localized);
 console.log(JSON.stringify({ target: name, ...stats }));
