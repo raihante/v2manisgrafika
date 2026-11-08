@@ -12,12 +12,14 @@
 .predictive-search-local__price{display:block;font-family:"Everett-Light",sans-serif;font-size:14px;margin-top:4px}
 
 /* Filled cart (local approximation; the source filled-cart state was never captured) */
-.cart-drawer .side-panel-footer{border-top:0;font-size:.875rem;position:relative;background:var(--bg-body,#fff)}
-.cart-drawer .side-panel-footer .button{display:flex!important;font-family:"Everett-regular",sans-serif!important;font-size:1.05rem!important;font-weight:normal!important;letter-spacing:-1px;height:40px;margin:10px 20px}
-.cart-drawer .mini-cart__row{display:flex;width:100%;justify-content:space-between;border-bottom:1px solid #000;padding:10px 20px 0;line-height:1}
-.cart-drawer .mini-cart__row span{font-weight:500}
-.cart-drawer .mini-cart__row.total{border-bottom:0}
-.cart-drawer .text-button{display:block;text-align:center;margin:0 0 20px;font-size:16px!important;font-family:"Everett-Medium",sans-serif!important;text-transform:capitalize!important;color:#000}
+/* Footer inset follows .side-panel-content (30px, 19px at <=480) so its edges line up with the cart lines. */
+.cart-drawer .side-panel-footer{border-top:0;font-size:.875rem;position:relative;background:var(--bg-body,#fff);padding:15px 30px 20px}
+.cart-drawer .side-panel-footer .button{display:flex!important;font-family:"Everett-regular",sans-serif!important;font-size:1.05rem!important;font-weight:normal!important;letter-spacing:-1px;height:40px;width:100%;margin:12px 0 14px}
+.cart-drawer .mini-cart__row{display:flex;width:100%;justify-content:space-between;align-items:baseline;font-family:"Everett-regular",sans-serif;font-size:17px;letter-spacing:-.5px;line-height:1.2;color:#000}
+.cart-drawer .mini-cart__row span{font-weight:normal}
+/* fit-content keeps the .text-button underline pseudo-elements under the label instead of across the drawer. */
+.cart-drawer .side-panel-footer .text-button{display:block;width:fit-content;height:auto;line-height:1.2;text-align:center;margin:0 auto;font-size:16px!important;font-family:"Everett-Medium",sans-serif!important;text-transform:capitalize!important;color:#000}
+@media only screen and (max-width:480px){.cart-drawer .side-panel-footer{padding:15px 19px 20px}}
 /* Filled cart lines (local approximation) */
 .cart-drawer-local__lines{list-style:none;margin:0;padding:0}
 .cart-drawer-local__line{display:grid;grid-template-columns:90px 1fr;gap:15px;padding:15px 0;border-bottom:1px solid #e5e5e5}
