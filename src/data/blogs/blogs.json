@@ -1,0 +1,1324 @@
+{
+ "snapshot": "2026-11-06",
+ "categories": [
+  {
+   "handle": "btv-city-guide",
+   "title": "BTV City Guide"
+  },
+  {
+   "handle": "collaborations",
+   "title": "Collaborations"
+  },
+  {
+   "handle": "events",
+   "title": "Events"
+  },
+  {
+   "handle": "media-stories",
+   "title": "Media Stories",
+   "description": "Explore media coverage of all things Beyond The Vines here."
+  },
+  {
+   "handle": "news",
+   "title": "News"
+  },
+  {
+   "handle": "promotions",
+   "title": "Promotions",
+   "description": "Learn more about our latest promotions, exclusive offers, free shipping and more!"
+  },
+  {
+   "handle": "travelling-btv-express",
+   "title": "Travelling BTV Express"
+  }
+ ],
+ "articles": [
+  {
+   "slug": "a-little-love-for-your-carryall",
+   "category": "promotions",
+   "title": "A Little Love For Your Carryall",
+   "documentTitle": "Promotions | A Little Love For Your Carryall – Beyond The Vines Indonesia",
+   "date": "2026-11-02",
+   "dateLabel": "02.11.2026",
+   "description": "Heart Pocket Mirror, On Us! Heart Pocket Mirror, On Us! A Little Love For Your Carryall A Little Love For Your Carryall Add a little love to your everyday carry with our Heart Pocket Mirror! Purchase any Crunch Carryall 0.5 and receive a complimentary Heart Pocket Mirror, automatically added to your cart. Each mirror c",
+   "hero": {
+    "src": "/assets/source/blogs/2026_10_Pocket_Mirror_GWP_Promo_Page_IMAGE_COVER.webp",
+    "alt": "A Little Love For Your Carryall",
+    "width": 1200,
+    "height": 1800
+   },
+   "source": null,
+   "hasBody": true,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/promotions/a-little-love-for-your-carryall"
+  },
+  {
+   "slug": "press-before-between-and-beyond-the-vines-with-rebecca-ting",
+   "category": "media-stories",
+   "title": "Press | Before, Between, and Beyond The Vines with Rebecca Ting",
+   "documentTitle": "Press | Before, Between, and Beyond The Vines with Rebecca Ting – Beyond The Vines Indonesia",
+   "date": "2025-08-13",
+   "dateLabel": "13.08.2025",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/Media_Image_2268px_x_1560px-3.jpg",
+    "alt": "Press | Before, Between, and Beyond The Vines with Rebecca Ting",
+    "width": 1200,
+    "height": 825
+   },
+   "source": {
+    "url": "https://esquiresg.com/beyond-the-vines-rebecca-ting-co-founder-interview-10-year-anniversary/",
+    "publication": "esquiresg.com"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/press-before-between-and-beyond-the-vines-with-rebecca-ting"
+  },
+  {
+   "slug": "press-10-years-of-beyond-the-vines-how-this-singaporean-brand-redefined-everyday-design",
+   "category": "media-stories",
+   "title": "Press | 10 Years Of Beyond The Vines: How This Singaporean Brand Redefined Everyday Design",
+   "documentTitle": "Press | 10 Years Of Beyond The Vines: How This Singaporean Brand Redef – Beyond The Vines Indonesia",
+   "date": "2025-08-13",
+   "dateLabel": "13.08.2025",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/Media_Image_2268px_x_1560px-5.jpg",
+    "alt": "Press | 10 Years Of Beyond The Vines: How This Singaporean Brand Redefined Everyday Design",
+    "width": 1200,
+    "height": 825
+   },
+   "source": {
+    "url": "https://www.harpersbazaar.com.sg/fashion/news-trends/beyond-the-vines-10-year-anniversary",
+    "publication": "harpersbazaar.com.sg"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/press-10-years-of-beyond-the-vines-how-this-singaporean-brand-redefined-everyday-design"
+  },
+  {
+   "slug": "press-crafting-community-beyond-the-vines-s-new-bahru-store-is-pure-fun",
+   "category": "media-stories",
+   "title": "Press | Crafting Community: Beyond The Vines’s New Bahru Store Is Pure Fun",
+   "documentTitle": "Press | Crafting Community: Beyond The Vines’s New Bahru Store Is Pure – Beyond The Vines Indonesia",
+   "date": "2025-08-13",
+   "dateLabel": "13.08.2025",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/Media_Image_2268px_x_1560px-2.jpg",
+    "alt": "Press | Crafting Community: Beyond The Vines’s New Bahru Store Is Pure Fun",
+    "width": 1200,
+    "height": 825
+   },
+   "source": {
+    "url": "https://grazia.sg/fashion/beyond-the-vines-new-bahru-store-crafting-community/",
+    "publication": "grazia.sg"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/press-crafting-community-beyond-the-vines-s-new-bahru-store-is-pure-fun"
+  },
+  {
+   "slug": "liberty",
+   "category": "collaborations",
+   "title": "Collaborations | BTV_Liberty",
+   "documentTitle": "Collaborations | BTV_Liberty – Beyond The Vines Indonesia",
+   "date": "2025-08-12",
+   "dateLabel": "12.08.2025",
+   "description": "To mark its 10th anniversary, Beyond The Vines presents a limited edition floral collection using Liberty Fabric — a tribute to the heritage textile brand’s 150th year of artistry. This capsule sees Beyond The Vines’ functional design philosophy meet Liberty’s iconic prints, brought to life across the brand’s best-selling Crunch Carryall Series and a thoughtfully designed range of everyday accessories.",
+   "hero": {
+    "src": "/assets/source/blogs/SOCIAL_MEDIA_SHARING.png",
+    "alt": "Collaborations | BTV_Liberty",
+    "width": 1200,
+    "height": 628
+   },
+   "source": null,
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/collaborations/liberty"
+  },
+  {
+   "slug": "parco-shibuya-nov-2023",
+   "category": "travelling-btv-express",
+   "title": "The BTV Express, Shibuya PARCO, Nov 2023",
+   "documentTitle": "The BTV Express, Shibuya PARCO, Nov 2023 – Beyond The Vines Indonesia",
+   "date": "2025-02-21",
+   "dateLabel": "21.02.2025",
+   "description": "Beyond The Vines returned to Tokyo with an exciting pop-up at Shibuya PARCO, marking a significant step in its ongoing global expansion. The pop-up was opened from 3 to 14 November 2023 and was the first of two in Tokyo in the month of November, offering access to its latest &amp; classic collections. Visitors to The B",
+   "hero": {
+    "src": "/assets/source/blogs/SOCIAL_MEDIA_SHARING.png",
+    "alt": "The BTV Express, Shibuya PARCO, Nov 2023",
+    "width": 1200,
+    "height": 628
+   },
+   "source": null,
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/travelling-btv-express/parco-shibuya-nov-2023"
+  },
+  {
+   "slug": "btv-city-guide-03",
+   "category": "btv-city-guide",
+   "title": "The BTV City Guide 03, Bangkok with Table of Hands",
+   "documentTitle": "The BTV City Guide 03, Bangkok with Table of Hands – Beyond The Vines Indonesia",
+   "date": "2024-12-19",
+   "dateLabel": "19.12.2024",
+   "description": "A BTV City Guide where we take you around different cities, around the world, led by some of our favourite BTV people! A BTV City Guide where we take you around different cities, around the world, led by some of our favourite BTV people! BTV CityGuide 03: BTV CityGuide 03: BTV CityGuide 01: Bangkok With Table of Hands",
+   "hero": {
+    "src": "/assets/source/blogs/SOCIAL_MEDIA_SHARING.png",
+    "alt": "The BTV City Guide 03, Bangkok with Table of Hands",
+    "width": 1200,
+    "height": 628
+   },
+   "source": null,
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/btv-city-guide/03"
+  },
+  {
+   "slug": "btv-city-guide-02",
+   "category": "btv-city-guide",
+   "title": "The BTV City Guide 02, Portugal with Kimi",
+   "documentTitle": "The BTV City Guide 02, Portugal with Kimi – Beyond The Vines Indonesia",
+   "date": "2024-11-20",
+   "dateLabel": "20.11.2024",
+   "description": "A BTV City Guide where we take you around different cities, around the world, led by some of our favourite BTV people! A BTV City Guide where we take you around different cities, around the world, led by some of our favourite BTV people! BTV CityGuide 02: BTV CityGuide 01: BTV CityGuide 01: Portugal With Kimi HK With K",
+   "hero": {
+    "src": "/assets/source/blogs/SOCIAL_MEDIA_SHARING.png",
+    "alt": "The BTV City Guide 02, Portugal with Kimi",
+    "width": 1200,
+    "height": 628
+   },
+   "source": null,
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/btv-city-guide/02"
+  },
+  {
+   "slug": "btv-city-guide-01",
+   "category": "btv-city-guide",
+   "title": "The BTV City Guide 01, HK with Katy Chow",
+   "documentTitle": "The BTV City Guide 01, HK with Katy Chow – Beyond The Vines Indonesia",
+   "date": "2024-11-20",
+   "dateLabel": "20.11.2024",
+   "description": "A BTV City Guide where we take you around different cities, around the world, led by some of our favourite BTV people! A BTV City Guide where we take you around different cities, around the world, led by some of our favourite BTV people! BTV CityGuide 01: BTV CityGuide 01: BTV CityGuide 01: HK With Katy Chow HK With Ka",
+   "hero": {
+    "src": "/assets/source/blogs/SOCIAL_MEDIA_SHARING.png",
+    "alt": "The BTV City Guide 01, HK with Katy Chow",
+    "width": 1200,
+    "height": 628
+   },
+   "source": null,
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/btv-city-guide/01"
+  },
+  {
+   "slug": "daikanyama-t-site-nov-2023",
+   "category": "travelling-btv-express",
+   "title": "The BTV Express, Daikanyama T-Site, Nov 2023",
+   "documentTitle": "The BTV Express, Daikanyama T-Site, Nov 2023 – Beyond The Vines Indonesia",
+   "date": "2024-09-04",
+   "dateLabel": "04.09.2024",
+   "description": "Beyond The Vines made a return to Tokyo with The BTV Express at Daikanyama T-Site from 16 to 26 November. This time with a BTV Christmas Market concept for their Japanese visitors. The brand embraced its colourful and functional designs, bringing a curated selection of bags, accessories, and ready-to-wear pieces in a C",
+   "hero": {
+    "src": "/assets/source/blogs/SOCIAL_MEDIA_SHARING.png",
+    "alt": "The BTV Express, Daikanyama T-Site, Nov 2023",
+    "width": 1200,
+    "height": 628
+   },
+   "source": null,
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/travelling-btv-express/daikanyama-t-site-nov-2023"
+  },
+  {
+   "slug": "beyond-the-vines-reaches-further-heights",
+   "category": "media-stories",
+   "title": "Press | Beyond The Vines Reaches Further Heights",
+   "documentTitle": "Press | Beyond The Vines Reaches Further Heights – Beyond The Vines Indonesia",
+   "date": "2024-08-26",
+   "dateLabel": "26.08.2024",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/17_-_Esquire_SG.png",
+    "alt": "Press | Beyond The Vines Reaches Further Heights",
+    "width": 1200,
+    "height": 825
+   },
+   "source": {
+    "url": "https://esquiresg.com/beyond-the-vines-denim-dumpling-bag-design-house-bangkok/",
+    "publication": "esquiresg.com"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/beyond-the-vines-reaches-further-heights"
+  },
+  {
+   "slug": "marina-bay-sands-jan-2024",
+   "category": "travelling-btv-express",
+   "title": "The BTV Express, Marina Bay Sands, Jan 2024",
+   "documentTitle": "The BTV Express, Marina Bay Sands, Jan 2024 – Beyond The Vines Indonesia",
+   "date": "2024-08-21",
+   "dateLabel": "21.08.2024",
+   "description": "Singapore-based design studio Beyond The Vines announced its second pop-up store at The BTV Express, Marina Bay Sands, Singapore, from 12 to 21 January 2024. The pop-up store celebrated the launch of their latest product in their Poofy Series, the Pocket Poofy Bag. Singapore-based design studio Beyond The Vines announc",
+   "hero": {
+    "src": "/assets/source/blogs/SOCIAL_MEDIA_SHARING.png",
+    "alt": "The BTV Express, Marina Bay Sands, Jan 2024",
+    "width": 1200,
+    "height": 628
+   },
+   "source": null,
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/travelling-btv-express/marina-bay-sands-jan-2024"
+  },
+  {
+   "slug": "travelling-btv-express-main-new",
+   "category": "travelling-btv-express",
+   "title": "The BTV Express",
+   "documentTitle": "The BTV Express – Beyond The Vines Indonesia",
+   "date": "2024-08-21",
+   "dateLabel": "21.08.2024",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/SOCIAL_MEDIA_SHARING.png",
+    "alt": "The BTV Express",
+    "width": 1200,
+    "height": 628
+   },
+   "source": null,
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/travelling-btv-express/main-new"
+  },
+  {
+   "slug": "beyond-the-vines-first-time-customer-promotion",
+   "category": "promotions",
+   "title": "First-Time Customer Reward",
+   "documentTitle": "Promotions | First-Time Customer Reward – Beyond The Vines Indonesia",
+   "date": "2024-07-09",
+   "dateLabel": "09.07.2024",
+   "description": "New Kid On The Block? Join The Vine Club! There are no strangers here, so get cosy, we’ll be keeping you close! Enjoy SGD10 off your first order with a minimum spend of SGD100. This offer is valid for our online & physical stores located in Singapore. How it works: Be part of The Vine Club here! A love letter is sent t",
+   "hero": {
+    "src": "/assets/source/blogs/SOCIAL_MEDIA_SHARING.png",
+    "alt": "First-Time Customer Reward",
+    "width": 1200,
+    "height": 628
+   },
+   "source": null,
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/promotions/beyond-the-vines-first-time-customer-promotion"
+  },
+  {
+   "slug": "beyond-the-vines-unveils-revamped-concept-store-at-funan-singapore",
+   "category": "media-stories",
+   "title": "Press | Beyond The Vines unveils revamped concept store at Funan, Singapore",
+   "documentTitle": "Press | Beyond The Vines unveils revamped concept store at Funan, Sing – Beyond The Vines Indonesia",
+   "date": "2024-03-20",
+   "dateLabel": "20.03.2024",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/03_-_Beyond_The_Vines_unveils_revamped_concept_store_at_Funan_Singapore.jpg",
+    "alt": "Press | Beyond The Vines unveils revamped concept store at Funan, Singapore",
+    "width": 1200,
+    "height": 800
+   },
+   "source": {
+    "url": "https://insideretail.asia/2024/03/20/beyond-the-vines-unveils-revamped-concept-store-at-funan-singapore/",
+    "publication": "insideretail.asia"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/beyond-the-vines-unveils-revamped-concept-store-at-funan-singapore"
+  },
+  {
+   "slug": "casetify-makes-southeast-asian-debut-with-beyond-the-vines-collaboration",
+   "category": "media-stories",
+   "title": "Press | CASETiFY Makes Southeast Asian Debut with Beyond The Vines Collaboration",
+   "documentTitle": "Press | CASETiFY Makes Southeast Asian Debut with Beyond The Vines Col – Beyond The Vines Indonesia",
+   "date": "2024-03-18",
+   "dateLabel": "18.03.2024",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/01_-_CASETiFY_Makes_Southeast_Asian_Debut_with_Beyond_The_Vines_Collaboration.jpg",
+    "alt": "Press | CASETiFY Makes Southeast Asian Debut with Beyond The Vines Collaboration",
+    "width": 1200,
+    "height": 800
+   },
+   "source": {
+    "url": "https://observatory.sg/casetify-x-btv-hotel-a-southeast-asian-debut-collaboration/",
+    "publication": "observatory.sg"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/casetify-makes-southeast-asian-debut-with-beyond-the-vines-collaboration"
+  },
+  {
+   "slug": "casetify",
+   "category": "collaborations",
+   "title": "Collaborations | BTV Casetify",
+   "documentTitle": "Collaborations | BTV Casetify – Beyond The Vines Indonesia",
+   "date": "2024-03-14",
+   "dateLabel": "14.03.2024",
+   "description": "BEYOND THE VINES X CASETIFY LAUNCH DATE - 15.03.24 CASETiFY announced its first design studio collaboration in Southeast Asia with multidisciplinary design studio, Beyond The Vines, setting a new precedent in the region's design and lifestyle space. The Beyond The Vines x CASETiFY collaboration introduced 'The BTV Hote",
+   "hero": {
+    "src": "/assets/source/blogs/SOCIAL_MEDIA_SHARING.png",
+    "alt": "Collaborations | BTV Casetify",
+    "width": 1200,
+    "height": 628
+   },
+   "source": null,
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/collaborations/casetify"
+  },
+  {
+   "slug": "beyond-the-vines-x-casetify-announce-colourful-phone-cases-and-tech-accessories",
+   "category": "media-stories",
+   "title": "Press | Beyond The Vines x CASETiFY Announce Colourful Phone Cases And Tech Accessories",
+   "documentTitle": "Press | Beyond The Vines x CASETiFY Announce Colourful Phone Cases And – Beyond The Vines Indonesia",
+   "date": "2024-03-08",
+   "dateLabel": "08.03.2024",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/02_-_Beyond_The_Vines_x_CASETiFY_Announce_Colourful_Phone_Cases_And_Tech_Accessories.webp",
+    "alt": "Press | Beyond The Vines x CASETiFY Announce Colourful Phone Cases And Tech Accessories",
+    "width": 1200,
+    "height": 800
+   },
+   "source": {
+    "url": "https://www.nylon.com.sg/2024/03/beyond-the-vines-x-casetify-announce-colourful-phone-cases-and-tech-accessories/",
+    "publication": "nylon.com.sg"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/beyond-the-vines-x-casetify-announce-colourful-phone-cases-and-tech-accessories"
+  },
+  {
+   "slug": "takashimaya-shopping-centre-feb-2024",
+   "category": "travelling-btv-express",
+   "title": "The BTV Express, Takashimaya S.C., Feb 2024",
+   "documentTitle": "The BTV Express, Takashimaya S.C., Feb 2024 – Beyond The Vines Indonesia",
+   "date": "2024-03-01",
+   "dateLabel": "01.03.2024",
+   "description": "Beyond The Vines announced The BTV Express at Takashimaya S.C., which hosted a 4-day pop-up from 4 to 9 February 2024. Constructed with the brand's signature colourful crates, a significant element in Beyond The Vines’ design language, these crates embodied the brand’s philosophy towards functional and engaging design,",
+   "hero": {
+    "src": "/assets/source/blogs/SOCIAL_MEDIA_SHARING.png",
+    "alt": "The BTV Express, Takashimaya S.C., Feb 2024",
+    "width": 1200,
+    "height": 628
+   },
+   "source": null,
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/travelling-btv-express/takashimaya-shopping-centre-feb-2024"
+  },
+  {
+   "slug": "beyond-the-vines-unveils-a-vibrant-technicolour-collection",
+   "category": "media-stories",
+   "title": "Press | Beyond The Vines Unveils A Vibrant Technicolour Collection",
+   "documentTitle": "Press | Beyond The Vines Unveils A Vibrant Technicolour Collection – Beyond The Vines Indonesia",
+   "date": "2023-11-08",
+   "dateLabel": "08.11.2023",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/04_-_Beyond_The_Vines_Unveils_A_Vibrant_Technicolour_Collection.jpg",
+    "alt": "Press | Beyond The Vines Unveils A Vibrant Technicolour Collection",
+    "width": 1200,
+    "height": 800
+   },
+   "source": {
+    "url": "https://www.femalemag.com.sg/gallery/fashion/beyond-the-vines-launches-super-panelled-collection-colour-blocking/",
+    "publication": "femalemag.com.sg"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/beyond-the-vines-unveils-a-vibrant-technicolour-collection"
+  },
+  {
+   "slug": "beyond-the-vines-commits-to-colour-blocking",
+   "category": "media-stories",
+   "title": "Press | Beyond The Vines Commits To Colour-Blocking",
+   "documentTitle": "Press | Beyond The Vines Commits To Colour-Blocking – Beyond The Vines Indonesia",
+   "date": "2023-11-06",
+   "dateLabel": "06.11.2023",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/05_-_Beyond_The_Vines_Commits_To_Colour-Blocking.jpg",
+    "alt": "Press | Beyond The Vines Commits To Colour-Blocking",
+    "width": 1200,
+    "height": 800
+   },
+   "source": {
+    "url": "https://www.mens-folio.com/style/beyond-the-vines-commits-to-colour-blocking/",
+    "publication": "mens-folio.com"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/beyond-the-vines-commits-to-colour-blocking"
+  },
+  {
+   "slug": "miyashita-park-jul-2023",
+   "category": "travelling-btv-express",
+   "title": "The BTV Express, Miyashita Park, Jul 2023",
+   "documentTitle": "The BTV Express, Miyashita Park, Jul 2023 – Beyond The Vines Indonesia",
+   "date": "2023-08-01",
+   "dateLabel": "01.08.2023",
+   "description": "Beyond The Vines headed back to Tokyo, with another pop-up store at Miyashita Park – a shopping destination nestled in the heart of Tokyo. As one of the city’s busiest districts, the store was streaming with locals and tourists alike. Built upon the success of the cult favourite Dumpling Bag series, Beyond The Vines la",
+   "hero": {
+    "src": "/assets/source/blogs/SOCIAL_MEDIA_SHARING.png",
+    "alt": "The BTV Express, Miyashita Park, Jul 2023",
+    "width": 1200,
+    "height": 628
+   },
+   "source": null,
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/travelling-btv-express/miyashita-park-jul-2023"
+  },
+  {
+   "slug": "beyond-the-vines-opens-at-changi-airport-terminal-3",
+   "category": "media-stories",
+   "title": "Press | Beyond The Vines opens at Changi Airport Terminal 3",
+   "documentTitle": "Press | Beyond The Vines opens at Changi Airport Terminal 3 – Beyond The Vines Indonesia",
+   "date": "2023-06-09",
+   "dateLabel": "09.06.2023",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/06_-_Beyond_The_Vines_opens_at_Changi_Airport_Terminal_3.jpg",
+    "alt": "Press | Beyond The Vines opens at Changi Airport Terminal 3",
+    "width": 1200,
+    "height": 800
+   },
+   "source": {
+    "url": "https://www.nylon.com.sg/2023/06/beyond-the-vines-opens-at-changi-airport-terminal-3/",
+    "publication": "nylon.com.sg"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/beyond-the-vines-opens-at-changi-airport-terminal-3"
+  },
+  {
+   "slug": "marina-bay-sands-apr-2023",
+   "category": "travelling-btv-express",
+   "title": "The BTV Express, Marina Bay Sands, Apr 2023",
+   "documentTitle": "The BTV Express, Marina Bay Sands, Apr 2023 – Beyond The Vines Indonesia",
+   "date": "2023-05-12",
+   "dateLabel": "12.05.2023",
+   "description": "To celebrate the launch of its latest product, the Poofy Bag, Beyond The Vines set up a pop-up store at The Shoppes at Marina Bay Sands. The new pillow Poofy Bag was designed in 08 vibrant colours that added fresh elevation to any outfit. Made with adjustable straps, the Poofy Bag offers versatility for each individual",
+   "hero": {
+    "src": "/assets/source/blogs/SOCIAL_MEDIA_SHARING.png",
+    "alt": "The BTV Express, Marina Bay Sands, Apr 2023",
+    "width": 1200,
+    "height": 628
+   },
+   "source": null,
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/travelling-btv-express/marina-bay-sands-apr-2023"
+  },
+  {
+   "slug": "takashimaya-shopping-centre-dec-2022",
+   "category": "travelling-btv-express",
+   "title": "The BTV Express, Takashimaya S.C., Dec 2022",
+   "documentTitle": "Beyond The Vines | Takashimaya Shopping Centre, Singapore – Beyond The Vines Indonesia",
+   "date": "2023-03-23",
+   "dateLabel": "23.03.2023",
+   "description": "The Travelling BTV Express begins its sojourn along Singapore’s busiest shopping district—Orchard Road. A temporary store located in a 25-square-metre space at the intersection of Takashimaya Shopping Centre and Wisma Atria, The BTV Express, is Beyond The Vines’ first pop-up shop happening from 2nd to 12th December 20",
+   "hero": {
+    "src": "/assets/source/blogs/SOCIAL_MEDIA_SHARING.png",
+    "alt": "The BTV Express, Takashimaya S.C., Dec 2022",
+    "width": 1200,
+    "height": 628
+   },
+   "source": null,
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/travelling-btv-express/takashimaya-shopping-centre-dec-2022"
+  },
+  {
+   "slug": "daikanyama-t-site-mar-2023",
+   "category": "travelling-btv-express",
+   "title": "The BTV Express, Daikanyama T-Site, Mar 2023",
+   "documentTitle": "Beyond The Vines | T-Site Garden Gallery, Tokyo, Japan – Beyond The Vines Indonesia",
+   "date": "2023-03-23",
+   "dateLabel": "23.03.2023",
+   "description": "The BTV Express travels to its second destination, and the brand’s first overseas pop-up store – Tokyo, Japan. The store, titled 'The BTV Express Tokyo', comes after its first pop-up in Singapore last December. It will be located at Daikanyama T-Site and will open from 23 to 26 March 2023, marking the brand's first for",
+   "hero": {
+    "src": "/assets/source/blogs/SOCIAL_MEDIA_SHARING.png",
+    "alt": "The BTV Express, Daikanyama T-Site, Mar 2023",
+    "width": 1200,
+    "height": 628
+   },
+   "source": null,
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/travelling-btv-express/daikanyama-t-site-mar-2023"
+  },
+  {
+   "slug": "collaborations-sia",
+   "category": "collaborations",
+   "title": "Collaborations | BTV SIA",
+   "documentTitle": "Beyond The Vines | BTV_SIA – Beyond The Vines Indonesia",
+   "date": "2023-03-17",
+   "dateLabel": "17.03.2023",
+   "description": "Beyond The Vines joins a suite of global brands to breathe new life into materials sourced from retired Singapore Airlines (SIA) aircraft. These materials include seat belts and life vests from commercial A380 planes that otherwise may have been discarded.",
+   "hero": {
+    "src": "/assets/source/blogs/SOCIAL_MEDIA_SHARING.png",
+    "alt": "Collaborations | BTV SIA",
+    "width": 1200,
+    "height": 628
+   },
+   "source": null,
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/collaborations/sia"
+  },
+  {
+   "slug": "pokemon",
+   "category": "collaborations",
+   "title": "Collaborations | BTV Pokemon",
+   "documentTitle": "Beyond The Vines | BTV_Pokémon – Beyond The Vines Indonesia",
+   "date": "2023-03-17",
+   "dateLabel": "17.03.2023",
+   "description": "The Pokémon collection marks the first global venture for the Singapore-based design studio since its inception. Keeping to the brand’s ethos of duality – to create boldly and design simply, the pairing resulted in a collection that combines its utilitarian and colourful aesthetic with the charm of the world of Pokémon",
+   "hero": {
+    "src": "/assets/source/blogs/SOCIAL_MEDIA_SHARING.png",
+    "alt": "Collaborations | BTV Pokemon",
+    "width": 1200,
+    "height": 628
+   },
+   "source": null,
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/collaborations/pokemon"
+  },
+  {
+   "slug": "morning",
+   "category": "collaborations",
+   "title": "Collaborations | BTV_MRNG",
+   "documentTitle": "Beyond The Vines | BTV_MRNG – Beyond The Vines Indonesia",
+   "date": "2023-03-17",
+   "dateLabel": "17.03.2023",
+   "description": "Beyond The Vines is pleased to present the Beyond The Vines x Morning: At Your (Self) Service collection – a design and lifestyle collaboration with progressive Singapore-based coffee tech company, Morning.",
+   "hero": {
+    "src": "/assets/source/blogs/SOCIAL_MEDIA_SHARING.png",
+    "alt": "Collaborations | BTV_MRNG",
+    "width": 1200,
+    "height": 628
+   },
+   "source": null,
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/collaborations/morning"
+  },
+  {
+   "slug": "singapore-s-beyond-the-vines-to-open-first-store-in-japan",
+   "category": "media-stories",
+   "title": "Press | Singapore’s Beyond The Vines to open first store in Japan",
+   "documentTitle": "Press | Singapore’s Beyond The Vines to open first store in Japan – Beyond The Vines Indonesia",
+   "date": "2023-03-15",
+   "dateLabel": "15.03.2023",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/07_-_Singapore_s_Beyond_The_Vines_to_open_first_store_in_Japan.jpg",
+    "alt": "Press | Singapore’s Beyond The Vines to open first store in Japan",
+    "width": 1200,
+    "height": 800
+   },
+   "source": {
+    "url": "https://insideretail.asia/2023/03/15/singapores-beyond-the-vines-opens-first-store-in-japan/",
+    "publication": "insideretail.asia"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/singapore-s-beyond-the-vines-to-open-first-store-in-japan"
+  },
+  {
+   "slug": "singapore-fave-beyond-the-vines-is-dropping-pokemon-dumpling-bags-and-we-gotta-catch-em-all",
+   "category": "media-stories",
+   "title": "Press | Singapore-Fave Beyond the Vines Is Dropping Pokémon Dumpling Bags and We Gotta Catch 'Em All",
+   "documentTitle": "Press | Singapore-Fave Beyond the Vines Is Dropping Pokémon Dumpling B – Beyond The Vines Indonesia",
+   "date": "2023-02-16",
+   "dateLabel": "16.02.2023",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/08_-_Singapore-Fave_Beyond_the_Vines_Is_Dropping_Pokemon_Dumpling_Bags_and_We_Gotta_Catch__Em_All.jpg",
+    "alt": "Press | Singapore-Fave Beyond the Vines Is Dropping Pokémon Dumpling Bags and We Gotta Catch 'Em All",
+    "width": 1200,
+    "height": 800
+   },
+   "source": {
+    "url": "https://www.spot.ph/shopping/the-latest-shopping/103779/where-to-buy-beyond-the-vines-x-pokemon-collection-a5109-20230216",
+    "publication": "spot.ph"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/singapore-fave-beyond-the-vines-is-dropping-pokemon-dumpling-bags-and-we-gotta-catch-em-all"
+  },
+  {
+   "slug": "local-label-beyond-the-vines-launches-new-pokemon-themed-dumpling-bags",
+   "category": "media-stories",
+   "title": "Press | Local label Beyond The Vines launches new Pokémon-themed dumpling bags",
+   "documentTitle": "Press | Local label Beyond The Vines launches new Pokémon-themed dumpl – Beyond The Vines Indonesia",
+   "date": "2023-02-16",
+   "dateLabel": "16.02.2023",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/09_-_Local_label_Beyond_The_Vines_launches_new_Pokemon-themed_dumpling_bags_6b00a3dd-a03d-4a3c-b958-6ff9c086d5c9.jpg",
+    "alt": "Press | Local label Beyond The Vines launches new Pokémon-themed dumpling bags",
+    "width": 1200,
+    "height": 800
+   },
+   "source": {
+    "url": "https://www.timeout.com/singapore/news/local-label-beyond-the-vines-launches-new-pokemon-themed-dumpling-bags-021623",
+    "publication": "timeout.com"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/local-label-beyond-the-vines-launches-new-pokemon-themed-dumpling-bags"
+  },
+  {
+   "slug": "the-beyond-the-vines-for-pokemon-collection-sees-pikachu-inspired-dumpling-bags-and-utilitarian-wear",
+   "category": "media-stories",
+   "title": "Press | The Beyond The Vines For Pokémon Collection Sees Pikachu-Inspired Dumpling Bags And Utilitarian Wear",
+   "documentTitle": "Press | The Beyond The Vines For Pokémon Collection Sees Pikachu-Inspi – Beyond The Vines Indonesia",
+   "date": "2023-02-13",
+   "dateLabel": "13.02.2023",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/10_-_The_Beyond_The_Vines_For_Pokemon_Collection_Sees_Pikachu-Inspired_Dumpling_Bags_And_Utilitarian_Wear.jpg",
+    "alt": "Press | The Beyond The Vines For Pokémon Collection Sees Pikachu-Inspired Dumpling Bags And Utilitarian Wear",
+    "width": 1200,
+    "height": 800
+   },
+   "source": {
+    "url": "https://www.nylon.com.sg/2023/02/the-beyond-the-vines-for-pokemon-pikachu-dumpling-bags-and-utilitarian-wear/",
+    "publication": "nylon.com.sg"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/the-beyond-the-vines-for-pokemon-collection-sees-pikachu-inspired-dumpling-bags-and-utilitarian-wear"
+  },
+  {
+   "slug": "finally-restocked-how-to-score-beyond-the-vines-must-have-bags",
+   "category": "media-stories",
+   "title": "Press | Finally restocked! How to score Beyond the Vines’ must-have bags",
+   "documentTitle": "Press | Finally restocked! How to score Beyond the Vines’ must-have ba – Beyond The Vines Indonesia",
+   "date": "2022-12-19",
+   "dateLabel": "19.12.2022",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/11_-_Finally_restocked_How_to_score_Beyond_the_Vines_must-have_bags.webp",
+    "alt": "Press | Finally restocked! How to score Beyond the Vines’ must-have bags",
+    "width": 1200,
+    "height": 800
+   },
+   "source": {
+    "url": "https://garage.com.ph/2022/12/19/finally-restocked-how-to-score-beyond-the-vines-must-have-bags/",
+    "publication": "garage.com.ph"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/finally-restocked-how-to-score-beyond-the-vines-must-have-bags"
+  },
+  {
+   "slug": "the-iconic-beyond-the-vines-micro-dumpling-bag-gets-a-new-look",
+   "category": "media-stories",
+   "title": "Press | The Iconic Beyond The Vines Micro Dumpling Bag Gets A New Look",
+   "documentTitle": "Press | The Iconic Beyond The Vines Micro Dumpling Bag Gets A New Look – Beyond The Vines Indonesia",
+   "date": "2022-07-18",
+   "dateLabel": "18.07.2022",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/12_-_The_Iconic_Beyond_The_Vines_Micro_Dumpling_Bag_Gets_A_New_Look_ebf0a316-1b0d-4616-9513-e5fa009b8bfb.jpg",
+    "alt": "Press | The Iconic Beyond The Vines Micro Dumpling Bag Gets A New Look",
+    "width": 1200,
+    "height": 800
+   },
+   "source": {
+    "url": "https://www.herworld.com/gallery/fashion/shopping/beyond-the-vines-micro-dumpling-bags-colourblock/",
+    "publication": "herworld.com"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/the-iconic-beyond-the-vines-micro-dumpling-bag-gets-a-new-look"
+  },
+  {
+   "slug": "shop-for-lifestyle-items-made-with-retired-aircraft-materials-at-the-upcycling-project-pop-up-event",
+   "category": "media-stories",
+   "title": "Press | Shop For Lifestyle Items Made With Retired Aircraft Materials At The Upcycling Project Pop-up Event",
+   "documentTitle": "Press | Shop For Lifestyle Items Made With Retired Aircraft Materials – Beyond The Vines Indonesia",
+   "date": "2022-07-06",
+   "dateLabel": "06.07.2022",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/01-Shop-For-Lifestyle-Items-Made-With-Retired-Aircraft-Materials-At-The-Upcycling-Project-Pop-up-Event_10ce346f-25f5-4d4c-8689-a2ce8f148468.jpg",
+    "alt": "Press | Shop For Lifestyle Items Made With Retired Aircraft Materials At The Upcycling Project Pop-up Event",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://www.silverkris.com/airline/news-from-sia/the-upcycling-project-event/",
+    "publication": "silverkris.com"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/shop-for-lifestyle-items-made-with-retired-aircraft-materials-at-the-upcycling-project-pop-up-event"
+  },
+  {
+   "slug": "beyond-the-vines-cult-favourite-dumpling-bag-is-getting-a-revamp-and-refreshed-colours",
+   "category": "media-stories",
+   "title": "Press | Beyond The Vines’ Cult-Favourite Dumpling Bag Is Getting A Revamp — And Refreshed Colours",
+   "documentTitle": "Press | Beyond The Vines’ Cult-Favourite Dumpling Bag Is Getting A Rev – Beyond The Vines Indonesia",
+   "date": "2021-11-15",
+   "dateLabel": "15.11.2021",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/02-Beyond-The-Vines_-Cult-Favourite-Dumpling-Bag-Is-Getting-A-Revamp-_-And-Refreshed-Colours_a86430e0-ca0c-44e6-809b-d1c1d3792937.jpg",
+    "alt": "Press | Beyond The Vines’ Cult-Favourite Dumpling Bag Is Getting A Revamp — And Refreshed Colours",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://www.nylon.com.sg/2021/11/beyond-the-vines-cult-favourite-dumpling-bag-is-getting-a-revamp/",
+    "publication": "nylon.com.sg"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/beyond-the-vines-cult-favourite-dumpling-bag-is-getting-a-revamp-and-refreshed-colours"
+  },
+  {
+   "slug": "esquire-neighbourhood-2021-design-for-access-with-rebecca-ting-of-beyond-the-vines-and-toby-tan",
+   "category": "media-stories",
+   "title": "Press | Esquire Neighbourhood 2021: Design for access with Rebecca Ting of Beyond The Vines and Toby Tan",
+   "documentTitle": "Press | Esquire Neighbourhood 2021: Design for access with Rebecca Tin – Beyond The Vines Indonesia",
+   "date": "2021-11-13",
+   "dateLabel": "13.11.2021",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/04-Esquire-Neighbourhood-2021--Design-for-access-with-Rebecca-Ting-of-Beyond-The-Vines-and-Toby-Tan_e776649a-6b25-447a-bc21-e6efc135fea7.jpg",
+    "alt": "Press | Esquire Neighbourhood 2021: Design for access with Rebecca Ting of Beyond The Vines and Toby Tan",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://www.esquiresg.com/rebecca-ting-tobyato-design-fashion-esquire-neighbourhood-singapore/",
+    "publication": "esquiresg.com"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/esquire-neighbourhood-2021-design-for-access-with-rebecca-ting-of-beyond-the-vines-and-toby-tan"
+  },
+  {
+   "slug": "meet-the-new-dumpling-from-beyond-the-vines",
+   "category": "media-stories",
+   "title": "Press | Meet The New ‘Dumpling’ From Beyond The Vines",
+   "documentTitle": "Press | Meet The New ‘Dumpling’ From Beyond The Vines – Beyond The Vines Indonesia",
+   "date": "2021-11-13",
+   "dateLabel": "13.11.2021",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/03-Meet-The-New-_Dumpling_-From-Beyond-The-Vines_5a3d11e9-034a-45a3-b854-9b6e700471c3.jpg",
+    "alt": "Press | Meet The New ‘Dumpling’ From Beyond The Vines",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://bagaholicboy.com/2021/11/meet-the-new-dumpling-from-beyond-the-vines/",
+    "publication": "bagaholicboy.com"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/meet-the-new-dumpling-from-beyond-the-vines"
+  },
+  {
+   "slug": "something-fun-is-brewing-at-beyond-the-vines",
+   "category": "media-stories",
+   "title": "Press | Something Fun Is Brewing At Beyond The Vines",
+   "documentTitle": "Press | Something Fun Is Brewing At Beyond The Vines – Beyond The Vines Indonesia",
+   "date": "2021-11-07",
+   "dateLabel": "07.11.2021",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/05-Something-Fun-Is-Brewing-At-Beyond-The-Vines_96f47302-a554-44b9-af5e-fb1c77cceb97.jpg",
+    "alt": "Press | Something Fun Is Brewing At Beyond The Vines",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://www.femalemag.com.sg/gallery/culture/beyond-the-vines-coffee-company-morning-collaboration/",
+    "publication": "femalemag.com.sg"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/something-fun-is-brewing-at-beyond-the-vines"
+  },
+  {
+   "slug": "beyond-the-vines-x-morning-brew-your-perfect-cuppa-at-home-with-this-new-coffee-maker",
+   "category": "media-stories",
+   "title": "Press | Beyond The Vines X Morning: Brew Your Perfect Cuppa At Home With This New Coffee Maker",
+   "documentTitle": "Press | Beyond The Vines X Morning: Brew Your Perfect Cuppa At Home Wi – Beyond The Vines Indonesia",
+   "date": "2021-11-06",
+   "dateLabel": "06.11.2021",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/06-Beyond-The-Vines-X-Morning--Brew-Your-Perfect-Cuppa-At-Home-With-This-New-Coffee-Maker_0c992c7d-911a-44a4-98ee-b2cca1e72484.jpg",
+    "alt": "Press | Beyond The Vines X Morning: Brew Your Perfect Cuppa At Home With This New Coffee Maker",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://www.herworld.com/gallery/life/tech/beyond-the-vines-morning-collaboration/",
+    "publication": "herworld.com"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/beyond-the-vines-x-morning-brew-your-perfect-cuppa-at-home-with-this-new-coffee-maker"
+  },
+  {
+   "slug": "why-beyond-the-vines-is-so-big-on-functionality",
+   "category": "media-stories",
+   "title": "Press | Why Beyond The Vines Is So Big On Functionality",
+   "documentTitle": "Press | Why Beyond The Vines Is So Big On Functionality – Beyond The Vines Indonesia",
+   "date": "2021-08-10",
+   "dateLabel": "10.08.2021",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/08-Why-Beyond-The-Vines-Is-So-Big-On-Functionality.jpg",
+    "alt": "Press | Why Beyond The Vines Is So Big On Functionality",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://www.herworld.com/gallery/fashion/shopping/beyond-the-vines-interview-functionality/",
+    "publication": "herworld.com"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/why-beyond-the-vines-is-so-big-on-functionality"
+  },
+  {
+   "slug": "unsung-spore-icons-dumpling-bag-from-beyond-the-vines-goes-places",
+   "category": "media-stories",
+   "title": "Press | Unsung S'pore Icons: Dumpling Bag from Beyond The Vines goes places",
+   "documentTitle": "Press | Unsung S'pore Icons: Dumpling Bag from Beyond The Vines goes p – Beyond The Vines Indonesia",
+   "date": "2021-08-07",
+   "dateLabel": "07.08.2021",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/09-Unsung-S_pore-Icons--Dumpling-Bag-from-Beyond-The-Vines-goes-places_35355732-057a-47f3-9258-866b56cf7e12.jpg",
+    "alt": "Press | Unsung S'pore Icons: Dumpling Bag from Beyond The Vines goes places",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://www.straitstimes.com/life/unsung-spore-icons-dumpling-bag-from-beyond-the-vines-goes-places",
+    "publication": "straitstimes.com"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/unsung-spore-icons-dumpling-bag-from-beyond-the-vines-goes-places"
+  },
+  {
+   "slug": "mensfoliomeets-the-creator-behind-the-iconic-beyond-the-vines-dumpling-bag",
+   "category": "media-stories",
+   "title": "Press | #MensFolioMeets The Creator Behind the Iconic Beyond the Vines Dumpling Bag",
+   "documentTitle": "Press | #MensFolioMeets The Creator Behind the Iconic Beyond the Vines – Beyond The Vines Indonesia",
+   "date": "2021-06-02",
+   "dateLabel": "02.06.2021",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/10-_MensFolioMeets-The-Creator-Behind-the-Iconic-Beyond-the-Vines-Dumpling-Bag_6edbb6c0-268a-42d2-b16c-ca2ca78b25d6.jpg",
+    "alt": "Press | #MensFolioMeets The Creator Behind the Iconic Beyond the Vines Dumpling Bag",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://www.mens-folio.com/88627/mensfoliomeets-the-creator-behind-the-iconic-beyond-the-vines-dumpling-bag/",
+    "publication": "mens-folio.com"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/mensfoliomeets-the-creator-behind-the-iconic-beyond-the-vines-dumpling-bag"
+  },
+  {
+   "slug": "fashionable-masks-may-look-good-but-how-can-you-tell-if-they-protect-against-covid-19",
+   "category": "media-stories",
+   "title": "Press | Fashionable masks may look good - but how can you tell if they protect against COVID-19?",
+   "documentTitle": "Press | Fashionable masks may look good - but how can you tell if they – Beyond The Vines Indonesia",
+   "date": "2021-05-25",
+   "dateLabel": "25.05.2021",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/11-Fashionable-masks-may-look-good---but-how-can-you-tell-if-they-protect-against-COVID-19_99609071-4f25-4a60-bea5-daf5795e4db0.jpg",
+    "alt": "Press | Fashionable masks may look good - but how can you tell if they protect against COVID-19?",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://cnalifestyle.channelnewsasia.com/wellness/covid-19-what-reusable-mask-can-i-wear-new-mask-guidelines-moh-14881400",
+    "publication": "cnalifestyle.channelnewsasia.com"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/fashionable-masks-may-look-good-but-how-can-you-tell-if-they-protect-against-covid-19"
+  },
+  {
+   "slug": "beyond-the-vines-newest-store-is-inspired-by-a-post-office",
+   "category": "media-stories",
+   "title": "Press | Beyond The Vines’ Newest Store Is Inspired By A Post Office",
+   "documentTitle": "Press | Beyond The Vines’ Newest Store Is Inspired By A Post Office – Beyond The Vines Indonesia",
+   "date": "2021-05-16",
+   "dateLabel": "16.05.2021",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/12-Beyond-The-Vines_-Newest-Store-Is-Inspired-By-A-Post-Office_9d3048ef-48ba-42ec-be54-381a5530dc0c.jpg",
+    "alt": "Press | Beyond The Vines’ Newest Store Is Inspired By A Post Office",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://www.femalemag.com.sg/gallery/fashion/beyond-the-vines-ion-orchard-store-btv-design-post-office/",
+    "publication": "femalemag.com.sg"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/beyond-the-vines-newest-store-is-inspired-by-a-post-office"
+  },
+  {
+   "slug": "stylish-threads-to-dress-your-best-shop-new-arrivals-from-local-and-international-labels",
+   "category": "media-stories",
+   "title": "Press | Stylish threads to dress your best: Shop new arrivals from local and international labels",
+   "documentTitle": "Press | Stylish threads to dress your best: Shop new arrivals from loc – Beyond The Vines Indonesia",
+   "date": "2021-05-12",
+   "dateLabel": "12.05.2021",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/01-Stylish-threads-to-dress-your-best--Shop-new-arrivals-from-local-and-international-labels_b5255d90-7a9a-4950-90e5-32fb67121abc.jpg",
+    "alt": "Press | Stylish threads to dress your best: Shop new arrivals from local and international labels",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://thehoneycombers.com/singapore/shop-new-arrivals-fashion-collections-singapore/",
+    "publication": "thehoneycombers.com"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/stylish-threads-to-dress-your-best-shop-new-arrivals-from-local-and-international-labels"
+  },
+  {
+   "slug": "beyond-the-vines-ion-orchard-s-new-outlet-rethinks-the-store-of-the-future",
+   "category": "media-stories",
+   "title": "Press | Beyond The Vines ION Orchard’s new outlet rethinks the store of the future",
+   "documentTitle": "Press | Beyond The Vines ION Orchard’s new outlet rethinks the store o – Beyond The Vines Indonesia",
+   "date": "2021-05-11",
+   "dateLabel": "11.05.2021",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/03-Beyond-The-Vines-ION-Orchard_s-new-outlet-rethinks-the-store-of-the-future_89c2e536-f115-47c8-a199-a449e10a5d7e.jpg",
+    "alt": "Press | Beyond The Vines ION Orchard’s new outlet rethinks the store of the future",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://singaporenewslive.com/beyond-the-vines-ion-orchards-new-outlet-rethinks-the-store-of-the-future/202325/",
+    "publication": "singaporenewslive.com"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/beyond-the-vines-ion-orchard-s-new-outlet-rethinks-the-store-of-the-future"
+  },
+  {
+   "slug": "beyond-the-vines-design-post",
+   "category": "media-stories",
+   "title": "Press | Beyond The Vines Design Post",
+   "documentTitle": "Press | Beyond The Vines Design Post – Beyond The Vines Indonesia",
+   "date": "2021-05-11",
+   "dateLabel": "11.05.2021",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/02-Beyond-The-Vines-Design-Post.jpg",
+    "alt": "Press | Beyond The Vines Design Post",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://www.timeout.com/singapore/shopping/beyond-the-vines-design-post",
+    "publication": "timeout.com"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/beyond-the-vines-design-post"
+  },
+  {
+   "slug": "beyond-the-vines-aims-to-put-singapore-designs-on-the-world-map",
+   "category": "media-stories",
+   "title": "Press | Beyond The Vines Aims To Put Singapore Designs On The World Map",
+   "documentTitle": "Press | Beyond The Vines Aims To Put Singapore Designs On The World Ma – Beyond The Vines Indonesia",
+   "date": "2021-02-26",
+   "dateLabel": "26.02.2021",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/04-Beyond-The-Vines-Aims-To-Put-Singapore-Designs-On-The-World-Map_28077540-14c1-41ac-aa44-c82969ff7792.jpg",
+    "alt": "Press | Beyond The Vines Aims To Put Singapore Designs On The World Map",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://www.harpersbazaar.com.sg/video/beyond-the-vines-aims-to-put-singapore-designs-on-the-world-map/?fbclid=IwAR2H8965c83vU7NUF3URDZ7wrQjQ3pNo-VYZRf6XM3rIRvd-fMvSXmtvAYQ",
+    "publication": "harpersbazaar.com.sg"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/beyond-the-vines-aims-to-put-singapore-designs-on-the-world-map"
+  },
+  {
+   "slug": "in-the-moo-d-for-love",
+   "category": "media-stories",
+   "title": "Press | In the moo-d for love",
+   "documentTitle": "Press | In the moo-d for love – Beyond The Vines Indonesia",
+   "date": "2021-02-05",
+   "dateLabel": "05.02.2021",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/05-In-the-moo-d-for-love_6bbab04d-0f73-4af6-9f7a-feec16a08e7c.jpg",
+    "alt": "Press | In the moo-d for love",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://www.straitstimes.com/life/style/in-the-moo-d-for-love",
+    "publication": "straitstimes.com"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/in-the-moo-d-for-love"
+  },
+  {
+   "slug": "beyond-the-vines-pause-reset-and-renew",
+   "category": "media-stories",
+   "title": "Press | Beyond The Vines: Pause, Reset, and Renew",
+   "documentTitle": "Press | Beyond The Vines: Pause, Reset, and Renew – Beyond The Vines Indonesia",
+   "date": "2020-12-07",
+   "dateLabel": "07.12.2020",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/06-Beyond-The-Vines--Pause_-Reset_-and-Renew_d41c6a56-3d74-4417-8e9b-15cc9125391a.jpg",
+    "alt": "Press | Beyond The Vines: Pause, Reset, and Renew",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://www.esquiresg.com/features/beyond-the-vines-design-store-interview-rebecca-ting-menswear-ngee-ann-city-singapore/",
+    "publication": "esquiresg.com"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/beyond-the-vines-pause-reset-and-renew"
+  },
+  {
+   "slug": "could-this-design-store-at-orchard-road-become-singapore-s-answer-to-muji",
+   "category": "media-stories",
+   "title": "Press | Could This Design Store At Orchard Road Become Singapore’s Answer To Muji?",
+   "documentTitle": "Press | Could This Design Store At Orchard Road Become Singapore’s Ans – Beyond The Vines Indonesia",
+   "date": "2020-11-22",
+   "dateLabel": "22.11.2020",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/07-Could-This-Design-Store-At-Orchard-Road-Become-Singapore_s-Answer-To-Muji_8eaa8015-e0ba-4c28-bc95-84bba16c6fa9.jpg",
+    "alt": "Press | Could This Design Store At Orchard Road Become Singapore’s Answer To Muji?",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://cnalifestyle.channelnewsasia.com/style/husband-wife-design-duo-beyond-the-vines-singapore-muji-13568614",
+    "publication": "cnalifestyle.channelnewsasia.com"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/could-this-design-store-at-orchard-road-become-singapore-s-answer-to-muji"
+  },
+  {
+   "slug": "power-couple-behind-beyond-the-vines-shares-why-they-re-rebranding-the-label",
+   "category": "media-stories",
+   "title": "Press | Power Couple Behind Beyond The Vines Shares Why They’re Rebranding The Label",
+   "documentTitle": "Press | Power Couple Behind Beyond The Vines Shares Why They’re Rebran – Beyond The Vines Indonesia",
+   "date": "2020-11-09",
+   "dateLabel": "09.11.2020",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/08-Power-Couple-Behind-Beyond-The-Vines-Shares-Why-They_re-Rebranding-The-Label_947d6e9a-e3e2-466a-affc-99a575b8704f.jpg",
+    "alt": "Press | Power Couple Behind Beyond The Vines Shares Why They’re Rebranding The Label",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://www.femalemag.com.sg/gallery/fashion/design-power-couple-beyond-the-vines-label-store-rebranding/",
+    "publication": "femalemag.com.sg"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/power-couple-behind-beyond-the-vines-shares-why-they-re-rebranding-the-label"
+  },
+  {
+   "slug": "beyond-the-vines-daniel-chew-and-rebecca-ting-remove-what-isn-t-necessary-so-that-what-is-lasting-will-remain",
+   "category": "media-stories",
+   "title": "Press | Beyond The Vines’ Daniel Chew And Rebecca Ting: “Remove What Isn’t Necessary So That What Is Lasting Will Remain”",
+   "documentTitle": "Press | Beyond The Vines’ Daniel Chew And Rebecca Ting: “Remove What I – Beyond The Vines Indonesia",
+   "date": "2020-11-04",
+   "dateLabel": "04.11.2020",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/09-Beyond-The-Vines_-Daniel-Chew-And-Rebecca-Ting--_Remove-What-Isn_t-Necessary-So-That-What-Is-Lasting-Will-Remain.jpg",
+    "alt": "Press | Beyond The Vines’ Daniel Chew And Rebecca Ting: “Remove What Isn’t Necessary So That What Is Lasting Will Remain”",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://read-a.com/in-plain-sights-daniel-chew-and-rebecca-ting-remove-what-isnt-necessary-so-that-what-is-lasting-will-remain/",
+    "publication": "read-a.com"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/beyond-the-vines-daniel-chew-and-rebecca-ting-remove-what-isn-t-necessary-so-that-what-is-lasting-will-remain"
+  },
+  {
+   "slug": "beyond-the-vines-co-founder-rebecca-ting-shares-her-go-to-looks",
+   "category": "media-stories",
+   "title": "Press | Beyond The Vines’ Co-Founder Rebecca Ting Shares Her Go-To Looks",
+   "documentTitle": "Press | Beyond The Vines’ Co-Founder Rebecca Ting Shares Her Go-To Loo – Beyond The Vines Indonesia",
+   "date": "2020-11-03",
+   "dateLabel": "03.11.2020",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/10-Beyond-The-Vines_-Co-Founder-Rebecca-Ting-Shares-Her-Go-To-Looks_191c15da-2264-4165-b45e-6ed67484e2db.jpg",
+    "alt": "Press | Beyond The Vines’ Co-Founder Rebecca Ting Shares Her Go-To Looks",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://www.herworld.com/gallery/fashion/style-file/beyond-the-vines-rebecca-ting-interview/",
+    "publication": "herworld.com"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/beyond-the-vines-co-founder-rebecca-ting-shares-her-go-to-looks"
+  },
+  {
+   "slug": "beyond-the-vines-founders-tell-us-about-their-new-design-studio-concept-and-minimalist-functional-wear",
+   "category": "media-stories",
+   "title": "Press | Beyond The Vines’ Founders Tell Us About Their New Design Studio Concept And Minimalist, Functional Wear",
+   "documentTitle": "Press | Beyond The Vines’ Founders Tell Us About Their New Design Stud – Beyond The Vines Indonesia",
+   "date": "2020-11-02",
+   "dateLabel": "02.11.2020",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/11-Beyond-The-Vines_-Founders-Tell-Us-About-Their-New-Design-Studio-Concept-And-Minimalist_-Functional-Wear_0f15a326-256d-4f51-a058-40dd85282c19.jpg",
+    "alt": "Press | Beyond The Vines’ Founders Tell Us About Their New Design Studio Concept And Minimalist, Functional Wear",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://www.nylon.com.sg/2020/11/beyond-the-vines-founders-tell-us-about-their-new-design-studio-concept/",
+    "publication": "nylon.com.sg"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/beyond-the-vines-founders-tell-us-about-their-new-design-studio-concept-and-minimalist-functional-wear"
+  },
+  {
+   "slug": "did-beyond-the-vines-just-open-singapore-s-coolest-lifestyle-store",
+   "category": "media-stories",
+   "title": "Press | Did Beyond The Vines Just Open Singapore’s Coolest Lifestyle Store?",
+   "documentTitle": "Press | Did Beyond The Vines Just Open Singapore’s Coolest Lifestyle S – Beyond The Vines Indonesia",
+   "date": "2020-10-26",
+   "dateLabel": "26.10.2020",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/12-Did-Beyond-The-Vines-Just-Open-Singapore_s-Coolest-Lifestyle-Store_8a16ab53-798d-4d54-a696-14684bc2c1d1.jpg",
+    "alt": "Press | Did Beyond The Vines Just Open Singapore’s Coolest Lifestyle Store?",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://www.femalemag.com.sg/gallery/fashion/beyond-the-vines-design-store-new-concept-lifestyle/",
+    "publication": "femalemag.com.sg"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/did-beyond-the-vines-just-open-singapore-s-coolest-lifestyle-store"
+  },
+  {
+   "slug": "beyond-the-vines-rebrands-into-a-full-fledged-design-studio-with-a-permanent-menswear-collection-and-lifestyle-products",
+   "category": "media-stories",
+   "title": "Press | Beyond The Vines Rebrands Into A Full-fledged Design Studio With A Permanent Menswear Collection And Lifestyle Products",
+   "documentTitle": "Press | Beyond The Vines Rebrands Into A Full-fledged Design Studio Wi – Beyond The Vines Indonesia",
+   "date": "2020-10-22",
+   "dateLabel": "22.10.2020",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/01-Beyond-The-Vines-Rebrands-Into-A-Full-fledged-Design-Studio-With-A-Permanent-Menswear-Collection-And-Lifestyle-Products_97e05894-ece5-402f-b0fa-abb6fc712d7b.jpg",
+    "alt": "Press | Beyond The Vines Rebrands Into A Full-fledged Design Studio With A Permanent Menswear Collection And Lifestyle Products",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://www.buro247.sg/lifestyle/buro-loves/beyond-the-vines-rebrands-into-full-fledged-design-studio-with-permanent-menswear-collection-and-lifestyle-products.html?gallery=10503&slide=0",
+    "publication": "buro247.sg"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/beyond-the-vines-rebrands-into-a-full-fledged-design-studio-with-a-permanent-menswear-collection-and-lifestyle-products"
+  },
+  {
+   "slug": "beyond-the-vines-new-lifestyle-store-looks-a-ma-zing",
+   "category": "media-stories",
+   "title": "Press | Beyond The Vines’ New Lifestyle Store Looks A-Ma-Zing",
+   "documentTitle": "Press | Beyond The Vines’ New Lifestyle Store Looks A-Ma-Zing – Beyond The Vines Indonesia",
+   "date": "2020-10-21",
+   "dateLabel": "21.10.2020",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/02-Beyond-The-Vines_-New-Lifestyle-Store-Looks-A-Ma-Zing_b95ea1cf-e1c5-4887-a8f2-020d00184d23.jpg",
+    "alt": "Press | Beyond The Vines’ New Lifestyle Store Looks A-Ma-Zing",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://www.herworld.com/gallery/fashion/trends-and-tips/beyond-vines-lifestyle-store-singapore/",
+    "publication": "herworld.com"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/beyond-the-vines-new-lifestyle-store-looks-a-ma-zing"
+  },
+  {
+   "slug": "vogue-homegrown-label-beyond-the-vines-brings-its-signature-minimalist-style-to-a-new-design-studio",
+   "category": "media-stories",
+   "title": "Press | Homegrown Label Beyond The Vines Brings Its Signature Minimalist Style To A New Design Studio",
+   "documentTitle": "Press | Homegrown Label Beyond The Vines Brings Its Signature Minimali – Beyond The Vines Indonesia",
+   "date": "2020-10-16",
+   "dateLabel": "16.10.2020",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/04-Homegrown-Label-Beyond-The-Vines-Brings-Its-Signature-Minimalist-Style-To-A-New-Design-Studio_54869826-0d75-4066-8780-bd36ec680c2f.jpg",
+    "alt": "Press | Homegrown Label Beyond The Vines Brings Its Signature Minimalist Style To A New Design Studio",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://vogue.sg/beyond-the-vines-design-studio-takashimaya/",
+    "publication": "vogue.sg"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/vogue-homegrown-label-beyond-the-vines-brings-its-signature-minimalist-style-to-a-new-design-studio"
+  },
+  {
+   "slug": "singapore-label-beyond-the-vines-new-retail-store-will-blow-your-mind",
+   "category": "media-stories",
+   "title": "Press | Singapore Label Beyond The Vines’ New Retail Store Will Blow Your Mind",
+   "documentTitle": "Press | Singapore Label Beyond The Vines’ New Retail Store Will Blow Y – Beyond The Vines Indonesia",
+   "date": "2020-10-16",
+   "dateLabel": "16.10.2020",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/03-Singapore-Label-Beyond-The-Vines_-New-Retail-Store-Will-Blow-Your-Mind_4518d2ae-20f0-4924-8163-9ca7ddd42880.jpg",
+    "alt": "Press | Singapore Label Beyond The Vines’ New Retail Store Will Blow Your Mind",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://www.harpersbazaar.com.sg/fashion/beyond-the-vines-new-design-store/",
+    "publication": "harpersbazaar.com.sg"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/singapore-label-beyond-the-vines-new-retail-store-will-blow-your-mind"
+  },
+  {
+   "slug": "beyond-the-vines-design-store",
+   "category": "media-stories",
+   "title": "Press | Beyond The Vines Design Store",
+   "documentTitle": "Press | Beyond The Vines Design Store – Beyond The Vines Indonesia",
+   "date": "2020-10-15",
+   "dateLabel": "15.10.2020",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/05-Beyond-The-Vines-Design-Store_f0322978-7d92-4bb1-a0de-23df7a75006e.jpg",
+    "alt": "Press | Beyond The Vines Design Store",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://www.timeout.com/singapore/shopping/beyond-the-vines-design-store",
+    "publication": "timeout.com"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/beyond-the-vines-design-store"
+  },
+  {
+   "slug": "singapore-s-cult-fave-dumpling-bag-is-now-at-shangri-la-plaza",
+   "category": "media-stories",
+   "title": "Press | Singapore’s cult-fave Dumpling Bag is now at Shangri-La Plaza",
+   "documentTitle": "Press | Singapore’s cult-fave Dumpling Bag is now at Shangri-La Plaza – Beyond The Vines Indonesia",
+   "date": "2020-10-05",
+   "dateLabel": "05.10.2020",
+   "description": null,
+   "hero": {
+    "src": "/assets/source/blogs/07-Singapore_s-cult-fave-Dumpling-Bag-is-now-at-Shangri-La-Plaza_0d83255c-3df9-40af-ad03-bafe6955eee1.jpg",
+    "alt": "Press | Singapore’s cult-fave Dumpling Bag is now at Shangri-La Plaza",
+    "width": 990,
+    "height": 660
+   },
+   "source": {
+    "url": "https://www.clickthecity.com/shops-services/article/105873/singapores-cult-fave-dumpling-bag-is-now-at-shangri-la-plaza/",
+    "publication": "clickthecity.com"
+   },
+   "hasBody": false,
+   "sourceUrl": "https://beyondthevines.co.id/blogs/media-stories/singapore-s-cult-fave-dumpling-bag-is-now-at-shangri-la-plaza"
+  }
+ ]
+}

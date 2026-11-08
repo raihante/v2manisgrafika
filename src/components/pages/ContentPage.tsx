@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element -- static export (images.unoptimized); plain <img>/<picture> with local assets */
-// Content-block page template (about-us, policy pages; later the Shogun articles). OWN DESIGN, NOT SOURCE-FAITHFUL:
+// Content-block page template (about-us, policy pages; Block is reused by the blog article template). OWN DESIGN, NOT SOURCE-FAITHFUL:
 // layout and spacing are project decisions styled with source tokens (Everett / Recoleta, page accent colours,
 // source copy and images). Verified by owner screenshot review, not by the source benchmark (AGENTS.md).
 import type { CSSProperties } from "react";
@@ -18,7 +18,7 @@ function Picture({ image, mobile, className }: { image: ContentImage; mobile?: C
   );
 }
 
-function Block({ block }: { block: ContentBlock }) {
+export function Block({ block }: { block: ContentBlock }) {
   switch (block.type) {
     case "heading":
       return <h2 className={`content-block content-heading content-heading--${block.align}`}>{block.html}</h2>;

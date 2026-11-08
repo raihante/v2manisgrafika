@@ -37,3 +37,6 @@ public/assets/source/pages/CONTCT-US-NEW_1600x500_crop_center.gif
 # `node scripts/build-content-pages.mjs && node scripts/download-collection-assets.mjs _content && node scripts/build-content-pages.mjs`.
 public/assets/source/pages/shogun/1ff6c171-7984-4985-8ed0-c64a9dcf35d0.gif
 public/assets/source/pages/shogun/7d7651a5-efaf-46b9-971a-de1d5e1093c4.gif
+# Reference article cover at 1200w (3.3 MB). Reproducible with
+# `node scripts/build-blog-data.mjs && node scripts/download-collection-assets.mjs _blogs && node scripts/build-blog-data.mjs`.
+public/assets/source/blogs/2026_10_Pocket_Mirror_GWP_Promo_Page_IMAGE_COVER.webp

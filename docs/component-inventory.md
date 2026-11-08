@@ -34,3 +34,15 @@ Template for the Shogun page-builder routes (AGENTS.md "CMS-template scope reduc
 | `callout` | `title`, `html` | Large figure + Recoleta label on the accent | Rows whose first column holds a >= 80px figure |
 
 Responsive tier: one breakpoint at 767px (source Shogun breakpoint for these pages). Desktop-only / mobile-only duplicate copy on the source is collapsed to the desktop copy; hidden-on-both source content (returns second option card) is not mapped.
+
+## Blog portal and article template (round 259, own design, not source-faithful)
+
+Owner decisions 2026-11-06 (/blogs grilling; AGENTS.md "Final build scope"): one article template for every article, flat URLs. Code: `src/components/blogs/{BlogPortal,ArticleCard,ArticlePage}.tsx`, routes `src/app/blogs/page.tsx` + `src/app/blogs/[slug]/page.tsx` (`dynamicParams = false`), styles `src/app/blogs/blogs.css` (+ shared `content-page.css`), repository `src/lib/blogs/repository.ts`, fixtures `src/data/blogs/{blogs,bodies}.json` from `scripts/build-blog-data.mjs`. Status: **approximate / not visually verified** (owner screenshot review pending).
+
+| Component | Props / state | Behaviour |
+|---|---|---|
+| `BlogPortal` / `BlogPortalView` | `?category=`, `?page=` (client, static export; prerender = All page 1) | Breadcrumb, title ("Blogs" or category title) + optional description, category chips (All + 7, active = `aria-current`), count, 12-card grid, empty state with "View all articles", numbered pagination with Prev/Next. Unknown category -> All; page clamped (out of range -> last page) |
+| `ArticleCard` | `article`, `category` (label shown on All and related) | Hero 3:2 cover (hover scale 1.03), category + date (dd.mm.yyyy), title clamped to 2 lines (19.2px), excerpt (owner articles only, 2 lines), "Read more" + source arrow |
+| `ArticlePage` | `article` | Breadcrumb Home / Blogs / Category / Title; meta (category link + date); pink title; media-stories "Featured in <host>"; hero; content blocks (`Block` from `ContentPage.tsx`, accent = blog pink); placeholder notice for articles without a stored body; media-stories "Read the full story" (external, new tab, `noopener noreferrer`); 3 related cards (same category first) + "Back to <Category>" |
+
+Breakpoints follow the source theme (1024: 2 columns, 798: 1 column and mobile type scale). Hover/focus states are project decisions.

@@ -1,0 +1,83 @@
+{
+ "a-little-love-for-your-carryall": [
+  {
+   "type": "richText",
+   "variant": "lead",
+   "html": "<p>Heart Pocket Mirror, On Us!</p>"
+  },
+  {
+   "type": "image",
+   "image": {
+    "src": "/assets/source/blogs/c643dd67-51ef-489f-9587-a96878dc810e.webp",
+    "alt": "A Little Love For Your Carryall",
+    "width": 2250,
+    "height": 1221
+   }
+  },
+  {
+   "type": "heading",
+   "html": "A Little Love For Your Carryall",
+   "align": "left"
+  },
+  {
+   "type": "richText",
+   "variant": "body",
+   "html": "<p>Add a little love to your everyday carry with our Heart Pocket Mirror!</p><p>Purchase any Crunch Carryall 0.5 and receive a complimentary Heart Pocket Mirror, automatically added to your cart. Each mirror comes in a randomly selected colour, adding a little surprise to your everyday essentials.</p><p>Available from 2-12 November, while stocks last!</p>"
+  },
+  {
+   "type": "richText",
+   "variant": "body",
+   "html": "<p><strong>Terms &amp; Conditions:</strong></p>"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "Receive one complimentary Heart Pocket Mirror with the purchase of any Crunch Carryall 0.5.",
+    "Valid for online purchases in Indonesia made on beyondthevines.co.id, from 2-12 November.",
+    "The Heart Pocket Mirror will be automatically added to your cart.",
+    "Pocket Mirror colours will be randomly selected.",
+    "Limited to one complimentary Heart Pocket Mirror per qualifying transactions.",
+    "Redemption is subject to availability and while stocks last.",
+    "The complimentary Heart Pocket Mirror cannot be exchanged for cash, store credit or other products.",
+    "Beyond The Vines reserves the right to amend the terms of this promotion without prior notice."
+   ]
+  },
+  {
+   "type": "button",
+   "label": "Shop Crunch Carryall",
+   "href": "/products/crunch-carryall-0-5"
+  }
+ ],
+ "placeholder": [
+  {
+   "type": "richText",
+   "variant": "lead",
+   "html": "<p>Placeholder introduction. This article's content is not part of the local snapshot.</p>"
+  },
+  {
+   "type": "richText",
+   "variant": "body",
+   "html": "<p>This is placeholder text for the article body. The full story will be supplied by the CMS; until then every article shares this layout so the template can be reviewed with realistic spacing and line lengths.</p><p>This is placeholder text for the article body. The full story will be supplied by the CMS; until then every article shares this layout so the template can be reviewed with realistic spacing and line lengths.</p>"
+  },
+  {
+   "type": "image",
+   "image": {
+    "src": "https://dummyimage.com/1200x800/f2f2f2/8c8c8c.png&text=Article+image",
+    "alt": "",
+    "width": 1200,
+    "height": 800
+   }
+  },
+  {
+   "type": "heading",
+   "html": "Placeholder section title",
+   "align": "left"
+  },
+  {
+   "type": "richText",
+   "variant": "body",
+   "html": "<p>This is placeholder text for the article body. The full story will be supplied by the CMS; until then every article shares this layout so the template can be reviewed with realistic spacing and line lengths.</p><p>This is placeholder text for the article body. The full story will be supplied by the CMS; until then every article shares this layout so the template can be reviewed with realistic spacing and line lengths.</p>"
+  }
+ ]
+}

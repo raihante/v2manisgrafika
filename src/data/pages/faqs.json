@@ -599,7 +599,7 @@
      "question": "Where can I find your ongoing promotions/discounts?",
      "contentClass": "collapsible__content accordion__content rte jsc-collapsible__content",
      "contentId": "Accordion-collapsible_tab_7cCWcQ-template--22799925477655__collapsible_content_iYwkJH",
-     "answerHtml": "<p>You may find out more about our ongoing promotions <a href=\"/blogs/promotions\" title=\"Promotions\"><strong>here</strong></a>.</p><p>Please note that promotions and discount codes are not applicable on shipping fees.</p>"
+     "answerHtml": "<p>You may find out more about our ongoing promotions <a href=\"/blogs?category=promotions\" title=\"Promotions\"><strong>here</strong></a>.</p><p>Please note that promotions and discount codes are not applicable on shipping fees.</p>"
     },
     {
      "rowClass": "accordion jsc-accordion jsc-collapsible-row",

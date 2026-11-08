@@ -5,11 +5,11 @@
   "announcement": [
     {
       "text": "HEART POCKET MIRROR, ON US!  WITH ANY CRUNCH CARRYALL 0.5 PURCHASE",
-      "href": "/blogs/promotions/a-little-love-for-your-carryall"
+      "href": "/blogs/a-little-love-for-your-carryall"
     },
     {
       "text": "RP100K OFF YOUR FIRST ORDER WHEN YOU JOIN THE VINE CLUB*",
-      "href": "/blogs/promotions/beyond-the-vines-first-time-customer-promotion"
+      "href": "/blogs/beyond-the-vines-first-time-customer-promotion"
     },
     {
       "text": " FREE SHIPPING TO INDONESIA WITH MIN. SPEND, INCLUSIVE OF CUSTOM DUTIES & TAXES",
@@ -81,7 +81,7 @@
       "image": "/assets/optimized/4876ebb75e8a2b65-desktop.webp",
       "mobileImage": "/assets/optimized/818b86f16679fa1f-mobile.webp",
       "mobileSrcSet": "/assets/source/9d087838db4f5d92.webp 352w, /assets/source/9dec0b45edb75bfe.webp 832w, /assets/source/818b86f16679fa1f.webp 1200w, /assets/source/08c871aaf87041ef.webp 1920w, /assets/source/6aeec7f112514dbd.webp 2250w",
-      "href": "/blogs/promotions/a-little-love-for-your-carryall",
+      "href": "/blogs/a-little-love-for-your-carryall",
       "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/2026_10_Pocket_Mirror_GWP_Desktop_Bottom.webp?v=1793588877"
     },
     {
@@ -1103,7 +1103,7 @@
     },
     {
       "text": "Promotions",
-      "href": "/blogs/promotions"
+      "href": "/blogs?category=promotions"
     },
     {
       "text": "Login",
@@ -1111,23 +1111,23 @@
     },
     {
       "text": "Events",
-      "href": "/blogs/events"
+      "href": "/blogs?category=events"
     },
     {
       "text": "Collaborations",
-      "href": "/blogs/collaborations/main"
+      "href": "/blogs?category=collaborations"
     },
     {
       "text": "The BTV Express",
-      "href": "/blogs/travelling-btv-express/main"
+      "href": "/blogs?category=travelling-btv-express"
     },
     {
       "text": "The BTV City Guide",
-      "href": "/blogs/btv-city-guide/main"
+      "href": "/blogs?category=btv-city-guide"
     },
     {
       "text": "Press",
-      "href": "/blogs/media-stories"
+      "href": "/blogs?category=media-stories"
     },
     {
       "text": "FAQs",
