@@ -7,9 +7,11 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { openCartDrawer } from "@/components/Overlays";
-import notifyIcon from "@/data/notify-icon.json";
+import { NOTIFY_ICON as notifyIcon } from "@/components/icons/source-icons";
+import { RichText } from "@/components/shared/RichText";
 import { localCart } from "@/lib/cart";
-import type { ProductCard, ProductDetail, ProductVariant } from "@/lib/product-details";
+import { fillSafeHtml } from "@/lib/html/safe-html";
+import type { ProductCard, ProductDetail, ProductVariant } from "@/lib/catalog/types";
 import { ArrowIcon, ErrorIcon, Spinner, TextButtonArrow, ZoomIcon } from "./pdp/icons";
 import PhotoSwipe from "./pdp/PhotoSwipe";
 import SourceProductCard, { WishlistButton } from "./pdp/SourceProductCard";
@@ -328,7 +330,7 @@ export default function ProductPage({ product }: { product: ProductDetail }) {
                       </div>
                       <div className="product-info-tabs__panels" ref={panelsRef} onClick={onPanelsClick}>
                         {product.tabs.map((t, i) => (
-                          <div key={t.key} className={`product-info-tabs__panel rte${i === tab ? " is-active" : ""}`} role="tabpanel" id={`Panel-${t.key}-${SECTION}`} aria-labelledby={`Tab-${t.key}-${SECTION}`} data-tab-panel={t.key} data-tab-heading={t.title} hidden={i !== tab} dangerouslySetInnerHTML={{ __html: t.panelHtml.replace("{{SKU}}", sku) }} />
+                          <RichText key={t.key} className={`product-info-tabs__panel rte${i === tab ? " is-active" : ""}`} role="tabpanel" id={`Panel-${t.key}-${SECTION}`} aria-labelledby={`Tab-${t.key}-${SECTION}`} data-tab-panel={t.key} data-tab-heading={t.title} hidden={i !== tab} html={fillSafeHtml(t.panelHtml, "{{SKU}}", sku)} />
                         ))}
                       </div>
                     </div>
@@ -409,7 +411,7 @@ export default function ProductPage({ product }: { product: ProductDetail }) {
                             </div>
                           </figure>
                           <h4 className="h6">{col.title}</h4>
-                          <div className="rte" dangerouslySetInnerHTML={{ __html: col.html }} />
+                          <RichText className="rte" html={col.html} />
                         </Link>
                         {col.button && <Link className="text-button" href={col.button.href}><span>{col.button.label}</span><TextButtonArrow /></Link>}
                       </div>

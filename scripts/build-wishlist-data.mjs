@@ -1,7 +1,7 @@
 // Build /pages/wishlist from the private live-DOM capture (run with plain `node scripts/build-wishlist-data.mjs`).
 // The source page is rendered by the Swym wishlist app on the client, so the input is the captured live DOM
 // reference/dom/wishlist/main-0-1920.html (r257-capture-page.mjs, logged out, empty wishlist, 2026-11-06), not server HTML.
-// Output: src/data/pages/wishlist.json (typed via src/lib/pages/wishlist.ts). MOCK: logged-out empty state only.
+// Output: src/data/pages/wishlist.json (typed via src/lib/pages/types.ts). MOCK: logged-out empty state only.
 import { readFileSync, writeFileSync } from "node:fs";
 import { decode, text } from "./lib/product-cards.mjs";
 

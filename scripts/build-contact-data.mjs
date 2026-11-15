@@ -2,7 +2,7 @@
 // Inputs: reference/data/pages/contact-us-main.html (server HTML, read-only GET 2026-11-06) and the form iframe capture
 // reference/dom/r257d-contact/frame-{markup.html,used-rules.css} (reference/scripts/r257d-frame-capture.mjs).
 // Outputs:
-//   src/data/pages/contact-us.json             page sections (typed via src/lib/pages/contact.ts)
+//   src/data/pages/contact-us.json             page sections (typed via src/lib/pages/types.ts)
 //   public/mock/contact-form.html              MOCK of the third-party form (Hulk Form Builder) the source loads in an
 //                                              iframe: source markup + the CSS rules it uses + a local script that
 //                                              validates, shows the source success alert and sends NOTHING anywhere

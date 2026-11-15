@@ -1,8 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import { formatPrice, type Collection, type Product } from "@/lib/catalog";
+import { formatPrice } from "@/lib/catalog/format";
+import type { PreviewCollection, ProductSummary } from "@/lib/catalog/types";
 
-export function ProductTile({ product }: { product: Product }) {
+export function ProductTile({ product }: { product: ProductSummary }) {
   return (
     <article className="cm-tile">
       <Link href={`/products/${product.handle}`} className="cm-tile-image">
@@ -17,7 +18,7 @@ export function ProductTile({ product }: { product: Product }) {
   );
 }
 
-export default function CollectionGrid({ collection }: { collection: Collection }) {
+export default function CollectionGrid({ collection }: { collection: PreviewCollection }) {
   return (
     <section className="cm-page cm-collection">
       <nav className="cm-breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><span>{collection.title}</span></nav>

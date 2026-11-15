@@ -17,7 +17,7 @@ Component details, variants, and breakpoint behavior remain pending deeper DOM/C
 
 ## Content blocks (round 258, own design, not source-faithful)
 
-Template for the Shogun page-builder routes (AGENTS.md "CMS-template scope reduction"): `/pages/about-us`, `/pages/terms-of-service`, `/pages/privacy-policy`, `/pages/returns`, `/pages/shipping-rate`; later the 21 Shogun articles. Code: `src/components/pages/ContentPage.tsx`, `src/app/pages/[slug]/{page.tsx,content-page.css}`, repository `src/lib/pages/content.ts` (`ContentPageData`, `ContentBlock`), fixtures `src/data/pages/content/<slug>.json` from `scripts/build-content-pages.mjs`. Status: **approximate / not visually verified** (owner screenshot review pending).
+Template for the Shogun page-builder routes (AGENTS.md "CMS-template scope reduction"): `/pages/about-us`, `/pages/terms-of-service`, `/pages/privacy-policy`, `/pages/returns`, `/pages/shipping-rate`; later the 21 Shogun articles. Code: `src/components/pages/ContentPage.tsx`, `src/app/pages/[slug]/{page.tsx,content-page.css}`, repository `src/lib/pages/{types,fixture}.ts` (`ContentPageData`, `ContentBlock`), fixtures `src/data/pages/content/<slug>.json` from `scripts/build-content-pages.mjs`. Status: **approximate / not visually verified** (owner screenshot review pending).
 
 | Block | Props | Rendering | Source mapping (builder) |
 |---|---|---|---|
@@ -37,7 +37,7 @@ Responsive tier: one breakpoint at 767px (source Shogun breakpoint for these pag
 
 ## Blog portal and article template (round 259, own design, not source-faithful)
 
-Owner decisions 2026-11-06 (/blogs grilling; AGENTS.md "Final build scope"): one article template for every article, flat URLs. Code: `src/components/blogs/{BlogPortal,ArticleCard,ArticlePage}.tsx`, routes `src/app/blogs/page.tsx` + `src/app/blogs/[slug]/page.tsx` (`dynamicParams = false`), styles `src/app/blogs/blogs.css` (+ shared `content-page.css`), repository `src/lib/blogs/repository.ts`, fixtures `src/data/blogs/{blogs,bodies}.json` from `scripts/build-blog-data.mjs`. Status: **approximate / not visually verified** (owner screenshot review pending).
+Owner decisions 2026-11-06 (/blogs grilling; AGENTS.md "Final build scope"): one article template for every article, flat URLs. Code: `src/components/blogs/{BlogPortal,ArticleCard,ArticlePage}.tsx`, routes `src/app/blogs/page.tsx` + `src/app/blogs/[slug]/page.tsx` (`dynamicParams = false`), styles `src/app/blogs/blogs.css` (+ shared `content-page.css`), repository `src/lib/blogs/{types,query,fixture}.ts`, fixtures `src/data/blogs/{blogs,bodies}.json` from `scripts/build-blog-data.mjs`. Status: **approximate / not visually verified** (owner screenshot review pending).
 
 | Component | Props / state | Behaviour |
 |---|---|---|
@@ -46,3 +46,19 @@ Owner decisions 2026-11-06 (/blogs grilling; AGENTS.md "Final build scope"): one
 | `ArticlePage` | `article` | Breadcrumb Home / Blogs / Category / Title; meta (category link + date); pink title; media-stories "Featured in <host>"; hero; content blocks (`Block` from `ContentPage.tsx`, accent = blog pink); placeholder notice for articles without a stored body; media-stories "Read the full story" (external, new tab, `noopener noreferrer`); 3 related cards (same category first) + "Back to <Category>" |
 
 Breakpoints follow the source theme (1024: 2 columns, 798: 1 column and mobile type scale). Hover/focus states are project decisions.
+
+## Data layer (round 261, Phase 1 before the custom backend)
+
+Components never read data themselves; routes (server components) read repositories and pass typed props.
+
+| Piece | Path | Notes |
+|---|---|---|
+| Composition root | `src/lib/data.ts` | `repositories.{catalog,collections,storefront,pages,blogs,search}`; server only. The backend phase swaps each fixture adapter for a MySQL adapter here. |
+| Contracts (async) | `src/lib/{catalog,collections,storefront,pages,blogs,search}/types.ts` | `CatalogRepository`, `CollectionRepository` (+ browser-side `CollectionDataSource`), `StorefrontRepository`, `PageRepository`, `BlogRepository`, `SearchRepository`; cart: `CartService` in `src/lib/cart.ts` (still sync, localStorage MOCK). |
+| Fixture adapters | `src/lib/*/fixture.ts` | The only modules (with `src/lib/collections/client.ts`) that import `src/data/`; marked `server-only`. |
+| Product model | `src/lib/catalog/types.ts` | One domain `Product` (options with every used value, variants with `visible` for archived colours, integer IDR prices, images by colour). View models derived from it: `ProductSummary`, `RailCard`, `ProductDetail`, `ProductCard`, `PreviewCollection`. |
+| Pure helpers | `src/lib/blogs/query.ts`, `src/lib/collections/query.ts`, `src/lib/search/query.ts`, `src/lib/catalog/format.ts` | Client-safe, no data access. |
+| Shell context | `src/components/shell/{SiteChrome,SiteChromeView,StorefrontContext}.tsx` | `SiteChrome` (server) loads `ChromeData` and provides it; client shell parts use `useChrome()` / `useShell()`. `NewsletterSection` is re-exported from `SiteChrome.tsx`. |
+| Rich text | `src/lib/html/{sanitize,safe-html}.ts`, `src/components/shared/RichText.tsx` | Adapters sanitize every HTML field (allowlist from the 2026-11-06 fixtures); components accept only the branded `SafeHtml`/`SafeSvg`. `dangerouslySetInnerHTML` remains only in `RichText`, `SourceSvg` and the escaped promo `<template>` in `CollectionPage.tsx` (guarded by `tests/unit/architecture.test.ts`). |
+| Theme icons | `src/components/icons/source-icons.ts` | Notify bell and wishlist heart geometry (moved out of `src/data/`, they are theme code). |
+| Tests | `tests/unit/` (`npm test`, Vitest) | Repository contract suite (reusable for the MySQL adapters), sanitizer, blog/collection/search query, cart, architecture guards. |

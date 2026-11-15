@@ -1,7 +1,8 @@
 "use client";
 import Link from "next/link";
 import { useSyncExternalStore } from "react";
-import { formatPrice } from "@/lib/catalog";
+import { formatPrice } from "@/lib/catalog/format";
+import type { CheckoutBranding } from "@/lib/storefront/types";
 import { CheckoutHeader } from "./CheckoutForm";
 import { ORDER_KEY, type MockOrder } from "./order";
 
@@ -14,13 +15,13 @@ const readOrder = () => {
 };
 const noSubscribe = () => () => {};
 
-export default function ThankYou() {
+export default function ThankYou({ branding }: { branding: CheckoutBranding }) {
   const raw = useSyncExternalStore(noSubscribe, readOrder, () => null);
   const order = raw ? (JSON.parse(raw) as MockOrder) : null;
 
   return (
     <div className="co-page">
-      <CheckoutHeader />
+      <CheckoutHeader logo={branding.logo} />
       <div className="co-thanks">
         {!order ? (
           <div className="co-empty"><p>No recent preview order found.</p><Link className="cm-button" href="/">Continue shopping</Link></div>

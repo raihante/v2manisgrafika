@@ -3,7 +3,7 @@
 // Input: reference/dom/r258-content/outline-<slug>.json (reference/scripts/r258-outline.mjs, read-only ego capture of the
 // Shogun page-builder DOM 2026-11-06: ordered text/image/box leaves with desktop/mobile visibility and typography).
 // Output:
-//   src/data/pages/content/<slug>.json   typed by src/lib/pages/content.ts (ContentPageData)
+//   src/data/pages/content/<slug>.json   typed by src/lib/pages/types.ts (ContentPageData)
 //   reference/data/collection-asset-plan-_content.json -> `node scripts/download-collection-assets.mjs _content`
 // Mapping rules (Shogun layout -> project blocks) are documented in docs/component-inventory.md "Content blocks".
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";

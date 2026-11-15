@@ -4,20 +4,21 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react";
-import { formatPrice, storefront } from "@/lib/catalog";
+import { formatPrice } from "@/lib/catalog/format";
+import type { CheckoutBranding } from "@/lib/storefront/types";
 import { useCart } from "@/lib/cart";
 import { ORDER_KEY, PROVINCES, SHIPPING_METHODS, type MockOrder } from "./order";
 
-export function CheckoutHeader() {
+export function CheckoutHeader({ logo }: { logo: string }) {
   return (
     <header className="co-header">
-      <Link href="/"><img src={storefront.logo} alt="Beyond The Vines" width={194} height={42} /></Link>
+      <Link href="/"><img src={logo} alt="Beyond The Vines" width={194} height={42} /></Link>
       <Link href="/cart" className="co-header-cart">Cart</Link>
     </header>
   );
 }
 
-export default function CheckoutForm() {
+export default function CheckoutForm({ branding }: { branding: CheckoutBranding }) {
   const router = useRouter();
   const { lines, subtotal, count, service } = useCart();
   const [shippingId, setShippingId] = useState<string>(SHIPPING_METHODS[0].id);
@@ -58,7 +59,7 @@ export default function CheckoutForm() {
   if (lines.length === 0) {
     return (
       <div className="co-page">
-        <CheckoutHeader />
+        <CheckoutHeader logo={branding.logo} />
         <div className="co-empty"><p>Your cart is empty.</p><Link className="cm-button" href="/collections/new-in">Continue shopping</Link></div>
       </div>
     );
@@ -66,7 +67,7 @@ export default function CheckoutForm() {
 
   return (
     <div className="co-page">
-      <CheckoutHeader />
+      <CheckoutHeader logo={branding.logo} />
       <div className="co-layout">
         <form className="co-main" onSubmit={submit}>
           <p className="co-preview-banner">Preview checkout: no payment is processed and no order is created.</p>
@@ -117,7 +118,7 @@ export default function CheckoutForm() {
               <label className={`co-choice ${payment === "card" ? "active" : ""}`}>
                 <input type="radio" name="payment" checked={payment === "card"} onChange={() => setPayment("card")} />
                 <span className="co-choice-text"><b>Credit / Debit Card</b></span>
-                <span className="co-marks">{storefront.payments.filter((p) => p.name !== "QRIS").map((p) => <img key={p.name} src={p.image} alt={p.name} />)}</span>
+                <span className="co-marks">{branding.payments.filter((p) => p.name !== "QRIS").map((p) => <img key={p.name} src={p.image} alt={p.name} />)}</span>
               </label>
               {payment === "card" && (
                 <div className="co-card-fields">
@@ -132,7 +133,7 @@ export default function CheckoutForm() {
               <label className={`co-choice ${payment === "qris" ? "active" : ""}`}>
                 <input type="radio" name="payment" checked={payment === "qris"} onChange={() => setPayment("qris")} />
                 <span className="co-choice-text"><b>QRIS</b><small>Scan to pay with any QRIS-supported e-wallet or banking app</small></span>
-                <span className="co-marks">{storefront.payments.filter((p) => p.name === "QRIS").map((p) => <img key={p.name} src={p.image} alt={p.name} />)}</span>
+                <span className="co-marks">{branding.payments.filter((p) => p.name === "QRIS").map((p) => <img key={p.name} src={p.image} alt={p.name} />)}</span>
               </label>
             </div>
           </section>

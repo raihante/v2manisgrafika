@@ -3,23 +3,14 @@
 
 import Image from "next/image";
 import type { CSSProperties } from "react";
-import { FormEvent, Fragment, useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import data from "@/data/homepage.json";
-import { catalog } from "@/lib/catalog";
-import { localCart, useCart } from "@/lib/cart";
-import interactionData from "@/data/product-card-interactions.json";
-import notifyIcon from "@/data/notify-icon.json";
-import { BackstagePassPopup, InstagramLightbox, OPEN_CART_EVENT, openCartDrawer } from "@/components/Overlays";
-import { AnnouncementBar, SiteHeader } from "@/components/shell/SiteHeader";
-import { PageLoading, ShellPanels } from "@/components/shell/ShellPanels";
-import { layoutRepository } from "@/lib/navigation";
-
-type Product = (typeof data.collections)[number]["products"][number];
-type ProductInteraction = { secondaryImages: string[]; variants: { label: string; image: string | null; thumbnail: string | null; soldOut: boolean }[] };
-
-const productInteractions = interactionData as Record<string, ProductInteraction>;
+import { NOTIFY_ICON as notifyIcon } from "@/components/icons/source-icons";
+import { localCart } from "@/lib/cart";
+import { InstagramLightbox, openCartDrawer } from "@/components/Overlays";
+import type { RailCard } from "@/lib/catalog/types";
+import type { HeroSlide, HomepageData, ProductRailData, PromotionSlide, SocialSection } from "@/lib/storefront/types";
 
 function Icon({ name }: { name: "menu" | "search" | "user" | "heart" | "bag" | "close" | "arrow" }) {
   const paths = {
@@ -48,8 +39,7 @@ function flickityResizeListener(measure: () => void) {
   return () => { active = false; window.clearTimeout(timer); window.removeEventListener("resize", onResize); };
 }
 
-function CategoryHero() {
-  const slides = data.categoryHero;
+function CategoryHero({ slides }: { slides: HeroSlide[] }) {
   const count = slides.length;
   const [selected, setSelected] = useState(0);
   const [activeTitle, setActiveTitle] = useState(0);
@@ -215,8 +205,7 @@ function CategoryHero() {
   );
 }
 
-function PromotionSlider() {
-  const slides = data.promotions;
+function PromotionSlider({ slides }: { slides: PromotionSlide[] }) {
   const count = slides.length;
   const [selected, setSelected] = useState(0);
   const positionRef = useRef(0);
@@ -353,8 +342,8 @@ function PromotionSlider() {
   );
 }
 
-function ProductCard({ product }: { product: Product }) {
-  const interaction = productInteractions[product.title];
+function ProductCard({ product }: { product: RailCard }) {
+  const interaction = product.interaction;
   const [variantIndex, setVariantIndex] = useState(0);
   const [hoverImageIndex, setHoverImageIndex] = useState<number | null>(null);
   const [touchSwatchesOpen, setTouchSwatchesOpen] = useState(false);
@@ -362,12 +351,11 @@ function ProductCard({ product }: { product: Product }) {
   const primaryImage = selectedVariant?.image || product.image;
   const selectedLabel = selectedVariant?.label ?? product.swatchSelected;
   const router = useRouter();
-  const handle = product.href.split("/").filter(Boolean).pop() ?? "";
   // MOCK quick add: products with a Size option go to the product page; others add the shown colour and open the cart drawer.
   const addToBag = () => {
-    const entry = catalog.getProduct(handle);
-    if (!entry || entry.sizes.length > 0) return router.push(product.href);
-    localCart.add({ handle, title: product.title, image: primaryImage, price: entry.price, colour: selectedLabel, size: null });
+    const { quickAdd } = product;
+    if (quickAdd.needsOptions) return router.push(product.href);
+    localCart.add({ handle: quickAdd.handle, title: product.title, image: primaryImage, price: quickAdd.price, colour: selectedLabel, size: null });
     openCartDrawer();
   };
 
@@ -389,7 +377,7 @@ function ProductCard({ product }: { product: Product }) {
       >
         <Image src={primaryImage} alt={product.title} fill sizes="(max-width: 767px) 60vw, 25vw" className="cover-image product-primary-local" />
         {hoverImageIndex !== null && interaction?.secondaryImages[hoverImageIndex] && <Image src={interaction.secondaryImages[hoverImageIndex]} alt="" fill sizes="(max-width: 767px) 60vw, 25vw" className="cover-image product-secondary-local active" />}
-        {interaction?.secondaryImages.length > 0 && <span className="product-image-dots" aria-hidden="true">{interaction.secondaryImages.map((image, index) => <i className={hoverImageIndex === index ? "active" : ""} key={image} />)}</span>}
+        {interaction && interaction.secondaryImages.length > 0 && <span className="product-image-dots" aria-hidden="true">{interaction.secondaryImages.map((image, index) => <i className={hoverImageIndex === index ? "active" : ""} key={image} />)}</span>}
       </Link>
       {product.overlayLabels.length > 0 && <div className="label-discount-code-grid-wrap"><div className="label-wrap">{product.overlayLabels.map((label) => <div className={label.className} key={label.text}>{label.text}</div>)}</div></div>}
       <button className="wishlist" aria-label={`Add ${product.title} to wishlist`}><Icon name="heart" /></button>
@@ -397,7 +385,7 @@ function ProductCard({ product }: { product: Product }) {
         <Link href={product.href}>{product.title}</Link>
         <div className="product-swatches-local">
           <p><b>{`${selectedLabel} `}</b>{` ${product.swatchSuffix}`}</p>
-          {interaction?.variants.length > 0 && <div className="product-swatch-track" role="group" aria-label={`${product.title} colours`}>
+          {interaction && interaction.variants.length > 0 && <div className="product-swatch-track" role="group" aria-label={`${product.title} colours`}>
             {interaction.variants.map((variant, index) => <button
               type="button"
               className={`${index === variantIndex ? "active" : ""} ${variant.soldOut ? "sold-out" : ""}`}
@@ -430,7 +418,7 @@ const railInitialGap = () => 7 + (window.matchMedia("(max-width: 1067.99px)").ma
 // Cells stay in flex flow (height comes from content) and are shifted per cell to their wrapped position.
 const cellsPerView = () => (window.matchMedia("(min-width: 66.75em)").matches ? 6 : 2);
 
-function ProductRail({ collection }: { collection: (typeof data.collections)[number] }) {
+function ProductRail({ collection }: { collection: ProductRailData }) {
   const wrapRef = useRef<HTMLDivElement>(null);
   const cellRefs = useRef<(HTMLDivElement | null)[]>([]);
   const positionRef = useRef(0);
@@ -557,19 +545,19 @@ function ProductRail({ collection }: { collection: (typeof data.collections)[num
   );
 }
 
-function SocialHandle() {
+function SocialHandle({ social }: { social: SocialSection }) {
   return (
     <section className="social-handle text-center text-position-center text-width-xlarge section-spacing-padding section-spacing--disable-top section-spacing--disable-bottom">
       <div className="row grid">
         <div className="small-12 columns">
           <div className="rich-text__inner">
-            <h3 className="h3 jsc-header-text jsc-desktop-text"><p>{data.social.titleLines[0]}<br />{data.social.titleLines[1]}</p></h3>
-            <h3 className="h3 jsc-header-text jsc-mobile-text"><p>{data.social.titleLines[0]}<br />{data.social.titleLines[1]}</p></h3>
+            <h3 className="h3 jsc-header-text jsc-desktop-text"><p>{social.titleLines[0]}<br />{social.titleLines[1]}</p></h3>
+            <h3 className="h3 jsc-header-text jsc-mobile-text"><p>{social.titleLines[0]}<br />{social.titleLines[1]}</p></h3>
             <div className="rte text-size-regular jsc-subtitle-text jsc-desktop-text">
-              <p>{data.social.subtitle}<a href={data.social.instagramUrl} target="_blank" rel="noreferrer" title={data.social.instagramUrl}><strong>{data.social.instagramHandle}</strong></a></p>
+              <p>{social.subtitle}<a href={social.instagramUrl} target="_blank" rel="noreferrer" title={social.instagramUrl}><strong>{social.instagramHandle}</strong></a></p>
             </div>
             <div className="rte text-size-regular jsc-subtitle-text jsc-mobile-text">
-              <p>{data.social.subtitle}<a href={data.social.instagramUrl} target="_blank" rel="noreferrer" title={data.social.instagramUrl}><strong>{data.social.instagramHandle}</strong></a></p>
+              <p>{social.subtitle}<a href={social.instagramUrl} target="_blank" rel="noreferrer" title={social.instagramUrl}><strong>{social.instagramHandle}</strong></a></p>
             </div>
           </div>
         </div>
@@ -585,7 +573,7 @@ const instafeedColumns = (width: number) => [{ width: 480, columns: 2 }, { width
 const round3 = (value: number) => parseFloat(value.toFixed(3));
 type FeedLayout = { width: number; columns: number; space: number; tile: number; total: number };
 
-function SocialFeed() {
+function SocialFeed({ social }: { social: SocialSection }) {
   const feedRef = useRef<HTMLDivElement>(null);
   const wrapperRef = useRef<HTMLDivElement>(null);
   const [layout, setLayout] = useState<FeedLayout | null>(null);
@@ -593,6 +581,7 @@ function SocialFeed() {
   const dragged = useRef(false);
   const [lightbox, setLightbox] = useState<number | null>(null);
   const closeLightbox = useCallback(() => setLightbox(null), []);
+  const feedCount = social.feedImages.length;
 
   useEffect(() => {
     const build = () => {
@@ -602,7 +591,7 @@ function SocialFeed() {
       const columns = instafeedColumns(feed.clientWidth);
       const space = round3((width / columns) * 0.05);
       const tile = round3(round3(width - round3((columns - 1) * space)) / columns);
-      const total = Math.min(data.social.feedImages.length, 4 * columns);
+      const total = Math.min(feedCount, 4 * columns);
       slider.current = { current: 0, step: width + space, transitioning: false };
       if (wrapperRef.current) { wrapperRef.current.style.transition = ""; wrapperRef.current.style.transform = ""; }
       setLayout({ width, columns, space, tile, total });
@@ -616,7 +605,7 @@ function SocialFeed() {
     };
     window.addEventListener("resize", onResize);
     return () => { window.removeEventListener("resize", onResize); window.clearTimeout(timer); };
-  }, []);
+  }, [feedCount]);
 
   const move = (direction: number) => {
     const state = slider.current;
@@ -644,7 +633,7 @@ function SocialFeed() {
     document.addEventListener("pointerup", onUp);
   };
 
-  const images = layout ? data.social.feedImages.slice(0, layout.total) : [];
+  const images = layout ? social.feedImages.slice(0, layout.total) : [];
   return (
     <section className="social-feed">
       <div id="insta-feed" ref={feedRef}>
@@ -670,163 +659,10 @@ function SocialFeed() {
   );
 }
 
-function Footer() {
-  const groups = [
-    { title: "About BTV", links: data.footerLinks.slice(0, 3) },
-    { title: "BTV Rewards", links: data.footerLinks.slice(3, 7) },
-    { title: "Explore", links: data.footerLinks.slice(7, 12) },
-    { title: "Support", links: data.footerLinks.slice(12, 17) },
-  ];
-  const socialLinks = data.footerLinks.slice(17);
-  // Source wraps each social PNG in an SVG <image>; Pinterest carries its own offset transform.
-  const socialTransform = (name: string) => (name === "pinterest" ? "translate(-2.44 -4.23) scale(.3)" : "scale(.29)");
-  const paymentIcons = (
-    <div className="footer-payment-icons">{data.payments.map((payment) => <Fragment key={payment.name}>{" "}<figure><img className="payment-icon-img" src={payment.image} alt={payment.name} width="100%" height="100%" /></figure></Fragment>)}{" "}</div>
-  );
-  return (
-    <footer className="footer">
-      <div className="footer-column-wrap-left">
-        <div className="row full-width-row jsc-container-padding">
-          {groups.map((group) => (
-            <div className="small-12 medium-3 columns widget--menu-column" key={group.title}>
-              <div className="widget widget--menu">
-                <div className="thb-widget-title collapsible"><div className="jsc-widget-title">{group.title}</div></div>
-                <ul className="thb-widget-menu">{group.links.map((link) => <li key={link.text}><Link href={link.href}>{link.text}</Link></li>)}</ul>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="sub-footer">
-          <div className="row full-width-row small-down--p-r-15 small-down--p-l-15">
-            <div className="sub-footer-left">
-              <div className="social-footer small-12 columns">
-                <ul className="social-links">{socialLinks.map((link) => {
-                  const name = link.text.toLowerCase();
-                  return <li key={link.text}><a className={`social ${name}`} href={link.href} target="_blank" rel="noreferrer"><svg width="16" className={`icon icon-${name}`} viewBox="0 0 150 150" aria-hidden="true"><image width="512" height="512" transform={socialTransform(name)} href={`/assets/social-icons/${name}.png`} /></svg><span>{link.text}</span></a></li>;
-                })}</ul>
-              </div>
-              <div className="small-12 columns"><p className="copyright-label">© Beyond The Vines Indonesia</p></div>
-            </div>
-            <div className="sub-footer copyright-desc">
-              <div><p className="payment-icons-title">Beyond The Vines accepts</p></div>
-              {paymentIcons}
-            </div>
-            <div className="copyright-desc-mobile">
-              <div><p className="payment-icons-title">Beyond The Vines accepts</p></div>
-              {paymentIcons}
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  );
-}
-
-export function NewsletterSection() {
-  const [subscribed, setSubscribed] = useState(false);
-  const subscribe = (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setSubscribed(true);
-  };
-  return (
-    <section className="newsletter">
-      <div className="email-signup-inner">
-        <div className="email-signup-column">
-          <div className="section-header">
-            <div className="section-header--content">
-              <h2 className="h3">{data.newsletter.title}</h2>
-              <div className="rte"><p>{data.newsletter.tagline}</p></div>
-            </div>
-          </div>
-        </div>
-        <div className="email-signup-column email-signup-column-2">
-          <div className="email-signup-description show-desktop">
-            <p>{data.newsletter.descriptionDesktop[0]}</p>
-            <p>{data.newsletter.descriptionDesktop[1]}</p>
-          </div>
-          <div className="email-signup-description show-mobile">
-            <p>{data.newsletter.descriptionMobile[0]}</p>
-            <p>{data.newsletter.descriptionMobile[1]}</p>
-          </div>
-          <div className="signup-container">
-            <form className="signup-form" onSubmit={subscribe}>
-              <fieldset>
-                <div className="field">
-                  <input required type="email" id="NewsletterForm-email" name="contact[email]" placeholder={data.newsletter.placeholder} autoComplete="email" />
-                  <label className="field__label" htmlFor="NewsletterForm-email">{data.newsletter.placeholder}</label>
-                </div>
-                <button className="submit" type="submit" aria-label="Enter your email">
-                  {data.newsletter.buttonText}
-                  <svg width="15" height="11" viewBox="0 0 15 11" fill="none" aria-hidden="true">
-                    <path d="M0.799805 5.5H12.7998" stroke="#fff" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M9.49976 1L13.9998 5.5L9.49976 10" stroke="#fff" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </button>
-              </fieldset>
-              {subscribed && <div className="jsc-newsletter-message-section">{data.newsletter.successMessage}</div>}
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-// Source <back-to-top>: fixed pill that slides in once the page is scrolled past one viewport height.
-function BackToTop() {
-  const [active, setActive] = useState(false);
-  useEffect(() => {
-    const update = () => setActive(window.scrollY > window.innerHeight);
-    update();
-    window.addEventListener("scroll", update, { passive: true });
-    window.addEventListener("resize", update);
-    return () => { window.removeEventListener("scroll", update); window.removeEventListener("resize", update); };
-  }, []);
-  return (
-    <button type="button" className={`back-to-top${active ? " back-to-top--active" : ""}`} aria-label="Back to top" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-      <svg width="11" height="16" viewBox="0 0 11 16" fill="none" aria-hidden="true">
-        <path className="back-to-top--bar" d="M4.87654 2.34497C4.87654 1.99178 5.16285 1.70547 5.51604 1.70547C5.86922 1.70547 6.15554 1.99179 6.15554 2.34497V15.5613C6.15554 15.9144 5.86922 16.2008 5.51604 16.2008C5.16285 16.2008 4.87654 15.9144 4.87654 15.5613V2.34497Z" fill="#151515" />
-        <path className="back-to-top--handle" d="M0.197525 5.0502L5.02195 0.225769C5.14739 0.100345 5.32293 0.0251028 5.48588 0C5.66143 -7.67342e-09 5.83696 0.0752197 5.96239 0.200647L10.7994 5.03761C10.9373 5.17554 11 5.33858 11 5.51412C11 5.68967 10.9248 5.8652 10.7994 5.99063C10.5486 6.254 10.1223 6.254 9.85892 5.99063L6.16301 2.30726C5.72921 2.1318 5.72921 1.70547 4.83387 2.29472L1.13796 5.99063C0.887198 6.254 0.460891 6.254 0.197525 5.99063C-0.0658415 5.73987 -0.0658415 5.31356 0.197525 5.0502Z" fill="#151515" />
-      </svg>
-    </button>
-  );
-}
-
-// Shared storefront shell on the source container hierarchy: #wrapper > announcement + header sections,
-// div#main-content (role=main), footer group, then the side panels and .click-capture (reference/dom/r256-header/).
-// <back-to-top> is a body-level sibling of #wrapper on the source.
-const layout = layoutRepository.getLayout();
-
-export function SiteChrome({ children, backToTop = false }: { children: React.ReactNode; backToTop?: boolean }) {
-  const [cartOpen, setCartOpen] = useState(false);
-  useEffect(() => {
-    const openCart = () => setCartOpen(true);
-    window.addEventListener(OPEN_CART_EVENT, openCart);
-    return () => window.removeEventListener(OPEN_CART_EVENT, openCart);
-  }, []);
-  const closeCart = useCallback(() => setCartOpen(false), []);
-  return (
-    <>
-      <div id="wrapper">
-        <AnnouncementBar />
-        <SiteHeader onOpenCart={() => setCartOpen(true)} />
-        <div role="main" id="main-content">
-          {layout.hiddenInputs.map((input) => <input key={input.id} type="hidden" id={input.id} value={input.value} />)}
-          {children}
-        </div>
-        <Footer />
-        <ShellPanels cartOpen={cartOpen} closeCart={closeCart} />
-      </div>
-      {backToTop && <BackToTop />}
-      <PageLoading />
-      <BackstagePassPopup />
-    </>
-  );
-}
-
-export default function HomePage() {
+/** Homepage sections inside SiteChrome; data comes from the storefront repository (src/app/page.tsx). */
+export default function HomePage({ data }: { data: HomepageData }) {
   useEffect(() => {
     document.querySelectorAll<HTMLElement>(".product-rail, .instafeed-layout-wrapper").forEach((rail) => { rail.scrollLeft = 0; rail.style.transform = ""; });
   }, []);
-  return <SiteChrome backToTop><CategoryHero /><PromotionSlider />{data.collections.map((collection) => <ProductRail collection={collection} key={collection.title} />)}<SocialHandle /><SocialFeed /><NewsletterSection /></SiteChrome>;
+  return <><CategoryHero slides={data.categoryHero} /><PromotionSlider slides={data.promotions} />{data.rails.map((collection) => <ProductRail collection={collection} key={collection.title} />)}<SocialHandle social={data.social} /><SocialFeed social={data.social} /></>;
 }

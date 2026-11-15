@@ -1,6 +1,6 @@
 // Collection page data types (source template `collection` / section `product-grid`). The fixture behind them is built
-// by scripts/build-collection-data.mjs from source captures; a CMS/Shopify adapter must return the same shapes.
-import type { ProductCard } from "@/lib/product-details";
+// by scripts/build-collection-data.mjs from source captures; the CMS adapter must return the same shapes.
+import type { ProductCard } from "@/lib/catalog/types";
 
 export type { ProductCard };
 
@@ -85,3 +85,51 @@ export type CollectionQuery = { sort: string; filters: { name: string; value: st
 
 /** What the first server render needs: metadata plus the cards of the initial (unfiltered, Featured) grid. */
 export type CollectionInitial = CollectionMeta & { countText: string; keys: string[]; cards: Record<string, ProductCard>; hasMore: boolean };
+
+/** /collections list page (source template list-collections). */
+export type CollectionListCard = {
+  cardClass: string;
+  imageClass: string;
+  /** --var-media-aspect-ratio (image height / width, %). */
+  ratio: number;
+  href: string;
+  title: string;
+  width: number;
+  height: number;
+  /** Low-quality 20px placeholder the theme puts in src before lazysizes swaps in the srcset. */
+  placeholder: string;
+  srcset: { src: string; w: number }[];
+  alt: string;
+  /** Source URL of the full-size original (only requested by the <noscript> fallback; not mirrored). */
+  original: string;
+  label: string;
+};
+
+export type CollectionList = {
+  documentTitle: string;
+  sectionId: string;
+  sectionClass: string;
+  listClass: string;
+  listStyle: string;
+  headerClass: string;
+  headerStyle: string;
+  headingClass: string;
+  heading: string;
+  rowClass: string;
+  rowStyle: string;
+  sectionStyle: string;
+  cards: CollectionListCard[];
+};
+
+/** Server-side collection reads (page render). */
+export interface CollectionRepository {
+  handles(): Promise<string[]>;
+  /** Metadata plus the cards of the initial grid (Featured, no filter, first load-more page + row fill). */
+  getInitial(handle: string): Promise<CollectionInitial | null>;
+  getList(): Promise<CollectionList>;
+}
+
+/** Browser-side source of the full collection dataset (load more, filters, sort, search index). */
+export interface CollectionDataSource {
+  load(handle: string): Promise<CollectionData>;
+}

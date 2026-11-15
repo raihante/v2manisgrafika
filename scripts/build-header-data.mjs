@@ -2,7 +2,7 @@
 // Run: node scripts/build-header-data.mjs
 // Inputs (Git-ignored, captured by reference/scripts/r256-header-capture*.mjs with ego-browser, 2026-11-06 snapshot,
 // Indonesia market, logged out, empty cart): reference/dom/r256-header/{announcement,header,wrapper-shell}-1920.html.
-// Outputs: src/data/header.json (typed by src/lib/navigation.ts) and reference/data/header-asset-plan.json
+// Outputs: src/data/header.json (typed by src/lib/storefront/types.ts (ShellData)) and reference/data/header-asset-plan.json
 // (source URL -> public/assets/source/header/<source file name>, downloaded by scripts/download-header-assets.mjs).
 import { readFileSync, writeFileSync } from "node:fs";
 import { all, cleanText, hasClass, kids, one, outer, parse } from "./lib/mini-dom.mjs";

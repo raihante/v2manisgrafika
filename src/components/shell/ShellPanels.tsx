@@ -7,26 +7,27 @@
 // source (no item is ever added to the source cart) and is an approximation (docs/mock-behaviors.md).
 import Link from "next/link";
 import { useEffect } from "react";
-import { formatPrice } from "@/lib/catalog";
+import { formatPrice } from "@/lib/catalog/format";
 import { useCart } from "@/lib/cart";
-import { shellRepository } from "@/lib/navigation";
 import { SourceSvg } from "@/components/shell/SourceSvg";
+import { useShell } from "@/components/shell/StorefrontContext";
 
-const shell = shellRepository.getShell();
-const panels = shell.sidePanels;
 
 // Body-level loading overlay; the source keeps it at display:none and shows it during cart requests (the clone's
 // mock cart is synchronous, so it stays hidden). Rendered after #wrapper by SiteChrome.
 export function PageLoading() {
+  const shell = useShell();
   const l = shell.pageLoading;
   return <div className="jsc-page-loading" style={{ display: "none" }}><div className="jsc-spinner-container"><img src={l.image} alt={l.alt} className={l.className} /></div></div>;
 }
 
 function PanelClose({ onClick }: { onClick?: () => void }) {
+  const panels = useShell().sidePanels;
   return <side-panel-close className="side-panel-close" onClick={onClick} role="button" aria-label="Close"><SourceSvg icon={panels.closeIcon} /></side-panel-close>;
 }
 
 function CartDrawer({ active, close }: { active: boolean; close: () => void }) {
+  const panels = useShell().sidePanels;
   const { lines, subtotal, service } = useCart();
   const cart = panels.cart;
   return (
@@ -87,6 +88,7 @@ function CartDrawer({ active, close }: { active: boolean; close: () => void }) {
 export const CLICK_CAPTURE_EVENT = "shell:click-capture";
 
 export function ShellPanels({ cartOpen, closeCart }: { cartOpen: boolean; closeCart: () => void }) {
+  const panels = useShell().sidePanels;
   useEffect(() => {
     document.body.classList.toggle("open-cc", cartOpen);
     document.body.classList.toggle("open-cart", cartOpen);

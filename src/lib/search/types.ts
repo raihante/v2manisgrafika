@@ -38,3 +38,8 @@ export type SearchResult = {
   /** Facets with the values present in the query results, counts and input ids as the source renders them. */
   facets: Facet[];
 };
+
+export interface SearchRepository {
+  /** Template copy and markup metadata of /search. */
+  getMeta(): Promise<SearchMeta>;
+}

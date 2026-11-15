@@ -1,7 +1,7 @@
 // Build the /collections (template-list-collections) fixture from the private source capture
 // (run with plain `node scripts/build-collection-list-data.mjs`).
 // Input: reference/data/collections/_index/page-1.html (server HTML, read-only GET 2026-11-06).
-// Outputs: src/data/collection-list.json (typed via src/lib/collections/list.ts) and
+// Outputs: src/data/collection-list.json (typed via src/lib/collections/types.ts (CollectionList)) and
 //          reference/data/collection-asset-plan-_index.json (local path -> source URL) for
 //          `node scripts/download-collection-assets.mjs _index`. Collection banner images are real source images.
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";

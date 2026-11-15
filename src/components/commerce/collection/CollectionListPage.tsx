@@ -2,7 +2,7 @@
 // /collections in the source template markup (template list-collections, section main, theme t/33, 2026-11-06):
 // section header "SHOP BY CATEGORY" and the collection-card grid (style1), images driven by lazysizes.
 import LazySizesImage from "@/components/shared/LazySizesImage";
-import type { CollectionList } from "@/lib/collections/list";
+import type { CollectionList } from "@/lib/collections/types";
 
 /** "--a: 1; --b: 2" -> React style object (declarations with an empty value are dropped, as browsers drop them). */
 function inlineStyle(css: string): React.CSSProperties {

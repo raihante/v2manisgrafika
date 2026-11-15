@@ -12,40 +12,41 @@ import SourceProductCard from "@/components/commerce/pdp/SourceProductCard";
 import { FacetBar, FacetDrawer, navigateWithSort, sortFilters, useDrawerSubmit, useEqualCardHeights, useFacetDrawer } from "@/components/commerce/collection/facets";
 import { SourceSvg } from "@/components/shell/SourceSvg";
 import type { CollectionData, ProductCard } from "@/lib/collections/types";
-import { shellRepository } from "@/lib/navigation";
+import { useShell } from "@/components/shell/StorefrontContext";
+import { collectionSource } from "@/lib/collections/client";
 import { fill, pageHref, pageParts, parseSearch, runSearch, searchParamsFor } from "@/lib/search/query";
-import { searchRepository } from "@/lib/search/repository";
 import type { SearchMeta, SearchQuery } from "@/lib/search/types";
 
-const meta = searchRepository.meta();
-const searchIcon = shellRepository.getShell().searchBar.submitIcon;
+/** MOCK search index: the /collections/new-in dataset (docs/mock-behaviors.md "Search page"). */
+const loadSearchIndex = () => collectionSource.load("new-in");
 
 /** Static (server) render: the no-query state. Also the Suspense fallback of the route. */
-export function SearchPageStatic() {
-  return <SearchView query={{ q: "", sort: meta.sort.initial, page: 1, filters: [] }} index={null} />;
+export function SearchPageStatic({ meta }: { meta: SearchMeta }) {
+  return <SearchView query={{ q: "", sort: meta.sort.initial, page: 1, filters: [] }} index={null} meta={meta} />;
 }
 
-export default function SearchPage() {
+export default function SearchPage({ meta }: { meta: SearchMeta }) {
   const params = useSearchParams();
-  const query = useMemo(() => parseSearch(params.toString(), meta), [params]);
+  const query = useMemo(() => parseSearch(params.toString(), meta), [params, meta]);
   const [index, setIndex] = useState<CollectionData | null>(null);
-  useEffect(() => { if (query.q) searchRepository.loadSearchIndex().then(setIndex); }, [query.q]);
-  return <SearchView key={params.toString()} query={query} index={index} />;
+  useEffect(() => { if (query.q) loadSearchIndex().then(setIndex); }, [query.q]);
+  return <SearchView key={params.toString()} query={query} index={index} meta={meta} />;
 }
 
-function SearchView({ query: urlQuery, index }: { query: SearchQuery; index: CollectionData | null }) {
+function SearchView({ query: urlQuery, index, meta }: { query: SearchQuery; index: CollectionData | null; meta: SearchMeta }) {
   const router = useRouter();
+  const searchIcon = useShell().searchBar.submitIcon;
   // Drawer edits apply immediately to the controls and to the URL after the source's 500 ms debounce.
   const [query, setQuery] = useState(urlQuery);
   const [drawerOpen, setDrawerOpen] = useFacetDrawer();
   const [facetRendered, setFacetRendered] = useState(false);
   const submitDrawer = useDrawerSubmit();
   const gridRef = useRef<HTMLDivElement>(null);
-  const result = useMemo(() => (index && query.q ? runSearch(index, meta, query) : null), [index, query]);
+  const result = useMemo(() => (index && query.q ? runSearch(index, meta, query) : null), [index, query, meta]);
   useEqualCardHeights(gridRef, result);
   useEffect(() => {
     document.title = query.q && result ? fill(meta.documentTitle.results, { count: result.count, q: query.q }) : meta.documentTitle.empty;
-  }, [query.q, result]);
+  }, [query.q, result, meta]);
 
   const applyDrawer = (next: SearchQuery) => {
     setQuery(next);

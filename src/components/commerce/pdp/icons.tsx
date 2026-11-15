@@ -1,4 +1,4 @@
-import icons from "@/data/pdp-icons.json";
+import { HEART_PATHS } from "@/components/icons/source-icons";
 
 // SVG icons copied from the source product page markup (theme snippets), kept byte-equivalent where possible.
 const ZOOM = ["M12.375 4.0625H15.9375V7.625", "M11.7812 8.21875L15.9375 4.0625", "M7.625 15.9375H4.0625V12.375", "M8.21875 11.7812L4.0625 15.9375"];
@@ -29,19 +29,19 @@ export const ErrorIcon = () => (
 );
 
 // Swym wishlist heart (theme snippet: outline = not added, filled = added) plus the pixel-heart GIFs it animates with.
-// Heart paths copied verbatim from the source card markup (src/data/pdp-icons.json).
+// Heart paths copied verbatim from the source card markup (src/components/icons/source-icons.ts).
 export function WishlistIcons() {
   return (
     <>
       <svg width="20" height="20" className="wishlist-not-added-icon" xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 47.33 44.03">
-        <path className="cls-1" d={icons.heartOutline} />
+        <path className="cls-1" d={HEART_PATHS.heartOutline} />
       </svg>
       <picture>
         <img src="/assets/source/PIXEL_HEART.gif" alt="" className="heartfloat" />
         <img src="/assets/source/HEART_FILL.gif" alt="" className="heartfill" />
       </picture>
       <svg width="20" height="20" className="wishlist-added-icon" xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 47.33 44.03">
-        <path className="cls-1" d={icons.heartFilled} />
+        <path className="cls-1" d={HEART_PATHS.heartFilled} />
       </svg>
     </>
   );

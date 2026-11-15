@@ -10,7 +10,8 @@ import { useState } from "react";
 import CollapsibleRow from "@/components/shared/CollapsibleRow";
 import { useCellCarousel } from "@/components/shared/useCellCarousel";
 import { inlineStyle } from "@/components/pages/ContactPage";
-import type { FaqPageData } from "@/lib/pages/faq";
+import { RichText } from "@/components/shared/RichText";
+import type { FaqPageData } from "@/lib/pages/types";
 
 const faqId = (label: string) => label.replace(/[,&\s-]+/g, "_");
 
@@ -80,7 +81,7 @@ export default function FaqPage({ page }: { page: FaqPageData }) {
                   {g.rows.map((r) => (
                     <CollapsibleRow key={r.detailsId} className={r.rowClass} detailsId={r.detailsId} summary={r.question}>
                       {/* Source rich text (CMS field). */}
-                      <div className={r.contentClass} id={r.contentId} dangerouslySetInnerHTML={{ __html: r.answerHtml }} />
+                      <RichText className={r.contentClass} id={r.contentId} html={r.answerHtml} />
                     </CollapsibleRow>
                   ))}
                 </div>

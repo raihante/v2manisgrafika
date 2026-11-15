@@ -1,11 +1,11 @@
-// Shared shell repository: announcement bar, header menus, mobile drawer footer, secondary icons and side-panel copy.
-// Backed by the source-derived fixture src/data/header.json (scripts/build-header-data.mjs, 2026-11-06 snapshot).
-// A CMS adapter replaces `fixtureShell` without changing the shell components (AGENTS.md repository boundary).
-import fixture from "@/data/header.json";
-import layoutFixture from "@/data/layout.json";
+// Storefront content types: the shared shell (announcement bar, header menus, mobile drawer, side panels), the
+// site-wide chrome (footer, newsletter, payment marks, logo), layout hidden inputs and the homepage sections.
+// Shapes follow the source theme markup (2026-11-06 snapshot) so the CMS can store the same fields.
+import type { RailCard } from "@/lib/catalog/types";
+import type { SafeSvg } from "@/lib/html/safe-html";
 
-/** Inline SVG captured verbatim: React props for the <svg> element plus its inner markup. */
-export type SourceIcon = { props: Record<string, string>; inner: string };
+/** Inline SVG captured from the source theme: React props for the <svg> element plus its sanitized inner markup. */
+export type SourceIcon = { props: Record<string, string>; inner: SafeSvg };
 export type NavLink = { label: string; href: string; title: string | null };
 
 export type MenuPromotion = {
@@ -61,15 +61,45 @@ export type ShellData = {
   };
 };
 
-export interface ShellRepository {
-  getShell(): ShellData;
-}
-
-const fixtureShell: ShellRepository = { getShell: () => fixture as unknown as ShellData };
-
-export const shellRepository: ShellRepository = fixtureShell;
-
-/** Layout-level hidden inputs the source renders at the top of #main-content on every template (free-shipping copy read
- *  by the theme cart scripts). Fixture src/data/layout.json, from the 2026-11-06 server HTML. */
+/** Layout-level hidden inputs the source renders at the top of #main-content on every template (free-shipping copy
+ *  read by the theme cart scripts). */
 export type LayoutData = { hiddenInputs: { id: string; value: string }[] };
-export const layoutRepository = { getLayout: (): LayoutData => layoutFixture };
+
+export type PaymentMark = { name: string; image: string };
+export type FooterLink = { text: string; href: string };
+export type Newsletter = {
+  title: string; tagline: string; placeholder: string; buttonText: string;
+  descriptionDesktop: string[]; descriptionMobile: string[]; successMessage: string;
+};
+
+/** Product predictive search entry (header search bar). */
+export type SearchSuggestion = { handle: string; title: string; image: string; price: number };
+
+/** Everything SiteChrome renders around a page. */
+export type ChromeData = {
+  shell: ShellData;
+  layout: LayoutData;
+  footerLinks: FooterLink[];
+  payments: PaymentMark[];
+  newsletter: Newsletter;
+  /** MOCK predictive search index (docs/mock-behaviors.md "Header search"). */
+  searchSuggestions: SearchSuggestion[];
+};
+
+/** Checkout header and payment marks (the checkout is rendered without SiteChrome). */
+export type CheckoutBranding = { logo: string; payments: PaymentMark[] };
+
+export type HeroSlide = { label: string; image: string; mobileImage: string; sourceImage: string };
+export type PromotionSlide = { image: string; mobileImage: string; mobileSrcSet: string; href: string; sourceImage: string };
+export type ProductRailData = { title: string; shopMore: string; headerBackground: string; products: RailCard[] };
+export type SocialSection = {
+  titleLines: string[]; subtitle: string; instagramHandle: string; instagramUrl: string;
+  feedImages: string[]; feedLoops: number; images: string[]; feedSnapshot: string;
+};
+export type HomepageData = { categoryHero: HeroSlide[]; promotions: PromotionSlide[]; rails: ProductRailData[]; social: SocialSection };
+
+export interface StorefrontRepository {
+  getChrome(): Promise<ChromeData>;
+  getCheckoutBranding(): Promise<CheckoutBranding>;
+  getHomepage(): Promise<HomepageData>;
+}

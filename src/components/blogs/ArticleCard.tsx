@@ -3,8 +3,8 @@
 // `.blog-post.jsc-custom-cover-image`: 19.2px Everett title clamped to 2 lines, 13px meta; `.blog-post-list` pink
 // #fe4dd2 / grey #cecece and the 54.71x46.41 arrow).
 import Link from "next/link";
-import type { BlogArticle, BlogCategory } from "@/lib/blogs/repository";
-import { blogRepository } from "@/lib/blogs/repository";
+import { articleHref } from "@/lib/blogs/query";
+import type { BlogArticle, BlogCategory } from "@/lib/blogs/types";
 
 export function BlogArrow({ className = "blog-arrow" }: { className?: string }) {
   return (
@@ -17,7 +17,7 @@ export function BlogArrow({ className = "blog-arrow" }: { className?: string }) 
 export default function ArticleCard({ article, category }: { article: BlogArticle; category: BlogCategory | null }) {
   return (
     <article className="blog-card">
-      <Link className="blog-card__link" href={blogRepository.articleHref(article.slug)}>
+      <Link className="blog-card__link" href={articleHref(article.slug)}>
         <span className="blog-card__media">
           {article.hero ? (
             <img src={article.hero.src} alt="" width={article.hero.width ?? undefined} height={article.hero.height ?? undefined} loading="lazy" decoding="async" />

@@ -13,7 +13,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import SourceProductCard from "@/components/commerce/pdp/SourceProductCard";
 import { Spinner } from "@/components/commerce/pdp/icons";
-import { loadCollection } from "@/lib/collections/client";
+import { collectionSource } from "@/lib/collections/client";
 import { DEFAULT_SORT, gridColumns, parseQuery, promoPlan, queryToSearch, resolveView, visibleKeys } from "@/lib/collections/query";
 import type { CollectionData, CollectionInitial, CollectionPromo, CollectionQuery, ProductCard } from "@/lib/collections/types";
 import { FacetBar, FacetDrawer, navigateWithSort, sortFilters, useDrawerSubmit, useEqualCardHeights, useFacetDrawer } from "./facets";
@@ -31,7 +31,7 @@ export default function CollectionPage({ initial }: { initial: CollectionInitial
   const [facetRendered, setFacetRendered] = useState(false);
   const gridRef = useRef<HTMLDivElement>(null);
   const columns = gridColumns(initial.gridClass);
-  const ensureData = useCallback(() => loadCollection(initial.handle), [initial.handle]);
+  const ensureData = useCallback(() => collectionSource.load(initial.handle), [initial.handle]);
   const submitDrawer = useDrawerSubmit();
 
   const show = useCallback((d: CollectionData, q: CollectionQuery, pages: number) => {
@@ -160,7 +160,7 @@ function PromoColumn({ promo }: { promo: CollectionPromo }) {
 const esc = (s: string) => s.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
 /** Same markup as PromoColumn, for the inert <template> the theme keeps as the promotion source. */
 function promoMarkup(p: CollectionPromo): string {
-  return `<li class="${esc(p.className)}" data-promo-block-id="${esc(p.id)}" data-promo-position="${p.position}" data-promo-show-once="${p.showOnce}" data-promo-after-grid="${p.afterGrid}"><div class="gallery__item" style="${esc(p.itemStyle)}"><figure class="aspect-ratio aspect-ratio--adapt" style="--ratio-percent: ${p.ratio}%; --ratio-percent-mobile: ${p.ratioMobile}%;"><picture>${p.mobileSrc ? `<source media="${esc(p.mobileMedia ?? "")}" srcset="${esc(p.mobileSrc)}">` : ""}${p.src ? `<img src="${esc(p.src)}" alt="${esc(p.alt)}" class="${esc(p.imgClass)}">` : ""}</picture><div class="${esc(p.contentClass)}"><div>${p.href ? `<a href="${esc(p.href)}" class="gallery__item-content-link"${p.target ? ` target="${p.target}"` : ""}></a>` : ""}</div></div></figure></div></li>`;
+  return `<li class="${esc(p.className)}" data-promo-block-id="${esc(p.id)}" data-promo-position="${p.position}" data-promo-show-once="${p.showOnce}" data-promo-after-grid="${p.afterGrid}"><div class="gallery__item" style="${esc(p.itemStyle)}"><figure class="aspect-ratio aspect-ratio--adapt" style="--ratio-percent: ${p.ratio}%; --ratio-percent-mobile: ${p.ratioMobile}%;"><picture>${p.mobileSrc ? `<source media="${esc(p.mobileMedia ?? "")}" srcset="${esc(p.mobileSrc)}">` : ""}${p.src ? `<img src="${esc(p.src)}" alt="${esc(p.alt)}" class="${esc(p.imgClass)}">` : ""}</picture><div class="${esc(p.contentClass)}"><div>${p.href ? `<a href="${esc(p.href)}" class="gallery__item-content-link"${p.target ? ` target="${esc(p.target)}"` : ""}></a>` : ""}</div></div></figure></div></li>`;
 }
 
 /** "--a: 1; --b: 2" -> React style object (custom properties only). */

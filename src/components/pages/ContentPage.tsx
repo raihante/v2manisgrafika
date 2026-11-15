@@ -3,7 +3,8 @@
 // layout and spacing are project decisions styled with source tokens (Everett / Recoleta, page accent colours,
 // source copy and images). Verified by owner screenshot review, not by the source benchmark (AGENTS.md).
 import type { CSSProperties } from "react";
-import type { ContentBlock, ContentImage, ContentPageData } from "@/lib/pages/content";
+import { RichText } from "@/components/shared/RichText";
+import type { ContentBlock, ContentImage, ContentPageData } from "@/lib/pages/types";
 
 const MOBILE = "(max-width: 767px)";
 
@@ -23,7 +24,7 @@ export function Block({ block }: { block: ContentBlock }) {
     case "heading":
       return <h2 className={`content-block content-heading content-heading--${block.align}`}>{block.html}</h2>;
     case "richText":
-      return <div className={`content-block content-rte content-rte--${block.variant}`} dangerouslySetInnerHTML={{ __html: block.html }} />;
+      return <RichText className={`content-block content-rte content-rte--${block.variant}`} html={block.html} />;
     case "image": {
       const style = {
         "--content-img-max": block.maxWidth ? `${block.maxWidth}px` : undefined,
@@ -55,7 +56,7 @@ export function Block({ block }: { block: ContentBlock }) {
               <span className="content-icons__icon"><img src={item.icon.src} alt="" width={item.icon.width ?? undefined} height={item.icon.height ?? undefined} loading="lazy" decoding="async" /></span>
               <div className="content-icons__body">
                 {item.title ? <h3 className="content-icons__title">{item.title}</h3> : null}
-                <div className="content-rte" dangerouslySetInnerHTML={{ __html: item.html }} />
+                <RichText className="content-rte" html={item.html} />
               </div>
             </li>
           ))}
@@ -63,13 +64,13 @@ export function Block({ block }: { block: ContentBlock }) {
       );
     case "list": {
       const Tag = block.ordered ? "ol" : "ul";
-      return <Tag className="content-block content-list">{block.items.map((html, i) => <li key={i} dangerouslySetInnerHTML={{ __html: html }} />)}</Tag>;
+      return <Tag className="content-block content-list">{block.items.map((html, i) => <RichText as="li" key={i} html={html} />)}</Tag>;
     }
     case "callout":
       return (
         <div className="content-block content-callout">
           <span className="content-callout__title">{block.title}</span>
-          <div className="content-callout__text" dangerouslySetInnerHTML={{ __html: block.html }} />
+          <RichText className="content-callout__text" html={block.html} />
         </div>
       );
   }

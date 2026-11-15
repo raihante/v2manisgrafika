@@ -1,6 +1,6 @@
 // Build /pages/faqs from the private source capture (run with plain `node scripts/build-faq-data.mjs`).
 // Input: reference/data/pages/faqs-main.html (server HTML, read-only GET 2026-11-06).
-// Outputs: src/data/pages/faqs.json (typed via src/lib/pages/faq.ts) and
+// Outputs: src/data/pages/faqs.json (typed via src/lib/pages/types.ts) and
 //          reference/data/collection-asset-plan-_faq.json (header image) for `node scripts/download-collection-assets.mjs _faq`.
 // The answers are the source rich text (CMS field), kept as HTML.
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";

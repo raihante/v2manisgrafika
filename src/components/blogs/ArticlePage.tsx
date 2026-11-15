@@ -6,14 +6,14 @@
 import Link from "next/link";
 import ArticleCard, { BlogArrow } from "@/components/blogs/ArticleCard";
 import { Block } from "@/components/pages/ContentPage";
-import type { BlogArticle } from "@/lib/blogs/repository";
-import { blogRepository } from "@/lib/blogs/repository";
+import { categoryHref as hrefFor } from "@/lib/blogs/query";
+import type { ArticleBody, BlogArticle, BlogCategory } from "@/lib/blogs/types";
 
-export default function ArticlePage({ article }: { article: BlogArticle }) {
-  const category = blogRepository.category(article.category);
-  const { blocks, placeholder } = blogRepository.body(article);
-  const related = blogRepository.related(article);
-  const categoryHref = blogRepository.categoryHref(article.category);
+type Props = { article: BlogArticle; category: BlogCategory | null; body: ArticleBody; related: { article: BlogArticle; category: BlogCategory | null }[] };
+
+export default function ArticlePage({ article, category, body, related }: Props) {
+  const { blocks, placeholder } = body;
+  const categoryHref = hrefFor(article.category);
   return (
     <article className={`blog-article${placeholder ? " blog-article--placeholder" : ""}`}>
       <nav className="blog-breadcrumb" aria-label="Breadcrumb">
@@ -60,7 +60,7 @@ export default function ArticlePage({ article }: { article: BlogArticle }) {
           {category ? <Link className="blog-related__back" href={categoryHref}>Back to {category.title} <BlogArrow /></Link> : null}
         </div>
         <div className="blog-grid">
-          {related.map((a) => <ArticleCard key={a.slug} article={a} category={blogRepository.category(a.category)} />)}
+          {related.map((r) => <ArticleCard key={r.article.slug} article={r.article} category={r.category} />)}
         </div>
       </section>
     </article>

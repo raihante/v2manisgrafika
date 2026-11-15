@@ -1,7 +1,7 @@
 // Build the PDP fixture from private source captures (run with plain `node scripts/build-product-details.mjs`).
 // Inputs: reference/data/product-details-raw.json + reference/data/products/<handle>/{page,recs-*}.html
 //         (captured by scripts/fetch-product-details.mjs).
-// Outputs: src/data/product-details.json (typed via src/lib/product-details.ts) and
+// Outputs: src/data/product-details.json (typed via src/lib/catalog/types.ts (ProductDetail)) and
 //          reference/data/product-image-sources.json (placeholder URL -> source image URL, for the CMS migration).
 // MOCK images (owner decision 2026-11-06): every product-page image is a https://dummyimage.com placeholder with the
 // source dimensions and the source file name as its text; the CMS will supply the real images

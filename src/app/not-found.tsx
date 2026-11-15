@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SiteChrome } from "@/components/HomePage";
+import { SiteChrome } from "@/components/shell/SiteChrome";
 
 export const metadata = { title: "404 Not Found – Beyond The Vines Indonesia" };
 

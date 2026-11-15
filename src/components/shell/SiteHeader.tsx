@@ -10,12 +10,12 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { FormEvent, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { CSSProperties, MouseEvent as ReactMouseEvent } from "react";
-import { catalog, formatPrice } from "@/lib/catalog";
+import { formatPrice } from "@/lib/catalog/format";
 import { useCart } from "@/lib/cart";
-import { shellRepository, type MenuPromotion, type SelectorList } from "@/lib/navigation";
+import type { MenuPromotion, SelectorList } from "@/lib/storefront/types";
 import { SourceSvg } from "@/components/shell/SourceSvg";
+import { useChrome, useShell } from "@/components/shell/StorefrontContext";
 
-const shell = shellRepository.getShell();
 const HAMBURGER_BG: CSSProperties = { background: "var(--hamburger-active-color)" };
 
 function Promotion({ promo }: { promo: MenuPromotion }) {
@@ -28,6 +28,7 @@ function Promotion({ promo }: { promo: MenuPromotion }) {
 }
 
 function Logo() {
+  const shell = useShell();
   return (
     <Link className="logolink" href="/">
       <picture>{shell.logo.images.map((img) => <img key={img.className} src={img.src} className={img.className} alt={shell.logo.alt} width={shell.logo.width} height={shell.logo.height} />)}</picture>
@@ -59,11 +60,12 @@ function Selector({ list, display, onToggle, onChoose }: { list: SelectorList; d
 
 // MOCK predictive search over the local catalog fixture (source calls Shopify predictive search).
 function PredictiveResults({ query, close }: { query: string; close: () => void }) {
+  const suggestions = useChrome().searchSuggestions;
   const results = useMemo(() => {
     const term = query.trim().toLowerCase();
     if (!term) return [];
-    return catalog.listProducts().filter((p) => p.title.toLowerCase().includes(term)).slice(0, 8);
-  }, [query]);
+    return suggestions.filter((p) => p.title.toLowerCase().includes(term)).slice(0, 8);
+  }, [query, suggestions]);
   if (!query.trim()) return null;
   return (
     <div className="predictive-search-local">
@@ -78,6 +80,7 @@ function PredictiveResults({ query, close }: { query: string; close: () => void 
 }
 
 export function AnnouncementBar() {
+  const shell = useShell();
   const a = shell.announcement;
   return (
     <div id={shell.sectionIds.announcement} className="shopify-section shopify-section-group-header-group announcement-bar-section">
@@ -93,6 +96,7 @@ export function AnnouncementBar() {
 }
 
 export function SiteHeader({ onOpenCart }: { onOpenCart: () => void }) {
+  const shell = useShell();
   const router = useRouter();
   const { count } = useCart();
   const [drawerOpen, setDrawerOpen] = useState(false); // details[open]

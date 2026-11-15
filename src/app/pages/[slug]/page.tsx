@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
-import { NewsletterSection, SiteChrome } from "@/components/HomePage";
+import { NewsletterSection, SiteChrome } from "@/components/shell/SiteChrome";
 import ContentPage from "@/components/pages/ContentPage";
-import { contentPageRepository } from "@/lib/pages/content";
+import { repositories } from "@/lib/data";
 // Own-design content-block template (not generated from source CSS).
 import "./content-page.css";
 
@@ -9,18 +9,20 @@ import "./content-page.css";
 // the-btv-stores, the-vine-club, swym-wishlist, search) is a local 404 by owner decision (docs/page-inventory.md).
 export const dynamicParams = false;
 
-export function generateStaticParams() {
-  return contentPageRepository.slugs().map((slug) => ({ slug }));
+const { pages } = repositories;
+
+export async function generateStaticParams() {
+  return (await pages.contentSlugs()).map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  return { title: contentPageRepository.get(slug)?.documentTitle };
+  return { title: (await pages.getContentPage(slug))?.documentTitle };
 }
 
 export default async function ContentRoute({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const page = contentPageRepository.get(slug);
+  const page = await pages.getContentPage(slug);
   if (!page) notFound();
   return (
     <SiteChrome backToTop>

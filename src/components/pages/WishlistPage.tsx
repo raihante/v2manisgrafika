@@ -6,7 +6,7 @@
 // "Continue shopping" goes to the homepage (ASSUMPTION: the Swym target was not observed).
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import type { WishlistPageData } from "@/lib/pages/wishlist";
+import type { WishlistPageData } from "@/lib/pages/types";
 
 export default function WishlistPage({ page }: { page: WishlistPageData }) {
   const router = useRouter();

@@ -5,7 +5,7 @@
 // or Notify Me, and info labels. Used by Pair It With and You May Also Like on the product page.
 import Link from "next/link";
 import { useState } from "react";
-import type { ProductCard } from "@/lib/product-details";
+import type { ProductCard } from "@/lib/catalog/types";
 import { Spinner, WishlistIcons } from "./icons";
 
 // Source label wraps always contain a newline text node, so they never match :empty (which would hide them).

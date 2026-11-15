@@ -6,19 +6,24 @@
     "dev": "next dev -p 3400",
     "build": "next build",
     "start": "next start -p 3400",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "next": "16.4.4",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "sanitize-html": "2.18.2"
   },
   "devDependencies": {
     "@types/node": "24.10.0",
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2",
+    "@types/sanitize-html": "2.16.2",
     "eslint": "10.14.0",
     "eslint-config-next": "16.4.4",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "vitest": "5.1.0"
   }
 }

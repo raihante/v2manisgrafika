@@ -2,7 +2,8 @@
 // image, the custom-liquid form embed (MOCK form document in an iframe), and the multicolumn contact details.
 import LazySizesImage from "@/components/shared/LazySizesImage";
 import FormEmbedFrame from "@/components/pages/FormEmbedFrame";
-import type { ContactPageData } from "@/lib/pages/contact";
+import { RichText } from "@/components/shared/RichText";
+import type { ContactPageData } from "@/lib/pages/types";
 
 /** "a: 1; b: 2" -> React style object (declarations with an empty value are dropped, as browsers drop them). */
 export function inlineStyle(css: string): React.CSSProperties {
@@ -44,7 +45,7 @@ export default function ContactPage({ page }: { page: ContactPageData }) {
                       <div key={c.title} className={c.className}>
                         <h4 className="h5">{c.title}</h4>
                         {/* Source rich text (CMS field): links and line breaks as the source writes them. */}
-                        <div className="rte" dangerouslySetInnerHTML={{ __html: c.html }} />
+                        <RichText className="rte" html={c.html} />
                       </div>
                     ))}
                   </div>
