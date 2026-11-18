@@ -1,10 +1,10 @@
 import { describe, expect, it } from "vitest";
-import newIn from "@/data/collections/new-in.json";
+import collectionFixtures from "@/data/collections/collections.json";
 import { DEFAULT_SORT, gridColumns, parseQuery, queryToSearch, resolveView, visibleKeys } from "@/lib/collections/query";
 import type { CollectionData } from "@/lib/collections/types";
 
-// Test data: the frozen new-in snapshot (tests may read fixtures; components may not).
-const data = newIn as unknown as CollectionData;
+// Test data: the Manis Grafika new-in collection (tests may read fixtures; components may not).
+const data = (collectionFixtures as unknown as Record<string, CollectionData>)["new-in"];
 
 describe("collection URL state", () => {
   it("parses and serializes the source parameters", () => {

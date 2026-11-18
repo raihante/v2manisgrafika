@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { SiteChrome } from "@/components/shell/SiteChrome";
 
-export const metadata = { title: "404 Not Found – Beyond The Vines Indonesia" };
+export const metadata = { title: "404 Halaman Tidak Ditemukan – Manis Grafika" };
 
 export default function NotFound() {
   return (

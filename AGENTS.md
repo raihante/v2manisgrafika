@@ -1,6 +1,21 @@
 # Repository Guidelines
 
-## Mission
+## Current Direction: Manis Grafika Rebrand (owner decision 2026-11-16)
+
+This section supersedes the rest of this file wherever they conflict. The beyondthevines clone was the design base; the product is now the **Manis Grafika** storefront (client reference `https://manisgrafika.id/`, a WordPress/WooCommerce site built by Digitakarya; premium Yasin/prayer books and gift packages).
+
+- **Keep from BTV:** layout, component structure, interactions, responsive behaviour, and the Everett font (owner choice; licence coverage for a Manis Grafika site is unverified and must be confirmed before launch).
+- **Replace with Manis Grafika:** logo, photos, colours, all copy, and products. No BTV content may remain in fixtures, assets, or UI text (copy, product data, images, logos, blog articles, promotions).
+- **Content source:** manisgrafika.id, captured with ego-browser into `reference/manisgrafika/<date>/`. Download every used image into `public/assets/` and record it in `docs/asset-manifest.md`; never hotlink.
+- **Language:** Indonesian for all UI and content. Currency IDR.
+- **Navigation (option A):** Terbaru, Hardcover (Standar, Bludru, Spoon Leather), Dompet, Mika (Mika Kecil, Mika Besar), Tasbih; series listed as collections in the mega menus; promotion images come from Manis Grafika product photos. One-word top-level labels.
+- **Collections:** one collection template serves every category and series route (supersedes "only `/collections/new-in`").
+- **Blogs:** `/blogs` portal and article template stay; BTV articles are removed; clearly labelled placeholder articles stand in until the client supplies articles through the future CMS.
+- **Policy pages:** agent-drafted standard Indonesian e-commerce policies, labelled as drafts pending client/legal review.
+- **Removed:** market/country selector. **Later:** WhatsApp floating button.
+- **Verification:** the beyondthevines source benchmark no longer applies to rebranded content. Each rebranded route must keep the pre-rebrand layout (compare geometry with the pre-rebrand local build at the same widths), render with zero console errors, pass typecheck, lint, tests, and build, and is visually accepted only by owner screenshot review. Until that review, label it **rebranded, not visually verified**.
+
+## Mission (original BTV clone; see Current Direction above)
 
 Reconstruct `https://beyondthevines.co.id/` as a frontend-only, visually exact, responsive website. Match observable layout, content structure, interactions, routes, and behavior at every discovered viewport. The immediate priority is fidelity, not performance optimization. Use the globally installed `clone-website` skill as the primary cloning workflow; do not substitute Playwright, generic browser automation, or screenshot-only estimation. Work only with content and assets the project is authorized to reproduce. Do not bypass authentication, access controls, CAPTCHAs, or payment safeguards.
 

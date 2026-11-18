@@ -4,10 +4,11 @@ import "./shell-source.css";
 import "./commerce.css";
 import "./overlays.css";
 import "./shell.css";
+import "./brand.css";
 
 export const metadata: Metadata = {
-  title: "Beyond The Vines | Indonesia Online Store",
-  description: "A local frontend reconstruction of the Beyond The Vines Indonesia homepage.",
+  title: "Manis Grafika | Buku Yasin & Paket Hadiah",
+  description: "Manis Grafika: buku Yasin, Majmu Syarif dan paket hadiah premium dari Surakarta, dikirim ke seluruh Indonesia.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
@@ -15,7 +16,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     // The source theme sets html.js; shell rules such as `.js .mobile-toggle-wrapper[open].active .mobile-menu-drawer`
     // depend on it. data-scroll-behavior="smooth": Next 16 then disables the source's smooth scroll-behavior during
     // client navigations (the source always does full page loads, which never animate the scroll position).
-    <html lang="en" className="js" data-scroll-behavior="smooth">
+    <html lang="id" className="js" data-scroll-behavior="smooth">
       <body>{children}</body>
     </html>
   );

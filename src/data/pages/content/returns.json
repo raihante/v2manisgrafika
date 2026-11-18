@@ -1,124 +1,71 @@
 {
  "slug": "returns",
- "documentTitle": "Beyond The Vines | Returns Policy – Beyond The Vines Indonesia",
- "title": "Returns Policy",
- "accent": "rgb(0, 96, 212)",
+ "documentTitle": "Kebijakan Pengembalian – Manis Grafika",
+ "title": "Kebijakan Pengembalian",
+ "heroTitle": [
+  "Kebijakan",
+  "Pengembalian"
+ ],
+ "accent": "rgb(43, 88, 101)",
  "blocks": [
   {
+   "type": "callout",
+   "title": "Draf",
+   "html": "<p>Halaman ini adalah draf kebijakan standar e-commerce Indonesia yang disiapkan tim pengembang situs dan <strong>belum ditinjau</strong> oleh Manis Grafika maupun penasihat hukum. Isinya dapat berubah. Terakhir diperbarui: 17 November 2026.</p>"
+  },
+  {
    "type": "richText",
-   "variant": "lead",
-   "html": "<p>If the items you've ordered are not working exactly right for you, we've got you covered.</p><p>You can return any items (some exceptions apply*) within 30 days of purchase in exchange for BTV Shopping Credits. You may return your items only once, and credits will be valid for a year from the date of issue! To be eligible for a return, items should be unwashed, with hangtags still securely fastened.</p><p>Exchanges are processed in the same way as returns.</p><p>Sale items and purchases made using selected discount codes are not eligible for returns or exchanges.</p>"
+   "variant": "body",
+   "html": "<p>Setiap produk Manis Grafika dibuat khusus sesuai pesanan dan data personalisasi Anda. Karena itu, kami tidak menerima pengembalian karena berubah pikiran. Kami akan mengganti atau mencetak ulang produk jika terjadi kesalahan dari pihak kami.</p>"
   },
   {
-   "type": "image",
-   "image": {
-    "src": "/assets/source/pages/shogun/ad945522-6c2c-4ae5-8186-31a90e9906bf.webp",
-    "alt": "Returns Policy",
-    "width": 1717,
-    "height": 590
-   },
-   "maxWidth": 750
+   "type": "heading",
+   "html": "Kondisi yang Dapat Diajukan",
+   "align": "left"
   },
   {
-   "type": "iconList",
-   "variant": "steps",
+   "type": "list",
+   "ordered": false,
    "items": [
-    {
-     "icon": {
-      "src": "/assets/source/pages/shogun/6249b8f0-d19a-45bf-bdc9-a2c7479dbc18.png",
-      "alt": "",
-      "width": 2739,
-      "height": 2521
-     },
-     "title": "Start",
-     "html": "<p>Head to <a href=\"https://www.beyondthevines.co.id/a/service\">www.beyondthevines.co.id/a/service</a> to start your returns journey</p>"
-    },
-    {
-     "icon": {
-      "src": "/assets/source/pages/shogun/624f3295-07a6-4364-bc54-1ec139805de7.png",
-      "alt": "",
-      "width": 3188,
-      "height": 2480
-     },
-     "title": "Submission",
-     "html": "<p>Once you’ve shared the relevant details with us, submit your returns request.</p>"
-    },
-    {
-     "icon": {
-      "src": "/assets/source/pages/shogun/be7344e7-0ee6-41a9-a6ea-0112b31234f6.png",
-      "alt": "",
-      "width": 3139,
-      "height": 2451
-     },
-     "title": "Review",
-     "html": "<p>Our Crew will take a couple of days to review your returns. You’ll receive a notification email once the returns request is approved.</p>"
-    },
-    {
-     "icon": {
-      "src": "/assets/source/pages/shogun/103fea8c-3826-4112-aec6-f7f51c37fcd5.png",
-      "alt": "",
-      "width": 3139,
-      "height": 2368
-     },
-     "title": "Mail",
-     "html": "<p>Mail your items to The BTV Studio within 7 days. All return shipping charges are borne by the customer.</p>"
-    },
-    {
-     "icon": {
-      "src": "/assets/source/pages/shogun/2523d836-22bf-46d3-9842-a227bdf34a32.png",
-      "alt": "",
-      "width": 3021,
-      "height": 2314
-     },
-     "title": "Credits",
-     "html": "<p>Once our Crew have checked your items and made sure everything is in place, we’ll credit you your BTV Shopping Credits.</p>"
-    }
+    "Cacat produksi, misalnya jilid lepas, halaman rusak, atau cetakan tidak terbaca.",
+    "Hasil cetak tidak sesuai dengan desain yang sudah Anda setujui.",
+    "Produk rusak saat diterima.",
+    "Jumlah produk yang diterima kurang dari pesanan."
    ]
   },
   {
-   "type": "richText",
-   "variant": "note",
-   "html": "<p>*Exceptions: We are unable to process returns on sale items, bundles, sets, socks, eye masks, face masks, drinkware, stationery, and personalised products.</p>"
-  },
-  {
-   "type": "image",
-   "image": {
-    "src": "/assets/source/pages/shogun/542d05af-b099-4cbf-9606-4bddccaa59b3.webp",
-    "alt": "Returns Policy",
-    "width": 1630,
-    "height": 552
-   },
-   "maxWidth": 900
-  },
-  {
-   "type": "callout",
-   "title": "01",
-   "html": "<p>Mail to the <br>BTV Warehouse</p>"
+   "type": "heading",
+   "html": "Cara Mengajukan",
+   "align": "left"
   },
   {
    "type": "list",
    "ordered": true,
    "items": [
-    "Label items with your order number and have them securely packed.",
-    "Mail it to us using registered postage to the address indicated in your return request approval within 7 days!"
+    "Hubungi admin melalui WhatsApp <a href=\"https://wa.me/6281947949888\">+62 819 4794 9888</a> paling lambat 2 × 24 jam setelah paket diterima.",
+    "Sertakan nomor pesanan, foto produk, dan video saat membuka paket (unboxing) tanpa jeda.",
+    "Tim kami akan memeriksa laporan dan menginformasikan solusi: cetak ulang, penggantian produk, atau pengembalian dana untuk produk yang terdampak."
+   ]
+  },
+  {
+   "type": "heading",
+   "html": "Pengecualian",
+   "align": "left"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "Kesalahan data personalisasi yang sudah Anda setujui pada tahap desain.",
+    "Perbedaan warna ringan akibat tampilan layar.",
+    "Kerusakan karena pemakaian atau penyimpanan yang tidak sesuai."
    ]
   },
   {
    "type": "richText",
-   "variant": "lead",
-   "html": "<p>Should you require any additional assistance, contact us at <a href=\"mailto:customercare@beyondthevines.co.id\">customercare@beyondthevines.co.id</a></p>"
+   "variant": "body",
+   "html": "<p>Pertanyaan tentang kebijakan ini dapat dikirim melalui WhatsApp <a href=\"https://wa.me/6281947949888\">+62 819 4794 9888</a> atau email <a href=\"mailto:manisgrafika@gmail.com\">manisgrafika@gmail.com</a>.</p>"
   }
  ],
- "hero": {
-  "image": {
-   "src": "/assets/source/pages/shogun/6508a3a6-bcd1-4c22-85ad-d022712833eb.webp",
-   "alt": "Returns Policy",
-   "width": 1569,
-   "height": 845
-  },
-  "fit": "contain",
-  "maxWidth": 800,
-  "height": 450,
-  "mobileHeight": 200
- }
+ "variant": "policy"
 }

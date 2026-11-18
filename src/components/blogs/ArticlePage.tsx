@@ -16,10 +16,10 @@ export default function ArticlePage({ article, category, body, related }: Props)
   const categoryHref = hrefFor(article.category);
   return (
     <article className={`blog-article${placeholder ? " blog-article--placeholder" : ""}`}>
-      <nav className="blog-breadcrumb" aria-label="Breadcrumb">
+      <nav className="blog-breadcrumb" aria-label="Navigasi halaman">
         <ol>
-          <li><Link href="/">Home</Link></li>
-          <li><Link href="/blogs">Blogs</Link></li>
+          <li><Link href="/">Beranda</Link></li>
+          <li><Link href="/blogs">Blog</Link></li>
           {category ? <li><Link href={categoryHref}>{category.title}</Link></li> : null}
           <li aria-current="page">{article.title}</li>
         </ol>
@@ -32,7 +32,7 @@ export default function ArticlePage({ article, category, body, related }: Props)
         <h1 className="blog-article__title">{article.title}</h1>
         {article.source ? (
           <p className="blog-article__source">
-            Featured in <span className="blog-article__publication">{article.source.publication}</span>
+            Dimuat di <span className="blog-article__publication">{article.source.publication}</span>
           </p>
         ) : null}
       </header>
@@ -42,22 +42,22 @@ export default function ArticlePage({ article, category, body, related }: Props)
         </figure>
       ) : null}
       <div className="blog-article__body content-page">
-        {placeholder ? <p className="blog-article__notice">Placeholder content: the full article will be supplied by the CMS.</p> : null}
+        {placeholder ? <p className="blog-article__notice">Konten contoh: artikel lengkap akan diisi melalui CMS.</p> : null}
         <div className="content-body">
           {blocks.map((block, i) => <Block block={block} key={i} />)}
         </div>
         {article.source ? (
           <p className="blog-article__external">
             <a className="blog-button" href={article.source.url} target="_blank" rel="noopener noreferrer">
-              Read the full story <BlogArrow />
+              Baca artikel lengkap <BlogArrow />
             </a>
           </p>
         ) : null}
       </div>
       <section className="blog-related" aria-labelledby="blog-related-title">
         <div className="blog-related__head">
-          <h2 className="blog-related__title" id="blog-related-title">Related articles</h2>
-          {category ? <Link className="blog-related__back" href={categoryHref}>Back to {category.title} <BlogArrow /></Link> : null}
+          <h2 className="blog-related__title" id="blog-related-title">Artikel terkait</h2>
+          {category ? <Link className="blog-related__back" href={categoryHref}>Kembali ke {category.title} <BlogArrow /></Link> : null}
         </div>
         <div className="blog-grid">
           {related.map((r) => <ArticleCard key={r.article.slug} article={r.article} category={r.category} />)}

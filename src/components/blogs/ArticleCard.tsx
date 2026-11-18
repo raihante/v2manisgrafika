@@ -29,7 +29,7 @@ export default function ArticleCard({ article, category }: { article: BlogArticl
         </span>
         <span className="blog-card__title">{article.title}</span>
         {article.description ? <span className="blog-card__excerpt">{article.description}</span> : null}
-        <span className="blog-card__more">Read more <BlogArrow /></span>
+        <span className="blog-card__more">Baca selengkapnya <BlogArrow /></span>
       </Link>
     </article>
   );

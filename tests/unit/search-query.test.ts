@@ -1,11 +1,11 @@
 import { describe, expect, it } from "vitest";
-import newIn from "@/data/collections/new-in.json";
+import collectionFixtures from "@/data/collections/collections.json";
 import searchMeta from "@/data/search.json";
 import type { CollectionData } from "@/lib/collections/types";
 import { fill, pageHref, pageParts, parseSearch, runSearch, searchParamsFor } from "@/lib/search/query";
 import type { SearchMeta } from "@/lib/search/types";
 
-const index = newIn as unknown as CollectionData;
+const index = (collectionFixtures as unknown as Record<string, CollectionData>)["new-in"];
 const meta = searchMeta as SearchMeta;
 const priceOf = (text: string) => Number(text.replace(/[^0-9]/g, ""));
 
@@ -25,17 +25,17 @@ describe("search URL state", () => {
   });
 });
 
-describe("runSearch (MOCK over the new-in dataset)", () => {
+describe("runSearch (MOCK over the Manis Grafika new-in dataset)", () => {
   it("matches every term case- and accent-insensitively, 12 products per page", () => {
-    const r = runSearch(index, meta, { q: "TOTE", sort: "relevance", page: 1, filters: [] });
+    const r = runSearch(index, meta, { q: "SERIES", sort: "relevance", page: 1, filters: [] });
     expect(r.count).toBeGreaterThan(0);
     const products = new Set(r.keys.map((k) => r.cards[k].href));
     expect(products.size).toBeLessThanOrEqual(meta.perPage);
-    for (const k of r.keys) expect(r.cards[k].title.toLowerCase()).toContain("tote");
+    for (const k of r.keys) expect(r.cards[k].title.toLowerCase()).toContain("series");
   });
 
   it("sorts by price and returns nothing for unknown terms", () => {
-    const r = runSearch(index, meta, { q: "bag", sort: "price-ascending", page: 1, filters: [] });
+    const r = runSearch(index, meta, { q: "hardcover", sort: "price-ascending", page: 1, filters: [] });
     const firstCardPrices = [...new Map(r.keys.map((k) => [r.cards[k].href, priceOf(r.cards[k].price)])).values()];
     expect(firstCardPrices).toEqual([...firstCardPrices].sort((a, b) => a - b));
     expect(runSearch(index, meta, { q: "zzzz-no-match", sort: "relevance", page: 1, filters: [] }).count).toBe(0);

@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useSyncExternalStore } from "react";
+import { lineMeta } from "@/lib/cart";
 import { formatPrice } from "@/lib/catalog/format";
 import type { CheckoutBranding } from "@/lib/storefront/types";
 import { CheckoutHeader } from "./CheckoutForm";
@@ -41,7 +42,7 @@ export default function ThankYou({ branding }: { branding: CheckoutBranding }) {
             </div>
             <ul className="co-items co-box">
               {order.lines.map((line) => (
-                <li key={line.id}><span className="co-item-info"><b>{line.quantity} &times; {line.title}</b><small>{[line.colour, line.size].filter(Boolean).join(" / ")}</small></span><span>{formatPrice(line.price * line.quantity)}</span></li>
+                <li key={line.id}><span className="co-item-info"><b>{line.quantity} &times; {line.title}</b><small>{lineMeta(line)}</small></span><span>{formatPrice(line.price * line.quantity)}</span></li>
               ))}
               <li><span>Shipping</span><span>{formatPrice(order.shipping.price)}</span></li>
               <li className="co-total"><span>Total</span><span>{formatPrice(order.total)}</span></li>

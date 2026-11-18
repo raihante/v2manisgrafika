@@ -1,21 +1,21 @@
 {
- "documentTitle": "Contact Us – Beyond The Vines Indonesia",
+ "documentTitle": "Hubungi Kami – Manis Grafika",
  "richText": {
   "sectionId": "template--22799925346583__1661619382b4020fa2",
   "className": "rich-text text-center text-position-center text-width-medium section-spacing-padding section-spacing--disable-bottom",
-  "style": "--color-bg: rgba(0,0,0,0); --color-text: #5dd972; --solid-button-background: #5dd972; --outline-button-label: #5dd972; --solid-button-label: #ffffff; --bg-body: rgba(0,0,0,0); --color-accent: #151515; --color-accent-rgb: 21, 21, 21;",
+  "style": "--color-bg: rgba(0,0,0,0); --color-text: #2b5865; --solid-button-background: #2b5865; --outline-button-label: #2b5865; --solid-button-label: #ffffff; --bg-body: rgba(0,0,0,0); --color-accent: #151515; --color-accent-rgb: 21, 21, 21;",
   "innerClass": "",
   "imgClass": "retina_size",
   "width": 800,
   "height": 250,
-  "placeholder": "/assets/source/pages/CONTCT-US-NEW_20x6_crop_center.gif",
+  "placeholder": "/assets/manisgrafika/pages/hubungi-kami-header.webp",
   "srcset": [
    {
-    "src": "/assets/source/pages/CONTCT-US-NEW_1600x500_crop_center.gif",
+    "src": "/assets/manisgrafika/pages/hubungi-kami-header.webp",
     "w": 1600
    }
   ],
-  "alt": "",
+  "alt": "Hubungi Kami",
   "imgStyle": "object-position: 50% 50%;"
  },
  "form": {
@@ -37,23 +37,23 @@
   "columns": [
    {
     "className": "multicolumn__column small-12 medium-3 columns",
-    "title": "General Enquiries",
-    "html": "<p><a href=\"mailto:customercare@beyondthevines.co.id\" title=\"mailto:customercare@beyondthevines.co.id\">customercare@beyondthevines.co.id</a></p>"
+    "title": "WhatsApp",
+    "html": "<p><a href=\"https://wa.me/6281947949888\" target=\"_blank\" title=\"WhatsApp Manis Grafika\">+62 819 4794 9888</a></p>"
    },
    {
     "className": "multicolumn__column small-12 medium-3 columns",
-    "title": "Careers",
-    "html": "<p><a href=\"mailto:recruitment@beyondthevines.com\" target=\"_blank\" title=\"mailto:recruitment@beyondthevines.com\">recruitment@beyondthevines.com</a></p>"
+    "title": "Email",
+    "html": "<p><a href=\"mailto:manisgrafika@gmail.com\" title=\"mailto:manisgrafika@gmail.com\">manisgrafika@gmail.com</a></p>"
    },
    {
     "className": "multicolumn__column small-12 medium-3 columns",
-    "title": "Partnerships",
-    "html": "<p><a href=\"mailto:partnerships@beyondthevines.com\" title=\"mailto:partnerships@beyondthevines.com\">partnerships@beyondthevines.com</a></p>"
+    "title": "Workshop",
+    "html": "<p>Jl. Kapten Mulyadi, Kedung Lumbu, Kec. Ps. Kliwon (Lantai 2 Kios No. 3), Kota Surakarta, Jawa Tengah<br/><a href=\"https://www.google.com/maps/search/?api=1&query=Manis+Grafika+Jl.+Kapten+Mulyadi+Kedung+Lumbu+Surakarta\" target=\"_blank\" title=\"Google Maps\">Lihat di Google Maps</a></p>"
    },
    {
     "className": "multicolumn__column small-12 medium-3 columns",
-    "title": "Consumer Complaints Service",
-    "html": "<p><a href=\"mailto:customercare@beyondthevines.co.id\" title=\"mailto:customercare@beyondthevines.co.id\">customercare@beyondthevines.co.id</a><br/><br/><strong>Directorate General of Consumer Protection and Trade Compliance<br/>Ministry of Trade of the Republic of Indonesia</strong><br/>0853 1111 1010 (WhatsApp)</p>"
+    "title": "Layanan Pengaduan Konsumen",
+    "html": "<p><a href=\"mailto:manisgrafika@gmail.com\" title=\"mailto:manisgrafika@gmail.com\">manisgrafika@gmail.com</a><br/><br/><strong>Direktorat Jenderal Perlindungan Konsumen dan Tertib Niaga<br/>Kementerian Perdagangan Republik Indonesia</strong><br/>0853 1111 1010 (WhatsApp)</p>"
    }
   ]
  }

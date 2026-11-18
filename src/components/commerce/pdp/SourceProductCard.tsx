@@ -11,9 +11,10 @@ import { Spinner, WishlistIcons } from "./icons";
 // Source label wraps always contain a newline text node, so they never match :empty (which would hide them).
 const NL = "\n";
 
-const Price = ({ text }: { text: string }) => (
-  <span className="price">
-    <span className="amount"> {text}</span>
+const Price = ({ text, compareAt = null }: { text: string; compareAt?: string | null }) => (
+  <span className={`price${compareAt ? " price--on-sale" : ""}`}>
+    {compareAt && <del className="price__compare"><span className="amount">{compareAt}</span></del>}
+    <span className={`amount${compareAt ? " price__sale" : ""}`}> {text}</span>
     <small className="unit-price  hidden"><span></span><span className="unit-price-separator">/</span><span></span></small>
   </span>
 );
@@ -28,7 +29,7 @@ export default function SourceProductCard({ card, idPrefix, className = "", styl
     <div className="product-card-swatches--container no-js-hidden">
       <div className="product-card-swatches">
         {card.swatches.map((s, i) => (
-          <div key={s.value} className={`product-card-swatch${s.active ? " active defaultswatch" : ""}${s.soldOut ? " swatch-soldout " : "  "}defaultswatchnoswap`} style={{ "--option-color": "var(--bg-body)", "--option-color-image": `url('${s.image}')` } as React.CSSProperties} data-href={s.href} data-value={s.value}>
+          <div key={s.value} className={`product-card-swatch${s.active ? " active defaultswatch" : ""}${s.soldOut ? " swatch-soldout " : "  "}defaultswatchnoswap`} style={{ "--option-color": s.color || "var(--bg-body)", "--option-color-image": s.image ? `url('${s.image}')` : "none" } as React.CSSProperties} data-href={s.href} data-value={s.value}>
             <span className="visually-hidden" data-for={`${idPrefix}-${i}`}>{s.value}</span>
           </div>
         ))}
@@ -41,7 +42,7 @@ export default function SourceProductCard({ card, idPrefix, className = "", styl
       <figure className="product-featured-image thb-hover">
         <div className="swym-wishlist-button-custom-grid">
           {/* MOCK wishlist (docs/mock-behaviors.md "Wishlist"): no account storage, the button only toggles its pressed state. */}
-          <WishlistButton label="Save it for later" />
+          <WishlistButton label="Simpan untuk nanti" />
         </div>
         <div className="label-discount-code-grid-wrap"><div className="label-wrap">{NL}{card.overlayLabels.map((l) => <div key={l.text} className={l.className}>{l.text}</div>)}</div></div>
         <Link
@@ -67,14 +68,14 @@ export default function SourceProductCard({ card, idPrefix, className = "", styl
       </figure>
       <div className="product-card-info">
         <Link href={card.href} title={card.title} className="product-card-title"><h2 className="">{card.title}</h2></Link>
-        {card.priceFirst ? <><Price text={card.price} />{swatches}</> : <>{swatches}<Price text={card.price} /></>}
+        {card.priceFirst ? <><Price text={card.price} compareAt={card.compareAtPrice} />{swatches}</> : <>{swatches}<Price text={card.price} compareAt={card.compareAtPrice} /></>}
         <div className="jsc-preorder-grid-ship" aria-hidden="true"></div>
         {card.button === "notify" ? (
-          <div className="swym-bid-pdp swym-bid-grid product-card--add-to-cart-button button">Notify Me</div>
+          <div className="swym-bid-pdp swym-bid-grid product-card--add-to-cart-button button">Kabari Saya</div>
         ) : (
           <quick-view className="product-card--add-to-cart-button button" data-product-handle={card.handle ?? undefined} data-variant-id={card.variantId ?? undefined} tabIndex={-1} onClick={() => onQuickView?.(card)}>
             <span className="loading-overlay"><Spinner /></span>
-            <span className="product-card--add-to-cart-text">Add to Bag</span>
+            <span className="product-card--add-to-cart-text">Tambah Keranjang</span>
           </quick-view>
         )}
         {/* Source whitespace between the button and the labels: it pushes the inline-flex .label-wrap to its own line. */}

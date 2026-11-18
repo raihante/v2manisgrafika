@@ -80,7 +80,7 @@ export default function ContentPage({ page }: { page: ContentPageData }) {
   const style = { "--content-accent": page.accent, "--content-text": page.textColor } as CSSProperties;
   const hero = page.hero;
   return (
-    <article className={`content-page content-page--${page.slug}`} style={style}>
+    <article className={`content-page content-page--${page.slug}${page.variant ? ` content-page--${page.variant}` : ""}`} style={style}>
       {page.heroTitle ? (
         <header className="content-hero content-hero--title">
           <h1 className="content-hero__title">{page.heroTitle.map((line) => <span key={line}>{line}</span>)}</h1>

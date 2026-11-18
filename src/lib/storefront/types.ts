@@ -1,6 +1,7 @@
 // Storefront content types: the shared shell (announcement bar, header menus, mobile drawer, side panels), the
 // site-wide chrome (footer, newsletter, payment marks, logo), layout hidden inputs and the homepage sections.
-// Shapes follow the source theme markup (2026-11-06 snapshot) so the CMS can store the same fields.
+// Shapes follow the BTV source theme markup (2026-11-06 snapshot) so the CMS can store the same fields; content is
+// Manis Grafika since the 2026-11-16 rebrand (scripts/manisgrafika/build-shell.mjs).
 import type { RailCard } from "@/lib/catalog/types";
 import type { SafeSvg } from "@/lib/html/safe-html";
 
@@ -29,9 +30,10 @@ export type MobileMenuItem =
   | ({ kind: "link" } & NavLink)
   | { kind: "submenu"; label: string; dataTitle: string; summaryClass: string; entries: MobileMenuEntry[]; promotion: MenuPromotion | null };
 
-export type SelectorList = {
-  selected: { label: string; className: string; flag: string | null; chevron: SourceIcon };
-  options: { code: string; href: string; country: string | null; className: string; style: Record<string, string> | null; check: boolean; label: string; flag: string | null }[];
+export type PromoPopup = {
+  enabled: boolean; placeholder: boolean; delayMs: number;
+  image: string; imageAlt: string; title: string; subtitle: string;
+  button: { label: string; href: string };
 };
 
 export type ShellData = {
@@ -44,8 +46,6 @@ export type ShellData = {
   desktopMenu: DesktopMenuItem[];
   mobileMenu: MobileMenuItem[];
   accountLinks: (NavLink & { className: string | null; icon: SourceIcon | null; iconFirst: boolean })[];
-  stores: SelectorList;
-  languages: SelectorList;
   secondary: {
     search: { icon: SourceIcon; close: SourceIcon };
     wishlist: { href: string; className: string; icon: SourceIcon; white: string };
@@ -53,6 +53,8 @@ export type ShellData = {
     cart: { href: string; empty: string; white: string };
   };
   searchBar: { placeholder: string; submitIcon: SourceIcon; closeIcon: SourceIcon };
+  /** Timed promo popup (source "Backstage pass" slot). Rendered only when enabled. */
+  promoPopup: PromoPopup;
   sidePanels: {
     closeIcon: SourceIcon;
     cart: { title: string; titleClass: string | null; empty: string; desc: { text: string; icon: string; iconAlt: string }; suggestionTitle: string; pills: NavLink[]; continue: NavLink };
@@ -66,7 +68,15 @@ export type ShellData = {
 export type LayoutData = { hiddenInputs: { id: string; value: string }[] };
 
 export type PaymentMark = { name: string; image: string };
-export type FooterLink = { text: string; href: string };
+/** Footer link; `note` = optional small value shown under the label (e.g. the phone number under "WhatsApp"). */
+export type FooterLink = { text: string; href: string; note?: string };
+/** Footer: link columns, social links (icon = image path, 512px monochrome circle), copyright and payment caption. */
+export type FooterData = {
+  groups: { title: string; links: FooterLink[] }[];
+  social: (FooterLink & { icon: string })[];
+  copyright: string;
+  paymentsTitle: string;
+};
 export type Newsletter = {
   title: string; tagline: string; placeholder: string; buttonText: string;
   descriptionDesktop: string[]; descriptionMobile: string[]; successMessage: string;
@@ -79,7 +89,7 @@ export type SearchSuggestion = { handle: string; title: string; image: string; p
 export type ChromeData = {
   shell: ShellData;
   layout: LayoutData;
-  footerLinks: FooterLink[];
+  footer: FooterData;
   payments: PaymentMark[];
   newsletter: Newsletter;
   /** MOCK predictive search index (docs/mock-behaviors.md "Header search"). */
@@ -94,7 +104,8 @@ export type PromotionSlide = { image: string; mobileImage: string; mobileSrcSet:
 export type ProductRailData = { title: string; shopMore: string; headerBackground: string; products: RailCard[] };
 export type SocialSection = {
   titleLines: string[]; subtitle: string; instagramHandle: string; instagramUrl: string;
-  feedImages: string[]; feedLoops: number; images: string[]; feedSnapshot: string;
+  /** feedLinks[i] = Instagram post URL of feedImages[i] (lightbox "Lihat di Instagram"). */
+  feedImages: string[]; feedLinks: string[]; feedLoops: number; images: string[]; feedSnapshot: string;
 };
 export type HomepageData = { categoryHero: HeroSlide[]; promotions: PromotionSlide[]; rails: ProductRailData[]; social: SocialSection };
 

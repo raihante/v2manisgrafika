@@ -1,0 +1,89 @@
+/* Manis Grafika brand layer (owner decision 2026-11-16): teal #2B5865 (sampled from the Manis Grafika logo) for
+   primary buttons and active links, pink #CC3366 (manisgrafika.id accent) for sale prices and discount labels;
+   everything else keeps the BTV black/white theme. Selectors carry one extra type selector so they beat the per-template
+   source variable blocks (.template-product{...}, :root{...}) regardless of stylesheet order. */
+html:root,
+html [class*="template-"] {
+  --mg-teal: #2b5865;
+  --mg-teal-dark: #1f444e;
+  --mg-pink: #cc3366;
+  --mg-teal-light: #9fd0d8; /* light tint of the logo teal for text on dark photos */
+  --solid-button-background: var(--mg-teal);
+  --atc-button-background: var(--mg-teal);
+  --atc-button-hover: var(--mg-teal-dark);
+  --color-header-links-hover: var(--mg-teal);
+  /* BTV blue surfaces (#0060d4) -> teal: hamburger drawer, header search glyph. */
+  --hamburger-active-color: var(--mg-teal);
+  --search-color: var(--mg-teal);
+  --country-selector-bg-color: var(--mg-teal);
+}
+
+/* Remaining hard-coded BTV blues (#0060d4 -> teal, #002ea1 -> dark teal) in globals.css and commerce.css. */
+html .newsletter { background: var(--mg-teal-dark); }
+/* Active hero title: light teal, readable on the dark Instagram hero photos (owner 2026-11-17: teal was too dark). */
+html .category-links button.active { color: var(--mg-teal-light); }
+html .product-info .jsc-label.label-new { background: var(--mg-teal-dark); }
+html .product-info .jsc-label.label-limited-edition,
+html .product-section .product-info em.label-limited-edition { background: var(--mg-teal); }
+html .cm-button { background: var(--mg-teal); }
+html .cm-tile-label,
+html .co-header-cart { color: var(--mg-teal); }
+html .co-input:focus { outline-color: var(--mg-teal); border-color: var(--mg-teal); }
+html .co-choice.active { background: #eef4f5; outline-color: var(--mg-teal); }
+
+/* Promo popup (source "Backstage pass" slot): BTV blue panel -> teal, BTV red button -> MG pink. */
+html .login-register__popup-inner { background: var(--mg-teal); }
+html #jsc-login-register-popup .m-t-15 .button { background-color: var(--mg-pink); }
+
+/* Footer payment marks (QRIS only, owner decision 2026-11-17). Desktop: keep the single mark clear of the fixed
+   back-to-top pill (left edge 1359px at 1440 vs mark right edge 1390px). Mobile: centre it under the centred caption. */
+html .sub-footer.copyright-desc { margin-right: 45px; }
+
+html .copyright-desc-mobile .footer-payment-icons { text-align: center; }
+
+/* Footer contact column: label with its value in smaller muted type underneath (owner 2026-11-17). */
+html .footer .footer-link-note { display: block; margin-top: 2px; font-size: 14px; line-height: 1.35; color: #555; overflow-wrap: break-word; }
+html .footer .thb-widget-menu li:has(.footer-link-note) + li { margin-top: 10px; }
+@media (max-width: 480px) { html .footer .footer-link-note { font-size: 13px; } }
+
+/* Newsletter, stacked layout (<=798px), owner 2026-11-18 "coba fix": the BTV theme right-aligns the description under
+   the left-aligned title and pulls the email field 15px past the gutter (edge-to-edge at 390). Align the description
+   left with the title and keep the field inside the page gutter. Deliberate deviation from the BTV layout. */
+@media (max-width: 798px) {
+  html .email-signup-column.email-signup-column-2 .email-signup-description { text-align: left; }
+  html .newsletter .signup-container { margin: 0; }
+}
+
+/* FAQ accordion: BTV sage green rgb(143,183,153) -> light teal rows and a teal active category pill. */
+html .template-page-faq .jsc-collapsible-row:nth-of-type(2n+1) summary { background: #dcecef; }
+html .template-page-faq .faq-active { background: var(--mg-teal) !important; border-color: var(--mg-teal) !important; }
+
+/* Blog portal and article: BTV magenta #fe4dd2 -> teal. */
+html .blog-portal,
+html .blog-article { --blog-pink: var(--mg-teal); }
+
+/* Sale price: regular price struck through, current price in pink. */
+.price.price--on-sale { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 6px; }
+.price.price--on-sale .price__compare,
+.price.price--on-sale .price__compare .amount { color: #777; text-decoration: line-through; font-size: 0.8em; }
+.price .amount.price__sale { color: var(--mg-pink); }
+
+/* PDP quantity (minimum order) and personalisation ("halaman redaksi"). */
+.mg-personalisation { display: grid; gap: 18px; margin: 4px 0 20px; }
+.mg-personalisation .form__label { display: block; margin-bottom: 8px; }
+.mg-quantity { justify-self: start; width: max-content; display: inline-flex; align-items: stretch; border: 1px solid #000; border-radius: 50px; overflow: hidden; height: 44px; }
+.mg-quantity button { width: 44px; border: 0; background: transparent; font-size: 18px; cursor: pointer; color: inherit; }
+.mg-quantity button:disabled { opacity: 0.35; cursor: not-allowed; }
+.mg-quantity input { width: 72px; border: 0; text-align: center; font: inherit; -moz-appearance: textfield; appearance: textfield; background: transparent; }
+.mg-quantity input::-webkit-outer-spin-button,
+.mg-quantity input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.mg-redaksi { border: 0; margin: 0; padding: 0; display: grid; gap: 14px; min-width: 0; }
+.mg-redaksi legend { padding: 0; }
+.mg-field { display: grid; gap: 6px; min-width: 0; }
+.mg-field > label { font-size: 14px; }
+.mg-field input[type="text"],
+.mg-field textarea { width: 100%; border: 1px solid #000; border-radius: 8px; padding: 10px 12px; font: inherit; font-size: 14px; background: #fff; resize: vertical; }
+.mg-field input[type="file"] { font-size: 13px; max-width: 100%; }
+.mg-personalisation .mg-field__help { margin: 0; font-size: 12px; line-height: 1.4; color: #555; letter-spacing: 0; }
+.mg-field__file { font-size: 12px; color: var(--mg-teal); word-break: break-all; }
+.mg-form-error { display: flex; gap: 8px; align-items: center; margin: 0 0 12px; color: #b3262e; }

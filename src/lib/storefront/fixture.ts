@@ -31,7 +31,7 @@ export const fixtureStorefront: StorefrontRepository = {
   getChrome: () => (chrome ??= fixtureCatalog.listSummaries().then((summaries) => ({
     shell,
     layout: layoutFixture,
-    footerLinks: homepage.footerLinks,
+    footer: homepage.footer,
     payments: homepage.payments,
     newsletter: homepage.newsletter,
     searchSuggestions: summaries.map(({ handle, title, image, price }) => ({ handle, title, image, price })),

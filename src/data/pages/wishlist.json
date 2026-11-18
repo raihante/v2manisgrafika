@@ -1,33 +1,33 @@
 {
- "documentTitle": "Wishlist – Beyond The Vines Indonesia",
+ "documentTitle": "Wishlist – Manis Grafika",
  "pageClass": "swym-ui-component swym-wishlist-page swym-simple-wishlist-page swym-is-safari",
  "titleBarClass": "swym-wishlist-container-title-bar swym-bg-1 swym-bg-2 swym-color-4",
- "title": "My Wishlist",
+ "title": "Wishlist Saya",
  "user": {
-  "label": "Guest Shopper. This link will lead to a pop-up.",
-  "text": "Guest Shopper"
+  "label": "Pembeli tamu. Tautan ini membuka pop-up.",
+  "text": "Pembeli Tamu"
  },
  "tabs": [
   {
    "className": "swym-htc-tab-item swym-tab-wishlist",
-   "label": "Wishlist tab",
+   "label": "Tab wishlist",
    "selected": true,
    "text": "Wishlist"
   },
   {
    "className": "swym-htc-tab-item swym-tab-sfl",
-   "label": "Saved for Later tab",
+   "label": "Tab disimpan untuk nanti",
    "selected": false,
-   "text": "Saved for Later"
+   "text": "Disimpan untuk Nanti"
   }
  ],
  "detailClass": "swym-wishlist-detail swym-simple-wishlist-detail swym-show-share-option-on-top",
- "detailTitle": "My Wishlist",
- "shareLabel": "Share. This link will lead to a pop-up.",
- "menuLabel": "More Options",
+ "detailTitle": "Wishlist Saya",
+ "shareLabel": "Bagikan. Tautan ini membuka pop-up.",
+ "menuLabel": "Opsi lainnya",
  "empty": {
-  "title": "Love It? Add to My Wishlist",
-  "text": "My Wishlist allows you to keep track of all of your favorites and shopping activity whether you're on your computer, phone, or tablet. You won't have to waste time searching all over again for that item you loved on your phone the other day - it's all here in one place!",
-  "button": "Continue shopping"
+  "title": "Suka? Simpan ke Wishlist",
+  "text": "Wishlist membantu Anda menyimpan produk favorit di komputer, ponsel, atau tablet, sehingga tidak perlu mencari ulang produk yang Anda sukai.",
+  "button": "Lanjut belanja"
  }
 }

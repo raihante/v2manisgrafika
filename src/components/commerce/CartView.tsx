@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { formatPrice } from "@/lib/catalog/format";
-import { useCart } from "@/lib/cart";
+import { lineMeta, useCart } from "@/lib/cart";
 
 export default function CartView() {
   const { lines, subtotal, count, service } = useCart();
@@ -22,7 +22,7 @@ export default function CartView() {
                 <Link href={`/products/${line.handle}`} className="cm-line-image"><Image src={line.image} alt={line.title} fill sizes="120px" className="cover-image" /></Link>
                 <div className="cm-line-info">
                   <Link href={`/products/${line.handle}`} className="cm-line-title">{line.title}</Link>
-                  <p className="cm-line-meta">{[line.colour, line.size].filter(Boolean).join(" / ")}</p>
+                  <p className="cm-line-meta">{lineMeta(line)}</p>
                   <p className="cm-line-price">{formatPrice(line.price)}</p>
                   <div className="cm-line-actions">
                     <div className="cm-qty" aria-label={`Quantity for ${line.title}`}>

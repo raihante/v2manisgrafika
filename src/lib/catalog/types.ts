@@ -19,10 +19,30 @@ export type CatalogVariant = {
   /** One value per product option, in option order. */
   options: string[];
   price: Money;
+  /** Regular price shown struck through while a promotion runs; null when there is no promotion. */
+  compareAtPrice: Money | null;
   available: boolean;
   /** False for archived colours the storefront no longer offers (the source keeps these variants but hides their
    *  option values; nearly all are sold out, parapack-002 "Cobalt" is still marked available). */
   visible: boolean;
+};
+
+/** One input the customer fills in for a personalised product (Manis Grafika "halaman redaksi"). */
+export type PersonalisationField = {
+  key: string;
+  label: string;
+  type: "photo" | "text" | "textarea";
+  required: boolean;
+  maxLength: number | null;
+  help: string | null;
+};
+
+/** Per-product personalisation config (CMS-owned). Pages beyond freePages cost extraPagePrice per extraPageUnit pages. */
+export type Personalisation = {
+  freePages: number;
+  extraPagePrice: Money;
+  extraPageUnit: number;
+  fields: PersonalisationField[];
 };
 
 export type CatalogImage = { src: string; alt: string; /** Colour value the image belongs to, or null for all. */ option: string | null };
@@ -35,8 +55,13 @@ export type Product = {
   variants: CatalogVariant[];
   images: CatalogImage[];
   labels: string[];
-  /** "bundle" = product made of parts (btv-to-go-phone-strap); it still renders the approximate fallback page. */
+  /** "bundle" = product made of parts; it renders the approximate fallback page. */
   template: "standard" | "bundle";
+  /** Smallest quantity per order line (Manis Grafika default 50 pcs). */
+  minOrder: number;
+  personalisation: Personalisation | null;
+  /** Collection handles the product belongs to (category, sub-category and series). */
+  collections: string[];
 };
 
 export const isSoldOut = (p: Product) => p.variants.length > 0 && p.variants.every((v) => !v.available);
@@ -59,13 +84,16 @@ export type ProductSummary = {
   sizes: string[];
   soldOut: boolean;
   labels: string[];
+  /** True when quick add cannot add directly (option choices, personalisation): the card opens the product page. */
+  needsOptions: boolean;
 };
 
 /** Preview grid of the round-251 collections without a source capture (bags, your-favourites). */
 export type PreviewCollection = { handle: string; title: string; products: ProductSummary[] };
 
 export type CardLabel = { className: string; text: string };
-export type CardSwatch = { value: string; image: string; active: boolean; soldOut: boolean; href: string };
+/** image = swatch photo (empty when the swatch is a plain colour chip); color = chip colour or "". */
+export type CardSwatch = { value: string; image: string; color?: string; active: boolean; soldOut: boolean; href: string };
 /** A product card as the source product-grid renders it (collections, search, Pair It With, You May Also Like). */
 export type ProductCard = {
   title: string;
@@ -75,6 +103,7 @@ export type ProductCard = {
   handle: string | null;
   variantId: number | null;
   price: string;
+  compareAtPrice?: string | null;
   priceFirst: boolean;
   primary: string | null;
   primaryClass: string;
@@ -87,7 +116,7 @@ export type ProductCard = {
   button: "add" | "notify";
 };
 
-export type ProductVariant = { id: number; options: string[]; available: boolean; sku: string; labels: string[] };
+export type ProductVariant = { id: number; options: string[]; available: boolean; sku: string; labels: string[]; price: Money; compareAtPrice: Money | null };
 /** src = 2000w (the source <img src>), srcset/sizes exactly as the source gallery, thumb = 1200w copy (cart line image). */
 export type GalleryImage = { src: string; srcset: string; sizes: string; thumb: string; alt: string; ratio: number };
 /** panelHtml is sanitized rich text; {{SKU}} is replaced with the selected variant's SKU. */
@@ -113,6 +142,8 @@ export type ProductDetail = {
   related: ProductCard[];
   multicolumn: Multicolumn | null;
   template: "standard" | "bundle";
+  minOrder: number;
+  personalisation: Personalisation | null;
 };
 
 /** Homepage rail card (source featured-collection markup) with the quick-add data the card needs. */
@@ -120,6 +151,7 @@ export type RailCard = {
   title: string;
   href: string;
   price: string;
+  compareAtPrice: string | null;
   image: string;
   swatchSelected: string;
   swatchSuffix: string;
@@ -128,8 +160,8 @@ export type RailCard = {
   button: "add" | "notify";
   /** Hover images and colour swatches captured from the source card. */
   interaction: { secondaryImages: string[]; variants: { label: string; image: string | null; thumbnail: string | null; soldOut: boolean }[] } | null;
-  /** Quick add: products with a Size option open the product page instead of adding to the bag. */
-  quickAdd: { handle: string; price: Money; needsOptions: boolean };
+  /** Quick add: products that need choices (options, personalisation) open the product page instead. */
+  quickAdd: { handle: string; price: Money; needsOptions: boolean; minOrder: number };
 };
 
 // ---------------------------------------------------------------------------------------------------------------

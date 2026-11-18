@@ -8,7 +8,7 @@
 import Link from "next/link";
 import { useEffect } from "react";
 import { formatPrice } from "@/lib/catalog/format";
-import { useCart } from "@/lib/cart";
+import { lineMeta, useCart } from "@/lib/cart";
 import { SourceSvg } from "@/components/shell/SourceSvg";
 import { useShell } from "@/components/shell/StorefrontContext";
 
@@ -23,7 +23,7 @@ export function PageLoading() {
 
 function PanelClose({ onClick }: { onClick?: () => void }) {
   const panels = useShell().sidePanels;
-  return <side-panel-close className="side-panel-close" onClick={onClick} role="button" aria-label="Close"><SourceSvg icon={panels.closeIcon} /></side-panel-close>;
+  return <side-panel-close className="side-panel-close" onClick={onClick} role="button" aria-label="Tutup"><SourceSvg icon={panels.closeIcon} /></side-panel-close>;
 }
 
 function CartDrawer({ active, close }: { active: boolean; close: () => void }) {
@@ -55,16 +55,16 @@ function CartDrawer({ active, close }: { active: boolean; close: () => void }) {
                   <Link href={`/products/${line.handle}`} onClick={close}><img src={line.image} alt="" /></Link>
                   <div>
                     <Link href={`/products/${line.handle}`} onClick={close} className="cart-drawer-local__title">{line.title}</Link>
-                    <p className="cart-drawer-local__meta">{[line.colour, line.size].filter(Boolean).join(" / ")}</p>
+                    <p className="cart-drawer-local__meta">{lineMeta(line)}</p>
                     <div className="cart-drawer-local__row">
                       <div className="cart-drawer-local__qty">
-                        <button type="button" aria-label="Decrease quantity" onClick={() => service.setQuantity(line.id, line.quantity - 1)}>−</button>
+                        <button type="button" aria-label="Kurangi jumlah" onClick={() => service.setQuantity(line.id, line.quantity - 1)}>−</button>
                         <span>{line.quantity}</span>
-                        <button type="button" aria-label="Increase quantity" onClick={() => service.setQuantity(line.id, line.quantity + 1)}>+</button>
+                        <button type="button" aria-label="Tambah jumlah" onClick={() => service.setQuantity(line.id, line.quantity + 1)}>+</button>
                       </div>
                       <span>{formatPrice(line.price * line.quantity)}</span>
                     </div>
-                    <button type="button" className="cart-drawer-local__remove" onClick={() => service.remove(line.id)}>Remove</button>
+                    <button type="button" className="cart-drawer-local__remove" onClick={() => service.remove(line.id)}>Hapus</button>
                   </div>
                 </li>
               ))}
@@ -75,7 +75,7 @@ function CartDrawer({ active, close }: { active: boolean; close: () => void }) {
           <div className="side-panel-footer">
             <div className="mini-cart__row total"><span>Subtotal</span><span>{formatPrice(subtotal)}</span></div>
             <Link className="button" href="/checkout" onClick={close}><span>Checkout</span></Link>
-            <Link className="text-button cart-drawer-local__view" href="/cart" onClick={close}>View Bag</Link>
+            <Link className="text-button cart-drawer-local__view" href="/cart" onClick={close}>Lihat Keranjang</Link>
           </div>
         )}
       </div>

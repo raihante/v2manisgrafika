@@ -13,7 +13,7 @@ export type ContentBlock =
   | { type: "imageGrid"; items: ContentImage[] }
   | { type: "button"; label: string; href: string }
   | { type: "video"; src: string; poster?: string }
-  | { type: "iconList"; variant: "steps" | "bullets"; items: { icon: ContentImage; title?: string; html: SafeHtml }[] }
+  | { type: "iconList"; variant: "steps" | "bullets" | "features"; items: { icon: ContentImage; title?: string; html: SafeHtml }[] }
   | { type: "list"; ordered: boolean; items: SafeHtml[] }
   | { type: "callout"; title: string; html: SafeHtml };
 
@@ -26,6 +26,8 @@ export type ContentPageData = {
   heroTitle?: string[];
   /** Title artwork shown instead of a text band (returns, shipping-rate). */
   hero?: { image: ContentImage; fit: "contain" | "cover"; maxWidth: number; height: number; mobileHeight: number | null };
+  /** Layout variant: "policy" = compact legal layout (narrow column, smaller titles); omitted = default page. */
+  variant?: "policy";
   /** Page accent colour taken from the source page background. */
   accent: string;
   textColor?: string;

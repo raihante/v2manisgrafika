@@ -5,7 +5,7 @@ import { repositories } from "@/lib/data";
 // Own-design blog portal + article styles (not generated from source CSS).
 import "./blogs.css";
 
-export const metadata = { title: "Blogs – Beyond The Vines Indonesia", alternates: { canonical: "/blogs/" } };
+export const metadata = { title: "Blog – Manis Grafika", alternates: { canonical: "/blogs/" } };
 
 // ?category= and ?page= are read on the client (static export); the prerendered HTML is the unfiltered first page.
 export default async function BlogsRoute() {

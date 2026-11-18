@@ -18,7 +18,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ handle: string }> }) {
   const { handle } = await params;
   const title = (await catalog.getProduct(handle))?.title ?? "Product";
-  return { title: `${title} | Beyond The Vines – Beyond The Vines Indonesia` };
+  return { title: `${title} – Manis Grafika` };
 }
 
 export default async function ProductRoute({ params }: { params: Promise<{ handle: string }> }) {

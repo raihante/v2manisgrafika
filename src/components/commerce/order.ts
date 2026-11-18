@@ -15,7 +15,7 @@ export type MockOrder = {
   total: number;
 };
 
-export const ORDER_KEY = "btv-preview-last-order";
+export const ORDER_KEY = "mg-preview-last-order";
 
 // ASSUMPTION: shipping methods and rates are placeholders; the source checkout was not observed for this preview.
 export const SHIPPING_METHODS = [

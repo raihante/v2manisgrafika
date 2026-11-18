@@ -61,8 +61,8 @@ export function resolveView(data: CollectionData, query: CollectionQuery): Colle
     const page = seen.get(product)!;
     (pages[page] ??= []).push(key);
   }
-  const total = data.views[""].countText.match(/(\d+)\s+products?/)?.[1] ?? "";
-  return { countText: `${seen.size} of ${total} products`, pages: pages.length ? pages : [[]] };
+  const total = data.views[""].countText.match(/(\d+)\s+(?:products?|produk)/)?.[1] ?? "";
+  return { countText: `${seen.size} dari ${total} produk`, pages: pages.length ? pages : [[]] };
 }
 
 // --- Promotion placement (pagination.js buildPromoPlacementPlan, "before" promos; afterGrid promos trail) ---

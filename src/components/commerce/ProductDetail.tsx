@@ -21,7 +21,7 @@ export default function ProductDetail({ product, related }: { product: ProductSu
 
   const addToBag = () => {
     if (product.sizes.length > 0 && !size) return setError("Please select a size.");
-    localCart.add({ handle: product.handle, title: product.title, image: gallery[0], price: product.price, colour: colour?.label ?? "", size }, quantity);
+    localCart.add({ handle: product.handle, variantId: null, title: product.title, image: gallery[0], price: product.price, options: [{ name: "Cover", value: colour?.label ?? "" }, ...(size ? [{ name: "Size", value: size }] : [])] }, quantity);
     router.push("/cart");
   };
 
@@ -80,7 +80,7 @@ export default function ProductDetail({ product, related }: { product: ProductSu
 
           <details className="cm-accordion" open>
             <summary>Shipping &amp; Returns</summary>
-            <p>See our <Link href="/pages/shipping-rate">shipping rates</Link> and <Link href="/pages/returns">returns policy</Link>.</p>
+            <p>See our <Link href="/pages/kebijakan-pengiriman">shipping rates</Link> and <Link href="/pages/returns">returns policy</Link>.</p>
           </details>
         </div>
       </div>

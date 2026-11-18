@@ -1,0 +1,73 @@
+{
+ "slug": "kebijakan-pengiriman",
+ "documentTitle": "Kebijakan Pengiriman – Manis Grafika",
+ "title": "Kebijakan Pengiriman",
+ "heroTitle": [
+  "Kebijakan",
+  "Pengiriman"
+ ],
+ "accent": "rgb(43, 88, 101)",
+ "blocks": [
+  {
+   "type": "callout",
+   "title": "Draf",
+   "html": "<p>Halaman ini adalah draf kebijakan standar e-commerce Indonesia yang disiapkan tim pengembang situs dan <strong>belum ditinjau</strong> oleh Manis Grafika maupun penasihat hukum. Isinya dapat berubah. Terakhir diperbarui: 17 November 2026.</p>"
+  },
+  {
+   "type": "heading",
+   "html": "Lokasi Pengiriman",
+   "align": "left"
+  },
+  {
+   "type": "richText",
+   "variant": "body",
+   "html": "<p>Semua pesanan diproses dan dikirim dari workshop kami di Surakarta, Jawa Tengah, ke seluruh Indonesia.</p>"
+  },
+  {
+   "type": "heading",
+   "html": "Waktu Proses",
+   "align": "left"
+  },
+  {
+   "type": "richText",
+   "variant": "body",
+   "html": "<p>Proses pengerjaan dilakukan setelah desain disetujui oleh pelanggan dan membutuhkan waktu sekitar 6–8 hari kerja. Untuk permintaan percepatan, silakan hubungi admin Manis Grafika.</p>"
+  },
+  {
+   "type": "heading",
+   "html": "Ongkos Kirim",
+   "align": "left"
+  },
+  {
+   "type": "richText",
+   "variant": "body",
+   "html": "<p>Harga produk belum termasuk ongkos kirim. Ongkos kirim dihitung saat checkout berdasarkan alamat tujuan, berat pesanan, dan jasa pengiriman yang Anda pilih.</p>"
+  },
+  {
+   "type": "heading",
+   "html": "Pelacakan",
+   "align": "left"
+  },
+  {
+   "type": "richText",
+   "variant": "body",
+   "html": "<p>Setelah pesanan dikirim, nomor resi dikirim melalui WhatsApp atau email. Estimasi waktu tiba mengikuti layanan jasa pengiriman.</p>"
+  },
+  {
+   "type": "heading",
+   "html": "Alamat Pengiriman",
+   "align": "left"
+  },
+  {
+   "type": "richText",
+   "variant": "body",
+   "html": "<p>Pastikan alamat dan nomor telepon penerima benar. Biaya pengiriman ulang akibat alamat yang tidak lengkap atau salah menjadi tanggung jawab pemesan.</p>"
+  },
+  {
+   "type": "richText",
+   "variant": "body",
+   "html": "<p>Pertanyaan tentang kebijakan ini dapat dikirim melalui WhatsApp <a href=\"https://wa.me/6281947949888\">+62 819 4794 9888</a> atau email <a href=\"mailto:manisgrafika@gmail.com\">manisgrafika@gmail.com</a>.</p>"
+  }
+ ],
+ "variant": "policy"
+}

@@ -4,17 +4,13 @@
 // fetch to the collection API behind the same CollectionDataSource interface.
 import type { CollectionData, CollectionDataSource } from "./types";
 
-const loaders: Record<string, () => Promise<{ default: unknown }>> = {
-  "new-in": () => import("@/data/collections/new-in.json"),
-};
-const cache = new Map<string, Promise<CollectionData>>();
+// Every Manis Grafika collection lives in one small chunk (23 products), loaded once.
+let all: Promise<Record<string, CollectionData>> | null = null;
 
 const fixtureCollectionSource: CollectionDataSource = {
   load(handle) {
-    const loader = loaders[handle];
-    if (!loader) return Promise.reject(new Error(`No collection data for ${handle}`));
-    if (!cache.has(handle)) cache.set(handle, loader().then((m) => m.default as CollectionData));
-    return cache.get(handle)!;
+    all ??= import("@/data/collections/collections.json").then((m) => m.default as unknown as Record<string, CollectionData>);
+    return all.then((data) => data[handle] ?? Promise.reject(new Error(`No collection data for ${handle}`)));
   },
 };
 

@@ -1,8 +1,7 @@
-// Fixture catalog adapter (server only). Domain products and the product page view come from
-// src/data/product-details.json (scripts/build-product-details.mjs, 2026-11-06 captures); the compact summaries and
-// homepage rail cards add the homepage card data (src/data/homepage.json, product-card-interactions.json).
+// Fixture catalog adapter (server only). Products come from src/data/product-details.json, built from the
+// manisgrafika.id WooCommerce captures by scripts/manisgrafika/build-catalog.mjs; homepage rail cards and their hover
+// images come from src/data/homepage.json and product-card-interactions.json (same builder).
 // The MySQL adapter replaces this module behind CatalogRepository (src/lib/data.ts).
-// MOCK images: every PDP image URL is a dummyimage.com placeholder (docs/mock-behaviors.md "Product images").
 import "server-only";
 import detailData from "@/data/product-details.json";
 import homepage from "@/data/homepage.json";
@@ -14,6 +13,8 @@ import type { CatalogRepository, CardLabel, PreviewCollection, Product, ProductD
 type RawDetail = Omit<ProductDetail, "tabs" | "multicolumn"> & {
   tabs: { key: string; title: string; panelHtml: string }[];
   multicolumn: { heading: string; columns: (Omit<NonNullable<ProductDetail["multicolumn"]>["columns"][number], "html"> & { html: string })[] } | null;
+  collections: string[];
+  sourceUrl: string;
 };
 type RawCard = (typeof homepage.collections)[number]["products"][number];
 type Interaction = NonNullable<RailCard["interaction"]>;
@@ -25,25 +26,28 @@ export const handleOf = (href: string) => href.split("/").filter(Boolean).pop() 
 const parsePrice = (text: string) => Number(text.replace(/[^0-9]/g, "")) || 0;
 
 function toDomain(d: RawDetail): Product {
-  const price = parsePrice(d.priceText);
   return {
     handle: d.handle,
     title: d.title,
-    price,
+    price: parsePrice(d.priceText),
     options: d.options.map((o, i) => ({ name: o.name, values: [...new Set([...o.values, ...d.variants.map((v) => v.options[i])])] })),
     variants: d.variants.map((v) => ({
-      id: String(v.id), sku: v.sku, options: v.options, price, available: v.available,
+      id: String(v.id), sku: v.sku, options: v.options, price: v.price, compareAtPrice: v.compareAtPrice, available: v.available,
       visible: v.options.every((value, i) => d.options[i].values.includes(value)),
     })),
     images: d.galleries.flatMap((g) => g.images.map((i) => ({ src: i.src, alt: i.alt, option: g.colour }))),
     labels: [...new Set(d.variants.flatMap((v) => v.labels))],
     template: d.template,
+    minOrder: d.minOrder,
+    personalisation: d.personalisation,
+    collections: d.collections,
   };
 }
 
 function toDetail(d: RawDetail): ProductDetail {
+  const { collections: _collections, sourceUrl: _sourceUrl, ...view } = d;
   return {
-    ...d,
+    ...view,
     tabs: d.tabs.map((t) => ({ ...t, panelHtml: sanitizeRichText(t.panelHtml) })),
     multicolumn: d.multicolumn ? { ...d.multicolumn, columns: d.multicolumn.columns.map((c) => ({ ...c, html: sanitizeRichText(c.html) })) } : null,
   };
@@ -52,43 +56,48 @@ function toDetail(d: RawDetail): ProductDetail {
 const products = new Map(Object.values(rawDetails).map((d) => [d.handle, toDomain(d)]));
 const details = new Map<string, ProductDetail>();
 
-/** Summary = domain product (price, sizes, availability) + the homepage card presentation (image, hover images, swatches). */
-function toSummary(card: RawCard, product: Product): ProductSummary {
-  const interaction = interactions[card.title];
+/** A product needs the product page when the customer has to choose between option values or personalise it. */
+const needsOptions = (p: Product) => p.options.some((o) => o.values.length > 1) || !!p.personalisation?.fields.some((f) => f.required);
+
+/** Summary = domain product (price, options, availability) + its card presentation (first image, cover swatches). */
+function toSummary(product: Product): ProductSummary {
+  const interaction = interactions[product.title];
+  const image = product.images[0]?.src ?? "";
   return {
     handle: product.handle,
     title: product.title,
     price: product.price,
-    image: card.image,
-    images: [card.image, ...(interaction?.secondaryImages ?? [])],
+    image,
+    images: [image, ...(interaction?.secondaryImages ?? [])],
     colours: interaction?.variants.length
-      ? interaction.variants.map((v) => ({ label: v.label, image: v.image || card.image, thumbnail: v.thumbnail, soldOut: v.soldOut }))
-      : [{ label: card.swatchSelected, image: card.image, thumbnail: null, soldOut: false }],
+      ? interaction.variants.map((v) => ({ label: v.label, image: v.image || image, thumbnail: v.thumbnail, soldOut: v.soldOut }))
+      : [],
     sizes: optionValues(product, "Size"),
     soldOut: isSoldOut(product),
-    labels: card.labels.map((l) => l.text),
+    labels: product.labels,
+    needsOptions: needsOptions(product),
   };
 }
 
-const summaries = new Map<string, ProductSummary>();
+const summaries = new Map([...products.values()].map((p) => [p.handle, toSummary(p)]));
 const previewCollections: PreviewCollection[] = homepage.collections.map((c) => ({
   handle: handleOf(c.shopMore),
   title: c.title,
   products: c.products.map((card) => {
-    const handle = handleOf(card.href);
-    const product = products.get(handle);
-    if (!product) throw new Error(`Homepage card ${handle} has no product record`);
-    if (!summaries.has(handle)) summaries.set(handle, toSummary(card, product));
-    return summaries.get(handle)!;
+    const summary = summaries.get(handleOf(card.href));
+    if (!summary) throw new Error(`Homepage card ${card.href} has no product record`);
+    return summary;
   }),
 }));
 
 export function toRailCard(card: RawCard): RailCard {
-  const summary = summaries.get(handleOf(card.href))!;
+  const product = products.get(handleOf(card.href))!;
+  const summary = summaries.get(product.handle)!;
   return {
     title: card.title,
     href: card.href,
     price: card.price,
+    compareAtPrice: card.compareAtPrice ?? null,
     image: card.image,
     swatchSelected: card.swatchSelected,
     swatchSuffix: card.swatchSuffix,
@@ -96,14 +105,13 @@ export function toRailCard(card: RawCard): RailCard {
     overlayLabels: card.overlayLabels as CardLabel[],
     button: card.button === "notify" ? "notify" : "add",
     interaction: interactions[card.title] ?? null,
-    quickAdd: { handle: summary.handle, price: summary.price, needsOptions: summary.sizes.length > 0 },
+    quickAdd: { handle: summary.handle, price: summary.price, needsOptions: summary.needsOptions, minOrder: product.minOrder },
   };
 }
 
 export const fixtureCatalog: CatalogRepository = {
   listProducts: async () => [...products.values()],
   getProduct: async (handle) => products.get(handle) ?? null,
-  // Summaries exist for the homepage rail products (the 41-product preview catalog), in rail order.
   listSummaries: async () => [...summaries.values()],
   getSummary: async (handle) => summaries.get(handle) ?? null,
   getProductPage: async (handle) => {

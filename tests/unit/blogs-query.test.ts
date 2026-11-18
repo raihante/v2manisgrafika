@@ -44,7 +44,7 @@ describe("relatedArticles", () => {
 
 describe("hrefs", () => {
   it("builds flat article URLs and portal filter URLs", () => {
-    expect(articleHref("a-little-love-for-your-carryall")).toBe("/blogs/a-little-love-for-your-carryall");
+    expect(articleHref("contoh-promo-manis-grafika")).toBe("/blogs/contoh-promo-manis-grafika");
     expect(categoryHref(null)).toBe("/blogs");
     expect(categoryHref("news")).toBe("/blogs?category=news");
     expect(categoryHref("news", 2)).toBe("/blogs?category=news&page=2");

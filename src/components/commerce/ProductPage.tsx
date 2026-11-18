@@ -9,9 +9,11 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { openCartDrawer } from "@/components/Overlays";
 import { NOTIFY_ICON as notifyIcon } from "@/components/icons/source-icons";
 import { RichText } from "@/components/shared/RichText";
-import { localCart } from "@/lib/cart";
+import { localCart, type CartPersonalisation } from "@/lib/cart";
+import { formatPrice } from "@/lib/catalog/format";
 import { fillSafeHtml } from "@/lib/html/safe-html";
 import type { ProductCard, ProductDetail, ProductVariant } from "@/lib/catalog/types";
+import Personalisation from "./pdp/Personalisation";
 import { ArrowIcon, ErrorIcon, Spinner, TextButtonArrow, ZoomIcon } from "./pdp/icons";
 import PhotoSwipe from "./pdp/PhotoSwipe";
 import SourceProductCard, { WishlistButton } from "./pdp/SourceProductCard";
@@ -24,9 +26,11 @@ const PAIR_AUTOPLAY_MS = 2000; // jsc-reset-scripts.js applyComplementaryFlickit
 
 const parsePrice = (text: string) => Number(text.replace(/[^0-9]/g, "")) || 0;
 
-const Price = ({ text }: { text: string }) => (
-  <span className="price">
-    <span className="amount"> {text}</span>
+// Sale price: the regular price struck through before the current price (Manis Grafika compare-at price).
+const Price = ({ text, compareAt = null }: { text: string; compareAt?: string | null }) => (
+  <span className={`price${compareAt ? " price--on-sale" : ""}`}>
+    {compareAt && <del className="price__compare"><span className="amount">{compareAt}</span></del>}
+    <span className={`amount${compareAt ? " price__sale" : ""}`}> {text}</span>
     <small className="unit-price  hidden"><span></span><span className="unit-price-separator">/</span><span></span></small>
   </span>
 );
@@ -105,21 +109,21 @@ function AddToCartHolder({ variant, onAdd, sticky = false }: { variant: ProductV
   return (
     <div className="add_to_cart_holder ">
       <button type="submit" name="add" id={sticky ? "AddToCartSticky" : "AddToCart"} className="single-add-to-cart-button button" style={available ? undefined : { display: "none" }} onClick={(e) => { e.preventDefault(); onAdd(); }}>
-        <span className="single-add-to-cart-button--text">Add To Bag</span>
+        <span className="single-add-to-cart-button--text">Tambah Keranjang</span>
         <span className="loading-overlay"><Spinner /></span>
       </button>
       {!sticky && (
         <div className="jsc-preorder-notice" style={{ display: "none" }}>
-          <p className="jsc-preorder-notice__ship">Ships out from end November!</p>
-          <p className="jsc-preorder-notice__checkout">Pre-order and regular items cannot be purchased together.</p>
+          <p className="jsc-preorder-notice__ship">Dikirim mulai akhir bulan.</p>
+          <p className="jsc-preorder-notice__checkout">Produk pre-order dan produk reguler tidak dapat dibeli bersamaan.</p>
         </div>
       )}
-      <div className="jsc-preorder-limit-notice form-notification error" style={{ display: "none" }} role="alert"><ErrorIcon /><span>This preorder item is no longer available.</span></div>
+      <div className="jsc-preorder-limit-notice form-notification error" style={{ display: "none" }} role="alert"><ErrorIcon /><span>Produk pre-order ini sudah tidak tersedia.</span></div>
       {/* MOCK back-in-stock (docs/mock-behaviors.md "Notify Me"): shown for sold-out variants, no subscription is sent. */}
-      <div className="swym-bid-pdp swym-bid-grid product-card--add-to-cart-button button" style={available ? { display: "none" } : undefined}>Notify Me<NotifyIcon /></div>
+      <div className="swym-bid-pdp swym-bid-grid product-card--add-to-cart-button button" style={available ? { display: "none" } : undefined}>Kabari Saya<NotifyIcon /></div>
       {!sticky && <div className="sharethis-inline-share-buttons"></div>}
       {!sticky && (
-        <div className="swym-button-bar swym-isa-button-bar swym-inject swym-bbar-nomargin"><div className="swym-btn-container swym-inject" data-position="default"><button type="button" className="swym-button swym-add-to-watchlist swym-inject swym-text swym- swym-sbisa-v2 swym-loaded" style={{ display: "none" }} data-swaction="addToWatchlist" aria-label="SOLD OUT - HIT ME UP WHEN IT'S BACK!"><span className="swym-watchlist-cta">SOLD OUT - HIT ME UP WHEN IT&apos;S BACK!</span></button></div></div>
+        <div className="swym-button-bar swym-isa-button-bar swym-inject swym-bbar-nomargin"><div className="swym-btn-container swym-inject" data-position="default"><button type="button" className="swym-button swym-add-to-watchlist swym-inject swym-text swym- swym-sbisa-v2 swym-loaded" style={{ display: "none" }} data-swaction="addToWatchlist" aria-label="HABIS - KABARI SAYA SAAT TERSEDIA"><span className="swym-watchlist-cta">HABIS - KABARI SAYA SAAT TERSEDIA</span></button></div></div>
       )}
     </div>
   );
@@ -127,9 +131,12 @@ function AddToCartHolder({ variant, onAdd, sticky = false }: { variant: ProductV
 
 export default function ProductPage({ product }: { product: ProductDetail }) {
   const router = useRouter();
-  const colourIndex = product.options.findIndex((o) => /^colou?r$/i.test(o.name));
-  const sizeIndex = product.options.findIndex((o) => /^size$/i.test(o.name));
+  // Swatch option: BTV "Colour", Manis Grafika "Cover".
+  const colourIndex = product.options.findIndex((o) => /^(colou?r|cover)$/i.test(o.name));
   const [selected, setSelected] = useState<string[]>(product.initial);
+  const [quantity, setQuantity] = useState(product.minOrder);
+  const [answers, setAnswers] = useState<Record<string, string>>({});
+  const [formError, setFormError] = useState("");
   const [tab, setTab] = useState(0);
   const [copied, setCopied] = useState(false);
   const [lightbox, setLightbox] = useState<number | null>(null);
@@ -145,6 +152,8 @@ export default function ProductPage({ product }: { product: ProductDetail }) {
   useSwymBar(mediaRef);
 
   const variant = product.variants.find((v) => v.options.every((value, i) => value === selected[i]));
+  const priceText = variant?.price ? formatPrice(variant.price) : product.priceText;
+  const compareAtText = variant?.compareAtPrice ? formatPrice(variant.compareAtPrice) : null;
   const colour = colourIndex >= 0 ? selected[colourIndex] : null;
   const images = useMemo(() => (product.galleries.find((g) => g.colour === colour) ?? product.galleries[0])?.images ?? [], [colour, product.galleries]);
 
@@ -196,10 +205,27 @@ export default function ProductPage({ product }: { product: ProductDetail }) {
     });
   };
 
-  // MOCK add to bag (docs/mock-behaviors.md "Cart"): local cart service, then the cart drawer opens.
+  // MOCK add to bag (docs/mock-behaviors.md "Cart", "Personalisation"): local cart service, then the cart drawer opens.
   const addToBag = () => {
     if (!variant?.available) return;
-    localCart.add({ handle: product.handle, title: product.title, image: images[0]?.thumb ?? "", price: parsePrice(product.priceText), colour: colour ?? "", size: sizeIndex >= 0 ? selected[sizeIndex] : null });
+    const fields = product.personalisation?.fields ?? [];
+    const missing = fields.find((f) => f.required && !answers[f.key]?.trim());
+    if (missing) {
+      setFormError(`Mohon isi "${missing.label}".`);
+      return;
+    }
+    if (quantity < product.minOrder) {
+      setFormError(`Minimal pembelian ${product.minOrder} pcs.`);
+      return;
+    }
+    setFormError("");
+    const personalisation: CartPersonalisation[] = fields.filter((f) => answers[f.key]?.trim()).map((f) => ({ key: f.key, label: f.label, value: answers[f.key].trim() }));
+    localCart.add({
+      handle: product.handle, variantId: String(variant.id), title: product.title, image: images[0]?.thumb ?? "",
+      price: variant.price || parsePrice(product.priceText),
+      options: product.options.map((o, i) => ({ name: o.name, value: selected[i] })),
+      personalisation, minQuantity: product.minOrder,
+    }, quantity);
     openCartDrawer();
   };
   // PREVIEW quick view: the source opens a product drawer; until that drawer exists the card opens its product page.
@@ -219,7 +245,7 @@ export default function ProductPage({ product }: { product: ProductDetail }) {
       {/* Source ancestors body > #wrapper > #main-content: two source rules depend on them for their specificity. */}
       <div id="wrapper"><div id="main-content">
       <div id={`shopify-section-template--22834210603287__breadcrumbs`} className="shopify-section breadcrumbs-section">
-        <scroll-shadow><nav className="breadcrumbs" aria-label="breadcrumbs"><Link href="/" title="Home">Home</Link><i>/</i>{product.title}</nav></scroll-shadow>
+        <scroll-shadow><nav className="breadcrumbs" aria-label="breadcrumbs"><Link href="/" title="Beranda">Beranda</Link><i>/</i>{product.title}</nav></scroll-shadow>
       </div>
       <section id={`shopify-section-${SECTION}`} className="shopify-section product-section">
         <div className="pdp-section thb-product-detail product">
@@ -230,9 +256,9 @@ export default function ProductPage({ product }: { product: ProductDetail }) {
                   <div className="product-image-container" ref={mediaRef}>
                     <div className="swym-wishlist-button-custom-pdp">
                       <button type="button" className="jsc-copy-button" onClick={copyLink}><img src="/assets/source/share-button-outline.png" aria-label="share button outline icon" alt="share button outline icon" /></button>
-                      <div className={`success-copy-message${copied ? " show" : ""}`}>Link copied</div>
+                      <div className={`success-copy-message${copied ? " show" : ""}`}>Tautan disalin</div>
                       {/* MOCK wishlist (docs/mock-behaviors.md "Wishlist"). */}
-                      <WishlistButton label="Save it for later" />
+                      <WishlistButton label="Simpan untuk nanti" />
                     </div>
                     <product-slider id="Product-Slider" className="product-slider-pdp product-images product-images--collage flickity-enabled is-draggable" data-captions="false" tabIndex={0} ref={galleryRootRef} {...gallery.rootHandlers}>
                       <div className="flickity-viewport" ref={galleryViewportRef} style={gallery.viewportStyle} {...gallery.viewportHandlers}>
@@ -281,7 +307,7 @@ export default function ProductPage({ product }: { product: ProductDetail }) {
                       <div className="slider-counter caption">
                         <span className="slider-counter--current">{slide + 1}</span>
                         <span aria-hidden="true"> / </span>
-                        <span className="slider-counter--total">{product.slideCount}</span>
+                        <span className="slider-counter--total">{images.length}</span>
                       </div>
                       <button type="button" className="slider-button slider-button--next" name="next" onClick={() => selectSlide(slide + 1)}><ArrowIcon dir="next" /></button>
                     </div>
@@ -294,8 +320,8 @@ export default function ProductPage({ product }: { product: ProductDetail }) {
                       <div className="label-discount-code-wrap" style={{ display: "none" }}><div className="label-wrap"></div></div>
                       <h1 className="product-title uppercase--false" data-title={product.title}>{product.title}</h1>
                       <div className="product-price-container">
-                        <div className="no-js-hidden" id={`price-${SECTION}`}><Price text={product.priceText} /></div>
-                        <div className="product__tax caption">Tax included.{"\n"}<a href="/policies/shipping-policy">Shipping</a> calculated at checkout.{"\n"}</div>
+                        <div className="no-js-hidden" id={`price-${SECTION}`}><Price text={priceText} compareAt={compareAtText} /></div>
+                        <div className="product__tax caption">Harga per pcs, belum termasuk <Link href="/pages/kebijakan-pengiriman">ongkos kirim</Link>.{"\n"}</div>
                       </div>
                       <div className="label-qty-wrap-qv">
                         <div className="label-wrap">
@@ -304,7 +330,7 @@ export default function ProductPage({ product }: { product: ProductDetail }) {
                           )))}
                         </div>
                       </div>
-                      <input type="hidden" name="quantity" form={`product-form-${SECTION}`} value="1" />
+                      <input type="hidden" name="quantity" form={`product-form-${SECTION}`} value={quantity} />
                     </div>
                     <variant-selects id={`variant-selects-${SECTION}`} className="no-js-hidden" data-update-url="true" data-section={SECTION} data-url={`/products/${product.handle}`}>
                       <VariantFieldsets product={product} selected={selected} choose={choose} colourIndex={colourIndex} />
@@ -314,6 +340,8 @@ export default function ProductPage({ product }: { product: ProductDetail }) {
                         <div className="product-form__error-message-wrapper form-notification error" role="alert" hidden><ErrorIcon /><span className="product-form__error-message"></span></div>
                         <form id={`product-form-${SECTION}`} className="form" noValidate data-type="add-to-cart-form" onSubmit={(e) => { e.preventDefault(); addToBag(); }}>
                           <input type="hidden" className="variant-selected-form" name="id" value={variant?.id ?? ""} />
+                          <Personalisation config={product.personalisation} minOrder={product.minOrder} quantity={quantity} onQuantity={setQuantity} answers={answers} onAnswer={(key, value) => setAnswers((a) => ({ ...a, [key]: value }))} />
+                          {formError && <div className="form-notification error mg-form-error" role="alert"><ErrorIcon /><span>{formError}</span></div>}
                           <div className="product-add-to-cart-container">
                             <div className="form-notification error" style={{ display: "none" }}></div>
                             <AddToCartHolder variant={variant} onAdd={addToBag} />
@@ -323,7 +351,7 @@ export default function ProductPage({ product }: { product: ProductDetail }) {
                     </div>
                     <pickup-availability className="pickup-availability-wrapper" data-root-url="/" data-variant-id={variant?.id ?? ""}></pickup-availability>
                     <div className="product-info-tabs" data-product-info-tabs="">
-                      <div className="product-info-tabs__nav" role="tablist" aria-label="Product information">
+                      <div className="product-info-tabs__nav" role="tablist" aria-label="Informasi produk">
                         {product.tabs.map((t, i) => (
                           <button key={t.key} type="button" className={`product-info-tabs__tab${i === tab ? " is-active" : ""}`} role="tab" id={`Tab-${t.key}-${SECTION}`} aria-selected={i === tab} aria-controls={`Panel-${t.key}-${SECTION}`} data-tab-target={t.key} data-tab-heading={t.title} onClick={() => setTab(i)}>{t.title}</button>
                         ))}
@@ -337,7 +365,7 @@ export default function ProductPage({ product }: { product: ProductDetail }) {
                     {product.pairItWith.length > 0 && (
                       <product-recommendations className="complementary-products no-js-hidden product-recommendations--loaded">
                         <div className="complementary-products--inner">
-                          <div className="complementary-products--heading">Pair It With</div>
+                          <div className="complementary-products--heading">Cocok Dipadukan</div>
                           <div className="flickity-complementary flickity-enabled is-draggable" tabIndex={0} data-autoplay="" ref={pairRootRef} {...pair.rootHandlers}>
                             <div className="flickity-viewport" ref={pairViewportRef} style={pair.viewportStyle} {...pair.viewportHandlers}>
                               <div className="flickity-slider" ref={pairSliderRef}>
@@ -367,7 +395,7 @@ export default function ProductPage({ product }: { product: ProductDetail }) {
               <div className="product-add-to-cart-sticky--image" id={`product-image-${SECTION}--sticky`}>{images[0] && <img width={2000} height={Math.round(20 * images[0].ratio)} src={images[0].thumb} alt={images[0].alt} />}</div>
               <div className="product-add-to-cart-sticky--info">
                 <div className="product-add-to-cart-sticky--title">{product.title}</div>
-                <div id={`price-${SECTION}--sticky`}><Price text={product.priceText} /></div>
+                <div id={`price-${SECTION}--sticky`}><Price text={priceText} compareAt={compareAtText} /></div>
               </div>
               <span className="plus"></span>
               <span className="minus"></span>
@@ -428,7 +456,7 @@ export default function ProductPage({ product }: { product: ProductDetail }) {
           <div className="row full-width-row">
             <div className="small-12 columns">
               <product-recommendations className="product-recommendations swipe-on-mobile section-spacing-padding product-recommendations--loaded">
-                <div className="section-header section-header-left--true"><div className="section-header--content"><h2 className="h3">You May Also Like</h2></div></div>
+                <div className="section-header section-header-left--true"><div className="section-header--content"><h2 className="h3">Mungkin Anda Suka</h2></div></div>
                 <ul className="products collection row small-up-1 medium-up-2 large-up-6 no-padding">
                   {product.related.map((card, i) => (
                     <li key={card.href} className="columns"><SourceProductCard card={card} idPrefix={`${RECS}-${i + 1}`} onQuickView={quickView} /></li>

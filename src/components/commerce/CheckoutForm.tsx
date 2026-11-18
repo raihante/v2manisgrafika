@@ -6,13 +6,13 @@ import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react";
 import { formatPrice } from "@/lib/catalog/format";
 import type { CheckoutBranding } from "@/lib/storefront/types";
-import { useCart } from "@/lib/cart";
+import { lineMeta, useCart } from "@/lib/cart";
 import { ORDER_KEY, PROVINCES, SHIPPING_METHODS, type MockOrder } from "./order";
 
 export function CheckoutHeader({ logo }: { logo: string }) {
   return (
     <header className="co-header">
-      <Link href="/"><img src={logo} alt="Beyond The Vines" width={194} height={42} /></Link>
+      <Link href="/"><img src={logo} alt="Manis Grafika" width={194} height={42} /></Link>
       <Link href="/cart" className="co-header-cart">Cart</Link>
     </header>
   );
@@ -34,7 +34,7 @@ export default function CheckoutForm({ branding }: { branding: CheckoutBranding 
     setSubmitting(true);
     // MOCK payment: nothing is sent anywhere. Card inputs have no name, so they never enter FormData or storage.
     const order: MockOrder = {
-      number: `#BTV${Date.now().toString().slice(-6)}`,
+      number: `#MG${Date.now().toString().slice(-6)}`,
       email: get("email"),
       name: `${get("firstName")} ${get("lastName")}`.trim(),
       address: [get("address"), get("apartment"), `${get("city")}, ${get("province")} ${get("postal")}`, "Indonesia"].filter(Boolean).join(", "),
@@ -147,7 +147,7 @@ export default function CheckoutForm({ branding }: { branding: CheckoutBranding 
             {lines.map((line) => (
               <li key={line.id}>
                 <span className="co-item-image"><Image src={line.image} alt={line.title} fill sizes="64px" className="cover-image" /><i>{line.quantity}</i></span>
-                <span className="co-item-info"><b>{line.title}</b><small>{[line.colour, line.size].filter(Boolean).join(" / ")}</small></span>
+                <span className="co-item-info"><b>{line.title}</b><small>{lineMeta(line)}</small></span>
                 <span>{formatPrice(line.price * line.quantity)}</span>
               </li>
             ))}

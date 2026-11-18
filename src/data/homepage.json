@@ -1,1178 +1,728 @@
 {
-  "source": "https://beyondthevines.co.id/",
-  "capturedAt": "2026-11-03",
-  "logo": "/assets/source/7dc2646eeca4f8e4.png",
-  "announcement": [
-    {
-      "text": "HEART POCKET MIRROR, ON US!  WITH ANY CRUNCH CARRYALL 0.5 PURCHASE",
-      "href": "/blogs/a-little-love-for-your-carryall"
-    },
-    {
-      "text": "RP100K OFF YOUR FIRST ORDER WHEN YOU JOIN THE VINE CLUB*",
-      "href": "/blogs/beyond-the-vines-first-time-customer-promotion"
-    },
-    {
-      "text": " FREE SHIPPING TO INDONESIA WITH MIN. SPEND, INCLUSIVE OF CUSTOM DUTIES & TAXES",
-      "href": "/pages/shipping-rate"
-    }
-  ],
-  "navigation": [
-    "New In",
-    "Bags",
-    "Women",
-    "Men",
-    "Kids",
-    "Accessories",
-    "Lifestyle",
-    "Pets"
-  ],
-  "categoryHero": [
-    {
-      "label": "New In",
-      "image": "/assets/optimized/cd8cad5e7fbbb5cf-desktop.webp",
-      "mobileImage": "/assets/optimized/3f4db7f5ef211480-mobile.webp",
-      "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/LANDSCAPE_STUDIO_10_2026_BAGS_Desktop_Top.webp?v=1793074021&width=4000"
-    },
-    {
-      "label": "Bags",
-      "image": "/assets/optimized/c2f7f82bbfb94baf-desktop.webp",
-      "mobileImage": "/assets/optimized/7fd7d9779023a7ef-mobile.webp",
-      "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/Seasonal_Dumpling_2026_10_BAGS_Desktop_Top.webp?v=1792488148&width=4000"
-    },
-    {
-      "label": "Women",
-      "image": "/assets/optimized/2b2d421f23f48273-desktop.webp",
-      "mobileImage": "/assets/optimized/ee79cf0d94df4392-mobile.webp",
-      "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PRE_FALL_09_2026_WOMENS_Desktop_Top_A.webp?v=1789099414&width=4001"
-    },
-    {
-      "label": "Men",
-      "image": "/assets/optimized/645ef63fd269a7f4-desktop.webp",
-      "mobileImage": "/assets/optimized/0b56e4b7cca99547-mobile.webp",
-      "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/TOYO_2026_07_MEN_Desktop_Top.webp?v=1786011337&width=4000"
-    },
-    {
-      "label": "Kids",
-      "image": "/assets/optimized/5035e0f86fdfa625-desktop.webp",
-      "mobileImage": "/assets/optimized/a917c206c1b20bd8-mobile.webp",
-      "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/KIDS_BACKPACK_07_2026_DESKTOP_TOP.webp?v=1785558664&width=4001"
-    },
-    {
-      "label": "Accessories",
-      "image": "/assets/optimized/086f6d64a91b1c5c-desktop.webp",
-      "mobileImage": "/assets/optimized/0ac1209a6c3920ed-mobile.webp",
-      "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPOUCH_2026_09_ACC_Desktop_Top.webp?v=1791777492&width=4001"
-    },
-    {
-      "label": "Eyewear",
-      "image": "/assets/optimized/1792f7cf16ba2cff-desktop.webp",
-      "mobileImage": "/assets/optimized/0b8a63121b8b8284-mobile.webp",
-      "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/EYEWEAR_2026_09_Desktop_Top.webp?v=1790744116&width=4000"
-    },
-    {
-      "label": "Pets",
-      "image": "/assets/optimized/32e0a0cd22b41962-desktop.webp",
-      "mobileImage": "/assets/optimized/bf59d379f60b3c27-mobile.webp",
-      "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/BTV_Homepage_Banner_CNY_PETS_Desktop_Top.webp?v=1769064390&width=4000"
-    }
-  ],
-  "promotions": [
-    {
-      "image": "/assets/optimized/4876ebb75e8a2b65-desktop.webp",
-      "mobileImage": "/assets/optimized/818b86f16679fa1f-mobile.webp",
-      "mobileSrcSet": "/assets/source/9d087838db4f5d92.webp 352w, /assets/source/9dec0b45edb75bfe.webp 832w, /assets/source/818b86f16679fa1f.webp 1200w, /assets/source/08c871aaf87041ef.webp 1920w, /assets/source/6aeec7f112514dbd.webp 2250w",
-      "href": "/blogs/a-little-love-for-your-carryall",
-      "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/2026_10_Pocket_Mirror_GWP_Desktop_Bottom.webp?v=1793588877"
-    },
-    {
-      "image": "/assets/optimized/a4dc65fe7eac664c-desktop.webp",
-      "mobileImage": "/assets/optimized/83375e27bd941e43-mobile.webp",
-      "mobileSrcSet": "/assets/source/c5ff89e33fd127e0.webp 352w, /assets/source/69b86026be762f75.webp 832w, /assets/source/83375e27bd941e43.webp 1200w, /assets/source/0f3ef8d3349af590.webp 1920w, /assets/source/11bbe5deeade1f09.webp 2251w",
-      "href": "/pages/the-vine-club",
-      "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/ID_TVC.webp?v=1745206884"
-    },
-    {
-      "image": "/assets/optimized/e31f2dbc3611192f-desktop.webp",
-      "mobileImage": "/assets/optimized/21539e533af6fe86-mobile.webp",
-      "mobileSrcSet": "/assets/source/9ee5acc840fce361.webp 352w, /assets/source/ac52d9ff8461fb14.webp 832w, /assets/source/21539e533af6fe86.webp 1200w, /assets/source/461818d4875b76f9.webp 1920w, /assets/source/b94e4ecb9e238090.webp 2250w",
-      "href": "/pages/shipping-rate",
-      "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/181225DESK_ID_PH_Free_Shipping.webp?v=1766115528"
-    }
-  ],
-  "collections": [
-    {
-      "title": "New In",
-      "shopMore": "/collections/new-in",
-      "products": [
-        {
-          "title": "Landscape Studio Tote",
-          "href": "/products/landscape-studio-tote",
-          "price": "Rp 1.299.000",
-          "image": "/assets/source/f2d5049c6aaa1157.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/LANDSCAPE_STUDIO_NAVY_01.jpg?v=1792565239&width=2001",
-          "swatchSelected": "Navy/Black",
-          "swatchSuffix": "+ 3 Colours",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Beyond The Vines x Yashica Funtastic Keychain Camera",
-          "href": "/products/beyond-the-vines-x-yashica-funtastic-keychain-camera",
-          "price": "Rp 699.000",
-          "image": "/assets/source/52711885a7467953.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/YASHICA01.jpg?v=1792379560&width=2001",
-          "swatchSelected": "Multi",
-          "swatchSuffix": "",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "notify"
-        },
-        {
-          "title": "XS Dumpling Bag",
-          "href": "/products/xs-dumpling-bag",
-          "price": "Rp 1.039.000",
-          "image": "/assets/source/3d3bd2a5a8137ef8.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/XS_GREEN_01.jpg?v=1792384908&width=2000",
-          "swatchSelected": "Dark Green",
-          "swatchSuffix": "+ 14 Colours",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "M Dumpling Bag",
-          "href": "/products/m-dumpling-bag",
-          "price": "Rp 1.169.000",
-          "image": "/assets/source/3c3ee7a605fc960e.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/M_BUTTER_01.jpg?v=1792385017&width=2000",
-          "swatchSelected": "Butter Yellow",
-          "swatchSuffix": "+ 10 Colours",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "XL Dumpling Bag",
-          "href": "/products/xl-dumpling-bag",
-          "price": "Rp 1.399.000",
-          "image": "/assets/source/3fed35ca9c8642fe.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/XL_TOMATO_01.jpg?v=1792052228&width=2000",
-          "swatchSelected": "Tomato",
-          "swatchSuffix": "+ 6 Colours",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Suede Dumpling Bag",
-          "href": "/products/suede-dumpling-bag",
-          "price": "Rp 1.799.000",
-          "image": "/assets/source/9e1f9270739947a4.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/SUEDEDUMPLINGFRAME_01.jpg?v=1792380728&width=2001",
-          "swatchSelected": "Frame",
-          "swatchSuffix": "+ 2 Colours",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "notify"
-        },
-        {
-          "title": "ParaPack 001",
-          "href": "/products/parapack-001",
-          "price": "Rp 1.299.000",
-          "image": "/assets/source/95913fe7bd7e7234.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPACK01_LILAC01.jpg?v=1790927451&width=2001",
-          "swatchSelected": "Periwinkle",
-          "swatchSuffix": "+ 8 Colours",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "ParaPack 002",
-          "href": "/products/parapack-002",
-          "price": "Rp 1.499.000",
-          "image": "/assets/source/04389960d644433a.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPACK02_BRICK01.jpg?v=1790927906&width=2001",
-          "swatchSelected": "Brick Red",
-          "swatchSuffix": "+ 7 Colours",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Mini ParaPouch",
-          "href": "/products/mini-parapouch",
-          "price": "Rp 569.000",
-          "image": "/assets/source/cecd968018f8aa66.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/SMALLPARAPOUCH_BRICK01.jpg?v=1790929032&width=2001",
-          "swatchSelected": "Brick Red Colourblock",
-          "swatchSuffix": "+ 10 Colours",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "ParaPouch",
-          "href": "/products/parapouch",
-          "price": "Rp 699.000",
-          "image": "/assets/source/1df34f5bb7bcdbcf.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/LARGEPARAPOUCH_BROWN01.jpg?v=1790929272&width=2001",
-          "swatchSelected": "Charcoal Colourblock",
-          "swatchSuffix": "+ 9 Colours",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Parallel™ Eyewear - Tangent",
-          "href": "/products/parallel-eyewear-tangent",
-          "price": "Rp 1.499.000",
-          "image": "/assets/source/1e131637338942b5.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/TANGENTSILVER_01.jpg?v=1776223875&width=2000",
-          "swatchSelected": "Clear Grey",
-          "swatchSuffix": "+ 2 Colours",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Parallel™ Eyewear - Contour",
-          "href": "/products/parallel-eyewear-contour",
-          "price": "Rp 1.499.000",
-          "image": "/assets/source/c9cae4ac9a4152c3.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CONTOURSHELL_01.jpg?v=1776223187&width=2000",
-          "swatchSelected": "Tortoise Shell",
-          "swatchSuffix": "+ 1 Colour",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Parallel™ Eyewear - Horizon",
-          "href": "/products/parallel-eyewear-horizon",
-          "price": "Rp 1.499.000",
-          "image": "/assets/source/20f5fbae1dfd304e.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/HORIZONSAND_01.jpg?v=1790743680&width=2000",
-          "swatchSelected": "Clear Sand",
-          "swatchSuffix": "+ 2 Colours",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "ParaPocket 001",
-          "href": "/products/parapocket-001",
-          "price": "Rp 439.000",
-          "image": "/assets/source/46bf0bf0326a298c.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPOCKET01_LILAC01.jpg?v=1790156195&width=2001",
-          "swatchSelected": "Periwinkle/Maroon",
-          "swatchSuffix": "+ 2 Colours",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "ParaPocket 002",
-          "href": "/products/parapocket-002",
-          "price": "Rp 569.000",
-          "image": "/assets/source/03457f219026bc23.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPOCKET02_TEAL01.jpg?v=1790303218&width=2001",
-          "swatchSelected": "Teal/Charcoal",
-          "swatchSuffix": "+ 2 Colours",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Two Tone Travel Pouch (Extra Small)",
-          "href": "/products/two-tone-travel-pouch-extra-small",
-          "price": "Rp 179.000",
-          "image": "/assets/source/018d875e5c3b2042.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PVCPouch_Large_YellowPink01.jpg?v=1789542182&width=2000",
-          "swatchSelected": "Pink/Yellow",
-          "swatchSuffix": "+ 2 Colours",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Two Tone Travel Pouch (Small)",
-          "href": "/products/two-tone-travel-pouch-small",
-          "price": "Rp 209.000",
-          "image": "/assets/source/ff39731428924189.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PVCPouch_Small_GreenBlue01.jpg?v=1789542070&width=2000",
-          "swatchSelected": "Light Blue/Green",
-          "swatchSuffix": "+ 2 Colours",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "notify"
-        },
-        {
-          "title": "Crunch Carryall 1.5",
-          "href": "/products/crunch-carryall-1-5",
-          "price": "Rp 1.039.000",
-          "image": "/assets/source/f0bf3377ce6f9d7e.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CC1.5NYLON_BLUSH_01.jpg?v=1789117234&width=2001",
-          "swatchSelected": "Dusty Pink",
-          "swatchSuffix": "+ 2 Colours",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "notify"
-        },
-        {
-          "title": "Womens Linen Long Sleeve Shirt",
-          "href": "/products/womens-linen-long-sleeve-shirt",
-          "price": "Rp 1.039.000",
-          "image": "/assets/source/3348f25fe8181ba8.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/LINENSHIRT_FRONT_RED_657d4d01-195e-4956-b073-c7bbf35c1e43.jpg?v=1788349350&width=2000",
-          "swatchSelected": "Dark Red",
-          "swatchSuffix": "+ 1 Colour",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Womens Classic Long Sleeve Shirt",
-          "href": "/products/womens-classic-long-sleeve-shirt",
-          "price": "Rp 1.039.000",
-          "image": "/assets/source/713b572f9560baed.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/LINENSHIRT_FRONT_LILAC_00823c0b-7e92-4594-815c-e1665c7d7d85.jpg?v=1788349352&width=2000",
-          "swatchSelected": "Maroon Checkered",
-          "swatchSuffix": "+ 1 Colour",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Womens Contrast Ribbed Tank Top",
-          "href": "/products/womens-contrast-ribbed-tank-top",
-          "price": "Rp 569.000",
-          "image": "/assets/source/5af638d7f1ad4014.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CONTRASTRIBBEDTANK_FRONT_CREAM-20_015e0855-9c24-44f4-9ca6-02fe8c636a5b.jpg?v=1788161506&width=2000",
-          "swatchSelected": "Cream",
-          "swatchSuffix": "+ 2 Colours",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Womens Cotton Boxy Shirt Dress",
-          "href": "/products/womens-cotton-boxy-shirt-dress",
-          "price": "Rp 1.039.000",
-          "image": "/assets/source/441aa94e1d1caaa9.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/COTTONBOXYSHIRTDRESS_FRONT_CHAMBRAY.jpg?v=1788349354&width=2000",
-          "swatchSelected": "Dark Chambray",
-          "swatchSuffix": "+ 2 Colours",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Womens Front Wrap Shorts",
-          "href": "/products/womens-front-wrap-shorts",
-          "price": "Rp 899.000",
-          "image": "/assets/source/5e31d2d7f3a2d8d8.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/WRAP_SHORT_FRONT_BLACK-20.jpg?v=1788349346&width=2000",
-          "swatchSelected": "Black",
-          "swatchSuffix": "+ 2 Colours",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Womens Barrel Jersey Trouser",
-          "href": "/products/womens-barrel-jersey-trouser",
-          "price": "Rp 1.039.000",
-          "image": "/assets/source/43d85a92ef1669ee.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/BARRELJERSEYTROUSER_FRONT_MUSTARD_7359b46c-ecb2-4120-a755-51e0f54d9d0e.jpg?v=1788161503&width=2000",
-          "swatchSelected": "Light Olive",
-          "swatchSuffix": "+ 2 Colours",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "add"
-        }
-      ],
-      "headerBackground": "#316e6e"
-    },
-    {
-      "title": "BTV Bags",
-      "shopMore": "/collections/bags",
-      "products": [
-        {
-          "title": "Crunch Carryall 0.5",
-          "href": "/products/crunch-carryall-0-5",
-          "price": "Rp 799.000",
-          "image": "/assets/source/a904a283878cd4ba.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CC05_BLACK01_1d8a2210-830b-44eb-af0e-ad1bf062521a.jpg?v=1763362784&width=2000",
-          "swatchSelected": "Black",
-          "swatchSuffix": "+ 4 Colours",
-          "labels": [],
-          "overlayLabels": [
-            {
-              "text": "RECEIVE A COMPLIMENTARY HEART POCKET MIRROR",
-              "className": "jsc-label jsc-var-label label-discount-code"
-            }
-          ],
-          "button": "add"
-        },
-        {
-          "title": "Crunch Carryall 01",
-          "href": "/products/crunch-carryall-01",
-          "price": "Rp 1.039.000",
-          "image": "/assets/source/4d154223d5ab87d1.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CC01_LILAC_01.jpg?v=1735661180&width=2000",
-          "swatchSelected": "Lilac",
-          "swatchSuffix": "+ 4 Colours",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Crunch Carryall 02",
-          "href": "/products/crunch-carryall-02",
-          "price": "Rp 1.299.000",
-          "image": "/assets/source/4608990cd54254f9.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CC02_IVORY_01_599f2ba6-3aa6-42b8-9e57-9c43fdf2bd85.jpg?v=1772426064&width=2000",
-          "swatchSelected": "Cream",
-          "swatchSuffix": "+ 4 Colours",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Crunch Carryall 1.5",
-          "href": "/products/crunch-carryall-1-5",
-          "price": "Rp 1.039.000",
-          "image": "/assets/source/f0bf3377ce6f9d7e.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CC1.5NYLON_BLUSH_01.jpg?v=1789117234&width=2001",
-          "swatchSelected": "Dusty Pink",
-          "swatchSuffix": "+ 2 Colours",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "notify"
-        },
-        {
-          "title": "Crunch Carryall 03",
-          "href": "/products/crunch-carryall-03",
-          "price": "Rp 1.499.000",
-          "image": "/assets/source/02463a4b2ee5ad31.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CC03_BLACK01.jpg?v=1772426123&width=2000",
-          "swatchSelected": "Black",
-          "swatchSuffix": "+ 4 Colours",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "ParaPocket 001",
-          "href": "/products/parapocket-001",
-          "price": "Rp 439.000",
-          "image": "/assets/source/46bf0bf0326a298c.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPOCKET01_LILAC01.jpg?v=1790156195&width=2001",
-          "swatchSelected": "Periwinkle/Maroon",
-          "swatchSuffix": "+ 2 Colours",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "ParaPocket 002",
-          "href": "/products/parapocket-002",
-          "price": "Rp 569.000",
-          "image": "/assets/source/03457f219026bc23.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPOCKET02_TEAL01.jpg?v=1790303218&width=2001",
-          "swatchSelected": "Teal/Charcoal",
-          "swatchSuffix": "+ 2 Colours",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "ParaPack 001",
-          "href": "/products/parapack-001",
-          "price": "Rp 1.299.000",
-          "image": "/assets/source/95913fe7bd7e7234.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPACK01_LILAC01.jpg?v=1790927451&width=2001",
-          "swatchSelected": "Periwinkle",
-          "swatchSuffix": "+ 8 Colours",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "ParaPack 002",
-          "href": "/products/parapack-002",
-          "price": "Rp 1.499.000",
-          "image": "/assets/source/04389960d644433a.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPACK02_BRICK01.jpg?v=1790927906&width=2001",
-          "swatchSelected": "Brick Red",
-          "swatchSuffix": "+ 7 Colours",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "XS Dumpling Bag",
-          "href": "/products/xs-dumpling-bag",
-          "price": "Rp 1.039.000",
-          "image": "/assets/source/3d3bd2a5a8137ef8.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/XS_GREEN_01.jpg?v=1792384908&width=2000",
-          "swatchSelected": "Dark Green",
-          "swatchSuffix": "+ 14 Colours",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "M Dumpling Bag",
-          "href": "/products/m-dumpling-bag",
-          "price": "Rp 1.169.000",
-          "image": "/assets/source/3c3ee7a605fc960e.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/M_BUTTER_01.jpg?v=1792385017&width=2000",
-          "swatchSelected": "Butter Yellow",
-          "swatchSuffix": "+ 10 Colours",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "XL Dumpling Bag",
-          "href": "/products/xl-dumpling-bag",
-          "price": "Rp 1.399.000",
-          "image": "/assets/source/3fed35ca9c8642fe.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/XL_TOMATO_01.jpg?v=1792052228&width=2000",
-          "swatchSelected": "Tomato",
-          "swatchSuffix": "+ 6 Colours",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Suede Dumpling Bag",
-          "href": "/products/suede-dumpling-bag",
-          "price": "Rp 1.799.000",
-          "image": "/assets/source/9e1f9270739947a4.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/SUEDEDUMPLINGFRAME_01.jpg?v=1792380728&width=2001",
-          "swatchSelected": "Frame",
-          "swatchSuffix": "+ 2 Colours",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "notify"
-        },
-        {
-          "title": "Micro Dumpling Bag",
-          "href": "/products/micro-dumpling-bag",
-          "price": "Rp 799.000",
-          "image": "/assets/source/e921ae8ba08c5a54.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/MICRO_DUMPLING_BLACK_2817d0e1-29ce-4b37-bb33-cb6b0d6660e4.jpg?v=1735661472&width=2000",
-          "swatchSelected": "Black",
-          "swatchSuffix": "+ 6 Colours",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Confetti Dumpling Bag",
-          "href": "/products/confetti-dumpling-bag",
-          "price": "Rp 1.499.000",
-          "image": "/assets/source/f9e7b32254b591e0.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/XSCON_IVORY01.2.jpg?v=1761559006&width=2000",
-          "swatchSelected": "Ivory",
-          "swatchSuffix": "+ 1 Colour",
-          "labels": [
-            {
-              "text": "limited edition",
-              "className": "jsc-label jsc-var-label label-limited-edition"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Poofy Bag",
-          "href": "/products/poofy-bag",
-          "price": "Rp 1.039.000",
-          "image": "/assets/source/5cb585ff5d48f5c3.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/products/GREEN-4_0865692a-7a03-4afe-b834-70ea2cde68c7.jpg?v=1735661343&width=2000",
-          "swatchSelected": "Green",
-          "swatchSuffix": "+ 6 Colours",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Pocket Poofy Bag",
-          "href": "/products/pocket-poofy-bag",
-          "price": "Rp 799.000",
-          "image": "/assets/source/3693d20d22651d48.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/POCKETPOOFY_OLIVE01.jpg?v=1735661223&width=2000",
-          "swatchSelected": "Olive",
-          "swatchSuffix": "+ 3 Colours",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Extra Small Studio Tote",
-          "href": "/products/extra-small-studio-tote",
-          "price": "Rp 1.039.000",
-          "image": "/assets/source/90c6d58379034758.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/XSSTUDIOTOTE_NAVY01.jpg?v=1779954346&width=2001",
-          "swatchSelected": "Navy/Black",
-          "swatchSuffix": "+ 1 Colour",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Small Studio Tote",
-          "href": "/products/small-studio-tote",
-          "price": "Rp 1.299.000",
-          "image": "/assets/source/cc39e475e92a437c.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/STUDIOTOTE01_RED04.jpg?v=1761279637&width=2000",
-          "swatchSelected": "Terracotta/Plum",
-          "swatchSuffix": "+ 1 Colour",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "notify"
-        },
-        {
-          "title": "Landscape Studio Tote",
-          "href": "/products/landscape-studio-tote",
-          "price": "Rp 1.299.000",
-          "image": "/assets/source/f2d5049c6aaa1157.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/LANDSCAPE_STUDIO_NAVY_01.jpg?v=1792565239&width=2001",
-          "swatchSelected": "Navy/Black",
-          "swatchSuffix": "+ 3 Colours",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Large Studio Tote",
-          "href": "/products/large-studio-tote",
-          "price": "Rp 1.799.000",
-          "image": "/assets/source/5eb7de5d3989ced0.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/LARGESTUDIOTOTE_RED01.jpg?v=1779954697&width=2001",
-          "swatchSelected": "Terracotta/Plum",
-          "swatchSuffix": "+ 1 Colour",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Small Stretch Studio Tote",
-          "href": "/products/small-stretch-studio-tote",
-          "price": "Rp 1.039.000",
-          "image": "/assets/source/2e3bb587e251df62.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/SMALLSTUDIOTOTEBLUE_01.jpg?v=1784001812&width=2000",
-          "swatchSelected": "Periwinkle/Olive",
-          "swatchSuffix": "+ 1 Colour",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "notify"
-        },
-        {
-          "title": "Large Stretch Studio Tote",
-          "href": "/products/large-stretch-studio-tote",
-          "price": "Rp 1.299.000",
-          "image": "/assets/source/89b3bdc5e1a2527d.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/LARGESTUDIOTOTENAVY_01.jpg?v=1784011058&width=2000",
-          "swatchSelected": "Navy/Brown",
-          "swatchSuffix": "+ 1 Colour",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "notify"
-        },
-        {
-          "title": "The Carnival Bag",
-          "href": "/products/the-carnival-bag",
-          "price": "Rp 1.299.000",
-          "image": "/assets/source/b6f78e05639f2329.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CARNIVAL_BLACK_01.jpg?v=1782440853&width=2000",
-          "swatchSelected": "Black Colourblock",
-          "swatchSuffix": "+ 6 Colours",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "add"
-        }
-      ],
-      "headerBackground": "#eda7cf"
-    },
-    {
-      "title": "Your Favourites",
-      "shopMore": "/collections/your-favourites",
-      "products": [
-        {
-          "title": "BTV-TO-GO Phone Strap",
-          "href": "/products/btv-to-go-phone-strap",
-          "price": "Rp 687.000",
-          "image": "/assets/source/73a8f133fc2b24a6.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/TOGO_PLUM01.jpg?v=1778124240&width=2000",
-          "swatchSelected": "Plum",
-          "swatchSuffix": "+ 17 Colours",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Crunch Organiser 01",
-          "href": "/products/crunch-organiser-01",
-          "price": "Rp 569.000",
-          "image": "/assets/source/95d91e9705934fb5.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/ORGANISERSBLUSH_01.jpg?v=1758249892&width=2000",
-          "swatchSelected": "Mint/Lilac",
-          "swatchSuffix": "+ 4 Colours",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Kids Colourblock Backpack",
-          "href": "/products/kids-colourblock-backpack",
-          "price": "Rp 699.000",
-          "image": "/assets/source/ae86dcb08333a847.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/KIDSBACKPACKBROWN_01.jpg?v=1783243654&width=2000",
-          "swatchSelected": "Brown",
-          "swatchSuffix": "+ 3 Colours",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Poofy Bag",
-          "href": "/products/poofy-bag",
-          "price": "Rp 1.039.000",
-          "image": "/assets/source/5cb585ff5d48f5c3.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/products/GREEN-4_0865692a-7a03-4afe-b834-70ea2cde68c7.jpg?v=1735661343&width=2000",
-          "swatchSelected": "Green",
-          "swatchSuffix": "+ 6 Colours",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Womens Classic Long Sleeve Shirt",
-          "href": "/products/womens-classic-long-sleeve-shirt",
-          "price": "Rp 1.039.000",
-          "image": "/assets/source/713b572f9560baed.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/LINENSHIRT_FRONT_LILAC_00823c0b-7e92-4594-815c-e1665c7d7d85.jpg?v=1788349352&width=2000",
-          "swatchSelected": "Maroon Checkered",
-          "swatchSuffix": "+ 1 Colour",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Mini ParaPouch",
-          "href": "/products/mini-parapouch",
-          "price": "Rp 569.000",
-          "image": "/assets/source/cecd968018f8aa66.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/SMALLPARAPOUCH_BRICK01.jpg?v=1790929032&width=2001",
-          "swatchSelected": "Brick Red Colourblock",
-          "swatchSuffix": "+ 10 Colours",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Crunch Carryall 0.5",
-          "href": "/products/crunch-carryall-0-5",
-          "price": "Rp 799.000",
-          "image": "/assets/source/a904a283878cd4ba.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CC05_BLACK01_1d8a2210-830b-44eb-af0e-ad1bf062521a.jpg?v=1763362784&width=2000",
-          "swatchSelected": "Black",
-          "swatchSuffix": "+ 4 Colours",
-          "labels": [],
-          "overlayLabels": [
-            {
-              "text": "RECEIVE A COMPLIMENTARY HEART POCKET MIRROR",
-              "className": "jsc-label jsc-var-label label-discount-code"
-            }
-          ],
-          "button": "add"
-        },
-        {
-          "title": "Large Stretch Studio Tote",
-          "href": "/products/large-stretch-studio-tote",
-          "price": "Rp 1.299.000",
-          "image": "/assets/source/89b3bdc5e1a2527d.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/LARGESTUDIOTOTENAVY_01.jpg?v=1784011058&width=2000",
-          "swatchSelected": "Navy/Brown",
-          "swatchSuffix": "+ 1 Colour",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "notify"
-        },
-        {
-          "title": "ParaPack 002",
-          "href": "/products/parapack-002",
-          "price": "Rp 1.499.000",
-          "image": "/assets/source/04389960d644433a.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/PARAPACK02_BRICK01.jpg?v=1790927906&width=2001",
-          "swatchSelected": "Brick Red",
-          "swatchSuffix": "+ 7 Colours",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "ParaPouch",
-          "href": "/products/parapouch",
-          "price": "Rp 699.000",
-          "image": "/assets/source/1df34f5bb7bcdbcf.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/LARGEPARAPOUCH_BROWN01.jpg?v=1790929272&width=2001",
-          "swatchSelected": "Charcoal Colourblock",
-          "swatchSuffix": "+ 9 Colours",
-          "labels": [
-            {
-              "text": "new",
-              "className": "jsc-label jsc-var-label label-new"
-            }
-          ],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Crunch Carryall 01",
-          "href": "/products/crunch-carryall-01",
-          "price": "Rp 1.039.000",
-          "image": "/assets/source/4d154223d5ab87d1.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/CC01_LILAC_01.jpg?v=1735661180&width=2000",
-          "swatchSelected": "Lilac",
-          "swatchSuffix": "+ 4 Colours",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "add"
-        },
-        {
-          "title": "Micro Dumpling Bag",
-          "href": "/products/micro-dumpling-bag",
-          "price": "Rp 799.000",
-          "image": "/assets/source/e921ae8ba08c5a54.jpg",
-          "sourceImage": "https://beyondthevines.co.id/cdn/shop/files/MICRO_DUMPLING_BLACK_2817d0e1-29ce-4b37-bb33-cb6b0d6660e4.jpg?v=1735661472&width=2000",
-          "swatchSelected": "Black",
-          "swatchSuffix": "+ 6 Colours",
-          "labels": [],
-          "overlayLabels": [],
-          "button": "add"
-        }
-      ],
-      "headerBackground": "#002ea1"
-    }
-  ],
-  "social": {
-    "titleLines": [
-      "BTV",
-      "ON YOU"
-    ],
-    "subtitle": "See it on, cart it out! BTV Community in Beyond The Vines. Tag us ",
-    "instagramHandle": "@aworldbeyondthevines",
-    "instagramUrl": "https://www.instagram.com/aworldbeyondthevines/",
-    "feedImages": [
-      "/assets/social/social-01.jpg",
-      "/assets/social/social-02.jpg",
-      "/assets/social/social-03.jpg",
-      "/assets/social/social-04.jpg",
-      "/assets/social/social-05.jpg",
-      "/assets/social/social-06.jpg",
-      "/assets/social/social-07.jpg",
-      "/assets/social/social-08.jpg",
-      "/assets/social/social-09.jpg",
-      "/assets/social/social-10.jpg",
-      "/assets/social/social-11.jpg",
-      "/assets/social/social-12.jpg",
-      "/assets/social/social-13.jpg",
-      "/assets/social/social-14.jpg",
-      "/assets/social/social-15.jpg",
-      "/assets/social/social-16.jpg",
-      "/assets/social/social-17.jpg",
-      "/assets/social/social-18.jpg",
-      "/assets/social/social-19.jpg",
-      "/assets/social/social-20.jpg",
-      "/assets/social/social-21.jpg",
-      "/assets/social/social-22.jpg",
-      "/assets/social/social-23.jpg",
-      "/assets/social/social-24.jpg",
-      "/assets/social/social-25.jpg",
-      "/assets/social/social-26.jpg",
-      "/assets/social/social-27.jpg",
-      "/assets/social/social-28.jpg",
-      "/assets/social/social-29.jpg",
-      "/assets/social/social-30.jpg",
-      "/assets/social/social-31.jpg",
-      "/assets/social/social-32.jpg"
-    ],
-    "feedLoops": 4,
-    "images": [
-      "/assets/social/social-01.jpg",
-      "/assets/social/social-02.jpg",
-      "/assets/social/social-03.jpg",
-      "/assets/social/social-04.jpg",
-      "/assets/social/social-05.jpg",
-      "/assets/social/social-06.jpg",
-      "/assets/social/social-07.jpg",
-      "/assets/social/social-08.jpg",
-      "/assets/social/social-09.jpg",
-      "/assets/social/social-10.jpg",
-      "/assets/social/social-11.jpg",
-      "/assets/social/social-12.jpg"
-    ],
-    "feedSnapshot": "2026-11-04 (source Instafeed, 32 posts = rowsLimit 4 x 8 columns; hash-verified against reference/data/r220-feed-downloads.json)"
+ "source": "https://manisgrafika.id/ (Manis Grafika rebrand)",
+ "capturedAt": "2026-11-17",
+ "logo": "/assets/manisgrafika/manis-grafika-logo-teal.png",
+ "categoryHero": [
+  {
+   "label": "Terbaru",
+   "image": "/assets/manisgrafika/home/hero-terbaru-desktop.webp",
+   "mobileImage": "/assets/manisgrafika/home/hero-terbaru-mobile.webp",
+   "sourceImage": "Instagram @manisgrafika https://www.instagram.com/manisgrafika/p/DXofntKAcXo/ (image 19)"
   },
-  "newsletter": {
-    "title": "Newsletter",
-    "tagline": "Be the first to know!",
-    "placeholder": "Enter Your Email",
-    "buttonText": "Subscribe",
-    "descriptionDesktop": [
-      "Sign up for the latest launches, early access, ",
-      "special collaborations, you already know it! Here’s the place!"
-    ],
-    "descriptionMobile": [
-      "Sign up for the latest launches, early access, special collaborations, you already know it!",
-      "Here’s the place!"
-    ],
-    "successMessage": "Thank you for subscribing!"
+  {
+   "label": "Hardcover",
+   "image": "/assets/manisgrafika/home/hero-hardcover-desktop.webp",
+   "mobileImage": "/assets/manisgrafika/home/hero-hardcover-mobile.webp",
+   "sourceImage": "Instagram @manisgrafika https://www.instagram.com/manisgrafika/p/DW0_YsFAfY_/ (image 28)"
   },
-  "payments": [
+  {
+   "label": "Dompet",
+   "image": "/assets/manisgrafika/home/hero-dompet-desktop.webp",
+   "mobileImage": "/assets/manisgrafika/home/hero-dompet-mobile.webp",
+   "sourceImage": "Instagram @manisgrafika https://www.instagram.com/manisgrafika/p/DW6KIm4AWAv/ (image 24)"
+  },
+  {
+   "label": "Mika",
+   "image": "/assets/manisgrafika/home/hero-mika-desktop.webp",
+   "mobileImage": "/assets/manisgrafika/home/hero-mika-mobile.webp",
+   "sourceImage": "Instagram @manisgrafika https://www.instagram.com/manisgrafika/p/DXofntKAcXo/ (image 17)"
+  },
+  {
+   "label": "Tasbih",
+   "image": "/assets/manisgrafika/home/hero-tasbih-desktop.webp",
+   "mobileImage": "/assets/manisgrafika/home/hero-tasbih-mobile.webp",
+   "sourceImage": "Instagram @manisgrafika https://www.instagram.com/manisgrafika/p/DW0_YsFAfY_/ (image 29)"
+  }
+ ],
+ "promotions": [
+  {
+   "image": "/assets/manisgrafika/home/promo-terbaru-desktop.webp",
+   "mobileImage": "/assets/manisgrafika/home/promo-terbaru-mobile-1200.webp",
+   "mobileSrcSet": "/assets/manisgrafika/home/promo-terbaru-mobile-352.webp 352w, /assets/manisgrafika/home/promo-terbaru-mobile-832.webp 832w, /assets/manisgrafika/home/promo-terbaru-mobile-1200.webp 1200w",
+   "href": "/collections/new-in",
+   "sourceImage": "Instagram @manisgrafika https://www.instagram.com/manisgrafika/p/DafQi53gdRK/ (image 01)"
+  },
+  {
+   "image": "/assets/manisgrafika/home/promo-paket-desktop.webp",
+   "mobileImage": "/assets/manisgrafika/home/promo-paket-mobile-1200.webp",
+   "mobileSrcSet": "/assets/manisgrafika/home/promo-paket-mobile-352.webp 352w, /assets/manisgrafika/home/promo-paket-mobile-832.webp 832w, /assets/manisgrafika/home/promo-paket-mobile-1200.webp 1200w",
+   "href": "/collections/paket",
+   "sourceImage": "Instagram @manisgrafika https://www.instagram.com/manisgrafika/p/DZcXgktgVuR/ (image 05)"
+  },
+  {
+   "image": "/assets/manisgrafika/home/promo-hardcover-desktop.webp",
+   "mobileImage": "/assets/manisgrafika/home/promo-hardcover-mobile-1200.webp",
+   "mobileSrcSet": "/assets/manisgrafika/home/promo-hardcover-mobile-352.webp 352w, /assets/manisgrafika/home/promo-hardcover-mobile-832.webp 832w, /assets/manisgrafika/home/promo-hardcover-mobile-1200.webp 1200w",
+   "href": "/collections/hardcover",
+   "sourceImage": "Instagram @manisgrafika https://www.instagram.com/manisgrafika/p/DXEcuCHgU-v/ (image 23)"
+  }
+ ],
+ "collections": [
+  {
+   "title": "Terbaru",
+   "shopMore": "/collections/new-in",
+   "headerBackground": "#2b5865",
+   "products": [
     {
-      "name": "VISA",
-      "image": "/assets/payments/BTV_Payment_Logo_VISA.webp"
+     "title": "Hardcover Spoon Leather – Manis 12",
+     "href": "/products/spoon-leather-manis-12",
+     "price": "Rp 41.184",
+     "compareAtPrice": "Rp 68.640",
+     "image": "/assets/manisgrafika/DSC01973_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/spoon-leather-manis-12/",
+     "swatchSelected": "Manis 12 ",
+     "swatchSuffix": "",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
     },
     {
-      "name": "MASTERCARD",
-      "image": "/assets/payments/BTV_Payment_Logo_MASTERCARD.webp"
+     "title": "Hardcover Bludru – Manis 11",
+     "href": "/products/bludru-manis-11",
+     "price": "Rp 32.736",
+     "compareAtPrice": "Rp 54.560",
+     "image": "/assets/manisgrafika/DSC01981_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/bludru-manis-11/",
+     "swatchSelected": "Manis 11 ",
+     "swatchSuffix": "",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
     },
     {
-      "name": "QRIS",
-      "image": "/assets/payments/BTV_Payment_Logo_QRIS.webp"
+     "title": "Hardcover Bludru – Manis 10",
+     "href": "/products/bludru-manis-10",
+     "price": "Rp 32.736",
+     "compareAtPrice": "Rp 54.560",
+     "image": "/assets/manisgrafika/DSC01992_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/bludru-manis-10/",
+     "swatchSelected": "Manis 10 ",
+     "swatchSuffix": "",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Hardcover – Manis 09",
+     "href": "/products/hardcover-manis-09",
+     "price": "Rp 31.536",
+     "compareAtPrice": "Rp 52.560",
+     "image": "/assets/manisgrafika/DSC01978_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/hardcover-manis-09/",
+     "swatchSelected": "Manis 09 ",
+     "swatchSuffix": "",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Hardcover – Manis 08",
+     "href": "/products/hardcover-manis-08",
+     "price": "Rp 31.536",
+     "compareAtPrice": "Rp 52.560",
+     "image": "/assets/manisgrafika/DSC01983_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/hardcover-manis-08/",
+     "swatchSelected": "Manis 08 ",
+     "swatchSuffix": "",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Hardcover – Manis 07",
+     "href": "/products/hardcover-manis-07",
+     "price": "Rp 31.536",
+     "compareAtPrice": "Rp 52.560",
+     "image": "/assets/manisgrafika/DSC01988_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/hardcover-manis-07/",
+     "swatchSelected": "Manis 07 ",
+     "swatchSuffix": "",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Hardcover – Manis 06",
+     "href": "/products/hardcover-manis-06",
+     "price": "Rp 31.536",
+     "compareAtPrice": "Rp 52.560",
+     "image": "/assets/manisgrafika/DSC01976_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/hardcover-manis-06/",
+     "swatchSelected": "Manis 06 ",
+     "swatchSuffix": "",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Hardcover – Manis 05",
+     "href": "/products/hardcover-manis-05",
+     "price": "Rp 31.536",
+     "compareAtPrice": "Rp 52.560",
+     "image": "/assets/manisgrafika/DSC01994_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/hardcover-manis-05/",
+     "swatchSelected": "Manis 05 ",
+     "swatchSuffix": "",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Hardcover – Manis 04",
+     "href": "/products/hardcover-manis-04",
+     "price": "Rp 31.536",
+     "compareAtPrice": "Rp 52.560",
+     "image": "/assets/manisgrafika/DSC01985_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/hardcover-manis-04/",
+     "swatchSelected": "Manis 04 ",
+     "swatchSuffix": "",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Hardcover – Manis 03",
+     "href": "/products/hardcover-manis-03",
+     "price": "Rp 31.536",
+     "compareAtPrice": "Rp 52.560",
+     "image": "/assets/manisgrafika/DSC01990_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/hardcover-manis-03/",
+     "swatchSelected": "Manis 03 ",
+     "swatchSuffix": "",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Hardcover – Manis 02",
+     "href": "/products/hardcover-manis-02",
+     "price": "Rp 31.536",
+     "compareAtPrice": "Rp 52.560",
+     "image": "/assets/manisgrafika/DSC01998_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/hardcover-manis-02/",
+     "swatchSelected": "Manis 02 ",
+     "swatchSuffix": "",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Hardcover – Manis 01",
+     "href": "/products/hardcover-manis-01",
+     "price": "Rp 31.536",
+     "compareAtPrice": "Rp 52.560",
+     "image": "/assets/manisgrafika/DSC01995_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/hardcover-manis-01/",
+     "swatchSelected": "Manis 01 ",
+     "swatchSuffix": "",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
     }
-  ],
-  "footerLinks": [
+   ]
+  },
+  {
+   "title": "Hardcover",
+   "shopMore": "/collections/hardcover",
+   "headerBackground": "#cc3366",
+   "products": [
     {
-      "text": "About Us",
+     "title": "Hardcover Spoon Leather – Manis 12",
+     "href": "/products/spoon-leather-manis-12",
+     "price": "Rp 41.184",
+     "compareAtPrice": "Rp 68.640",
+     "image": "/assets/manisgrafika/DSC01973_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/spoon-leather-manis-12/",
+     "swatchSelected": "Manis 12 ",
+     "swatchSuffix": "",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Hardcover Bludru – Manis 11",
+     "href": "/products/bludru-manis-11",
+     "price": "Rp 32.736",
+     "compareAtPrice": "Rp 54.560",
+     "image": "/assets/manisgrafika/DSC01981_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/bludru-manis-11/",
+     "swatchSelected": "Manis 11 ",
+     "swatchSuffix": "",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Hardcover Bludru – Manis 10",
+     "href": "/products/bludru-manis-10",
+     "price": "Rp 32.736",
+     "compareAtPrice": "Rp 54.560",
+     "image": "/assets/manisgrafika/DSC01992_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/bludru-manis-10/",
+     "swatchSelected": "Manis 10 ",
+     "swatchSuffix": "",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Hardcover – Manis 09",
+     "href": "/products/hardcover-manis-09",
+     "price": "Rp 31.536",
+     "compareAtPrice": "Rp 52.560",
+     "image": "/assets/manisgrafika/DSC01978_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/hardcover-manis-09/",
+     "swatchSelected": "Manis 09 ",
+     "swatchSuffix": "",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Hardcover – Manis 08",
+     "href": "/products/hardcover-manis-08",
+     "price": "Rp 31.536",
+     "compareAtPrice": "Rp 52.560",
+     "image": "/assets/manisgrafika/DSC01983_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/hardcover-manis-08/",
+     "swatchSelected": "Manis 08 ",
+     "swatchSuffix": "",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Hardcover – Manis 07",
+     "href": "/products/hardcover-manis-07",
+     "price": "Rp 31.536",
+     "compareAtPrice": "Rp 52.560",
+     "image": "/assets/manisgrafika/DSC01988_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/hardcover-manis-07/",
+     "swatchSelected": "Manis 07 ",
+     "swatchSuffix": "",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Hardcover – Manis 06",
+     "href": "/products/hardcover-manis-06",
+     "price": "Rp 31.536",
+     "compareAtPrice": "Rp 52.560",
+     "image": "/assets/manisgrafika/DSC01976_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/hardcover-manis-06/",
+     "swatchSelected": "Manis 06 ",
+     "swatchSuffix": "",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Hardcover – Manis 05",
+     "href": "/products/hardcover-manis-05",
+     "price": "Rp 31.536",
+     "compareAtPrice": "Rp 52.560",
+     "image": "/assets/manisgrafika/DSC01994_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/hardcover-manis-05/",
+     "swatchSelected": "Manis 05 ",
+     "swatchSuffix": "",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Hardcover – Manis 04",
+     "href": "/products/hardcover-manis-04",
+     "price": "Rp 31.536",
+     "compareAtPrice": "Rp 52.560",
+     "image": "/assets/manisgrafika/DSC01985_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/hardcover-manis-04/",
+     "swatchSelected": "Manis 04 ",
+     "swatchSuffix": "",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Hardcover – Manis 03",
+     "href": "/products/hardcover-manis-03",
+     "price": "Rp 31.536",
+     "compareAtPrice": "Rp 52.560",
+     "image": "/assets/manisgrafika/DSC01990_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/hardcover-manis-03/",
+     "swatchSelected": "Manis 03 ",
+     "swatchSuffix": "",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Hardcover – Manis 02",
+     "href": "/products/hardcover-manis-02",
+     "price": "Rp 31.536",
+     "compareAtPrice": "Rp 52.560",
+     "image": "/assets/manisgrafika/DSC01998_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/hardcover-manis-02/",
+     "swatchSelected": "Manis 02 ",
+     "swatchSuffix": "",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Hardcover – Manis 01",
+     "href": "/products/hardcover-manis-01",
+     "price": "Rp 31.536",
+     "compareAtPrice": "Rp 52.560",
+     "image": "/assets/manisgrafika/DSC01995_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/hardcover-manis-01/",
+     "swatchSelected": "Manis 01 ",
+     "swatchSuffix": "",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    }
+   ]
+  },
+  {
+   "title": "Paket Hadiah",
+   "shopMore": "/collections/paket",
+   "headerBackground": "#2b5865",
+   "products": [
+    {
+     "title": "Zyla Series",
+     "href": "/products/zyla-series",
+     "price": "Rp 72.391",
+     "compareAtPrice": "Rp 120.652",
+     "image": "/assets/manisgrafika/DSC01965_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/zyla-series/",
+     "swatchSelected": "Spoon Leather Gold ",
+     "swatchSuffix": "+ 4 Cover",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Shaaira Series",
+     "href": "/products/shaaira-series",
+     "price": "Rp 70.056",
+     "compareAtPrice": "Rp 116.760",
+     "image": "/assets/manisgrafika/DSC05991_CONVERT-1-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/shaaira-series/",
+     "swatchSelected": "Broken White ",
+     "swatchSuffix": "+ 1 Cover",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Soraya Series",
+     "href": "/products/soraya-series",
+     "price": "Rp 36.036",
+     "compareAtPrice": "Rp 60.060",
+     "image": "/assets/manisgrafika/MAROON_CONVERT.webp",
+     "sourceImage": "https://manisgrafika.id/product/soraya-series/",
+     "swatchSelected": "Hardcover Standart Maroon ",
+     "swatchSuffix": "+ 5 Cover",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Gamilia Series",
+     "href": "/products/gamilia-series",
+     "price": "Rp 41.706",
+     "compareAtPrice": "Rp 69.510",
+     "image": "/assets/manisgrafika/DSC01968_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/gamilia-series-2/",
+     "swatchSelected": "Spoon Leather Brown ",
+     "swatchSuffix": "+ 7 Cover",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Lamia Series",
+     "href": "/products/lamia-series",
+     "price": "Rp 37.236",
+     "compareAtPrice": "Rp 62.060",
+     "image": "/assets/manisgrafika/DSC01920_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/lamia-series/",
+     "swatchSelected": "Bludru White ",
+     "swatchSuffix": "+ 5 Cover",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Noura Series",
+     "href": "/products/noura-series",
+     "price": "Rp 38.088",
+     "compareAtPrice": "Rp 63.480",
+     "image": "/assets/manisgrafika/DSC01914_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/noura-series/",
+     "swatchSelected": "Hardcover Standart Green ",
+     "swatchSuffix": "+ 3 Cover",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Zayna Series",
+     "href": "/products/zayna-series",
+     "price": "Rp 44.298",
+     "compareAtPrice": "Rp 73.830",
+     "image": "/assets/manisgrafika/DSC01963_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/zayna-series/",
+     "swatchSelected": "Spoon Leather Navy ",
+     "swatchSuffix": "+ 7 Cover",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Dayana Series",
+     "href": "/products/dayana-series",
+     "price": "Rp 39.288",
+     "compareAtPrice": "Rp 65.480",
+     "image": "/assets/manisgrafika/DSC01920_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/dayana-series/",
+     "swatchSelected": "Bludru White ",
+     "swatchSuffix": "+ 5 Cover",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Kayla Series",
+     "href": "/products/kayla-series",
+     "price": "Rp 82.248",
+     "compareAtPrice": "Rp 137.080",
+     "image": "/assets/manisgrafika/DSC01962_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/kayla-series/",
+     "swatchSelected": "Spoon Leather Maroon ",
+     "swatchSuffix": "+ 7 Cover",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Ceisya Series",
+     "href": "/products/ceisya-series",
+     "price": "Rp 76.038",
+     "compareAtPrice": "Rp 126.730",
+     "image": "/assets/manisgrafika/DSC01838_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/ceisya-series/",
+     "swatchSelected": "Hardcover Standart Gold ",
+     "swatchSuffix": "+ 4 Cover",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    },
+    {
+     "title": "Ataya Series",
+     "href": "/products/ataya-series",
+     "price": "Rp 77.238",
+     "compareAtPrice": "Rp 128.730",
+     "image": "/assets/manisgrafika/DSC02127_CONVERT-scaled.webp",
+     "sourceImage": "https://manisgrafika.id/product/ataya-series/",
+     "swatchSelected": "Bludru Brokat ",
+     "swatchSuffix": "+ 6 Cover",
+     "labels": [],
+     "overlayLabels": [],
+     "button": "add"
+    }
+   ]
+  }
+ ],
+ "social": {
+  "titleLines": [
+   "MANIS",
+   "GRAFIKA"
+  ],
+  "subtitle": "Momen berharga bersama buku Yasin dan paket hadiah kami. Ikuti kami di ",
+  "instagramHandle": "@manisgrafika",
+  "instagramUrl": "https://www.instagram.com/manisgrafika/",
+  "feedImages": [
+   "/assets/manisgrafika/instagram/manisgrafika-ig-01.jpg",
+   "/assets/manisgrafika/instagram/manisgrafika-ig-02.jpg",
+   "/assets/manisgrafika/instagram/manisgrafika-ig-03.jpg",
+   "/assets/manisgrafika/instagram/manisgrafika-ig-04.jpg",
+   "/assets/manisgrafika/instagram/manisgrafika-ig-05.jpg",
+   "/assets/manisgrafika/instagram/manisgrafika-ig-06.jpg",
+   "/assets/manisgrafika/instagram/manisgrafika-ig-07.jpg",
+   "/assets/manisgrafika/instagram/manisgrafika-ig-08.jpg",
+   "/assets/manisgrafika/instagram/manisgrafika-ig-09.jpg",
+   "/assets/manisgrafika/instagram/manisgrafika-ig-10.jpg",
+   "/assets/manisgrafika/instagram/manisgrafika-ig-11.jpg",
+   "/assets/manisgrafika/instagram/manisgrafika-ig-12.jpg"
+  ],
+  "feedLinks": [
+   "https://www.instagram.com/manisgrafika/reel/Dc0rCorh2ZM/",
+   "https://www.instagram.com/manisgrafika/p/DafQi53gdRK/",
+   "https://www.instagram.com/manisgrafika/p/DZcXgktgVuR/",
+   "https://www.instagram.com/manisgrafika/p/DYhKTKqgWJ_/",
+   "https://www.instagram.com/manisgrafika/reel/DYPIEGvBFck/",
+   "https://www.instagram.com/manisgrafika/p/DX_rNAVAWx5/",
+   "https://www.instagram.com/manisgrafika/p/DX6gc9qgZ7X/",
+   "https://www.instagram.com/manisgrafika/p/DXofntKAcXo/",
+   "https://www.instagram.com/manisgrafika/reel/DXMLC2sAXx9/",
+   "https://www.instagram.com/manisgrafika/p/DXEcuCHgU-v/",
+   "https://www.instagram.com/manisgrafika/p/DW6KIm4AWAv/",
+   "https://www.instagram.com/manisgrafika/p/DW0_YsFAfY_/"
+  ],
+  "feedLoops": 1,
+  "images": [
+   "/assets/manisgrafika/instagram/manisgrafika-ig-01.jpg",
+   "/assets/manisgrafika/instagram/manisgrafika-ig-02.jpg",
+   "/assets/manisgrafika/instagram/manisgrafika-ig-03.jpg",
+   "/assets/manisgrafika/instagram/manisgrafika-ig-04.jpg",
+   "/assets/manisgrafika/instagram/manisgrafika-ig-05.jpg",
+   "/assets/manisgrafika/instagram/manisgrafika-ig-06.jpg",
+   "/assets/manisgrafika/instagram/manisgrafika-ig-07.jpg",
+   "/assets/manisgrafika/instagram/manisgrafika-ig-08.jpg",
+   "/assets/manisgrafika/instagram/manisgrafika-ig-09.jpg",
+   "/assets/manisgrafika/instagram/manisgrafika-ig-10.jpg",
+   "/assets/manisgrafika/instagram/manisgrafika-ig-11.jpg",
+   "/assets/manisgrafika/instagram/manisgrafika-ig-12.jpg"
+  ],
+  "feedSnapshot": "2026-11-17 (instagram.com/manisgrafika, logged out: 12 most recent posts; ego-browser, reference/manisgrafika/2026-11-17/instagram-downloads.json)"
+ },
+ "newsletter": {
+  "title": "Newsletter",
+  "tagline": "Jadilah yang pertama tahu!",
+  "placeholder": "Masukkan email Anda",
+  "buttonText": "Daftar",
+  "descriptionDesktop": [
+   "Daftar untuk info koleksi terbaru, promo eksklusif, ",
+   "dan inspirasi buku Yasin serta paket hadiah dari Manis Grafika."
+  ],
+  "descriptionMobile": [
+   "Daftar untuk info koleksi terbaru, promo eksklusif, dan inspirasi buku Yasin serta paket hadiah.",
+   "Dari Manis Grafika untuk Anda."
+  ],
+  "successMessage": "Terima kasih telah berlangganan!"
+ },
+ "payments": [
+  {
+   "name": "QRIS",
+   "image": "/assets/payments/payment-qris.webp"
+  }
+ ],
+ "collectionsCapturedAt": "manisgrafika.id Store API 2026-11-16",
+ "footer": {
+  "groups": [
+   {
+    "title": "Manis Grafika",
+    "links": [
+     {
+      "text": "Tentang Kami",
       "href": "/pages/about-us"
-    },
-    {
-      "text": "The BTV Stores",
-      "href": "/pages/the-btv-stores"
-    },
-    {
-      "text": "Terms of Service",
-      "href": "/pages/terms-of-service"
-    },
-    {
-      "text": "About The Vine Club",
-      "href": "/pages/the-vine-club"
-    },
-    {
-      "text": "Join The Vine Club",
-      "href": "/account/register"
-    },
-    {
-      "text": "Promotions",
-      "href": "/blogs?category=promotions"
-    },
-    {
-      "text": "Login",
-      "href": "/account/login"
-    },
-    {
-      "text": "Events",
-      "href": "/blogs?category=events"
-    },
-    {
-      "text": "Collaborations",
-      "href": "/blogs?category=collaborations"
-    },
-    {
-      "text": "The BTV Express",
-      "href": "/blogs?category=travelling-btv-express"
-    },
-    {
-      "text": "The BTV City Guide",
-      "href": "/blogs?category=btv-city-guide"
-    },
-    {
-      "text": "Press",
-      "href": "/blogs?category=media-stories"
-    },
-    {
-      "text": "FAQs",
-      "href": "/pages/faqs"
-    },
-    {
-      "text": "Shipping & Delivery",
-      "href": "/pages/shipping-rate"
-    },
-    {
-      "text": "Return Policy",
-      "href": "/pages/returns"
-    },
-    {
-      "text": "Contact Us",
+     },
+     {
+      "text": "Blog",
+      "href": "/blogs"
+     },
+     {
+      "text": "Hubungi Kami",
       "href": "/pages/contact-us"
-    },
-    {
-      "text": "Privacy Policy",
+     }
+    ]
+   },
+   {
+    "title": "Belanja",
+    "links": [
+     {
+      "text": "Terbaru",
+      "href": "/collections/new-in"
+     },
+     {
+      "text": "Hardcover",
+      "href": "/collections/hardcover"
+     },
+     {
+      "text": "Dompet",
+      "href": "/collections/dompet"
+     },
+     {
+      "text": "Mika",
+      "href": "/collections/mika"
+     },
+     {
+      "text": "Tasbih",
+      "href": "/collections/tasbih"
+     }
+    ]
+   },
+   {
+    "title": "Bantuan",
+    "links": [
+     {
+      "text": "FAQ",
+      "href": "/pages/faqs"
+     },
+     {
+      "text": "Pengiriman",
+      "href": "/pages/kebijakan-pengiriman"
+     },
+     {
+      "text": "Pengembalian",
+      "href": "/pages/returns"
+     },
+     {
+      "text": "Syarat & Ketentuan",
+      "href": "/pages/terms-of-service"
+     },
+     {
+      "text": "Kebijakan Privasi",
       "href": "/pages/privacy-policy"
-    },
-    {
-      "text": "Facebook",
-      "href": "/beyondthevines/"
-    },
-    {
-      "text": "Instagram",
-      "href": "/beyondthevines/"
-    },
-    {
-      "text": "YouTube",
-      "href": "/channel/UCWS0KLHk-VZB07tc8C8py8g"
-    },
-    {
-      "text": "Pinterest",
-      "href": "/beyondthevines/"
-    },
-    {
-      "text": "TikTok",
-      "href": "/@beyondthevines"
-    },
-    {
-      "text": "Linkedin",
-      "href": "/company/14504512/"
-    }
+     }
+    ]
+   },
+   {
+    "title": "Kontak",
+    "links": [
+     {
+      "text": "WhatsApp",
+      "note": "+62 819 4794 9888",
+      "href": "https://wa.me/6281947949888"
+     },
+     {
+      "text": "Email",
+      "note": "manisgrafika@gmail.com",
+      "href": "mailto:manisgrafika@gmail.com"
+     },
+     {
+      "text": "Alamat",
+      "note": "Ps. Kliwon, Surakarta",
+      "href": "https://www.google.com/maps/search/?api=1&query=Manis+Grafika+Jl.+Kapten+Mulyadi+Kedung+Lumbu+Surakarta"
+     }
+    ]
+   }
   ],
-  "collectionsCapturedAt": "2026-11-04T16:08:11.043Z"
+  "social": [
+   {
+    "text": "Instagram",
+    "icon": "/assets/social-icons/instagram.png",
+    "href": "https://www.instagram.com/manisgrafika/"
+   },
+   {
+    "text": "TikTok",
+    "icon": "/assets/social-icons/tiktok.png",
+    "href": "https://www.tiktok.com/@manis_grafika"
+   },
+   {
+    "text": "Shopee",
+    "icon": "/assets/social-icons/shopee.svg",
+    "href": "https://shopee.co.id/manis_grafika"
+   },
+   {
+    "text": "Tokopedia",
+    "icon": "/assets/social-icons/tokopedia.png",
+    "href": "https://www.tokopedia.com/archive-manisgrafika-1683333075"
+   }
+  ],
+  "copyright": "© Manis Grafika",
+  "paymentsTitle": "Manis Grafika menerima"
+ }
 }

@@ -12,13 +12,13 @@ type Data = { categories: BlogCategory[]; articles: BlogArticle[] };
 
 export function BlogPortalView({ categories, articles, categoryHandle, page }: Data & { categoryHandle: string | null; page: number }) {
   const { category, items, page: current, pageCount, total } = queryPortal(categories, articles, categoryHandle, page);
-  const title = category ? category.title : "Blogs";
+  const title = category ? category.title : "Blog";
   return (
     <div className="blog-portal">
-      <nav className="blog-breadcrumb" aria-label="Breadcrumb">
+      <nav className="blog-breadcrumb" aria-label="Navigasi halaman">
         <ol>
-          <li><Link href="/">Home</Link></li>
-          {category ? <li><Link href="/blogs">Blogs</Link></li> : <li aria-current="page">Blogs</li>}
+          <li><Link href="/">Beranda</Link></li>
+          {category ? <li><Link href="/blogs">Blog</Link></li> : <li aria-current="page">Blog</li>}
           {category ? <li aria-current="page">{category.title}</li> : null}
         </ol>
       </nav>
@@ -26,9 +26,9 @@ export function BlogPortalView({ categories, articles, categoryHandle, page }: D
         <h1 className="blog-portal__title">{title}</h1>
         {category?.description ? <p className="blog-portal__description">{category.description}</p> : null}
       </header>
-      <nav className="blog-filter" aria-label="Blog categories">
+      <nav className="blog-filter" aria-label="Kategori blog">
         <ul>
-          <li><Link className="blog-filter__chip" href="/blogs" aria-current={category ? undefined : "page"}>All</Link></li>
+          <li><Link className="blog-filter__chip" href="/blogs" aria-current={category ? undefined : "page"}>Semua</Link></li>
           {categories.map((c) => (
             <li key={c.handle}>
               <Link className="blog-filter__chip" href={categoryHref(c.handle)} aria-current={category?.handle === c.handle ? "page" : undefined}>{c.title}</Link>
@@ -36,21 +36,21 @@ export function BlogPortalView({ categories, articles, categoryHandle, page }: D
           ))}
         </ul>
       </nav>
-      <p className="blog-portal__count" aria-live="polite">{total} {total === 1 ? "article" : "articles"}</p>
+      <p className="blog-portal__count" aria-live="polite">{total} artikel</p>
       {items.length ? (
         <div className="blog-grid">
           {items.map((a) => <ArticleCard key={a.slug} article={a} category={category ? null : findCategory(categories, a.category)} />)}
         </div>
       ) : (
         <div className="blog-empty">
-          <p>There are no articles in {title} yet.</p>
-          <Link className="blog-button" href="/blogs">View all articles</Link>
+          <p>Belum ada artikel di {title}.</p>
+          <Link className="blog-button" href="/blogs">Lihat semua artikel</Link>
         </div>
       )}
       {pageCount > 1 ? (
-        <nav className="blog-pagination" aria-label="Pagination">
+        <nav className="blog-pagination" aria-label="Halaman">
           <ul>
-            {current > 1 ? <li><Link className="blog-pagination__step" href={categoryHref(category?.handle ?? null, current - 1)} aria-label="Previous page">Prev</Link></li> : null}
+            {current > 1 ? <li><Link className="blog-pagination__step" href={categoryHref(category?.handle ?? null, current - 1)} aria-label="Halaman sebelumnya">Sebelumnya</Link></li> : null}
             {Array.from({ length: pageCount }, (_, i) => i + 1).map((n) => (
               <li key={n}>
                 {n === current ? (
@@ -60,7 +60,7 @@ export function BlogPortalView({ categories, articles, categoryHandle, page }: D
                 )}
               </li>
             ))}
-            {current < pageCount ? <li><Link className="blog-pagination__step" href={categoryHref(category?.handle ?? null, current + 1)} aria-label="Next page">Next</Link></li> : null}
+            {current < pageCount ? <li><Link className="blog-pagination__step" href={categoryHref(category?.handle ?? null, current + 1)} aria-label="Halaman berikutnya">Berikutnya</Link></li> : null}
           </ul>
         </nav>
       ) : null}

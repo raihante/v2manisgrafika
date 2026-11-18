@@ -24,7 +24,10 @@ export function describeRepositoryContract(name: string, repos: Repositories) {
           expect(v.options.length, `${p.handle} ${v.sku}`).toBe(p.options.length);
           v.options.forEach((value, i) => expect(p.options[i].values, `${p.handle} ${v.sku}`).toContain(value));
           expect(Number.isInteger(v.price)).toBe(true);
+          if (v.compareAtPrice !== null) expect(v.compareAtPrice, `${p.handle} ${v.sku}`).toBeGreaterThan(v.price);
         }
+        expect(Number.isInteger(p.minOrder) && p.minOrder >= 1, p.handle).toBe(true);
+        for (const f of p.personalisation?.fields ?? []) expect(f.key && f.label, p.handle).toBeTruthy();
         expect(new Set(p.variants.map((v) => v.id)).size, p.handle).toBe(p.variants.length);
       }
     });
@@ -71,7 +74,8 @@ export function describeRepositoryContract(name: string, repos: Repositories) {
     it("returns the chrome with shell, footer, newsletter and a search index of known products", async () => {
       const chrome = await repos.storefront.getChrome();
       expect(chrome.shell.desktopMenu.length).toBeGreaterThan(0);
-      expect(chrome.footerLinks.length).toBeGreaterThan(0);
+      expect(chrome.footer.groups.length).toBeGreaterThan(0);
+      expect(chrome.footer.groups.every((g) => g.links.length > 0)).toBe(true);
       expect(chrome.newsletter.title).toBeTruthy();
       for (const s of chrome.searchSuggestions) expect(await repos.catalog.getSummary(s.handle), s.handle).not.toBeNull();
     });
@@ -95,7 +99,8 @@ export function describeRepositoryContract(name: string, repos: Repositories) {
         const s = await repos.catalog.getSummary(card.quickAdd.handle);
         expect(s, card.href).not.toBeNull();
         expect(card.quickAdd.price).toBe(s!.price);
-        expect(card.quickAdd.needsOptions).toBe(s!.sizes.length > 0);
+        expect(card.quickAdd.needsOptions).toBe(s!.needsOptions);
+        expect(card.quickAdd.minOrder).toBe((await repos.catalog.getProduct(s!.handle))!.minOrder);
       }
     });
 

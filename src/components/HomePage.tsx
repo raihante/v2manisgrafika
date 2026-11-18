@@ -195,7 +195,7 @@ function CategoryHero({ slides }: { slides: HeroSlide[] }) {
               type="button"
               className={`flickity-page-dot hero-flickity-dot${index === selected ? " is-selected" : ""}`}
               aria-current={index === selected ? "step" : undefined}
-              aria-label={`View slide ${index + 1}`}
+              aria-label={`Lihat slide ${index + 1}`}
               onClick={() => selectIndex(index, false)}
             />
           ))}
@@ -333,7 +333,7 @@ function PromotionSlider({ slides }: { slides: PromotionSlide[] }) {
                 </picture>
               </div>
               <div className="slideshow__slide-overlay" />
-              <div className={`slideshow__slide-inner ${index === 2 ? "content-middle-center" : "content-bottom-left"}`}><div className="slideshow__slide-content"><a href={item.href} className="slideshow__slide-content-link" tabIndex={-1} aria-label={`Open promotion ${index + 1}`} /></div></div>
+              <div className={`slideshow__slide-inner ${index === 2 ? "content-middle-center" : "content-bottom-left"}`}><div className="slideshow__slide-content"><a href={item.href} className="slideshow__slide-content-link" tabIndex={-1} aria-label={`Buka promo ${index + 1}`} /></div></div>
             </div>)}
           </div>
         </div>
@@ -351,11 +351,12 @@ function ProductCard({ product }: { product: RailCard }) {
   const primaryImage = selectedVariant?.image || product.image;
   const selectedLabel = selectedVariant?.label ?? product.swatchSelected;
   const router = useRouter();
-  // MOCK quick add: products with a Size option go to the product page; others add the shown colour and open the cart drawer.
+  // MOCK quick add: products that need choices (options, personalisation) go to the product page; others add the
+  // shown cover at the product minimum quantity and open the cart drawer.
   const addToBag = () => {
     const { quickAdd } = product;
     if (quickAdd.needsOptions) return router.push(product.href);
-    localCart.add({ handle: quickAdd.handle, title: product.title, image: primaryImage, price: quickAdd.price, colour: selectedLabel, size: null });
+    localCart.add({ handle: quickAdd.handle, variantId: null, title: product.title, image: primaryImage, price: quickAdd.price, options: [{ name: "Cover", value: selectedLabel.trim() }], minQuantity: quickAdd.minOrder });
     openCartDrawer();
   };
 
@@ -380,17 +381,17 @@ function ProductCard({ product }: { product: RailCard }) {
         {interaction && interaction.secondaryImages.length > 0 && <span className="product-image-dots" aria-hidden="true">{interaction.secondaryImages.map((image, index) => <i className={hoverImageIndex === index ? "active" : ""} key={image} />)}</span>}
       </Link>
       {product.overlayLabels.length > 0 && <div className="label-discount-code-grid-wrap"><div className="label-wrap">{product.overlayLabels.map((label) => <div className={label.className} key={label.text}>{label.text}</div>)}</div></div>}
-      <button className="wishlist" aria-label={`Add ${product.title} to wishlist`}><Icon name="heart" /></button>
+      <button className="wishlist" aria-label={`Simpan ${product.title} ke wishlist`}><Icon name="heart" /></button>
       <div className="product-info">
         <Link href={product.href}>{product.title}</Link>
         <div className="product-swatches-local">
           <p><b>{`${selectedLabel} `}</b>{` ${product.swatchSuffix}`}</p>
-          {interaction && interaction.variants.length > 0 && <div className="product-swatch-track" role="group" aria-label={`${product.title} colours`}>
+          {interaction && interaction.variants.length > 0 && <div className="product-swatch-track" role="group" aria-label={`Pilihan cover ${product.title}`}>
             {interaction.variants.map((variant, index) => <button
               type="button"
               className={`${index === variantIndex ? "active" : ""} ${variant.soldOut ? "sold-out" : ""}`}
               style={variant.thumbnail || variant.image ? { "--swatch-image": `url(${variant.thumbnail || variant.image})` } as CSSProperties : undefined}
-              aria-label={`${variant.label}${variant.soldOut ? " (sold out)" : ""}`}
+              aria-label={`${variant.label}${variant.soldOut ? " (habis)" : ""}`}
               aria-pressed={index === variantIndex}
               onMouseEnter={() => setVariantIndex(index)}
               onClick={() => setVariantIndex(index)}
@@ -398,10 +399,10 @@ function ProductCard({ product }: { product: RailCard }) {
             />)}
           </div>}
         </div>
-        <span className="price"><span className="amount">{product.price}</span></span>
+        <span className={`price${product.compareAtPrice ? " price--on-sale" : ""}`}>{product.compareAtPrice && <del className="price__compare"><span className="amount">{product.compareAtPrice}</span></del>}<span className={`amount${product.compareAtPrice ? " price__sale" : ""}`}>{product.price}</span></span>
         {product.button === "notify"
-          ? <button className="notify-button" type="button">Notify Me <svg className="notify-icon" viewBox={notifyIcon.viewBox} aria-hidden="true">{notifyIcon.paths.map((d) => <path d={d} key={d.slice(0, 24)} />)}</svg></button>
-          : <button type="button" onClick={addToBag}>Add to Bag</button>}
+          ? <button className="notify-button" type="button">Kabari Saya <svg className="notify-icon" viewBox={notifyIcon.viewBox} aria-hidden="true">{notifyIcon.paths.map((d) => <path d={d} key={d.slice(0, 24)} />)}</svg></button>
+          : <button type="button" onClick={addToBag}>Tambah Keranjang</button>}
         {product.labels.length > 0 && <div className="label-wrap">{product.labels.map((label) => <div className={label.className} key={label.text}>{label.text}</div>)}</div>}
       </div>
     </article>
@@ -521,7 +522,7 @@ function ProductRail({ collection }: { collection: ProductRailData }) {
     <section className="product-section">
       <div className="section-heading" style={{ backgroundColor: collection.headerBackground }}>
         <div className="section-header--content"><h2>{collection.title}</h2></div>
-        <div className="section-header--button"><Link className="text-button" href={collection.shopMore}>Shop More <svg width="15" height="11" viewBox="0 0 15 11" fill="none" aria-hidden="true"><path d="M0.799805 5.5H12.7998" stroke="#000" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" /><path d="M9.49976 1L13.9998 5.5L9.49976 10" stroke="#000" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" /></svg></Link></div>
+        <div className="section-header--button"><Link className="text-button" href={collection.shopMore}>Lihat Semua <svg width="15" height="11" viewBox="0 0 15 11" fill="none" aria-hidden="true"><path d="M0.799805 5.5H12.7998" stroke="#000" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" /><path d="M9.49976 1L13.9998 5.5L9.49976 10" stroke="#000" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" /></svg></Link></div>
       </div>
       <div
         className="product-rail-wrap flickity-enabled is-draggable"
@@ -538,8 +539,8 @@ function ProductRail({ collection }: { collection: ProductRailData }) {
             <ProductCard product={product} />
           </div>
         ))}</div>
-        <button className="product-rail-arrow product-rail-arrow-prev" type="button" aria-label="Previous products" onClick={() => selectRelative(-1)}><svg width="16" height="16" viewBox="0 0 15 11" fill="none" aria-hidden="true"><path d="M9.75 1L5.25 5.5L9.75 10" stroke="#151515" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" /></svg></button>
-        <button className="product-rail-arrow product-rail-arrow-next" type="button" aria-label="Next products" onClick={() => selectRelative(1)}><svg width="16" height="16" viewBox="0 0 15 11" fill="none" aria-hidden="true"><path d="M5.25 1L9.75 5.5L5.25 10" stroke="#151515" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" /></svg></button>
+        <button className="product-rail-arrow product-rail-arrow-prev" type="button" aria-label="Produk sebelumnya" onClick={() => selectRelative(-1)}><svg width="16" height="16" viewBox="0 0 15 11" fill="none" aria-hidden="true"><path d="M9.75 1L5.25 5.5L9.75 10" stroke="#151515" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" /></svg></button>
+        <button className="product-rail-arrow product-rail-arrow-next" type="button" aria-label="Produk berikutnya" onClick={() => selectRelative(1)}><svg width="16" height="16" viewBox="0 0 15 11" fill="none" aria-hidden="true"><path d="M5.25 1L9.75 5.5L5.25 10" stroke="#151515" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" /></svg></button>
       </div>
     </section>
   );
@@ -641,20 +642,20 @@ function SocialFeed({ social }: { social: SocialSection }) {
           <div className="instafeed-new-layout-wrapper" ref={wrapperRef}>
             {images.map((image, index) => (
               <div className="instafeed-new-layout-item image-loaded" style={{ width: `${layout.tile}px`, height: `${layout.tile}px` }} key={image}>
-                <img className="instafeed-lazy-image" src={image} alt={`Instagram post ${index + 1}`} draggable={false} />
-                <div className="instafeed-new-layout-item-container" role="button" tabIndex={0} aria-haspopup="dialog" aria-label="Instagram post opens in a popup" onClick={() => { if (!dragged.current) setLightbox(index); }} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); setLightbox(index); } }}>
+                <img className="instafeed-lazy-image" src={image} alt={`Postingan Instagram ${index + 1}`} draggable={false} />
+                <div className="instafeed-new-layout-item-container" role="button" tabIndex={0} aria-haspopup="dialog" aria-label="Buka postingan Instagram" onClick={() => { if (!dragged.current) setLightbox(index); }} onKeyDown={(event) => { if (event.key === "Enter" || event.key === " ") { event.preventDefault(); setLightbox(index); } }}>
                   <div className="instafeed-hover-layer"><div className="instafeed-hover-icon"><img src="/assets/payments/instagram-icon-v2.svg" alt="" /></div></div>
                 </div>
               </div>
             ))}
           </div>
           {layout.total > layout.columns && <>
-            <button aria-label="previous post" className="instafeed-new-arrow instafeed-new-arrow-prev" style={{ marginLeft: "10px", paddingRight: "2px" }} onClick={() => move(-1)} />
-            <button aria-label="next post" className="instafeed-new-arrow instafeed-new-arrow-next" style={{ marginRight: "10px", paddingLeft: "2px" }} onClick={() => move(1)} />
+            <button aria-label="postingan sebelumnya" className="instafeed-new-arrow instafeed-new-arrow-prev" style={{ marginLeft: "10px", paddingRight: "2px" }} onClick={() => move(-1)} />
+            <button aria-label="postingan berikutnya" className="instafeed-new-arrow instafeed-new-arrow-next" style={{ marginRight: "10px", paddingLeft: "2px" }} onClick={() => move(1)} />
           </>}
         </div>}
       </div>
-      {lightbox !== null && <InstagramLightbox images={images} index={lightbox} onClose={closeLightbox} onNavigate={setLightbox} />}
+      {lightbox !== null && <InstagramLightbox images={images} index={lightbox} account={{ handle: social.instagramHandle, url: social.instagramUrl, links: social.feedLinks }} onClose={closeLightbox} onNavigate={setLightbox} />}
     </section>
   );
 }

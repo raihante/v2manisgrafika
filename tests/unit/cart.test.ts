@@ -14,36 +14,57 @@ function installWindow() {
   return store;
 }
 
-const line = { handle: "landscape-studio-tote", title: "Landscape Studio Tote", image: "/x.jpg", price: 1299000, colour: "Navy/Black", size: null };
+const line = {
+  handle: "zyla-series", variantId: "2812", title: "Zyla Series", image: "/x.webp", price: 72391,
+  options: [{ name: "Cover", value: "Spoon Leather Gold" }, { name: "Jenis Kertas", value: "HVS" }, { name: "Jumlah Halaman", value: "208" }],
+};
 
 describe("localCart", () => {
   let store: Map<string, string>;
   beforeEach(() => { vi.resetModules(); store = installWindow(); });
 
   it("adds, merges, updates and removes lines, persisting to storage", async () => {
-    const { localCart } = await import("@/lib/cart");
+    const { localCart, lineMeta } = await import("@/lib/cart");
     const seen = vi.fn();
     const off = localCart.subscribe(seen);
     localCart.add(line);
     localCart.add(line, 2);
     expect(localCart.getLines()).toHaveLength(1);
     expect(localCart.getLines()[0].quantity).toBe(3);
-    localCart.add({ ...line, colour: "Terracotta/Plum" });
+    expect(lineMeta(localCart.getLines()[0])).toBe("Spoon Leather Gold / HVS / 208");
+    localCart.add({ ...line, variantId: "2813" });
     expect(localCart.getLines()).toHaveLength(2);
     const id = localCart.getLines()[0].id;
     localCart.setQuantity(id, 5);
     expect(localCart.getLines()[0].quantity).toBe(5);
     localCart.setQuantity(id, 0);
-    expect(localCart.getLines().map((l) => l.colour)).toEqual(["Terracotta/Plum"]);
-    expect(JSON.parse(store.get("btv-preview-cart")!)).toHaveLength(1);
+    expect(localCart.getLines().map((l) => l.variantId)).toEqual(["2813"]);
+    expect(JSON.parse(store.get("mg-preview-cart")!)).toHaveLength(1);
     localCart.clear();
     expect(localCart.getLines()).toEqual([]);
     expect(seen).toHaveBeenCalled();
     off();
   });
 
-  it("recovers from corrupt storage", async () => {
-    store.set("btv-preview-cart", "{not json");
+  it("enforces the product minimum order", async () => {
+    const { localCart } = await import("@/lib/cart");
+    localCart.add({ ...line, minQuantity: 50 });
+    expect(localCart.getLines()[0].quantity).toBe(50);
+    localCart.add({ ...line, minQuantity: 50 }, 10);
+    expect(localCart.getLines()[0].quantity).toBe(100);
+    localCart.setQuantity(localCart.getLines()[0].id, 20);
+    expect(localCart.getLines()[0].quantity).toBe(50);
+  });
+
+  it("keeps differently personalised lines apart", async () => {
+    const { localCart } = await import("@/lib/cart");
+    localCart.add({ ...line, personalisation: [{ key: "redaksi", label: "Teks", value: "A" }] });
+    localCart.add({ ...line, personalisation: [{ key: "redaksi", label: "Teks", value: "B" }] });
+    expect(localCart.getLines()).toHaveLength(2);
+  });
+
+  it("recovers from corrupt or outdated storage", async () => {
+    store.set("mg-preview-cart", JSON.stringify([{ handle: "old", colour: "Navy", quantity: 1 }]));
     const { localCart } = await import("@/lib/cart");
     expect(localCart.getLines()).toEqual([]);
   });

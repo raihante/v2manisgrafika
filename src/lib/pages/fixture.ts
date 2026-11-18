@@ -6,7 +6,7 @@ import "server-only";
 import aboutUs from "@/data/pages/content/about-us.json";
 import privacyPolicy from "@/data/pages/content/privacy-policy.json";
 import returns from "@/data/pages/content/returns.json";
-import shippingRate from "@/data/pages/content/shipping-rate.json";
+import shipping from "@/data/pages/content/kebijakan-pengiriman.json";
 import termsOfService from "@/data/pages/content/terms-of-service.json";
 import contactFixture from "@/data/pages/contact-us.json";
 import faqFixture from "@/data/pages/faqs.json";
@@ -32,7 +32,7 @@ export function sanitizeBlock(raw: RawBlock): ContentBlock {
 }
 
 const contentPages = new Map<string, ContentPageData>(
-  [aboutUs, termsOfService, privacyPolicy, returns, shippingRate].map((p) => [p.slug, { ...(p as unknown as ContentPageData), blocks: (p.blocks as RawBlock[]).map(sanitizeBlock) }]),
+  [aboutUs, termsOfService, privacyPolicy, returns, shipping].map((p) => [p.slug, { ...(p as unknown as ContentPageData), blocks: (p.blocks as RawBlock[]).map(sanitizeBlock) }]),
 );
 
 const faq: FaqPageData = {

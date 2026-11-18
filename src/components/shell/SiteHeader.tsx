@@ -2,7 +2,8 @@
 /* eslint-disable @next/next/no-img-element */
 // Shared header shell rebuilt on the source DOM (reference/dom/r256-header/header-1920.html, 2026-11-06 snapshot):
 // announcement marquee, header section with the hidden-but-mounted desktop mega-menu, the hamburger drawer used at
-// every width, secondary icons, the inline search bar and the predictive-search container. Styles come from
+// every width, secondary icons, the inline search bar and the predictive-search container. Manis Grafika content since
+// the 2026-11-16 rebrand (src/data/header.json from scripts/manisgrafika/build-shell.mjs). Styles come from
 // src/app/shell-source.css (generated) + src/app/shell.css. State timing mirrors the source theme scripts
 // (reference/js/d57b4de829f727fa.js class Header, reference/js/r256-header/functions.js).
 // APPROXIMATE / NOT VISUALLY VERIFIED until the paired state screenshots are accepted (SESSION_HANDOFF.md).
@@ -12,7 +13,7 @@ import { FormEvent, useCallback, useEffect, useMemo, useRef, useState } from "re
 import type { CSSProperties, MouseEvent as ReactMouseEvent } from "react";
 import { formatPrice } from "@/lib/catalog/format";
 import { useCart } from "@/lib/cart";
-import type { MenuPromotion, SelectorList } from "@/lib/storefront/types";
+import type { MenuPromotion } from "@/lib/storefront/types";
 import { SourceSvg } from "@/components/shell/SourceSvg";
 import { useChrome, useShell } from "@/components/shell/StorefrontContext";
 
@@ -36,28 +37,6 @@ function Logo() {
   );
 }
 
-// Store / language selector: opencloseStore() toggles the list with jQuery .toggle() (inline display).
-// MOCK: choosing an option does not leave the clone (source navigates to the regional store or /id/ locale).
-function Selector({ list, display, onToggle, onChoose }: { list: SelectorList; display: string | undefined; onToggle: () => void; onChoose: () => void }) {
-  return (
-    <div className="jsc-store-list-wrap">
-      <div className={list.selected.className} onClick={onToggle}>
-        {list.selected.flag && <img className="img_store_flag" src={list.selected.flag} alt="" />}
-        <span className="everett-light-r">{list.selected.label}</span>
-        <SourceSvg icon={list.selected.chevron} />
-      </div>
-      <ul className="shopLinkList" style={display ? { display } : undefined}>
-        {list.options.map((o) => (
-          <li key={o.code} onClick={onChoose} data-href={o.href} data-store={o.code} data-country={o.country ?? undefined} className={o.className} style={o.style ?? undefined}>
-            {o.check && <i className="fa-solid fa-check" />}
-            <div className="disclosure__button">{o.flag && <img src={o.flag} alt="" />} {o.label}</div>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
 // MOCK predictive search over the local catalog fixture (source calls Shopify predictive search).
 function PredictiveResults({ query, close }: { query: string; close: () => void }) {
   const suggestions = useChrome().searchSuggestions;
@@ -69,7 +48,7 @@ function PredictiveResults({ query, close }: { query: string; close: () => void 
   if (!query.trim()) return null;
   return (
     <div className="predictive-search-local">
-      <span className="thb-predictive-search--label">{results.length ? `Products (${results.length})` : `No results for “${query.trim()}”`}</span>
+      <span className="thb-predictive-search--label">{results.length ? `Produk (${results.length})` : `Tidak ada hasil untuk “${query.trim()}”`}</span>
       <ul className="predictive-search-local__list">
         {results.map((p) => (
           <li key={p.handle}><Link href={`/products/${p.handle}`} onClick={close}><img src={p.image} alt="" /><span><span className="predictive-search-local__title">{p.title}</span><span className="predictive-search-local__price">{formatPrice(p.price)}</span></span></Link></li>
@@ -107,7 +86,6 @@ export function SiteHeader({ onOpenCart }: { onOpenCart: () => void }) {
   const [openSub, setOpenSub] = useState<string | null>(null); // details[open] of a submenu
   const [openingSub, setOpeningSub] = useState<string | null>(null); // .menu-opening
   const [stickySub, setStickySub] = useState<Set<string>>(() => new Set()); // .submenu-open (source never removes it on Back)
-  const [listDisplay, setListDisplay] = useState<(string | undefined)[]>([undefined, undefined]);
   const [searchOpen, setSearchOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [sticky, setSticky] = useState(false);
@@ -143,7 +121,7 @@ export function SiteHeader({ onOpenCart }: { onOpenCart: () => void }) {
     setMenuColor(false);
     setToggleActive(false);
     later(() => { setHamburgerStyled(false); setSecondLevel(false); }, 250);
-    later(() => { setDrawerOpen(false); setOpenSub(null); setOpeningSub(null); setStickySub(new Set()); setListDisplay([undefined, undefined]); }, 400);
+    later(() => { setDrawerOpen(false); setOpenSub(null); setOpeningSub(null); setStickySub(new Set()); }, 400);
   }, [later]);
 
   const onToggle = (event: ReactMouseEvent) => {
@@ -153,7 +131,6 @@ export function SiteHeader({ onOpenCart }: { onOpenCart: () => void }) {
     if (toggleActive) { closeDrawer(); return; }
     setMenuColor(false);
     setDrawerOpen(true);
-    setListDisplay(["none", "none"]);
     later(() => setToggleActive(true), 0);
     later(() => { setHamburgerStyled(true); setSecondLevel(false); }, 250);
   };
@@ -203,7 +180,6 @@ export function SiteHeader({ onOpenCart }: { onOpenCart: () => void }) {
   const headerClass = ["header style1 header--shadow-none transparent--false header-sticky--active", sticky && "is-sticky", hamburgerStyled && "jsc-show-secondary-icons", secondLevel && "jsc-second-level-active"].filter(Boolean).join(" ");
   const bg = hamburgerStyled ? HAMBURGER_BG : undefined;
   const firstLevel: CSSProperties | undefined = hamburgerStyled ? { color: "var(--first-level-text-color)" } : undefined;
-  const toggleList = (i: number) => setListDisplay((d) => d.map((v, j) => (j === i ? (v === "block" ? "none" : "block") : v)));
 
   return (
     <div id={shell.sectionIds.header} className="shopify-section shopify-section-group-header-group header-section" ref={sectionRef}>
@@ -239,17 +215,15 @@ export function SiteHeader({ onOpenCart }: { onOpenCart: () => void }) {
                     </ul>
                     <div className="thb-mobile-menu-footer jsc-account-menu" style={bg}>
                       <div className="jsc-left-menu">
-                        {shell.accountLinks.map((l) => {
+                        {shell.accountLinks.map((l, i) => {
                           // MOCK: the source #swym-wishlist anchor opens the Swym wishlist app; the clone routes to /pages/wishlist.
                           const href = l.href === "#swym-wishlist" ? "/pages/wishlist" : l.href;
-                          return <Link key={l.label} href={href} title={l.title ?? undefined} className={l.className ?? undefined} style={firstLevel} onClick={closeDrawer}>{l.icon && l.iconFirst ? <><SourceSvg icon={l.icon} /> {l.label}</> : <>{l.label}{l.icon && <> <SourceSvg icon={l.icon} /></>}</>}</Link>;
+                          return <Link key={`${i}-${l.label}`} href={href} title={l.title ?? undefined} className={l.className ?? undefined} style={firstLevel} onClick={closeDrawer}>{l.icon && l.iconFirst ? <><SourceSvg icon={l.icon} /> {l.label}</> : <>{l.label}{l.icon && <> <SourceSvg icon={l.icon} /></>}</>}</Link>;
                         })}
                       </div>
-                      <div className="jsc-right-menu">
-                        <Selector list={shell.stores} display={listDisplay[0]} onToggle={() => toggleList(0)} onChoose={() => toggleList(0)} />
-                        <div className="jsc-store-currency-switcher" />
-                        <Selector list={shell.languages} display={listDisplay[1]} onToggle={() => toggleList(1)} onChoose={() => toggleList(1)} />
-                      </div>
+                      {/* Market/country and language selectors removed (Manis Grafika rebrand, owner decision 2026-11-16); the empty
+                          column keeps the drawer footer layout. */}
+                      <div className="jsc-right-menu" />
                     </div>
                   </div>
                 </nav>

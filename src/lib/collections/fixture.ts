@@ -1,14 +1,14 @@
-// Fixture collection adapter (server only): src/data/collections/<handle>.json (scripts/build-collection-data.mjs) and
-// src/data/collection-list.json (scripts/build-collection-list-data.mjs), 2026-11-06 snapshot. Only the cards of the
+// Fixture collection adapter (server only): src/data/collections/collections.json and src/data/collection-list.json,
+// built from the Manis Grafika products by scripts/manisgrafika/build-catalog.mjs. Only the cards of the
 // initial grid ship in the page; the browser loads the full dataset through ./client.ts. The MySQL adapter replaces
 // this module behind CollectionRepository (src/lib/data.ts).
 import "server-only";
 import listFixture from "@/data/collection-list.json";
-import newIn from "@/data/collections/new-in.json";
+import collectionFixtures from "@/data/collections/collections.json";
 import { gridColumns, visibleKeys } from "./query";
 import type { CollectionData, CollectionList, CollectionRepository } from "./types";
 
-const fixtures: Record<string, CollectionData> = { "new-in": newIn as unknown as CollectionData };
+const fixtures = collectionFixtures as unknown as Record<string, CollectionData>;
 
 export const fixtureCollections: CollectionRepository = {
   handles: async () => Object.keys(fixtures),

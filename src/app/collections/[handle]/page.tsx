@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ handle: s
   const { handle } = await params;
   const source = await collections.getInitial(handle);
   if (source) return { title: source.documentTitle };
-  return { title: `${(await catalog.getPreviewCollection(handle))?.title ?? "Collection"} – Beyond The Vines Indonesia` };
+  return { title: `${(await catalog.getPreviewCollection(handle))?.title ?? "Koleksi"} – Manis Grafika` };
 }
 
 export default async function CollectionRoute({ params }: { params: Promise<{ handle: string }> }) {

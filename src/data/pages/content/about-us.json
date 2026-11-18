@@ -1,26 +1,115 @@
 {
  "slug": "about-us",
- "documentTitle": "Beyond The Vines | Our Story – Beyond The Vines Indonesia",
- "title": "Our Story",
- "accent": "rgb(0, 96, 212)",
+ "documentTitle": "Tentang Kami – Manis Grafika",
+ "title": "Tentang Kami",
+ "heroTitle": [
+  "Tentang",
+  "Kami"
+ ],
+ "accent": "rgb(43, 88, 101)",
  "blocks": [
+  {
+   "type": "richText",
+   "variant": "lead",
+   "html": "<p><strong>Memberikan Pelayanan Terbaik</strong></p><p>Kami hadir untuk menemani perjalanan spiritual Anda dengan menghadirkan buku Yasin berkualitas tinggi. Dengan pelayanan terbaik, kami berkomitmen untuk memberikan pengalaman berbelanja yang memuaskan. Setiap buku Yasin yang kami produksi adalah hasil dari dedikasi kami dalam menyajikan karya yang indah dan inspiratif.</p>"
+  },
   {
    "type": "image",
    "image": {
-    "src": "/assets/source/pages/shogun/8701e4cc-675f-4748-be52-99a9a412e360.png",
-    "alt": "Our Story",
-    "width": 1757,
-    "height": 1780
+    "src": "/assets/manisgrafika/ABOUT-US-COVER-1.webp",
+    "alt": "Galeri produk Manis Grafika",
+    "width": 720,
+    "height": 721
    },
-   "mobile": {
-    "src": "/assets/source/pages/shogun/cf4181a0-5acf-4be8-b578-1e6ca6a4a6cf.jpg",
-    "alt": "Our Story",
-    "width": 911,
-    "height": 3248
-   },
-   "background": "/assets/source/pages/shogun/1ff6c171-7984-4985-8ed0-c64a9dcf35d0.gif",
-   "mobileBackground": "/assets/source/pages/shogun/7d7651a5-efaf-46b9-971a-de1d5e1093c4.gif",
-   "maxWidth": 1757
+   "maxWidth": 720
+  },
+  {
+   "type": "heading",
+   "html": "Cerita Kami",
+   "align": "left"
+  },
+  {
+   "type": "richText",
+   "variant": "body",
+   "html": "<p>Setiap momen istimewa layak untuk dirayakan dengan keindahan yang abadi. <strong>Manis Grafika</strong> berkomitmen untuk mengabadikan momen-momen spesial dalam setiap karya, menjadikannya kenangan yang tak terlupakan dalam perjalanan hidup pelanggannya.</p><p><strong>Manis Grafika</strong> adalah percetakan buku Yasin dan tahlil profesional yang berpusat di kota Solo. Kami juga hadir untuk memberikan solusi terbaik bagi konsumen melalui karya yang dibuat dengan hati. Kepuasan konsumen menjadi prioritas kami, sehingga kami akan selalu berusaha menjaga dan meningkatkan value produk dan pelayanan.</p>"
+  },
+  {
+   "type": "imageGrid",
+   "items": [
+    {
+     "src": "/assets/manisgrafika/TENTANG-KAMIArtboard-4_CONVERT-1024x977.webp",
+     "alt": "Proses pengerjaan buku Yasin Manis Grafika",
+     "width": 1024,
+     "height": 977
+    },
+    {
+     "src": "/assets/manisgrafika/TENTANG-KAMIArtboard-5_CONVERT-1024x977.webp",
+     "alt": "Buku Yasin Manis Grafika siap dikemas",
+     "width": 1024,
+     "height": 977
+    }
+   ]
+  },
+  {
+   "type": "heading",
+   "html": "Mengapa Manis Grafika",
+   "align": "left"
+  },
+  {
+   "type": "iconList",
+   "variant": "features",
+   "items": [
+    {
+     "icon": {
+      "src": "/assets/manisgrafika/Desain-Mewah-dan-Elegan_.png",
+      "alt": "",
+      "width": 911,
+      "height": 911
+     },
+     "title": "Desain Mewah dan Elegan",
+     "html": "<p>Manis Grafika memadukan desain elegan dan mewah yang memberikan kesan tak terlupakan.</p>"
+    },
+    {
+     "icon": {
+      "src": "/assets/manisgrafika/Material-Premium.png",
+      "alt": "",
+      "width": 911,
+      "height": 911
+     },
+     "title": "Material Premium",
+     "html": "<p>Buku-buku Manis Grafika diciptakan dari material premium yang memberikan sentuhan menawan pada setiap halaman.</p>"
+    },
+    {
+     "icon": {
+      "src": "/assets/manisgrafika/Layanan-Ramah-dan-Profesional.png",
+      "alt": "",
+      "width": 912,
+      "height": 911
+     },
+     "title": "Layanan Ramah dan Profesional",
+     "html": "<p>Manis Grafika memberikan pelayanan ramah dan responsif dengan staf profesional untuk menciptakan pengalaman belanja yang memuaskan.</p>"
+    },
+    {
+     "icon": {
+      "src": "/assets/manisgrafika/Pengiriman-ke-Seluruh-Indonesia_.png",
+      "alt": "",
+      "width": 912,
+      "height": 911
+     },
+     "title": "Pengiriman Seluruh Indonesia",
+     "html": "<p>Manis Grafika dapat menjangkau seluruh pelosok negeri dengan memberikan fasilitas pengiriman ke seluruh Indonesia dengan cepat dan aman.</p>"
+    }
+   ]
+  },
+  {
+   "type": "richText",
+   "variant": "lead",
+   "html": "<p><em>Waktu yang berlalu di setiap momen kehidupan adalah sebuah memori indah yang tidak dapat diulang. Produk kami adalah buah karya seni yang dirancang dengan indah dan penuh makna. Tak hanya menghadirkan keindahan, namun juga kualitas dari setiap produk yang kami buat.</em></p><p><strong>Manis Grafika, Manis Dilihat.</strong></p>"
+  },
+  {
+   "type": "button",
+   "label": "Lihat Produk",
+   "href": "/collections/new-in"
   }
  ]
 }

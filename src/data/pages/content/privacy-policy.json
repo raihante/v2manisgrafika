@@ -1,97 +1,115 @@
 {
  "slug": "privacy-policy",
- "documentTitle": "Beyond The Vines | Privacy Policy – Beyond The Vines Indonesia",
- "title": "Privacy Policy",
- "accent": "rgb(49, 110, 110)",
+ "documentTitle": "Kebijakan Privasi – Manis Grafika",
+ "title": "Kebijakan Privasi",
+ "heroTitle": [
+  "Kebijakan",
+  "Privasi"
+ ],
+ "accent": "rgb(43, 88, 101)",
  "blocks": [
   {
+   "type": "callout",
+   "title": "Draf",
+   "html": "<p>Halaman ini adalah draf kebijakan standar e-commerce Indonesia yang disiapkan tim pengembang situs dan <strong>belum ditinjau</strong> oleh Manis Grafika maupun penasihat hukum. Isinya dapat berubah. Terakhir diperbarui: 17 November 2026.</p>"
+  },
+  {
    "type": "richText",
    "variant": "body",
-   "html": "<p>BTV Group Pte Ltd (“Beyond The Vines”) takes your privacy very seriously. We ask that you read this privacy policy (the “Policy”) carefully as it contains important information about what to expect when Beyond The Vines collects personal information about you and how Beyond The Vines will use your personal data.</p><p>This Policy applies to information we collect on <a href=\"https://www.beyondthevines.com\">www.beyondthevines.com</a> and its sub-domains about:</p><p>i. visitors to our website (the “Site”); and <br>ii. people who register their emails with us. <br>iii. people who register a shopping account with us.</p>"
+   "html": "<p>Manis Grafika menghormati privasi Anda dan memproses data pribadi sesuai Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi.</p>"
   },
   {
    "type": "heading",
-   "html": "Information collected from all visitors to our website",
+   "html": "Data yang Kami Kumpulkan",
+   "align": "left"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "Data kontak: nama, nomor telepon atau WhatsApp, dan alamat email.",
+    "Data pengiriman: alamat lengkap penerima.",
+    "Data personalisasi pesanan: nama, tanggal, foto, dan teks yang Anda minta dicetak, termasuk data tentang anggota keluarga atau almarhum/almarhumah.",
+    "Data transaksi: produk yang dipesan, jumlah, dan status pembayaran. Kami tidak menyimpan data rekening atau kartu Anda.",
+    "Data teknis: alamat IP, jenis perangkat, dan cookie yang diperlukan agar situs berfungsi."
+   ]
+  },
+  {
+   "type": "heading",
+   "html": "Tujuan Penggunaan Data",
+   "align": "left"
+  },
+  {
+   "type": "list",
+   "ordered": false,
+   "items": [
+    "Memproses, memproduksi, dan mengirim pesanan Anda.",
+    "Mengirim desain untuk persetujuan dan menghubungi Anda terkait pesanan.",
+    "Memberikan layanan pelanggan.",
+    "Mengirim informasi promo, hanya jika Anda mendaftar newsletter.",
+    "Memenuhi kewajiban hukum."
+   ]
+  },
+  {
+   "type": "heading",
+   "html": "Berbagi Data dengan Pihak Ketiga",
    "align": "left"
   },
   {
    "type": "richText",
    "variant": "body",
-   "html": "<p>We will obtain personal data about you when you visit us. When you visit us, we may monitor the use of this Site through the use of cookies and similar tracking devices. For example, we may monitor the number of times you visit our Site or which pages you go to. This information helps us to build a profile of our users. Some of this data will be aggregated or statistical, which means that we will not be able to identify you individually. Please see further the section on “Our Use of Cookies” below.</p>"
+   "html": "<p>Kami tidak menjual data pribadi Anda. Data hanya dibagikan sebatas yang diperlukan kepada jasa pengiriman, penyedia layanan pembayaran, dan penyedia hosting yang mendukung operasional situs, atau jika diwajibkan oleh hukum.</p>"
   },
   {
    "type": "heading",
-   "html": "Information collected from users who register their emails with us",
+   "html": "Penyimpanan dan Keamanan",
    "align": "left"
   },
   {
    "type": "richText",
    "variant": "body",
-   "html": "<p>When you register your emails with us, we may use it for the following:</p><p>(a) will send you weekly newsletters, contact you about products and services we think may be of interest to you.</p><p>If you agree to us providing you with these information, you can always opt out at a later date. If you would rather not receive these information, please send a blank email message to <a href=\"mailto:customercare@beyondthevines.com\">customercare@beyondthevines.com</a>.</p><p>By submiting your email you consent to the use of that email as set out in this policy.</p>"
+   "html": "<p>Data disimpan selama diperlukan untuk tujuan di atas atau sesuai kewajiban hukum. Foto dan data personalisasi disimpan selama diperlukan untuk produksi dan cetak ulang, lalu dapat dihapus atas permintaan Anda. Kami menerapkan langkah keamanan yang wajar untuk melindungi data.</p>"
   },
   {
    "type": "heading",
-   "html": "Our use of cookies",
-   "align": "center"
-  },
-  {
-   "type": "richText",
-   "variant": "body",
-   "html": "<p>Cookies are text files placed on your computer to collect standard Internet log information and visitor behaviour information. The information is used to track visitor use of the Site and to compile statistical reports on Site activity. For further information about cookies visit <a href=\"https://www.aboutcookies.org\">www.aboutcookies.org</a> or <a href=\"https://www.allaboutcookies.org\">www.allaboutcookies.org</a>. You can set your browser not to accept cookies and the above websites tell you how to remove cookies from your browser. However, in a few cases some of our Site features may not function if you remove cookies from your browser.</p>"
-  },
-  {
-   "type": "heading",
-   "html": "Access to your information and updating and correcting your information",
+   "html": "Hak Anda",
    "align": "left"
   },
   {
    "type": "richText",
    "variant": "body",
-   "html": "<p>Subject to the exceptions referred to in section 21(2) of the Personal Data Protection Act 2012 (No. 26 of 2012) of Singapore (“PDPA”), you have the right to request a copy of the information that we hold about you. If you would like a copy of some or all of your personal information, please send an email to <a href=\"mailto:customercare@beyondthevines.com\">customercare@beyondthevines.com</a>. We may make a small charge for this service.</p><p>We want to ensure that your personal information is accurate and up to date. If any of the information that you have provided to Beyond The Vines changes, for example if you change your email address, name or payment details, or if you wish to cancel your registration, please let us know the correct details by sending an email to <a href=\"mailto:customercare@beyondthevines.com\">customercare@beyondthevines.com</a>. You may ask us, or we may ask you, to correct information you or we think is inaccurate, and you may also ask us to remove information which is inaccurate.</p>"
+   "html": "<p>Anda berhak mengakses, memperbaiki, dan meminta penghapusan data pribadi Anda, menarik persetujuan, serta mengajukan keberatan atas pemrosesan data. Ajukan permintaan melalui kontak di bawah.</p>"
   },
   {
    "type": "heading",
-   "html": "Non-disclosure",
-   "align": "center"
+   "html": "Cookie",
+   "align": "left"
   },
   {
    "type": "richText",
    "variant": "body",
-   "html": "<p>We do not sell, trade, or otherwise transfer to third parties your personally identifiable information. This does not include trusted third parties who assist us in operating our website, conducting our business, or servicing you, as long as these parties agree to keep this information confidential. We may also release your information when we believe release is appropriate to comply with the law, enforce our site policies, or protect ours and others’ rights, property, or safety. However, non-personally identifiable visitor information may be provided to other parties for marketing, advertising, or other uses.</p>"
+   "html": "<p>Situs ini menggunakan penyimpanan browser dan cookie untuk menyimpan isi keranjang dan pengaturan dasar. Anda dapat menghapusnya melalui pengaturan browser.</p>"
   },
   {
    "type": "heading",
-   "html": "Sale of business",
-   "align": "center"
+   "html": "Perubahan Kebijakan",
+   "align": "left"
   },
   {
    "type": "richText",
    "variant": "body",
-   "html": "<p>If Beyond The Vines’s business is sold or integrated with another business your details may be disclosed to our advisers and any prospective purchasers and their advisers and will be passed on to the new owners of the business.</p>"
+   "html": "<p>Kebijakan ini dapat diperbarui sewaktu-waktu. Versi terbaru selalu tersedia di halaman ini.</p>"
   },
   {
    "type": "heading",
-   "html": "Changes to Privacy Policy",
-   "align": "center"
+   "html": "Kontak",
+   "align": "left"
   },
   {
    "type": "richText",
    "variant": "body",
-   "html": "<p>We keep our privacy policy under regular review. If we change our privacy policy we will post the changes on this page, and place notices on other pages of the Site, so that you may be aware of the information we collect and how we use it at all times. This privacy policy was last updated on 15th day of May 2015.</p>"
-  },
-  {
-   "type": "heading",
-   "html": "How to contact us",
-   "align": "center"
-  },
-  {
-   "type": "richText",
-   "variant": "body",
-   "html": "<p>We welcome your views about our Site and our privacy policy. If you would like to contact us with any queries or comments.</p><p>Please send an email to <a href=\"mailto:customercare@beyondthevines.com\">customercare@beyondthevines.com</a>.</p>"
+   "html": "<p>Pertanyaan tentang kebijakan ini dapat dikirim melalui WhatsApp <a href=\"https://wa.me/6281947949888\">+62 819 4794 9888</a> atau email <a href=\"mailto:manisgrafika@gmail.com\">manisgrafika@gmail.com</a>.</p>"
   }
  ],
- "heroTitle": [
-  "Privacy",
-  "Policy"
- ]
+ "variant": "policy"
 }

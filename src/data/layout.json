@@ -1,21 +1,21 @@
 {
- "source": "layout/theme.liquid hidden inputs at the top of #main-content (server HTML 2026-11-06, every template)",
+ "source": "Hidden inputs at the top of #main-content; Manis Grafika copy 2026-11-16",
  "hiddenInputs": [
   {
    "id": "jsc-front-shipping-text-local",
-   "value": "Your ID shipping is on us!"
+   "value": "Ongkos kirim dihitung saat checkout."
   },
   {
    "id": "jsc-back-shipping-text-local",
-   "value": "more to free ID shipping."
+   "value": "Dikirim dari Surakarta."
   },
   {
    "id": "jsc-front-shipping-text-int",
-   "value": "Your International shipping is on us!"
+   "value": "Ongkos kirim dihitung saat checkout."
   },
   {
    "id": "jsc-back-shipping-text-int",
-   "value": "more to free international shipping."
+   "value": "Dikirim dari Surakarta."
   }
  ]
 }

@@ -6,6 +6,23 @@ Discovery evidence: `reference/routes/discovery-01.json`, `reference/routes/js-c
 
 Status: route discovery captured; routes below are not visually verified unless separate route evidence says otherwise.
 
+## Manis Grafika Rebrand Routes (2026-11-17, supersedes BTV content rows below)
+
+The BTV route tables below are the layout/template history. Current content (all **rebranded, not visually verified** until owner review):
+
+| Route | Content | Builder |
+|---|---|---|
+| `/` | MG hero (5 categories), 3 promotion slides, 3 product rails, @manisgrafika feed | `scripts/manisgrafika/build-homepage.py` |
+| `/collections`, `/collections/<22 handles>` | MG categories and series (Terbaru, Hardcover, Dompet, Mika, Tasbih, Paket, 11 series) | `scripts/manisgrafika/build-catalog.mjs` |
+| `/products/<23 handles>` | MG products, 359 variants | `scripts/manisgrafika/build-catalog.mjs` |
+| `/pages/about-us` | Tentang Kami (MG copy, photos, 4 feature blocks) | `scripts/manisgrafika/build-pages.mjs` |
+| `/pages/faqs` | 5 manisgrafika.id Q&A + 4 categories written from MG facts | same |
+| `/pages/contact-us` | WhatsApp, email, workshop + map link, consumer-complaints contact; mock form | same |
+| `/pages/terms-of-service`, `/pages/privacy-policy`, `/pages/returns`, `/pages/kebijakan-pengiriman` (was `/pages/shipping-rate`, renamed round 269) | Indonesian **draft** policies with a visible draft notice | same |
+| `/pages/wishlist` | Indonesian empty-state mock | same |
+| `/blogs`, `/blogs/<3 slugs>` | 3 categories, 3 "[Contoh]" placeholder articles; the 64 BTV article routes are removed (local 404) | same |
+| `/search`, `/cart`, `/checkout`, `/checkout/thank-you`, 404 | MG titles; remaining English UI strings are step 6 | - |
+
 ## Scope Decisions
 
 - Inventory every evidenced frontend route; exclude assets, APIs, analytics endpoints, and `/agents.md`.
@@ -45,7 +62,7 @@ Supersedes the representative column of the template survey below. Source check 
 
 URL decisions (owner, 2026-11-06 /blogs grilling): flat `/blogs/<slug>`; generic slugs prefixed (`btv-city-guide-01..03`, `collaborations-sia`); the 3 `main` landings (`btv-city-guide`, `collaborations`, `travelling-btv-express`) are not routes; no redirects, source-format `/blogs/<blog>` and `/blogs/<blog>/<slug>` 404 locally and blog hrefs in fixtures are rewritten at build time; article slugs unique across blogs (CMS rule).
 | 5 | `/pages/about-us` | Own-design content-block template | Owner screenshot review |
-| - | `/pages/terms-of-service`, `/pages/privacy-policy`, `/pages/returns`, `/pages/shipping-rate` | Content-block template | Light render check |
+| - | `/pages/terms-of-service`, `/pages/privacy-policy`, `/pages/returns`, `/pages/kebijakan-pengiriman` | Content-block template | Light render check |
 | 6 | `/pages/contact-us` | Source reproduction; form = non-transactional mock | Full gate |
 | 7 | `/pages/faqs` | Source reproduction | Full gate |
 | 8 | `/pages/wishlist` | Logged-out empty-state mock | Full gate |
