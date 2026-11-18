@@ -109,7 +109,7 @@ export default function CollectionPage({ initial }: { initial: CollectionInitial
                     <div className="row">
                       <div className="small-12 columns">
                         <button className={`load-more button${grid.hasMore ? "" : " hidden"}`} style={grid.hasMore ? undefined : { display: "none" }} onClick={(e) => { e.currentTarget.blur(); loadMore(); }}>
-                          <span>Load more</span>
+                          <span>Muat lebih banyak</span>
                           <span className="loading-overlay" style={grid.hasMore ? undefined : { display: "none" }}><Spinner /></span>
                         </button>
                       </div>

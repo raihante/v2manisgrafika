@@ -47,7 +47,7 @@ function useSwymBar(ref: React.RefObject<HTMLDivElement | null>) {
     if (!host || host.querySelector(".swym-wishlist-button-bar")) return;
     const bar = document.createElement("div");
     bar.className = "swym-wishlist-button-bar swym-default";
-    bar.innerHTML = '<div class="swym-btn-container swym-inject" data-position="default"><button class="swym-button swym-add-to-wishlist swym-inject swym-has-fave-count swym-iconbtnlink swym-heart swym-loaded" aria-label="Save it for later" aria-pressed="false" tabindex="-1"><span class="swym-wishlist-cta">Save it for later</span></button><span class="swym-fave-count" data-count="0">0</span></div>';
+    bar.innerHTML = '<div class="swym-btn-container swym-inject" data-position="default"><button class="swym-button swym-add-to-wishlist swym-inject swym-has-fave-count swym-iconbtnlink swym-heart swym-loaded" aria-label="Simpan untuk nanti" aria-pressed="false" tabindex="-1"><span class="swym-wishlist-cta">Simpan untuk nanti</span></button><span class="swym-fave-count" data-count="0">0</span></div>';
     host.appendChild(bar);
   }, [ref]);
 }
@@ -93,7 +93,8 @@ function VariantFieldsets({ product, selected, choose, suffix = "", colourIndex 
               </div>
             )) : (
               <>
-                <div className="form__label"><span className="form__label__value">{selected[index]}</span></div>
+                {/* MG: the WooCommerce colour attribute is named "Variant", so the legend says "Cover:" (round 274). */}
+                <div className="form__label">Cover: <span className="form__label__value">{selected[index]}</span></div>
                 {option.values.map(radio)}
               </>
             )}
@@ -245,7 +246,7 @@ export default function ProductPage({ product }: { product: ProductDetail }) {
       {/* Source ancestors body > #wrapper > #main-content: two source rules depend on them for their specificity. */}
       <div id="wrapper"><div id="main-content">
       <div id={`shopify-section-template--22834210603287__breadcrumbs`} className="shopify-section breadcrumbs-section">
-        <scroll-shadow><nav className="breadcrumbs" aria-label="breadcrumbs"><Link href="/" title="Beranda">Beranda</Link><i>/</i>{product.title}</nav></scroll-shadow>
+        <scroll-shadow><nav className="breadcrumbs" aria-label="Breadcrumb"><Link href="/" title="Beranda">Beranda</Link><i>/</i>{product.title}</nav></scroll-shadow>
       </div>
       <section id={`shopify-section-${SECTION}`} className="shopify-section product-section">
         <div className="pdp-section thb-product-detail product">
@@ -255,7 +256,7 @@ export default function ProductPage({ product }: { product: ProductDetail }) {
                 <div id={`MediaGallery-${SECTION}`} data-hide-variants="true">
                   <div className="product-image-container" ref={mediaRef}>
                     <div className="swym-wishlist-button-custom-pdp">
-                      <button type="button" className="jsc-copy-button" onClick={copyLink}><img src="/assets/source/share-button-outline.png" aria-label="share button outline icon" alt="share button outline icon" /></button>
+                      <button type="button" className="jsc-copy-button" onClick={copyLink}><img src="/assets/source/share-button-outline.png" aria-label="Salin tautan produk" alt="Salin tautan produk" /></button>
                       <div className={`success-copy-message${copied ? " show" : ""}`}>Tautan disalin</div>
                       {/* MOCK wishlist (docs/mock-behaviors.md "Wishlist"). */}
                       <WishlistButton label="Simpan untuk nanti" />
@@ -273,7 +274,7 @@ export default function ProductPage({ product }: { product: ProductDetail }) {
                               <div key={img.src} id={`Slide-${SECTION}-${k}`} className={`product-images__slide product-images__slide--image${k === 0 ? " product-images__slide-item--variant" : ""}${active ? " is-active" : ""} flickity-cell${active ? " is-selected" : ""}`} data-img-alt={img.alt} aria-hidden={active ? undefined : true}>
                                 <div className="product-single__media product-single__media-image aspect-ratio aspect-ratio--adapt" id={`Media-Thumbnails-${SECTION}-${k}`} style={{ "--padding-bottom": `${img.ratio}%` } as React.CSSProperties}>
                                   {k === 0 ? <picture>{media}</picture> : media}
-                                  <a href={img.src} className="product-single__media-zoom" data-w={2000} data-h={Math.round(20 * img.ratio)} target="_blank" rel="noreferrer" tabIndex={-1} data-index={k} aria-label="Zoom" onClick={(e) => { e.preventDefault(); setLightbox(k); }}><ZoomIcon /></a>
+                                  <a href={img.src} className="product-single__media-zoom" data-w={2000} data-h={Math.round(20 * img.ratio)} target="_blank" rel="noreferrer" tabIndex={-1} data-index={k} aria-label="Perbesar foto" onClick={(e) => { e.preventDefault(); setLightbox(k); }}><ZoomIcon /></a>
                                 </div>
                               </div>
                             );
@@ -377,7 +378,7 @@ export default function ProductPage({ product }: { product: ProductDetail }) {
                             {product.pairItWith.length > 1 && (
                               <div className="flickity-page-dots">
                                 {product.pairItWith.map((card, i) => (
-                                  <button key={card.href} type="button" className={`flickity-page-dot${i === pairSelected ? " is-selected" : ""}`} aria-current={i === pairSelected ? "step" : undefined} onClick={() => selectPair(i, { user: true })}>{`View slide ${i + 1}`}</button>
+                                  <button key={card.href} type="button" className={`flickity-page-dot${i === pairSelected ? " is-selected" : ""}`} aria-current={i === pairSelected ? "step" : undefined} onClick={() => selectPair(i, { user: true })}>{`Lihat slide ${i + 1}`}</button>
                                 ))}
                               </div>
                             )}

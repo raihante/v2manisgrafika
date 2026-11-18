@@ -117,11 +117,11 @@ export default function PhotoSwipe({ items, index, onIndex, onClose }: Props) {
         <div className={open ? `pswp__ui pswp__ui--fit${items.length < 2 ? " pswp__ui--one-slide" : ""}` : "pswp__ui pswp__ui--hidden"}>
           <div className="pswp__top-bar">
             <div className="pswp__button pswp__counter">{open ? `${(index ?? 0) + 1} / ${items.length}` : ""}</div>
-            <button type="button" className="pswp__button pswp__button--close" title="Close (Esc)" onClick={onClose}><CloseIcon /></button>
+            <button type="button" className="pswp__button pswp__button--close" title="Tutup (Esc)" onClick={onClose}><CloseIcon /></button>
             <div className="pswp__preloader"></div>
           </div>
-          <button type="button" className="pswp__button pswp__button--arrow--left" title="Previous (arrow left)" onClick={() => go((index ?? 0) - 1)}><ArrowLeft /></button>
-          <button type="button" className="pswp__button pswp__button--arrow--right" title="Next (arrow right)" onClick={() => go((index ?? 0) + 1)}><ArrowRight /></button>
+          <button type="button" className="pswp__button pswp__button--arrow--left" title="Sebelumnya (panah kiri)" onClick={() => go((index ?? 0) - 1)}><ArrowLeft /></button>
+          <button type="button" className="pswp__button pswp__button--arrow--right" title="Berikutnya (panah kanan)" onClick={() => go((index ?? 0) + 1)}><ArrowRight /></button>
           <div className="pswp__caption"><div className="pswp__caption__center"></div></div>
         </div>
       </div>

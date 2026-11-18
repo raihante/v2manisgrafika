@@ -65,7 +65,7 @@ function SearchView({ query: urlQuery, index, meta }: { query: SearchQuery; inde
       <div id={`shopify-section-${meta.bannerSectionId}`} className="shopify-section">
         <div className={meta.bannerClass} style={styleVars(meta.bannerStyle)}>
           <div className="collection-banner--breadcrumbs">
-            <nav className="breadcrumbs" aria-label="breadcrumbs"> <a href={meta.breadcrumbHome.href}>{meta.breadcrumbHome.label}</a> <i>/</i> {meta.breadcrumbCurrent} </nav>
+            <nav className="breadcrumbs" aria-label="Breadcrumb"> <a href={meta.breadcrumbHome.href}>{meta.breadcrumbHome.label}</a> <i>/</i> {meta.breadcrumbCurrent} </nav>
           </div>
           <div className="row full-width-row">
             <div className="small-12 columns">
@@ -155,13 +155,13 @@ function Pagination({ query, total, meta }: { query: SearchQuery; total: number;
         <div className="small-12 columns">
           {parts.length > 0 && (
             <div className="page-numbers nav-links">
-              {current > 1 && <><span className="prev"><a href={pageHref(current - 1, query)} title=""> Previous </a></span> </>}
+              {current > 1 && <><span className="prev"><a href={pageHref(current - 1, query)} title=""> Sebelumnya </a></span> </>}
               {parts.map((p, i) => (
                 <Fragment key={p === "deco" ? `d${i}` : p}>
                   {p === "deco" ? <span className="deco">&hellip;</span> : p === current ? <span className="page current">{p}</span> : <span className="page"><a href={pageHref(p, query)} title="">{p}</a></span>}{" "}
                 </Fragment>
               ))}
-              {current < total && <span className="next"><a href={pageHref(current + 1, query)} title=""> Next </a></span>}
+              {current < total && <span className="next"><a href={pageHref(current + 1, query)} title=""> Berikutnya </a></span>}
             </div>
           )}
         </div>

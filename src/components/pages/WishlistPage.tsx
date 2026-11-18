@@ -32,7 +32,7 @@ export default function WishlistPage({ page }: { page: WishlistPageData }) {
                     <div className={page.detailClass}>
                       <div className="swym-wishlist-detail-header">
                         <h2 className="swym-wishlist-main-title swym-heading swym-heading-1 swym-is-heading" id="swym-modal-wishlist-title">{page.detailTitle}</h2>
-                        <div className="swym-action-container"><button disabled className="swym-share-btn swym-color-2 swym-disabled" title="Share" aria-label={page.shareLabel}><span className="swym-icon"></span></button></div>
+                        <div className="swym-action-container"><button disabled className="swym-share-btn swym-color-2 swym-disabled" title="Bagikan" aria-label={page.shareLabel}><span className="swym-icon"></span></button></div>
                         <div role="button" tabIndex={0} className="swym-wishlist-context-menu swym-icon swym-is-button swym-nav swym-nav-1" id="swym-wishlist-context-menu" aria-label={page.menuLabel} aria-expanded={false}></div>
                       </div>
                       <div className="swym-wishlist-detail-separator"></div>

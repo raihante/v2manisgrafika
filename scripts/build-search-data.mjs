@@ -1,3 +1,4 @@
+// DO NOT RE-RUN for Manis Grafika (round 270): src/data/search.json now carries hand-translated Indonesian copy that this BTV builder would overwrite.
 // Build the /search template fixture (markup metadata only) from private source captures
 // (run with plain `node scripts/build-search-data.mjs`).
 // Inputs: reference/data/search/{empty,bag}.html (server HTML of /search and /search?q=bag, read-only GETs 2026-11-06).

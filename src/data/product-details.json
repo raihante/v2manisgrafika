@@ -199,17 +199,17 @@
    {
     "key": "deskripsi",
     "title": "Deskripsi",
-    "panelHtml": "<p><strong>Spesifikasi</strong></p>\n<p>Kertas Hvs 70gr (Finishing Block Lem &amp; Jahit kawat/Straples)<br />\nKertas Artpaper 90 gr (Finishing Artpaper Block Lem &amp; Jahit Benang)<br />\nFrame Warna Coklat Emas hasil cetakan Premium<br />\nGratis 5 Halaman Redaksi (1 foto dan 4 Halaman Redaksi)</p>\n<p><em>Notes:</em><em><br />\n</em><em>– Minimal Pembelian 50pcs.<br />\n– Harga Belum termasuk Ongkos Kirim.</em></p>"
+    "panelHtml": "<h3>Spesifikasi</h3><ul><li>Kertas HVS 70 gr (finishing blok lem &amp; jahit kawat/staples)</li><li>Kertas Artpaper 90 gr (finishing blok lem &amp; jahit benang)</li><li>Frame warna cokelat emas hasil cetakan premium</li><li>Gratis 5 halaman redaksi (1 foto dan 4 halaman teks)</li></ul><h3>Catatan</h3><ul><li>Minimal pembelian 50 pcs.</li><li>Harga belum termasuk ongkos kirim.</li></ul>"
    },
    {
     "key": "redaksi",
     "title": "Halaman Redaksi",
-    "panelHtml": "<p>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</p><p>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</p><p>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</p>"
+    "panelHtml": "<ul><li>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</li><li>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</li><li>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</li></ul>"
    },
    {
     "key": "pengiriman",
     "title": "Pengiriman",
-    "panelHtml": "<p>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</p><p>Pengerjaan membutuhkan sekitar 6 - 8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</p><p>Harga belum termasuk ongkos kirim.</p>"
+    "panelHtml": "<ul><li>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</li><li>Pengerjaan sekitar 6–8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</li><li>Harga belum termasuk ongkos kirim. Rincian di <a href=\"/pages/kebijakan-pengiriman\">Kebijakan Pengiriman</a>.</li></ul>"
    }
   ],
   "pairItWith": [],
@@ -403,7 +403,7 @@
      "type": "photo",
      "required": false,
      "maxLength": null,
-     "help": "1 foto, termasuk dalam 5 halaman redaksi gratis."
+     "help": "Maksimal 1 foto, mengisi 1 dari 5 halaman gratis."
     },
     {
      "key": "redaksi",
@@ -411,7 +411,7 @@
      "type": "textarea",
      "required": true,
      "maxLength": 2000,
-     "help": "Isi untuk 4 halaman redaksi gratis. Tambahan halaman dikenakan Rp 3.000 per 2 halaman."
+     "help": "Mengisi 4 halaman gratis; teks yang lebih panjang menambah halaman."
     },
     {
      "key": "catatan",
@@ -661,17 +661,17 @@
    {
     "key": "deskripsi",
     "title": "Deskripsi",
-    "panelHtml": "<p><strong>Spesifikasi</strong></p>\n<p>Kertas Hvs 70gr (Finishing Block Lem &amp; Jahit kawat/Straples)<br />\nKertas Artpaper 90 gr (Finishing Artpaper Block Lem &amp; Jahit Benang)<br />\nFrame Warna Coklat Emas hasil cetakan Premium<br />\nGratis 5 Halaman Redaksi (1 foto dan 4 Halaman Redaksi)</p>\n<p><em>Notes:</em><em><br />\n</em><em>– Minimal Pembelian 50pcs.<br />\n– Harga Belum termasuk Ongkos Kirim.</em></p>"
+    "panelHtml": "<h3>Spesifikasi</h3><ul><li>Kertas HVS 70 gr (finishing blok lem &amp; jahit kawat/staples)</li><li>Kertas Artpaper 90 gr (finishing blok lem &amp; jahit benang)</li><li>Frame warna cokelat emas hasil cetakan premium</li><li>Gratis 5 halaman redaksi (1 foto dan 4 halaman teks)</li></ul><h3>Catatan</h3><ul><li>Minimal pembelian 50 pcs.</li><li>Harga belum termasuk ongkos kirim.</li></ul>"
    },
    {
     "key": "redaksi",
     "title": "Halaman Redaksi",
-    "panelHtml": "<p>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</p><p>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</p><p>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</p>"
+    "panelHtml": "<ul><li>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</li><li>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</li><li>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</li></ul>"
    },
    {
     "key": "pengiriman",
     "title": "Pengiriman",
-    "panelHtml": "<p>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</p><p>Pengerjaan membutuhkan sekitar 6 - 8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</p><p>Harga belum termasuk ongkos kirim.</p>"
+    "panelHtml": "<ul><li>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</li><li>Pengerjaan sekitar 6–8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</li><li>Harga belum termasuk ongkos kirim. Rincian di <a href=\"/pages/kebijakan-pengiriman\">Kebijakan Pengiriman</a>.</li></ul>"
    }
   ],
   "pairItWith": [
@@ -895,7 +895,7 @@
      "type": "photo",
      "required": false,
      "maxLength": null,
-     "help": "1 foto, termasuk dalam 5 halaman redaksi gratis."
+     "help": "Maksimal 1 foto, mengisi 1 dari 5 halaman gratis."
     },
     {
      "key": "redaksi",
@@ -903,7 +903,7 @@
      "type": "textarea",
      "required": true,
      "maxLength": 2000,
-     "help": "Isi untuk 4 halaman redaksi gratis. Tambahan halaman dikenakan Rp 3.000 per 2 halaman."
+     "help": "Mengisi 4 halaman gratis; teks yang lebih panjang menambah halaman."
     },
     {
      "key": "catatan",
@@ -1108,17 +1108,17 @@
    {
     "key": "deskripsi",
     "title": "Deskripsi",
-    "panelHtml": "<p><strong>Spesifikasi</strong></p>\n<p>Kertas Hvs 70gr (Finishing Block Lem &amp; Jahit kawat/Straples)<br />\nKertas Artpaper 90 gr (Finishing Artpaper Block Lem &amp; Jahit Benang)<br />\nFrame Warna Coklat Emas hasil cetakan Premium<br />\nGratis 5 Halaman Redaksi (1 foto dan 4 Halaman Redaksi)</p>\n<p><em>Notes:</em><em><br />\n</em><em>– Minimal Pembelian 50pcs.<br />\n– Harga Belum termasuk Ongkos Kirim.</em></p>"
+    "panelHtml": "<h3>Spesifikasi</h3><ul><li>Kertas HVS 70 gr (finishing blok lem &amp; jahit kawat/staples)</li><li>Kertas Artpaper 90 gr (finishing blok lem &amp; jahit benang)</li><li>Frame warna cokelat emas hasil cetakan premium</li><li>Gratis 5 halaman redaksi (1 foto dan 4 halaman teks)</li></ul><h3>Catatan</h3><ul><li>Minimal pembelian 50 pcs.</li><li>Harga belum termasuk ongkos kirim.</li></ul>"
    },
    {
     "key": "redaksi",
     "title": "Halaman Redaksi",
-    "panelHtml": "<p>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</p><p>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</p><p>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</p>"
+    "panelHtml": "<ul><li>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</li><li>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</li><li>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</li></ul>"
    },
    {
     "key": "pengiriman",
     "title": "Pengiriman",
-    "panelHtml": "<p>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</p><p>Pengerjaan membutuhkan sekitar 6 - 8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</p><p>Harga belum termasuk ongkos kirim.</p>"
+    "panelHtml": "<ul><li>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</li><li>Pengerjaan sekitar 6–8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</li><li>Harga belum termasuk ongkos kirim. Rincian di <a href=\"/pages/kebijakan-pengiriman\">Kebijakan Pengiriman</a>.</li></ul>"
    }
   ],
   "pairItWith": [
@@ -1342,7 +1342,7 @@
      "type": "photo",
      "required": false,
      "maxLength": null,
-     "help": "1 foto, termasuk dalam 5 halaman redaksi gratis."
+     "help": "Maksimal 1 foto, mengisi 1 dari 5 halaman gratis."
     },
     {
      "key": "redaksi",
@@ -1350,7 +1350,7 @@
      "type": "textarea",
      "required": true,
      "maxLength": 2000,
-     "help": "Isi untuk 4 halaman redaksi gratis. Tambahan halaman dikenakan Rp 3.000 per 2 halaman."
+     "help": "Mengisi 4 halaman gratis; teks yang lebih panjang menambah halaman."
     },
     {
      "key": "catatan",
@@ -1555,17 +1555,17 @@
    {
     "key": "deskripsi",
     "title": "Deskripsi",
-    "panelHtml": "<p><strong>Spesifikasi</strong></p>\n<p>Kertas Hvs 70gr (Finishing Block Lem &amp; Jahit kawat/Straples)<br />\nKertas Artpaper 90 gr (Finishing Artpaper Block Lem &amp; Jahit Benang)<br />\nFrame Warna Coklat Emas hasil cetakan Premium<br />\nGratis 5 Halaman Redaksi (1 foto dan 4 Halaman Redaksi)</p>\n<p><em>Notes:</em><em><br />\n</em><em>– Minimal Pembelian 50pcs.<br />\n– Harga Belum termasuk Ongkos Kirim.</em></p>"
+    "panelHtml": "<h3>Spesifikasi</h3><ul><li>Kertas HVS 70 gr (finishing blok lem &amp; jahit kawat/staples)</li><li>Kertas Artpaper 90 gr (finishing blok lem &amp; jahit benang)</li><li>Frame warna cokelat emas hasil cetakan premium</li><li>Gratis 5 halaman redaksi (1 foto dan 4 halaman teks)</li></ul><h3>Catatan</h3><ul><li>Minimal pembelian 50 pcs.</li><li>Harga belum termasuk ongkos kirim.</li></ul>"
    },
    {
     "key": "redaksi",
     "title": "Halaman Redaksi",
-    "panelHtml": "<p>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</p><p>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</p><p>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</p>"
+    "panelHtml": "<ul><li>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</li><li>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</li><li>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</li></ul>"
    },
    {
     "key": "pengiriman",
     "title": "Pengiriman",
-    "panelHtml": "<p>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</p><p>Pengerjaan membutuhkan sekitar 6 - 8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</p><p>Harga belum termasuk ongkos kirim.</p>"
+    "panelHtml": "<ul><li>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</li><li>Pengerjaan sekitar 6–8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</li><li>Harga belum termasuk ongkos kirim. Rincian di <a href=\"/pages/kebijakan-pengiriman\">Kebijakan Pengiriman</a>.</li></ul>"
    }
   ],
   "pairItWith": [
@@ -1763,7 +1763,7 @@
     ],
     "swatches": [
      {
-      "value": "Spoon Leather Coklat",
+      "value": "Spoon Leather Cokelat",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -1867,7 +1867,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standart Broken White",
+      "value": "Hardcover Standar Broken White",
       "image": "",
       "color": "#f3efe6",
       "active": false,
@@ -1875,7 +1875,7 @@
       "href": "/products/soraya-series?variant=2798"
      },
      {
-      "value": "Hardcover Standart Brown",
+      "value": "Hardcover Standar Brown",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -1883,7 +1883,7 @@
       "href": "/products/soraya-series?variant=2794"
      },
      {
-      "value": "Hardcover Standart Gold",
+      "value": "Hardcover Standar Gold",
       "image": "",
       "color": "#c9a54a",
       "active": false,
@@ -1891,7 +1891,7 @@
       "href": "/products/soraya-series?variant=2786"
      },
      {
-      "value": "Hardcover Standart Maroon",
+      "value": "Hardcover Standar Maroon",
       "image": "",
       "color": "#6e1f2b",
       "active": true,
@@ -1899,7 +1899,7 @@
       "href": "/products/soraya-series?variant=2778"
      },
      {
-      "value": "Hardcover Standart Navy",
+      "value": "Hardcover Standar Navy",
       "image": "",
       "color": "#1f2a44",
       "active": false,
@@ -1907,7 +1907,7 @@
       "href": "/products/soraya-series?variant=2790"
      },
      {
-      "value": "Hardcover Standart Tosca",
+      "value": "Hardcover Standar Tosca",
       "image": "",
       "color": "#3a9b97",
       "active": false,
@@ -1915,7 +1915,7 @@
       "href": "/products/soraya-series?variant=2782"
      }
     ],
-    "swatchSelected": "Hardcover Standart Maroon ",
+    "swatchSelected": "Hardcover Standar Maroon ",
     "swatchSuffix": "+ 5 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -1936,7 +1936,7 @@
      "type": "photo",
      "required": false,
      "maxLength": null,
-     "help": "1 foto, termasuk dalam 5 halaman redaksi gratis."
+     "help": "Maksimal 1 foto, mengisi 1 dari 5 halaman gratis."
     },
     {
      "key": "redaksi",
@@ -1944,7 +1944,7 @@
      "type": "textarea",
      "required": true,
      "maxLength": 2000,
-     "help": "Isi untuk 4 halaman redaksi gratis. Tambahan halaman dikenakan Rp 3.000 per 2 halaman."
+     "help": "Mengisi 4 halaman gratis; teks yang lebih panjang menambah halaman."
     },
     {
      "key": "catatan",
@@ -2149,17 +2149,17 @@
    {
     "key": "deskripsi",
     "title": "Deskripsi",
-    "panelHtml": "<p><strong>Spesifikasi</strong></p>\n<p>Kertas Hvs 70gr (Finishing Block Lem &amp; Jahit kawat/Straples)<br />\nKertas Artpaper 90 gr (Finishing Artpaper Block Lem &amp; Jahit Benang)<br />\nFrame Warna Coklat Emas hasil cetakan Premium<br />\nGratis 5 Halaman Redaksi (1 foto dan 4 Halaman Redaksi)</p>\n<p><em>Notes:</em><em><br />\n</em><em>– Minimal Pembelian 50pcs.<br />\n– Harga Belum termasuk Ongkos Kirim.</em></p>"
+    "panelHtml": "<h3>Spesifikasi</h3><ul><li>Kertas HVS 70 gr (finishing blok lem &amp; jahit kawat/staples)</li><li>Kertas Artpaper 90 gr (finishing blok lem &amp; jahit benang)</li><li>Frame warna cokelat emas hasil cetakan premium</li><li>Gratis 5 halaman redaksi (1 foto dan 4 halaman teks)</li></ul><h3>Catatan</h3><ul><li>Minimal pembelian 50 pcs.</li><li>Harga belum termasuk ongkos kirim.</li></ul>"
    },
    {
     "key": "redaksi",
     "title": "Halaman Redaksi",
-    "panelHtml": "<p>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</p><p>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</p><p>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</p>"
+    "panelHtml": "<ul><li>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</li><li>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</li><li>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</li></ul>"
    },
    {
     "key": "pengiriman",
     "title": "Pengiriman",
-    "panelHtml": "<p>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</p><p>Pengerjaan membutuhkan sekitar 6 - 8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</p><p>Harga belum termasuk ongkos kirim.</p>"
+    "panelHtml": "<ul><li>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</li><li>Pengerjaan sekitar 6–8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</li><li>Harga belum termasuk ongkos kirim. Rincian di <a href=\"/pages/kebijakan-pengiriman\">Kebijakan Pengiriman</a>.</li></ul>"
    }
   ],
   "pairItWith": [
@@ -2357,7 +2357,7 @@
     ],
     "swatches": [
      {
-      "value": "Spoon Leather Coklat",
+      "value": "Spoon Leather Cokelat",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -2461,7 +2461,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standart Broken White",
+      "value": "Hardcover Standar Broken White",
       "image": "",
       "color": "#f3efe6",
       "active": false,
@@ -2469,7 +2469,7 @@
       "href": "/products/soraya-series?variant=2798"
      },
      {
-      "value": "Hardcover Standart Brown",
+      "value": "Hardcover Standar Brown",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -2477,7 +2477,7 @@
       "href": "/products/soraya-series?variant=2794"
      },
      {
-      "value": "Hardcover Standart Gold",
+      "value": "Hardcover Standar Gold",
       "image": "",
       "color": "#c9a54a",
       "active": false,
@@ -2485,7 +2485,7 @@
       "href": "/products/soraya-series?variant=2786"
      },
      {
-      "value": "Hardcover Standart Maroon",
+      "value": "Hardcover Standar Maroon",
       "image": "",
       "color": "#6e1f2b",
       "active": true,
@@ -2493,7 +2493,7 @@
       "href": "/products/soraya-series?variant=2778"
      },
      {
-      "value": "Hardcover Standart Navy",
+      "value": "Hardcover Standar Navy",
       "image": "",
       "color": "#1f2a44",
       "active": false,
@@ -2501,7 +2501,7 @@
       "href": "/products/soraya-series?variant=2790"
      },
      {
-      "value": "Hardcover Standart Tosca",
+      "value": "Hardcover Standar Tosca",
       "image": "",
       "color": "#3a9b97",
       "active": false,
@@ -2509,7 +2509,7 @@
       "href": "/products/soraya-series?variant=2782"
      }
     ],
-    "swatchSelected": "Hardcover Standart Maroon ",
+    "swatchSelected": "Hardcover Standar Maroon ",
     "swatchSuffix": "+ 5 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -2530,7 +2530,7 @@
      "type": "photo",
      "required": false,
      "maxLength": null,
-     "help": "1 foto, termasuk dalam 5 halaman redaksi gratis."
+     "help": "Maksimal 1 foto, mengisi 1 dari 5 halaman gratis."
     },
     {
      "key": "redaksi",
@@ -2538,7 +2538,7 @@
      "type": "textarea",
      "required": true,
      "maxLength": 2000,
-     "help": "Isi untuk 4 halaman redaksi gratis. Tambahan halaman dikenakan Rp 3.000 per 2 halaman."
+     "help": "Mengisi 4 halaman gratis; teks yang lebih panjang menambah halaman."
     },
     {
      "key": "catatan",
@@ -2743,17 +2743,17 @@
    {
     "key": "deskripsi",
     "title": "Deskripsi",
-    "panelHtml": "<p><strong>Spesifikasi</strong></p>\n<p>Kertas Hvs 70gr (Finishing Block Lem &amp; Jahit kawat/Straples)<br />\nKertas Artpaper 90 gr (Finishing Artpaper Block Lem &amp; Jahit Benang)<br />\nFrame Warna Coklat Emas hasil cetakan Premium<br />\nGratis 5 Halaman Redaksi (1 foto dan 4 Halaman Redaksi)</p>\n<p><em>Notes:</em><em><br />\n</em><em>– Minimal Pembelian 50pcs.<br />\n– Harga Belum termasuk Ongkos Kirim.</em></p>"
+    "panelHtml": "<h3>Spesifikasi</h3><ul><li>Kertas HVS 70 gr (finishing blok lem &amp; jahit kawat/staples)</li><li>Kertas Artpaper 90 gr (finishing blok lem &amp; jahit benang)</li><li>Frame warna cokelat emas hasil cetakan premium</li><li>Gratis 5 halaman redaksi (1 foto dan 4 halaman teks)</li></ul><h3>Catatan</h3><ul><li>Minimal pembelian 50 pcs.</li><li>Harga belum termasuk ongkos kirim.</li></ul>"
    },
    {
     "key": "redaksi",
     "title": "Halaman Redaksi",
-    "panelHtml": "<p>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</p><p>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</p><p>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</p>"
+    "panelHtml": "<ul><li>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</li><li>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</li><li>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</li></ul>"
    },
    {
     "key": "pengiriman",
     "title": "Pengiriman",
-    "panelHtml": "<p>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</p><p>Pengerjaan membutuhkan sekitar 6 - 8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</p><p>Harga belum termasuk ongkos kirim.</p>"
+    "panelHtml": "<ul><li>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</li><li>Pengerjaan sekitar 6–8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</li><li>Harga belum termasuk ongkos kirim. Rincian di <a href=\"/pages/kebijakan-pengiriman\">Kebijakan Pengiriman</a>.</li></ul>"
    }
   ],
   "pairItWith": [
@@ -2951,7 +2951,7 @@
     ],
     "swatches": [
      {
-      "value": "Spoon Leather Coklat",
+      "value": "Spoon Leather Cokelat",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -3055,7 +3055,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standart Broken White",
+      "value": "Hardcover Standar Broken White",
       "image": "",
       "color": "#f3efe6",
       "active": false,
@@ -3063,7 +3063,7 @@
       "href": "/products/soraya-series?variant=2798"
      },
      {
-      "value": "Hardcover Standart Brown",
+      "value": "Hardcover Standar Brown",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -3071,7 +3071,7 @@
       "href": "/products/soraya-series?variant=2794"
      },
      {
-      "value": "Hardcover Standart Gold",
+      "value": "Hardcover Standar Gold",
       "image": "",
       "color": "#c9a54a",
       "active": false,
@@ -3079,7 +3079,7 @@
       "href": "/products/soraya-series?variant=2786"
      },
      {
-      "value": "Hardcover Standart Maroon",
+      "value": "Hardcover Standar Maroon",
       "image": "",
       "color": "#6e1f2b",
       "active": true,
@@ -3087,7 +3087,7 @@
       "href": "/products/soraya-series?variant=2778"
      },
      {
-      "value": "Hardcover Standart Navy",
+      "value": "Hardcover Standar Navy",
       "image": "",
       "color": "#1f2a44",
       "active": false,
@@ -3095,7 +3095,7 @@
       "href": "/products/soraya-series?variant=2790"
      },
      {
-      "value": "Hardcover Standart Tosca",
+      "value": "Hardcover Standar Tosca",
       "image": "",
       "color": "#3a9b97",
       "active": false,
@@ -3103,7 +3103,7 @@
       "href": "/products/soraya-series?variant=2782"
      }
     ],
-    "swatchSelected": "Hardcover Standart Maroon ",
+    "swatchSelected": "Hardcover Standar Maroon ",
     "swatchSuffix": "+ 5 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -3124,7 +3124,7 @@
      "type": "photo",
      "required": false,
      "maxLength": null,
-     "help": "1 foto, termasuk dalam 5 halaman redaksi gratis."
+     "help": "Maksimal 1 foto, mengisi 1 dari 5 halaman gratis."
     },
     {
      "key": "redaksi",
@@ -3132,7 +3132,7 @@
      "type": "textarea",
      "required": true,
      "maxLength": 2000,
-     "help": "Isi untuk 4 halaman redaksi gratis. Tambahan halaman dikenakan Rp 3.000 per 2 halaman."
+     "help": "Mengisi 4 halaman gratis; teks yang lebih panjang menambah halaman."
     },
     {
      "key": "catatan",
@@ -3382,17 +3382,17 @@
    {
     "key": "deskripsi",
     "title": "Deskripsi",
-    "panelHtml": "<p><strong>Spesifikasi</strong></p>\n<p>Kertas Hvs 70gr (Finishing Block Lem &amp; Jahit kawat/Straples)<br />\nKertas Artpaper 90 gr (Finishing Artpaper Block Lem &amp; Jahit Benang)<br />\nFrame Warna Coklat Emas hasil cetakan Premium<br />\nGratis 5 Halaman Redaksi (1 foto dan 4 Halaman Redaksi)</p>\n<p><em>Notes:</em><em><br />\n</em><em>– Minimal Pembelian 50pcs.<br />\n– Harga Belum termasuk Ongkos Kirim.</em></p>"
+    "panelHtml": "<h3>Spesifikasi</h3><ul><li>Kertas HVS 70 gr (finishing blok lem &amp; jahit kawat/staples)</li><li>Kertas Artpaper 90 gr (finishing blok lem &amp; jahit benang)</li><li>Frame warna cokelat emas hasil cetakan premium</li><li>Gratis 5 halaman redaksi (1 foto dan 4 halaman teks)</li></ul><h3>Catatan</h3><ul><li>Minimal pembelian 50 pcs.</li><li>Harga belum termasuk ongkos kirim.</li></ul>"
    },
    {
     "key": "redaksi",
     "title": "Halaman Redaksi",
-    "panelHtml": "<p>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</p><p>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</p><p>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</p>"
+    "panelHtml": "<ul><li>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</li><li>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</li><li>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</li></ul>"
    },
    {
     "key": "pengiriman",
     "title": "Pengiriman",
-    "panelHtml": "<p>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</p><p>Pengerjaan membutuhkan sekitar 6 - 8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</p><p>Harga belum termasuk ongkos kirim.</p>"
+    "panelHtml": "<ul><li>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</li><li>Pengerjaan sekitar 6–8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</li><li>Harga belum termasuk ongkos kirim. Rincian di <a href=\"/pages/kebijakan-pengiriman\">Kebijakan Pengiriman</a>.</li></ul>"
    }
   ],
   "pairItWith": [
@@ -3590,7 +3590,7 @@
     ],
     "swatches": [
      {
-      "value": "Spoon Leather Coklat",
+      "value": "Spoon Leather Cokelat",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -3694,7 +3694,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standart Broken White",
+      "value": "Hardcover Standar Broken White",
       "image": "",
       "color": "#f3efe6",
       "active": false,
@@ -3702,7 +3702,7 @@
       "href": "/products/soraya-series?variant=2798"
      },
      {
-      "value": "Hardcover Standart Brown",
+      "value": "Hardcover Standar Brown",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -3710,7 +3710,7 @@
       "href": "/products/soraya-series?variant=2794"
      },
      {
-      "value": "Hardcover Standart Gold",
+      "value": "Hardcover Standar Gold",
       "image": "",
       "color": "#c9a54a",
       "active": false,
@@ -3718,7 +3718,7 @@
       "href": "/products/soraya-series?variant=2786"
      },
      {
-      "value": "Hardcover Standart Maroon",
+      "value": "Hardcover Standar Maroon",
       "image": "",
       "color": "#6e1f2b",
       "active": true,
@@ -3726,7 +3726,7 @@
       "href": "/products/soraya-series?variant=2778"
      },
      {
-      "value": "Hardcover Standart Navy",
+      "value": "Hardcover Standar Navy",
       "image": "",
       "color": "#1f2a44",
       "active": false,
@@ -3734,7 +3734,7 @@
       "href": "/products/soraya-series?variant=2790"
      },
      {
-      "value": "Hardcover Standart Tosca",
+      "value": "Hardcover Standar Tosca",
       "image": "",
       "color": "#3a9b97",
       "active": false,
@@ -3742,7 +3742,7 @@
       "href": "/products/soraya-series?variant=2782"
      }
     ],
-    "swatchSelected": "Hardcover Standart Maroon ",
+    "swatchSelected": "Hardcover Standar Maroon ",
     "swatchSuffix": "+ 5 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -3763,7 +3763,7 @@
      "type": "photo",
      "required": false,
      "maxLength": null,
-     "help": "1 foto, termasuk dalam 5 halaman redaksi gratis."
+     "help": "Maksimal 1 foto, mengisi 1 dari 5 halaman gratis."
     },
     {
      "key": "redaksi",
@@ -3771,7 +3771,7 @@
      "type": "textarea",
      "required": true,
      "maxLength": 2000,
-     "help": "Isi untuk 4 halaman redaksi gratis. Tambahan halaman dikenakan Rp 3.000 per 2 halaman."
+     "help": "Mengisi 4 halaman gratis; teks yang lebih panjang menambah halaman."
     },
     {
      "key": "catatan",
@@ -3976,17 +3976,17 @@
    {
     "key": "deskripsi",
     "title": "Deskripsi",
-    "panelHtml": "<p><strong>Spesifikasi</strong></p>\n<p>Kertas Hvs 70gr (Finishing Block Lem &amp; Jahit kawat/Straples)<br />\nKertas Artpaper 90 gr (Finishing Artpaper Block Lem &amp; Jahit Benang)<br />\nFrame Warna Coklat Emas hasil cetakan Premium<br />\nGratis 5 Halaman Redaksi (1 foto dan 4 Halaman Redaksi)</p>\n<p><em>Notes:</em><em><br />\n</em><em>– Minimal Pembelian 50pcs.<br />\n– Harga Belum termasuk Ongkos Kirim.</em></p>"
+    "panelHtml": "<h3>Spesifikasi</h3><ul><li>Kertas HVS 70 gr (finishing blok lem &amp; jahit kawat/staples)</li><li>Kertas Artpaper 90 gr (finishing blok lem &amp; jahit benang)</li><li>Frame warna cokelat emas hasil cetakan premium</li><li>Gratis 5 halaman redaksi (1 foto dan 4 halaman teks)</li></ul><h3>Catatan</h3><ul><li>Minimal pembelian 50 pcs.</li><li>Harga belum termasuk ongkos kirim.</li></ul>"
    },
    {
     "key": "redaksi",
     "title": "Halaman Redaksi",
-    "panelHtml": "<p>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</p><p>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</p><p>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</p>"
+    "panelHtml": "<ul><li>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</li><li>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</li><li>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</li></ul>"
    },
    {
     "key": "pengiriman",
     "title": "Pengiriman",
-    "panelHtml": "<p>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</p><p>Pengerjaan membutuhkan sekitar 6 - 8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</p><p>Harga belum termasuk ongkos kirim.</p>"
+    "panelHtml": "<ul><li>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</li><li>Pengerjaan sekitar 6–8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</li><li>Harga belum termasuk ongkos kirim. Rincian di <a href=\"/pages/kebijakan-pengiriman\">Kebijakan Pengiriman</a>.</li></ul>"
    }
   ],
   "pairItWith": [
@@ -4184,7 +4184,7 @@
     ],
     "swatches": [
      {
-      "value": "Spoon Leather Coklat",
+      "value": "Spoon Leather Cokelat",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -4288,7 +4288,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standart Broken White",
+      "value": "Hardcover Standar Broken White",
       "image": "",
       "color": "#f3efe6",
       "active": false,
@@ -4296,7 +4296,7 @@
       "href": "/products/soraya-series?variant=2798"
      },
      {
-      "value": "Hardcover Standart Brown",
+      "value": "Hardcover Standar Brown",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -4304,7 +4304,7 @@
       "href": "/products/soraya-series?variant=2794"
      },
      {
-      "value": "Hardcover Standart Gold",
+      "value": "Hardcover Standar Gold",
       "image": "",
       "color": "#c9a54a",
       "active": false,
@@ -4312,7 +4312,7 @@
       "href": "/products/soraya-series?variant=2786"
      },
      {
-      "value": "Hardcover Standart Maroon",
+      "value": "Hardcover Standar Maroon",
       "image": "",
       "color": "#6e1f2b",
       "active": true,
@@ -4320,7 +4320,7 @@
       "href": "/products/soraya-series?variant=2778"
      },
      {
-      "value": "Hardcover Standart Navy",
+      "value": "Hardcover Standar Navy",
       "image": "",
       "color": "#1f2a44",
       "active": false,
@@ -4328,7 +4328,7 @@
       "href": "/products/soraya-series?variant=2790"
      },
      {
-      "value": "Hardcover Standart Tosca",
+      "value": "Hardcover Standar Tosca",
       "image": "",
       "color": "#3a9b97",
       "active": false,
@@ -4336,7 +4336,7 @@
       "href": "/products/soraya-series?variant=2782"
      }
     ],
-    "swatchSelected": "Hardcover Standart Maroon ",
+    "swatchSelected": "Hardcover Standar Maroon ",
     "swatchSuffix": "+ 5 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -4357,7 +4357,7 @@
      "type": "photo",
      "required": false,
      "maxLength": null,
-     "help": "1 foto, termasuk dalam 5 halaman redaksi gratis."
+     "help": "Maksimal 1 foto, mengisi 1 dari 5 halaman gratis."
     },
     {
      "key": "redaksi",
@@ -4365,7 +4365,7 @@
      "type": "textarea",
      "required": true,
      "maxLength": 2000,
-     "help": "Isi untuk 4 halaman redaksi gratis. Tambahan halaman dikenakan Rp 3.000 per 2 halaman."
+     "help": "Mengisi 4 halaman gratis; teks yang lebih panjang menambah halaman."
     },
     {
      "key": "catatan",
@@ -4570,17 +4570,17 @@
    {
     "key": "deskripsi",
     "title": "Deskripsi",
-    "panelHtml": "<p><strong>Spesifikasi</strong></p>\n<p>Kertas Hvs 70gr (Finishing Block Lem &amp; Jahit kawat/Straples)<br />\nKertas Artpaper 90 gr (Finishing Artpaper Block Lem &amp; Jahit Benang)<br />\nFrame Warna Coklat Emas hasil cetakan Premium<br />\nGratis 5 Halaman Redaksi (1 foto dan 4 Halaman Redaksi)</p>\n<p><em>Notes:</em><em><br />\n</em><em>– Minimal Pembelian 50pcs.<br />\n– Harga Belum termasuk Ongkos Kirim.</em></p>"
+    "panelHtml": "<h3>Spesifikasi</h3><ul><li>Kertas HVS 70 gr (finishing blok lem &amp; jahit kawat/staples)</li><li>Kertas Artpaper 90 gr (finishing blok lem &amp; jahit benang)</li><li>Frame warna cokelat emas hasil cetakan premium</li><li>Gratis 5 halaman redaksi (1 foto dan 4 halaman teks)</li></ul><h3>Catatan</h3><ul><li>Minimal pembelian 50 pcs.</li><li>Harga belum termasuk ongkos kirim.</li></ul>"
    },
    {
     "key": "redaksi",
     "title": "Halaman Redaksi",
-    "panelHtml": "<p>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</p><p>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</p><p>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</p>"
+    "panelHtml": "<ul><li>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</li><li>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</li><li>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</li></ul>"
    },
    {
     "key": "pengiriman",
     "title": "Pengiriman",
-    "panelHtml": "<p>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</p><p>Pengerjaan membutuhkan sekitar 6 - 8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</p><p>Harga belum termasuk ongkos kirim.</p>"
+    "panelHtml": "<ul><li>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</li><li>Pengerjaan sekitar 6–8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</li><li>Harga belum termasuk ongkos kirim. Rincian di <a href=\"/pages/kebijakan-pengiriman\">Kebijakan Pengiriman</a>.</li></ul>"
    }
   ],
   "pairItWith": [
@@ -4778,7 +4778,7 @@
     ],
     "swatches": [
      {
-      "value": "Spoon Leather Coklat",
+      "value": "Spoon Leather Cokelat",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -4882,7 +4882,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standart Broken White",
+      "value": "Hardcover Standar Broken White",
       "image": "",
       "color": "#f3efe6",
       "active": false,
@@ -4890,7 +4890,7 @@
       "href": "/products/soraya-series?variant=2798"
      },
      {
-      "value": "Hardcover Standart Brown",
+      "value": "Hardcover Standar Brown",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -4898,7 +4898,7 @@
       "href": "/products/soraya-series?variant=2794"
      },
      {
-      "value": "Hardcover Standart Gold",
+      "value": "Hardcover Standar Gold",
       "image": "",
       "color": "#c9a54a",
       "active": false,
@@ -4906,7 +4906,7 @@
       "href": "/products/soraya-series?variant=2786"
      },
      {
-      "value": "Hardcover Standart Maroon",
+      "value": "Hardcover Standar Maroon",
       "image": "",
       "color": "#6e1f2b",
       "active": true,
@@ -4914,7 +4914,7 @@
       "href": "/products/soraya-series?variant=2778"
      },
      {
-      "value": "Hardcover Standart Navy",
+      "value": "Hardcover Standar Navy",
       "image": "",
       "color": "#1f2a44",
       "active": false,
@@ -4922,7 +4922,7 @@
       "href": "/products/soraya-series?variant=2790"
      },
      {
-      "value": "Hardcover Standart Tosca",
+      "value": "Hardcover Standar Tosca",
       "image": "",
       "color": "#3a9b97",
       "active": false,
@@ -4930,7 +4930,7 @@
       "href": "/products/soraya-series?variant=2782"
      }
     ],
-    "swatchSelected": "Hardcover Standart Maroon ",
+    "swatchSelected": "Hardcover Standar Maroon ",
     "swatchSuffix": "+ 5 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -4951,7 +4951,7 @@
      "type": "photo",
      "required": false,
      "maxLength": null,
-     "help": "1 foto, termasuk dalam 5 halaman redaksi gratis."
+     "help": "Maksimal 1 foto, mengisi 1 dari 5 halaman gratis."
     },
     {
      "key": "redaksi",
@@ -4959,7 +4959,7 @@
      "type": "textarea",
      "required": true,
      "maxLength": 2000,
-     "help": "Isi untuk 4 halaman redaksi gratis. Tambahan halaman dikenakan Rp 3.000 per 2 halaman."
+     "help": "Mengisi 4 halaman gratis; teks yang lebih panjang menambah halaman."
     },
     {
      "key": "catatan",
@@ -5164,17 +5164,17 @@
    {
     "key": "deskripsi",
     "title": "Deskripsi",
-    "panelHtml": "<p><strong>Spesifikasi</strong></p>\n<p>Kertas Hvs 70gr (Finishing Block Lem &amp; Jahit kawat/Straples)<br />\nKertas Artpaper 90 gr (Finishing Artpaper Block Lem &amp; Jahit Benang)<br />\nFrame Warna Coklat Emas hasil cetakan Premium<br />\nGratis 5 Halaman Redaksi (1 foto dan 4 Halaman Redaksi)</p>\n<p><em>Notes:</em><em><br />\n</em><em>– Minimal Pembelian 50pcs.<br />\n– Harga Belum termasuk Ongkos Kirim.</em></p>"
+    "panelHtml": "<h3>Spesifikasi</h3><ul><li>Kertas HVS 70 gr (finishing blok lem &amp; jahit kawat/staples)</li><li>Kertas Artpaper 90 gr (finishing blok lem &amp; jahit benang)</li><li>Frame warna cokelat emas hasil cetakan premium</li><li>Gratis 5 halaman redaksi (1 foto dan 4 halaman teks)</li></ul><h3>Catatan</h3><ul><li>Minimal pembelian 50 pcs.</li><li>Harga belum termasuk ongkos kirim.</li></ul>"
    },
    {
     "key": "redaksi",
     "title": "Halaman Redaksi",
-    "panelHtml": "<p>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</p><p>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</p><p>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</p>"
+    "panelHtml": "<ul><li>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</li><li>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</li><li>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</li></ul>"
    },
    {
     "key": "pengiriman",
     "title": "Pengiriman",
-    "panelHtml": "<p>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</p><p>Pengerjaan membutuhkan sekitar 6 - 8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</p><p>Harga belum termasuk ongkos kirim.</p>"
+    "panelHtml": "<ul><li>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</li><li>Pengerjaan sekitar 6–8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</li><li>Harga belum termasuk ongkos kirim. Rincian di <a href=\"/pages/kebijakan-pengiriman\">Kebijakan Pengiriman</a>.</li></ul>"
    }
   ],
   "pairItWith": [
@@ -5372,7 +5372,7 @@
     ],
     "swatches": [
      {
-      "value": "Spoon Leather Coklat",
+      "value": "Spoon Leather Cokelat",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -5476,7 +5476,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standart Broken White",
+      "value": "Hardcover Standar Broken White",
       "image": "",
       "color": "#f3efe6",
       "active": false,
@@ -5484,7 +5484,7 @@
       "href": "/products/soraya-series?variant=2798"
      },
      {
-      "value": "Hardcover Standart Brown",
+      "value": "Hardcover Standar Brown",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -5492,7 +5492,7 @@
       "href": "/products/soraya-series?variant=2794"
      },
      {
-      "value": "Hardcover Standart Gold",
+      "value": "Hardcover Standar Gold",
       "image": "",
       "color": "#c9a54a",
       "active": false,
@@ -5500,7 +5500,7 @@
       "href": "/products/soraya-series?variant=2786"
      },
      {
-      "value": "Hardcover Standart Maroon",
+      "value": "Hardcover Standar Maroon",
       "image": "",
       "color": "#6e1f2b",
       "active": true,
@@ -5508,7 +5508,7 @@
       "href": "/products/soraya-series?variant=2778"
      },
      {
-      "value": "Hardcover Standart Navy",
+      "value": "Hardcover Standar Navy",
       "image": "",
       "color": "#1f2a44",
       "active": false,
@@ -5516,7 +5516,7 @@
       "href": "/products/soraya-series?variant=2790"
      },
      {
-      "value": "Hardcover Standart Tosca",
+      "value": "Hardcover Standar Tosca",
       "image": "",
       "color": "#3a9b97",
       "active": false,
@@ -5524,7 +5524,7 @@
       "href": "/products/soraya-series?variant=2782"
      }
     ],
-    "swatchSelected": "Hardcover Standart Maroon ",
+    "swatchSelected": "Hardcover Standar Maroon ",
     "swatchSuffix": "+ 5 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -5545,7 +5545,7 @@
      "type": "photo",
      "required": false,
      "maxLength": null,
-     "help": "1 foto, termasuk dalam 5 halaman redaksi gratis."
+     "help": "Maksimal 1 foto, mengisi 1 dari 5 halaman gratis."
     },
     {
      "key": "redaksi",
@@ -5553,7 +5553,7 @@
      "type": "textarea",
      "required": true,
      "maxLength": 2000,
-     "help": "Isi untuk 4 halaman redaksi gratis. Tambahan halaman dikenakan Rp 3.000 per 2 halaman."
+     "help": "Mengisi 4 halaman gratis; teks yang lebih panjang menambah halaman."
     },
     {
      "key": "catatan",
@@ -5758,17 +5758,17 @@
    {
     "key": "deskripsi",
     "title": "Deskripsi",
-    "panelHtml": "<p><strong>Spesifikasi</strong></p>\n<p>Kertas Hvs 70gr (Finishing Block Lem &amp; Jahit kawat/Straples)<br />\nKertas Artpaper 90 gr (Finishing Artpaper Block Lem &amp; Jahit Benang)<br />\nFrame Warna Coklat Emas hasil cetakan Premium<br />\nGratis 5 Halaman Redaksi (1 foto dan 4 Halaman Redaksi)</p>\n<p><em>Notes:</em><em><br />\n</em><em>– Minimal Pembelian 50pcs.<br />\n– Harga Belum termasuk Ongkos Kirim.</em></p>"
+    "panelHtml": "<h3>Spesifikasi</h3><ul><li>Kertas HVS 70 gr (finishing blok lem &amp; jahit kawat/staples)</li><li>Kertas Artpaper 90 gr (finishing blok lem &amp; jahit benang)</li><li>Frame warna cokelat emas hasil cetakan premium</li><li>Gratis 5 halaman redaksi (1 foto dan 4 halaman teks)</li></ul><h3>Catatan</h3><ul><li>Minimal pembelian 50 pcs.</li><li>Harga belum termasuk ongkos kirim.</li></ul>"
    },
    {
     "key": "redaksi",
     "title": "Halaman Redaksi",
-    "panelHtml": "<p>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</p><p>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</p><p>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</p>"
+    "panelHtml": "<ul><li>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</li><li>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</li><li>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</li></ul>"
    },
    {
     "key": "pengiriman",
     "title": "Pengiriman",
-    "panelHtml": "<p>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</p><p>Pengerjaan membutuhkan sekitar 6 - 8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</p><p>Harga belum termasuk ongkos kirim.</p>"
+    "panelHtml": "<ul><li>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</li><li>Pengerjaan sekitar 6–8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</li><li>Harga belum termasuk ongkos kirim. Rincian di <a href=\"/pages/kebijakan-pengiriman\">Kebijakan Pengiriman</a>.</li></ul>"
    }
   ],
   "pairItWith": [
@@ -5966,7 +5966,7 @@
     ],
     "swatches": [
      {
-      "value": "Spoon Leather Coklat",
+      "value": "Spoon Leather Cokelat",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -6070,7 +6070,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standart Broken White",
+      "value": "Hardcover Standar Broken White",
       "image": "",
       "color": "#f3efe6",
       "active": false,
@@ -6078,7 +6078,7 @@
       "href": "/products/soraya-series?variant=2798"
      },
      {
-      "value": "Hardcover Standart Brown",
+      "value": "Hardcover Standar Brown",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -6086,7 +6086,7 @@
       "href": "/products/soraya-series?variant=2794"
      },
      {
-      "value": "Hardcover Standart Gold",
+      "value": "Hardcover Standar Gold",
       "image": "",
       "color": "#c9a54a",
       "active": false,
@@ -6094,7 +6094,7 @@
       "href": "/products/soraya-series?variant=2786"
      },
      {
-      "value": "Hardcover Standart Maroon",
+      "value": "Hardcover Standar Maroon",
       "image": "",
       "color": "#6e1f2b",
       "active": true,
@@ -6102,7 +6102,7 @@
       "href": "/products/soraya-series?variant=2778"
      },
      {
-      "value": "Hardcover Standart Navy",
+      "value": "Hardcover Standar Navy",
       "image": "",
       "color": "#1f2a44",
       "active": false,
@@ -6110,7 +6110,7 @@
       "href": "/products/soraya-series?variant=2790"
      },
      {
-      "value": "Hardcover Standart Tosca",
+      "value": "Hardcover Standar Tosca",
       "image": "",
       "color": "#3a9b97",
       "active": false,
@@ -6118,7 +6118,7 @@
       "href": "/products/soraya-series?variant=2782"
      }
     ],
-    "swatchSelected": "Hardcover Standart Maroon ",
+    "swatchSelected": "Hardcover Standar Maroon ",
     "swatchSuffix": "+ 5 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -6139,7 +6139,7 @@
      "type": "photo",
      "required": false,
      "maxLength": null,
-     "help": "1 foto, termasuk dalam 5 halaman redaksi gratis."
+     "help": "Maksimal 1 foto, mengisi 1 dari 5 halaman gratis."
     },
     {
      "key": "redaksi",
@@ -6147,7 +6147,7 @@
      "type": "textarea",
      "required": true,
      "maxLength": 2000,
-     "help": "Isi untuk 4 halaman redaksi gratis. Tambahan halaman dikenakan Rp 3.000 per 2 halaman."
+     "help": "Mengisi 4 halaman gratis; teks yang lebih panjang menambah halaman."
     },
     {
      "key": "catatan",
@@ -6352,17 +6352,17 @@
    {
     "key": "deskripsi",
     "title": "Deskripsi",
-    "panelHtml": "<p><strong>Spesifikasi</strong></p>\n<p>Kertas Hvs 70gr (Finishing Block Lem &amp; Jahit kawat/Straples)<br />\nKertas Artpaper 90 gr (Finishing Artpaper Block Lem &amp; Jahit Benang)<br />\nFrame Warna Coklat Emas hasil cetakan Premium<br />\nGratis 5 Halaman Redaksi (1 foto dan 4 Halaman Redaksi)</p>\n<p><em>Notes:</em><em><br />\n</em><em>– Minimal Pembelian 50pcs.<br />\n– Harga Belum termasuk Ongkos Kirim.</em></p>"
+    "panelHtml": "<h3>Spesifikasi</h3><ul><li>Kertas HVS 70 gr (finishing blok lem &amp; jahit kawat/staples)</li><li>Kertas Artpaper 90 gr (finishing blok lem &amp; jahit benang)</li><li>Frame warna cokelat emas hasil cetakan premium</li><li>Gratis 5 halaman redaksi (1 foto dan 4 halaman teks)</li></ul><h3>Catatan</h3><ul><li>Minimal pembelian 50 pcs.</li><li>Harga belum termasuk ongkos kirim.</li></ul>"
    },
    {
     "key": "redaksi",
     "title": "Halaman Redaksi",
-    "panelHtml": "<p>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</p><p>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</p><p>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</p>"
+    "panelHtml": "<ul><li>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</li><li>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</li><li>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</li></ul>"
    },
    {
     "key": "pengiriman",
     "title": "Pengiriman",
-    "panelHtml": "<p>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</p><p>Pengerjaan membutuhkan sekitar 6 - 8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</p><p>Harga belum termasuk ongkos kirim.</p>"
+    "panelHtml": "<ul><li>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</li><li>Pengerjaan sekitar 6–8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</li><li>Harga belum termasuk ongkos kirim. Rincian di <a href=\"/pages/kebijakan-pengiriman\">Kebijakan Pengiriman</a>.</li></ul>"
    }
   ],
   "pairItWith": [
@@ -6560,7 +6560,7 @@
     ],
     "swatches": [
      {
-      "value": "Spoon Leather Coklat",
+      "value": "Spoon Leather Cokelat",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -6664,7 +6664,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standart Broken White",
+      "value": "Hardcover Standar Broken White",
       "image": "",
       "color": "#f3efe6",
       "active": false,
@@ -6672,7 +6672,7 @@
       "href": "/products/soraya-series?variant=2798"
      },
      {
-      "value": "Hardcover Standart Brown",
+      "value": "Hardcover Standar Brown",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -6680,7 +6680,7 @@
       "href": "/products/soraya-series?variant=2794"
      },
      {
-      "value": "Hardcover Standart Gold",
+      "value": "Hardcover Standar Gold",
       "image": "",
       "color": "#c9a54a",
       "active": false,
@@ -6688,7 +6688,7 @@
       "href": "/products/soraya-series?variant=2786"
      },
      {
-      "value": "Hardcover Standart Maroon",
+      "value": "Hardcover Standar Maroon",
       "image": "",
       "color": "#6e1f2b",
       "active": true,
@@ -6696,7 +6696,7 @@
       "href": "/products/soraya-series?variant=2778"
      },
      {
-      "value": "Hardcover Standart Navy",
+      "value": "Hardcover Standar Navy",
       "image": "",
       "color": "#1f2a44",
       "active": false,
@@ -6704,7 +6704,7 @@
       "href": "/products/soraya-series?variant=2790"
      },
      {
-      "value": "Hardcover Standart Tosca",
+      "value": "Hardcover Standar Tosca",
       "image": "",
       "color": "#3a9b97",
       "active": false,
@@ -6712,7 +6712,7 @@
       "href": "/products/soraya-series?variant=2782"
      }
     ],
-    "swatchSelected": "Hardcover Standart Maroon ",
+    "swatchSelected": "Hardcover Standar Maroon ",
     "swatchSuffix": "+ 5 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -6733,7 +6733,7 @@
      "type": "photo",
      "required": false,
      "maxLength": null,
-     "help": "1 foto, termasuk dalam 5 halaman redaksi gratis."
+     "help": "Maksimal 1 foto, mengisi 1 dari 5 halaman gratis."
     },
     {
      "key": "redaksi",
@@ -6741,7 +6741,7 @@
      "type": "textarea",
      "required": true,
      "maxLength": 2000,
-     "help": "Isi untuk 4 halaman redaksi gratis. Tambahan halaman dikenakan Rp 3.000 per 2 halaman."
+     "help": "Mengisi 4 halaman gratis; teks yang lebih panjang menambah halaman."
     },
     {
      "key": "catatan",
@@ -6768,7 +6768,7 @@
     "name": "Cover",
     "handle": "cover",
     "values": [
-     "Spoon Leather Coklat",
+     "Spoon Leather Cokelat",
      "Spoon Leather Cream",
      "Spoon Leather Gold",
      "Spoon Leather Merah",
@@ -7045,7 +7045,7 @@
    {
     "id": 2828,
     "options": [
-     "Spoon Leather Coklat",
+     "Spoon Leather Cokelat",
      "Artpaper",
      "224"
     ],
@@ -7058,7 +7058,7 @@
    {
     "id": 2829,
     "options": [
-     "Spoon Leather Coklat",
+     "Spoon Leather Cokelat",
      "Artpaper",
      "484"
     ],
@@ -7071,7 +7071,7 @@
    {
     "id": 2830,
     "options": [
-     "Spoon Leather Coklat",
+     "Spoon Leather Cokelat",
      "HVS",
      "208"
     ],
@@ -7084,7 +7084,7 @@
    {
     "id": 2831,
     "options": [
-     "Spoon Leather Coklat",
+     "Spoon Leather Cokelat",
      "Artpaper",
      "208"
     ],
@@ -7097,14 +7097,14 @@
   ],
   "galleries": [
    {
-    "colour": "Spoon Leather Coklat",
+    "colour": "Spoon Leather Cokelat",
     "images": [
      {
       "src": "/assets/manisgrafika/DSC01968_CONVERT-scaled.webp",
       "srcset": "/assets/manisgrafika/DSC01968_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC01968_CONVERT-scaled.webp",
-      "alt": "Zyla Series - Spoon Leather Coklat",
+      "alt": "Zyla Series - Spoon Leather Cokelat",
       "ratio": 149.97070884592853
      },
      {
@@ -7112,7 +7112,7 @@
       "srcset": "/assets/manisgrafika/DSC06248_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06248_CONVERT-scaled.webp",
-      "alt": "Zyla Series - Spoon Leather Coklat",
+      "alt": "Zyla Series - Spoon Leather Cokelat",
       "ratio": 149.97070884592853
      },
      {
@@ -7120,7 +7120,7 @@
       "srcset": "/assets/manisgrafika/DSC06264_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06264_CONVERT-scaled.webp",
-      "alt": "Zyla Series - Spoon Leather Coklat",
+      "alt": "Zyla Series - Spoon Leather Cokelat",
       "ratio": 149.97070884592853
      },
      {
@@ -7128,7 +7128,7 @@
       "srcset": "/assets/manisgrafika/DSC06257_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06257_CONVERT-scaled.webp",
-      "alt": "Zyla Series - Spoon Leather Coklat",
+      "alt": "Zyla Series - Spoon Leather Cokelat",
       "ratio": 149.97070884592853
      },
      {
@@ -7136,7 +7136,7 @@
       "srcset": "/assets/manisgrafika/DSC06262_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06262_CONVERT-scaled.webp",
-      "alt": "Zyla Series - Spoon Leather Coklat",
+      "alt": "Zyla Series - Spoon Leather Cokelat",
       "ratio": 149.97070884592853
      }
     ]
@@ -7328,17 +7328,17 @@
    {
     "key": "deskripsi",
     "title": "Deskripsi",
-    "panelHtml": "<p>Dikemas dengan mika eksklusif yang menawan, koleksi Yassin Zyla Series Menghadirkan sentuhan elegan dengan detail produk yang cantik dan berkualitas. Keindahan dalam setiap detail produk Manis Grafika adalah bukti ketulusan kami dalam menghadirkan cinta dan penghormatan penuh makna. Wujudkan kasih yang abadi bersama Manis Grafika.</p>\n<p>Spesifikasi</p>\n<p>Kertas Hvs 70gr (Finishing Block Lem &amp; Jahit kawat/Straples)<br />\nKertas Artpaper 90 gr (Finishing Artpaper Block Lem &amp; Jahit Benang)<br />\nFrame Warna Coklat Emas hasil cetakan Premium<br />\nGratis 5 Halaman Redaksi (1 foto dan 4 Halaman Redaksi)</p>\n<p>Includes: Dompet, dan Tasbih</p>\n<p><em>Notes:</em><em><br />\n</em><em>– Minimal Pembelian 50pcs.<br />\n– Harga Belum termasuk Ongkos Kirim.</em></p>"
+    "panelHtml": "<p>Dikemas dengan mika eksklusif yang menawan, koleksi Yasin Zyla Series menghadirkan sentuhan elegan dengan detail produk yang cantik dan berkualitas. Keindahan dalam setiap detail produk Manis Grafika adalah bukti ketulusan kami dalam menghadirkan cinta dan penghormatan penuh makna. Wujudkan kasih yang abadi bersama Manis Grafika.</p><h3>Spesifikasi</h3><ul><li>Kertas HVS 70 gr (finishing blok lem &amp; jahit kawat/staples)</li><li>Kertas Artpaper 90 gr (finishing blok lem &amp; jahit benang)</li><li>Frame warna cokelat emas hasil cetakan premium</li><li>Gratis 5 halaman redaksi (1 foto dan 4 halaman teks)</li></ul><h3>Isi Paket</h3><ul><li>Dompet</li><li>Tasbih</li></ul><h3>Catatan</h3><ul><li>Minimal pembelian 50 pcs.</li><li>Harga belum termasuk ongkos kirim.</li></ul>"
    },
    {
     "key": "redaksi",
     "title": "Halaman Redaksi",
-    "panelHtml": "<p>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</p><p>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</p><p>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</p>"
+    "panelHtml": "<ul><li>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</li><li>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</li><li>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</li></ul>"
    },
    {
     "key": "pengiriman",
     "title": "Pengiriman",
-    "panelHtml": "<p>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</p><p>Pengerjaan membutuhkan sekitar 6 - 8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</p><p>Harga belum termasuk ongkos kirim.</p>"
+    "panelHtml": "<ul><li>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</li><li>Pengerjaan sekitar 6–8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</li><li>Harga belum termasuk ongkos kirim. Rincian di <a href=\"/pages/kebijakan-pengiriman\">Kebijakan Pengiriman</a>.</li></ul>"
    }
   ],
   "pairItWith": [
@@ -7573,7 +7573,7 @@
      "type": "photo",
      "required": false,
      "maxLength": null,
-     "help": "1 foto, termasuk dalam 5 halaman redaksi gratis."
+     "help": "Maksimal 1 foto, mengisi 1 dari 5 halaman gratis."
     },
     {
      "key": "redaksi",
@@ -7581,7 +7581,7 @@
      "type": "textarea",
      "required": true,
      "maxLength": 2000,
-     "help": "Isi untuk 4 halaman redaksi gratis. Tambahan halaman dikenakan Rp 3.000 per 2 halaman."
+     "help": "Mengisi 4 halaman gratis; teks yang lebih panjang menambah halaman."
     },
     {
      "key": "catatan",
@@ -7869,17 +7869,17 @@
    {
     "key": "deskripsi",
     "title": "Deskripsi",
-    "panelHtml": "<p>Dikemas dengan mika eksklusif yang menawan, koleksi Yassin Spoon Bludru Menghadirkan sentuhan elegan dengan detail produk yang cantik dan berkualitas. Keindahan dalam setiap detail produk Manis Grafika adalah bukti ketulusan kami dalam menghadirkan cinta dan penghormatan penuh makna. Wujudkan kasih yang abadi bersama Manis Grafika.</p>\n<p>Spesifikasi</p>\n<p>Kertas Hvs 70gr (Finishing Block Lem &amp; Jahit kawat/Straples)<br />\nKertas Artpaper 90 gr (Finishing Artpaper Block Lem &amp; Jahit Benang)<br />\nFrame Warna Coklat Emas hasil cetakan Premium<br />\nGratis 5 Halaman Redaksi (1 foto dan 4 Halaman Redaksi)</p>\n<p>Includes: Dompet, dan Tasbih</p>"
+    "panelHtml": "<p>Dikemas dengan mika eksklusif yang menawan, koleksi Yasin Spoon Bludru menghadirkan sentuhan elegan dengan detail produk yang cantik dan berkualitas. Keindahan dalam setiap detail produk Manis Grafika adalah bukti ketulusan kami dalam menghadirkan cinta dan penghormatan penuh makna. Wujudkan kasih yang abadi bersama Manis Grafika.</p><h3>Spesifikasi</h3><ul><li>Kertas HVS 70 gr (finishing blok lem &amp; jahit kawat/staples)</li><li>Kertas Artpaper 90 gr (finishing blok lem &amp; jahit benang)</li><li>Frame warna cokelat emas hasil cetakan premium</li><li>Gratis 5 halaman redaksi (1 foto dan 4 halaman teks)</li></ul><h3>Isi Paket</h3><ul><li>Dompet</li><li>Tasbih</li></ul>"
    },
    {
     "key": "redaksi",
     "title": "Halaman Redaksi",
-    "panelHtml": "<p>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</p><p>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</p><p>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</p>"
+    "panelHtml": "<ul><li>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</li><li>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</li><li>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</li></ul>"
    },
    {
     "key": "pengiriman",
     "title": "Pengiriman",
-    "panelHtml": "<p>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</p><p>Pengerjaan membutuhkan sekitar 6 - 8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</p><p>Harga belum termasuk ongkos kirim.</p>"
+    "panelHtml": "<ul><li>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</li><li>Pengerjaan sekitar 6–8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</li><li>Harga belum termasuk ongkos kirim. Rincian di <a href=\"/pages/kebijakan-pengiriman\">Kebijakan Pengiriman</a>.</li></ul>"
    }
   ],
   "pairItWith": [
@@ -7901,7 +7901,7 @@
     ],
     "swatches": [
      {
-      "value": "Spoon Leather Coklat",
+      "value": "Spoon Leather Cokelat",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -8138,7 +8138,7 @@
      "type": "photo",
      "required": false,
      "maxLength": null,
-     "help": "1 foto, termasuk dalam 5 halaman redaksi gratis."
+     "help": "Maksimal 1 foto, mengisi 1 dari 5 halaman gratis."
     },
     {
      "key": "redaksi",
@@ -8146,7 +8146,7 @@
      "type": "textarea",
      "required": true,
      "maxLength": 2000,
-     "help": "Isi untuk 4 halaman redaksi gratis. Tambahan halaman dikenakan Rp 3.000 per 2 halaman."
+     "help": "Mengisi 4 halaman gratis; teks yang lebih panjang menambah halaman."
     },
     {
      "key": "catatan",
@@ -8174,12 +8174,12 @@
     "name": "Cover",
     "handle": "cover",
     "values": [
-     "Hardcover Standart Broken White",
-     "Hardcover Standart Brown",
-     "Hardcover Standart Gold",
-     "Hardcover Standart Maroon",
-     "Hardcover Standart Navy",
-     "Hardcover Standart Tosca"
+     "Hardcover Standar Broken White",
+     "Hardcover Standar Brown",
+     "Hardcover Standar Gold",
+     "Hardcover Standar Maroon",
+     "Hardcover Standar Navy",
+     "Hardcover Standar Tosca"
     ],
     "ids": [
      76,
@@ -8238,7 +8238,7 @@
    }
   ],
   "initial": [
-   "Hardcover Standart Maroon",
+   "Hardcover Standar Maroon",
    "HVS",
    "208"
   ],
@@ -8246,7 +8246,7 @@
    {
     "id": 2778,
     "options": [
-     "Hardcover Standart Maroon",
+     "Hardcover Standar Maroon",
      "HVS",
      "208"
     ],
@@ -8259,7 +8259,7 @@
    {
     "id": 2779,
     "options": [
-     "Hardcover Standart Maroon",
+     "Hardcover Standar Maroon",
      "Artpaper",
      "208"
     ],
@@ -8272,7 +8272,7 @@
    {
     "id": 2780,
     "options": [
-     "Hardcover Standart Maroon",
+     "Hardcover Standar Maroon",
      "Artpaper",
      "224"
     ],
@@ -8285,7 +8285,7 @@
    {
     "id": 2781,
     "options": [
-     "Hardcover Standart Maroon",
+     "Hardcover Standar Maroon",
      "Artpaper",
      "484"
     ],
@@ -8298,7 +8298,7 @@
    {
     "id": 2782,
     "options": [
-     "Hardcover Standart Tosca",
+     "Hardcover Standar Tosca",
      "HVS",
      "208"
     ],
@@ -8311,7 +8311,7 @@
    {
     "id": 2783,
     "options": [
-     "Hardcover Standart Tosca",
+     "Hardcover Standar Tosca",
      "Artpaper",
      "208"
     ],
@@ -8324,7 +8324,7 @@
    {
     "id": 2784,
     "options": [
-     "Hardcover Standart Tosca",
+     "Hardcover Standar Tosca",
      "Artpaper",
      "224"
     ],
@@ -8337,7 +8337,7 @@
    {
     "id": 2785,
     "options": [
-     "Hardcover Standart Tosca",
+     "Hardcover Standar Tosca",
      "Artpaper",
      "484"
     ],
@@ -8350,7 +8350,7 @@
    {
     "id": 2786,
     "options": [
-     "Hardcover Standart Gold",
+     "Hardcover Standar Gold",
      "HVS",
      "208"
     ],
@@ -8363,7 +8363,7 @@
    {
     "id": 2787,
     "options": [
-     "Hardcover Standart Gold",
+     "Hardcover Standar Gold",
      "Artpaper",
      "208"
     ],
@@ -8376,7 +8376,7 @@
    {
     "id": 2788,
     "options": [
-     "Hardcover Standart Gold",
+     "Hardcover Standar Gold",
      "Artpaper",
      "224"
     ],
@@ -8389,7 +8389,7 @@
    {
     "id": 2789,
     "options": [
-     "Hardcover Standart Gold",
+     "Hardcover Standar Gold",
      "Artpaper",
      "484"
     ],
@@ -8402,7 +8402,7 @@
    {
     "id": 2790,
     "options": [
-     "Hardcover Standart Navy",
+     "Hardcover Standar Navy",
      "Artpaper",
      "208"
     ],
@@ -8415,7 +8415,7 @@
    {
     "id": 2791,
     "options": [
-     "Hardcover Standart Navy",
+     "Hardcover Standar Navy",
      "Artpaper",
      "224"
     ],
@@ -8428,7 +8428,7 @@
    {
     "id": 2792,
     "options": [
-     "Hardcover Standart Navy",
+     "Hardcover Standar Navy",
      "Artpaper",
      "484"
     ],
@@ -8441,7 +8441,7 @@
    {
     "id": 2793,
     "options": [
-     "Hardcover Standart Navy",
+     "Hardcover Standar Navy",
      "HVS",
      "208"
     ],
@@ -8454,7 +8454,7 @@
    {
     "id": 2794,
     "options": [
-     "Hardcover Standart Brown",
+     "Hardcover Standar Brown",
      "Artpaper",
      "208"
     ],
@@ -8467,7 +8467,7 @@
    {
     "id": 2795,
     "options": [
-     "Hardcover Standart Brown",
+     "Hardcover Standar Brown",
      "Artpaper",
      "224"
     ],
@@ -8480,7 +8480,7 @@
    {
     "id": 2796,
     "options": [
-     "Hardcover Standart Brown",
+     "Hardcover Standar Brown",
      "Artpaper",
      "484"
     ],
@@ -8493,7 +8493,7 @@
    {
     "id": 2797,
     "options": [
-     "Hardcover Standart Brown",
+     "Hardcover Standar Brown",
      "HVS",
      "208"
     ],
@@ -8506,7 +8506,7 @@
    {
     "id": 2798,
     "options": [
-     "Hardcover Standart Broken White",
+     "Hardcover Standar Broken White",
      "Artpaper",
      "208"
     ],
@@ -8519,7 +8519,7 @@
    {
     "id": 2799,
     "options": [
-     "Hardcover Standart Broken White",
+     "Hardcover Standar Broken White",
      "Artpaper",
      "224"
     ],
@@ -8532,7 +8532,7 @@
    {
     "id": 2800,
     "options": [
-     "Hardcover Standart Broken White",
+     "Hardcover Standar Broken White",
      "Artpaper",
      "484"
     ],
@@ -8545,7 +8545,7 @@
    {
     "id": 2801,
     "options": [
-     "Hardcover Standart Broken White",
+     "Hardcover Standar Broken White",
      "HVS",
      "208"
     ],
@@ -8558,14 +8558,14 @@
   ],
   "galleries": [
    {
-    "colour": "Hardcover Standart Broken White",
+    "colour": "Hardcover Standar Broken White",
     "images": [
      {
       "src": "/assets/manisgrafika/WHITE_CONVERT.webp",
       "srcset": "/assets/manisgrafika/WHITE_CONVERT.webp 1080w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/WHITE_CONVERT.webp",
-      "alt": "Soraya Series - Hardcover Standart Broken White",
+      "alt": "Soraya Series - Hardcover Standar Broken White",
       "ratio": 177.77777777777777
      },
      {
@@ -8573,7 +8573,7 @@
       "srcset": "/assets/manisgrafika/DSC06105_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06105_CONVERT-scaled.webp",
-      "alt": "Soraya Series - Hardcover Standart Broken White",
+      "alt": "Soraya Series - Hardcover Standar Broken White",
       "ratio": 149.97070884592853
      },
      {
@@ -8581,7 +8581,7 @@
       "srcset": "/assets/manisgrafika/DSC06168_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06168_CONVERT-scaled.webp",
-      "alt": "Soraya Series - Hardcover Standart Broken White",
+      "alt": "Soraya Series - Hardcover Standar Broken White",
       "ratio": 149.97070884592853
      },
      {
@@ -8589,7 +8589,7 @@
       "srcset": "/assets/manisgrafika/DSC06170_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06170_CONVERT-scaled.webp",
-      "alt": "Soraya Series - Hardcover Standart Broken White",
+      "alt": "Soraya Series - Hardcover Standar Broken White",
       "ratio": 149.97070884592853
      },
      {
@@ -8597,20 +8597,20 @@
       "srcset": "/assets/manisgrafika/DSC06173_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06173_CONVERT-scaled.webp",
-      "alt": "Soraya Series - Hardcover Standart Broken White",
+      "alt": "Soraya Series - Hardcover Standar Broken White",
       "ratio": 149.97070884592853
      }
     ]
    },
    {
-    "colour": "Hardcover Standart Brown",
+    "colour": "Hardcover Standar Brown",
     "images": [
      {
       "src": "/assets/manisgrafika/DSC06168_CONVERT-scaled.webp",
       "srcset": "/assets/manisgrafika/DSC06168_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06168_CONVERT-scaled.webp",
-      "alt": "Soraya Series - Hardcover Standart Brown",
+      "alt": "Soraya Series - Hardcover Standar Brown",
       "ratio": 149.97070884592853
      },
      {
@@ -8618,7 +8618,7 @@
       "srcset": "/assets/manisgrafika/MAROON-copy-2_CONVERT.webp 1081w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/MAROON-copy-2_CONVERT.webp",
-      "alt": "Soraya Series - Hardcover Standart Brown",
+      "alt": "Soraya Series - Hardcover Standar Brown",
       "ratio": 177.61332099907492
      },
      {
@@ -8626,7 +8626,7 @@
       "srcset": "/assets/manisgrafika/DSC06105_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06105_CONVERT-scaled.webp",
-      "alt": "Soraya Series - Hardcover Standart Brown",
+      "alt": "Soraya Series - Hardcover Standar Brown",
       "ratio": 149.97070884592853
      },
      {
@@ -8634,7 +8634,7 @@
       "srcset": "/assets/manisgrafika/DSC06170_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06170_CONVERT-scaled.webp",
-      "alt": "Soraya Series - Hardcover Standart Brown",
+      "alt": "Soraya Series - Hardcover Standar Brown",
       "ratio": 149.97070884592853
      },
      {
@@ -8642,20 +8642,20 @@
       "srcset": "/assets/manisgrafika/DSC06173_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06173_CONVERT-scaled.webp",
-      "alt": "Soraya Series - Hardcover Standart Brown",
+      "alt": "Soraya Series - Hardcover Standar Brown",
       "ratio": 149.97070884592853
      }
     ]
    },
    {
-    "colour": "Hardcover Standart Gold",
+    "colour": "Hardcover Standar Gold",
     "images": [
      {
       "src": "/assets/manisgrafika/GOLD_CONVERT.webp",
       "srcset": "/assets/manisgrafika/GOLD_CONVERT.webp 1081w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/GOLD_CONVERT.webp",
-      "alt": "Soraya Series - Hardcover Standart Gold",
+      "alt": "Soraya Series - Hardcover Standar Gold",
       "ratio": 177.61332099907492
      },
      {
@@ -8663,7 +8663,7 @@
       "srcset": "/assets/manisgrafika/DSC06105_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06105_CONVERT-scaled.webp",
-      "alt": "Soraya Series - Hardcover Standart Gold",
+      "alt": "Soraya Series - Hardcover Standar Gold",
       "ratio": 149.97070884592853
      },
      {
@@ -8671,7 +8671,7 @@
       "srcset": "/assets/manisgrafika/DSC06168_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06168_CONVERT-scaled.webp",
-      "alt": "Soraya Series - Hardcover Standart Gold",
+      "alt": "Soraya Series - Hardcover Standar Gold",
       "ratio": 149.97070884592853
      },
      {
@@ -8679,7 +8679,7 @@
       "srcset": "/assets/manisgrafika/DSC06170_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06170_CONVERT-scaled.webp",
-      "alt": "Soraya Series - Hardcover Standart Gold",
+      "alt": "Soraya Series - Hardcover Standar Gold",
       "ratio": 149.97070884592853
      },
      {
@@ -8687,20 +8687,20 @@
       "srcset": "/assets/manisgrafika/DSC06173_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06173_CONVERT-scaled.webp",
-      "alt": "Soraya Series - Hardcover Standart Gold",
+      "alt": "Soraya Series - Hardcover Standar Gold",
       "ratio": 149.97070884592853
      }
     ]
    },
    {
-    "colour": "Hardcover Standart Maroon",
+    "colour": "Hardcover Standar Maroon",
     "images": [
      {
       "src": "/assets/manisgrafika/MAROON_CONVERT.webp",
       "srcset": "/assets/manisgrafika/MAROON_CONVERT.webp 1081w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/MAROON_CONVERT.webp",
-      "alt": "Soraya Series - Hardcover Standart Maroon",
+      "alt": "Soraya Series - Hardcover Standar Maroon",
       "ratio": 177.61332099907492
      },
      {
@@ -8708,7 +8708,7 @@
       "srcset": "/assets/manisgrafika/DSC06105_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06105_CONVERT-scaled.webp",
-      "alt": "Soraya Series - Hardcover Standart Maroon",
+      "alt": "Soraya Series - Hardcover Standar Maroon",
       "ratio": 149.97070884592853
      },
      {
@@ -8716,7 +8716,7 @@
       "srcset": "/assets/manisgrafika/DSC06168_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06168_CONVERT-scaled.webp",
-      "alt": "Soraya Series - Hardcover Standart Maroon",
+      "alt": "Soraya Series - Hardcover Standar Maroon",
       "ratio": 149.97070884592853
      },
      {
@@ -8724,7 +8724,7 @@
       "srcset": "/assets/manisgrafika/DSC06170_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06170_CONVERT-scaled.webp",
-      "alt": "Soraya Series - Hardcover Standart Maroon",
+      "alt": "Soraya Series - Hardcover Standar Maroon",
       "ratio": 149.97070884592853
      },
      {
@@ -8732,20 +8732,20 @@
       "srcset": "/assets/manisgrafika/DSC06173_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06173_CONVERT-scaled.webp",
-      "alt": "Soraya Series - Hardcover Standart Maroon",
+      "alt": "Soraya Series - Hardcover Standar Maroon",
       "ratio": 149.97070884592853
      }
     ]
    },
    {
-    "colour": "Hardcover Standart Navy",
+    "colour": "Hardcover Standar Navy",
     "images": [
      {
       "src": "/assets/manisgrafika/NAVY_CONVERT.webp",
       "srcset": "/assets/manisgrafika/NAVY_CONVERT.webp 1081w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/NAVY_CONVERT.webp",
-      "alt": "Soraya Series - Hardcover Standart Navy",
+      "alt": "Soraya Series - Hardcover Standar Navy",
       "ratio": 177.61332099907492
      },
      {
@@ -8753,7 +8753,7 @@
       "srcset": "/assets/manisgrafika/DSC06105_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06105_CONVERT-scaled.webp",
-      "alt": "Soraya Series - Hardcover Standart Navy",
+      "alt": "Soraya Series - Hardcover Standar Navy",
       "ratio": 149.97070884592853
      },
      {
@@ -8761,7 +8761,7 @@
       "srcset": "/assets/manisgrafika/DSC06168_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06168_CONVERT-scaled.webp",
-      "alt": "Soraya Series - Hardcover Standart Navy",
+      "alt": "Soraya Series - Hardcover Standar Navy",
       "ratio": 149.97070884592853
      },
      {
@@ -8769,7 +8769,7 @@
       "srcset": "/assets/manisgrafika/DSC06170_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06170_CONVERT-scaled.webp",
-      "alt": "Soraya Series - Hardcover Standart Navy",
+      "alt": "Soraya Series - Hardcover Standar Navy",
       "ratio": 149.97070884592853
      },
      {
@@ -8777,20 +8777,20 @@
       "srcset": "/assets/manisgrafika/DSC06173_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06173_CONVERT-scaled.webp",
-      "alt": "Soraya Series - Hardcover Standart Navy",
+      "alt": "Soraya Series - Hardcover Standar Navy",
       "ratio": 149.97070884592853
      }
     ]
    },
    {
-    "colour": "Hardcover Standart Tosca",
+    "colour": "Hardcover Standar Tosca",
     "images": [
      {
       "src": "/assets/manisgrafika/TOSCA_CONVERT.webp",
       "srcset": "/assets/manisgrafika/TOSCA_CONVERT.webp 1081w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/TOSCA_CONVERT.webp",
-      "alt": "Soraya Series - Hardcover Standart Tosca",
+      "alt": "Soraya Series - Hardcover Standar Tosca",
       "ratio": 177.61332099907492
      },
      {
@@ -8798,7 +8798,7 @@
       "srcset": "/assets/manisgrafika/DSC06105_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06105_CONVERT-scaled.webp",
-      "alt": "Soraya Series - Hardcover Standart Tosca",
+      "alt": "Soraya Series - Hardcover Standar Tosca",
       "ratio": 149.97070884592853
      },
      {
@@ -8806,7 +8806,7 @@
       "srcset": "/assets/manisgrafika/DSC06168_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06168_CONVERT-scaled.webp",
-      "alt": "Soraya Series - Hardcover Standart Tosca",
+      "alt": "Soraya Series - Hardcover Standar Tosca",
       "ratio": 149.97070884592853
      },
      {
@@ -8814,7 +8814,7 @@
       "srcset": "/assets/manisgrafika/DSC06170_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06170_CONVERT-scaled.webp",
-      "alt": "Soraya Series - Hardcover Standart Tosca",
+      "alt": "Soraya Series - Hardcover Standar Tosca",
       "ratio": 149.97070884592853
      },
      {
@@ -8822,7 +8822,7 @@
       "srcset": "/assets/manisgrafika/DSC06173_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06173_CONVERT-scaled.webp",
-      "alt": "Soraya Series - Hardcover Standart Tosca",
+      "alt": "Soraya Series - Hardcover Standar Tosca",
       "ratio": 149.97070884592853
      }
     ]
@@ -8834,17 +8834,17 @@
    {
     "key": "deskripsi",
     "title": "Deskripsi",
-    "panelHtml": "<p>Dikemas dengan Tike Eksklusif yang menawan, koleksi Yassin Hardcover Standart Menghadirkan sentuhan elegan dengan detail produk yang cantik dan berkualitas. Keindahan dalam setiap detail produk Manis Grafika adalah bukti ketulusan kami dalam menghadirkan cinta dan penghormatan penuh makna. Wujudkan kasih yang abadi bersama Manis Grafika.</p>\n<p>Spesifikasi</p>\n<p>Kertas Hvs 70gr (Finishing Block Lem &amp; Jahit kawat/Straples)<br />\nKertas Artpaper 90 gr (Finishing Artpaper Block Lem &amp; Jahit Benang)<br />\nFrame Warna Coklat Emas hasil cetakan Premium<br />\nGratis 5 Halaman Redaksi (1 foto dan 4 Halaman Redaksi)</p>\n<p>Includes: Tile dan Tasbih.</p>\n<p><em>Notes:</em><em><br />\n</em><em>– Minimal Pembelian 50pcs.<br />\n– Harga Belum termasuk Ongkos Kirim.</em></p>"
+    "panelHtml": "<p>Dikemas dengan tile eksklusif yang menawan, koleksi Yasin Hardcover Standar menghadirkan sentuhan elegan dengan detail produk yang cantik dan berkualitas. Keindahan dalam setiap detail produk Manis Grafika adalah bukti ketulusan kami dalam menghadirkan cinta dan penghormatan penuh makna. Wujudkan kasih yang abadi bersama Manis Grafika.</p><h3>Spesifikasi</h3><ul><li>Kertas HVS 70 gr (finishing blok lem &amp; jahit kawat/staples)</li><li>Kertas Artpaper 90 gr (finishing blok lem &amp; jahit benang)</li><li>Frame warna cokelat emas hasil cetakan premium</li><li>Gratis 5 halaman redaksi (1 foto dan 4 halaman teks)</li></ul><h3>Isi Paket</h3><ul><li>Tile</li><li>Tasbih</li></ul><h3>Catatan</h3><ul><li>Minimal pembelian 50 pcs.</li><li>Harga belum termasuk ongkos kirim.</li></ul>"
    },
    {
     "key": "redaksi",
     "title": "Halaman Redaksi",
-    "panelHtml": "<p>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</p><p>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</p><p>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</p>"
+    "panelHtml": "<ul><li>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</li><li>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</li><li>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</li></ul>"
    },
    {
     "key": "pengiriman",
     "title": "Pengiriman",
-    "panelHtml": "<p>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</p><p>Pengerjaan membutuhkan sekitar 6 - 8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</p><p>Harga belum termasuk ongkos kirim.</p>"
+    "panelHtml": "<ul><li>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</li><li>Pengerjaan sekitar 6–8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</li><li>Harga belum termasuk ongkos kirim. Rincian di <a href=\"/pages/kebijakan-pengiriman\">Kebijakan Pengiriman</a>.</li></ul>"
    }
   ],
   "pairItWith": [
@@ -9199,7 +9199,7 @@
      "type": "photo",
      "required": false,
      "maxLength": null,
-     "help": "1 foto, termasuk dalam 5 halaman redaksi gratis."
+     "help": "Maksimal 1 foto, mengisi 1 dari 5 halaman gratis."
     },
     {
      "key": "redaksi",
@@ -9207,7 +9207,7 @@
      "type": "textarea",
      "required": true,
      "maxLength": 2000,
-     "help": "Isi untuk 4 halaman redaksi gratis. Tambahan halaman dikenakan Rp 3.000 per 2 halaman."
+     "help": "Mengisi 4 halaman gratis; teks yang lebih panjang menambah halaman."
     },
     {
      "key": "catatan",
@@ -10095,17 +10095,17 @@
    {
     "key": "deskripsi",
     "title": "Deskripsi",
-    "panelHtml": "<p>Cover spoon leather yang digunakan dalam Gamila Series memberikan sentuhan lembut untuk menghadirkan cinta kepada orang tersayang.</p>\n<p><strong>Spesifikasi</strong></p>\n<p>Kertas Hvs 70gr (Finishing Block Lem &amp; Jahit kawat/Straples)<br />\nKertas Artpaper 90 gr (Finishing Artpaper Block Lem &amp; Jahit Benang)<br />\nFrame Warna Coklat Emas hasil cetakan Premium<br />\nGratis 5 Halaman Redaksi (1 foto dan 4 Halaman Redaksi)</p>\n<p><em>Includes: Tile dan Tasbih.</em></p>\n<p><em>Notes:</em><em><br />\n</em><em>– Minimal Pembelian 50pcs.<br />\n– Harga Belum termasuk Ongkos Kirim.</em></p>"
+    "panelHtml": "<p>Cover Spoon Leather yang digunakan dalam Gamilia Series memberikan sentuhan lembut untuk menghadirkan cinta kepada orang tersayang.</p><h3>Spesifikasi</h3><ul><li>Kertas HVS 70 gr (finishing blok lem &amp; jahit kawat/staples)</li><li>Kertas Artpaper 90 gr (finishing blok lem &amp; jahit benang)</li><li>Frame warna cokelat emas hasil cetakan premium</li><li>Gratis 5 halaman redaksi (1 foto dan 4 halaman teks)</li></ul><h3>Isi Paket</h3><ul><li>Tile</li><li>Tasbih</li></ul><h3>Catatan</h3><ul><li>Minimal pembelian 50 pcs.</li><li>Harga belum termasuk ongkos kirim.</li></ul>"
    },
    {
     "key": "redaksi",
     "title": "Halaman Redaksi",
-    "panelHtml": "<p>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</p><p>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</p><p>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</p>"
+    "panelHtml": "<ul><li>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</li><li>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</li><li>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</li></ul>"
    },
    {
     "key": "pengiriman",
     "title": "Pengiriman",
-    "panelHtml": "<p>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</p><p>Pengerjaan membutuhkan sekitar 6 - 8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</p><p>Harga belum termasuk ongkos kirim.</p>"
+    "panelHtml": "<ul><li>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</li><li>Pengerjaan sekitar 6–8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</li><li>Harga belum termasuk ongkos kirim. Rincian di <a href=\"/pages/kebijakan-pengiriman\">Kebijakan Pengiriman</a>.</li></ul>"
    }
   ],
   "pairItWith": [
@@ -10127,7 +10127,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standart Broken White",
+      "value": "Hardcover Standar Broken White",
       "image": "",
       "color": "#f3efe6",
       "active": false,
@@ -10135,7 +10135,7 @@
       "href": "/products/soraya-series?variant=2798"
      },
      {
-      "value": "Hardcover Standart Brown",
+      "value": "Hardcover Standar Brown",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -10143,7 +10143,7 @@
       "href": "/products/soraya-series?variant=2794"
      },
      {
-      "value": "Hardcover Standart Gold",
+      "value": "Hardcover Standar Gold",
       "image": "",
       "color": "#c9a54a",
       "active": false,
@@ -10151,7 +10151,7 @@
       "href": "/products/soraya-series?variant=2786"
      },
      {
-      "value": "Hardcover Standart Maroon",
+      "value": "Hardcover Standar Maroon",
       "image": "",
       "color": "#6e1f2b",
       "active": true,
@@ -10159,7 +10159,7 @@
       "href": "/products/soraya-series?variant=2778"
      },
      {
-      "value": "Hardcover Standart Navy",
+      "value": "Hardcover Standar Navy",
       "image": "",
       "color": "#1f2a44",
       "active": false,
@@ -10167,7 +10167,7 @@
       "href": "/products/soraya-series?variant=2790"
      },
      {
-      "value": "Hardcover Standart Tosca",
+      "value": "Hardcover Standar Tosca",
       "image": "",
       "color": "#3a9b97",
       "active": false,
@@ -10175,7 +10175,7 @@
       "href": "/products/soraya-series?variant=2782"
      }
     ],
-    "swatchSelected": "Hardcover Standart Maroon ",
+    "swatchSelected": "Hardcover Standar Maroon ",
     "swatchSuffix": "+ 5 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -10444,7 +10444,7 @@
      "type": "photo",
      "required": false,
      "maxLength": null,
-     "help": "1 foto, termasuk dalam 5 halaman redaksi gratis."
+     "help": "Maksimal 1 foto, mengisi 1 dari 5 halaman gratis."
     },
     {
      "key": "redaksi",
@@ -10452,7 +10452,7 @@
      "type": "textarea",
      "required": true,
      "maxLength": 2000,
-     "help": "Isi untuk 4 halaman redaksi gratis. Tambahan halaman dikenakan Rp 3.000 per 2 halaman."
+     "help": "Mengisi 4 halaman gratis; teks yang lebih panjang menambah halaman."
     },
     {
      "key": "catatan",
@@ -11140,17 +11140,17 @@
    {
     "key": "deskripsi",
     "title": "Deskripsi",
-    "panelHtml": "<p>Buku Yasin Bludru yang dikemas dengan Tile  menawan menghadirkan produk berkualitas dan cantik bersama Lamia Series.</p>\n<p><strong>Spesifikasi</strong></p>\n<p>Kertas Hvs 70gr (Finishing Block Lem &amp; Jahit kawat/Straples)<br />\nKertas Artpaper 90 gr (Finishing Artpaper Block Lem &amp; Jahit Benang)<br />\nFrame Warna Coklat Emas hasil cetakan Premium<br />\nGratis 5 Halaman Redaksi (1 foto dan 4 Halaman Redaksi)</p>\n<p><em>Includes: Tile dan Tasbih.</em></p>\n<p><em>Notes:</em><em><br />\n</em><em>– Minimal Pembelian 50pcs.<br />\n– Harga Belum termasuk Ongkos Kirim.</em></p>"
+    "panelHtml": "<p>Buku Yasin Bludru yang dikemas dengan tile yang menawan menghadirkan produk berkualitas dan cantik bersama Lamia Series.</p><h3>Spesifikasi</h3><ul><li>Kertas HVS 70 gr (finishing blok lem &amp; jahit kawat/staples)</li><li>Kertas Artpaper 90 gr (finishing blok lem &amp; jahit benang)</li><li>Frame warna cokelat emas hasil cetakan premium</li><li>Gratis 5 halaman redaksi (1 foto dan 4 halaman teks)</li></ul><h3>Isi Paket</h3><ul><li>Tile</li><li>Tasbih</li></ul><h3>Catatan</h3><ul><li>Minimal pembelian 50 pcs.</li><li>Harga belum termasuk ongkos kirim.</li></ul>"
    },
    {
     "key": "redaksi",
     "title": "Halaman Redaksi",
-    "panelHtml": "<p>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</p><p>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</p><p>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</p>"
+    "panelHtml": "<ul><li>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</li><li>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</li><li>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</li></ul>"
    },
    {
     "key": "pengiriman",
     "title": "Pengiriman",
-    "panelHtml": "<p>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</p><p>Pengerjaan membutuhkan sekitar 6 - 8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</p><p>Harga belum termasuk ongkos kirim.</p>"
+    "panelHtml": "<ul><li>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</li><li>Pengerjaan sekitar 6–8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</li><li>Harga belum termasuk ongkos kirim. Rincian di <a href=\"/pages/kebijakan-pengiriman\">Kebijakan Pengiriman</a>.</li></ul>"
    }
   ],
   "pairItWith": [
@@ -11172,7 +11172,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standart Broken White",
+      "value": "Hardcover Standar Broken White",
       "image": "",
       "color": "#f3efe6",
       "active": false,
@@ -11180,7 +11180,7 @@
       "href": "/products/soraya-series?variant=2798"
      },
      {
-      "value": "Hardcover Standart Brown",
+      "value": "Hardcover Standar Brown",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -11188,7 +11188,7 @@
       "href": "/products/soraya-series?variant=2794"
      },
      {
-      "value": "Hardcover Standart Gold",
+      "value": "Hardcover Standar Gold",
       "image": "",
       "color": "#c9a54a",
       "active": false,
@@ -11196,7 +11196,7 @@
       "href": "/products/soraya-series?variant=2786"
      },
      {
-      "value": "Hardcover Standart Maroon",
+      "value": "Hardcover Standar Maroon",
       "image": "",
       "color": "#6e1f2b",
       "active": true,
@@ -11204,7 +11204,7 @@
       "href": "/products/soraya-series?variant=2778"
      },
      {
-      "value": "Hardcover Standart Navy",
+      "value": "Hardcover Standar Navy",
       "image": "",
       "color": "#1f2a44",
       "active": false,
@@ -11212,7 +11212,7 @@
       "href": "/products/soraya-series?variant=2790"
      },
      {
-      "value": "Hardcover Standart Tosca",
+      "value": "Hardcover Standar Tosca",
       "image": "",
       "color": "#3a9b97",
       "active": false,
@@ -11220,7 +11220,7 @@
       "href": "/products/soraya-series?variant=2782"
      }
     ],
-    "swatchSelected": "Hardcover Standart Maroon ",
+    "swatchSelected": "Hardcover Standar Maroon ",
     "swatchSuffix": "+ 5 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -11505,7 +11505,7 @@
      "type": "photo",
      "required": false,
      "maxLength": null,
-     "help": "1 foto, termasuk dalam 5 halaman redaksi gratis."
+     "help": "Maksimal 1 foto, mengisi 1 dari 5 halaman gratis."
     },
     {
      "key": "redaksi",
@@ -11513,7 +11513,7 @@
      "type": "textarea",
      "required": true,
      "maxLength": 2000,
-     "help": "Isi untuk 4 halaman redaksi gratis. Tambahan halaman dikenakan Rp 3.000 per 2 halaman."
+     "help": "Mengisi 4 halaman gratis; teks yang lebih panjang menambah halaman."
     },
     {
      "key": "catatan",
@@ -11541,10 +11541,10 @@
     "name": "Cover",
     "handle": "cover",
     "values": [
-     "Hardcover Standart Brown",
-     "Hardcover Standart Green",
-     "Hardcover Standart Maroon",
-     "Hardcover Standart Navy"
+     "Hardcover Standar Brown",
+     "Hardcover Standar Green",
+     "Hardcover Standar Maroon",
+     "Hardcover Standar Navy"
     ],
     "ids": [
      82,
@@ -11599,7 +11599,7 @@
    }
   ],
   "initial": [
-   "Hardcover Standart Green",
+   "Hardcover Standar Green",
    "HVS",
    "208"
   ],
@@ -11607,7 +11607,7 @@
    {
     "id": 1525,
     "options": [
-     "Hardcover Standart Green",
+     "Hardcover Standar Green",
      "HVS",
      "208"
     ],
@@ -11620,7 +11620,7 @@
    {
     "id": 1526,
     "options": [
-     "Hardcover Standart Green",
+     "Hardcover Standar Green",
      "Artpaper",
      "208"
     ],
@@ -11633,7 +11633,7 @@
    {
     "id": 1527,
     "options": [
-     "Hardcover Standart Green",
+     "Hardcover Standar Green",
      "Artpaper",
      "224"
     ],
@@ -11646,7 +11646,7 @@
    {
     "id": 1528,
     "options": [
-     "Hardcover Standart Green",
+     "Hardcover Standar Green",
      "Artpaper",
      "484"
     ],
@@ -11659,7 +11659,7 @@
    {
     "id": 1529,
     "options": [
-     "Hardcover Standart Maroon",
+     "Hardcover Standar Maroon",
      "HVS",
      "208"
     ],
@@ -11672,7 +11672,7 @@
    {
     "id": 1530,
     "options": [
-     "Hardcover Standart Maroon",
+     "Hardcover Standar Maroon",
      "Artpaper",
      "208"
     ],
@@ -11685,7 +11685,7 @@
    {
     "id": 1531,
     "options": [
-     "Hardcover Standart Maroon",
+     "Hardcover Standar Maroon",
      "Artpaper",
      "224"
     ],
@@ -11698,7 +11698,7 @@
    {
     "id": 1532,
     "options": [
-     "Hardcover Standart Maroon",
+     "Hardcover Standar Maroon",
      "Artpaper",
      "484"
     ],
@@ -11711,7 +11711,7 @@
    {
     "id": 1517,
     "options": [
-     "Hardcover Standart Brown",
+     "Hardcover Standar Brown",
      "HVS",
      "208"
     ],
@@ -11724,7 +11724,7 @@
    {
     "id": 1518,
     "options": [
-     "Hardcover Standart Brown",
+     "Hardcover Standar Brown",
      "Artpaper",
      "208"
     ],
@@ -11737,7 +11737,7 @@
    {
     "id": 1519,
     "options": [
-     "Hardcover Standart Brown",
+     "Hardcover Standar Brown",
      "Artpaper",
      "224"
     ],
@@ -11750,7 +11750,7 @@
    {
     "id": 1520,
     "options": [
-     "Hardcover Standart Brown",
+     "Hardcover Standar Brown",
      "Artpaper",
      "484"
     ],
@@ -11763,7 +11763,7 @@
    {
     "id": 1096,
     "options": [
-     "Hardcover Standart Navy",
+     "Hardcover Standar Navy",
      "Artpaper",
      "208"
     ],
@@ -11776,7 +11776,7 @@
    {
     "id": 1097,
     "options": [
-     "Hardcover Standart Navy",
+     "Hardcover Standar Navy",
      "Artpaper",
      "224"
     ],
@@ -11789,7 +11789,7 @@
    {
     "id": 1098,
     "options": [
-     "Hardcover Standart Navy",
+     "Hardcover Standar Navy",
      "Artpaper",
      "484"
     ],
@@ -11802,7 +11802,7 @@
    {
     "id": 1099,
     "options": [
-     "Hardcover Standart Navy",
+     "Hardcover Standar Navy",
      "HVS",
      "208"
     ],
@@ -11815,14 +11815,14 @@
   ],
   "galleries": [
    {
-    "colour": "Hardcover Standart Brown",
+    "colour": "Hardcover Standar Brown",
     "images": [
      {
       "src": "/assets/manisgrafika/DSC01911_CONVERT-scaled.webp",
       "srcset": "/assets/manisgrafika/DSC01911_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC01911_CONVERT-scaled.webp",
-      "alt": "Noura Series - Hardcover Standart Brown",
+      "alt": "Noura Series - Hardcover Standar Brown",
       "ratio": 149.97070884592853
      },
      {
@@ -11830,7 +11830,7 @@
       "srcset": "/assets/manisgrafika/DSC06020_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06020_CONVERT-scaled.webp",
-      "alt": "Noura Series - Hardcover Standart Brown",
+      "alt": "Noura Series - Hardcover Standar Brown",
       "ratio": 149.97070884592853
      },
      {
@@ -11838,7 +11838,7 @@
       "srcset": "/assets/manisgrafika/DSC06032_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06032_CONVERT-scaled.webp",
-      "alt": "Noura Series - Hardcover Standart Brown",
+      "alt": "Noura Series - Hardcover Standar Brown",
       "ratio": 149.97070884592853
      },
      {
@@ -11846,7 +11846,7 @@
       "srcset": "/assets/manisgrafika/DSC06088_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06088_CONVERT-scaled.webp",
-      "alt": "Noura Series - Hardcover Standart Brown",
+      "alt": "Noura Series - Hardcover Standar Brown",
       "ratio": 149.97070884592853
      },
      {
@@ -11854,20 +11854,20 @@
       "srcset": "/assets/manisgrafika/DSC06037_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06037_CONVERT-scaled.webp",
-      "alt": "Noura Series - Hardcover Standart Brown",
+      "alt": "Noura Series - Hardcover Standar Brown",
       "ratio": 149.97070884592853
      }
     ]
    },
    {
-    "colour": "Hardcover Standart Green",
+    "colour": "Hardcover Standar Green",
     "images": [
      {
       "src": "/assets/manisgrafika/DSC01914_CONVERT-scaled.webp",
       "srcset": "/assets/manisgrafika/DSC01914_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC01914_CONVERT-scaled.webp",
-      "alt": "Noura Series - Hardcover Standart Green",
+      "alt": "Noura Series - Hardcover Standar Green",
       "ratio": 149.97070884592853
      },
      {
@@ -11875,7 +11875,7 @@
       "srcset": "/assets/manisgrafika/DSC06020_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06020_CONVERT-scaled.webp",
-      "alt": "Noura Series - Hardcover Standart Green",
+      "alt": "Noura Series - Hardcover Standar Green",
       "ratio": 149.97070884592853
      },
      {
@@ -11883,7 +11883,7 @@
       "srcset": "/assets/manisgrafika/DSC06032_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06032_CONVERT-scaled.webp",
-      "alt": "Noura Series - Hardcover Standart Green",
+      "alt": "Noura Series - Hardcover Standar Green",
       "ratio": 149.97070884592853
      },
      {
@@ -11891,7 +11891,7 @@
       "srcset": "/assets/manisgrafika/DSC06088_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06088_CONVERT-scaled.webp",
-      "alt": "Noura Series - Hardcover Standart Green",
+      "alt": "Noura Series - Hardcover Standar Green",
       "ratio": 149.97070884592853
      },
      {
@@ -11899,20 +11899,20 @@
       "srcset": "/assets/manisgrafika/DSC06037_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06037_CONVERT-scaled.webp",
-      "alt": "Noura Series - Hardcover Standart Green",
+      "alt": "Noura Series - Hardcover Standar Green",
       "ratio": 149.97070884592853
      }
     ]
    },
    {
-    "colour": "Hardcover Standart Maroon",
+    "colour": "Hardcover Standar Maroon",
     "images": [
      {
       "src": "/assets/manisgrafika/DSC01913_CONVERT-scaled.webp",
       "srcset": "/assets/manisgrafika/DSC01913_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC01913_CONVERT-scaled.webp",
-      "alt": "Noura Series - Hardcover Standart Maroon",
+      "alt": "Noura Series - Hardcover Standar Maroon",
       "ratio": 149.97070884592853
      },
      {
@@ -11920,7 +11920,7 @@
       "srcset": "/assets/manisgrafika/DSC06020_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06020_CONVERT-scaled.webp",
-      "alt": "Noura Series - Hardcover Standart Maroon",
+      "alt": "Noura Series - Hardcover Standar Maroon",
       "ratio": 149.97070884592853
      },
      {
@@ -11928,7 +11928,7 @@
       "srcset": "/assets/manisgrafika/DSC06032_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06032_CONVERT-scaled.webp",
-      "alt": "Noura Series - Hardcover Standart Maroon",
+      "alt": "Noura Series - Hardcover Standar Maroon",
       "ratio": 149.97070884592853
      },
      {
@@ -11936,7 +11936,7 @@
       "srcset": "/assets/manisgrafika/DSC06088_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06088_CONVERT-scaled.webp",
-      "alt": "Noura Series - Hardcover Standart Maroon",
+      "alt": "Noura Series - Hardcover Standar Maroon",
       "ratio": 149.97070884592853
      },
      {
@@ -11944,20 +11944,20 @@
       "srcset": "/assets/manisgrafika/DSC06037_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06037_CONVERT-scaled.webp",
-      "alt": "Noura Series - Hardcover Standart Maroon",
+      "alt": "Noura Series - Hardcover Standar Maroon",
       "ratio": 149.97070884592853
      }
     ]
    },
    {
-    "colour": "Hardcover Standart Navy",
+    "colour": "Hardcover Standar Navy",
     "images": [
      {
       "src": "/assets/manisgrafika/DSC06037_CONVERT-scaled.webp",
       "srcset": "/assets/manisgrafika/DSC06037_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06037_CONVERT-scaled.webp",
-      "alt": "Noura Series - Hardcover Standart Navy",
+      "alt": "Noura Series - Hardcover Standar Navy",
       "ratio": 149.97070884592853
      },
      {
@@ -11965,7 +11965,7 @@
       "srcset": "/assets/manisgrafika/DSC06020_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06020_CONVERT-scaled.webp",
-      "alt": "Noura Series - Hardcover Standart Navy",
+      "alt": "Noura Series - Hardcover Standar Navy",
       "ratio": 149.97070884592853
      },
      {
@@ -11973,7 +11973,7 @@
       "srcset": "/assets/manisgrafika/DSC06032_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06032_CONVERT-scaled.webp",
-      "alt": "Noura Series - Hardcover Standart Navy",
+      "alt": "Noura Series - Hardcover Standar Navy",
       "ratio": 149.97070884592853
      },
      {
@@ -11981,7 +11981,7 @@
       "srcset": "/assets/manisgrafika/DSC06088_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC06088_CONVERT-scaled.webp",
-      "alt": "Noura Series - Hardcover Standart Navy",
+      "alt": "Noura Series - Hardcover Standar Navy",
       "ratio": 149.97070884592853
      }
     ]
@@ -11993,17 +11993,17 @@
    {
     "key": "deskripsi",
     "title": "Deskripsi",
-    "panelHtml": "<p>Dikemas dengan mika eksklusif yang menawan, koleksi Yassin Hardcover Series sentuhan elegan dengan detail produk yang cantik dan berkualitas. Keindahan dalam setiap detail produk Manis Grafika adalah bukti ketulusan kami dalam menghadirkan cinta dan penghormatan penuh makna. Wujudkan kasih yang abadi bersama Manis Grafika.</p>\n<p>Spesifikasi</p>\n<p>Kertas Hvs 70gr (Finishing Block Lem &amp; Jahit kawat/Straples)<br />\nKertas Artpaper 90 gr (Finishing Artpaper Block Lem &amp; Jahit Benang)<br />\nFrame Warna Coklat Emas hasil cetakan Premium<br />\nGratis 5 Halaman Redaksi (1 foto dan 4 Halaman Redaksi)</p>\n<p>Includes: Mika, Tasbih, dan Sticker Mika</p>\n<p><em>Notes:</em><em><br />\n</em><em>– Minimal Pembelian 50pcs.<br />\n– Harga Belum termasuk Ongkos Kirim.</em></p>"
+    "panelHtml": "<p>Dikemas dengan mika eksklusif yang menawan, koleksi Yasin Hardcover Series menghadirkan sentuhan elegan dengan detail produk yang cantik dan berkualitas. Keindahan dalam setiap detail produk Manis Grafika adalah bukti ketulusan kami dalam menghadirkan cinta dan penghormatan penuh makna. Wujudkan kasih yang abadi bersama Manis Grafika.</p><h3>Spesifikasi</h3><ul><li>Kertas HVS 70 gr (finishing blok lem &amp; jahit kawat/staples)</li><li>Kertas Artpaper 90 gr (finishing blok lem &amp; jahit benang)</li><li>Frame warna cokelat emas hasil cetakan premium</li><li>Gratis 5 halaman redaksi (1 foto dan 4 halaman teks)</li></ul><h3>Isi Paket</h3><ul><li>Mika</li><li>Tasbih</li><li>Stiker mika</li></ul><h3>Catatan</h3><ul><li>Minimal pembelian 50 pcs.</li><li>Harga belum termasuk ongkos kirim.</li></ul>"
    },
    {
     "key": "redaksi",
     "title": "Halaman Redaksi",
-    "panelHtml": "<p>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</p><p>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</p><p>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</p>"
+    "panelHtml": "<ul><li>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</li><li>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</li><li>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</li></ul>"
    },
    {
     "key": "pengiriman",
     "title": "Pengiriman",
-    "panelHtml": "<p>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</p><p>Pengerjaan membutuhkan sekitar 6 - 8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</p><p>Harga belum termasuk ongkos kirim.</p>"
+    "panelHtml": "<ul><li>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</li><li>Pengerjaan sekitar 6–8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</li><li>Harga belum termasuk ongkos kirim. Rincian di <a href=\"/pages/kebijakan-pengiriman\">Kebijakan Pengiriman</a>.</li></ul>"
    }
   ],
   "pairItWith": [
@@ -12358,7 +12358,7 @@
      "type": "photo",
      "required": false,
      "maxLength": null,
-     "help": "1 foto, termasuk dalam 5 halaman redaksi gratis."
+     "help": "Maksimal 1 foto, mengisi 1 dari 5 halaman gratis."
     },
     {
      "key": "redaksi",
@@ -12366,7 +12366,7 @@
      "type": "textarea",
      "required": true,
      "maxLength": 2000,
-     "help": "Isi untuk 4 halaman redaksi gratis. Tambahan halaman dikenakan Rp 3.000 per 2 halaman."
+     "help": "Mengisi 4 halaman gratis; teks yang lebih panjang menambah halaman."
     },
     {
      "key": "catatan",
@@ -13359,17 +13359,17 @@
    {
     "key": "deskripsi",
     "title": "Deskripsi",
-    "panelHtml": "<p>Koleksi Zayna Series yang dikemas menggunakan mika eksklusif dan dipadukan dengan Yasin Spoon Leather memberikan kesan indah dan berkualitas untuk mengenang orang tersayang</p>\n<p><strong>Spesifikasi</strong></p>\n<p>Kertas Hvs 70gr (Finishing Block Lem &amp; Jahit kawat/Straples)<br />\nKertas Artpaper 90 gr (Finishing Artpaper Block Lem &amp; Jahit Benang)<br />\nFrame Warna Coklat Emas hasil cetakan Premium<br />\nGratis 5 Halaman Redaksi (1 foto dan 4 Halaman Redaksi)</p>\n<p><em>Includes: Mika, Tasbih, dan Sticker Mika.</em></p>\n<p><em>Notes:</em><em><br />\n</em><em>– Minimal Pembelian 50pcs.<br />\n– Harga Belum termasuk Ongkos Kirim.</em></p>"
+    "panelHtml": "<p>Koleksi Zayna Series yang dikemas menggunakan mika eksklusif dan dipadukan dengan Yasin Spoon Leather memberikan kesan indah dan berkualitas untuk mengenang orang tersayang.</p><h3>Spesifikasi</h3><ul><li>Kertas HVS 70 gr (finishing blok lem &amp; jahit kawat/staples)</li><li>Kertas Artpaper 90 gr (finishing blok lem &amp; jahit benang)</li><li>Frame warna cokelat emas hasil cetakan premium</li><li>Gratis 5 halaman redaksi (1 foto dan 4 halaman teks)</li></ul><h3>Isi Paket</h3><ul><li>Mika</li><li>Tasbih</li><li>Stiker mika</li></ul><h3>Catatan</h3><ul><li>Minimal pembelian 50 pcs.</li><li>Harga belum termasuk ongkos kirim.</li></ul>"
    },
    {
     "key": "redaksi",
     "title": "Halaman Redaksi",
-    "panelHtml": "<p>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</p><p>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</p><p>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</p>"
+    "panelHtml": "<ul><li>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</li><li>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</li><li>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</li></ul>"
    },
    {
     "key": "pengiriman",
     "title": "Pengiriman",
-    "panelHtml": "<p>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</p><p>Pengerjaan membutuhkan sekitar 6 - 8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</p><p>Harga belum termasuk ongkos kirim.</p>"
+    "panelHtml": "<ul><li>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</li><li>Pengerjaan sekitar 6–8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</li><li>Harga belum termasuk ongkos kirim. Rincian di <a href=\"/pages/kebijakan-pengiriman\">Kebijakan Pengiriman</a>.</li></ul>"
    }
   ],
   "pairItWith": [
@@ -13391,7 +13391,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standart Brown",
+      "value": "Hardcover Standar Brown",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -13399,7 +13399,7 @@
       "href": "/products/noura-series?variant=1517"
      },
      {
-      "value": "Hardcover Standart Green",
+      "value": "Hardcover Standar Green",
       "image": "",
       "color": "#2f6b3a",
       "active": true,
@@ -13407,7 +13407,7 @@
       "href": "/products/noura-series?variant=1525"
      },
      {
-      "value": "Hardcover Standart Maroon",
+      "value": "Hardcover Standar Maroon",
       "image": "",
       "color": "#6e1f2b",
       "active": false,
@@ -13415,7 +13415,7 @@
       "href": "/products/noura-series?variant=1529"
      },
      {
-      "value": "Hardcover Standart Navy",
+      "value": "Hardcover Standar Navy",
       "image": "",
       "color": "#1f2a44",
       "active": false,
@@ -13423,7 +13423,7 @@
       "href": "/products/noura-series?variant=1096"
      }
     ],
-    "swatchSelected": "Hardcover Standart Green ",
+    "swatchSelected": "Hardcover Standar Green ",
     "swatchSuffix": "+ 3 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -13692,7 +13692,7 @@
      "type": "photo",
      "required": false,
      "maxLength": null,
-     "help": "1 foto, termasuk dalam 5 halaman redaksi gratis."
+     "help": "Maksimal 1 foto, mengisi 1 dari 5 halaman gratis."
     },
     {
      "key": "redaksi",
@@ -13700,7 +13700,7 @@
      "type": "textarea",
      "required": true,
      "maxLength": 2000,
-     "help": "Isi untuk 4 halaman redaksi gratis. Tambahan halaman dikenakan Rp 3.000 per 2 halaman."
+     "help": "Mengisi 4 halaman gratis; teks yang lebih panjang menambah halaman."
     },
     {
      "key": "catatan",
@@ -14389,17 +14389,17 @@
    {
     "key": "deskripsi",
     "title": "Deskripsi",
-    "panelHtml": "<p>Serangkaian Buku Yasin Bludru dikemas dengan Mika Eksklusif dan sentuhan tasbih mutiara yang bersatu menjadikan Dayana Series sebagai wujud ketulusan untuk orang tersayang.</p>\n<p><strong>Spesifikasi</strong></p>\n<p>Kertas Hvs 70gr (Finishing Block Lem &amp; Jahit kawat/Straples)<br />\nKertas Artpaper 90 gr (Finishing Artpaper Block Lem &amp; Jahit Benang)<br />\nFrame Warna Coklat Emas hasil cetakan Premium<br />\nGratis 5 Halaman Redaksi (1 foto dan 4 Halaman Redaksi)</p>\n<p><em>Includes: Mika, Tasbih, dan Sticker Mika.</em></p>\n<p><em>Notes:</em><em><br />\n</em><em>– Minimal Pembelian 50pcs.<br />\n– Harga Belum termasuk Ongkos Kirim.</em></p>"
+    "panelHtml": "<p>Serangkaian buku Yasin Bludru dikemas dengan mika eksklusif dan sentuhan tasbih mutiara yang bersatu menjadikan Dayana Series sebagai wujud ketulusan untuk orang tersayang.</p><h3>Spesifikasi</h3><ul><li>Kertas HVS 70 gr (finishing blok lem &amp; jahit kawat/staples)</li><li>Kertas Artpaper 90 gr (finishing blok lem &amp; jahit benang)</li><li>Frame warna cokelat emas hasil cetakan premium</li><li>Gratis 5 halaman redaksi (1 foto dan 4 halaman teks)</li></ul><h3>Isi Paket</h3><ul><li>Mika</li><li>Tasbih</li><li>Stiker mika</li></ul><h3>Catatan</h3><ul><li>Minimal pembelian 50 pcs.</li><li>Harga belum termasuk ongkos kirim.</li></ul>"
    },
    {
     "key": "redaksi",
     "title": "Halaman Redaksi",
-    "panelHtml": "<p>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</p><p>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</p><p>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</p>"
+    "panelHtml": "<ul><li>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</li><li>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</li><li>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</li></ul>"
    },
    {
     "key": "pengiriman",
     "title": "Pengiriman",
-    "panelHtml": "<p>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</p><p>Pengerjaan membutuhkan sekitar 6 - 8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</p><p>Harga belum termasuk ongkos kirim.</p>"
+    "panelHtml": "<ul><li>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</li><li>Pengerjaan sekitar 6–8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</li><li>Harga belum termasuk ongkos kirim. Rincian di <a href=\"/pages/kebijakan-pengiriman\">Kebijakan Pengiriman</a>.</li></ul>"
    }
   ],
   "pairItWith": [
@@ -14421,7 +14421,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standart Brown",
+      "value": "Hardcover Standar Brown",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -14429,7 +14429,7 @@
       "href": "/products/noura-series?variant=1517"
      },
      {
-      "value": "Hardcover Standart Green",
+      "value": "Hardcover Standar Green",
       "image": "",
       "color": "#2f6b3a",
       "active": true,
@@ -14437,7 +14437,7 @@
       "href": "/products/noura-series?variant=1525"
      },
      {
-      "value": "Hardcover Standart Maroon",
+      "value": "Hardcover Standar Maroon",
       "image": "",
       "color": "#6e1f2b",
       "active": false,
@@ -14445,7 +14445,7 @@
       "href": "/products/noura-series?variant=1529"
      },
      {
-      "value": "Hardcover Standart Navy",
+      "value": "Hardcover Standar Navy",
       "image": "",
       "color": "#1f2a44",
       "active": false,
@@ -14453,7 +14453,7 @@
       "href": "/products/noura-series?variant=1096"
      }
     ],
-    "swatchSelected": "Hardcover Standart Green ",
+    "swatchSelected": "Hardcover Standar Green ",
     "swatchSuffix": "+ 3 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -14738,7 +14738,7 @@
      "type": "photo",
      "required": false,
      "maxLength": null,
-     "help": "1 foto, termasuk dalam 5 halaman redaksi gratis."
+     "help": "Maksimal 1 foto, mengisi 1 dari 5 halaman gratis."
     },
     {
      "key": "redaksi",
@@ -14746,7 +14746,7 @@
      "type": "textarea",
      "required": true,
      "maxLength": 2000,
-     "help": "Isi untuk 4 halaman redaksi gratis. Tambahan halaman dikenakan Rp 3.000 per 2 halaman."
+     "help": "Mengisi 4 halaman gratis; teks yang lebih panjang menambah halaman."
     },
     {
      "key": "catatan",
@@ -15635,17 +15635,17 @@
    {
     "key": "deskripsi",
     "title": "Deskripsi",
-    "panelHtml": "<p>Perpaduan Buku Yasin dengan cover spoon leather yang memberikan sentuhan indah dan cantik yang dikemas dengan Mika Eksklusif dalam Kayla Series</p>\n<p>Spesifikasi</p>\n<p>Kertas Hvs 70gr (Finishing Block Lem &amp; Jahit kawat/Straples)<br />\nKertas Artpaper 90 gr (Finishing Artpaper Block Lem &amp; Jahit Benang)<br />\nFrame Warna Coklat Emas hasil cetakan Premium<br />\nGratis 5 Halaman Redaksi (1 foto dan 4 Halaman Redaksi)</p>\n<p>Includes: Mika, Tasbih, Sajadah Rajut, Sticker Mika</p>\n<p><em>Notes:<br />\n</em><em>&#8211; Motif dan Warna Sajadah Random.<br />\n</em><em>&#8211; Minimal Pembelian 50pcs.<br />\n&#8211; Harga Belum termasuk Ongkos Kirim.</em></p>"
+    "panelHtml": "<p>Perpaduan buku Yasin dengan cover Spoon Leather yang memberikan sentuhan indah dan cantik yang dikemas dengan mika eksklusif dalam Kayla Series.</p><h3>Spesifikasi</h3><ul><li>Kertas HVS 70 gr (finishing blok lem &amp; jahit kawat/staples)</li><li>Kertas Artpaper 90 gr (finishing blok lem &amp; jahit benang)</li><li>Frame warna cokelat emas hasil cetakan premium</li><li>Gratis 5 halaman redaksi (1 foto dan 4 halaman teks)</li></ul><h3>Isi Paket</h3><ul><li>Mika</li><li>Tasbih</li><li>Sajadah rajut</li><li>Stiker mika</li></ul><h3>Catatan</h3><ul><li>Motif dan warna sajadah acak.</li><li>Minimal pembelian 50 pcs.</li><li>Harga belum termasuk ongkos kirim.</li></ul>"
    },
    {
     "key": "redaksi",
     "title": "Halaman Redaksi",
-    "panelHtml": "<p>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</p><p>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</p><p>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</p>"
+    "panelHtml": "<ul><li>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</li><li>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</li><li>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</li></ul>"
    },
    {
     "key": "pengiriman",
     "title": "Pengiriman",
-    "panelHtml": "<p>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</p><p>Pengerjaan membutuhkan sekitar 6 - 8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</p><p>Harga belum termasuk ongkos kirim.</p>"
+    "panelHtml": "<ul><li>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</li><li>Pengerjaan sekitar 6–8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</li><li>Harga belum termasuk ongkos kirim. Rincian di <a href=\"/pages/kebijakan-pengiriman\">Kebijakan Pengiriman</a>.</li></ul>"
    }
   ],
   "pairItWith": [
@@ -15667,7 +15667,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standard Hijau Emerald",
+      "value": "Hardcover Standar Hijau Emerald",
       "image": "",
       "color": "#1e6b52",
       "active": false,
@@ -15675,7 +15675,7 @@
       "href": "/products/ceisya-series?variant=1341"
      },
      {
-      "value": "Hardcover Standart Black",
+      "value": "Hardcover Standar Black",
       "image": "",
       "color": "#1a1a1a",
       "active": false,
@@ -15683,7 +15683,7 @@
       "href": "/products/ceisya-series?variant=1059"
      },
      {
-      "value": "Hardcover Standart Broken White",
+      "value": "Hardcover Standar Broken White",
       "image": "",
       "color": "#f3efe6",
       "active": false,
@@ -15691,7 +15691,7 @@
       "href": "/products/ceisya-series?variant=562"
      },
      {
-      "value": "Hardcover Standart Caramel",
+      "value": "Hardcover Standar Caramel",
       "image": "",
       "color": "#b07a3f",
       "active": false,
@@ -15699,7 +15699,7 @@
       "href": "/products/ceisya-series?variant=1348"
      },
      {
-      "value": "Hardcover Standart Gold",
+      "value": "Hardcover Standar Gold",
       "image": "",
       "color": "#c9a54a",
       "active": true,
@@ -15707,7 +15707,7 @@
       "href": "/products/ceisya-series?variant=1352"
      }
     ],
-    "swatchSelected": "Hardcover Standart Gold ",
+    "swatchSelected": "Hardcover Standar Gold ",
     "swatchSuffix": "+ 4 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -15984,7 +15984,7 @@
      "type": "photo",
      "required": false,
      "maxLength": null,
-     "help": "1 foto, termasuk dalam 5 halaman redaksi gratis."
+     "help": "Maksimal 1 foto, mengisi 1 dari 5 halaman gratis."
     },
     {
      "key": "redaksi",
@@ -15992,7 +15992,7 @@
      "type": "textarea",
      "required": true,
      "maxLength": 2000,
-     "help": "Isi untuk 4 halaman redaksi gratis. Tambahan halaman dikenakan Rp 3.000 per 2 halaman."
+     "help": "Mengisi 4 halaman gratis; teks yang lebih panjang menambah halaman."
     },
     {
      "key": "catatan",
@@ -16021,11 +16021,11 @@
     "name": "Cover",
     "handle": "cover",
     "values": [
-     "Hardcover Standard Hijau Emerald",
-     "Hardcover Standart Black",
-     "Hardcover Standart Broken White",
-     "Hardcover Standart Caramel",
-     "Hardcover Standart Gold"
+     "Hardcover Standar Hijau Emerald",
+     "Hardcover Standar Black",
+     "Hardcover Standar Broken White",
+     "Hardcover Standar Caramel",
+     "Hardcover Standar Gold"
     ],
     "ids": [
      66,
@@ -16082,7 +16082,7 @@
    }
   ],
   "initial": [
-   "Hardcover Standart Gold",
+   "Hardcover Standar Gold",
    "HVS",
    "208"
   ],
@@ -16090,7 +16090,7 @@
    {
     "id": 1352,
     "options": [
-     "Hardcover Standart Gold",
+     "Hardcover Standar Gold",
      "Artpaper",
      "484"
     ],
@@ -16103,7 +16103,7 @@
    {
     "id": 1353,
     "options": [
-     "Hardcover Standart Gold",
+     "Hardcover Standar Gold",
      "Artpaper",
      "224"
     ],
@@ -16116,7 +16116,7 @@
    {
     "id": 1354,
     "options": [
-     "Hardcover Standart Gold",
+     "Hardcover Standar Gold",
      "Artpaper",
      "208"
     ],
@@ -16129,7 +16129,7 @@
    {
     "id": 1355,
     "options": [
-     "Hardcover Standart Gold",
+     "Hardcover Standar Gold",
      "HVS",
      "208"
     ],
@@ -16142,7 +16142,7 @@
    {
     "id": 1348,
     "options": [
-     "Hardcover Standart Caramel",
+     "Hardcover Standar Caramel",
      "Artpaper",
      "484"
     ],
@@ -16155,7 +16155,7 @@
    {
     "id": 1349,
     "options": [
-     "Hardcover Standart Caramel",
+     "Hardcover Standar Caramel",
      "Artpaper",
      "224"
     ],
@@ -16168,7 +16168,7 @@
    {
     "id": 1350,
     "options": [
-     "Hardcover Standart Caramel",
+     "Hardcover Standar Caramel",
      "Artpaper",
      "208"
     ],
@@ -16181,7 +16181,7 @@
    {
     "id": 1351,
     "options": [
-     "Hardcover Standart Caramel",
+     "Hardcover Standar Caramel",
      "HVS",
      "208"
     ],
@@ -16194,7 +16194,7 @@
    {
     "id": 1341,
     "options": [
-     "Hardcover Standard Hijau Emerald",
+     "Hardcover Standar Hijau Emerald",
      "HVS",
      "208"
     ],
@@ -16207,7 +16207,7 @@
    {
     "id": 1342,
     "options": [
-     "Hardcover Standard Hijau Emerald",
+     "Hardcover Standar Hijau Emerald",
      "Artpaper",
      "208"
     ],
@@ -16220,7 +16220,7 @@
    {
     "id": 1343,
     "options": [
-     "Hardcover Standard Hijau Emerald",
+     "Hardcover Standar Hijau Emerald",
      "Artpaper",
      "224"
     ],
@@ -16233,7 +16233,7 @@
    {
     "id": 1344,
     "options": [
-     "Hardcover Standard Hijau Emerald",
+     "Hardcover Standar Hijau Emerald",
      "Artpaper",
      "484"
     ],
@@ -16246,7 +16246,7 @@
    {
     "id": 1059,
     "options": [
-     "Hardcover Standart Black",
+     "Hardcover Standar Black",
      "Artpaper",
      "208"
     ],
@@ -16259,7 +16259,7 @@
    {
     "id": 1060,
     "options": [
-     "Hardcover Standart Black",
+     "Hardcover Standar Black",
      "Artpaper",
      "224"
     ],
@@ -16272,7 +16272,7 @@
    {
     "id": 1061,
     "options": [
-     "Hardcover Standart Black",
+     "Hardcover Standar Black",
      "Artpaper",
      "484"
     ],
@@ -16285,7 +16285,7 @@
    {
     "id": 1062,
     "options": [
-     "Hardcover Standart Black",
+     "Hardcover Standar Black",
      "HVS",
      "208"
     ],
@@ -16298,7 +16298,7 @@
    {
     "id": 562,
     "options": [
-     "Hardcover Standart Broken White",
+     "Hardcover Standar Broken White",
      "Artpaper",
      "208"
     ],
@@ -16311,7 +16311,7 @@
    {
     "id": 563,
     "options": [
-     "Hardcover Standart Broken White",
+     "Hardcover Standar Broken White",
      "Artpaper",
      "224"
     ],
@@ -16324,7 +16324,7 @@
    {
     "id": 564,
     "options": [
-     "Hardcover Standart Broken White",
+     "Hardcover Standar Broken White",
      "Artpaper",
      "484"
     ],
@@ -16337,7 +16337,7 @@
    {
     "id": 565,
     "options": [
-     "Hardcover Standart Broken White",
+     "Hardcover Standar Broken White",
      "HVS",
      "208"
     ],
@@ -16350,14 +16350,14 @@
   ],
   "galleries": [
    {
-    "colour": "Hardcover Standard Hijau Emerald",
+    "colour": "Hardcover Standar Hijau Emerald",
     "images": [
      {
       "src": "/assets/manisgrafika/DSC01836_CONVERT-scaled.webp",
       "srcset": "/assets/manisgrafika/DSC01836_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC01836_CONVERT-scaled.webp",
-      "alt": "Ceisya Series - Hardcover Standard Hijau Emerald",
+      "alt": "Ceisya Series - Hardcover Standar Hijau Emerald",
       "ratio": 149.97070884592853
      },
      {
@@ -16365,7 +16365,7 @@
       "srcset": "/assets/manisgrafika/DSC02036_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC02036_CONVERT-scaled.webp",
-      "alt": "Ceisya Series - Hardcover Standard Hijau Emerald",
+      "alt": "Ceisya Series - Hardcover Standar Hijau Emerald",
       "ratio": 149.97070884592853
      },
      {
@@ -16373,7 +16373,7 @@
       "srcset": "/assets/manisgrafika/DSC02043_CONVERT-WEBSITE-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC02043_CONVERT-WEBSITE-scaled.webp",
-      "alt": "Ceisya Series - Hardcover Standard Hijau Emerald",
+      "alt": "Ceisya Series - Hardcover Standar Hijau Emerald",
       "ratio": 149.97070884592853
      },
      {
@@ -16381,7 +16381,7 @@
       "srcset": "/assets/manisgrafika/DSC02131_CONVERT-WEBSITE-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC02131_CONVERT-WEBSITE-scaled.webp",
-      "alt": "Ceisya Series - Hardcover Standard Hijau Emerald",
+      "alt": "Ceisya Series - Hardcover Standar Hijau Emerald",
       "ratio": 149.97070884592853
      },
      {
@@ -16389,20 +16389,20 @@
       "srcset": "/assets/manisgrafika/DSC02129_CONVERT-WEBSITE-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC02129_CONVERT-WEBSITE-scaled.webp",
-      "alt": "Ceisya Series - Hardcover Standard Hijau Emerald",
+      "alt": "Ceisya Series - Hardcover Standar Hijau Emerald",
       "ratio": 149.97070884592853
      }
     ]
    },
    {
-    "colour": "Hardcover Standart Black",
+    "colour": "Hardcover Standar Black",
     "images": [
      {
       "src": "/assets/manisgrafika/DSC01833_CONVERT-scaled.webp",
       "srcset": "/assets/manisgrafika/DSC01833_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC01833_CONVERT-scaled.webp",
-      "alt": "Ceisya Series - Hardcover Standart Black",
+      "alt": "Ceisya Series - Hardcover Standar Black",
       "ratio": 149.97070884592853
      },
      {
@@ -16410,7 +16410,7 @@
       "srcset": "/assets/manisgrafika/DSC02036_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC02036_CONVERT-scaled.webp",
-      "alt": "Ceisya Series - Hardcover Standart Black",
+      "alt": "Ceisya Series - Hardcover Standar Black",
       "ratio": 149.97070884592853
      },
      {
@@ -16418,7 +16418,7 @@
       "srcset": "/assets/manisgrafika/DSC02043_CONVERT-WEBSITE-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC02043_CONVERT-WEBSITE-scaled.webp",
-      "alt": "Ceisya Series - Hardcover Standart Black",
+      "alt": "Ceisya Series - Hardcover Standar Black",
       "ratio": 149.97070884592853
      },
      {
@@ -16426,7 +16426,7 @@
       "srcset": "/assets/manisgrafika/DSC02131_CONVERT-WEBSITE-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC02131_CONVERT-WEBSITE-scaled.webp",
-      "alt": "Ceisya Series - Hardcover Standart Black",
+      "alt": "Ceisya Series - Hardcover Standar Black",
       "ratio": 149.97070884592853
      },
      {
@@ -16434,20 +16434,20 @@
       "srcset": "/assets/manisgrafika/DSC02129_CONVERT-WEBSITE-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC02129_CONVERT-WEBSITE-scaled.webp",
-      "alt": "Ceisya Series - Hardcover Standart Black",
+      "alt": "Ceisya Series - Hardcover Standar Black",
       "ratio": 149.97070884592853
      }
     ]
    },
    {
-    "colour": "Hardcover Standart Broken White",
+    "colour": "Hardcover Standar Broken White",
     "images": [
      {
       "src": "/assets/manisgrafika/DSC01837_CONVERT-scaled.webp",
       "srcset": "/assets/manisgrafika/DSC01837_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC01837_CONVERT-scaled.webp",
-      "alt": "Ceisya Series - Hardcover Standart Broken White",
+      "alt": "Ceisya Series - Hardcover Standar Broken White",
       "ratio": 149.97070884592853
      },
      {
@@ -16455,7 +16455,7 @@
       "srcset": "/assets/manisgrafika/DSC02036_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC02036_CONVERT-scaled.webp",
-      "alt": "Ceisya Series - Hardcover Standart Broken White",
+      "alt": "Ceisya Series - Hardcover Standar Broken White",
       "ratio": 149.97070884592853
      },
      {
@@ -16463,7 +16463,7 @@
       "srcset": "/assets/manisgrafika/DSC02043_CONVERT-WEBSITE-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC02043_CONVERT-WEBSITE-scaled.webp",
-      "alt": "Ceisya Series - Hardcover Standart Broken White",
+      "alt": "Ceisya Series - Hardcover Standar Broken White",
       "ratio": 149.97070884592853
      },
      {
@@ -16471,7 +16471,7 @@
       "srcset": "/assets/manisgrafika/DSC02131_CONVERT-WEBSITE-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC02131_CONVERT-WEBSITE-scaled.webp",
-      "alt": "Ceisya Series - Hardcover Standart Broken White",
+      "alt": "Ceisya Series - Hardcover Standar Broken White",
       "ratio": 149.97070884592853
      },
      {
@@ -16479,20 +16479,20 @@
       "srcset": "/assets/manisgrafika/DSC02129_CONVERT-WEBSITE-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC02129_CONVERT-WEBSITE-scaled.webp",
-      "alt": "Ceisya Series - Hardcover Standart Broken White",
+      "alt": "Ceisya Series - Hardcover Standar Broken White",
       "ratio": 149.97070884592853
      }
     ]
    },
    {
-    "colour": "Hardcover Standart Caramel",
+    "colour": "Hardcover Standar Caramel",
     "images": [
      {
       "src": "/assets/manisgrafika/DSC01839_CONVERT-scaled.webp",
       "srcset": "/assets/manisgrafika/DSC01839_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC01839_CONVERT-scaled.webp",
-      "alt": "Ceisya Series - Hardcover Standart Caramel",
+      "alt": "Ceisya Series - Hardcover Standar Caramel",
       "ratio": 149.97070884592853
      },
      {
@@ -16500,7 +16500,7 @@
       "srcset": "/assets/manisgrafika/DSC02036_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC02036_CONVERT-scaled.webp",
-      "alt": "Ceisya Series - Hardcover Standart Caramel",
+      "alt": "Ceisya Series - Hardcover Standar Caramel",
       "ratio": 149.97070884592853
      },
      {
@@ -16508,7 +16508,7 @@
       "srcset": "/assets/manisgrafika/DSC02043_CONVERT-WEBSITE-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC02043_CONVERT-WEBSITE-scaled.webp",
-      "alt": "Ceisya Series - Hardcover Standart Caramel",
+      "alt": "Ceisya Series - Hardcover Standar Caramel",
       "ratio": 149.97070884592853
      },
      {
@@ -16516,7 +16516,7 @@
       "srcset": "/assets/manisgrafika/DSC02131_CONVERT-WEBSITE-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC02131_CONVERT-WEBSITE-scaled.webp",
-      "alt": "Ceisya Series - Hardcover Standart Caramel",
+      "alt": "Ceisya Series - Hardcover Standar Caramel",
       "ratio": 149.97070884592853
      },
      {
@@ -16524,20 +16524,20 @@
       "srcset": "/assets/manisgrafika/DSC02129_CONVERT-WEBSITE-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC02129_CONVERT-WEBSITE-scaled.webp",
-      "alt": "Ceisya Series - Hardcover Standart Caramel",
+      "alt": "Ceisya Series - Hardcover Standar Caramel",
       "ratio": 149.97070884592853
      }
     ]
    },
    {
-    "colour": "Hardcover Standart Gold",
+    "colour": "Hardcover Standar Gold",
     "images": [
      {
       "src": "/assets/manisgrafika/DSC01838_CONVERT-scaled.webp",
       "srcset": "/assets/manisgrafika/DSC01838_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC01838_CONVERT-scaled.webp",
-      "alt": "Ceisya Series - Hardcover Standart Gold",
+      "alt": "Ceisya Series - Hardcover Standar Gold",
       "ratio": 149.97070884592853
      },
      {
@@ -16545,7 +16545,7 @@
       "srcset": "/assets/manisgrafika/DSC02036_CONVERT-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC02036_CONVERT-scaled.webp",
-      "alt": "Ceisya Series - Hardcover Standart Gold",
+      "alt": "Ceisya Series - Hardcover Standar Gold",
       "ratio": 149.97070884592853
      },
      {
@@ -16553,7 +16553,7 @@
       "srcset": "/assets/manisgrafika/DSC02043_CONVERT-WEBSITE-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC02043_CONVERT-WEBSITE-scaled.webp",
-      "alt": "Ceisya Series - Hardcover Standart Gold",
+      "alt": "Ceisya Series - Hardcover Standar Gold",
       "ratio": 149.97070884592853
      },
      {
@@ -16561,7 +16561,7 @@
       "srcset": "/assets/manisgrafika/DSC02131_CONVERT-WEBSITE-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC02131_CONVERT-WEBSITE-scaled.webp",
-      "alt": "Ceisya Series - Hardcover Standart Gold",
+      "alt": "Ceisya Series - Hardcover Standar Gold",
       "ratio": 149.97070884592853
      },
      {
@@ -16569,7 +16569,7 @@
       "srcset": "/assets/manisgrafika/DSC02129_CONVERT-WEBSITE-scaled.webp 1707w",
       "sizes": "(max-width: 1067px) 95vw, 45vw",
       "thumb": "/assets/manisgrafika/DSC02129_CONVERT-WEBSITE-scaled.webp",
-      "alt": "Ceisya Series - Hardcover Standart Gold",
+      "alt": "Ceisya Series - Hardcover Standar Gold",
       "ratio": 149.97070884592853
      }
     ]
@@ -16581,17 +16581,17 @@
    {
     "key": "deskripsi",
     "title": "Deskripsi",
-    "panelHtml": "<p>Koleksi Ceisya Series menghadirkan Buku Yasin dengan Hardcover Standard yang dikemas menggunakan Mika Eksklusif serta dipadukan dengan Sajadah Rajut Premium dan Tasbih Mutiara yang menambah kesan mewah dan elegan.</p>\n<p>Spesifikasi</p>\n<p>Kertas Hvs 70gr (Finishing Block Lem &amp; Jahit kawat/Straples)<br />\nKertas Artpaper 90 gr (Finishing Artpaper Block Lem &amp; Jahit Benang)<br />\nFrame Warna Coklat Emas hasil cetakan Premium<br />\nGratis 5 Halaman Redaksi (1 foto dan 4 Halaman Redaksi)</p>\n<p>Includes: Mika, Tasbih, Sajadah Rajut, Sticker Mika</p>\n<p><em>Notes:<br />\n</em><em>&#8211; Motif dan Warna Sajadah Random.<br />\n</em><em>&#8211; Minimal Pembelian 50pcs.<br />\n&#8211; Harga Belum termasuk Ongkos Kirim.</em></p>"
+    "panelHtml": "<p>Koleksi Ceisya Series menghadirkan buku Yasin dengan Hardcover Standar yang dikemas menggunakan mika eksklusif serta dipadukan dengan sajadah rajut premium dan tasbih mutiara yang menambah kesan mewah dan elegan.</p><h3>Spesifikasi</h3><ul><li>Kertas HVS 70 gr (finishing blok lem &amp; jahit kawat/staples)</li><li>Kertas Artpaper 90 gr (finishing blok lem &amp; jahit benang)</li><li>Frame warna cokelat emas hasil cetakan premium</li><li>Gratis 5 halaman redaksi (1 foto dan 4 halaman teks)</li></ul><h3>Isi Paket</h3><ul><li>Mika</li><li>Tasbih</li><li>Sajadah rajut</li><li>Stiker mika</li></ul><h3>Catatan</h3><ul><li>Motif dan warna sajadah acak.</li><li>Minimal pembelian 50 pcs.</li><li>Harga belum termasuk ongkos kirim.</li></ul>"
    },
    {
     "key": "redaksi",
     "title": "Halaman Redaksi",
-    "panelHtml": "<p>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</p><p>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</p><p>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</p>"
+    "panelHtml": "<ul><li>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</li><li>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</li><li>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</li></ul>"
    },
    {
     "key": "pengiriman",
     "title": "Pengiriman",
-    "panelHtml": "<p>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</p><p>Pengerjaan membutuhkan sekitar 6 - 8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</p><p>Harga belum termasuk ongkos kirim.</p>"
+    "panelHtml": "<ul><li>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</li><li>Pengerjaan sekitar 6–8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</li><li>Harga belum termasuk ongkos kirim. Rincian di <a href=\"/pages/kebijakan-pengiriman\">Kebijakan Pengiriman</a>.</li></ul>"
    }
   ],
   "pairItWith": [
@@ -16954,7 +16954,7 @@
      "type": "photo",
      "required": false,
      "maxLength": null,
-     "help": "1 foto, termasuk dalam 5 halaman redaksi gratis."
+     "help": "Maksimal 1 foto, mengisi 1 dari 5 halaman gratis."
     },
     {
      "key": "redaksi",
@@ -16962,7 +16962,7 @@
      "type": "textarea",
      "required": true,
      "maxLength": 2000,
-     "help": "Isi untuk 4 halaman redaksi gratis. Tambahan halaman dikenakan Rp 3.000 per 2 halaman."
+     "help": "Mengisi 4 halaman gratis; teks yang lebih panjang menambah halaman."
     },
     {
      "key": "catatan",
@@ -17745,17 +17745,17 @@
    {
     "key": "deskripsi",
     "title": "Deskripsi",
-    "panelHtml": "<p><span style=\"font-weight: 400\">Dikemas dengan mika eksklusif yang menawan, k</span>oleksi Yassin Bludru Menghadirkan sentuhan elegan dengan d<span style=\"font-weight: 400\">etail produk yang cantik dan berkualitas. Keindahan dalam setiap detail produk Manis Grafika adalah bukti ketulusan kami dalam menghadirkan cinta dan penghormatan penuh makna. Wujudkan kasih yang abadi bersama Manis Grafika.</span></p>\n<p>Spesifikasi</p>\n<p>Kertas Hvs 70gr (Finishing Block Lem &amp; Jahit kawat/Straples)<br />\nKertas Artpaper 90 gr (Finishing Artpaper Block Lem &amp; Jahit Benang)<br />\nFrame Warna Coklat Emas hasil cetakan Premium<br />\nGratis 5 Halaman Redaksi (1 foto dan 4 Halaman Redaksi)</p>\n<p>Includes: Mika, Tasbih, Sajadah Rajut, Sticker Mika</p>\n<p><em>Notes:<br />\n</em><em>&#8211; Motif dan Warna Sajadah Random.<br />\n</em><em>&#8211; Minimal Pembelian 50pcs.<br />\n&#8211; Harga Belum termasuk Ongkos Kirim.<br />\n</em></p>"
+    "panelHtml": "<p>Dikemas dengan mika eksklusif yang menawan, koleksi Yasin Bludru menghadirkan sentuhan elegan dengan detail produk yang cantik dan berkualitas. Keindahan dalam setiap detail produk Manis Grafika adalah bukti ketulusan kami dalam menghadirkan cinta dan penghormatan penuh makna. Wujudkan kasih yang abadi bersama Manis Grafika.</p><h3>Spesifikasi</h3><ul><li>Kertas HVS 70 gr (finishing blok lem &amp; jahit kawat/staples)</li><li>Kertas Artpaper 90 gr (finishing blok lem &amp; jahit benang)</li><li>Frame warna cokelat emas hasil cetakan premium</li><li>Gratis 5 halaman redaksi (1 foto dan 4 halaman teks)</li></ul><h3>Isi Paket</h3><ul><li>Mika</li><li>Tasbih</li><li>Sajadah rajut</li><li>Stiker mika</li></ul><h3>Catatan</h3><ul><li>Motif dan warna sajadah acak.</li><li>Minimal pembelian 50 pcs.</li><li>Harga belum termasuk ongkos kirim.</li></ul>"
    },
    {
     "key": "redaksi",
     "title": "Halaman Redaksi",
-    "panelHtml": "<p>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</p><p>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</p><p>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</p>"
+    "panelHtml": "<ul><li>Setiap pesanan mendapat 5 halaman redaksi gratis (1 foto dan 4 halaman teks).</li><li>Tambahan halaman redaksi dikenakan biaya Rp 3.000 per 2 halaman.</li><li>Desain redaksi dikirim untuk disetujui sebelum produksi dimulai.</li></ul>"
    },
    {
     "key": "pengiriman",
     "title": "Pengiriman",
-    "panelHtml": "<p>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</p><p>Pengerjaan membutuhkan sekitar 6 - 8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</p><p>Harga belum termasuk ongkos kirim.</p>"
+    "panelHtml": "<ul><li>Semua pesanan diproses dan dikirim dari workshop Manis Grafika di Surakarta, Jawa Tengah.</li><li>Pengerjaan sekitar 6–8 hari kerja setelah desain disetujui. Untuk percepatan, silakan hubungi admin Manis Grafika.</li><li>Harga belum termasuk ongkos kirim. Rincian di <a href=\"/pages/kebijakan-pengiriman\">Kebijakan Pengiriman</a>.</li></ul>"
    }
   ],
   "pairItWith": [
@@ -17865,7 +17865,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standard Hijau Emerald",
+      "value": "Hardcover Standar Hijau Emerald",
       "image": "",
       "color": "#1e6b52",
       "active": false,
@@ -17873,7 +17873,7 @@
       "href": "/products/ceisya-series?variant=1341"
      },
      {
-      "value": "Hardcover Standart Black",
+      "value": "Hardcover Standar Black",
       "image": "",
       "color": "#1a1a1a",
       "active": false,
@@ -17881,7 +17881,7 @@
       "href": "/products/ceisya-series?variant=1059"
      },
      {
-      "value": "Hardcover Standart Broken White",
+      "value": "Hardcover Standar Broken White",
       "image": "",
       "color": "#f3efe6",
       "active": false,
@@ -17889,7 +17889,7 @@
       "href": "/products/ceisya-series?variant=562"
      },
      {
-      "value": "Hardcover Standart Caramel",
+      "value": "Hardcover Standar Caramel",
       "image": "",
       "color": "#b07a3f",
       "active": false,
@@ -17897,7 +17897,7 @@
       "href": "/products/ceisya-series?variant=1348"
      },
      {
-      "value": "Hardcover Standart Gold",
+      "value": "Hardcover Standar Gold",
       "image": "",
       "color": "#c9a54a",
       "active": true,
@@ -17905,7 +17905,7 @@
       "href": "/products/ceisya-series?variant=1352"
      }
     ],
-    "swatchSelected": "Hardcover Standart Gold ",
+    "swatchSelected": "Hardcover Standar Gold ",
     "swatchSuffix": "+ 4 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -18102,7 +18102,7 @@
      "type": "photo",
      "required": false,
      "maxLength": null,
-     "help": "1 foto, termasuk dalam 5 halaman redaksi gratis."
+     "help": "Maksimal 1 foto, mengisi 1 dari 5 halaman gratis."
     },
     {
      "key": "redaksi",
@@ -18110,7 +18110,7 @@
      "type": "textarea",
      "required": true,
      "maxLength": 2000,
-     "help": "Isi untuk 4 halaman redaksi gratis. Tambahan halaman dikenakan Rp 3.000 per 2 halaman."
+     "help": "Mengisi 4 halaman gratis; teks yang lebih panjang menambah halaman."
     },
     {
      "key": "catatan",

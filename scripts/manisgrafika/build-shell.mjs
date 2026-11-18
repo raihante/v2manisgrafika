@@ -138,7 +138,11 @@ const header = {
   accountLinks,
   secondary: {
     ...base.secondary,
-    search: { ...base.secondary.search, icon: recolour(base.secondary.search.icon) },
+    search: {
+      ...base.secondary.search,
+      icon: recolour(base.secondary.search.icon),
+      close: { ...base.secondary.search.close, props: { ...base.secondary.search.close.props, "aria-label": "Tutup pencarian", alt: "Tutup pencarian" } },
+    },
     account: { ...base.secondary.account, title: "Akun Saya" },
   },
   searchBar: { ...base.searchBar, placeholder: "Cari", submitIcon: recolour(base.searchBar.submitIcon) },

@@ -865,8 +865,8 @@
    "close": {
     "props": {
      "className": "svg-search jsc-close-green hide",
-     "aria-label": "close icon",
-     "alt": "close icon",
+     "aria-label": "Tutup pencarian",
+     "alt": "Tutup pencarian",
      "width": "19px",
      "height": "20px",
      "viewBox": "0 0 14 14",

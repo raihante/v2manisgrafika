@@ -7,13 +7,13 @@ import { FormEvent, useState } from "react";
 import { formatPrice } from "@/lib/catalog/format";
 import type { CheckoutBranding } from "@/lib/storefront/types";
 import { lineMeta, useCart } from "@/lib/cart";
-import { ORDER_KEY, PROVINCES, SHIPPING_METHODS, type MockOrder } from "./order";
+import { ORDER_KEY, PROVINCES, SHIPPING_METHODS, VA_BANKS, type MockOrder } from "./order";
 
 export function CheckoutHeader({ logo }: { logo: string }) {
   return (
     <header className="co-header">
       <Link href="/"><img src={logo} alt="Manis Grafika" width={194} height={42} /></Link>
-      <Link href="/cart" className="co-header-cart">Cart</Link>
+      <Link href="/cart" className="co-header-cart">Keranjang</Link>
     </header>
   );
 }
@@ -22,7 +22,8 @@ export default function CheckoutForm({ branding }: { branding: CheckoutBranding 
   const router = useRouter();
   const { lines, subtotal, count, service } = useCart();
   const [shippingId, setShippingId] = useState<string>(SHIPPING_METHODS[0].id);
-  const [payment, setPayment] = useState<"card" | "qris">("card");
+  const [payment, setPayment] = useState<"va" | "qris">("va");
+  const [bank, setBank] = useState<string>(VA_BANKS[0]);
   const [submitting, setSubmitting] = useState(false);
   const shipping = SHIPPING_METHODS.find((m) => m.id === shippingId) ?? SHIPPING_METHODS[0];
   const total = subtotal + shipping.price;
@@ -32,7 +33,7 @@ export default function CheckoutForm({ branding }: { branding: CheckoutBranding 
     const form = new FormData(event.currentTarget);
     const get = (key: string) => String(form.get(key) ?? "").trim();
     setSubmitting(true);
-    // MOCK payment: nothing is sent anywhere. Card inputs have no name, so they never enter FormData or storage.
+    // MOCK payment: nothing is sent anywhere; the order lives only in sessionStorage for the thank-you page.
     const order: MockOrder = {
       number: `#MG${Date.now().toString().slice(-6)}`,
       email: get("email"),
@@ -40,7 +41,7 @@ export default function CheckoutForm({ branding }: { branding: CheckoutBranding 
       address: [get("address"), get("apartment"), `${get("city")}, ${get("province")} ${get("postal")}`, "Indonesia"].filter(Boolean).join(", "),
       phone: get("phone"),
       shipping: { label: shipping.label, price: shipping.price },
-      payment: payment === "card" ? "Credit / Debit Card" : "QRIS",
+      payment: payment === "va" ? `Virtual Account ${bank}` : "QRIS",
       lines,
       subtotal,
       total,
@@ -60,7 +61,7 @@ export default function CheckoutForm({ branding }: { branding: CheckoutBranding 
     return (
       <div className="co-page">
         <CheckoutHeader logo={branding.logo} />
-        <div className="co-empty"><p>Your cart is empty.</p><Link className="cm-button" href="/collections/new-in">Continue shopping</Link></div>
+        <div className="co-empty"><p>Keranjang Anda masih kosong.</p><Link className="cm-button" href="/collections/new-in">Lanjut Belanja</Link></div>
       </div>
     );
   }
@@ -70,36 +71,36 @@ export default function CheckoutForm({ branding }: { branding: CheckoutBranding 
       <CheckoutHeader logo={branding.logo} />
       <div className="co-layout">
         <form className="co-main" onSubmit={submit}>
-          <p className="co-preview-banner">Preview checkout: no payment is processed and no order is created.</p>
+          <p className="co-preview-banner">Simulasi checkout: tidak ada pembayaran yang diproses dan tidak ada pesanan yang dibuat.</p>
 
           <section className="co-section">
-            <div className="co-section-head"><h2>Contact</h2><Link href="/account/login" className="cm-link">Log in</Link></div>
+            <div className="co-section-head"><h2>Kontak</h2><Link href="/account/login" className="cm-link">Masuk</Link></div>
             <input className="co-input" name="email" type="email" placeholder="Email" autoComplete="email" required />
-            <label className="co-check"><input type="checkbox" name="newsletter" defaultChecked /> Email me with news and offers</label>
+            <label className="co-check"><input type="checkbox" name="newsletter" defaultChecked /> Kirimi saya kabar dan penawaran lewat email</label>
           </section>
 
           <section className="co-section">
-            <h2>Delivery</h2>
-            <select className="co-input" name="country" defaultValue="Indonesia" aria-label="Country/Region"><option>Indonesia</option></select>
+            <h2>Pengiriman</h2>
+            <select className="co-input" name="country" defaultValue="Indonesia" aria-label="Negara"><option>Indonesia</option></select>
             <div className="co-row">
-              <input className="co-input" name="firstName" placeholder="First name" autoComplete="given-name" required />
-              <input className="co-input" name="lastName" placeholder="Last name" autoComplete="family-name" required />
+              <input className="co-input" name="firstName" placeholder="Nama depan" autoComplete="given-name" required />
+              <input className="co-input" name="lastName" placeholder="Nama belakang" autoComplete="family-name" required />
             </div>
-            <input className="co-input" name="address" placeholder="Address" autoComplete="address-line1" required />
-            <input className="co-input" name="apartment" placeholder="Apartment, suite, etc. (optional)" autoComplete="address-line2" />
+            <input className="co-input" name="address" placeholder="Alamat lengkap" autoComplete="address-line1" required />
+            <input className="co-input" name="apartment" placeholder="Detail alamat: RT/RW, blok, patokan (opsional)" autoComplete="address-line2" />
             <div className="co-row co-row-3">
-              <input className="co-input" name="city" placeholder="City" autoComplete="address-level2" required />
-              <select className="co-input" name="province" defaultValue="" required aria-label="Province">
-                <option value="" disabled>Province</option>
+              <input className="co-input" name="city" placeholder="Kota/Kabupaten" autoComplete="address-level2" required />
+              <select className="co-input" name="province" defaultValue="" required aria-label="Provinsi">
+                <option value="" disabled>Provinsi</option>
                 {PROVINCES.map((p) => <option key={p}>{p}</option>)}
               </select>
-              <input className="co-input" name="postal" placeholder="Postal code" inputMode="numeric" pattern="[0-9]{5}" title="5-digit postal code" autoComplete="postal-code" required />
+              <input className="co-input" name="postal" placeholder="Kode pos" inputMode="numeric" pattern="[0-9]{5}" title="Kode pos 5 digit" autoComplete="postal-code" required />
             </div>
-            <input className="co-input" name="phone" type="tel" placeholder="Phone" autoComplete="tel" required />
+            <input className="co-input" name="phone" type="tel" placeholder="No. HP / WhatsApp" autoComplete="tel" required />
           </section>
 
           <section className="co-section">
-            <h2>Shipping method</h2>
+            <h2>Metode pengiriman</h2>
             <div className="co-choices">
               {SHIPPING_METHODS.map((m) => (
                 <label key={m.id} className={`co-choice ${shippingId === m.id ? "active" : ""}`}>
@@ -112,34 +113,30 @@ export default function CheckoutForm({ branding }: { branding: CheckoutBranding 
           </section>
 
           <section className="co-section">
-            <h2>Payment</h2>
-            <p className="cm-muted">All transactions are secure and encrypted.</p>
+            <h2>Pembayaran</h2>
+            <p className="cm-muted">Pilih metode pembayaran. Instruksi pembayaran muncul setelah pesanan dibuat.</p>
             <div className="co-choices">
-              <label className={`co-choice ${payment === "card" ? "active" : ""}`}>
-                <input type="radio" name="payment" checked={payment === "card"} onChange={() => setPayment("card")} />
-                <span className="co-choice-text"><b>Credit / Debit Card</b></span>
-                <span className="co-marks">{branding.payments.filter((p) => p.name !== "QRIS").map((p) => <img key={p.name} src={p.image} alt={p.name} />)}</span>
+              <label className={`co-choice ${payment === "va" ? "active" : ""}`}>
+                <input type="radio" name="payment" checked={payment === "va"} onChange={() => setPayment("va")} />
+                <span className="co-choice-text"><b>Transfer Virtual Account</b><small>{VA_BANKS.join(", ")}</small></span>
               </label>
-              {payment === "card" && (
-                <div className="co-card-fields">
-                  <input className="co-input" placeholder="Card number" inputMode="numeric" autoComplete="off" required />
-                  <div className="co-row">
-                    <input className="co-input" placeholder="Expiration date (MM / YY)" autoComplete="off" required />
-                    <input className="co-input" placeholder="Security code" inputMode="numeric" autoComplete="off" required />
-                  </div>
-                  <input className="co-input" placeholder="Name on card" autoComplete="off" required />
+              {payment === "va" && (
+                <div className="co-pay-fields">
+                  <select className="co-input" value={bank} onChange={(e) => setBank(e.target.value)} aria-label="Bank virtual account">
+                    {VA_BANKS.map((b) => <option key={b} value={b}>{b}</option>)}
+                  </select>
                 </div>
               )}
               <label className={`co-choice ${payment === "qris" ? "active" : ""}`}>
                 <input type="radio" name="payment" checked={payment === "qris"} onChange={() => setPayment("qris")} />
-                <span className="co-choice-text"><b>QRIS</b><small>Scan to pay with any QRIS-supported e-wallet or banking app</small></span>
+                <span className="co-choice-text"><b>QRIS</b><small>Bayar dengan scan QR lewat e-wallet atau mobile banking</small></span>
                 <span className="co-marks">{branding.payments.filter((p) => p.name === "QRIS").map((p) => <img key={p.name} src={p.image} alt={p.name} />)}</span>
               </label>
             </div>
           </section>
 
-          <button type="submit" className="cm-button cm-button-full co-pay" disabled={submitting}>{submitting ? "Processing..." : "Pay now"}</button>
-          <Link href="/cart" className="cm-link">&lsaquo; Return to cart</Link>
+          <button type="submit" className="cm-button cm-button-full co-pay" disabled={submitting}>{submitting ? "Memproses..." : "Bayar sekarang"}</button>
+          <Link href="/cart" className="cm-link">&lsaquo; Kembali ke keranjang</Link>
         </form>
 
         <aside className="co-summary">
@@ -153,8 +150,8 @@ export default function CheckoutForm({ branding }: { branding: CheckoutBranding 
             ))}
           </ul>
           <div className="co-totals">
-            <div><span>Subtotal &middot; {count} {count === 1 ? "item" : "items"}</span><span>{formatPrice(subtotal)}</span></div>
-            <div><span>Shipping</span><span>{formatPrice(shipping.price)}</span></div>
+            <div><span>Subtotal &middot; {count} pcs</span><span>{formatPrice(subtotal)}</span></div>
+            <div><span>Ongkos kirim</span><span>{formatPrice(shipping.price)}</span></div>
             <div className="co-total"><span>Total</span><span><small>IDR</small> {formatPrice(total)}</span></div>
           </div>
         </aside>

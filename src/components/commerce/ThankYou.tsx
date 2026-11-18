@@ -25,29 +25,29 @@ export default function ThankYou({ branding }: { branding: CheckoutBranding }) {
       <CheckoutHeader logo={branding.logo} />
       <div className="co-thanks">
         {!order ? (
-          <div className="co-empty"><p>No recent preview order found.</p><Link className="cm-button" href="/">Continue shopping</Link></div>
+          <div className="co-empty"><p>Belum ada pesanan simulasi terbaru.</p><Link className="cm-button" href="/">Lanjut Belanja</Link></div>
         ) : (
           <>
-            <p className="co-preview-banner">Preview only: this is a simulated confirmation. No payment was taken.</p>
-            <p className="cm-muted">Order {order.number}</p>
-            <h1>Thank you{order.name ? `, ${order.name.split(" ")[0]}` : ""}!</h1>
+            <p className="co-preview-banner">Simulasi: ini konfirmasi contoh. Tidak ada pembayaran yang diproses.</p>
+            <p className="cm-muted">Pesanan {order.number}</p>
+            <h1>Terima kasih{order.name ? `, ${order.name.split(" ")[0]}` : ""}!</h1>
             <div className="co-box">
-              <h2>Your order is confirmed</h2>
-              <p>You will receive a confirmation email at <b>{order.email}</b> soon.</p>
+              <h2>Pesanan Anda sudah kami terima</h2>
+              <p>Konfirmasi pesanan akan dikirim ke <b>{order.email}</b>. Tim kami akan menghubungi Anda melalui WhatsApp untuk proses desain.</p>
             </div>
             <div className="co-box co-details">
-              <div><h3>Shipping address</h3><p>{order.name}<br />{order.address}<br />{order.phone}</p></div>
-              <div><h3>Shipping method</h3><p>{order.shipping.label}</p></div>
-              <div><h3>Payment method</h3><p>{order.payment} &middot; {formatPrice(order.total)}</p></div>
+              <div><h3>Alamat pengiriman</h3><p>{order.name}<br />{order.address}<br />{order.phone}</p></div>
+              <div><h3>Metode pengiriman</h3><p>{order.shipping.label}</p></div>
+              <div><h3>Metode pembayaran</h3><p>{order.payment} &middot; {formatPrice(order.total)}</p></div>
             </div>
             <ul className="co-items co-box">
               {order.lines.map((line) => (
                 <li key={line.id}><span className="co-item-info"><b>{line.quantity} &times; {line.title}</b><small>{lineMeta(line)}</small></span><span>{formatPrice(line.price * line.quantity)}</span></li>
               ))}
-              <li><span>Shipping</span><span>{formatPrice(order.shipping.price)}</span></li>
+              <li><span>Ongkos kirim</span><span>{formatPrice(order.shipping.price)}</span></li>
               <li className="co-total"><span>Total</span><span>{formatPrice(order.total)}</span></li>
             </ul>
-            <Link className="cm-button" href="/">Continue shopping</Link>
+            <Link className="cm-button" href="/">Lanjut Belanja</Link>
           </>
         )}
       </div>

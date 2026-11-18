@@ -68,22 +68,89 @@ html .blog-article { --blog-pink: var(--mg-teal); }
 .price.price--on-sale .price__compare .amount { color: #777; text-decoration: line-through; font-size: 0.8em; }
 .price .amount.price__sale { color: var(--mg-pink); }
 
-/* PDP quantity (minimum order) and personalisation ("halaman redaksi"). */
-.mg-personalisation { display: grid; gap: 18px; margin: 4px 0 20px; }
-.mg-personalisation .form__label { display: block; margin-bottom: 8px; }
-.mg-quantity { justify-self: start; width: max-content; display: inline-flex; align-items: stretch; border: 1px solid #000; border-radius: 50px; overflow: hidden; height: 44px; }
-.mg-quantity button { width: 44px; border: 0; background: transparent; font-size: 18px; cursor: pointer; color: inherit; }
-.mg-quantity button:disabled { opacity: 0.35; cursor: not-allowed; }
-.mg-quantity input { width: 72px; border: 0; text-align: center; font: inherit; -moz-appearance: textfield; appearance: textfield; background: transparent; }
+/* PDP info column (.product-information--inner), round 274 (owner 2026-11-18: "product-information--inner ... masih jelek
+   deskripsi juga tidak rapi"). Own design on the BTV structure: the BTV circle options only fit S/M/L-length values
+   ("HVS" overflowed its 40px circle, "Artpaper" had no outline), so block options become pills; tabs lose the BTV
+   grey-blue active fill; tab panels get list/heading styles for the structured descriptions (build-catalog.mjs
+   tidyDescription); "Cocok Dipadukan" gets a divider and one heading size. */
+html .template-product .product-information--inner .product-price-container .price__compare .amount { font-size: 18px !important; } /* source .amount size is !important */
+html .template-product .thb-product-detail .product-price-container .product__tax { display: block; margin-top: 4px; font-size: 13px; opacity: 1; color: #666; }
+html .template-product .thb-product-detail .product-price-container .product__tax a { color: inherit; }
+
+html .template-product .product-information--inner .product-form__input--block input[type="radio"] + label {
+  display: inline-flex; align-items: center; justify-content: center; min-width: 52px !important; height: 40px !important; padding: 0 18px !important; /* source sets 40px / 3px !important */
+  margin: 0 8px 8px 0 !important; border: 1px solid #d0d0d0; border-radius: 50px; background: #fff; color: #000;
+  font-family: Everett-Light, sans-serif !important; font-size: 15px; letter-spacing: 0; cursor: pointer; transition: border-color .2s, box-shadow .2s;
+}
+html .template-product .product-information--inner .product-form__input--block input[type="radio"] + label span { font: inherit; letter-spacing: inherit; }
+html .template-product .product-information--inner .product-form__input--block input[type="radio"] + label:hover { border-color: #000; }
+html .template-product .product-information--inner .product-form__input--block input[type="radio"]:checked + label { border-color: #000; box-shadow: inset 0 0 0 1px #000; }
+html .template-product .product-information--inner .product-form__input--block input[type="radio"].is-disabled + label { color: #aaa; border-style: dashed; }
+html .template-product .product-information--inner .product-form__input--block input[type="radio"]:focus-visible + label { outline: 2px solid var(--mg-teal); outline-offset: 2px; }
+
+html .template-product .product-info-tabs__tab { padding: 8px 20px; font-family: Everett-Light, sans-serif; font-size: 15px; letter-spacing: 0; border-color: #000; transition: background-color .2s, color .2s; }
+html .template-product .product-info-tabs__tab:hover { background: #f2f2f2; }
+html .template-product .product-info-tabs__tab.is-active,
+html .template-product .product-info-tabs__tab[aria-selected="true"] { background: #000; color: #fff; border-color: #000; }
+@media (max-width: 480px) { html .template-product .product-info-tabs__tab { padding: 7px 14px; font-size: 14px; } }
+
+html .template-product .product-info-tabs__panels { margin-top: 22px; }
+html .template-product .product-information--inner .product-info-tabs__panel p,
+html .template-product .product-information--inner .product-info-tabs__panel li { font-family: Everett-Light, sans-serif !important; font-size: 15px; line-height: 1.7; letter-spacing: 0; color: #222; }
+html .template-product .product-info-tabs__panel p { margin: 0 0 14px; }
+html .template-product .product-info-tabs__panel h3 { margin: 24px 0 8px; font-family: Everett-regular, sans-serif; font-size: 15px; line-height: 1.4; letter-spacing: 0; font-weight: 400; text-transform: none; color: #000; }
+html .template-product .product-info-tabs__panel > :first-child { margin-top: 0; }
+html .template-product .product-info-tabs__panel ul { list-style: none !important; margin: 0 0 4px; padding: 0; }
+html .template-product .product-info-tabs__panel li { position: relative; margin: 0 0 6px; padding-left: 20px; }
+html .template-product .product-info-tabs__panel li::before { content: ""; position: absolute; left: 3px; top: 0.72em; width: 6px; height: 6px; border-radius: 50%; background: var(--mg-teal); }
+html .template-product .product-info-tabs__panel a { color: var(--mg-teal); text-decoration: underline; text-underline-offset: 2px; }
+
+html .template-product .product-information--inner .complementary-products { display: block; /* custom element, inline by default */ margin-top: 36px; padding-top: 28px; border-top: 1px solid #e6e6e6; }
+html .template-product .product-information--inner .complementary-products--heading { margin-bottom: 16px; font-size: 1.375rem !important; line-height: 1.3 !important; letter-spacing: -0.5px; }
+
+/* PDP quantity (minimum order) and personalisation ("halaman redaksi"), round 273 redesign (owner 2026-11-18: "designnya
+   jelek banget"). Labels use the BTV variant legend metrics (.product-form__input .form__label: Everett-Light 16px,
+   letter-spacing -1px, value after a 5px gap, 9px below); controls follow the BTV pill shapes (variant circles 40px,
+   ATC pill); text fields use a thin light border instead of the earlier heavy black boxes. Own design, not source. */
+.mg-personalisation { display: grid; gap: 26px; margin: 6px 0 24px; }
+.mg-personalisation .mg-label { display: flex; gap: 5px; align-items: baseline; margin: 0 0 9px; padding: 0; font-family: Everett-Light, sans-serif; font-size: 1rem; line-height: 1.6; letter-spacing: -1px; color: #000; }
+.mg-personalisation .mg-label__value { padding-left: 2px; }
+.mg-quantity-row { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.mg-quantity { width: max-content; display: inline-flex; align-items: stretch; border: 1px solid #000; border-radius: 50px; overflow: hidden; height: 40px; }
+.mg-quantity button { width: 40px; border: 0; background: transparent; font-size: 18px; line-height: 1; cursor: pointer; color: inherit; transition: background-color .2s; }
+.mg-quantity button:hover:not(:disabled) { background: #f2f2f2; }
+.mg-quantity button:disabled { opacity: 0.3; cursor: not-allowed; }
+.mg-quantity input { width: 56px; border: 0; text-align: center; font: inherit; font-size: 15px; -moz-appearance: textfield; appearance: textfield; background: transparent; }
+.mg-quantity input:focus { outline: none; }
+.mg-quantity:focus-within { box-shadow: 0 0 0 1px #000; }
 .mg-quantity input::-webkit-outer-spin-button,
 .mg-quantity input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
-.mg-redaksi { border: 0; margin: 0; padding: 0; display: grid; gap: 14px; min-width: 0; }
-.mg-redaksi legend { padding: 0; }
-.mg-field { display: grid; gap: 6px; min-width: 0; }
-.mg-field > label { font-size: 14px; }
+
+.mg-redaksi { border: 0; border-top: 1px solid #e6e6e6; margin: 0; padding: 22px 0 0; display: grid; gap: 20px; min-width: 0; }
+.mg-redaksi legend.mg-label { float: left; width: 100%; margin: 0; } /* float keeps the legend inside the grid flow, under the border */
+.mg-personalisation .mg-redaksi__note { margin: -14px 0 0; font-family: Everett-Light, sans-serif !important; /* beats the source .product-information--inner p (Everett-regular !important) */ font-size: 14px; line-height: 1.5; color: #555; letter-spacing: 0; }
+.mg-field { display: grid; gap: 8px; min-width: 0; }
+.mg-personalisation .mg-field__label { font-size: 14px; line-height: 1.4; letter-spacing: 0.28px; color: #000; }
+.mg-field__optional { color: #777; }
 .mg-field input[type="text"],
-.mg-field textarea { width: 100%; border: 1px solid #000; border-radius: 8px; padding: 10px 12px; font: inherit; font-size: 14px; background: #fff; resize: vertical; }
-.mg-field input[type="file"] { font-size: 13px; max-width: 100%; }
-.mg-personalisation .mg-field__help { margin: 0; font-size: 12px; line-height: 1.4; color: #555; letter-spacing: 0; }
-.mg-field__file { font-size: 12px; color: var(--mg-teal); word-break: break-all; }
+.mg-field textarea { width: 100%; border: 1px solid #cfcfcf; border-radius: 12px; padding: 12px 14px; font: inherit; font-size: 14px; line-height: 1.5; background: #fff; color: #000; resize: vertical; transition: border-color .2s; }
+.mg-field input[type="text"]::placeholder,
+.mg-field textarea::placeholder { color: #9a9a9a; }
+.mg-field input[type="text"]:hover,
+.mg-field textarea:hover { border-color: #999; }
+.mg-field input[type="text"]:focus,
+.mg-field textarea:focus { outline: none; border-color: var(--mg-teal); box-shadow: 0 0 0 1px var(--mg-teal); }
+.mg-field__meta { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.mg-personalisation .mg-field__help { margin: 0; font-family: Everett-Light, sans-serif !important; /* beats the source .product-information--inner p (Everett-regular !important) */ font-size: 13px; line-height: 1.45; color: #666; letter-spacing: 0; }
+.mg-field__count { margin-left: auto; font-family: Everett-Light, sans-serif; font-size: 13px; line-height: 1.45; color: #888; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+/* Photo picker: the native file input stays focusable but invisible; its <label> is the pill button. */
+.mg-file { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; min-width: 0; }
+.mg-file__input { position: absolute; width: 1px; height: 1px; opacity: 0; overflow: hidden; }
+.mg-file__button { display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 20px; border: 1px solid #000; border-radius: 50px; font-size: 14px; letter-spacing: 0.28px; cursor: pointer; transition: background-color .2s, color .2s; }
+.mg-file__button:hover { background: #000; color: #fff; }
+.mg-file__input:focus-visible + .mg-file__button { outline: 2px solid var(--mg-teal); outline-offset: 2px; }
+.mg-file__empty { font-size: 13px; color: #888; }
+.mg-file__name { display: inline-flex; align-items: center; gap: 10px; min-width: 0; font-size: 13px; color: var(--mg-teal); word-break: break-all; }
+.mg-file__clear { border: 0; background: none; padding: 0; font: inherit; font-size: 12px; color: #666; text-decoration: underline; cursor: pointer; }
 .mg-form-error { display: flex; gap: 8px; align-items: center; margin: 0 0 12px; color: #b3262e; }

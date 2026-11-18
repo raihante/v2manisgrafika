@@ -10,7 +10,7 @@ import { CLICK_CAPTURE_EVENT } from "@/components/shell/ShellPanels";
 import type { CollectionCrumb, Facet, SortOption } from "@/lib/collections/types";
 import { CloseIcon, FacetArrow, SelectArrow } from "./icons";
 
-export const SORT_LABEL = "Translation missing: en.products.facets.sort_bg";
+export const SORT_LABEL = "Urutkan";
 
 export type HiddenInput = { name: string; value: string };
 const Hidden = ({ inputs }: { inputs: HiddenInput[] }) => <>{inputs.map((i) => <input key={i.name} type="hidden" name={i.name} value={i.value} />)}</>;
@@ -120,7 +120,7 @@ export function FacetBar({ crumbs, current = "h1", hiddenInputs = [], sort, opti
                   <select name="sort_by" className="facet-filters__sort select__select resize-select hideimportant" id="SortByBar" aria-describedby="a11y-refresh-page-message" value={sort} onChange={(e) => onSort(e.target.value)}>
                     {options.map((o) => <option key={o.value} value={o.value}>{o.label}</option>)}
                   </select>
-                  <div className={`fake-sort-button${sortList?.mobile ? " sort-button-open" : ""}`} onClick={opencloseSort}> Sort <FacetArrow /> </div>
+                  <div className={`fake-sort-button${sortList?.mobile ? " sort-button-open" : ""}`} onClick={opencloseSort}> Urutkan <FacetArrow /> </div>
                   <ul className={`currencyList${sortList?.mobile ? " sortList" : ""}`} style={sortList ? { display: sortList.open ? "block" : "none" } : undefined}>
                     {list.map((o) => (
                       <li key={o.value} className={`currency-li${o.value === sort ? " sort-selected" : ""}`} data-value={o.value} onClick={() => onSort(o.value)}> <span>{o.label}</span> </li>
@@ -133,7 +133,7 @@ export function FacetBar({ crumbs, current = "h1", hiddenInputs = [], sort, opti
         </div>
       </form>
       <facet-remove className="active-facets">
-        <a href={clearHref} className="active-facets__button-remove text-button">Clear all</a>
+        <a href={clearHref} className="active-facets__button-remove text-button">Hapus semua</a>
       </facet-remove>
     </facet-filters-form>
   );
@@ -205,7 +205,7 @@ export function FacetDrawer({ facets, hiddenInputs = [], sortOptions, sort, coun
                 ))}
                 <div className="thb-filter-sort-count thb-filter">
                   <div className="thb-filter-sort">
-                    <div className="thb-filter-title">Sort by</div>
+                    <div className="thb-filter-title">Urutkan</div>
                     <div className="select">
                       <label htmlFor="SortByMobile" className="visually-hidden">{SORT_LABEL}</label>
                       <select name="sort_by" className="facet-filters__sort select__select caption-large" id="SortByMobile" aria-describedby="a11y-refresh-page-message" value={sort} onChange={(e) => onSort(e.target.value)}>
@@ -219,9 +219,9 @@ export function FacetDrawer({ facets, hiddenInputs = [], sortOptions, sort, coun
             </facet-filters-form>
           </div>
           <div className="side-panel-footer">
-            <div><a className="mobile-filters-clear text-button" href={clearHref}>Clear</a></div>
+            <div><a className="mobile-filters-clear text-button" href={clearHref}>Hapus</a></div>
             {/* Source: onclick="document.querySelector('.click-capture').click()". */}
-            <button type="button" className="button mobile-filters-apply" onClick={() => (document.querySelector(".click-capture") as HTMLElement | null)?.click()}><span>Apply</span></button>
+            <button type="button" className="button mobile-filters-apply" onClick={() => (document.querySelector(".click-capture") as HTMLElement | null)?.click()}><span>Terapkan</span></button>
           </div>
         </div>
       </div>

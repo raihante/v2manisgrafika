@@ -21,7 +21,11 @@ The BTV route tables below are the layout/template history. Current content (all
 | `/pages/terms-of-service`, `/pages/privacy-policy`, `/pages/returns`, `/pages/kebijakan-pengiriman` (was `/pages/shipping-rate`, renamed round 269) | Indonesian **draft** policies with a visible draft notice | same |
 | `/pages/wishlist` | Indonesian empty-state mock | same |
 | `/blogs`, `/blogs/<3 slugs>` | 3 categories, 3 "[Contoh]" placeholder articles; the 64 BTV article routes are removed (local 404) | same |
-| `/search`, `/cart`, `/checkout`, `/checkout/thank-you`, 404 | MG titles; remaining English UI strings are step 6 | - |
+| `/search`, `/cart`, `/checkout`, `/checkout/thank-you`, 404 | Indonesian UI (round 271): search copy and sort labels (`src/data/search.json`, hand-edited; the BTV `scripts/build-search-data.mjs` must not be re-run), cart, checkout (Virtual Account / QRIS mock, 38 provinces, Reguler / Ekspres placeholder rates), thank-you, 404 | - |
+
+**Route paths stay English** (round 272, owner 2026-11-18): Indonesian paths (`/koleksi`, `/produk`, `/halaman/...`) were tried and reverted at the owner's request ("ganti inggris saja deh untuk linknya"). Page content is Indonesian; URLs keep the Shopify-style English paths.
+
+Tab titles use one format everywhere: `<page> – Manis Grafika` (collections switched from `|` in round 271; the root title stays `Manis Grafika | Buku Yasin & Paket Hadiah`).
 
 ## Scope Decisions
 

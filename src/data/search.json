@@ -9,27 +9,27 @@
  "bannerStyle": "--overlay-color-rgb: 0, 0, 0; --overlay-opacity: 0.2",
  "breadcrumbHome": {
   "href": "/",
-  "label": "Home"
+  "label": "Beranda"
  },
- "breadcrumbCurrent": "Search",
- "title": "Search Results",
- "placeholder": "Search for anything",
- "resultsText": "{count} results found for “{q}”",
+ "breadcrumbCurrent": "Pencarian",
+ "title": "Hasil Pencarian",
+ "placeholder": "Cari produk",
+ "resultsText": "{count} hasil untuk “{q}”",
  "barCrumbs": [
   {
    "href": "/",
-   "title": "Home",
-   "label": "Home"
+   "title": "Beranda",
+   "label": "Beranda"
   },
   {
    "href": "/collections/new-in",
-   "title": "Shop",
-   "label": "Shop"
+   "title": "Belanja",
+   "label": "Belanja"
   },
   {
    "href": "",
    "title": "",
-   "label": "Search"
+   "label": "Pencarian"
   }
  ],
  "hiddenInputs": [
@@ -42,43 +42,43 @@
   "bar": [
    {
     "value": "relevance",
-    "label": "Relevance"
+    "label": "Paling relevan"
    },
    {
     "value": "price-ascending",
-    "label": "Price, low to high"
+    "label": "Harga, rendah ke tinggi"
    },
    {
     "value": "price-descending",
-    "label": "Price, high to low"
+    "label": "Harga, tinggi ke rendah"
    }
   ],
   "barList": [
    {
     "value": "relevance",
-    "label": "Relevance"
+    "label": "Paling relevan"
    },
    {
     "value": "price-ascending",
-    "label": "Price, low to high"
+    "label": "Harga, rendah ke tinggi"
    },
    {
     "value": "price-descending",
-    "label": "Price, high to low"
+    "label": "Harga, tinggi ke rendah"
    }
   ],
   "mobile": [
    {
     "value": "relevance",
-    "label": "Relevance"
+    "label": "Paling relevan"
    },
    {
     "value": "price-ascending",
-    "label": "Price, low to high"
+    "label": "Harga, rendah ke tinggi"
    },
    {
     "value": "price-descending",
-    "label": "Price, high to low"
+    "label": "Harga, tinggi ke rendah"
    }
   ],
   "initial": "relevance"
@@ -86,10 +86,10 @@
  "gridClass": "products collection row small-up-2 medium-up-4 pagination--paginated",
  "paginationClass": "pagination pagination-type--paginated",
  "perPage": 12,
- "countLabel": "{count} results",
+ "countLabel": "{count} hasil",
  "facetTitles": [
-  "Colour",
-  "Size",
-  "Availability"
+  "Bahan Cover",
+  "Jenis Kertas",
+  "Ketersediaan"
  ]
 }

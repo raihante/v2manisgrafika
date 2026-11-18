@@ -8,11 +8,11 @@ export default function CartView() {
   const { lines, subtotal, count, service } = useCart();
   return (
     <section className="cm-page cm-cart">
-      <h1>Your Shopping Cart</h1>
+      <h1>Keranjang Belanja</h1>
       {lines.length === 0 ? (
         <div className="cm-empty">
-          <p>Your cart is currently empty.</p>
-          <Link className="cm-button" href="/collections/new-in">Continue shopping</Link>
+          <p>Keranjang Anda masih kosong.</p>
+          <Link className="cm-button" href="/collections/new-in">Lanjut Belanja</Link>
         </div>
       ) : (
         <div className="cm-cart-layout">
@@ -25,12 +25,12 @@ export default function CartView() {
                   <p className="cm-line-meta">{lineMeta(line)}</p>
                   <p className="cm-line-price">{formatPrice(line.price)}</p>
                   <div className="cm-line-actions">
-                    <div className="cm-qty" aria-label={`Quantity for ${line.title}`}>
-                      <button type="button" onClick={() => service.setQuantity(line.id, line.quantity - 1)} aria-label="Decrease quantity">−</button>
+                    <div className="cm-qty" aria-label={`Jumlah ${line.title}`}>
+                      <button type="button" onClick={() => service.setQuantity(line.id, line.quantity - 1)} aria-label="Kurangi jumlah">−</button>
                       <span>{line.quantity}</span>
-                      <button type="button" onClick={() => service.setQuantity(line.id, line.quantity + 1)} aria-label="Increase quantity">+</button>
+                      <button type="button" onClick={() => service.setQuantity(line.id, line.quantity + 1)} aria-label="Tambah jumlah">+</button>
                     </div>
-                    <button type="button" className="cm-link" onClick={() => service.remove(line.id)}>Remove</button>
+                    <button type="button" className="cm-link" onClick={() => service.remove(line.id)}>Hapus</button>
                   </div>
                 </div>
                 <p className="cm-line-total">{formatPrice(line.price * line.quantity)}</p>
@@ -38,10 +38,10 @@ export default function CartView() {
             ))}
           </ul>
           <aside className="cm-summary">
-            <div className="cm-summary-row"><span>Subtotal ({count} {count === 1 ? "item" : "items"})</span><b>{formatPrice(subtotal)}</b></div>
-            <p className="cm-muted">Taxes and shipping calculated at checkout.</p>
-            <Link className="cm-button cm-button-full" href="/checkout">Check Out</Link>
-            <Link className="cm-link cm-center" href="/collections/new-in">Continue shopping</Link>
+            <div className="cm-summary-row"><span>Subtotal ({count} pcs)</span><b>{formatPrice(subtotal)}</b></div>
+            <p className="cm-muted">Ongkos kirim dihitung saat checkout.</p>
+            <Link className="cm-button cm-button-full" href="/checkout">Checkout</Link>
+            <Link className="cm-link cm-center" href="/collections/new-in">Lanjut Belanja</Link>
           </aside>
         </div>
       )}

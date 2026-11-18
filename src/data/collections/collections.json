@@ -2,7 +2,7 @@
  "new-in": {
   "handle": "new-in",
   "title": "Terbaru",
-  "documentTitle": "Terbaru | Manis Grafika",
+  "documentTitle": "Terbaru – Manis Grafika",
   "sectionId": "template--22799925281047__product-grid",
   "gridClass": "products collection row small-up-2 medium-up-4 pagination--loadmore",
   "promoInterval": 5,
@@ -149,11 +149,11 @@
       "image": null
      },
      {
-      "value": "Hardcover Standart",
+      "value": "Hardcover Standar",
       "id": "Filter-Mobile-bahan-cover-2",
-      "label": "Hardcover Standart",
+      "label": "Hardcover Standar",
       "count": "(13)",
-      "tooltip": "Hardcover Standart (13)",
+      "tooltip": "Hardcover Standar (13)",
       "labelClass": "jsc-color-filter facet-checkbox",
       "bg": "var(--bg-body)",
       "image": null
@@ -684,7 +684,7 @@
     ],
     "swatches": [
      {
-      "value": "Spoon Leather Coklat",
+      "value": "Spoon Leather Cokelat",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -788,7 +788,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standart Broken White",
+      "value": "Hardcover Standar Broken White",
       "image": "",
       "color": "#f3efe6",
       "active": false,
@@ -796,7 +796,7 @@
       "href": "/products/soraya-series?variant=2798"
      },
      {
-      "value": "Hardcover Standart Brown",
+      "value": "Hardcover Standar Brown",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -804,7 +804,7 @@
       "href": "/products/soraya-series?variant=2794"
      },
      {
-      "value": "Hardcover Standart Gold",
+      "value": "Hardcover Standar Gold",
       "image": "",
       "color": "#c9a54a",
       "active": false,
@@ -812,7 +812,7 @@
       "href": "/products/soraya-series?variant=2786"
      },
      {
-      "value": "Hardcover Standart Maroon",
+      "value": "Hardcover Standar Maroon",
       "image": "",
       "color": "#6e1f2b",
       "active": true,
@@ -820,7 +820,7 @@
       "href": "/products/soraya-series?variant=2778"
      },
      {
-      "value": "Hardcover Standart Navy",
+      "value": "Hardcover Standar Navy",
       "image": "",
       "color": "#1f2a44",
       "active": false,
@@ -828,7 +828,7 @@
       "href": "/products/soraya-series?variant=2790"
      },
      {
-      "value": "Hardcover Standart Tosca",
+      "value": "Hardcover Standar Tosca",
       "image": "",
       "color": "#3a9b97",
       "active": false,
@@ -836,7 +836,7 @@
       "href": "/products/soraya-series?variant=2782"
      }
     ],
-    "swatchSelected": "Hardcover Standart Maroon ",
+    "swatchSelected": "Hardcover Standar Maroon ",
     "swatchSuffix": "+ 5 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -1020,7 +1020,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standart Brown",
+      "value": "Hardcover Standar Brown",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -1028,7 +1028,7 @@
       "href": "/products/noura-series?variant=1517"
      },
      {
-      "value": "Hardcover Standart Green",
+      "value": "Hardcover Standar Green",
       "image": "",
       "color": "#2f6b3a",
       "active": true,
@@ -1036,7 +1036,7 @@
       "href": "/products/noura-series?variant=1525"
      },
      {
-      "value": "Hardcover Standart Maroon",
+      "value": "Hardcover Standar Maroon",
       "image": "",
       "color": "#6e1f2b",
       "active": false,
@@ -1044,7 +1044,7 @@
       "href": "/products/noura-series?variant=1529"
      },
      {
-      "value": "Hardcover Standart Navy",
+      "value": "Hardcover Standar Navy",
       "image": "",
       "color": "#1f2a44",
       "active": false,
@@ -1052,7 +1052,7 @@
       "href": "/products/noura-series?variant=1096"
      }
     ],
-    "swatchSelected": "Hardcover Standart Green ",
+    "swatchSelected": "Hardcover Standar Green ",
     "swatchSuffix": "+ 3 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -1324,7 +1324,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standard Hijau Emerald",
+      "value": "Hardcover Standar Hijau Emerald",
       "image": "",
       "color": "#1e6b52",
       "active": false,
@@ -1332,7 +1332,7 @@
       "href": "/products/ceisya-series?variant=1341"
      },
      {
-      "value": "Hardcover Standart Black",
+      "value": "Hardcover Standar Black",
       "image": "",
       "color": "#1a1a1a",
       "active": false,
@@ -1340,7 +1340,7 @@
       "href": "/products/ceisya-series?variant=1059"
      },
      {
-      "value": "Hardcover Standart Broken White",
+      "value": "Hardcover Standar Broken White",
       "image": "",
       "color": "#f3efe6",
       "active": false,
@@ -1348,7 +1348,7 @@
       "href": "/products/ceisya-series?variant=562"
      },
      {
-      "value": "Hardcover Standart Caramel",
+      "value": "Hardcover Standar Caramel",
       "image": "",
       "color": "#b07a3f",
       "active": false,
@@ -1356,7 +1356,7 @@
       "href": "/products/ceisya-series?variant=1348"
      },
      {
-      "value": "Hardcover Standart Gold",
+      "value": "Hardcover Standar Gold",
       "image": "",
       "color": "#c9a54a",
       "active": true,
@@ -1364,7 +1364,7 @@
       "href": "/products/ceisya-series?variant=1352"
      }
     ],
-    "swatchSelected": "Hardcover Standart Gold ",
+    "swatchSelected": "Hardcover Standar Gold ",
     "swatchSuffix": "+ 4 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -1736,7 +1736,7 @@
      ]
     ]
    },
-   "filter.v.option.bahan-cover=Hardcover Standart": {
+   "filter.v.option.bahan-cover=Hardcover Standar": {
     "countText": "13 produk",
     "pages": [
      [
@@ -2060,7 +2060,7 @@
  "hardcover": {
   "handle": "hardcover",
   "title": "Hardcover",
-  "documentTitle": "Hardcover | Manis Grafika",
+  "documentTitle": "Hardcover – Manis Grafika",
   "sectionId": "template--22799925281047__product-grid",
   "gridClass": "products collection row small-up-2 medium-up-4 pagination--loadmore",
   "promoInterval": 5,
@@ -2207,11 +2207,11 @@
       "image": null
      },
      {
-      "value": "Hardcover Standart",
+      "value": "Hardcover Standar",
       "id": "Filter-Mobile-bahan-cover-2",
-      "label": "Hardcover Standart",
+      "label": "Hardcover Standar",
       "count": "(9)",
-      "tooltip": "Hardcover Standart (9)",
+      "tooltip": "Hardcover Standar (9)",
       "labelClass": "jsc-color-filter facet-checkbox",
       "bg": "var(--bg-body)",
       "image": null
@@ -2903,7 +2903,7 @@
      ]
     ]
    },
-   "filter.v.option.bahan-cover=Hardcover Standart": {
+   "filter.v.option.bahan-cover=Hardcover Standar": {
     "countText": "9 produk",
     "pages": [
      [
@@ -3141,7 +3141,7 @@
  "hardcover-standar": {
   "handle": "hardcover-standar",
   "title": "Hardcover Standar",
-  "documentTitle": "Hardcover Standar | Manis Grafika",
+  "documentTitle": "Hardcover Standar – Manis Grafika",
   "sectionId": "template--22799925281047__product-grid",
   "gridClass": "products collection row small-up-2 medium-up-4 pagination--loadmore",
   "promoInterval": 5,
@@ -4007,7 +4007,7 @@
  "hardcover-bludru": {
   "handle": "hardcover-bludru",
   "title": "Hardcover Bludru",
-  "documentTitle": "Hardcover Bludru | Manis Grafika",
+  "documentTitle": "Hardcover Bludru – Manis Grafika",
   "sectionId": "template--22799925281047__product-grid",
   "gridClass": "products collection row small-up-2 medium-up-4 pagination--loadmore",
   "promoInterval": 5,
@@ -4517,7 +4517,7 @@
  "hardcover-spoon-leather": {
   "handle": "hardcover-spoon-leather",
   "title": "Hardcover Spoon Leather",
-  "documentTitle": "Hardcover Spoon Leather | Manis Grafika",
+  "documentTitle": "Hardcover Spoon Leather – Manis Grafika",
   "sectionId": "template--22799925281047__product-grid",
   "gridClass": "products collection row small-up-2 medium-up-4 pagination--loadmore",
   "promoInterval": 5,
@@ -4945,7 +4945,7 @@
  "paket": {
   "handle": "paket",
   "title": "Paket Hadiah",
-  "documentTitle": "Paket Hadiah | Manis Grafika",
+  "documentTitle": "Paket Hadiah – Manis Grafika",
   "sectionId": "template--22799925281047__product-grid",
   "gridClass": "products collection row small-up-2 medium-up-4 pagination--loadmore",
   "promoInterval": 5,
@@ -5092,11 +5092,11 @@
       "image": null
      },
      {
-      "value": "Hardcover Standart",
+      "value": "Hardcover Standar",
       "id": "Filter-Mobile-bahan-cover-2",
-      "label": "Hardcover Standart",
+      "label": "Hardcover Standar",
       "count": "(4)",
-      "tooltip": "Hardcover Standart (4)",
+      "tooltip": "Hardcover Standar (4)",
       "labelClass": "jsc-color-filter facet-checkbox",
       "bg": "var(--bg-body)",
       "image": null
@@ -5229,7 +5229,7 @@
     ],
     "swatches": [
      {
-      "value": "Spoon Leather Coklat",
+      "value": "Spoon Leather Cokelat",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -5333,7 +5333,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standart Broken White",
+      "value": "Hardcover Standar Broken White",
       "image": "",
       "color": "#f3efe6",
       "active": false,
@@ -5341,7 +5341,7 @@
       "href": "/products/soraya-series?variant=2798"
      },
      {
-      "value": "Hardcover Standart Brown",
+      "value": "Hardcover Standar Brown",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -5349,7 +5349,7 @@
       "href": "/products/soraya-series?variant=2794"
      },
      {
-      "value": "Hardcover Standart Gold",
+      "value": "Hardcover Standar Gold",
       "image": "",
       "color": "#c9a54a",
       "active": false,
@@ -5357,7 +5357,7 @@
       "href": "/products/soraya-series?variant=2786"
      },
      {
-      "value": "Hardcover Standart Maroon",
+      "value": "Hardcover Standar Maroon",
       "image": "",
       "color": "#6e1f2b",
       "active": true,
@@ -5365,7 +5365,7 @@
       "href": "/products/soraya-series?variant=2778"
      },
      {
-      "value": "Hardcover Standart Navy",
+      "value": "Hardcover Standar Navy",
       "image": "",
       "color": "#1f2a44",
       "active": false,
@@ -5373,7 +5373,7 @@
       "href": "/products/soraya-series?variant=2790"
      },
      {
-      "value": "Hardcover Standart Tosca",
+      "value": "Hardcover Standar Tosca",
       "image": "",
       "color": "#3a9b97",
       "active": false,
@@ -5381,7 +5381,7 @@
       "href": "/products/soraya-series?variant=2782"
      }
     ],
-    "swatchSelected": "Hardcover Standart Maroon ",
+    "swatchSelected": "Hardcover Standar Maroon ",
     "swatchSuffix": "+ 5 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -5565,7 +5565,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standart Brown",
+      "value": "Hardcover Standar Brown",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -5573,7 +5573,7 @@
       "href": "/products/noura-series?variant=1517"
      },
      {
-      "value": "Hardcover Standart Green",
+      "value": "Hardcover Standar Green",
       "image": "",
       "color": "#2f6b3a",
       "active": true,
@@ -5581,7 +5581,7 @@
       "href": "/products/noura-series?variant=1525"
      },
      {
-      "value": "Hardcover Standart Maroon",
+      "value": "Hardcover Standar Maroon",
       "image": "",
       "color": "#6e1f2b",
       "active": false,
@@ -5589,7 +5589,7 @@
       "href": "/products/noura-series?variant=1529"
      },
      {
-      "value": "Hardcover Standart Navy",
+      "value": "Hardcover Standar Navy",
       "image": "",
       "color": "#1f2a44",
       "active": false,
@@ -5597,7 +5597,7 @@
       "href": "/products/noura-series?variant=1096"
      }
     ],
-    "swatchSelected": "Hardcover Standart Green ",
+    "swatchSelected": "Hardcover Standar Green ",
     "swatchSuffix": "+ 3 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -5869,7 +5869,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standard Hijau Emerald",
+      "value": "Hardcover Standar Hijau Emerald",
       "image": "",
       "color": "#1e6b52",
       "active": false,
@@ -5877,7 +5877,7 @@
       "href": "/products/ceisya-series?variant=1341"
      },
      {
-      "value": "Hardcover Standart Black",
+      "value": "Hardcover Standar Black",
       "image": "",
       "color": "#1a1a1a",
       "active": false,
@@ -5885,7 +5885,7 @@
       "href": "/products/ceisya-series?variant=1059"
      },
      {
-      "value": "Hardcover Standart Broken White",
+      "value": "Hardcover Standar Broken White",
       "image": "",
       "color": "#f3efe6",
       "active": false,
@@ -5893,7 +5893,7 @@
       "href": "/products/ceisya-series?variant=562"
      },
      {
-      "value": "Hardcover Standart Caramel",
+      "value": "Hardcover Standar Caramel",
       "image": "",
       "color": "#b07a3f",
       "active": false,
@@ -5901,7 +5901,7 @@
       "href": "/products/ceisya-series?variant=1348"
      },
      {
-      "value": "Hardcover Standart Gold",
+      "value": "Hardcover Standar Gold",
       "image": "",
       "color": "#c9a54a",
       "active": true,
@@ -5909,7 +5909,7 @@
       "href": "/products/ceisya-series?variant=1352"
      }
     ],
-    "swatchSelected": "Hardcover Standart Gold ",
+    "swatchSelected": "Hardcover Standar Gold ",
     "swatchSuffix": "+ 4 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -6167,7 +6167,7 @@
      ]
     ]
    },
-   "filter.v.option.bahan-cover=Hardcover Standart": {
+   "filter.v.option.bahan-cover=Hardcover Standar": {
     "countText": "4 produk",
     "pages": [
      [
@@ -6314,7 +6314,7 @@
  "dompet": {
   "handle": "dompet",
   "title": "Paket Dompet",
-  "documentTitle": "Paket Dompet | Manis Grafika",
+  "documentTitle": "Paket Dompet – Manis Grafika",
   "sectionId": "template--22799925281047__product-grid",
   "gridClass": "products collection row small-up-2 medium-up-4 pagination--loadmore",
   "promoInterval": 5,
@@ -6451,11 +6451,11 @@
     "listClass": "list-bahan-cover",
     "values": [
      {
-      "value": "Hardcover Standart",
+      "value": "Hardcover Standar",
       "id": "Filter-Mobile-bahan-cover-1",
-      "label": "Hardcover Standart",
+      "label": "Hardcover Standar",
       "count": "(1)",
-      "tooltip": "Hardcover Standart (1)",
+      "tooltip": "Hardcover Standar (1)",
       "labelClass": "jsc-color-filter facet-checkbox",
       "bg": "var(--bg-body)",
       "image": null
@@ -6588,7 +6588,7 @@
     ],
     "swatches": [
      {
-      "value": "Spoon Leather Coklat",
+      "value": "Spoon Leather Cokelat",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -6748,7 +6748,7 @@
      ]
     ]
    },
-   "filter.v.option.bahan-cover=Hardcover Standart": {
+   "filter.v.option.bahan-cover=Hardcover Standar": {
     "countText": "1 produk",
     "pages": [
      [
@@ -6823,7 +6823,7 @@
  "mika": {
   "handle": "mika",
   "title": "Paket Mika",
-  "documentTitle": "Paket Mika | Manis Grafika",
+  "documentTitle": "Paket Mika – Manis Grafika",
   "sectionId": "template--22799925281047__product-grid",
   "gridClass": "products collection row small-up-2 medium-up-4 pagination--loadmore",
   "promoInterval": 5,
@@ -6970,11 +6970,11 @@
       "image": null
      },
      {
-      "value": "Hardcover Standart",
+      "value": "Hardcover Standar",
       "id": "Filter-Mobile-bahan-cover-2",
-      "label": "Hardcover Standart",
+      "label": "Hardcover Standar",
       "count": "(2)",
-      "tooltip": "Hardcover Standart (2)",
+      "tooltip": "Hardcover Standar (2)",
       "labelClass": "jsc-color-filter facet-checkbox",
       "bg": "var(--bg-body)",
       "image": null
@@ -7107,7 +7107,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standart Brown",
+      "value": "Hardcover Standar Brown",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -7115,7 +7115,7 @@
       "href": "/products/noura-series?variant=1517"
      },
      {
-      "value": "Hardcover Standart Green",
+      "value": "Hardcover Standar Green",
       "image": "",
       "color": "#2f6b3a",
       "active": true,
@@ -7123,7 +7123,7 @@
       "href": "/products/noura-series?variant=1525"
      },
      {
-      "value": "Hardcover Standart Maroon",
+      "value": "Hardcover Standar Maroon",
       "image": "",
       "color": "#6e1f2b",
       "active": false,
@@ -7131,7 +7131,7 @@
       "href": "/products/noura-series?variant=1529"
      },
      {
-      "value": "Hardcover Standart Navy",
+      "value": "Hardcover Standar Navy",
       "image": "",
       "color": "#1f2a44",
       "active": false,
@@ -7139,7 +7139,7 @@
       "href": "/products/noura-series?variant=1096"
      }
     ],
-    "swatchSelected": "Hardcover Standart Green ",
+    "swatchSelected": "Hardcover Standar Green ",
     "swatchSuffix": "+ 3 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -7411,7 +7411,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standard Hijau Emerald",
+      "value": "Hardcover Standar Hijau Emerald",
       "image": "",
       "color": "#1e6b52",
       "active": false,
@@ -7419,7 +7419,7 @@
       "href": "/products/ceisya-series?variant=1341"
      },
      {
-      "value": "Hardcover Standart Black",
+      "value": "Hardcover Standar Black",
       "image": "",
       "color": "#1a1a1a",
       "active": false,
@@ -7427,7 +7427,7 @@
       "href": "/products/ceisya-series?variant=1059"
      },
      {
-      "value": "Hardcover Standart Broken White",
+      "value": "Hardcover Standar Broken White",
       "image": "",
       "color": "#f3efe6",
       "active": false,
@@ -7435,7 +7435,7 @@
       "href": "/products/ceisya-series?variant=562"
      },
      {
-      "value": "Hardcover Standart Caramel",
+      "value": "Hardcover Standar Caramel",
       "image": "",
       "color": "#b07a3f",
       "active": false,
@@ -7443,7 +7443,7 @@
       "href": "/products/ceisya-series?variant=1348"
      },
      {
-      "value": "Hardcover Standart Gold",
+      "value": "Hardcover Standar Gold",
       "image": "",
       "color": "#c9a54a",
       "active": true,
@@ -7451,7 +7451,7 @@
       "href": "/products/ceisya-series?variant=1352"
      }
     ],
-    "swatchSelected": "Hardcover Standart Gold ",
+    "swatchSelected": "Hardcover Standar Gold ",
     "swatchSuffix": "+ 4 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -7652,7 +7652,7 @@
      ]
     ]
    },
-   "filter.v.option.bahan-cover=Hardcover Standart": {
+   "filter.v.option.bahan-cover=Hardcover Standar": {
     "countText": "2 produk",
     "pages": [
      [
@@ -7753,7 +7753,7 @@
  "mika-kecil": {
   "handle": "mika-kecil",
   "title": "Paket Mika Kecil",
-  "documentTitle": "Paket Mika Kecil | Manis Grafika",
+  "documentTitle": "Paket Mika Kecil – Manis Grafika",
   "sectionId": "template--22799925281047__product-grid",
   "gridClass": "products collection row small-up-2 medium-up-4 pagination--loadmore",
   "promoInterval": 5,
@@ -7900,11 +7900,11 @@
       "image": null
      },
      {
-      "value": "Hardcover Standart",
+      "value": "Hardcover Standar",
       "id": "Filter-Mobile-bahan-cover-2",
-      "label": "Hardcover Standart",
+      "label": "Hardcover Standar",
       "count": "(1)",
-      "tooltip": "Hardcover Standart (1)",
+      "tooltip": "Hardcover Standar (1)",
       "labelClass": "jsc-color-filter facet-checkbox",
       "bg": "var(--bg-body)",
       "image": null
@@ -8037,7 +8037,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standart Brown",
+      "value": "Hardcover Standar Brown",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -8045,7 +8045,7 @@
       "href": "/products/noura-series?variant=1517"
      },
      {
-      "value": "Hardcover Standart Green",
+      "value": "Hardcover Standar Green",
       "image": "",
       "color": "#2f6b3a",
       "active": true,
@@ -8053,7 +8053,7 @@
       "href": "/products/noura-series?variant=1525"
      },
      {
-      "value": "Hardcover Standart Maroon",
+      "value": "Hardcover Standar Maroon",
       "image": "",
       "color": "#6e1f2b",
       "active": false,
@@ -8061,7 +8061,7 @@
       "href": "/products/noura-series?variant=1529"
      },
      {
-      "value": "Hardcover Standart Navy",
+      "value": "Hardcover Standar Navy",
       "image": "",
       "color": "#1f2a44",
       "active": false,
@@ -8069,7 +8069,7 @@
       "href": "/products/noura-series?variant=1096"
      }
     ],
-    "swatchSelected": "Hardcover Standart Green ",
+    "swatchSelected": "Hardcover Standar Green ",
     "swatchSuffix": "+ 3 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -8325,7 +8325,7 @@
      ]
     ]
    },
-   "filter.v.option.bahan-cover=Hardcover Standart": {
+   "filter.v.option.bahan-cover=Hardcover Standar": {
     "countText": "1 produk",
     "pages": [
      [
@@ -8406,7 +8406,7 @@
  "mika-besar": {
   "handle": "mika-besar",
   "title": "Paket Mika Besar",
-  "documentTitle": "Paket Mika Besar | Manis Grafika",
+  "documentTitle": "Paket Mika Besar – Manis Grafika",
   "sectionId": "template--22799925281047__product-grid",
   "gridClass": "products collection row small-up-2 medium-up-4 pagination--loadmore",
   "promoInterval": 5,
@@ -8553,11 +8553,11 @@
       "image": null
      },
      {
-      "value": "Hardcover Standart",
+      "value": "Hardcover Standar",
       "id": "Filter-Mobile-bahan-cover-2",
-      "label": "Hardcover Standart",
+      "label": "Hardcover Standar",
       "count": "(1)",
-      "tooltip": "Hardcover Standart (1)",
+      "tooltip": "Hardcover Standar (1)",
       "labelClass": "jsc-color-filter facet-checkbox",
       "bg": "var(--bg-body)",
       "image": null
@@ -8778,7 +8778,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standard Hijau Emerald",
+      "value": "Hardcover Standar Hijau Emerald",
       "image": "",
       "color": "#1e6b52",
       "active": false,
@@ -8786,7 +8786,7 @@
       "href": "/products/ceisya-series?variant=1341"
      },
      {
-      "value": "Hardcover Standart Black",
+      "value": "Hardcover Standar Black",
       "image": "",
       "color": "#1a1a1a",
       "active": false,
@@ -8794,7 +8794,7 @@
       "href": "/products/ceisya-series?variant=1059"
      },
      {
-      "value": "Hardcover Standart Broken White",
+      "value": "Hardcover Standar Broken White",
       "image": "",
       "color": "#f3efe6",
       "active": false,
@@ -8802,7 +8802,7 @@
       "href": "/products/ceisya-series?variant=562"
      },
      {
-      "value": "Hardcover Standart Caramel",
+      "value": "Hardcover Standar Caramel",
       "image": "",
       "color": "#b07a3f",
       "active": false,
@@ -8810,7 +8810,7 @@
       "href": "/products/ceisya-series?variant=1348"
      },
      {
-      "value": "Hardcover Standart Gold",
+      "value": "Hardcover Standar Gold",
       "image": "",
       "color": "#c9a54a",
       "active": true,
@@ -8818,7 +8818,7 @@
       "href": "/products/ceisya-series?variant=1352"
      }
     ],
-    "swatchSelected": "Hardcover Standart Gold ",
+    "swatchSelected": "Hardcover Standar Gold ",
     "swatchSuffix": "+ 4 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -8994,7 +8994,7 @@
      ]
     ]
    },
-   "filter.v.option.bahan-cover=Hardcover Standart": {
+   "filter.v.option.bahan-cover=Hardcover Standar": {
     "countText": "1 produk",
     "pages": [
      [
@@ -9075,7 +9075,7 @@
  "tasbih": {
   "handle": "tasbih",
   "title": "Paket Tile Tasbih",
-  "documentTitle": "Paket Tile Tasbih | Manis Grafika",
+  "documentTitle": "Paket Tile Tasbih – Manis Grafika",
   "sectionId": "template--22799925281047__product-grid",
   "gridClass": "products collection row small-up-2 medium-up-4 pagination--loadmore",
   "promoInterval": 5,
@@ -9222,11 +9222,11 @@
       "image": null
      },
      {
-      "value": "Hardcover Standart",
+      "value": "Hardcover Standar",
       "id": "Filter-Mobile-bahan-cover-2",
-      "label": "Hardcover Standart",
+      "label": "Hardcover Standar",
       "count": "(1)",
-      "tooltip": "Hardcover Standart (1)",
+      "tooltip": "Hardcover Standar (1)",
       "labelClass": "jsc-color-filter facet-checkbox",
       "bg": "var(--bg-body)",
       "image": null
@@ -9359,7 +9359,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standart Broken White",
+      "value": "Hardcover Standar Broken White",
       "image": "",
       "color": "#f3efe6",
       "active": false,
@@ -9367,7 +9367,7 @@
       "href": "/products/soraya-series?variant=2798"
      },
      {
-      "value": "Hardcover Standart Brown",
+      "value": "Hardcover Standar Brown",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -9375,7 +9375,7 @@
       "href": "/products/soraya-series?variant=2794"
      },
      {
-      "value": "Hardcover Standart Gold",
+      "value": "Hardcover Standar Gold",
       "image": "",
       "color": "#c9a54a",
       "active": false,
@@ -9383,7 +9383,7 @@
       "href": "/products/soraya-series?variant=2786"
      },
      {
-      "value": "Hardcover Standart Maroon",
+      "value": "Hardcover Standar Maroon",
       "image": "",
       "color": "#6e1f2b",
       "active": true,
@@ -9391,7 +9391,7 @@
       "href": "/products/soraya-series?variant=2778"
      },
      {
-      "value": "Hardcover Standart Navy",
+      "value": "Hardcover Standar Navy",
       "image": "",
       "color": "#1f2a44",
       "active": false,
@@ -9399,7 +9399,7 @@
       "href": "/products/soraya-series?variant=2790"
      },
      {
-      "value": "Hardcover Standart Tosca",
+      "value": "Hardcover Standar Tosca",
       "image": "",
       "color": "#3a9b97",
       "active": false,
@@ -9407,7 +9407,7 @@
       "href": "/products/soraya-series?variant=2782"
      }
     ],
-    "swatchSelected": "Hardcover Standart Maroon ",
+    "swatchSelected": "Hardcover Standar Maroon ",
     "swatchSuffix": "+ 5 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -9663,7 +9663,7 @@
      ]
     ]
    },
-   "filter.v.option.bahan-cover=Hardcover Standart": {
+   "filter.v.option.bahan-cover=Hardcover Standar": {
     "countText": "1 produk",
     "pages": [
      [
@@ -9744,7 +9744,7 @@
  "zyla-series": {
   "handle": "zyla-series",
   "title": "Zyla Series",
-  "documentTitle": "Zyla Series | Manis Grafika",
+  "documentTitle": "Zyla Series – Manis Grafika",
   "sectionId": "template--22799925281047__product-grid",
   "gridClass": "products collection row small-up-2 medium-up-4 pagination--loadmore",
   "promoInterval": 5,
@@ -9988,7 +9988,7 @@
     ],
     "swatches": [
      {
-      "value": "Spoon Leather Coklat",
+      "value": "Spoon Leather Cokelat",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -10153,7 +10153,7 @@
  "shaaira-series": {
   "handle": "shaaira-series",
   "title": "Shaaira Series",
-  "documentTitle": "Shaaira Series | Manis Grafika",
+  "documentTitle": "Shaaira Series – Manis Grafika",
   "sectionId": "template--22799925281047__product-grid",
   "gridClass": "products collection row small-up-2 medium-up-4 pagination--loadmore",
   "promoInterval": 5,
@@ -10538,7 +10538,7 @@
  "soraya-series": {
   "handle": "soraya-series",
   "title": "Soraya Series",
-  "documentTitle": "Soraya Series | Manis Grafika",
+  "documentTitle": "Soraya Series – Manis Grafika",
   "sectionId": "template--22799925281047__product-grid",
   "gridClass": "products collection row small-up-2 medium-up-4 pagination--loadmore",
   "promoInterval": 5,
@@ -10782,7 +10782,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standart Broken White",
+      "value": "Hardcover Standar Broken White",
       "image": "",
       "color": "#f3efe6",
       "active": false,
@@ -10790,7 +10790,7 @@
       "href": "/products/soraya-series?variant=2798"
      },
      {
-      "value": "Hardcover Standart Brown",
+      "value": "Hardcover Standar Brown",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -10798,7 +10798,7 @@
       "href": "/products/soraya-series?variant=2794"
      },
      {
-      "value": "Hardcover Standart Gold",
+      "value": "Hardcover Standar Gold",
       "image": "",
       "color": "#c9a54a",
       "active": false,
@@ -10806,7 +10806,7 @@
       "href": "/products/soraya-series?variant=2786"
      },
      {
-      "value": "Hardcover Standart Maroon",
+      "value": "Hardcover Standar Maroon",
       "image": "",
       "color": "#6e1f2b",
       "active": true,
@@ -10814,7 +10814,7 @@
       "href": "/products/soraya-series?variant=2778"
      },
      {
-      "value": "Hardcover Standart Navy",
+      "value": "Hardcover Standar Navy",
       "image": "",
       "color": "#1f2a44",
       "active": false,
@@ -10822,7 +10822,7 @@
       "href": "/products/soraya-series?variant=2790"
      },
      {
-      "value": "Hardcover Standart Tosca",
+      "value": "Hardcover Standar Tosca",
       "image": "",
       "color": "#3a9b97",
       "active": false,
@@ -10830,7 +10830,7 @@
       "href": "/products/soraya-series?variant=2782"
      }
     ],
-    "swatchSelected": "Hardcover Standart Maroon ",
+    "swatchSelected": "Hardcover Standar Maroon ",
     "swatchSuffix": "+ 5 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -10955,7 +10955,7 @@
  "gamilia-series": {
   "handle": "gamilia-series",
   "title": "Gamilia Series",
-  "documentTitle": "Gamilia Series | Manis Grafika",
+  "documentTitle": "Gamilia Series – Manis Grafika",
   "sectionId": "template--22799925281047__product-grid",
   "gridClass": "products collection row small-up-2 medium-up-4 pagination--loadmore",
   "promoInterval": 5,
@@ -11388,7 +11388,7 @@
  "lamia-series": {
   "handle": "lamia-series",
   "title": "Lamia Series",
-  "documentTitle": "Lamia Series | Manis Grafika",
+  "documentTitle": "Lamia Series – Manis Grafika",
   "sectionId": "template--22799925281047__product-grid",
   "gridClass": "products collection row small-up-2 medium-up-4 pagination--loadmore",
   "promoInterval": 5,
@@ -11805,7 +11805,7 @@
  "noura-series": {
   "handle": "noura-series",
   "title": "Noura Series",
-  "documentTitle": "Noura Series | Manis Grafika",
+  "documentTitle": "Noura Series – Manis Grafika",
   "sectionId": "template--22799925281047__product-grid",
   "gridClass": "products collection row small-up-2 medium-up-4 pagination--loadmore",
   "promoInterval": 5,
@@ -12049,7 +12049,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standart Brown",
+      "value": "Hardcover Standar Brown",
       "image": "",
       "color": "#6b4430",
       "active": false,
@@ -12057,7 +12057,7 @@
       "href": "/products/noura-series?variant=1517"
      },
      {
-      "value": "Hardcover Standart Green",
+      "value": "Hardcover Standar Green",
       "image": "",
       "color": "#2f6b3a",
       "active": true,
@@ -12065,7 +12065,7 @@
       "href": "/products/noura-series?variant=1525"
      },
      {
-      "value": "Hardcover Standart Maroon",
+      "value": "Hardcover Standar Maroon",
       "image": "",
       "color": "#6e1f2b",
       "active": false,
@@ -12073,7 +12073,7 @@
       "href": "/products/noura-series?variant=1529"
      },
      {
-      "value": "Hardcover Standart Navy",
+      "value": "Hardcover Standar Navy",
       "image": "",
       "color": "#1f2a44",
       "active": false,
@@ -12081,7 +12081,7 @@
       "href": "/products/noura-series?variant=1096"
      }
     ],
-    "swatchSelected": "Hardcover Standart Green ",
+    "swatchSelected": "Hardcover Standar Green ",
     "swatchSuffix": "+ 3 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -12206,7 +12206,7 @@
  "zayna-series": {
   "handle": "zayna-series",
   "title": "Zayna Series",
-  "documentTitle": "Zayna Series | Manis Grafika",
+  "documentTitle": "Zayna Series – Manis Grafika",
   "sectionId": "template--22799925281047__product-grid",
   "gridClass": "products collection row small-up-2 medium-up-4 pagination--loadmore",
   "promoInterval": 5,
@@ -12639,7 +12639,7 @@
  "dayana-series": {
   "handle": "dayana-series",
   "title": "Dayana Series",
-  "documentTitle": "Dayana Series | Manis Grafika",
+  "documentTitle": "Dayana Series – Manis Grafika",
   "sectionId": "template--22799925281047__product-grid",
   "gridClass": "products collection row small-up-2 medium-up-4 pagination--loadmore",
   "promoInterval": 5,
@@ -13056,7 +13056,7 @@
  "kayla-series": {
   "handle": "kayla-series",
   "title": "Kayla Series",
-  "documentTitle": "Kayla Series | Manis Grafika",
+  "documentTitle": "Kayla Series – Manis Grafika",
   "sectionId": "template--22799925281047__product-grid",
   "gridClass": "products collection row small-up-2 medium-up-4 pagination--loadmore",
   "promoInterval": 5,
@@ -13489,7 +13489,7 @@
  "ceisya-series": {
   "handle": "ceisya-series",
   "title": "Ceisya Series",
-  "documentTitle": "Ceisya Series | Manis Grafika",
+  "documentTitle": "Ceisya Series – Manis Grafika",
   "sectionId": "template--22799925281047__product-grid",
   "gridClass": "products collection row small-up-2 medium-up-4 pagination--loadmore",
   "promoInterval": 5,
@@ -13733,7 +13733,7 @@
     ],
     "swatches": [
      {
-      "value": "Hardcover Standard Hijau Emerald",
+      "value": "Hardcover Standar Hijau Emerald",
       "image": "",
       "color": "#1e6b52",
       "active": false,
@@ -13741,7 +13741,7 @@
       "href": "/products/ceisya-series?variant=1341"
      },
      {
-      "value": "Hardcover Standart Black",
+      "value": "Hardcover Standar Black",
       "image": "",
       "color": "#1a1a1a",
       "active": false,
@@ -13749,7 +13749,7 @@
       "href": "/products/ceisya-series?variant=1059"
      },
      {
-      "value": "Hardcover Standart Broken White",
+      "value": "Hardcover Standar Broken White",
       "image": "",
       "color": "#f3efe6",
       "active": false,
@@ -13757,7 +13757,7 @@
       "href": "/products/ceisya-series?variant=562"
      },
      {
-      "value": "Hardcover Standart Caramel",
+      "value": "Hardcover Standar Caramel",
       "image": "",
       "color": "#b07a3f",
       "active": false,
@@ -13765,7 +13765,7 @@
       "href": "/products/ceisya-series?variant=1348"
      },
      {
-      "value": "Hardcover Standart Gold",
+      "value": "Hardcover Standar Gold",
       "image": "",
       "color": "#c9a54a",
       "active": true,
@@ -13773,7 +13773,7 @@
       "href": "/products/ceisya-series?variant=1352"
      }
     ],
-    "swatchSelected": "Hardcover Standart Gold ",
+    "swatchSelected": "Hardcover Standar Gold ",
     "swatchSuffix": "+ 4 Cover",
     "overlayLabels": [],
     "labels": [],
@@ -13898,7 +13898,7 @@
  "ataya-series": {
   "handle": "ataya-series",
   "title": "Ataya Series",
-  "documentTitle": "Ataya Series | Manis Grafika",
+  "documentTitle": "Ataya Series – Manis Grafika",
   "sectionId": "template--22799925281047__product-grid",
   "gridClass": "products collection row small-up-2 medium-up-4 pagination--loadmore",
   "promoInterval": 5,

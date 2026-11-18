@@ -15,6 +15,22 @@ Source: `src/app/brand.css` (overrides only; the generated BTV source CSS stays 
 
 Everything else keeps the BTV black/white theme.
 
+Deliberate layout deviations from the BTV base (owner-requested, all in `src/app/brand.css`):
+
+| Area | BTV | Manis Grafika | Round |
+|---|---|---|---|
+| Footer payment block (desktop) | flush right | `margin-right: 45px`, clears the fixed back-to-top pill | 264 |
+| Footer contact links | link text only | label + 14px `#555` value (`.footer-link-note`, 13px <=480px); email breaks only before "@" | 268, 270 |
+| Newsletter, stacked layout (<=798px) | description right-aligned; email field pulled 15px past the gutter | description left-aligned; field inside the page gutter | 270 |
+| Policy draft notice | n/a | spans the 1000px text column, Recoleta 22px | 269 |
+| PDP quantity + "Halaman Redaksi" (MG addition) | n/a | labels on the variant-legend metrics (Everett-Light 16px, -1px); 40px pill stepper; redaksi group under a 1px `#e6e6e6` divider; pill photo picker; textareas 1px `#cfcfcf`, radius 12px, teal focus | 273 |
+| PDP block options (paper, page count) | 40px circles, padding 3px | pills: min-width 52px, height 40px, padding 0 18px, 1px `#d0d0d0`; selected 1px `#000` + 1px inset; unavailable dashed `#aaa` | 274 |
+| PDP colour legend | value only | "Cover: <value>" | 274 |
+| PDP price | compare-at same size as sale price; tax caption hidden | compare-at 18px; caption "Harga per pcs, belum termasuk ongkos kirim" shown (13px `#666`) | 274 |
+| PDP info tabs | active fill `rgb(202,211,218)`, letter-spacing -1px | active `#000` fill, white text; 15px, no tracking; 14px / 7px 14px <=480px | 274 |
+| PDP tab panels | source rich text | Everett-Light 15px/1.7 `#222`; `h3` 15px Everett-regular; lists with 6px teal dots | 274 |
+| PDP "Cocok Dipadukan" | glued to the tabs; 28px desktop / 18px mobile | 36px gap + 28px padding above a 1px `#e6e6e6` divider; 22px heading | 274 |
+
 # BTV source measurements (layout base)
 
 Measured from the source Shopify CSS and runtime geometry on 2026-11-03.
