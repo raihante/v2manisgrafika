@@ -99,7 +99,7 @@ export type ChromeData = {
 /** Checkout header and payment marks (the checkout is rendered without SiteChrome). */
 export type CheckoutBranding = { logo: string; payments: PaymentMark[] };
 
-export type HeroSlide = { label: string; image: string; mobileImage: string; sourceImage: string };
+export type HeroSlide = { label: string; href: string; image: string; mobileImage: string; sourceImage: string };
 export type PromotionSlide = { image: string; mobileImage: string; mobileSrcSet: string; href: string; sourceImage: string };
 export type ProductRailData = { title: string; shopMore: string; headerBackground: string; products: RailCard[] };
 export type SocialSection = {

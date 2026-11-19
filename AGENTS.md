@@ -11,7 +11,7 @@ This section supersedes the rest of this file wherever they conflict. The beyond
 - **Navigation (option A):** Terbaru, Hardcover (Standar, Bludru, Spoon Leather), Dompet, Mika (Mika Kecil, Mika Besar), Tasbih; series listed as collections in the mega menus; promotion images come from Manis Grafika product photos. One-word top-level labels.
 - **Collections:** one collection template serves every category and series route (supersedes "only `/collections/new-in`").
 - **Blogs:** `/blogs` portal and article template stay; BTV articles are removed; clearly labelled placeholder articles stand in until the client supplies articles through the future CMS.
-- **Policy pages:** agent-drafted standard Indonesian e-commerce policies, labelled as drafts pending client/legal review.
+- **Policy pages:** agent-drafted standard Indonesian e-commerce policies; reviewed and accepted by the owner on 2026-11-19, so the draft label is removed.
 - **Removed:** market/country selector. **Later:** WhatsApp floating button.
 - **Verification:** the beyondthevines source benchmark no longer applies to rebranded content. Each rebranded route must keep the pre-rebrand layout (compare geometry with the pre-rebrand local build at the same widths), render with zero console errors, pass typecheck, lint, tests, and build, and is visually accepted only by owner screenshot review. Until that review, label it **rebranded, not visually verified**.
 

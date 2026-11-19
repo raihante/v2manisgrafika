@@ -2,9 +2,7 @@ import { notFound } from "next/navigation";
 import { NewsletterSection, SiteChrome } from "@/components/shell/SiteChrome";
 import ProductPage from "@/components/commerce/ProductPage";
 import { repositories } from "@/lib/data";
-// Source product-page rules (generated, scoped to .template-product) followed by local overrides.
-import "./pdp-source.css";
-import "./product-page.css";
+// Product-page CSS (pdp-source.css, product-page.css) is imported globally by src/app/layout.tsx (round 282).
 
 export const dynamicParams = false;
 

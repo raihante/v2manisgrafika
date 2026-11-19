@@ -79,12 +79,15 @@ HERO = [  # (label, Instagram image no., text-free rows y0..y1, vertical placeme
     ("Mika", 17, 0, 990, 0.55, 830),
     ("Tasbih", 29, 0, 930, 0.5, 740),
 ]
+# Each title links to its collection, as on the source (round 286, owner "setiap category ada link nya").
+HERO_HREF = {"Terbaru": "/collections/new-in"}
 category_hero = []
 for label, n, y0, y1, fy, my1 in HERO:
     slug = label.lower()
     im = ig(n)
     category_hero.append({
         "label": label,
+        "href": HERO_HREF.get(label, f"/collections/{slug}"),
         "image": save(crop_in(im, 1920, 964, y0, y1, fy), f"hero-{slug}-desktop.webp"),
         "mobileImage": save(crop_in(im, 900, 1042, y0, my1 or y1, fy), f"hero-{slug}-mobile.webp"),
         "sourceImage": ig_source(n),

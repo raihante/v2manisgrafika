@@ -22,7 +22,7 @@ Deliberate layout deviations from the BTV base (owner-requested, all in `src/app
 | Footer payment block (desktop) | flush right | `margin-right: 45px`, clears the fixed back-to-top pill | 264 |
 | Footer contact links | link text only | label + 14px `#555` value (`.footer-link-note`, 13px <=480px); email breaks only before "@" | 268, 270 |
 | Newsletter, stacked layout (<=798px) | description right-aligned; email field pulled 15px past the gutter | description left-aligned; field inside the page gutter | 270 |
-| Policy draft notice | n/a | spans the 1000px text column, Recoleta 22px | 269 |
+| Policy draft notice | n/a | removed round 283 (owner reviewed the policies); the `callout` block type stays available | 269, 283 |
 | PDP quantity + "Halaman Redaksi" (MG addition) | n/a | labels on the variant-legend metrics (Everett-Light 16px, -1px); 40px pill stepper; redaksi group under a 1px `#e6e6e6` divider; pill photo picker; textareas 1px `#cfcfcf`, radius 12px, teal focus | 273 |
 | PDP block options (paper, page count) | 40px circles, padding 3px | pills: min-width 52px, height 40px, padding 0 18px, 1px `#d0d0d0`; selected 1px `#000` + 1px inset; unavailable dashed `#aaa` | 274 |
 | PDP colour legend | value only | "Cover: <value>" | 274 |

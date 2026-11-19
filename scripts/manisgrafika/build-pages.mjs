@@ -8,9 +8,9 @@
 //          src/data/blogs/{blogs,bodies}.json        BTV articles removed; 3 labelled placeholder articles
 // Run: node scripts/manisgrafika/build-pages.mjs   (after scripts/manisgrafika/build-page-banners.py)
 //
-// Policy pages are AGENT DRAFTS of standard Indonesian e-commerce policies, built only from facts Manis Grafika
+// Policy pages are agent-written standard Indonesian e-commerce policies, built only from facts Manis Grafika
 // publishes (minimum order, halaman redaksi, 6-8 working days, ships from Surakarta, prices exclude shipping) and owner
-// decisions (QRIS payment). Each page opens with a visible draft notice; client/legal review is required before launch.
+// decisions (QRIS payment). Reviewed and accepted by the owner on 2026-11-19.
 import { readFileSync, writeFileSync } from "node:fs";
 
 const ROOT = new URL("../..", import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1");
@@ -32,11 +32,9 @@ const rich = (html, variant = "body") => ({ type: "richText", variant, html });
 const heading = (text) => ({ type: "heading", html: text, align: "left" });
 const list = (items, ordered = false) => ({ type: "list", ordered, items });
 const img = (file, alt, width, height) => ({ src: `${MG}/${file}`, alt, width, height });
-const draftNotice = {
-  type: "callout",
-  title: "Draf",
-  html: p(`Halaman ini adalah draf kebijakan standar e-commerce Indonesia yang disiapkan tim pengembang situs dan <strong>belum ditinjau</strong> oleh Manis Grafika maupun penasihat hukum. Isinya dapat berubah. Terakhir diperbarui: ${UPDATED}.`),
-};
+// Owner reviewed the policy texts on 2026-11-19 ("sudah ku review draf nya"): the visible "Draf" callout is gone;
+// each policy opens with its last-updated line instead.
+const updatedLine = rich(p(`Terakhir diperbarui: ${UPDATED}.`));
 const contactLine = p(`Pertanyaan tentang kebijakan ini dapat dikirim melalui WhatsApp <a href="${WA}">${WA_LABEL}</a> atau email <a href="mailto:${EMAIL}">${EMAIL}</a>.`);
 
 const page = (slug, title, heroTitle, blocks) => ({ slug, documentTitle: `${title} – Manis Grafika`, title, heroTitle, accent: ACCENT, blocks });
@@ -70,9 +68,9 @@ const aboutUs = page("about-us", "Tentang Kami", ["Tentang", "Kami"], [
   { type: "button", label: "Lihat Produk", href: "/collections/new-in" },
 ]);
 
-// ---- Syarat & Ketentuan (draft) -------------------------------------------------------------------------------------
+// ---- Syarat & Ketentuan ( -------------------------------------------------------------------------------------
 const terms = page("terms-of-service", "Syarat & Ketentuan", ["Syarat &", "Ketentuan"], [
-  draftNotice,
+  updatedLine,
   heading("1. Ketentuan Umum"),
   rich(p("Situs ini dikelola oleh Manis Grafika, Surakarta, Jawa Tengah. Dengan mengakses situs ini atau melakukan pemesanan, Anda menyetujui Syarat & Ketentuan ini, Kebijakan Privasi, Kebijakan Pengiriman, dan Kebijakan Pengembalian.")),
   heading("2. Produk dan Personalisasi"),
@@ -104,9 +102,9 @@ const terms = page("terms-of-service", "Syarat & Ketentuan", ["Syarat &", "Keten
   rich(contactLine),
 ]);
 
-// ---- Kebijakan Privasi (draft, UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi) --------------------------------
+// ---- Kebijakan Privasi ( UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi) --------------------------------
 const privacy = page("privacy-policy", "Kebijakan Privasi", ["Kebijakan", "Privasi"], [
-  draftNotice,
+  updatedLine,
   rich(p("Manis Grafika menghormati privasi Anda dan memproses data pribadi sesuai Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi.")),
   heading("Data yang Kami Kumpulkan"),
   list([
@@ -138,9 +136,9 @@ const privacy = page("privacy-policy", "Kebijakan Privasi", ["Kebijakan", "Priva
   rich(contactLine),
 ]);
 
-// ---- Kebijakan Pengembalian (draft) ---------------------------------------------------------------------------------
+// ---- Kebijakan Pengembalian ( ---------------------------------------------------------------------------------
 const returns = page("returns", "Kebijakan Pengembalian", ["Kebijakan", "Pengembalian"], [
-  draftNotice,
+  updatedLine,
   rich(p("Setiap produk Manis Grafika dibuat khusus sesuai pesanan dan data personalisasi Anda. Karena itu, kami tidak menerima pengembalian karena berubah pikiran. Kami akan mengganti atau mencetak ulang produk jika terjadi kesalahan dari pihak kami.")),
   heading("Kondisi yang Dapat Diajukan"),
   list([
@@ -164,9 +162,9 @@ const returns = page("returns", "Kebijakan Pengembalian", ["Kebijakan", "Pengemb
   rich(contactLine),
 ]);
 
-// ---- Kebijakan Pengiriman (draft) -----------------------------------------------------------------------------------
+// ---- Kebijakan Pengiriman ( -----------------------------------------------------------------------------------
 const shipping = page("kebijakan-pengiriman", "Kebijakan Pengiriman", ["Kebijakan", "Pengiriman"], [
-  draftNotice,
+  updatedLine,
   heading("Lokasi Pengiriman"),
   rich(p("Semua pesanan diproses dan dikirim dari workshop kami di Surakarta, Jawa Tengah, ke seluruh Indonesia.")),
   heading("Waktu Proses"),
@@ -180,7 +178,7 @@ const shipping = page("kebijakan-pengiriman", "Kebijakan Pengiriman", ["Kebijaka
   rich(contactLine),
 ]);
 
-// Policy pages use the compact "policy" layout (readable column, smaller titles, draft notice aligned to the text).
+// Policy pages use the compact "policy" layout (readable column, smaller titles).
 for (const policy of [terms, privacy, returns, shipping]) policy.variant = "policy";
 for (const content of [aboutUs, terms, privacy, returns, shipping]) write(`src/data/pages/content/${content.slug}.json`, content);
 

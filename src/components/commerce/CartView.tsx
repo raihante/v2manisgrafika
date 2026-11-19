@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { formatPrice } from "@/lib/catalog/format";
 import { lineMeta, useCart } from "@/lib/cart";
+import LinePersonalisation from "@/components/commerce/LinePersonalisation";
 
 export default function CartView() {
   const { lines, subtotal, count, service } = useCart();
@@ -23,6 +24,7 @@ export default function CartView() {
                 <div className="cm-line-info">
                   <Link href={`/products/${line.handle}`} className="cm-line-title">{line.title}</Link>
                   <p className="cm-line-meta">{lineMeta(line)}</p>
+                  <LinePersonalisation line={line} />
                   <p className="cm-line-price">{formatPrice(line.price)}</p>
                   <div className="cm-line-actions">
                     <div className="cm-qty" aria-label={`Jumlah ${line.title}`}>

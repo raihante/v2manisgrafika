@@ -21,7 +21,7 @@ html [class*="template-"] {
 /* Remaining hard-coded BTV blues (#0060d4 -> teal, #002ea1 -> dark teal) in globals.css and commerce.css. */
 html .newsletter { background: var(--mg-teal-dark); }
 /* Active hero title: light teal, readable on the dark Instagram hero photos (owner 2026-11-17: teal was too dark). */
-html .category-links button.active { color: var(--mg-teal-light); }
+html .category-links .featured-collection-list--button.active { color: var(--mg-teal-light); }
 html .product-info .jsc-label.label-new { background: var(--mg-teal-dark); }
 html .product-info .jsc-label.label-limited-edition,
 html .product-section .product-info em.label-limited-edition { background: var(--mg-teal); }
@@ -154,3 +154,44 @@ html .template-product .product-information--inner .complementary-products--head
 .mg-file__name { display: inline-flex; align-items: center; gap: 10px; min-width: 0; font-size: 13px; color: var(--mg-teal); word-break: break-all; }
 .mg-file__clear { border: 0; background: none; padding: 0; font: inherit; font-size: 12px; color: #666; text-decoration: underline; cursor: pointer; }
 .mg-form-error { display: flex; gap: 8px; align-items: center; margin: 0 0 12px; color: #b3262e; }
+
+/* Personalisation answers under a cart/order line (LinePersonalisation.tsx): cart page, cart drawer, checkout, thank-you.
+   Label above its value; long redaksi text clamped to 3 lines (full text in the title tooltip). */
+.mg-line-perso{display:block;margin:2px 0 8px;font-size:13px;line-height:1.4;color:#777}
+.mg-line-perso__item{display:block;margin-top:4px}
+.mg-line-perso__label{display:block;color:#333}
+.mg-line-perso__value{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden;white-space:pre-line;overflow-wrap:anywhere}
+
+/* Account login / register / recover mock (AccountForms.tsx): one centred column on the commerce form tokens. */
+.mg-account{width:100%;max-width:470px;box-sizing:border-box}
+.mg-account h1{text-align:center}
+.mg-account__intro{margin:16px 0 0;color:#555;font-size:14px;text-align:center}
+.mg-account__form{display:grid;gap:12px;margin-top:24px}
+.mg-account__forgot{justify-self:start;margin:-2px 0 4px}
+.mg-account__alt{margin:20px 0 0;font-size:14px;text-align:center}
+.mg-account__alt .cm-link{font-size:14px}
+.mg-account__guest{margin-top:28px;padding-top:20px;border-top:1px solid #e5e5e5}
+.mg-account__notice:empty{display:none}
+.mg-account__notice{margin:20px 0 0;padding:12px 14px;border-left:3px solid #2B5865;background:#eef4f5;color:#1f3f48;font-size:14px;line-height:1.45}
+
+/* Wishlist heart on product cards and the PDP (pdp/icons.tsx WishlistIcons), round 277: BTV red fill + floating red
+   pixel-heart GIF -> Manis Grafika pink filled heart with a short pop when added. */
+.swym-heart.swym-added .wishlist-added-icon .cls-1{fill:#CC3366}
+.swym-heart.swym-added .wishlist-added-icon{animation:mg-heart-pop .35s ease-out}
+@keyframes mg-heart-pop{0%{transform:scale(.6)}60%{transform:scale(1.2)}100%{transform:scale(1)}}
+@media (prefers-reduced-motion:reduce){.swym-heart.swym-added .wishlist-added-icon{animation:none}}
+
+/* Blocked add to cart (round 279): the field that is missing (or the quantity below the minimum) is outlined red
+   until the customer fixes it; the error text stays above the add button (.mg-form-error). */
+.mg-field--invalid input[type="text"],
+.mg-field--invalid textarea,
+.mg-field--invalid input[type="text"]:focus,
+.mg-field--invalid textarea:focus { border-color: #c0392b; box-shadow: 0 0 0 1px #c0392b; }
+.mg-field--invalid .mg-quantity,
+.mg-field--invalid .mg-file__button { border-color: #c0392b; box-shadow: 0 0 0 1px #c0392b; }
+
+/* "Stok Kosong" (round 281, owner): the selected combination is not offered or out of stock. The add button stays in
+   place, disabled and red (main form and sticky bar), instead of the source grey sold-out style / "Kabari Saya".
+   Owner "warnanya kurang ada abu2 nya sedikit": muted red #b45c53 (~65% #c0392b + 35% grey; white text 4.57:1). */
+.single-add-to-cart-button.button.sold-out.mg-sold-out[disabled],
+.single-add-to-cart-button.button.sold-out.mg-sold-out[disabled]:hover { background: #b45c53 !important; border-color: #b45c53 !important; color: #fff !important; opacity: 1 !important; cursor: not-allowed !important; }

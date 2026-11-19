@@ -6,9 +6,15 @@
 // MOCK: the cart is the localStorage CartService (src/lib/cart.ts). The filled-cart markup was not captured from the
 // source (no item is ever added to the source cart) and is an approximation (docs/mock-behaviors.md).
 import Link from "next/link";
-import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { formatPrice } from "@/lib/catalog/format";
 import { lineMeta, useCart } from "@/lib/cart";
+import LinePersonalisation from "@/components/commerce/LinePersonalisation";
+import QuickView from "@/components/commerce/QuickView";
+import { OPEN_QUICK_VIEW_EVENT, type QuickViewRequest } from "@/components/Overlays";
+import { quickViewSource } from "@/lib/catalog/client";
+import type { QuickViewProduct } from "@/lib/catalog/types";
 import { SourceSvg } from "@/components/shell/SourceSvg";
 import { useShell } from "@/components/shell/StorefrontContext";
 
@@ -56,6 +62,7 @@ function CartDrawer({ active, close }: { active: boolean; close: () => void }) {
                   <div>
                     <Link href={`/products/${line.handle}`} onClick={close} className="cart-drawer-local__title">{line.title}</Link>
                     <p className="cart-drawer-local__meta">{lineMeta(line)}</p>
+                    <LinePersonalisation line={line} />
                     <div className="cart-drawer-local__row">
                       <div className="cart-drawer-local__qty">
                         <button type="button" aria-label="Kurangi jumlah" onClick={() => service.setQuantity(line.id, line.quantity - 1)}>−</button>
@@ -87,24 +94,59 @@ function CartDrawer({ active, close }: { active: boolean; close: () => void }) {
  *  drawer listens for it). The source theme closes all side panels from the same click. */
 export const CLICK_CAPTURE_EVENT = "shell:click-capture";
 
+type QuickViewState = { product: QuickViewProduct; variantId: number | null; key: number };
+
+/** Card quick view (source QuickView element): load the product, then open #Product-Drawer with its purchase form. */
+function useQuickView() {
+  const router = useRouter();
+  const [state, setState] = useState<QuickViewState | null>(null);
+  useEffect(() => {
+    let latest = 0;
+    const onOpen = (event: Event) => {
+      const { handle, variantId } = (event as CustomEvent<QuickViewRequest>).detail;
+      const request = ++latest;
+      quickViewSource
+        .load(handle)
+        .then((product) => { if (request === latest) setState({ product, variantId, key: request }); })
+        // Data unavailable: fall back to the product page (the pre-round-282 behaviour).
+        .catch(() => router.push(`/products/${handle}`));
+    };
+    window.addEventListener(OPEN_QUICK_VIEW_EVENT, onOpen);
+    return () => window.removeEventListener(OPEN_QUICK_VIEW_EVENT, onOpen);
+  }, [router]);
+  const close = useCallback(() => setState(null), []);
+  return { state, close };
+}
+
 export function ShellPanels({ cartOpen, closeCart }: { cartOpen: boolean; closeCart: () => void }) {
   const panels = useShell().sidePanels;
+  const quick = useQuickView();
+  const closeQuickView = quick.close;
+  const quickOpen = quick.state !== null;
+  const productDrawerRef = useRef<HTMLDivElement>(null);
+  // Body state for both panels (source: open-cc for the overlay, open-cart / open-quick-view per panel).
   useEffect(() => {
-    document.body.classList.toggle("open-cc", cartOpen);
+    const anyOpen = cartOpen || quickOpen;
+    document.body.classList.toggle("open-cc", anyOpen);
     document.body.classList.toggle("open-cart", cartOpen);
-    if (!cartOpen) return;
-    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") closeCart(); };
+    document.body.classList.toggle("open-quick-view", quickOpen);
+    if (!anyOpen) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") { closeCart(); closeQuickView(); } };
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
-  }, [cartOpen, closeCart]);
-  useEffect(() => () => { document.body.classList.remove("open-cc", "open-cart"); }, []);
+  }, [cartOpen, quickOpen, closeCart, closeQuickView]);
+  useEffect(() => () => { document.body.classList.remove("open-cc", "open-cart", "open-quick-view"); }, []);
+  // Source focuses the drawer's close control on open; the drawer itself (tabIndex -1) takes focus here.
+  useEffect(() => { if (quickOpen) productDrawerRef.current?.focus({ preventScroll: true }); }, [quickOpen, quick.state?.key]);
   return (
     <>
       <CartDrawer active={cartOpen} close={closeCart} />
-      <div className="side-panel product-drawer" id="Product-Drawer" tabIndex={-1}>
+      <div className={`side-panel product-drawer${quickOpen ? " active" : ""}`} id="Product-Drawer" tabIndex={-1} ref={productDrawerRef} role={quickOpen ? "dialog" : undefined} aria-modal={quickOpen || undefined} aria-label={quickOpen ? panels.product.title : undefined}>
         <div className="side-panel-inner">
-          <div className="side-panel-header"><div><h2>{panels.product.title}</h2><PanelClose /></div></div>
-          <div className="side-panel-content" id="Product-Drawer-Content" />
+          <div className="side-panel-header"><div><h2>{panels.product.title}</h2><PanelClose onClick={closeQuickView} /></div></div>
+          <div className="side-panel-content" id="Product-Drawer-Content">
+            {quick.state && <QuickView key={quick.state.key} product={quick.state.product} initialVariantId={quick.state.variantId} onClose={closeQuickView} />}
+          </div>
         </div>
       </div>
       <div className="side-panel search-drawer" tabIndex={-1} id="Search-Drawer">
@@ -126,7 +168,8 @@ export function ShellPanels({ cartOpen, closeCart }: { cartOpen: boolean; closeC
           </div>
         </div>
       </div>
-      <div className="click-capture" onClick={() => { closeCart(); window.dispatchEvent(new Event(CLICK_CAPTURE_EVENT)); }} />
+      {/* Source raises the overlay to z-index 90 while the quick view is open (QuickView.renderQuickview). */}
+      <div className="click-capture" style={quickOpen ? { zIndex: 90 } : undefined} onClick={() => { closeCart(); closeQuickView(); window.dispatchEvent(new Event(CLICK_CAPTURE_EVENT)); }} />
     </>
   );
 }

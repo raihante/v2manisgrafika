@@ -1,0 +1,44 @@
+/* Card quick view in #Product-Drawer (round 282, src/components/commerce/QuickView.tsx).
+   Source: reference/css/pdp/product.css (.thb-product-detail .product-quick-images*) and
+   reference/css/pdp/jsc-reset-styles.css (.navCell, .selectedNav, drawer button colours); panel position and size
+   (480 x 720 centred >= 1068px, full height below) come from shell-source.css. Geometry evidence:
+   reference/dom/r282-quickview/drawer-geometry.json. Deliberate deviations, marked below: the desktop photo column
+   scrolls (the source's height: fit-content!important lets a 3059px column overflow the 720px panel) and the mobile
+   thumbnail row shows every photo (source: first thumbnail only until its Flickity starts). */
+
+.product-drawer .thb-product-detail .product-quick-images--container { width: calc(100% + 60px); margin: 0 0 28px -30px; background: #fff; box-shadow: none; }
+.product-drawer .thb-product-detail .product-quick-images { height: 300px; padding: 10px; display: grid; grid-auto-flow: column; grid-auto-columns: max-content; overflow-x: auto; overflow-y: hidden; scroll-snap-type: x mandatory; scrollbar-width: none; }
+.product-drawer .thb-product-detail .product-quick-images::-webkit-scrollbar { display: none; }
+.product-drawer .thb-product-detail .product-quick-images__slide { height: 280px; display: inline-block; padding-right: 10px; scroll-snap-align: start; scroll-snap-stop: always; }
+.product-drawer .thb-product-detail .product-quick-images__slide .product-single__media-image { display: block; position: relative; height: auto; overflow: hidden; padding-bottom: 0; }
+.product-drawer .thb-product-detail .product-quick-images__slide img { position: static; display: block; width: auto; height: 280px; object-fit: contain; }
+
+/* Thumbnails (deviation: every photo shown, buttons scroll the strip). */
+.product-drawer .selectedNav { display: flex; gap: 10px; padding: 0 15px; overflow-x: auto; scrollbar-width: none; }
+.product-drawer .selectedNav .navCell { flex: 0 0 auto; width: 44px; margin: 0; padding: 0; border: 0; background: none; opacity: 0.7; cursor: pointer; display: block; visibility: visible; position: relative; }
+.product-drawer .selectedNav .navCell:hover,
+.product-drawer .selectedNav .navCell:focus-visible { opacity: 1; }
+.product-drawer .selectedNav .navCell img { display: block; width: 100%; height: auto; }
+
+@media only screen and (min-width: 1068px) {
+  /* Photo column outside the panel, on its left (source: absolute 420px column, translate(-100%) when .active). */
+  .product-drawer .thb-product-detail .product-quick-images--container { position: absolute; top: 0; left: 0; bottom: 0; width: 420px; height: auto; margin: 0; padding: 0 10px; z-index: -1; overflow-y: auto; scrollbar-width: thin; transform: translate(0); transition: transform .3s cubic-bezier(.104,.204,.492,1) .25s; }
+  .product-drawer .thb-product-detail .product-quick-images--container.active { transform: translate(-100%); }
+  .product-drawer .thb-product-detail .product-quick-images { height: auto; padding: 10px 0; grid-auto-flow: row; grid-auto-columns: 1fr; overflow: visible; scroll-snap-type: none; }
+  .product-drawer .thb-product-detail .product-quick-images__slide { padding: 0; height: auto; width: 100%; margin-bottom: 10px; }
+  .product-drawer .thb-product-detail .product-quick-images__slide:last-child { margin-bottom: 0; }
+  .product-drawer .thb-product-detail .product-quick-images__slide img { width: 100%; height: auto; }
+  .product-drawer .selectedNav { display: none; }
+}
+
+/* Information column. */
+/* The PDP rule `.template-product .thb-product-detail { margin-top: 40px }` (>= 768px, pdp-source.css) also matched the
+   drawer and left an ~82px gap under the "Pilih Opsi" header (owner 2026-11-19 "jaraknya terlalu jauh"). */
+.product-drawer .mg-quick-view .thb-product-detail { margin-top: 0; }
+.product-drawer .mg-quick-view .product-title-container { margin-bottom: 18px; }
+.product-drawer .mg-quick-view .product-title { display: block; margin: 0 0 6px; font-family: "Everett-regular", sans-serif; font-size: 1.8rem; line-height: 1.1; letter-spacing: -1px; color: #000; text-decoration: none; }
+.product-drawer .mg-quick-view .product-title:hover { text-decoration: underline; }
+
+/* Add-to-cart colours inside the drawer (source: body #wrapper .product-drawer .single-add-to-cart-button). */
+body #wrapper .product-drawer .single-add-to-cart-button { width: 100%; background: var(--atc-button-background, #05B3EF); border-color: var(--atc-button-background, #05B3EF); color: var(--atc-button-label, #fff); }
+body #wrapper .product-drawer .single-add-to-cart-button:hover { background: var(--atc-button-hover, #0499cc); border: 1px solid var(--atc-button-hover, #0499cc); color: var(--atc-button-label, #fff); }

@@ -28,18 +28,15 @@ export const ErrorIcon = () => (
   </svg>
 );
 
-// Swym wishlist heart (theme snippet: outline = not added, filled = added) plus the pixel-heart GIFs it animates with.
-// Heart paths copied verbatim from the source card markup (src/components/icons/source-icons.ts).
+// Swym wishlist heart (theme snippet: outline = not added, filled = added). Heart paths copied verbatim from the source
+// card markup (src/components/icons/source-icons.ts). Manis Grafika (round 277): the BTV red pixel-heart GIFs that floated
+// above the button are removed; the filled heart is pink with a short pop (src/app/brand.css).
 export function WishlistIcons() {
   return (
     <>
       <svg width="20" height="20" className="wishlist-not-added-icon" xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 47.33 44.03">
         <path className="cls-1" d={HEART_PATHS.heartOutline} />
       </svg>
-      <picture>
-        <img src="/assets/source/PIXEL_HEART.gif" alt="" className="heartfloat" />
-        <img src="/assets/source/HEART_FILL.gif" alt="" className="heartfill" />
-      </picture>
       <svg width="20" height="20" className="wishlist-added-icon" xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 47.33 44.03">
         <path className="cls-1" d={HEART_PATHS.heartFilled} />
       </svg>

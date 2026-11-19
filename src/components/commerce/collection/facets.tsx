@@ -4,7 +4,6 @@
 // state, and updateGridHeightcollection. Behaviour follows reference/js/r257-collection/facets.js and
 // reference/js/r256-header/jsc-reset-scripts.js (opencloseSort, changeSort, handleSortResize).
 import { Fragment, useEffect, useLayoutEffect, useRef, useState } from "react";
-import { createPortal } from "react-dom";
 import { Spinner } from "@/components/commerce/pdp/icons";
 import { CLICK_CAPTURE_EVENT } from "@/components/shell/ShellPanels";
 import type { CollectionCrumb, Facet, SortOption } from "@/lib/collections/types";
@@ -153,18 +152,15 @@ type DrawerProps = {
   onToggle: (name: string, value: string, checked: boolean) => void;
   onSort: (sort: string) => void;
   onClose: () => void;
-  /**
-   * The drawer is mounted on the client (search results). React warns when it creates the hyphen-less source tag
-   * <facetfiltersformmobile> itself, so the element is created with document.createElement and the drawer is rendered
-   * into it through a portal. Server-rendered drawers (collection) hydrate the tag without a warning.
-   */
-  clientMounted?: boolean;
 };
 
-export function FacetDrawer({ facets, hiddenInputs = [], sortOptions, sort, countText, countAsCrumbs, active, clearHref, isChecked, onToggle, onSort, onClose, clientMounted = false }: DrawerProps) {
+export function FacetDrawer({ facets, hiddenInputs = [], sortOptions, sort, countText, countAsCrumbs, active, clearHref, isChecked, onToggle, onSort, onClose }: DrawerProps) {
   const swatchStyle = (bg: string | null, image: string | null) => ({ "--bg-color": bg ?? undefined, "--option-color-image": image ? `url('${image}')` : undefined } as React.CSSProperties);
   return (
-    <DrawerHost clientMounted={clientMounted}>
+    // Host element: the BTV source used the hyphen-less tag <facetfiltersformmobile>, which React warns about whenever it
+    // creates it on the client (client-side navigation, hydration fallback). Round 278: renamed to a valid custom-element
+    // name; only the drawer height rule in collection-source.css / search-source.css targets it.
+    <facet-filters-form-mobile>
       <div className={`side-panel facet-drawer${active ? " active" : ""}`} id="Facet-Drawer">
         <div className="side-panel-inner">
           <div className="side-panel-header">
@@ -225,24 +221,8 @@ export function FacetDrawer({ facets, hiddenInputs = [], sortOptions, sort, coun
           </div>
         </div>
       </div>
-    </DrawerHost>
+    </facet-filters-form-mobile>
   );
-}
-
-/** <facetfiltersformmobile> host: rendered by React on the server, created imperatively (portal) on the client. */
-function DrawerHost({ clientMounted, children }: { clientMounted: boolean; children: React.ReactNode }) {
-  const anchor = useRef<HTMLTemplateElement>(null);
-  const [host, setHost] = useState<HTMLElement | null>(null);
-  useLayoutEffect(() => {
-    if (!clientMounted || !anchor.current?.parentNode) return;
-    const el = document.createElement("facetfiltersformmobile");
-    anchor.current.after(el);
-    setHost(el);
-    return () => el.remove();
-  }, [clientMounted]);
-  if (!clientMounted) return <facetfiltersformmobile>{children}</facetfiltersformmobile>;
-  // An inert <template> marks the position; the host element is inserted right after it.
-  return <><template ref={anchor} />{host && createPortal(children, host)}</>;
 }
 
 /** Debounced drawer submit (facets.js: 500 ms), then pushState and a smooth scroll to the grid. */

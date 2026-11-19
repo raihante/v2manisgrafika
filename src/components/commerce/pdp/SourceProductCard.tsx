@@ -5,6 +5,7 @@
 // or Notify Me, and info labels. Used by Pair It With and You May Also Like on the product page.
 import Link from "next/link";
 import { useState } from "react";
+import { openQuickView } from "@/components/Overlays";
 import type { ProductCard } from "@/lib/catalog/types";
 import { Spinner, WishlistIcons } from "./icons";
 
@@ -19,9 +20,9 @@ const Price = ({ text, compareAt = null }: { text: string; compareAt?: string | 
   </span>
 );
 
-type Props = { card: ProductCard; idPrefix: string; className?: string; style?: React.CSSProperties; ariaHidden?: boolean; onQuickView?: (card: ProductCard) => void };
+type Props = { card: ProductCard; idPrefix: string; className?: string; style?: React.CSSProperties; ariaHidden?: boolean };
 
-export default function SourceProductCard({ card, idPrefix, className = "", style, ariaHidden, onQuickView }: Props) {
+export default function SourceProductCard({ card, idPrefix, className = "", style, ariaHidden }: Props) {
   // Source hover nav: moving across the image shows secondary image i (ul.product-secondary-images-nav li.active).
   const [hoverIndex, setHoverIndex] = useState<number | null>(null);
   const [touched, setTouched] = useState(false);
@@ -73,7 +74,7 @@ export default function SourceProductCard({ card, idPrefix, className = "", styl
         {card.button === "notify" ? (
           <div className="swym-bid-pdp swym-bid-grid product-card--add-to-cart-button button">Kabari Saya</div>
         ) : (
-          <quick-view className="product-card--add-to-cart-button button" data-product-handle={card.handle ?? undefined} data-variant-id={card.variantId ?? undefined} tabIndex={-1} onClick={() => onQuickView?.(card)}>
+          <quick-view className="product-card--add-to-cart-button button" data-product-handle={card.handle ?? undefined} data-variant-id={card.variantId ?? undefined} tabIndex={-1} onClick={() => card.handle && openQuickView({ handle: card.handle, variantId: card.variantId })}>
             <span className="loading-overlay"><Spinner /></span>
             <span className="product-card--add-to-cart-text">Tambah Keranjang</span>
           </quick-view>

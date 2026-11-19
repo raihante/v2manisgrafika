@@ -70,7 +70,6 @@
 .co-choice:last-child{border-bottom:0}.co-choice.active{background:#f0f5ff;outline:1px solid #0060d4;outline-offset:-1px}
 .co-choice-text{flex:1;display:flex;flex-direction:column}.co-choice-text small{color:#777}
 .co-marks{display:flex;gap:6px}.co-marks img{height:22px;width:auto}
-.co-pay-fields{display:flex;flex-direction:column;gap:12px;padding:14px;background:#f6f6f6;border-bottom:1px solid #d9d9d9}
 .co-pay{margin:8px 0 12px;border-radius:5px;font-size:16px}
 .co-summary{padding:24px 20px;background:#f6f6f6}
 @media(min-width:1000px){.co-summary{padding:32px 40px}}

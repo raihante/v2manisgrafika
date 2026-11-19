@@ -103,7 +103,7 @@ export function toRailCard(card: RawCard): RailCard {
     swatchSuffix: card.swatchSuffix,
     labels: card.labels as CardLabel[],
     overlayLabels: card.overlayLabels as CardLabel[],
-    button: card.button === "notify" ? "notify" : "add",
+    button: card.button === "notify" || card.button === "options" ? card.button : "add",
     interaction: interactions[card.title] ?? null,
     quickAdd: { handle: summary.handle, price: summary.price, needsOptions: summary.needsOptions, minOrder: product.minOrder },
   };

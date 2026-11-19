@@ -92,6 +92,7 @@ export type ProductSummary = {
 export type PreviewCollection = { handle: string; title: string; products: ProductSummary[] };
 
 export type CardLabel = { className: string; text: string };
+export type CardButton = "add" | "options" | "notify";
 /** image = swatch photo (empty when the swatch is a plain colour chip); color = chip colour or "". */
 export type CardSwatch = { value: string; image: string; color?: string; active: boolean; soldOut: boolean; href: string };
 /** A product card as the source product-grid renders it (collections, search, Pair It With, You May Also Like). */
@@ -113,7 +114,8 @@ export type ProductCard = {
   swatchSuffix: string;
   overlayLabels: CardLabel[];
   labels: CardLabel[];
-  button: "add" | "notify";
+  /** add = add directly; options = open the product page ("Pilih Opsi"); notify = sold out ("Kabari Saya"). */
+  button: CardButton;
 };
 
 export type ProductVariant = { id: number; options: string[]; available: boolean; sku: string; labels: string[]; price: Money; compareAtPrice: Money | null };
@@ -124,6 +126,12 @@ export type ProductTab = { key: string; title: string; panelHtml: SafeHtml };
 export type MulticolumnColumn = { className: string; href: string; image: string | null; width: number | null; height: number | null; ratio: number; title: string; html: SafeHtml; button: { href: string; label: string } | null };
 /** Template multicolumn section (bags: "Compare ... Series"). */
 export type Multicolumn = { heading: string; columns: MulticolumnColumn[] };
+
+/**
+ * What the purchase form needs (options, variants, gallery per cover, minimum order, personalisation). Shared by the
+ * product page and the card quick-view drawer; served to the browser as /products/<handle>/quick-view.json.
+ */
+export type QuickViewProduct = Pick<ProductDetail, "handle" | "title" | "priceText" | "options" | "initial" | "variants" | "galleries" | "swatches" | "minOrder" | "personalisation">;
 
 /** Product page view model (source product template). */
 export type ProductDetail = {
@@ -157,7 +165,8 @@ export type RailCard = {
   swatchSuffix: string;
   labels: CardLabel[];
   overlayLabels: CardLabel[];
-  button: "add" | "notify";
+  /** add = add directly; options = open the product page ("Pilih Opsi"); notify = sold out ("Kabari Saya"). */
+  button: CardButton;
   /** Hover images and colour swatches captured from the source card. */
   interaction: { secondaryImages: string[]; variants: { label: string; image: string | null; thumbnail: string | null; soldOut: boolean }[] } | null;
   /** Quick add: products that need choices (options, personalisation) open the product page instead. */

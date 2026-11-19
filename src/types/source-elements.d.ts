@@ -23,7 +23,7 @@ declare module "react" {
       "facet-remove": SourceElement;
       "pagination-theme": SourceElement;
       "collapsible-row": SourceElement;
-      facetfiltersformmobile: SourceElement;
+      "facet-filters-form-mobile": SourceElement;
     }
   }
 }

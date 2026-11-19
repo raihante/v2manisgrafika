@@ -14,9 +14,14 @@ type Props = {
   onQuantity: (quantity: number) => void;
   answers: Record<string, string>;
   onAnswer: (key: string, value: string) => void;
+  /** Field key (or "qty") that blocked the last add to cart: marked invalid. */
+  invalidKey?: string | null;
+  /** Input id prefix; the quick-view drawer uses its own so the PDP and drawer forms never share ids. */
+  idPrefix?: string;
 };
 
-const FIELD_ID = "mg-personalisation";
+/** Default id prefix of the personalisation inputs (`<prefix>-qty`, `<prefix>-<field key>`). */
+export const PERSONALISATION_ID = "mg-personalisation";
 
 // Example text per field key, shown as placeholder (Yasin books are mostly ordered for a memorial or a wedding).
 const PLACEHOLDER: Record<string, string> = {
@@ -43,16 +48,16 @@ function PhotoField({ id, field, value, onAnswer }: { id: string; field: Persona
   );
 }
 
-export default function Personalisation({ config, minOrder, quantity, onQuantity, answers, onAnswer }: Props) {
+export default function Personalisation({ config, minOrder, quantity, onQuantity, answers, onAnswer, invalidKey = null, idPrefix = PERSONALISATION_ID }: Props) {
   const setQuantity = (value: number) => onQuantity(Math.max(minOrder, Number.isFinite(value) ? Math.round(value) : minOrder));
   return (
     <div className="mg-personalisation">
-      <div className="mg-field">
-        <label className="mg-label" htmlFor={`${FIELD_ID}-qty`}>Jumlah:<span className="mg-label__value">{quantity} pcs</span></label>
+      <div className={`mg-field${invalidKey === "qty" ? " mg-field--invalid" : ""}`}>
+        <label className="mg-label" htmlFor={`${idPrefix}-qty`}>Jumlah:<span className="mg-label__value">{quantity} pcs</span></label>
         <div className="mg-quantity-row">
           <div className="mg-quantity">
             <button type="button" aria-label="Kurangi jumlah" disabled={quantity <= minOrder} onClick={() => setQuantity(quantity - 1)}>−</button>
-            <input id={`${FIELD_ID}-qty`} type="number" inputMode="numeric" min={minOrder} step={1} value={quantity} onChange={(e) => onQuantity(Number(e.target.value))} onBlur={(e) => setQuantity(Number(e.target.value))} />
+            <input id={`${idPrefix}-qty`} type="number" inputMode="numeric" min={minOrder} step={1} value={quantity} aria-invalid={invalidKey === "qty" || undefined} onChange={(e) => onQuantity(Number(e.target.value))} onBlur={(e) => setQuantity(Number(e.target.value))} />
             <button type="button" aria-label="Tambah jumlah" onClick={() => setQuantity(quantity + 1)}>+</button>
           </div>
           <span className="mg-field__help">Minimal {minOrder} pcs</span>
@@ -65,10 +70,10 @@ export default function Personalisation({ config, minOrder, quantity, onQuantity
             Gratis {config.freePages} halaman. Tambahan {formatPrice(config.extraPagePrice)} per {config.extraPageUnit} halaman.
           </p>
           {config.fields.map((field) => {
-            const id = `${FIELD_ID}-${field.key}`;
+            const id = `${idPrefix}-${field.key}`;
             const value = answers[field.key] ?? "";
             return (
-              <div key={field.key} className={`mg-field mg-field--${field.type}`}>
+              <div key={field.key} className={`mg-field mg-field--${field.type}${invalidKey === field.key ? " mg-field--invalid" : ""}`}>
                 <label className="mg-field__label" htmlFor={id}>
                   {field.label}
                   {!field.required && <span className="mg-field__optional"> (opsional)</span>}
@@ -76,9 +81,9 @@ export default function Personalisation({ config, minOrder, quantity, onQuantity
                 {field.type === "photo" ? (
                   <PhotoField id={id} field={field} value={value} onAnswer={onAnswer} />
                 ) : field.type === "textarea" ? (
-                  <textarea id={id} rows={field.required ? 4 : 2} maxLength={field.maxLength ?? undefined} required={field.required} placeholder={PLACEHOLDER[field.key]} value={value} onChange={(e) => onAnswer(field.key, e.target.value)} />
+                  <textarea id={id} aria-invalid={invalidKey === field.key || undefined} rows={field.required ? 4 : 2} maxLength={field.maxLength ?? undefined} required={field.required} placeholder={PLACEHOLDER[field.key]} value={value} onChange={(e) => onAnswer(field.key, e.target.value)} />
                 ) : (
-                  <input id={id} type="text" maxLength={field.maxLength ?? undefined} required={field.required} placeholder={PLACEHOLDER[field.key]} value={value} onChange={(e) => onAnswer(field.key, e.target.value)} />
+                  <input id={id} aria-invalid={invalidKey === field.key || undefined} type="text" maxLength={field.maxLength ?? undefined} required={field.required} placeholder={PLACEHOLDER[field.key]} value={value} onChange={(e) => onAnswer(field.key, e.target.value)} />
                 )}
                 {(field.help || (field.type !== "photo" && field.maxLength)) && (
                   <div className="mg-field__meta">

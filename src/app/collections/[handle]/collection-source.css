@@ -290,7 +290,7 @@
 :where(.template-collection) .facets .thb-filter .thb-filter-title{border-bottom: 1px solid; justify-content: space-between; padding: 5px 0px 10px !important; text-transform: capitalize !important; letter-spacing: -0.5px !important; font-family: Everett-regular, sans-serif !important; font-weight: normal !important;}
 :where(.template-collection) .facets .thb-filter .thb-filter-title span{margin-right: 5px !important;}
 :where(.template-collection) .facets .thb-filter-content{padding-top: 25px !important;}
-:where(.template-collection) facetfiltersformmobile .facet-drawer .side-panel-content{overflow-y: auto; height: calc(-160px + 100vh);}
+:where(.template-collection) facet-filters-form-mobile .facet-drawer .side-panel-content{overflow-y: auto; height: calc(-160px + 100vh);}
 :where(.template-collection) .facet-drawer .facets .thb-filter-content input[type="checkbox"]{display: none;}
 :where(.template-collection) .side-panel-header h1 .facets__label{display: none;}
 :where(.template-collection) .collection-container .facets--drawer .facets--bar .active-facets{display: none !important;}

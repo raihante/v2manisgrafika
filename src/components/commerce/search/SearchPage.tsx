@@ -7,7 +7,7 @@
 // URL behaviour follows the source: the banner and header forms and the bar sort list submit natively (?q=, ?sort_by=),
 // pagination links are plain links, drawer changes push ?q=&options[prefix]=last&filter.*&sort_by=.
 import { Fragment, useEffect, useMemo, useRef, useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import SourceProductCard from "@/components/commerce/pdp/SourceProductCard";
 import { FacetBar, FacetDrawer, navigateWithSort, sortFilters, useDrawerSubmit, useEqualCardHeights, useFacetDrawer } from "@/components/commerce/collection/facets";
 import { SourceSvg } from "@/components/shell/SourceSvg";
@@ -34,7 +34,6 @@ export default function SearchPage({ meta }: { meta: SearchMeta }) {
 }
 
 function SearchView({ query: urlQuery, index, meta }: { query: SearchQuery; index: CollectionData | null; meta: SearchMeta }) {
-  const router = useRouter();
   const searchIcon = useShell().searchBar.submitIcon;
   // Drawer edits apply immediately to the controls and to the URL after the source's 500 ms debounce.
   const [query, setQuery] = useState(urlQuery);
@@ -56,7 +55,6 @@ function SearchView({ query: urlQuery, index, meta }: { query: SearchQuery; inde
     const filters = checked ? [...query.filters, { name, value }] : query.filters.filter((f) => !(f.name === name && f.value === value));
     applyDrawer({ ...query, page: 1, filters: sortFilters(result?.facets ?? [], filters) });
   };
-  const quickView = (card: ProductCard) => router.push(card.imageHref);
   const clearHref = `?${searchParamsFor({ ...query, sort: meta.sort.initial }, meta, { filters: false, sort: true })}`;
   const hidden = [{ name: "q", value: query.q }, ...meta.hiddenInputs];
 
@@ -112,7 +110,7 @@ function SearchView({ query: urlQuery, index, meta }: { query: SearchQuery; inde
                             />
                             <ul id="product-grid" data-id={meta.searchSectionId} className={meta.gridClass}>
                               {result.keys.map((key, i) => (
-                                <li key={key} className="column"><SourceProductCard card={result.cards[key]} idPrefix={`${meta.searchSectionId}-${i + 1}`} onQuickView={quickView} /></li>
+                                <li key={key} className="column"><SourceProductCard card={result.cards[key]} idPrefix={`${meta.searchSectionId}-${i + 1}`} /></li>
                               ))}
                             </ul>
                             <Pagination query={query} total={result.totalPages} meta={meta} />
@@ -137,7 +135,6 @@ function SearchView({ query: urlQuery, index, meta }: { query: SearchQuery; inde
               onToggle={toggleFilter}
               onSort={(sort) => applyDrawer({ ...query, page: 1, sort })}
               onClose={() => setDrawerOpen(false)}
-              clientMounted
             />
           </>
         )}

@@ -23,9 +23,6 @@ export const SHIPPING_METHODS = [
   { id: "ekspres", label: "Ekspres", eta: "1–2 hari kerja setelah produksi", price: 50000 },
 ] as const;
 
-// MOCK: Komerce Payment API virtual-account banks (docs read 2026-11-15); the real list comes from its /methods endpoint.
-export const VA_BANKS = ["BCA", "BNI", "BRI", "Mandiri", "Permata"] as const;
-
 // The 38 provinces of Indonesia (since the 2022 Papua expansion), alphabetical.
 export const PROVINCES = [
   "Aceh", "Bali", "Banten", "Bengkulu", "DI Yogyakarta", "DKI Jakarta", "Gorontalo", "Jambi", "Jawa Barat", "Jawa Tengah",

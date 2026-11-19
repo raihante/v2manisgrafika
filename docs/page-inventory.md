@@ -18,10 +18,10 @@ The BTV route tables below are the layout/template history. Current content (all
 | `/pages/about-us` | Tentang Kami (MG copy, photos, 4 feature blocks) | `scripts/manisgrafika/build-pages.mjs` |
 | `/pages/faqs` | 5 manisgrafika.id Q&A + 4 categories written from MG facts | same |
 | `/pages/contact-us` | WhatsApp, email, workshop + map link, consumer-complaints contact; mock form | same |
-| `/pages/terms-of-service`, `/pages/privacy-policy`, `/pages/returns`, `/pages/kebijakan-pengiriman` (was `/pages/shipping-rate`, renamed round 269) | Indonesian **draft** policies with a visible draft notice | same |
+| `/pages/terms-of-service`, `/pages/privacy-policy`, `/pages/returns`, `/pages/kebijakan-pengiriman` (was `/pages/shipping-rate`, renamed round 269) | Indonesian policies, reviewed by the owner 2026-11-19 (draft notice removed; each opens with "Terakhir diperbarui") | same |
 | `/pages/wishlist` | Indonesian empty-state mock | same |
 | `/blogs`, `/blogs/<3 slugs>` | 3 categories, 3 "[Contoh]" placeholder articles; the 64 BTV article routes are removed (local 404) | same |
-| `/search`, `/cart`, `/checkout`, `/checkout/thank-you`, 404 | Indonesian UI (round 271): search copy and sort labels (`src/data/search.json`, hand-edited; the BTV `scripts/build-search-data.mjs` must not be re-run), cart, checkout (Virtual Account / QRIS mock, 38 provinces, Reguler / Ekspres placeholder rates), thank-you, 404 | - |
+| `/search`, `/cart`, `/checkout`, `/checkout/thank-you`, 404 | Indonesian UI (round 271): search copy and sort labels (`src/data/search.json`, hand-edited; the BTV `scripts/build-search-data.mjs` must not be re-run), cart, checkout (QRIS-only mock, 38 provinces, Reguler / Ekspres placeholder rates), thank-you, 404 | - |
 
 **Route paths stay English** (round 272, owner 2026-11-18): Indonesian paths (`/koleksi`, `/produk`, `/halaman/...`) were tried and reverted at the owner's request ("ganti inggris saja deh untuk linknya"). Page content is Indonesian; URLs keep the Shopify-style English paths.
 
@@ -122,9 +122,9 @@ Owner-approved fast preview. Styled from homepage tokens only; source pages for 
 | Source route | Indonesian alternative | Template | Capture role | Evidence |
 |---|---|---|---|---|
 | `/` | `/id` | Home | Inventory only | homepage-dom, sitemap |
-| `/account/login` | `-` | Protected/account | Inventory only | homepage-dom |
+| `/account/login` | `-` | Protected/account | Mock UI built round 276 (rebranded, not visually verified) | homepage-dom; `reference/scripts/r276-cart-perso/account.mjs` |
 | `/account/orders` | `-` | Protected/account | Inventory only | compiled-js, HTTP 200 |
-| `/account/register` | `-` | Protected/account | Inventory only | homepage-dom |
+| `/account/register` | `-` | Protected/account | Mock UI built round 276 (rebranded, not visually verified) | homepage-dom; `reference/scripts/r276-cart-perso/account.mjs` |
 | `/cart` | `-` | Commerce/state | Inventory only | homepage-dom |
 | `/checkout` | `-` | Commerce/state | Inventory only | compiled-js, HTTP 403 |
 | `/search` | `-` | Commerce/state | Inventory only | compiled-js, HTTP 200 |

@@ -4,16 +4,12 @@
 // (class names, nesting and the hidden-but-mounted parts) so the ported source CSS in pdp-source.css applies at every
 // breakpoint. Behaviour (Flickity galleries, variant selection, tabs, sticky bar) is reimplemented in React.
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { openCartDrawer } from "@/components/Overlays";
-import { NOTIFY_ICON as notifyIcon } from "@/components/icons/source-icons";
 import { RichText } from "@/components/shared/RichText";
-import { localCart, type CartPersonalisation } from "@/lib/cart";
-import { formatPrice } from "@/lib/catalog/format";
 import { fillSafeHtml } from "@/lib/html/safe-html";
 import type { ProductCard, ProductDetail, ProductVariant } from "@/lib/catalog/types";
 import Personalisation from "./pdp/Personalisation";
+import { AddToCartHolder, Price, VariantFieldsets, usePurchase } from "./pdp/purchase";
 import { ArrowIcon, ErrorIcon, Spinner, TextButtonArrow, ZoomIcon } from "./pdp/icons";
 import PhotoSwipe from "./pdp/PhotoSwipe";
 import SourceProductCard, { WishlistButton } from "./pdp/SourceProductCard";
@@ -23,21 +19,6 @@ import { useFlickity } from "./pdp/useFlickity";
 const SECTION = "template--22834210603287__main-product";
 const RECS = "template--22834210603287__product-recommendations";
 const PAIR_AUTOPLAY_MS = 2000; // jsc-reset-scripts.js applyComplementaryFlickity: autoPlay 2e3
-
-const parsePrice = (text: string) => Number(text.replace(/[^0-9]/g, "")) || 0;
-
-// Sale price: the regular price struck through before the current price (Manis Grafika compare-at price).
-const Price = ({ text, compareAt = null }: { text: string; compareAt?: string | null }) => (
-  <span className={`price${compareAt ? " price--on-sale" : ""}`}>
-    {compareAt && <del className="price__compare"><span className="amount">{compareAt}</span></del>}
-    <span className={`amount${compareAt ? " price__sale" : ""}`}> {text}</span>
-    <small className="unit-price  hidden"><span></span><span className="unit-price-separator">/</span><span></span></small>
-  </span>
-);
-
-const NotifyIcon = () => (
-  <svg className="notify-icon" xmlns="http://www.w3.org/2000/svg" viewBox={notifyIcon.viewBox}>{notifyIcon.paths.map((d) => <path key={d.slice(0, 24)} className="cls-1" d={d} />)}</svg>
-);
 
 // Swym injects its count bar inside the wishlist button after load; a nested <button> cannot be rendered by React
 // (invalid nesting breaks hydration), so it is appended to the DOM the same way, once, after mount.
@@ -52,92 +33,15 @@ function useSwymBar(ref: React.RefObject<HTMLDivElement | null>) {
   }, [ref]);
 }
 
-type OptionsProps = { product: ProductDetail; selected: string[]; choose: (index: number, value: string) => void; suffix?: string; colourIndex: number };
-
-// variant-selects > .variations > fieldset per option, radios + labels exactly as the theme renders them (colour
-// categories such as Classic / Seasonal get their own label + swatch group; the label value shows only in the
-// group that holds the selected colour).
-function VariantFieldsets({ product, selected, choose, suffix = "", colourIndex }: OptionsProps) {
-  return (
-    <div className="variations">
-      {product.options.map((option, index) => {
-        const isColour = index === colourIndex;
-        const disabled = (value: string) => !product.variants.some((v) => v.available && v.options.every((o, i) => (i === index ? o === value : o === selected[i])));
-        const radio = (value: string) => {
-          const k = option.values.indexOf(value);
-          const id = `${SECTION}-${index + 1}-${option.ids[k] ?? k}${suffix}`;
-          return [
-            <input key={`i-${value}`} type="radio" id={id} name={`${option.name}${suffix}`} value={value} form={`product-form-${SECTION}`} checked={selected[index] === value} className={disabled(value) ? "is-disabled" : undefined} onChange={() => choose(index, value)} />,
-            isColour ? (
-              <label key={`l-${value}`} className="" htmlFor={id} style={{ "--option-color": option.colors[k] || undefined, "--option-color-image": product.swatches[value] ? `url('${product.swatches[value]}')` : undefined } as React.CSSProperties}>{value}</label>
-            ) : (
-              <label key={`l-${value}`} htmlFor={id}><span>{value}</span></label>
-            ),
-          ];
-        };
-        if (!isColour) {
-          return (
-            <fieldset key={option.name} className="product-form__input product-form__input--block" data-index={`option${index + 1}`} data-handle={option.handle}>
-              <div className="form__label">{option.name}: <span className="form__label__value">{selected[index]}</span></div>
-              {option.values.map(radio)}
-            </fieldset>
-          );
-        }
-        const colourClass = `product-form__input product-form__input--color product-form__input--color--${suffix ? "" : "regular"}${option.groups ? " product-form__input--color-categorized" : ""}`;
-        return (
-          <fieldset key={option.name} className={colourClass} data-use-images={suffix ? "" : "false"} data-index={`option${index + 1}`} data-handle={option.handle}>
-            {option.groups ? option.groups.map((group) => (
-              <div key={group.name} className="product-form__color-category" data-color-category={group.name}>
-                <div className="form__label form__label--color-category">{group.name} <span className="form__label__value">{group.values.includes(selected[index]) ? selected[index] : ""}</span></div>
-                <div className="product-form__color-category-swatches">{group.values.map(radio)}</div>
-              </div>
-            )) : (
-              <>
-                {/* MG: the WooCommerce colour attribute is named "Variant", so the legend says "Cover:" (round 274). */}
-                <div className="form__label">Cover: <span className="form__label__value">{selected[index]}</span></div>
-                {option.values.map(radio)}
-              </>
-            )}
-          </fieldset>
-        );
-      })}
-    </div>
-  );
-}
-
-function AddToCartHolder({ variant, onAdd, sticky = false }: { variant: ProductVariant | undefined; onAdd: () => void; sticky?: boolean }) {
-  const available = !!variant?.available;
-  return (
-    <div className="add_to_cart_holder ">
-      <button type="submit" name="add" id={sticky ? "AddToCartSticky" : "AddToCart"} className="single-add-to-cart-button button" style={available ? undefined : { display: "none" }} onClick={(e) => { e.preventDefault(); onAdd(); }}>
-        <span className="single-add-to-cart-button--text">Tambah Keranjang</span>
-        <span className="loading-overlay"><Spinner /></span>
-      </button>
-      {!sticky && (
-        <div className="jsc-preorder-notice" style={{ display: "none" }}>
-          <p className="jsc-preorder-notice__ship">Dikirim mulai akhir bulan.</p>
-          <p className="jsc-preorder-notice__checkout">Produk pre-order dan produk reguler tidak dapat dibeli bersamaan.</p>
-        </div>
-      )}
-      <div className="jsc-preorder-limit-notice form-notification error" style={{ display: "none" }} role="alert"><ErrorIcon /><span>Produk pre-order ini sudah tidak tersedia.</span></div>
-      {/* MOCK back-in-stock (docs/mock-behaviors.md "Notify Me"): shown for sold-out variants, no subscription is sent. */}
-      <div className="swym-bid-pdp swym-bid-grid product-card--add-to-cart-button button" style={available ? { display: "none" } : undefined}>Kabari Saya<NotifyIcon /></div>
-      {!sticky && <div className="sharethis-inline-share-buttons"></div>}
-      {!sticky && (
-        <div className="swym-button-bar swym-isa-button-bar swym-inject swym-bbar-nomargin"><div className="swym-btn-container swym-inject" data-position="default"><button type="button" className="swym-button swym-add-to-watchlist swym-inject swym-text swym- swym-sbisa-v2 swym-loaded" style={{ display: "none" }} data-swaction="addToWatchlist" aria-label="HABIS - KABARI SAYA SAAT TERSEDIA"><span className="swym-watchlist-cta">HABIS - KABARI SAYA SAAT TERSEDIA</span></button></div></div>
-      )}
-    </div>
-  );
-}
-
 export default function ProductPage({ product }: { product: ProductDetail }) {
-  const router = useRouter();
-  // Swatch option: BTV "Colour", Manis Grafika "Cover".
-  const colourIndex = product.options.findIndex((o) => /^(colou?r|cover)$/i.test(o.name));
-  const [selected, setSelected] = useState<string[]>(product.initial);
-  const [quantity, setQuantity] = useState(product.minOrder);
-  const [answers, setAnswers] = useState<Record<string, string>>({});
-  const [formError, setFormError] = useState("");
+  const [stickyOpen, setStickyOpen] = useState(false);
+  const purchase = usePurchase(product, {
+    // Source writes the variant back to the URL on every option change.
+    onVariantChange: (v) => window.history.replaceState(null, "", `?variant=${v.id}`),
+    // The sticky bar has no personalisation fields: close it before the missing field is revealed.
+    onBlocked: () => setStickyOpen(false),
+  });
+  const { colourIndex, selected, setSelected, choose, variant, priceText, compareAtText, colour, images, quantity, setQuantity, answers, answer, formError, invalidKey, missingField, addToBag } = purchase;
   const [tab, setTab] = useState(0);
   const [copied, setCopied] = useState(false);
   const [lightbox, setLightbox] = useState<number | null>(null);
@@ -146,17 +50,10 @@ export default function ProductPage({ product }: { product: ProductDetail }) {
   const navTouched = true;
   const [narrow, setNarrow] = useState(false); // window width <= 481 (thumbnail Flickity threshold)
   const [stickyVisible, setStickyVisible] = useState(false);
-  const [stickyOpen, setStickyOpen] = useState(false);
   const mediaRef = useRef<HTMLDivElement>(null);
   const panelsRef = useRef<HTMLDivElement>(null);
   const atcRef = useRef<HTMLDivElement>(null);
   useSwymBar(mediaRef);
-
-  const variant = product.variants.find((v) => v.options.every((value, i) => value === selected[i]));
-  const priceText = variant?.price ? formatPrice(variant.price) : product.priceText;
-  const compareAtText = variant?.compareAtPrice ? formatPrice(variant.compareAtPrice) : null;
-  const colour = colourIndex >= 0 ? selected[colourIndex] : null;
-  const images = useMemo(() => (product.galleries.find((g) => g.colour === colour) ?? product.galleries[0])?.images ?? [], [colour, product.galleries]);
 
   // `selected` / `select` are destructured: the returned objects also hold refs, which must not be read during render.
   const { selected: slide, select: selectGallery, rootRef: galleryRootRef, viewportRef: galleryViewportRef, sliderRef: gallerySliderRef, ...gallery } = useFlickity({ count: images.length, wrapAround: true, resetKey: colour });
@@ -176,15 +73,8 @@ export default function ProductPage({ product }: { product: ProductDetail }) {
   useEffect(() => {
     const id = Number(new URLSearchParams(window.location.search).get("variant"));
     const fromUrl = product.variants.find((v) => v.id === id);
-    if (fromUrl) setSelected(fromUrl.options); // eslint-disable-line react-hooks/set-state-in-effect -- one-time sync from the URL on mount
-  }, [product.variants]);
-  const choose = (index: number, value: string) => {
-    const next = selected.map((v, i) => (i === index ? value : v));
-    setSelected(next);
-    const match = product.variants.find((v) => v.options.every((o, i) => o === next[i]));
-    if (match) window.history.replaceState(null, "", `?variant=${match.id}`);
-  };
-
+    if (fromUrl) setSelected(fromUrl.options); // one-time sync from the URL on mount
+  }, [product.variants, setSelected]);
   // Sticky add-to-cart appears once the main add-to-cart button has scrolled above the viewport.
   useEffect(() => {
     const el = atcRef.current;
@@ -206,31 +96,6 @@ export default function ProductPage({ product }: { product: ProductDetail }) {
     });
   };
 
-  // MOCK add to bag (docs/mock-behaviors.md "Cart", "Personalisation"): local cart service, then the cart drawer opens.
-  const addToBag = () => {
-    if (!variant?.available) return;
-    const fields = product.personalisation?.fields ?? [];
-    const missing = fields.find((f) => f.required && !answers[f.key]?.trim());
-    if (missing) {
-      setFormError(`Mohon isi "${missing.label}".`);
-      return;
-    }
-    if (quantity < product.minOrder) {
-      setFormError(`Minimal pembelian ${product.minOrder} pcs.`);
-      return;
-    }
-    setFormError("");
-    const personalisation: CartPersonalisation[] = fields.filter((f) => answers[f.key]?.trim()).map((f) => ({ key: f.key, label: f.label, value: answers[f.key].trim() }));
-    localCart.add({
-      handle: product.handle, variantId: String(variant.id), title: product.title, image: images[0]?.thumb ?? "",
-      price: variant.price || parsePrice(product.priceText),
-      options: product.options.map((o, i) => ({ name: o.name, value: selected[i] })),
-      personalisation, minQuantity: product.minOrder,
-    }, quantity);
-    openCartDrawer();
-  };
-  // PREVIEW quick view: the source opens a product drawer; until that drawer exists the card opens its product page.
-  const quickView = (card: ProductCard) => router.push(card.imageHref);
 
   const copyLink = () => {
     navigator.clipboard?.writeText(window.location.href).catch(() => {});
@@ -334,18 +199,18 @@ export default function ProductPage({ product }: { product: ProductDetail }) {
                       <input type="hidden" name="quantity" form={`product-form-${SECTION}`} value={quantity} />
                     </div>
                     <variant-selects id={`variant-selects-${SECTION}`} className="no-js-hidden" data-update-url="true" data-section={SECTION} data-url={`/products/${product.handle}`}>
-                      <VariantFieldsets product={product} selected={selected} choose={choose} colourIndex={colourIndex} />
+                      <VariantFieldsets product={product} selected={selected} choose={choose} colourIndex={colourIndex} section={SECTION} />
                     </variant-selects>
                     <div ref={atcRef}>
                       <product-form className="product-form" data-section={SECTION} data-hide-errors="false">
                         <div className="product-form__error-message-wrapper form-notification error" role="alert" hidden><ErrorIcon /><span className="product-form__error-message"></span></div>
                         <form id={`product-form-${SECTION}`} className="form" noValidate data-type="add-to-cart-form" onSubmit={(e) => { e.preventDefault(); addToBag(); }}>
                           <input type="hidden" className="variant-selected-form" name="id" value={variant?.id ?? ""} />
-                          <Personalisation config={product.personalisation} minOrder={product.minOrder} quantity={quantity} onQuantity={setQuantity} answers={answers} onAnswer={(key, value) => setAnswers((a) => ({ ...a, [key]: value }))} />
+                          <Personalisation config={product.personalisation} minOrder={product.minOrder} quantity={quantity} onQuantity={setQuantity} answers={answers} onAnswer={answer} invalidKey={invalidKey} />
                           {formError && <div className="form-notification error mg-form-error" role="alert"><ErrorIcon /><span>{formError}</span></div>}
                           <div className="product-add-to-cart-container">
                             <div className="form-notification error" style={{ display: "none" }}></div>
-                            <AddToCartHolder variant={variant} onAdd={addToBag} />
+                            <AddToCartHolder variant={variant} onAdd={addToBag} buttonId="AddToCart" full />
                           </div>
                         </form>
                       </product-form>
@@ -371,7 +236,7 @@ export default function ProductPage({ product }: { product: ProductDetail }) {
                             <div className="flickity-viewport" ref={pairViewportRef} style={pair.viewportStyle} {...pair.viewportHandlers}>
                               <div className="flickity-slider" ref={pairSliderRef}>
                                 {product.pairItWith.map((card, i) => (
-                                  <SourceProductCard key={card.href} card={card} idPrefix={`${SECTION}-1`} className={`flickity-cell${i === pairSelected ? " is-selected" : ""}`} ariaHidden={i === pairSelected ? undefined : true} onQuickView={quickView} />
+                                  <SourceProductCard key={card.href} card={card} idPrefix={`${SECTION}-1`} className={`flickity-cell${i === pairSelected ? " is-selected" : ""}`} ariaHidden={i === pairSelected ? undefined : true} />
                                 ))}
                               </div>
                             </div>
@@ -403,13 +268,13 @@ export default function ProductPage({ product }: { product: ProductDetail }) {
             </button>
             <div className={`product-add-to-cart-sticky--content${stickyOpen ? " active" : ""}`}>
               <variant-selects id={`variant-selects-${SECTION}--sticky`} className="no-js-hidden variant-selects--sticky" data-section={SECTION} data-url={`/products/${product.handle}`} data-sticky="1">
-                <VariantFieldsets product={product} selected={selected} choose={choose} colourIndex={colourIndex} suffix="--sticky" />
+                <VariantFieldsets product={product} selected={selected} choose={choose} colourIndex={colourIndex} section={SECTION} suffix="--sticky" />
               </variant-selects>
               <product-form className="product-form" data-section={SECTION}>
                 <div className="product-form__error-message-wrapper form-notification error" role="alert" hidden><ErrorIcon /><span className="product-form__error-message"></span></div>
                 <div className="product-add-to-cart-container">
                   <div className="form-notification error" style={{ display: "none" }}></div>
-                  <AddToCartHolder variant={variant} onAdd={addToBag} sticky />
+                  <AddToCartHolder variant={variant} onAdd={addToBag} buttonId="AddToCartSticky" label={missingField ? "Isi Redaksi" : undefined} />
                 </div>
               </product-form>
             </div>
@@ -460,7 +325,7 @@ export default function ProductPage({ product }: { product: ProductDetail }) {
                 <div className="section-header section-header-left--true"><div className="section-header--content"><h2 className="h3">Mungkin Anda Suka</h2></div></div>
                 <ul className="products collection row small-up-1 medium-up-2 large-up-6 no-padding">
                   {product.related.map((card, i) => (
-                    <li key={card.href} className="columns"><SourceProductCard card={card} idPrefix={`${RECS}-${i + 1}`} onQuickView={quickView} /></li>
+                    <li key={card.href} className="columns"><SourceProductCard card={card} idPrefix={`${RECS}-${i + 1}`} /></li>
                   ))}
                 </ul>
               </product-recommendations>

@@ -9,9 +9,9 @@
  "accent": "rgb(43, 88, 101)",
  "blocks": [
   {
-   "type": "callout",
-   "title": "Draf",
-   "html": "<p>Halaman ini adalah draf kebijakan standar e-commerce Indonesia yang disiapkan tim pengembang situs dan <strong>belum ditinjau</strong> oleh Manis Grafika maupun penasihat hukum. Isinya dapat berubah. Terakhir diperbarui: 17 November 2026.</p>"
+   "type": "richText",
+   "variant": "body",
+   "html": "<p>Terakhir diperbarui: 17 November 2026.</p>"
   },
   {
    "type": "richText",

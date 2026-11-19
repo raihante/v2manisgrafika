@@ -221,7 +221,7 @@ const footer = {
     { text: "Tokopedia", icon: "/assets/social-icons/tokopedia.png", href: "https://www.tokopedia.com/archive-manisgrafika-1683333075" },
   ],
   copyright: "© Manis Grafika",
-  paymentsTitle: "Manis Grafika menerima",
+  paymentsTitle: "Pembayaran Manis Grafika",
 };
 
 const homepage = readJson("src/data/homepage.json");

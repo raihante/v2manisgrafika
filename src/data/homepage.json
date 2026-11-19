@@ -5,30 +5,35 @@
  "categoryHero": [
   {
    "label": "Terbaru",
+   "href": "/collections/new-in",
    "image": "/assets/manisgrafika/home/hero-terbaru-desktop.webp",
    "mobileImage": "/assets/manisgrafika/home/hero-terbaru-mobile.webp",
    "sourceImage": "Instagram @manisgrafika https://www.instagram.com/manisgrafika/p/DXofntKAcXo/ (image 19)"
   },
   {
    "label": "Hardcover",
+   "href": "/collections/hardcover",
    "image": "/assets/manisgrafika/home/hero-hardcover-desktop.webp",
    "mobileImage": "/assets/manisgrafika/home/hero-hardcover-mobile.webp",
    "sourceImage": "Instagram @manisgrafika https://www.instagram.com/manisgrafika/p/DW0_YsFAfY_/ (image 28)"
   },
   {
    "label": "Dompet",
+   "href": "/collections/dompet",
    "image": "/assets/manisgrafika/home/hero-dompet-desktop.webp",
    "mobileImage": "/assets/manisgrafika/home/hero-dompet-mobile.webp",
    "sourceImage": "Instagram @manisgrafika https://www.instagram.com/manisgrafika/p/DW6KIm4AWAv/ (image 24)"
   },
   {
    "label": "Mika",
+   "href": "/collections/mika",
    "image": "/assets/manisgrafika/home/hero-mika-desktop.webp",
    "mobileImage": "/assets/manisgrafika/home/hero-mika-mobile.webp",
    "sourceImage": "Instagram @manisgrafika https://www.instagram.com/manisgrafika/p/DXofntKAcXo/ (image 17)"
   },
   {
    "label": "Tasbih",
+   "href": "/collections/tasbih",
    "image": "/assets/manisgrafika/home/hero-tasbih-desktop.webp",
    "mobileImage": "/assets/manisgrafika/home/hero-tasbih-mobile.webp",
    "sourceImage": "Instagram @manisgrafika https://www.instagram.com/manisgrafika/p/DW0_YsFAfY_/ (image 29)"
@@ -74,7 +79,7 @@
      "swatchSuffix": "",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Hardcover Bludru – Manis 11",
@@ -87,7 +92,7 @@
      "swatchSuffix": "",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Hardcover Bludru – Manis 10",
@@ -100,7 +105,7 @@
      "swatchSuffix": "",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Hardcover – Manis 09",
@@ -113,7 +118,7 @@
      "swatchSuffix": "",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Hardcover – Manis 08",
@@ -126,7 +131,7 @@
      "swatchSuffix": "",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Hardcover – Manis 07",
@@ -139,7 +144,7 @@
      "swatchSuffix": "",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Hardcover – Manis 06",
@@ -152,7 +157,7 @@
      "swatchSuffix": "",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Hardcover – Manis 05",
@@ -165,7 +170,7 @@
      "swatchSuffix": "",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Hardcover – Manis 04",
@@ -178,7 +183,7 @@
      "swatchSuffix": "",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Hardcover – Manis 03",
@@ -191,7 +196,7 @@
      "swatchSuffix": "",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Hardcover – Manis 02",
@@ -204,7 +209,7 @@
      "swatchSuffix": "",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Hardcover – Manis 01",
@@ -217,7 +222,7 @@
      "swatchSuffix": "",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     }
    ]
   },
@@ -237,7 +242,7 @@
      "swatchSuffix": "",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Hardcover Bludru – Manis 11",
@@ -250,7 +255,7 @@
      "swatchSuffix": "",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Hardcover Bludru – Manis 10",
@@ -263,7 +268,7 @@
      "swatchSuffix": "",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Hardcover – Manis 09",
@@ -276,7 +281,7 @@
      "swatchSuffix": "",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Hardcover – Manis 08",
@@ -289,7 +294,7 @@
      "swatchSuffix": "",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Hardcover – Manis 07",
@@ -302,7 +307,7 @@
      "swatchSuffix": "",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Hardcover – Manis 06",
@@ -315,7 +320,7 @@
      "swatchSuffix": "",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Hardcover – Manis 05",
@@ -328,7 +333,7 @@
      "swatchSuffix": "",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Hardcover – Manis 04",
@@ -341,7 +346,7 @@
      "swatchSuffix": "",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Hardcover – Manis 03",
@@ -354,7 +359,7 @@
      "swatchSuffix": "",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Hardcover – Manis 02",
@@ -367,7 +372,7 @@
      "swatchSuffix": "",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Hardcover – Manis 01",
@@ -380,7 +385,7 @@
      "swatchSuffix": "",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     }
    ]
   },
@@ -400,7 +405,7 @@
      "swatchSuffix": "+ 4 Cover",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Shaaira Series",
@@ -413,7 +418,7 @@
      "swatchSuffix": "+ 1 Cover",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Soraya Series",
@@ -426,7 +431,7 @@
      "swatchSuffix": "+ 5 Cover",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Gamilia Series",
@@ -439,7 +444,7 @@
      "swatchSuffix": "+ 7 Cover",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Lamia Series",
@@ -452,7 +457,7 @@
      "swatchSuffix": "+ 5 Cover",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Noura Series",
@@ -465,7 +470,7 @@
      "swatchSuffix": "+ 3 Cover",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Zayna Series",
@@ -478,7 +483,7 @@
      "swatchSuffix": "+ 7 Cover",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Dayana Series",
@@ -491,7 +496,7 @@
      "swatchSuffix": "+ 5 Cover",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Kayla Series",
@@ -504,7 +509,7 @@
      "swatchSuffix": "+ 7 Cover",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Ceisya Series",
@@ -517,7 +522,7 @@
      "swatchSuffix": "+ 4 Cover",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     },
     {
      "title": "Ataya Series",
@@ -530,7 +535,7 @@
      "swatchSuffix": "+ 6 Cover",
      "labels": [],
      "overlayLabels": [],
-     "button": "add"
+     "button": "options"
     }
    ]
   }
@@ -723,6 +728,6 @@
    }
   ],
   "copyright": "© Manis Grafika",
-  "paymentsTitle": "Manis Grafika menerima"
+  "paymentsTitle": "Pembayaran Manis Grafika"
  }
 }

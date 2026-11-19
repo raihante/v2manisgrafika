@@ -5,10 +5,9 @@ import Image from "next/image";
 import type { CSSProperties } from "react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { NOTIFY_ICON as notifyIcon } from "@/components/icons/source-icons";
 import { localCart } from "@/lib/cart";
-import { InstagramLightbox, openCartDrawer } from "@/components/Overlays";
+import { InstagramLightbox, openCartDrawer, openQuickView } from "@/components/Overlays";
 import type { RailCard } from "@/lib/catalog/types";
 import type { HeroSlide, HomepageData, ProductRailData, PromotionSlide, SocialSection } from "@/lib/storefront/types";
 
@@ -154,13 +153,14 @@ function CategoryHero({ slides }: { slides: HeroSlide[] }) {
 
   return (
     <section className="category-hero">
-      <div className="category-links featured-collection-list--inner--content">{slides.map((item, index) => <button
-        type="button"
+      {/* Source: hover switches the slide, click opens the collection (jscOpenMenu(this, title, 'true', url) -> location.href). */}
+      <div className="category-links featured-collection-list--inner--content">{slides.map((item, index) => <Link
+        href={item.href}
         className={`featured-collection-list--button featured-collection-list--button-${index + 1}${index === activeTitle ? " active" : ""}`}
         key={item.label}
         onMouseEnter={() => selectIndex(index)}
-        onClick={() => selectIndex(index)}
-      ><span className="h1-large">{item.label}</span>{index < slides.length - 1 && <span className="slash-fea-col h1-large">/</span>}</button>)}</div>
+        onFocus={() => selectIndex(index)}
+      ><span className="h1-large">{item.label}</span>{index < slides.length - 1 && <span className="slash-fea-col h1-large" aria-hidden="true">/</span>}</Link>)}</div>
       <div
         ref={bgRef}
         className="featured-collection-list--bg jsc-fc-slider-carousel flickity-enabled is-draggable"
@@ -350,12 +350,11 @@ function ProductCard({ product }: { product: RailCard }) {
   const selectedVariant = interaction?.variants[variantIndex];
   const primaryImage = selectedVariant?.image || product.image;
   const selectedLabel = selectedVariant?.label ?? product.swatchSelected;
-  const router = useRouter();
-  // MOCK quick add: products that need choices (options, personalisation) go to the product page; others add the
-  // shown cover at the product minimum quantity and open the cart drawer.
+  // MOCK quick add: products that need choices (options, personalisation) open the quick-view drawer (source
+  // quick-view element, round 282); others add the shown cover at the product minimum quantity and open the cart drawer.
   const addToBag = () => {
     const { quickAdd } = product;
-    if (quickAdd.needsOptions) return router.push(product.href);
+    if (quickAdd.needsOptions) return openQuickView({ handle: quickAdd.handle, variantId: null });
     localCart.add({ handle: quickAdd.handle, variantId: null, title: product.title, image: primaryImage, price: quickAdd.price, options: [{ name: "Cover", value: selectedLabel.trim() }], minQuantity: quickAdd.minOrder });
     openCartDrawer();
   };

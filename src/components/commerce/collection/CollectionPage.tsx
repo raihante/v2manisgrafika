@@ -10,7 +10,6 @@
 // - Load more appends the next page and completes the last row (src/lib/collections/query.ts).
 // MOCK data source and filter semantics: docs/mock-behaviors.md "Collection grid, load more, filters and sort".
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { useRouter } from "next/navigation";
 import SourceProductCard from "@/components/commerce/pdp/SourceProductCard";
 import { Spinner } from "@/components/commerce/pdp/icons";
 import { collectionSource } from "@/lib/collections/client";
@@ -21,7 +20,6 @@ import { FacetBar, FacetDrawer, navigateWithSort, sortFilters, useDrawerSubmit, 
 type Grid = { keys: string[]; hasMore: boolean; countText: string; cards: Record<string, ProductCard> };
 
 export default function CollectionPage({ initial }: { initial: CollectionInitial }) {
-  const router = useRouter();
   const [query, setQuery] = useState<CollectionQuery>({ sort: initial.sort.initial, filters: [] });
   const [loadedPages, setLoadedPages] = useState(1);
   const [grid, setGrid] = useState<Grid>({ keys: initial.keys, hasMore: initial.hasMore, countText: initial.countText, cards: initial.cards });
@@ -73,7 +71,6 @@ export default function CollectionPage({ initial }: { initial: CollectionInitial
 
   useEqualCardHeights(gridRef, grid);
   const plan = useMemo(() => promoPlan(grid.keys.length, initial.promos), [grid.keys.length, initial.promos]);
-  const quickView = (card: ProductCard) => router.push(card.imageHref);
   const checked = (name: string, value: string) => query.filters.some((f) => f.name === name && f.value === value);
   const clearHref = `/collections/${initial.handle}`;
 
@@ -100,7 +97,7 @@ export default function CollectionPage({ initial }: { initial: CollectionInitial
                       const card = grid.cards[key];
                       return [
                         ...(plan.before.get(i) ?? []).map((p) => <PromoColumn key={`promo-${initial.promos[p].id}`} promo={initial.promos[p]} />),
-                        <li key={key} className="column">{card && <SourceProductCard card={card} idPrefix={`${initial.sectionId}-${i + 1}`} onQuickView={quickView} />}</li>,
+                        <li key={key} className="column">{card && <SourceProductCard card={card} idPrefix={`${initial.sectionId}-${i + 1}`} />}</li>,
                       ];
                     })}
                     {plan.trailing.map((p) => <PromoColumn key={`promo-${initial.promos[p].id}`} promo={initial.promos[p]} />)}

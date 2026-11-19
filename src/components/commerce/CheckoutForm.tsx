@@ -7,7 +7,8 @@ import { FormEvent, useState } from "react";
 import { formatPrice } from "@/lib/catalog/format";
 import type { CheckoutBranding } from "@/lib/storefront/types";
 import { lineMeta, useCart } from "@/lib/cart";
-import { ORDER_KEY, PROVINCES, SHIPPING_METHODS, VA_BANKS, type MockOrder } from "./order";
+import LinePersonalisation from "@/components/commerce/LinePersonalisation";
+import { ORDER_KEY, PROVINCES, SHIPPING_METHODS, type MockOrder } from "./order";
 
 export function CheckoutHeader({ logo }: { logo: string }) {
   return (
@@ -22,8 +23,6 @@ export default function CheckoutForm({ branding }: { branding: CheckoutBranding 
   const router = useRouter();
   const { lines, subtotal, count, service } = useCart();
   const [shippingId, setShippingId] = useState<string>(SHIPPING_METHODS[0].id);
-  const [payment, setPayment] = useState<"va" | "qris">("va");
-  const [bank, setBank] = useState<string>(VA_BANKS[0]);
   const [submitting, setSubmitting] = useState(false);
   const shipping = SHIPPING_METHODS.find((m) => m.id === shippingId) ?? SHIPPING_METHODS[0];
   const total = subtotal + shipping.price;
@@ -41,7 +40,7 @@ export default function CheckoutForm({ branding }: { branding: CheckoutBranding 
       address: [get("address"), get("apartment"), `${get("city")}, ${get("province")} ${get("postal")}`, "Indonesia"].filter(Boolean).join(", "),
       phone: get("phone"),
       shipping: { label: shipping.label, price: shipping.price },
-      payment: payment === "va" ? `Virtual Account ${bank}` : "QRIS",
+      payment: "QRIS",
       lines,
       subtotal,
       total,
@@ -114,21 +113,10 @@ export default function CheckoutForm({ branding }: { branding: CheckoutBranding 
 
           <section className="co-section">
             <h2>Pembayaran</h2>
-            <p className="cm-muted">Pilih metode pembayaran. Instruksi pembayaran muncul setelah pesanan dibuat.</p>
+            <p className="cm-muted">Pembayaran hanya melalui QRIS. Instruksi pembayaran muncul setelah pesanan dibuat.</p>
             <div className="co-choices">
-              <label className={`co-choice ${payment === "va" ? "active" : ""}`}>
-                <input type="radio" name="payment" checked={payment === "va"} onChange={() => setPayment("va")} />
-                <span className="co-choice-text"><b>Transfer Virtual Account</b><small>{VA_BANKS.join(", ")}</small></span>
-              </label>
-              {payment === "va" && (
-                <div className="co-pay-fields">
-                  <select className="co-input" value={bank} onChange={(e) => setBank(e.target.value)} aria-label="Bank virtual account">
-                    {VA_BANKS.map((b) => <option key={b} value={b}>{b}</option>)}
-                  </select>
-                </div>
-              )}
-              <label className={`co-choice ${payment === "qris" ? "active" : ""}`}>
-                <input type="radio" name="payment" checked={payment === "qris"} onChange={() => setPayment("qris")} />
+              <label className="co-choice active">
+                <input type="radio" name="payment" value="qris" checked readOnly />
                 <span className="co-choice-text"><b>QRIS</b><small>Bayar dengan scan QR lewat e-wallet atau mobile banking</small></span>
                 <span className="co-marks">{branding.payments.filter((p) => p.name === "QRIS").map((p) => <img key={p.name} src={p.image} alt={p.name} />)}</span>
               </label>
@@ -144,7 +132,7 @@ export default function CheckoutForm({ branding }: { branding: CheckoutBranding 
             {lines.map((line) => (
               <li key={line.id}>
                 <span className="co-item-image"><Image src={line.image} alt={line.title} fill sizes="64px" className="cover-image" /><i>{line.quantity}</i></span>
-                <span className="co-item-info"><b>{line.title}</b><small>{lineMeta(line)}</small></span>
+                <span className="co-item-info"><b>{line.title}</b><small>{lineMeta(line)}</small><LinePersonalisation line={line} /></span>
                 <span>{formatPrice(line.price * line.quantity)}</span>
               </li>
             ))}

@@ -13,6 +13,11 @@ import { createPortal } from "react-dom";
 export const OPEN_CART_EVENT = "mg:open-cart";
 export const openCartDrawer = () => window.dispatchEvent(new Event(OPEN_CART_EVENT));
 
+/** Card "Tambah Keranjang" (source quick-view element): opens #Product-Drawer with the product's option picker. */
+export const OPEN_QUICK_VIEW_EVENT = "mg:open-quick-view";
+export type QuickViewRequest = { handle: string; variantId: number | null };
+export const openQuickView = (request: QuickViewRequest) => window.dispatchEvent(new CustomEvent<QuickViewRequest>(OPEN_QUICK_VIEW_EVENT, { detail: request }));
+
 function useEscape(active: boolean, onEscape: () => void) {
   useEffect(() => {
     if (!active) return;

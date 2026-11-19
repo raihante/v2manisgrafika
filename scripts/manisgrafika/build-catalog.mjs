@@ -7,7 +7,7 @@
 // Run: node scripts/manisgrafika/build-catalog.mjs [date]   (default 2026-11-16)
 //
 // Product fields that WooCommerce does not hold are filled with documented defaults the CMS will own:
-//   minOrder 50 (22/23 MG descriptions say "Minimal Pembelian 50pcs"; Shaaira has no note, confirm with client),
+//   minOrder 50 (22/23 MG descriptions say "Minimal Pembelian 50pcs"; Shaaira gets the same note via CONTENT_FIXES),
 //   personalisation = the "halaman redaksi" config (5 free pages, Rp 3.000 per 2 extra pages, PLACEHOLDER fields).
 import { readFileSync, writeFileSync } from "node:fs";
 
@@ -113,6 +113,30 @@ const spell = (text) => SPELLING.reduce((t, [re, to]) => t.replace(re, to), text
 const item = (s) => s.replace(/^Sticker\b/, "Stiker").replace(/ (\S+)/g, (_, w) => ` ${w.toLowerCase()}`);
 const plain = (html) => spell(html.replace(/<br\s*\/?>/gi, "\n").replace(/<[^>]+>/g, "").replace(/&#8211;/g, "–").replace(/&nbsp;/g, " ").replace(/[ \t ]+/g, " ").trim());
 const list = (items) => `<ul>${items.map((i) => `<li>${i}</li>`).join("")}</ul>`;
+// Content fixes per product (owner 2026-11-19 "perbaiki"): Zyla and Shaaira are Dompet packages (Isi Paket: Dompet +
+// Tasbih) but their WooCommerce intros say "dikemas dengan mika"; Shaaira's also says "Yasin Spoon Bludru" while its
+// covers are Broken White / Grey, and it lacks the Catatan every other product has.
+const DOMPET_INTRO = (name) => `Dikemas dengan dompet eksklusif yang menawan, koleksi Yasin ${name} menghadirkan`;
+const CONTENT_FIXES = {
+  "zyla-series": { intro: [/^Dikemas dengan mika eksklusif yang menawan, koleksi Yasin Zyla Series menghadirkan/, DOMPET_INTRO("Zyla Series")] },
+  "shaaira-series": {
+    intro: [/^Dikemas dengan mika eksklusif yang menawan, koleksi Yasin Spoon Bludru menghadirkan/, DOMPET_INTRO("Shaaira Series")],
+    notes: ["Minimal pembelian 50 pcs.", "Harga belum termasuk ongkos kirim."],
+  },
+};
+function fixContent(handle, html) {
+  const fix = CONTENT_FIXES[handle];
+  if (!fix) return html;
+  let out = html;
+  if (fix.intro) {
+    const [re, to] = fix.intro;
+    const next = out.replace(new RegExp(`<p>${re.source.slice(1)}`), `<p>${to}`);
+    if (next === out) throw new Error(`Intro fix for ${handle} no longer matches the client copy`);
+    out = next;
+  }
+  if (fix.notes && !out.includes("<h3>Catatan</h3>")) out += `<h3>Catatan</h3>${list(fix.notes)}`;
+  return out;
+}
 function tidyDescription(html) {
   const paras = [...html.matchAll(/<p>([\s\S]*?)<\/p>/g)].map((m) => m[1]);
   const out = [];
@@ -211,7 +235,7 @@ for (const p of sorted) {
     swatches,
     slideCount: galleries[0].images.length,
     tabs: [
-      { key: "deskripsi", title: "Deskripsi", panelHtml: tidyDescription(p.description.trim()) },
+      { key: "deskripsi", title: "Deskripsi", panelHtml: fixContent(handle, tidyDescription(p.description.trim())) },
       { key: "redaksi", title: "Halaman Redaksi", panelHtml: tabRedaksi(PERSONALISATION) },
       { key: "pengiriman", title: "Pengiriman", panelHtml: TAB_SHIPPING },
     ],
@@ -253,7 +277,10 @@ for (const p of sorted) {
     swatchSuffix: extra > 0 ? `+ ${extra} Cover` : "",
     overlayLabels: [],
     labels: [],
-    button: "add",
+    // "options": the card button opens the product page (labelled "Pilih Opsi") because the customer must choose
+    // option values or fill required personalisation; "add" would add directly (none today: every product has a
+    // required "halaman redaksi" field). Same rule as needsOptions in src/lib/catalog/fixture.ts.
+    button: options.some((o) => o.values.length > 1) || details[handle].personalisation?.fields.some((f) => f.required) ? "options" : "add",
   };
   interactions[title] = {
     secondaryImages: galleries[0].images.slice(1, 3).map((i) => i.src),
@@ -276,7 +303,7 @@ const railCard = (h) => {
   return {
     title: c.title, href: c.href, price: c.price, compareAtPrice: c.compareAtPrice, image: c.primary,
     sourceImage: details[h].sourceUrl, swatchSelected: c.swatchSelected, swatchSuffix: c.swatchSuffix,
-    labels: [], overlayLabels: [], button: "add",
+    labels: [], overlayLabels: [], button: c.button,
   };
 };
 const inCollection = (c) => handles.filter((h) => details[h].collections.includes(c));

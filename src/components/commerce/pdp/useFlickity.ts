@@ -132,13 +132,19 @@ export function useFlickity({ count, wrapAround = false, contain = false, autoPl
       if (e.button !== 0) return;
       playing.current = false;
       drag.current = { x: e.clientX, start: pos.current, last: e.clientX, t: performance.now(), moved: false };
-      (e.currentTarget as HTMLElement).setPointerCapture?.(e.pointerId);
     },
     onPointerMove: (e: React.PointerEvent) => {
       const d = drag.current;
       if (!d) return;
+      // Capture the pointer only once this is a real drag (> 3px, Flickity's dragThreshold). Capturing on pointerdown
+      // retargets the click to the viewport, so buttons and links inside the cells (card "Pilih Opsi", title, image)
+      // never received it (round 280, owner report on .complementary-products).
+      if (!d.moved) {
+        if (Math.abs(e.clientX - d.x) <= 3) return;
+        d.moved = true;
+        (e.currentTarget as HTMLElement).setPointerCapture?.(e.pointerId);
+      }
       const w = viewportRef.current?.getBoundingClientRect().width || 1;
-      if (Math.abs(e.clientX - d.x) > 3) d.moved = true;
       velocity.current = -(e.clientX - d.last) / (w * cellFrac.current);
       d.last = e.clientX;
       pos.current = d.start - (e.clientX - d.x) / (w * cellFrac.current);

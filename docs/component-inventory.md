@@ -4,7 +4,7 @@
 
 - Announcement bar with source-matching message and height.
 - Sticky header with desktop and mobile navigation states.
-- Featured collection/category slider.
+- Featured collection/category slider. Each title is a link to its collection (`HeroSlide.href`; Terbaru -> `/collections/new-in`, others `/collections/<label>`); hover or keyboard focus switches the slide, click/tap navigates, as on the source (`jscOpenMenu(..., 'true', url)`). Round 286.
 - Primary promotional slideshow.
 - Reusable product rail for New In, BTV Bags, and Your Favourites.
 - Product card with source-derived colour swatches, active/sold-out states, hover secondary-image transition, variant-image selection, labels, pricing, and mock actions.
@@ -62,3 +62,13 @@ Components never read data themselves; routes (server components) read repositor
 | Rich text | `src/lib/html/{sanitize,safe-html}.ts`, `src/components/shared/RichText.tsx` | Adapters sanitize every HTML field (allowlist from the 2026-11-06 fixtures); components accept only the branded `SafeHtml`/`SafeSvg`. `dangerouslySetInnerHTML` remains only in `RichText`, `SourceSvg` and the escaped promo `<template>` in `CollectionPage.tsx` (guarded by `tests/unit/architecture.test.ts`). |
 | Theme icons | `src/components/icons/source-icons.ts` | Notify bell and wishlist heart geometry (moved out of `src/data/`, they are theme code). |
 | Tests | `tests/unit/` (`npm test`, Vitest) | Repository contract suite (reusable for the MySQL adapters), sanitizer, blog/collection/search query, cart, architecture guards. |
+
+## Card quick view (round 282)
+
+- `src/components/commerce/QuickView.tsx`: content of `#Product-Drawer-Content` (source product-quick-view markup: `.thb-product-detail` > `.product-quick-images--container` + `.product-information--inner`), wrapped in `.template-product` so the PDP rules apply.
+- `src/components/commerce/pdp/purchase.tsx`: `Price`, `VariantFieldsets` (section id parameter), `AddToCartHolder` (button id parameter, `full` for the PDP main form), `usePurchase` hook (variant choice, quantity, personalisation, validation + reveal, MOCK add). Shared by `ProductPage.tsx` (main + sticky forms) and the quick view.
+- `src/components/shell/ShellPanels.tsx`: `useQuickView` (listens for `mg:open-quick-view` from `openQuickView()` in `Overlays.tsx`, loads `quickViewSource`), drawer `.active`, body `open-cc` / `open-quick-view`, Esc / overlay / close button, overlay z-index 90 while open.
+- Data: `QuickViewProduct` (`src/lib/catalog/types.ts`), static route handler `src/app/products/[handle]/quick-view.json/route.ts`, browser source `src/lib/catalog/client.ts`.
+- CSS: `src/app/quick-view.css` (source quick-view rules + documented deviations); `pdp-source.css` and `product-page.css` are imported globally by `src/app/layout.tsx` (all selectors scoped to `.template-product`).
+- Triggers: `SourceProductCard` (`quick-view` element) and the homepage rail card (`HomePage.tsx`, products that need choices).
+
